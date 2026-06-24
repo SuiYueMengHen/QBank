@@ -1,0 +1,70 @@
+\begin{solution}{7}
+\begin{subsolution}
+考虑射到劈尖上某 $y$ 值处的光线，计算该光线由 $x = 0$ 到 $x = h$ 之间的光程 $\delta(y)$。将该光线在介质中的光程记为 $\delta_1$，在空气中的光程记为 $\delta_2$。介质的折射率是不均匀的，光入射到介质表面时，在 $x = 0$ 处，该处介质的折射率 $n(0) = 1$；射到 $x$ 处时，该处介质的折射率 $n(x) = 1 + bx$。因折射率随 $x$ 线性增加，光线从 $x = 0$ 处射到 $x = h_1$（$h_1$ 是劈尖上 $y$ 值处光线在劈尖中传播的距离）处的光程 $\delta_1$ 与光通过折射率等于平均折射率
+\begin{equation}
+\bar{n} = \frac{1}{2}[n(0) + n(h_1)] = \frac{1}{2}(1 + 1 + b h_1) = 1 + \frac{1}{2} b h_1
+\label{eq:1.s7}
+\end{equation}
+的均匀介质的光程相同，即
+\begin{equation}
+\delta_1 = \bar{n} h_1 = h_1 + \frac{1}{2} b h_1^2
+\label{eq:2.s7}
+\end{equation}
+忽略透过劈尖斜面相邻小台阶连接处的光线（事实上，可通过选择台阶的尺度和档板上狭缝的位置来避开这些光线的影响），光线透过劈尖后其传播方向保持不变，因而有
+\begin{equation}
+\delta_2 = h - h_1
+\label{eq:3.s7}
+\end{equation}
+于是
+\begin{equation}
+\delta(y) = \delta_1 + \delta_2 = h + \frac{1}{2} b h_1^2.
+\label{eq:4.s7}
+\end{equation}
+由几何关系有
+\begin{equation}
+h_1 = y \tan \theta .
+\label{eq:5.s7}
+\end{equation}
+故
+\begin{equation}
+\delta(y) = h + \frac{b}{2} y^2 \tan^2 \theta .
+\label{eq:6.s7}
+\end{equation}
+从介质出来的光经过狭缝后仍平行于 $x$ 轴，狭缝的 $y$ 值应与对应介质的 $y$ 值相同，这些平行光线会聚在透镜焦点处。
+
+对于 $y = 0$ 处，由上式得
+\begin{equation}
+\delta(0) = h.
+\label{eq:7.s7}
+\end{equation}
+$y$ 处与 $y = 0$ 处的光线的光程差为
+\begin{equation}
+\delta(y) - \delta(0) = \frac{b}{2} y^2 \tan^2 \theta .
+\label{eq:8.s7}
+\end{equation}
+由于物像之间各光线的光程相等，故平行光线之间的光程差在通过透镜前和会聚在透镜焦点处时保持不变；因而\eqref{eq:8.s7}式在透镜焦点处也成立。为使光线经透镜会聚后在焦点处彼此加强，要求两束光的光程差为波长的整数倍，即
+\begin{equation}
+\frac{b}{2} y^2 \tan^2 \theta = k \lambda, \quad k = 1, 2, 3, \dots .
+\label{eq:9.s7}
+\end{equation}
+由此得
+\begin{equation}
+y = \sqrt{\frac{2k\lambda}{b}} \cot \theta = A \sqrt{k}, \quad A = \sqrt{\frac{2\lambda}{b}} \cot \theta .
+\label{eq:10.s7}
+\end{equation}
+除了位于 $y = 0$ 处的狭缝外，其余各狭缝对应的 $y$ 坐标依次为
+\begin{equation}
+A, \sqrt{2}A, \sqrt{3}A, \sqrt{4}A, \dots .
+\label{eq:11.s7}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+各束光在焦点处彼此加强，并不要求\eqref{eq:11.s7}中各项都存在。将各狭缝彼此等距排列仍可能满足上述要求。事实上，若依次取 $k = m, 4m, 9m, \dots$，其中 $m$ 为任意正整数，则
+\begin{equation}
+y_m = \sqrt{m}A, y_{4m} = 2\sqrt{m}A, y_{9m} = 3\sqrt{m}A, \dots .
+\label{eq:12.s7}
+\end{equation}
+这些狭缝显然彼此等间距，且相邻狭缝的间距均为 $\sqrt{m}A$，光线在焦点处依然相互加强而形成亮纹。
+\end{subsolution}
+\end{solution}

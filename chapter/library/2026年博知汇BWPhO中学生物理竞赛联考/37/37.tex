@@ -1,0 +1,30 @@
+
+\begin{problem}[2026年博知汇BWPhO][法布里—珀罗干涉仪]{37}
+    法布里—珀罗干涉仪是基于多光束等倾干涉原理设计的高分辨光学仪器，本题考查一个简化模型。干涉仪由两块相同的平行平面高反镜（例如理想薄玻璃板）组成，高反镜间距为 $L$，镜间以及镜外的空间均为真空。单个镜子是部分反射的，当光沿着法线方向射向任意一面镜子的时候，反射光强度是入射光的 $R$ 倍，其中 $0 < R < 1$（实际上 $1 - R \ll 1$，但本题计算中不需要这个近似）。由于镜子具有对称性，其对任意一侧以相同方式入射的光的作用是相同的，且该过程无损耗。现在有一单色激光器发出一束功率为 $P_0$ 的准直激光束，垂直镜面射入干涉仪。高反镜的具体结构及参数未知，光在高反镜的反射或透射可近似看作即时（没有延迟）的。已知 $L$ 的大小恰使得背向反射光束（射回激光器）完全消失，真空中的光速为 $c$。
+    \begin{subproblem}
+        由于高反镜理想，其对光的反射和透射会产生相位偏移，分别记为 $\phi_{\mathrm{R}},\phi_{\mathrm{T}}$。对于给定的 $\phi_{\mathrm{R}}$，试求出所有可能的 $\phi_{\mathrm{T}}$。
+    \end{subproblem}
+    \begin{subproblem}
+        现于某时刻突然关闭激光器。不考虑关闭激光器后仪器参数因此发生的变化。记激光器接收到的首次反射光消失的瞬间为 $t = 0$。
+        \begin{subsubproblem}
+            求出该时刻后激光器接收到的总能量。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            由于光在腔内从一端传播到另一端需要的时间非常短，可以进行连续化近似。试求此近似下返回激光器的光功率随时间的变化关系 $P(t)$。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        经过足够长时间后，换用另一波长相同的弱相干激光器重新进行实验，其时间相干函数
+        \begin{equation}
+            \gamma (t _ {0}) \equiv \left| \left\langle \frac {E ^ {*} (t + t _ {0}) E (t)}{| E (t + t _ {0}) E (t) |} \right\rangle \right| = \mathrm{e} ^ {- | t _ {0} | / \tau}
+        \end{equation}
+        其中 $E(t)$ 代表 $t$ 时刻发出的光的电场复振幅。已知激光在真空中的波长为 $\lambda$。
+        \begin{subsubproblem}
+            首先考虑该激光器发出的两束光强为 $I_{1}, I_{2}$、相位差为 $\delta (\delta > 0)$ 的光，若相位差完全由在真空中传播的距离造成，试求这两束光干涉叠加的总光强 $I$。（仅考虑标量波理论）
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            试求稳定干涉时的总光强反射率 $R_{tot}$。
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}
+

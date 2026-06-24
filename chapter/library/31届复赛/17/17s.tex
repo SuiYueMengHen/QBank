@@ -1,0 +1,102 @@
+\begin{solution}{17}
+    \begin{subsolution}
+        球形。
+    \end{subsolution}
+    \begin{subsolution}
+        液滴的半径 $r$、密度 $\rho$ 和表面张力系数 $\sigma$（或液滴的质量 $m$ 和表面张力系数 $\sigma$）。
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubproblem}
+            假设液滴振动频率与上述物理量的关系式为
+            \begin{equation}
+                f = k r^{\alpha} \rho^{\beta} \sigma^{\gamma}
+                \label{eq:1.s17}
+            \end{equation}
+            式中，比例系数 $k$ 是一个待定常数。任一物理量 $a$ 可写成在某一单位制中的单位 $[a]$ 和相应的数值 $\{a\}$ 的乘积 $a = \{a\}[a]$。按照这一约定，\eqref{eq:1.s17}式在同一单位制中可写成
+            \begin{equation*}
+                \{f\}[f] = \{k\}\{r\}^{\alpha}\{\rho\}^{\beta}\{\sigma\}^{\gamma}[r]^{\alpha}[\rho]^{\beta}[\sigma]^{\gamma}
+            \end{equation*}
+            由于取同一单位制，上述等式可分解为相互独立的数值等式和单位等式，因而
+            \begin{equation}
+                [f] = [r]^{\alpha}[\rho]^{\beta}[\sigma]^{\gamma}
+                \label{eq:2.s17}
+            \end{equation}
+            力学的基本物理量有三个：质量 $m$、长度 $l$ 和时间 $t$，按照前述约定，在该单位制中有
+            \begin{equation*}
+                m = \{m\}[m], l = \{l\}[l], t = \{t\}[t]
+            \end{equation*}
+            于是
+            \begin{align}
+                [f] &= [t]^{-1} \label{eq:3.s17} \\
+                [r] &= [l] \label{eq:4.s17} \\
+                [\rho] &= [m][l]^{-3} \label{eq:5.s17} \\
+                [\sigma] &= [m][t]^{-2} \label{eq:6.s17}
+            \end{align}
+            将\eqref{eq:3.s17}、\eqref{eq:4.s17}、\eqref{eq:5.s17}、\eqref{eq:6.s17}式代入\eqref{eq:2.s17}式得
+            \begin{equation*}
+                [t]^{-1} = [l]^{\alpha}([m][l]^{-3})^{\beta}([m][t]^{-2})^{\gamma}
+            \end{equation*}
+            即
+            \begin{equation}
+                [t]^{-1} = [l]^{\alpha - 3\beta}[m]^{\beta + \gamma}[t]^{-2\gamma}
+                \label{eq:7.s17}
+            \end{equation}
+            由于在力学中 $[m]$、$[l]$ 和 $[t]$ 三者之间的相互独立性，有
+            \begin{align}
+                \alpha - 3\beta &= 0, \label{eq:8.s17} \\
+                \beta + \gamma &= 0, \label{eq:9.s17} \\
+                2\gamma &= 1 \label{eq:10.s17}
+            \end{align}
+            解为
+            \begin{equation}
+                \alpha = -\frac{3}{2}, \quad \beta = -\frac{1}{2}, \quad \gamma = \frac{1}{2}
+                \label{eq:11.s17}
+            \end{equation}
+            将\eqref{eq:11.s17}式代入\eqref{eq:1.s17}式得
+            \begin{equation}
+                f = k \sqrt{\frac{\sigma}{\rho r^{3}}}
+                \label{eq:12.s17}
+            \end{equation}
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            假设液滴振动频率与上述物理量的关系式为
+            \begin{equation}
+                f = k r^{\alpha} \rho^{\beta} \sigma^{\gamma}
+                \label{eq:13.s17}
+            \end{equation}
+            式中，比例系数 $k$ 是一个待定常数。任一物理量 $a$ 可写成在某一单位制中的单位 $[a]$ 和相应的数值 $\{a\}$ 的乘积 $a = \{a\}[a]$。在同一单位制中，\eqref{eq:13.s17}式两边的物理量的单位的乘积必须相等
+            \begin{equation}
+                [f] = [r]^{\alpha}[\rho]^{\beta}[\sigma]^{\gamma}
+                \label{eq:14.s17}
+            \end{equation}
+            力学的基本物理量有三个：质量 $M$、长度 $L$ 和时间 $T$，对应的国际单位分别为千克（kg）、米（m）、秒（s）。在国际单位制中，振动频率 $f$ 的单位 $[f]$ 为 $\mathrm{s}^{-1}$，半径 $r$ 的单位 $[r]$ 为 $\mathrm{m}$，密度 $\rho$ 的单位 $[\rho]$ 为 $\mathrm{kg} \cdot \mathrm{m}^{-3}$，表面张力系数 $\sigma$ 的单位 $[\sigma]$ 为 $\mathrm{N} \cdot \mathrm{m}^{-1} = \mathrm{kg} \cdot (\mathrm{m} \cdot \mathrm{s}^{-2}) \cdot \mathrm{m}^{-1} = \mathrm{kg} \cdot \mathrm{s}^{-2}$，即有
+            \begin{align}
+                [f] &= \mathrm{s}^{-1} \label{eq:15.s17} \\
+                [r] &= \mathrm{m} \label{eq:16.s17} \\
+                [\rho] &= \mathrm{kg} \cdot \mathrm{m}^{-3} \label{eq:17.s17} \\
+                [\sigma] &= \mathrm{kg} \cdot \mathrm{s}^{-2} \label{eq:18.s17}
+            \end{align}
+            若要使\eqref{eq:13.s17}式成立，必须满足
+            \begin{equation}
+                \mathrm{s}^{-1} = \mathrm{m}^{\alpha}(\mathrm{kg} \cdot \mathrm{m}^{-3})^{\beta}(\mathrm{kg} \cdot \mathrm{s}^{-2})^{\gamma} = (\mathrm{kg})^{\beta + \gamma} \cdot \mathrm{m}^{\alpha - 3\beta} \cdot \mathrm{s}^{-2\gamma}
+                \label{eq:19.s17}
+            \end{equation}
+            由于在力学中质量 M、长度 L 和时间 T 的单位三者之间的相互独立性，有
+            \begin{align}
+                \alpha - 3\beta &= 0, \label{eq:20.s17} \\
+                \beta + \gamma &= 0, \label{eq:21.s17} \\
+                2\gamma &= 1 \label{eq:22.s17}
+            \end{align}
+            解为
+            \begin{equation}
+                \alpha = -\frac{3}{2}, \quad \beta = -\frac{1}{2}, \quad \gamma = \frac{1}{2}
+                \label{eq:23.s17}
+            \end{equation}
+            将\eqref{eq:23.s17}式代入\eqref{eq:13.s17}式得
+            \begin{equation}
+                f = k \sqrt{\frac{\sigma}{\rho r^{3}}}
+                \label{eq:24.s17}
+            \end{equation}
+        \end{subsubproblem}
+    \end{subsolution}
+\end{solution}

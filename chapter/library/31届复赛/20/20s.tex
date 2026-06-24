@@ -1,0 +1,119 @@
+\begin{solution}{20}
+    \begin{subsolution}
+        考虑小球沿径向的合加速度。如图，设小球下滑至 $\theta$ 角位置时，小球相对于圆环的速率为 $v$，圆环绕轴转动的角速度为 $\omega$。此时与速率 $v$ 对应的指向中心 C 的小球加速度大小为
+        \begin{equation}
+            a_1 = \frac{v^2}{R}
+            \label{eq:1.s20}
+        \end{equation}
+        同时，对应于圆环角速度 $\omega$，指向 $OO'$ 轴的小球加速度大小为
+        \begin{equation}
+            a_{\omega} = \frac{(\omega R \sin\theta)^2}{R \sin\theta}
+            \label{eq:2.s20}
+        \end{equation}
+        该加速度的指向中心 C 的分量为
+        \begin{equation}
+            a_2 = a_{\omega}\sin\theta = \frac{(\omega R \sin\theta)^2}{R}
+            \label{eq:3.s20}
+        \end{equation}
+        该加速度的沿环面且与半径垂直的分量为
+        \begin{equation}
+            a_3 = a_{\omega}\cos\theta = \frac{(\omega R \sin\theta)^2}{R}\cot\theta
+            \label{eq:4.s20}
+        \end{equation}
+        由\eqref{eq:1.s20}、\eqref{eq:3.s20}式和加速度合成法则得小球下滑至 $\theta$ 角位置时，其指向中心C的合加速度大小为
+        \begin{equation}
+            a_R = a_1 + a_2 = \frac{v^2}{R} + \frac{(\omega R \sin\theta)^2}{R}
+            \label{eq:5.s20}
+        \end{equation}
+        在小球下滑至 $\theta$ 角位置时，将圆环对小球的正压力分解成指向环心的方向的分量 $N$、垂直于环面的方向的分量 $T$。值得指出的是：由于不存在摩擦，圆环对小球的正压力沿环的切向的分量为零。在运动过程中小球受到的作用力是 $N$、$T$ 和 $mg$。这些力可分成相互垂直的三个方向上的分量：在径向的分量不改变小球速度的大小，亦不改变小球对转轴的角动量；沿环切向的分量即 $mg\sin\theta$ 要改变小球速度的大小；在垂直于环面方向的分量即 $T$ 要改变小球对转轴的角动量，其反作用力将改变环对转轴的角动量，但与大圆环沿 $OO'$ 轴的竖直运动无关。在指向环心的方向，由牛顿第二定律有
+        \begin{equation}
+            N + mg\cos\theta = m a_R = m\frac{v^2 + (\omega R \sin\theta)^2}{R}
+            \label{eq:6.s20}
+        \end{equation}
+        合外力矩为零，系统角动量守恒，有
+        \begin{equation}
+            L_0 = L + 2m(R\sin\theta)^2\omega
+            \label{eq:7.s20}
+        \end{equation}
+        式中 $L_0$ 和 $L$ 分别为圆环以角速度 $\omega_0$ 和 $\omega$ 转动时的角动量。
+
+        如图，考虑右半圆环相对于轴的角动量，在 $\theta$ 角位置处取角度增量 $\Delta\theta$，圆心角 $\Delta\theta$ 所对圆弧 $\Delta l$ 的质量为 $\Delta m = \lambda \Delta l$（$\lambda \equiv \frac{m_0}{2\pi R}$），其角动量为
+        \begin{equation}
+            \Delta L = \Delta m \omega r^2 = \lambda \Delta l \omega r R \sin\theta = \lambda \omega R r \Delta z = \lambda \omega R \Delta S
+            \label{eq:8.s20}
+        \end{equation}
+        式中 r 是圆环上 $\theta$ 角位置到竖直轴 $OO'$ 的距离，$\Delta S$ 为两虚线间窄条的面积。\eqref{eq:8.s20}式说明，圆弧 $\Delta l$ 的角动量与 $\Delta S$ 成正比。整个圆环（两个半圆环）的角动量为
+        \begin{equation}
+            L = 2\sum \Delta L = 2 \times \frac{m_0}{2\pi R}\omega R \frac{\pi R^2}{2} = \frac{1}{2}m_0 R^2 \omega
+            \label{eq:9.s20}
+        \end{equation}
+        或：由转动惯量的定义可知圆环绕竖直轴 $OO'$ 的转动惯量 J 等于其绕过垂直于圆环平面的对称轴的转动惯量的一半，即
+        \begin{equation*}
+            J = \frac{1}{2}m_0 R^2
+        \end{equation*}
+        则角动量 $L$ 为
+        \begin{equation*}
+            L = J\omega = \frac{1}{2}m_0 R^2 \omega
+        \end{equation*}
+        同理有
+        \begin{equation}
+            L_0 = \frac{1}{2}m_0 R^2 \omega_0
+            \label{eq:10.s20}
+        \end{equation}
+        力 N 及其反作用力不做功；而 T 及其反作用力的作用点无相对移动，做功之和为零；系统机械能守恒。故
+        \begin{equation}
+            E_{k0} - E_k + 2 \times mgR(1 - \cos\theta) = 2 \times \frac{1}{2}m[v^2 + (\omega R \sin\theta)^2]
+            \label{eq:11.s20}
+        \end{equation}
+        式中 $E_{k0}$ 和 $E_k$ 分别为圆环以角速度 $\omega_0$ 和 $\omega$ 转动时的动能。圆弧 $\Delta l$ 的动能为
+        \begin{equation*}
+            \Delta E_k = \frac{1}{2}\Delta m (r\omega)^2 = \frac{1}{2}\lambda \Delta l \omega^2 r R \sin\theta = \frac{1}{2}\lambda R \omega^2 \Delta S
+        \end{equation*}
+        整个圆环（两个半圆环）的动能为
+        \begin{equation}
+            E_k = 2\sum \Delta E_k = 2 \cdot \frac{1}{2} \cdot \frac{m_0}{2\pi R} \cdot R \omega^2 \cdot \frac{\pi R^2}{2} = \frac{1}{4}m_0 R^2 \omega^2
+            \label{eq:12.s20}
+        \end{equation}
+        或：圆环的转动动能为
+        \begin{equation*}
+            E_k = \frac{1}{2}J\omega^2 = \frac{1}{4}m_0 R^2 \omega^2
+        \end{equation*}
+        同理有
+        \begin{equation}
+            E_{k0} = \frac{1}{4}m_0 R^2 \omega_0^2
+            \label{eq:13.s20}
+        \end{equation}
+        根据牛顿第三定律，圆环受到小球的竖直向上作用力大小为 $2N\cos\theta$，当
+        \begin{equation}
+            2N\cos\theta \geq m_0 g
+            \label{eq:14.s20}
+        \end{equation}
+        时，圆环才能沿轴上滑。由\eqref{eq:6.s20}、\eqref{eq:7.s20}、\eqref{eq:9.s20}、\eqref{eq:10.s20}、\eqref{eq:11.s20}、\eqref{eq:12.s20}、\eqref{eq:13.s20}式可知，\eqref{eq:14.s20}式可写成
+        \begin{equation}
+            6m\cos^2\theta - 4m\cos\theta + m_0 - \frac{m_0 \omega_0^2 R \cos\theta}{2g}\left[1 - \frac{m_0^2}{(m_0 + 4m\sin^2\theta)^2}\right] \leq 0
+            \label{eq:15.s20}
+        \end{equation}
+        式中，g 是重力加速度的大小。
+    \end{subsolution}
+    \begin{subsolution}
+        此时由题给条件可知当 $\theta = 30^{\circ}$ 时，\eqref{eq:15.s20}式中等号成立，即有
+        \begin{equation*}
+            \left(\frac{9}{2} - 2\sqrt{3}\right)m + m_0 = \frac{\sqrt{3}m_0 R \omega_0^2}{4g}\left[1 - \frac{m_0^2}{(m_0 + m)^2}\right]
+        \end{equation*}
+        或
+        \begin{equation}
+            \omega_0 = (m_0 + m)\sqrt{\frac{(9\sqrt{3} - 12)m + 2\sqrt{3}m_0}{3(2m_0 + m)m m_0}\frac{2g}{R}}
+            \label{eq:16.s20}
+        \end{equation}
+        由\eqref{eq:7.s20}、\eqref{eq:9.s20}、\eqref{eq:10.s20}、\eqref{eq:16.s20}式和题给条件得
+        \begin{equation}
+            \omega = \frac{m_0}{m_0 + 4m\sin^2\theta}\omega_0 = \frac{m_0}{m_0 + m}\omega_0 = \sqrt{\frac{(9\sqrt{3} - 12)m + 2\sqrt{3}m_0}{3(2m_0 + m)}\frac{2m_0 g}{mR}}
+            \label{eq:17.s20}
+        \end{equation}
+        由\eqref{eq:11.s20}、\eqref{eq:12.s20}、\eqref{eq:13.s20}、\eqref{eq:16.s20}式和题给条件得
+        \begin{equation}
+            v = \sqrt{gR}\sqrt{\frac{2\sqrt{3}m_0^2 + (12 - \sqrt{3})m m_0 + 3\sqrt{3}m^2}{6(2m_0 + m)m}}
+            \label{eq:18.s20}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

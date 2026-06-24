@@ -1,0 +1,78 @@
+\begin{solution}{9}
+设小球每次落地反弹时，反弹后的竖直速度大小是反弹前的 $\lambda$ 倍。第一次落地时竖直速度为
+\begin{equation}
+v _ {0} = \sqrt {2 g h}
+\label{eq:1.s9}
+\end{equation}
+第一次反弹竖直速度大小为
+\begin{equation}
+v _ {1} = \lambda \sqrt {2 g h}, \quad 0 < \lambda < 1
+\label{eq:2.s9}
+\end{equation}
+第一次反弹高度为
+\begin{equation}
+h _ {1} = \frac {v _ {1} ^ {2}}{2 g} = \lambda^ {2} h
+\label{eq:3.s9}
+\end{equation}
+第一次反弹后飞行时间为
+\begin{equation}
+t _ {1} = 2 \frac {v _ {1}}{g} = 2 \lambda \sqrt {\frac {2 h}{g}}
+\label{eq:4.s9}
+\end{equation}
+第一次反弹至第二次反弹时水平方向的位移为
+\begin{equation}
+x _ {1} = \sqrt {2 g h} t _ {1} = 4 \lambda h
+\label{eq:5.s9}
+\end{equation}
+小球在第一次反弹至第二次反弹之间的运动轨迹与其在地面的投影之间所包围的面积为
+\begin{equation}
+S _ {1} = \frac {2}{3} h _ {1} x _ {1} = \frac {8}{3} \lambda^ {3} h ^ {2}
+\label{eq:6.s9}
+\end{equation}
+设第 $n$ 次反弹后至 $n + 1$ 次反弹前的最大竖直速度大小和上升的最大高度分别为 $v_{n}$ 和 $h_n$ 。由题意和上述论证知
+\begin{equation}
+v _ {n + 1} = \lambda v _ {n},
+\label{eq:7.s9}
+\end{equation}
+\begin{equation}
+h _ {n + 1} = \lambda^ {2} h _ {n},
+\label{eq:8.s9}
+\end{equation}
+\begin{equation}
+t _ {n + 1} = \lambda t _ {n},
+\label{eq:9.s9}
+\end{equation}
+\begin{equation}
+x _ {n + 1} = \lambda x _ {n},
+\label{eq:10.s9}
+\end{equation}
+\begin{equation}
+S _ {n + 1} = \lambda^ {3} S _ {n}
+\label{eq:11.s9}
+\end{equation}
+$S_{1}, S_{2}, \cdots$ 构成一无穷递缩等比数列，其总和为
+\begin{equation}
+S = \sum_ {n = 1} ^ {\infty} S _ {n} = S _ {1} (1 + \lambda^ {3} + \lambda^ {6} + \dots) = \frac {S _ {1}}{1 - \lambda^ {3}} = \frac {8}{2 1} h ^ {2}
+\label{eq:12.s9}
+\end{equation}
+由\eqref{eq:6.s9}、\eqref{eq:12.s9}式有
+\begin{equation}
+\lambda = \frac {1}{2}
+\label{eq:13.s9}
+\end{equation}
+设 $I_{n}$ 表示小球在第 $n\quad(n\geq1)$ 次碰撞过程中小球受到的作用力的冲量，由动量定理有
+\begin{equation}
+I _ {n} = m v _ {n} - m (- v _ {n - 1}) = m (1 + \lambda) v _ {n - 1}
+\label{eq:14.s9}
+\end{equation}
+由于小球每次反弹前后速度的水平分量不变，小球每次碰撞过程中受到的沿水平方向的冲量为零。小球在各次与地面碰撞过程中所受到的总冲量为
+\begin{equation}
+I = \sum_ {n = 1} ^ {\infty} I _ {n} = (m v _ {0}) (1 + \lambda) (1 + \lambda + \lambda^ {2} + \dots) = m v _ {0} \frac {1 + \lambda}{1 - \lambda}
+\label{eq:15.s9}
+\end{equation}
+方向向上。将\eqref{eq:13.s9}式代入\eqref{eq:15.s9}式得
+\begin{equation}
+I = 3 m v _ {0} = 3 m \sqrt {2 g h}
+\label{eq:16.s9}
+\end{equation}
+\end{solution}

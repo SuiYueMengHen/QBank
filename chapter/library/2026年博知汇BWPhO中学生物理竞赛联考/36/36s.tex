@@ -1,0 +1,143 @@
+\begin{solution}{36}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            对无限长链，第 $n$ 个基元的A质点与 $\mathrm{B}_n$、$\mathrm{B}_{n - 1}$ 相连，$\mathrm{B}_n$ 与 $\mathrm{A}_n$、$\mathrm{A}_{n + 1}$ 相连：
+            \begin{equation}
+                m \ddot {u} _ {n} = k _ {1} (v _ {n} - u _ {n}) + k _ {2} (v _ {n - 1} - u _ {n})
+                \label{eq:1.s36}
+            \end{equation}
+            \begin{equation}
+                m \ddot {v} _ {n} = k _ {1} (u _ {n} - v _ {n}) + k _ {2} (u _ {n + 1} - v _ {n})
+                \label{eq:2.s36}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            代入 $u_{n} = U\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$，$v_{n} = V\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$，并用 $v_{n-1} = V\mathrm{e}^{-\mathrm{i}qa}\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$，$u_{n+1} = U\mathrm{e}^{\mathrm{i}qa}\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$，得
+            \begin{equation}
+                (m \omega^ {2} - k _ {1} - k _ {2}) U + (k _ {1} + k _ {2} \mathrm{e} ^ {- \mathrm{i} q a}) V = 0
+                \label{eq:3.s36}
+            \end{equation}
+            \begin{equation}
+                (k _ {1} + k _ {2} \mathrm{e} ^ {\mathrm{i} q a}) U + (m \omega^ {2} - k _ {1} - k _ {2}) V = 0
+                \label{eq:4.s36}
+            \end{equation}
+            非平凡解要求行列式为零:
+            \begin{equation}
+                (m \omega^ {2} - k _ {1} - k _ {2}) ^ {2} - (k _ {1} ^ {2} + k _ {2} ^ {2} + 2 k _ {1} k _ {2} \cos q a) = 0
+                \label{eq:5.s36}
+            \end{equation}
+            因此
+            \begin{equation}
+                \omega (q) = \sqrt {\frac {k _ {1} + k _ {2} \pm \sqrt {k _ {1} ^ {2} + k _ {2} ^ {2} + 2 k _ {1} k _ {2} \cos q a}}{m}}
+                \label{eq:6.s36}
+            \end{equation}
+            对于 $q = 0$，$\cos qa = 1$，有
+            \begin{equation}
+                \omega_ {1} (0) = 0, \quad \omega_ {2} (0) = \sqrt {\frac {2 \left(k _ {1} + k _ {2}\right)}{m}}
+                \label{eq:7.s36}
+            \end{equation}
+            对于 $q = \pi / a, \cos qa = -1$，有
+            \begin{equation}
+                \omega_ {1} (\pi / a) = \sqrt {\frac {2 k _ {1}}{m}}, \qquad \omega_ {2} (\pi / a) = \sqrt {\frac {2 k _ {2}}{m}}
+                \label{eq:8.s36}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由 \eqref{eq:3.s36} 式得
+            \begin{equation}
+                \frac {V}{U} = - \frac {m \omega^ {2} - k _ {1} - k _ {2}}{k _ {1} + k _ {2} \mathrm{e} ^ {- \mathrm{i} q a}} = \pm \frac {\sqrt {k _ {1} ^ {2} + k _ {2} ^ {2} + 2 k _ {1} k _ {2} \cos q a}}{k _ {1} + k _ {2} \mathrm{e} ^ {- \mathrm{i} q a}}
+                \label{eq:9.s36}
+            \end{equation}
+            当 $q \rightarrow 0$，声学支满足 $\omega \rightarrow 0$，则 $m\omega^{2} - k_{1} - k_{2} \rightarrow -(k_{1} + k_{2})$，同时 $k_{1} + k_{2}\mathrm{e}^{-\mathrm{i}qa} \rightarrow k_{1} + k_{2}$，由 \eqref{eq:9.s36} 式得 $V/U \rightarrow +1$，对应同相振动。光学支在 $q \rightarrow 0$ 有 $m\omega^{2} \rightarrow 2(k_{1} + k_{2})$，从而 $m\omega^{2} - k_{1} - k_{2} \rightarrow (k_{1} + k_{2})$，得 $V/U \rightarrow -1$，对应反相振动。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由 \eqref{eq:6.s36} 式与 \eqref{eq:8.s36} 式知在区间
+            \begin{equation}
+                \sqrt {\frac {2 k _ {\mathrm{min}}}{m}} <   \omega <   \sqrt {\frac {2 k _ {\mathrm{max}}}{m}}, \qquad k _ {\mathrm{min}} = \min (k _ {1}, k _ {2}), k _ {\mathrm{max}} = \max (k _ {1}, k _ {2})
+                \label{eq:10.s36}
+            \end{equation}
+            不存在实数 $q$ 使得频率落入该区间，因此存在禁带。中央禁带端点频率为
+            \begin{equation}
+                f _ {-} = \frac {1}{2 \pi} \sqrt {\frac {2 k _ {\mathrm{min}}}{m}}, \qquad f _ {+} = \frac {1}{2 \pi} \sqrt {\frac {2 k _ {\mathrm{max}}}{m}}
+                \label{eq:11.s36}
+            \end{equation}
+            当 $k_{1} = k_{2}$ 时两端点重合，中央禁带消失。
+
+            另外还有上方的无限宽禁带，即
+            \begin{equation}
+                \omega > \sqrt {\frac {2 (k _ {1} + k _ {2})}{m}}
+                \label{eq:12.s36}
+            \end{equation}
+            端点频率
+            \begin{equation}
+                f _ {\mathrm{m}} = \frac {1}{2 \pi} \sqrt {\frac {2 (k _ {1} + k _ {2})}{m}}
+                \label{eq:13.s36}
+            \end{equation}
+            当 $k_{1} = k_{2}$ 时该禁带并不会消失。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            左端 $\mathrm{A}_1$ 通过 $k_{2}$ 与刚性墙相连，且与 $\mathrm{B}_1$ 通过 $k_{1}$ 相连，因此
+            \begin{equation}
+                m \ddot {u} _ {1} = k _ {1} (v _ {1} - u _ {1}) - k _ {2} u _ {1}
+                \label{eq:14.s36}
+            \end{equation}
+            对 $n \geq 2$，$\mathrm{A}_n$ 与 $\mathrm{B}_n$、$\mathrm{B}_{n-1}$ 相连：
+            \begin{equation}
+                m \ddot {u} _ {n} = k _ {1} (v _ {n} - u _ {n}) + k _ {2} (v _ {n - 1} - u _ {n}), \quad n \geq 2
+                \label{eq:15.s36}
+            \end{equation}
+            对所有 $n \geq 1$，$\mathrm{B}_n$ 与 $\mathrm{A}_n$、$\mathrm{A}_{n+1}$ 相连：
+            \begin{equation}
+                m \ddot {v} _ {n} = k _ {1} (u _ {n} - v _ {n}) + k _ {2} (u _ {n + 1} - v _ {n}), \qquad n \geq 1
+                \label{eq:16.s36}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            代入 $u_{n} = A\lambda^{n - 1}\mathrm{e}^{-\mathrm{i}\omega t}, v_{n} = B\lambda^{n - 1}\mathrm{e}^{-\mathrm{i}\omega t}$。由 \eqref{eq:14.s36} 式得
+            \begin{equation}
+                - m \omega^ {2} A = k _ {1} (B - A) - k _ {2} A \implies (m \omega^ {2} - k _ {1} - k _ {2}) A + k _ {1} B = 0
+                \label{eq:17.s36}
+            \end{equation}
+            由 \eqref{eq:16.s36} 式并用 $u_{n+1} = \lambda u_n$ 得
+            \begin{equation}
+                - m \omega^ {2} B = k _ {1} (A - B) + k _ {2} (\lambda A - B) \implies (k _ {1} + k _ {2} \lambda) A + (m \omega^ {2} - k _ {1} - k _ {2}) B = 0
+                \label{eq:18.s36}
+            \end{equation}
+            同时还需满足 \eqref{eq:15.s36} 式。取 $n = 2$，用 $v_{2} = B\lambda \mathrm{e}^{-\mathrm{i}\omega t}$，$v_{1} = B\mathrm{e}^{-\mathrm{i}\omega t}$，$u_{2} = A\lambda \mathrm{e}^{-\mathrm{i}\omega t}$ 得
+            \begin{equation}
+                - m \omega^ {2} A \lambda = k _ {1} (B \lambda - A \lambda) + k _ {2} (B - A \lambda) \implies (m \omega^ {2} - k _ {1} - k _ {2}) A \lambda + (k _ {1} \lambda + k _ {2}) B = 0
+                \label{eq:19.s36}
+            \end{equation}
+            现在联立上述三式来推导 $\omega, \lambda$。组合 \eqref{eq:17.s36}、\eqref{eq:19.s36} 式得到
+            \begin{equation}
+                k _ {2} (m \omega^ {2} - k _ {1} - k _ {2}) = 0
+                \label{eq:20.s36}
+            \end{equation}
+            而 $k_{2} \neq 0$，故
+            \begin{equation}
+                \omega_ {\mathrm{edge}} = \sqrt {\frac {k _ {1} + k _ {2}}{m}}
+                \label{eq:21.s36}
+            \end{equation}
+            再由 \eqref{eq:17.s36}、\eqref{eq:18.s36} 式消去 $A, B$ 得
+            \begin{equation}
+                (m \omega^ {2} - k _ {1} - k _ {2}) ^ {2} - k _ {1} (k _ {1} + k _ {2} \lambda) = 0
+                \label{eq:22.s36}
+            \end{equation}
+            将 \eqref{eq:21.s36} 式给出的 $\omega_{\mathrm{edge}}$ 代入，又 $k_{1} \neq 0$，所以
+            \begin{equation}
+                \lambda = - \frac {k _ {1}}{k _ {2}}
+                \label{eq:23.s36}
+            \end{equation}
+            有趣的是，此时 $B = 0$。
+
+            对于端部局域模，要求 $|\lambda| < 1$，这要求
+            \begin{equation}
+                k _ {1} <   k _ {2}
+                \label{eq:24.s36}
+            \end{equation}
+            当 $k_{1} > k_{2}$ 时 $|\lambda| > 1$，端部局域解不满足收敛要求而不存在。
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

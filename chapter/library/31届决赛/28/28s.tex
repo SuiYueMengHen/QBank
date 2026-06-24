@@ -1,0 +1,92 @@
+\begin{solution}{28}
+  先分析光波在第一层介质中的来回传播。当光从光纤 (基体折射率为 $n_{1}$) 入射到折射率为 $n_{2}$ 的第一层介质表面时，假设入射光场 (电场强度) 为 $a$，则其反射光场为
+  \begin{equation}
+    a_{r 1} = r_{1} a
+    \label{eq:1.p28}
+  \end{equation}
+  式中 $r_1 = \frac{n_1 - n_2}{n_1 + n_2}$，其透射光场为
+  \begin{equation}
+    a_{t 1} = t_{1} a
+    \label{eq:2.p28}
+  \end{equation}
+  式中 $t_1 = \frac{2n_1}{n_1 + n_2}$，当光波射到折射率为 $n_{1}$ 的第二层介质表面时，先不考虑光波在第一层介质中传播过程中的相位变化，其反射光场为
+  \begin{equation}
+    a_{r 2} = r_{2} t_{1} a = \frac{n_{2} - n_{1}}{n_{1} + n_{2}} t_{1} a = - r_{1} t_{1} a
+    \label{eq:3.p28}
+  \end{equation}
+  注意到 $t_{1}>0$，可知 \eqref{eq:3.p28} 式等式右端的因子(-1)表示 $a_{r2}$ 和 $a_{r1}$ 之间存在 $180^{\circ}$ 相位差。
+
+  现考虑光波在第一层介质中来回传播过程中的相位变化。如果第一层介质最小厚度（即小于光波在该介质中的波长）为
+  \begin{equation}
+    d_{2} = \frac{\lambda}{4 n_{2}} = \frac{1060 \mathrm{nm}}{4 \times 1.55} \approx 171 \mathrm{nm}
+    \label{eq:4.p28}
+  \end{equation}
+  则反射光场 $a_{r2}$ 在入射处界面要附加 $180^{\circ}$ 相位差，它与反射光场 $a_{r1}$ 正好相干叠加加强。则在入射处界面反射光场为
+  \begin{equation}
+    a_{r 2}^{\prime} = t_{1} r_{1} a
+    \label{eq:5.p28}
+  \end{equation}
+  它透过第一层介质后成为
+  \begin{equation}
+    a_{r 2}^{\prime \prime} = t_{2} t_{1} r_{1} a
+    \label{eq:6.p28}
+  \end{equation}
+  式中
+  \begin{equation}
+    r_{1} = - r_{2} = \frac{n_{1} - n_{2}}{n_{1} + n_{2}}, t_{1} = \frac{2 n_{1}}{n_{1} + n_{2}}, t_{2} = \frac{2 n_{2}}{n_{1} + n_{2}}
+    \label{eq:7.p28}
+  \end{equation}
+
+  再分析光波在第一、二层介质的来回传播。当光波射到折射率为 $n_1$ 的第二层介质的前界面时，先不考虑光波在第一、二层介质中传播过程中的相位变化，其透射光场为
+  \begin{equation}
+    a_{t 2} = t_{2} a_{t 1} = t_{2} t_{1} a
+    \label{eq:8.p28}
+  \end{equation}
+  则按照前面类似的分析，$a_{t2}$ 在通过第二层介质经第二、三层介质界面反射并返回至在入射处界面，反射光场应为
+  \begin{equation}
+    a_{r 3}^{\prime} = (t_{1} t_{2})^{2} r_{1} a
+    \label{eq:9.p28}
+  \end{equation}
+  现考虑光波在第一、二层介质中传播过程中的相位变化，若第二层介质取最小厚度
+  \begin{equation}
+    d_{1} = \frac{\lambda}{4 n_{1}} = \frac{1060 \mathrm{nm}}{4 \times 1.51} \approx 175 \mathrm{nm}
+    \label{eq:10.p28}
+  \end{equation}
+  则光波在第一、二层介质中往返引起的相位变化为 $360^{\circ}$ 相位差。因而从第三个界面处反射并返回至在入射处界面处时，其反射光场为
+  \begin{equation}
+    a_{r 3}^{\prime \prime} = a_{r 3}^{\prime} = (t_{1} t_{2})^{2} r_{1} a
+    \label{eq:11.p28}
+  \end{equation}
+  它与反射光场 $a_{r1}$、$a_{r2}^{\prime \prime}$ 正好相干叠加加强。
+
+  这样，不考虑每层界面的多次反射，经反射器反射后，入射端的总光场可表示为：
+  \begin{equation}
+    E = r_{1} a + r_{1} t_{1} t_{2} a + r_{1} t_{1}^{2} t_{2}^{2} a + \dots + r_{1} t_{1}^{N} t_{2}^{N} a = r_{1} a \frac{1 - (t_{1} t_{2})^{N + 1}}{1 - t_{1} t_{2}}
+    \label{eq:12.p28}
+  \end{equation}
+  从 \eqref{eq:12.p28} 式得
+  \begin{equation}
+    N = \frac{\ln \left[ 1 - \frac{\sqrt{R} (1 - t_{1} t_{2})}{|r_{1}^{*}|} \right]}{\ln (t_{1} t_{2})} - 1 = 20.68
+    \label{eq:13.p28}
+  \end{equation}
+  反射层总数至少为 21。
+
+  [另一方法：由于 $n_1$ 与 $n_2$ 非常接近，$t_1t_2 \approx 1$，\eqref{eq:12.p28} 式可近似为：
+  \begin{equation}
+    E = r_{1} a \frac{1 - (t_{1} t_{2})^{N + 1}}{1 - t_{1} t_{2}} \approx (N + 1) r_{1} a
+  \end{equation}
+  如果要求反射率达到 8\%，则应有
+  \begin{equation}
+    E^{2} = \left[ (N + 1) r_{1} a \right]^{2} = (N + 1)^{2} r_{1}^{2} a^{2} = 0.08 a^{2}
+  \end{equation}
+  由题给数据得
+  \begin{equation}
+    r_{1} = \frac{n_{1} - n_{2}}{n_{1} + n_{2}} = \frac{1.51 - 1.55}{1.51 + 1.55} \approx -0.01307
+  \end{equation}
+  由 (14) 式得
+  \begin{equation}
+    N = \sqrt{\frac{0.08}{|r_{1}|^{2}}} - 1 \approx 20.64
+    \label{eq:14.p28}
+  \end{equation}
+  反射层总数至少为21。]
+\end{solution}

@@ -1,0 +1,137 @@
+\begin{solution}{32}
+  \begin{subsolution}
+    质子、氘、氦-3、氦-4和电子在热运动中类似于单原子理想气体，不需要考虑转动自由度，因此它们热运动的平均动能为
+    \begin{equation}
+      E_{\mathrm{k}} = \frac{3}{2} k T = \frac{1.5 \times 1.381 \times 10^{-23} \times 1.5 \times 10^{7}}{1.602 \times 10^{-19}} \mathrm{keV} \approx 2 \mathrm{keV}
+      \label{eq:1.p32}
+    \end{equation}
+    由于系统主要有质子和电子组成，质子每摩尔质量为 $1 \, g$；由已知密度可得质子摩尔体积为
+    \begin{equation}
+      V_{\mathrm{mol}} = \frac{1}{1.6 \times 10^{8}} \quad \mathrm{m}^{3}
+      \label{eq:2.p32}
+    \end{equation}
+    \begin{equation}
+      P = 2 \times \frac{R T}{V_{\mathrm{mol}}} = 2 \times 1.6 \times 10^{8} \times 1.5 \times 10^{7} \times 8.31 \mathrm{N} / \mathrm{m}^{2} = 2 \times 2 \times 10^{16} \mathrm{N} / \mathrm{m}^{2} = 4 \times 10^{11} \mathrm{atm}
+      \label{eq:3.p32}
+    \end{equation}
+    式中出现因子 2 是因为考虑了等离子体中电子贡献的缘故。
+  \end{subsolution}
+  \begin{subsolution}
+    由反应前后电荷守恒，可知 x 粒子的电荷
+    \begin{equation}
+      Q_{\mathrm{x}} = 0
+      \label{eq:4.p32}
+    \end{equation}
+    也就是说，该粒子为中性粒子。
+
+    由第（1）问可知，氘和质子热运动的平均动能只有 0.002 MeV，在误差范围内，因此核反应前它们的动能可以忽略不计，即可以看作静止。
+
+    设 x 粒子的质量为 $m_{x}$，动量为 $p_{x}$，则由能量和动量守恒得
+    \begin{equation}
+      m_{\mathrm{D}} c^{2} + m_{\mathrm{H}} c^{2} = \sqrt{m_{\mathrm{He3}}^{2} c^{4} + p_{\mathrm{He3}}^{2} c^{2}} + \sqrt{m_{\mathrm{x}}^{2} c^{4} + p_{\mathrm{x}}^{2} c^{2}}
+      \label{eq:5.p32}
+    \end{equation}
+    \begin{equation}
+      p_{\mathrm{He} 3} = p_{\mathrm{x}}
+      \label{eq:6.p32}
+    \end{equation}
+    由 \eqref{eq:5.p32} 式知
+    \begin{equation}
+      p_{\mathrm{x}} c < m_{\mathrm{D}} c^{2} + m_{\mathrm{H}} c^{2} - m_{\mathrm{He3}} c^{2} = 5.5 \mathrm{MeV}
+      \label{eq:7.p32}
+    \end{equation}
+    因此有
+    \begin{equation}
+      p_{\mathrm{x}} c = m_{\mathrm{He3}} c^{2}
+    \end{equation}
+    由 \eqref{eq:6.p32} 式，可将 \eqref{eq:5.p32} 式改写为
+    \begin{equation}
+      m_{\mathrm{D}} c^{2} + m_{\mathrm{H}} c^{2} - m_{\mathrm{He3}} c^{2} = \frac{p_{\mathrm{x}}^{2}}{2 m_{\mathrm{He3}}} + \sqrt{m_{\mathrm{x}}^{2} c^{4} + p_{\mathrm{x}}^{2} c^{2}} \approx \sqrt{m_{\mathrm{x}}^{2} c^{4} + p_{\mathrm{x}}^{2} c^{2}}
+      \label{eq:8.p32}
+    \end{equation}
+    即氦-3 的动能 $E_{kHe3} \approx 0$，忽略不计，x 粒子的总能量（含静止能量）为 5.5 MeV，因此其静止质量 $m_{x} < 5.5 MeV/c^{2}$，这么轻的中性粒子，在题给可选的粒子中应该是 $\gamma$ 光子，$m_{x} = 0$，其动能和动量分别为
+    \begin{equation}
+      E_{\mathrm{kx}} = 5.5 \mathrm{MeV}, p_{\mathrm{x}} = 5.5 \mathrm{MeV} / c
+      \label{eq:9.p32}
+    \end{equation}
+    因此不可能找到一个参照系，使得光子的动能为零。
+  \end{subsolution}
+  \begin{subsolution}
+    由反应（I）前后能量守恒可知，反应产物的总动能
+    \begin{equation}
+      E_{\mathrm{k}} = 2 m_{\mathrm{H}} c^{2} - m_{\mathrm{D}} c^{2} - m_{\mathrm{e}} c^{2} - m_{\nu} c^{2} = 0.42 \mathrm{MeV}
+      \label{eq:10.p32}
+    \end{equation}
+    远小于氘核的静止能量，利用第（2）问的分析方法可知，氘核的动能可以忽略不计，即
+    \begin{equation}
+      E_{\mathrm{kD}} < 0.01 \mathrm{MeV} \approx 0
+      \label{eq:11.p32}
+    \end{equation}
+    氘核动量可以不为零，但要满足 $p_{D} + p_{e} + p_{v} = 0$，因此不能确定正电子和中微子的动能，只有如下关系
+    \begin{equation}
+      E_{\mathrm{ke}} + E_{\mathrm{k} \nu} = 0.42 \mathrm{MeV}, 0 < E_{\mathrm{ke}} < 0.42 \mathrm{MeV}, 0 < E_{\mathrm{k} \nu} < 0.42 \mathrm{MeV}
+      \label{eq:12.p32}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    正负电子对湮灭会产生一对光子，其能量相等，动量也相等但方向相反。
+    \begin{equation}
+      h v_{0} = h \frac{c}{\lambda_{0}} = m c^{2} = 0.51 \mathrm{MeV}
+    \end{equation}
+    \begin{equation}
+      \lambda_{0} = \frac{h c}{m c^{2}} = \frac{6.626 \times 10^{-34} \times 3 \times 10^{8}}{0.51 \times 1.6 \times 10^{-13}} \mathrm{m} = 2.43 \times 10^{-12} \mathrm{m}
+      \label{eq:13.p32}
+    \end{equation}
+    由前面的分析可知，$\gamma$ 光子与离子的碰撞几乎为完全弹性碰撞，且光子能量远小于离子静能，没有能量损失，不改变光子的波长；因此就光子波长的改变而言，我们只需考虑光子与电子的散射。能量为 $E_0 = h\nu_0$ 的光子与近似静止的电子进行康普顿散射后，产生动量为 $P_{e}$、动能为 $T$ 的电子和能量为 $E = h\nu$ 的光子，则由能量守恒和动量守恒，得
+    \begin{equation}
+      h \nu_{0} = h \nu + T
+      \label{eq:14.p32}
+    \end{equation}
+    \begin{equation}
+      \frac{h \nu_{0}}{c} = \frac{h \nu}{c} \cos \phi + P_{e} \cos \theta
+      \label{eq:15.p32}
+    \end{equation}
+    \begin{equation}
+      0 = \frac{- h \nu}{c} \sin \phi + P_{e} \sin \theta
+      \label{eq:16.p32}
+    \end{equation}
+    从 \eqref{eq:15.p32} \eqref{eq:16.p32} 式消去 $\theta$ 可得
+    \begin{equation}
+      P_{\mathrm{e}}^{2} = \frac{h^{2}}{c^{2}} (\nu_{0}^{2} + \nu^{2} - 2 \nu_{0} \nu \cos \phi)
+      \label{eq:17.p32}
+    \end{equation}
+    由相对论能量动量关系
+    \begin{equation}
+      P_{\mathrm{e}}^{2} c^{2} = (m c^{2} + T)^{2} - m^{2} c^{4} = T^{2} + 2 T m c^{2}
+    \end{equation}
+    和 \eqref{eq:14.p32} 式得
+    \begin{equation}
+      (E_{0} - E)^{2} + 2 (E_{0} - E) m c^{2} = E_{0}^{2} + E^{2} - 2 E_{0} E \cos \phi
+    \end{equation}
+    整理后可得
+    \begin{equation}
+      E = \frac{E_{0}}{1 + \frac{E_{0}}{m c^{2}} (1 - \cos \phi)}
+      \label{eq:18.p32}
+    \end{equation}
+    上式化简可得
+    \begin{equation}
+      \lambda - \lambda_{0} = \frac{h}{m c} (1 - \cos \phi)
+      \label{eq:19.p32}
+    \end{equation}
+    最后一次康普顿散射后的波长为 $\lambda_{f}=5.4\times10^{-7}m$，令一次康普顿散射的散射角为 $\phi$，则有
+    \begin{equation}
+      \lambda_{f} - \lambda_{0} = \frac{h \times 10^{26}}{m c} (1 - \overline{\cos \phi})
+      \label{eq:20.p32}
+    \end{equation}
+    假设 $\phi$ 很小，有
+    \begin{equation}
+      (1 - \overline{\cos \phi}) \approx \frac{\overline{\phi^{2}}}{2} = \frac{\lambda_{f} m c}{h \times 10^{26}}
+    \end{equation}
+    于是
+    \begin{equation}
+      \phi = \sqrt{\frac{2 \lambda_{f} m c}{h \times 10^{26}}} = 6.7 \times 10^{-11} \mathrm{rad}
+      \label{eq:21.p32}
+    \end{equation}
+    可见前述假设成立。
+  \end{subsolution}
+\end{solution}

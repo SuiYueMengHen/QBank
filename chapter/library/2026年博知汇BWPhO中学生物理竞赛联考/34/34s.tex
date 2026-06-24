@@ -1,0 +1,137 @@
+\begin{solution}{34}
+    \begin{subsolution}
+        动能
+        \begin{equation}
+            E _ {k} = \frac {1}{2} m \dot {r} ^ {2} + \frac {1}{2} m r ^ {2} \dot {\theta} ^ {2}
+            \label{eq:1.s34}
+        \end{equation}
+        所以 $\theta$ 对应的广义动量
+        \begin{equation}
+            p _ {\theta} = \frac {\partial E _ {k}}{\partial \dot {\theta}} = m r ^ {2} \dot {\theta}
+            \label{eq:2.s34}
+        \end{equation}
+        此即角动量 $L$。注意题目已经强调“根据题目所给信息”，因此必须证明 $p_{\theta}$ 就是角动量。
+
+        显然角动量是守恒量，所以
+        \begin{equation}
+            n _ {\theta} h = \oint p _ {\theta} \mathrm{d} \theta = L \cdot 2 \pi \Rightarrow L = n _ {\theta} \frac {h}{2 \pi} = n _ {\theta} \hbar
+            \label{eq:3.s34}
+        \end{equation}
+        此即玻尔角动量量子化条件。
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由玻尔—索末菲量子化条件得到
+            \begin{equation}
+                n h = 4 \int_ {0} ^ {x _ {c}} \sqrt {2 m (E - m V (x))} \mathrm{d} x = 4 \sqrt {2 m E} \int_ {0} ^ {x _ {c}} \sqrt {1 - \frac {x ^ {s}}{x _ {c} ^ {s}}} \mathrm{d} x
+                \label{eq:4.s34}
+            \end{equation}
+            其中 $E = \max_{c}^{s}$。将积分无量纲化，令 $y = x^{s} / x_{c}^{s}$，则
+            \begin{equation}
+                n h = 4 \sqrt {2 m E} \cdot \frac {x _ {c}}{s} \int_ {0} ^ {1} y ^ {\frac {1}{s} - 1} \sqrt {1 - y} \mathrm{d} y \propto \sqrt {E} \cdot E ^ {1 / s}
+                \label{eq:5.s34}
+            \end{equation}
+            因此
+            \begin{equation}
+                E _ {n} \propto n ^ {\frac {2 s}{s + 2}}
+                \label{eq:6.s34}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            对于谐振子势 $s = 2$，而周期 $T$ 为定值，所以
+            \begin{equation}
+                \frac {\partial E}{\partial n} = \frac {\hbar}{T} = \mathrm{const.} \Rightarrow E _ {n} \propto n
+                \label{eq:7.s34}
+            \end{equation}
+            与（2.1）结论相符。
+
+            对于无限深方势阱
+            \begin{equation}
+                s = \infty
+                \label{eq:8.s34}
+            \end{equation}
+            对于经典粒子
+            \begin{equation}
+                E = \frac {1}{2} m v ^ {2} \implies v = \sqrt {\frac {2 E}{m}}
+                \label{eq:9.s34}
+            \end{equation}
+            所以
+            \begin{equation}
+                T \propto \frac {1}{v} \propto \frac {1}{\sqrt {E}}
+                \label{eq:10.s34}
+            \end{equation}
+            从而
+            \begin{equation}
+                \frac {\partial E}{\partial n} \propto \sqrt {E} \implies E _ {n} \propto n ^ {2}
+                \label{eq:11.s34}
+            \end{equation}
+            与（2.1）结论相符。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            动能
+            \begin{equation}
+                E _ {k} = \frac {1}{2} m \dot {r} ^ {2} + \frac {1}{2} m r ^ {2} \dot {\theta} ^ {2} + \frac {1}{2} m r ^ {2} \sin^ {2} \theta \dot {\varphi} ^ {2}
+                \label{eq:12.s34}
+            \end{equation}
+            从而
+            \begin{equation}
+                p _ {r} = \frac {\partial E _ {k}}{\partial \dot {r}} = m \dot {r}, \quad p _ {\theta} = \frac {\partial E _ {k}}{\partial \dot {\theta}} = m r ^ {2} \dot {\theta}, \quad p _ {\varphi} = \frac {\partial E _ {k}}{\partial \dot {\varphi}} = m r ^ {2} \sin^ {2} \theta \dot {\varphi}
+                \label{eq:13.s34}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            （i）注意到 $p_{\varphi}$ 是角动量的 $z$ 分量，故 $p_{\varphi}$ 是守恒量。由玻尔一索末菲量子化条件
+            \begin{equation}
+                \oint p _ {\varphi} \mathrm{d} \varphi = n _ {\varphi} h \Rightarrow p _ {\varphi} = n _ {\varphi} \hbar
+                \label{eq:14.s34}
+            \end{equation}
+            （ii）接下来考虑 $\theta$，由于角动量 $L$ 是守恒量，我们试着把 $p_{\theta}$ 往 $L$ 上凑。因为
+            \begin{equation}
+                L ^ {2} = p _ {\theta} ^ {2} + \frac {p _ {\varphi} ^ {2}}{\sin^ {2} \theta} \Rightarrow p _ {\theta} = \pm \sqrt {L ^ {2} - \frac {n _ {\varphi} ^ {2} \hbar^ {2}}{\sin^ {2} \theta}}
+                \label{eq:15.s34}
+            \end{equation}
+            在 $\theta$ 取到边界值时 $p_{\theta} = 0$，所以
+            \begin{equation}
+                \theta_ {1} = \arcsin {\frac {n _ {\varphi} \hbar}{L}}, \quad \theta_ {2} = \pi - \theta_ {1}
+                \label{eq:16.s34}
+            \end{equation}
+            根据玻尔—索末菲量子化条件
+            \begin{equation}
+                \oint p _ {\theta} \mathrm{d} \theta = n _ {\theta} h = 2 \int_ {\theta_ {1}} ^ {\theta_ {2}} \sqrt {L ^ {2} - \frac {n _ {\varphi} ^ {2} \hbar^ {2}}{\sin^ {2} \theta}} \mathrm{d} \theta = 2 n _ {\varphi} \hbar \int_ {\theta_ {1}} ^ {\pi - \theta_ {1}} \sqrt {\frac {1}{\sin^ {2} \theta_ {1}} - \frac {1}{\sin^ {2} \theta}} \mathrm{d} \theta
+                \label{eq:17.s34}
+            \end{equation}
+            由题给第2个定积分公式可知
+            \begin{equation}
+                n _ {\theta} h = n _ {\varphi} h \left(\csc \theta_ {1} - 1\right) = n _ {\varphi} h \left(\frac {L}{n _ {\varphi} \hbar} - 1\right) \Rightarrow L = \left(n _ {\varphi} + n _ {\theta}\right) \hbar
+                \label{eq:18.s34}
+            \end{equation}
+            (iii) 由于总能量 $E$ 是守恒量，因此
+            \begin{equation}
+                p _ {r} = \pm \sqrt {2 m E - m ^ {2} \omega^ {2} r ^ {2} - \frac {L ^ {2}}{r ^ {2}}}
+                \label{eq:19.s34}
+            \end{equation}
+            在 $r$ 取到边界值时 $p_r = 0$，所以根据韦达定理，边界值平方 $r_1^2, r_2^2$ 满足
+            \begin{equation}
+                r _ {1} ^ {2} + r _ {2} ^ {2} = \frac {2 E}{m \omega^ {2}}, r _ {1} ^ {2} r _ {2} ^ {2} = \frac {L ^ {2}}{m ^ {2} \omega^ {2}}
+                \label{eq:20.s34}
+            \end{equation}
+            根据玻尔—索末菲量子化条件
+            \begin{equation}
+                \oint p _ {r} \mathrm{d} r = n _ {r} h = 2 \int_ {r _ {1}} ^ {r _ {2}} \sqrt {2 m E - m ^ {2} \omega^ {2} r ^ {2} - \frac {L ^ {2}}{r ^ {2}}} \mathrm{d} r = 2 m \omega \int_ {r _ {1}} ^ {r _ {2}} \frac {\sqrt {(r ^ {2} - r _ {1} ^ {2}) (r _ {2} ^ {2} - r ^ {2})}}{r} \mathrm{d} r
+                \label{eq:21.s34}
+            \end{equation}
+            由题给第1个定积分公式可知
+            \begin{equation}
+                n _ {r} h = 2 m \omega \cdot \frac {\pi}{4} (r _ {1} ^ {2} + r _ {2} ^ {2} - 2 r _ {1} r _ {2}) = \frac {\pi}{\omega} (E - \omega L)
+                \label{eq:22.s34}
+            \end{equation}
+            所以
+            \begin{equation}
+                E (n _ {r}, n _ {\theta}, n _ {\varphi}) = (2 n _ {r} + n _ {\theta} + n _ {\varphi}) \hbar \omega
+                \label{eq:23.s34}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

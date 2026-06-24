@@ -1,0 +1,71 @@
+\begin{solution}{5}
+\begin{subsolution}
+一个带电量为 $q$ 的点电荷在电容器参考系 $S$ 中的速度为 $(u_x, u_y, u_z)$，在运动的参考系 $S'$ 中的速度为 $(u_x', u_y', u_z')$。在参考系 $S$ 中只存在磁场 $(B_x, B_y, B_z) = (-B, 0, 0)$，因此这个点电荷在参考系 $S$ 中所受磁场的作用力为
+\begin{align}
+F_x &= 0, \nonumber\\
+F_y &= -q u_z B, \nonumber\\
+F_z &= q u_y B \nonumber
+\end{align}
+在参考系 $S'$ 中可能既有电场 $(E_x', E_y', E_z')$ 又有磁场 $(B_x', B_y', B_z')$，因此点电荷 $q$ 在 $S'$ 参考系中所受电场和磁场的作用力的合力为
+\begin{align}
+F_x' &= q'(E_x' + u_y' B_z' - u_z' B_y'), \nonumber\\
+F_y' &= q'(E_y' - u_x' B_z' + u_z' B_x'), \nonumber\\
+F_z' &= q'(E_z' + u_x' B_y' - u_y' B_x') \nonumber
+\end{align}
+两参考系中电荷、合力和速度的变换关系为
+\begin{align}
+q' &= q, \nonumber\\
+(F_x', F_y', F_z') &= (F_x, F_y, F_z), \nonumber\\
+(u_x', u_y', u_z') &= (u_x, u_y, u_z) - (0, v, 0) \nonumber
+\end{align}
+由(1)、(2)、(3)式可知电磁场在两参考系中的电场强度和磁感应强度满足
+\begin{align}
+E_x' + (u_y - v) B_z' - u_z B_y' &= 0, \nonumber\\
+E_y' - u_x B_z' + u_z B_x' &= -u_z B, \nonumber\\
+E_z' + u_x B_y' - (u_y - v) B_x' &= u_y B \nonumber
+\end{align}
+它们对于任意的 $(u_x, u_y, u_z)$ 都成立，故
+\begin{equation}
+(E_x', E_y', E_z') = (0, 0, v B), \quad (B_x', B_y', B_z') = (-B, 0, 0)
+\label{eq:5.s5}
+\end{equation}
+可见两参考系中的磁场相同，但在运动的参考系 $S'$ 中却出现了沿 $z$ 方向的匀强电场。
+\end{subsolution}
+
+\begin{subsolution}
+现在，电中性液体在平行板电容器两极板之间以速度 $(0, v, 0)$ 匀速运动。电容器参考系 $S$ 中的磁场会在液体参考系 $S'$ 中产生由\eqref{eq:5.s5}式中第一个方程给出的电场。这个电场会把液体极化，使得液体中的电场为
+\begin{equation}
+(E_x', E_y', E_z') = \frac{\varepsilon_0}{\varepsilon} (0, 0, v B).
+\label{eq:6.s5}
+\end{equation}
+为了求出电容器参考系 $S$ 中的电场，我们再次考虑电磁场的电场强度和磁感应强度在两个参考系之间的变换，从液体参考系 $S'$ 中的电场和磁场来确定电容器参考系 $S$ 中的电场和磁场。考虑一带电量为 $q$ 的点电荷在两参考系中所受的电场和磁场的作用力。在液体参考系 $S'$ 中，这力 $(F_x', F_y', F_z')$ 如(2)式所示。它在电容器参考系 $S$ 中的形式为
+\begin{align}
+F_x &= q(E_x + u_y B_z - u_z B_y), \nonumber\\
+F_y &= q(E_y - u_x B_z + u_z B_x), \nonumber\\
+F_z &= q(E_z + u_x B_y - u_y B_x) \nonumber
+\end{align}
+利用两参考系中电荷、合力和速度的变换关系(3)以及\eqref{eq:6.s5}式，可得
+\begin{align}
+E_x + u_y B_z - u_z B_y &= 0, \nonumber\\
+E_y - u_x B_z + u_z B_x &= -u_z B, \nonumber\\
+E_z + u_x B_y - u_y B_x &= \frac{\varepsilon_0 v B}{\varepsilon} + (u_y - v) B \nonumber
+\end{align}
+对于任意的 $(u_x, u_y, u_z)$ 都成立，故
+\begin{equation}
+(E_x, E_y, E_z) = (0, 0, (\frac{\varepsilon_0}{\varepsilon} - 1) v B), \quad (B_x, B_y, B_z) = (-B, 0, 0)
+\label{eq:9.s5}
+\end{equation}
+可见，在电容器参考系 $S$ 中的磁场仍为原来的磁场，现由于运动液体的极化，也存在电场，电场强度如\eqref{eq:9.s5}中第一式所示。
+
+注意到\eqref{eq:9.s5}式所示的电场为均匀电场，由它产生的电容器上、下极板之间的电势差为
+\begin{equation}
+V = -E_z d.
+\label{eq:10.s5}
+\end{equation}
+由\eqref{eq:9.s5}式中第一式和\eqref{eq:10.s5}式得
+\begin{equation}
+V = \left(1 - \frac{\varepsilon_0}{\varepsilon}\right) v B d.
+\label{eq:11.s5}
+\end{equation}
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,147 @@
+\begin{solution}{33}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            记粒子质量为 $m$，则粒子受力（以沿 $z$ 轴向上为正）
+            \begin{equation}
+                F (z) = \frac {N q Q}{4 \pi \varepsilon_ {0}} \frac {z}{(a ^ {2} + z ^ {2}) ^ {3 / 2}} - m g
+                \label{eq:1.s33}
+            \end{equation}
+            令 $F(z_0) = 0$ 可得
+            \begin{equation}
+                m = \frac {N q Q}{4 \pi \varepsilon_ {0} g} \frac {z _ {0}}{(a ^ {2} + z _ {0} ^ {2}) ^ {3 / 2}}
+                \label{eq:2.s33}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            对 $F$ 求一阶导得到
+            \begin{equation}
+                F ^ {\prime} (z _ {0}) = - \frac {N q Q}{4 \pi \varepsilon_ {0}} \frac {2 z _ {0} ^ {2} - a ^ {2}}{(a ^ {2} + z _ {0} ^ {2}) ^ {5 / 2}}
+                \label{eq:3.s33}
+            \end{equation}
+            可见稳定平衡的条件为
+            \begin{equation}
+                z _ {0} > \frac {a}{\sqrt {2}}
+                \label{eq:4.s33}
+            \end{equation}
+            相应的小振动角频率
+            \begin{equation}
+                \omega_ {z} = \sqrt {- \frac {F ^ {\prime} (z _ {0})}{m}} = \sqrt {\left. \frac {N q Q (2 z _ {0} ^ {2} - a ^ {2})}{4 \pi \varepsilon_ {0} (a ^ {2} + z _ {0} ^ {2}) ^ {5 / 2}} \right/ \frac {N q Q z _ {0}}{4 \pi \varepsilon_ {0} g (a ^ {2} + z _ {0} ^ {2}) ^ {3 / 2}}} = \sqrt {\frac {g (2 z _ {0} ^ {2} - a ^ {2})}{z _ {0} (a ^ {2} + z _ {0} ^ {2})}}
+                \label{eq:5.s33}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由高斯定理和电势定义式可知
+            \begin{equation}
+                \nabla \cdot \pmb {E} = \frac {1}{r} \frac {\partial}{\partial r} (r E _ {r}) + \frac {\partial E _ {z}}{\partial z} = 0 \implies E _ {r} \approx - \frac {1}{2} r \frac {\mathrm{d} E _ {z}}{\mathrm{d} z}
+                \label{eq:6.s33}
+            \end{equation}
+            由（1.2）问可知
+            \begin{equation}
+                f _ {r} = Q E _ {r} \approx - \frac {1}{2} r F ^ {\prime} (z _ {0}) = \frac {1}{2} m \omega_ {z} ^ {2} r
+                \label{eq:7.s33}
+            \end{equation}
+            方法一：复数法
+
+            对于测试微粒，其运动方程为
+            \begin{equation}
+                m \ddot {\pmb {r}} = \frac {1}{2} m \omega_ {z} ^ {2} \pmb {r} + Q \dot {\pmb {r}} \times \pmb {B} _ {0}
+                \label{eq:8.s33}
+            \end{equation}
+            引入复数 $\tilde{w} = x + \mathrm{i}y$ 表征粒子的位置，则上述方程化为
+            \begin{equation}
+                m \ddot {\tilde {w}} = \frac {1}{2} m \omega_ {z} ^ {2} \tilde {w} + \mathrm{i} Q B _ {0} \dot {\tilde {w}} \implies \ddot {\tilde {w}} - 2 \mathrm{i} \omega_ {L} \dot {\tilde {w}} - \frac {1}{2} \omega_ {z} ^ {2} \tilde {w} = 0
+                \label{eq:9.s33}
+            \end{equation}
+            设 $\tilde{w} \propto \mathrm{e}^{\mathrm{i}\omega t}$，得特征方程
+            \begin{equation}
+                \omega^ {2} - 2 \omega_ {L} \omega + \frac {\omega_ {z} ^ {2}}{2} = 0
+                \label{eq:10.s33}
+            \end{equation}
+            故两角频率为
+            \begin{equation}
+                \omega_ {\pm} = \omega_ {L} \pm \sqrt {\omega_ {L} ^ {2} - \frac {\omega_ {z} ^ {2}}{2}}
+                \label{eq:11.s33}
+            \end{equation}
+            方法二：换系法
+
+            换到以 $\Omega$ 转动的参考系中，使得科里奥利力和相对速度对应的洛伦兹力平衡，则
+            \begin{equation}
+                2 m \pmb {v} ^ {\prime} \times \pmb {\Omega} + Q \pmb {v} ^ {\prime} \times \pmb {B} = \mathbf {0} \Rightarrow \pmb {\Omega} = \frac {Q B _ {0}}{2 m} \hat {\pmb {z}} = \omega_ {L} \hat {\pmb {z}}
+                \label{eq:8'.s33}
+            \end{equation}
+            此时离心力和惯性系带来的速度对应的洛伦兹力的合力
+            \begin{equation}
+                \pmb {f} = (m \varOmega^ {2} - Q B _ {0} \varOmega) \pmb {r} = - m \omega_ {L} ^ {2} \pmb {r}
+                \label{eq:9'.s33}
+            \end{equation}
+            结合电场力 $f_{r}$，不难看出粒子在这个参考系中进行角频率为
+            \begin{equation}
+                \omega^ {\prime} = \sqrt {\frac {m \omega_ {L} ^ {2} - \frac {1}{2} m \omega_ {z} ^ {2}}{m}} = \sqrt {\omega_ {L} ^ {2} - \frac {\omega_ {z} ^ {2}}{2}}
+                \label{eq:10'.s33}
+            \end{equation}
+            的简谐振动，故在原始参考系中看来，两个角频率
+            \begin{equation}
+                \omega_ {\pm} = \varOmega \pm \omega^ {\prime} = \omega_ {L} \pm \sqrt {\omega_ {L} ^ {2} - \frac {\omega_ {z} ^ {2}}{2}}
+                \label{eq:11'.s33}
+            \end{equation}
+            回到两个方法的公共部分：
+
+            平面稳定条件为根号内的表达式严格大于零，即
+            \begin{equation}
+                \omega_ {L} ^ {2} > \frac {\omega_ {z} ^ {2}}{2} \iff B _ {0} > \frac {\sqrt {2} m \omega_ {z}}{Q}
+                \label{eq:12.s33}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            记 $R = \sqrt{a^2 + z_0^2}$，则第 $n$ 个电极点电荷到试探粒子的距离倒数
+            \begin{equation}
+                \frac {1}{s _ {n}} = \frac {1}{R} \left[ 1 - \frac {2 a r \cos (\varphi_ {n} - \theta) - r ^ {2}}{R ^ {2}} \right] ^ {- 1 / 2}, \quad \varphi_ {n} = \frac {2 n \pi}{N}
+                \label{eq:13.s33}
+            \end{equation}
+            其泰勒展开中，角向依赖项来自 $2ar\cos (\varphi_n - \theta) / R$。根据题给数学公式，不难发现
+            \begin{equation}
+                \sum_ {n = 1} ^ {N} \cos^ {i} (\varphi_ {n} - \theta) = \sum_ {n = 1} ^ {N} \cos^ {i} \left(\frac {2 n \pi}{N} - \theta\right) = \text {const.} (i <   N)
+                \label{eq:14.s33}
+            \end{equation}
+            因此最低阶依赖项为 $C_{N}r^{N}\cos N\theta$。由题给数学公式，$\cos^{N}\theta$ 在表示为 $\cos\theta,\cdots,\cos N\theta$ 线性组合时，$\cos N\theta$ 的系数为 $2^{1-N}$，从而
+            \begin{equation}
+                \sum_ {n = 1} ^ {N} \frac {1}{s _ {n}} = \dots + \sum_ {n = 1} ^ {N} \frac {1}{R} \frac {(2 N) !}{4 ^ {N} (N !) ^ {2}} \left(\frac {2 a r}{R ^ {2}} \cos (\varphi_ {n} - \theta)\right) ^ {N} = \dots + \frac {N (2 N) ! a ^ {N} r ^ {N} \cos N \theta}{2 ^ {2 N - 1} (N !) ^ {2} R ^ {2 N + 1}}
+                \label{eq:15.s33}
+            \end{equation}
+            进而可知电势 $\varPhi$ 关于 $r$ 的展开式中与角向有关的最低阶非零项
+            \begin{equation}
+                \varPhi_ {N} = \frac {N q}{4 \pi \varepsilon_ {0}} \frac {(2 N) ! a ^ {N} r ^ {N} \cos N \theta}{2 ^ {2 N - 1} (N !) ^ {2} (a ^ {2} + z _ {0} ^ {2}) ^ {N + 1 / 2}}
+                \label{eq:16.s33}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            此时势能
+            \begin{equation}
+                V (r, \theta , t) = - \frac {1}{4} m \omega_ {z} ^ {2} r ^ {2} + \frac {1 5 q Q a ^ {3} r ^ {3} \cos 3 (\theta - \Omega t)}{3 2 \pi \varepsilon_ {0} (a ^ {2} + z _ {0} ^ {2}) ^ {7 / 2}}
+                \label{eq:17.s33}
+            \end{equation}
+            对于曳引稳定解，切向不能有加速度，所以
+            \begin{equation}
+                \frac {\partial V}{\partial \theta} = 0 \implies \theta_ {s} = 0 \text {或} \frac {\pi}{3}
+                \label{eq:18.s33}
+            \end{equation}
+            由粒子的平衡方程
+            \begin{equation}
+                m \varOmega^ {2} r _ {s} + \frac {1}{2} m \omega_ {z} ^ {2} r _ {s} = Q B _ {0} \varOmega r _ {s} \pm \frac {4 5 q Q a ^ {3} r _ {s} ^ {2}}{3 2 \pi \varepsilon_ {0} (a ^ {2} + z _ {0} ^ {2}) ^ {7 / 2}}
+                \label{eq:19.s33}
+            \end{equation}
+            故
+            \begin{equation}
+                r _ {s} = \mp \frac {4 (2 \varOmega^ {2} + \omega_ {z} ^ {2} - 4 \omega_ {L} \varOmega) (a ^ {2} + z _ {0} ^ {2}) ^ {2}}{1 5 a ^ {3} g}
+                \label{eq:20.s33}
+            \end{equation}
+            这里负、正分别对应 $\theta_{s}=0$ 和 $\theta_{s}=\pi/3$。可见
+            \begin{equation}
+                (r _ {s}, \theta_ {s}) = \left\{ \begin{array}{l l} \left(\frac {4 (2 \Omega^ {2} + \omega_ {z} ^ {2} - 4 \omega_ {L} \Omega) (a ^ {2} + z _ {0} ^ {2}) ^ {2}}{1 5 a ^ {3} g}, \frac {\pi}{3}\right), & \Omega <   \Omega_ {-} \text {或} \Omega > \Omega_ {+} \\ \left(- \frac {4 (2 \Omega^ {2} + \omega_ {z} ^ {2} - 4 \omega_ {L} \Omega) (a ^ {2} + z _ {0} ^ {2}) ^ {2}}{1 5 a ^ {3} g}, 0\right), & \Omega_ {-} <   \Omega <   \Omega_ {+} \end{array} \right.
+                \label{eq:21.s33}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,281 @@
+% 附录
+\appendix
+\chapter{数学工具}
+
+\section{积分公式表}
+
+\subsection*{(一) 含有 $ax + b$ 的积分}
+
+\begin{enumerate}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{ax + b} = \frac{1}{a} \ln |ax + b| + C$
+    \item $\displaystyle \int (ax + b)^\mu \, \mathrm{d}x = \frac{1}{a(\mu + 1)} (ax + b)^{\mu + 1} + C \quad (\mu \neq -1)$
+    \item $\displaystyle \int \frac{x}{ax + b} \, \mathrm{d}x = \frac{1}{a^2} \left( ax + b - b \ln |ax + b| \right) + C$
+    \item $\displaystyle \int \frac{x^2}{ax + b} \, \mathrm{d}x = \frac{1}{a^3} \left[ \frac{1}{2} (ax + b)^2 - 2b(ax + b) + b^2 \ln |ax + b| \right] + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x(ax + b)} = -\frac{1}{b} \ln \left| \frac{ax + b}{x} \right| + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2(ax + b)} = -\frac{1}{bx} + \frac{a}{b^2} \ln \left| \frac{ax + b}{x} \right| + C$
+    \item $\displaystyle \int \frac{x}{(ax + b)^2} \, \mathrm{d}x = \frac{1}{a^2} \left( \ln |ax + b| + \frac{b}{ax + b} \right) + C$
+    \item $\displaystyle \int \frac{x^2}{(ax + b)^2} \, \mathrm{d}x = \frac{1}{a^3} \left( ax + b - 2b \ln |ax + b| - \frac{b^2}{ax + b} \right) + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x(ax + b)^2} = \frac{1}{b(ax + b)} - \frac{1}{b^2} \ln \left| \frac{ax + b}{x} \right| + C$
+\end{enumerate}
+
+\subsection*{(二) 含有 $\sqrt{ax + b}$ 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{9}
+    \item $\displaystyle \int \sqrt{ax + b} \, \mathrm{d}x = \frac{2}{3a} \sqrt{(ax + b)^3} + C$
+    \item $\displaystyle \int x \sqrt{ax + b} \, \mathrm{d}x = \frac{2}{15a^2} (3ax - 2b) \sqrt{(ax + b)^3} + C$
+    \item $\displaystyle \int x^2 \sqrt{ax + b} \, \mathrm{d}x = \frac{2}{105a^3} (15a^2 x^2 - 12abx + 8b^2) \sqrt{(ax + b)^3} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{ax + b}} \, \mathrm{d}x = \frac{2}{3a^2} (ax - 2b) \sqrt{ax + b} + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{ax + b}} \, \mathrm{d}x = \frac{2}{15a^3} (3a^2 x^2 - 4abx + 8b^2) \sqrt{ax + b} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x \sqrt{ax + b}} = 
+    \begin{cases}
+        \displaystyle \frac{1}{\sqrt{b}} \ln \left| \frac{\sqrt{ax + b} - \sqrt{b}}{\sqrt{ax + b} + \sqrt{b}} \right| + C & (b > 0) \\
+        \displaystyle \frac{2}{\sqrt{-b}} \arctan \sqrt{\frac{ax + b}{-b}} + C & (b < 0)
+    \end{cases}$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 \sqrt{ax + b}} = -\frac{\sqrt{ax + b}}{bx} - \frac{a}{2b} \int \frac{\mathrm{d}x}{x \sqrt{ax + b}}$
+    \item $\displaystyle \int \frac{\sqrt{ax + b}}{x} \, \mathrm{d}x = 2\sqrt{ax + b} + b \int \frac{\mathrm{d}x}{x \sqrt{ax + b}}$
+    \item $\displaystyle \int \frac{\sqrt{ax + b}}{x^2} \, \mathrm{d}x = -\frac{\sqrt{ax + b}}{x} + \frac{a}{2} \int \frac{\mathrm{d}x}{x \sqrt{ax + b}}$
+\end{enumerate}
+
+\subsection*{(三) 含有 $x^2 \pm a^2$ 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{18}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 + a^2} = \frac{1}{a} \arctan \frac{x}{a} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{(x^2 + a^2)^n} = \frac{x}{2(n - 1)a^2 (x^2 + a^2)^{n - 1}} + \frac{2n - 3}{2(n - 1)a^2} \int \frac{\mathrm{d}x}{(x^2 + a^2)^{n - 1}}$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 - a^2} = \frac{1}{2a} \ln \left| \frac{x - a}{x + a} \right| + C$
+\end{enumerate}
+
+\subsection*{(四) 含有 $ax^2 + b$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{21}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{ax^2 + b} = 
+    \begin{cases}
+        \displaystyle \frac{1}{\sqrt{ab}} \arctan \left( \sqrt{\frac{a}{b}} x \right) + C & (b > 0) \\
+        \displaystyle \frac{1}{2\sqrt{-ab}} \ln \left| \frac{\sqrt{a}x - \sqrt{-b}}{\sqrt{a}x + \sqrt{-b}} \right| + C & (b < 0)
+    \end{cases}$
+    \item $\displaystyle \int \frac{x}{ax^2 + b} \, \mathrm{d}x = \frac{1}{2a} \ln |ax^2 + b| + C$
+    \item $\displaystyle \int \frac{x^2}{ax^2 + b} \, \mathrm{d}x = \frac{x}{a} - \frac{b}{a} \int \frac{\mathrm{d}x}{ax^2 + b}$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x(ax^2 + b)} = \frac{1}{2b} \ln \frac{x^2}{|ax^2 + b|} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2(ax^2 + b)} = -\frac{1}{bx} - \frac{a}{b} \int \frac{\mathrm{d}x}{ax^2 + b}$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^3(ax^2 + b)} = \frac{a}{2b^2} \ln \frac{|ax^2 + b|}{x^2} - \frac{1}{2b x^2} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{(ax^2 + b)^2} = \frac{x}{2b(ax^2 + b)} + \frac{1}{2b} \int \frac{\mathrm{d}x}{ax^2 + b}$
+\end{enumerate}
+
+\subsection*{(五) 含有 $ax^2 + bx + c$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{28}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{ax^2 + bx + c} = 
+    \begin{cases}
+        \displaystyle \frac{2}{\sqrt{4ac - b^2}} \arctan \frac{2ax + b}{\sqrt{4ac - b^2}} + C & (b^2 < 4ac) \\
+        \displaystyle \frac{1}{\sqrt{b^2 - 4ac}} \ln \left| \frac{2ax + b - \sqrt{b^2 - 4ac}}{2ax + b + \sqrt{b^2 - 4ac}} \right| + C & (b^2 > 4ac)
+    \end{cases}$
+    \item $\displaystyle \int \frac{x}{ax^2 + bx + c} \, \mathrm{d}x = \frac{1}{2a} \ln |ax^2 + bx + c| - \frac{b}{2a} \int \frac{\mathrm{d}x}{ax^2 + bx + c}$
+\end{enumerate}
+
+\subsection*{(六) 含有 $\sqrt{x^2 + a^2}$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{30}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{x^2 + a^2}} = \operatorname{arsh} \frac{x}{a} + C_1 = \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{(x^2 + a^2)^3}} = \frac{x}{a^2 \sqrt{x^2 + a^2}} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{x^2 + a^2}} \, \mathrm{d}x = \sqrt{x^2 + a^2} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{(x^2 + a^2)^3}} \, \mathrm{d}x = -\frac{1}{\sqrt{x^2 + a^2}} + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{x^2 + a^2}} \, \mathrm{d}x = \frac{x}{2} \sqrt{x^2 + a^2} - \frac{a^2}{2} \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{(x^2 + a^2)^3}} \, \mathrm{d}x = -\frac{x}{\sqrt{x^2 + a^2}} + \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x \sqrt{x^2 + a^2}} = \frac{1}{a} \ln \frac{\sqrt{x^2 + a^2} - a}{|x|} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 \sqrt{x^2 + a^2}} = -\frac{\sqrt{x^2 + a^2}}{a^2 x} + C$
+    \item $\displaystyle \int \sqrt{x^2 + a^2} \, \mathrm{d}x = \frac{x}{2} \sqrt{x^2 + a^2} + \frac{a^2}{2} \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int \sqrt{(x^2 + a^2)^3} \, \mathrm{d}x = \frac{x}{8} (2x^2 + 5a^2) \sqrt{x^2 + a^2} + \frac{3}{8} a^4 \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int x \sqrt{x^2 + a^2} \, \mathrm{d}x = \frac{1}{3} \sqrt{(x^2 + a^2)^3} + C$
+    \item $\displaystyle \int x^2 \sqrt{x^2 + a^2} \, \mathrm{d}x = \frac{x}{8} (2x^2 + a^2) \sqrt{x^2 + a^2} - \frac{a^4}{8} \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+    \item $\displaystyle \int \frac{\sqrt{x^2 + a^2}}{x} \, \mathrm{d}x = \sqrt{x^2 + a^2} + a \ln \frac{\sqrt{x^2 + a^2} - a}{|x|} + C$
+    \item $\displaystyle \int \frac{\sqrt{x^2 + a^2}}{x^2} \, \mathrm{d}x = -\frac{\sqrt{x^2 + a^2}}{x} + \ln \left( x + \sqrt{x^2 + a^2} \right) + C$
+\end{enumerate}
+
+\subsection*{(七) 含有 $\sqrt{x^2 - a^2}$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{44}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{x^2 - a^2}} = \frac{x}{|x|} \operatorname{arch} \frac{|x|}{a} + C_1 = \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{(x^2 - a^2)^3}} = -\frac{x}{a^2 \sqrt{x^2 - a^2}} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{x^2 - a^2}} \, \mathrm{d}x = \sqrt{x^2 - a^2} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{(x^2 - a^2)^3}} \, \mathrm{d}x = -\frac{1}{\sqrt{x^2 - a^2}} + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{x^2 - a^2}} \, \mathrm{d}x = \frac{x}{2} \sqrt{x^2 - a^2} + \frac{a^2}{2} \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{(x^2 - a^2)^3}} \, \mathrm{d}x = -\frac{x}{\sqrt{x^2 - a^2}} + \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x \sqrt{x^2 - a^2}} = \frac{1}{a} \arccos \frac{a}{|x|} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 \sqrt{x^2 - a^2}} = \frac{\sqrt{x^2 - a^2}}{a^2 x} + C$
+    \item $\displaystyle \int \sqrt{x^2 - a^2} \, \mathrm{d}x = \frac{x}{2} \sqrt{x^2 - a^2} - \frac{a^2}{2} \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int \sqrt{(x^2 - a^2)^3} \, \mathrm{d}x = \frac{x}{8} (2x^2 - 5a^2) \sqrt{x^2 - a^2} + \frac{3}{8} a^4 \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int x \sqrt{x^2 - a^2} \, \mathrm{d}x = \frac{1}{3} \sqrt{(x^2 - a^2)^3} + C$
+    \item $\displaystyle \int x^2 \sqrt{x^2 - a^2} \, \mathrm{d}x = \frac{x}{8} (2x^2 - a^2) \sqrt{x^2 - a^2} - \frac{a^4}{8} \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+    \item $\displaystyle \int \frac{\sqrt{x^2 - a^2}}{x} \, \mathrm{d}x = \sqrt{x^2 - a^2} - a \arccos \frac{a}{|x|} + C$
+    \item $\displaystyle \int \frac{\sqrt{x^2 - a^2}}{x^2} \, \mathrm{d}x = -\frac{\sqrt{x^2 - a^2}}{x} + \ln \left| x + \sqrt{x^2 - a^2} \right| + C$
+\end{enumerate}
+
+\subsection*{(八) 含有 $\sqrt{a^2 - x^2}$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{58}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{(a^2 - x^2)^3}} = \frac{x}{a^2 \sqrt{a^2 - x^2}} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{a^2 - x^2}} \, \mathrm{d}x = -\sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{(a^2 - x^2)^3}} \, \mathrm{d}x = \frac{1}{\sqrt{a^2 - x^2}} + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{a^2 - x^2}} \, \mathrm{d}x = -\frac{x}{2} \sqrt{a^2 - x^2} + \frac{a^2}{2} \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int \frac{x^2}{\sqrt{(a^2 - x^2)^3}} \, \mathrm{d}x = \frac{x}{\sqrt{a^2 - x^2}} - \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x \sqrt{a^2 - x^2}} = \frac{1}{a} \ln \frac{a - \sqrt{a^2 - x^2}}{|x|} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x^2 \sqrt{a^2 - x^2}} = -\frac{\sqrt{a^2 - x^2}}{a^2 x} + C$
+    \item $\displaystyle \int \sqrt{a^2 - x^2} \, \mathrm{d}x = \frac{x}{2} \sqrt{a^2 - x^2} + \frac{a^2}{2} \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int \sqrt{(a^2 - x^2)^3} \, \mathrm{d}x = \frac{x}{8} (5a^2 - 2x^2) \sqrt{a^2 - x^2} + \frac{3}{8} a^4 \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int x \sqrt{a^2 - x^2} \, \mathrm{d}x = -\frac{1}{3} \sqrt{(a^2 - x^2)^3} + C$
+    \item $\displaystyle \int x^2 \sqrt{a^2 - x^2} \, \mathrm{d}x = \frac{x}{8} (2x^2 - a^2) \sqrt{a^2 - x^2} + \frac{a^4}{8} \arcsin \frac{x}{a} + C$
+    \item $\displaystyle \int \frac{\sqrt{a^2 - x^2}}{x} \, \mathrm{d}x = \sqrt{a^2 - x^2} + a \ln \frac{a - \sqrt{a^2 - x^2}}{|x|} + C$
+    \item $\displaystyle \int \frac{\sqrt{a^2 - x^2}}{x^2} \, \mathrm{d}x = -\frac{\sqrt{a^2 - x^2}}{x} - \arcsin \frac{x}{a} + C$
+\end{enumerate}
+
+\subsection*{(九) 含有 $\sqrt{\pm ax^2 + bx + c}$ ($a > 0$) 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{72}
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{ax^2 + bx + c}} = \frac{1}{\sqrt{a}} \ln \left| 2ax + b + 2\sqrt{a} \sqrt{ax^2 + bx + c} \right| + C$
+    \item $\displaystyle \int \sqrt{ax^2 + bx + c} \, \mathrm{d}x = \frac{2ax + b}{4a} \sqrt{ax^2 + bx + c} + \frac{4ac - b^2}{8\sqrt{a^3}} \ln \left| 2ax + b + 2\sqrt{a} \sqrt{ax^2 + bx + c} \right| + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{ax^2 + bx + c}} \, \mathrm{d}x = \frac{1}{a} \sqrt{ax^2 + bx + c} - \frac{b}{2\sqrt{a^3}} \ln \left| 2ax + b + 2\sqrt{a} \sqrt{ax^2 + bx + c} \right| + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{c + bx - ax^2}} = \frac{1}{\sqrt{a}} \arcsin \frac{2ax - b}{\sqrt{b^2 + 4ac}} + C$
+    \item $\displaystyle \int \sqrt{c + bx - ax^2} \, \mathrm{d}x = \frac{2ax - b}{4a} \sqrt{c + bx - ax^2} + \frac{b^2 + 4ac}{8\sqrt{a^3}} \arcsin \frac{2ax - b}{\sqrt{b^2 + 4ac}} + C$
+    \item $\displaystyle \int \frac{x}{\sqrt{c + bx - ax^2}} \, \mathrm{d}x = -\frac{1}{a} \sqrt{c + bx - ax^2} + \frac{b}{2\sqrt{a^3}} \arcsin \frac{2ax - b}{\sqrt{b^2 + 4ac}} + C$
+\end{enumerate}
+
+\subsection*{(十) 含有 $\sqrt{\frac{x - a}{x - b}}$ 或 $\sqrt{(x - a)(b - x)}$ 的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{78}
+    \item $\displaystyle \int \sqrt{\frac{x - a}{x - b}} \, \mathrm{d}x = (x - b) \sqrt{\frac{x - a}{x - b}} + (b - a) \ln \left( \sqrt{|x - a|} + \sqrt{|x - b|} \right) + C$
+    \item $\displaystyle \int \sqrt{\frac{x - a}{b - x}} \, \mathrm{d}x = (x - b) \sqrt{\frac{x - a}{b - x}} + (b - a) \arcsin \sqrt{\frac{x - a}{b - a}} + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sqrt{(x - a)(b - x)}} = 2 \arcsin \sqrt{\frac{x - a}{b - a}} + C \quad (a < b)$
+    \item $\displaystyle \int \sqrt{(x - a)(b - x)} \, \mathrm{d}x = \frac{2x - a - b}{4} \sqrt{(x - a)(b - x)} + \frac{(b - a)^2}{4} \arcsin \sqrt{\frac{x - a}{b - a}} + C \quad (a < b)$
+\end{enumerate}
+
+\subsection*{(十一) 含有三角函数的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{82}
+    \item $\displaystyle \int \sin x \, \mathrm{d}x = -\cos x + C$
+    \item $\displaystyle \int \cos x \, \mathrm{d}x = \sin x + C$
+    \item $\displaystyle \int \tan x \, \mathrm{d}x = -\ln |\cos x| + C$
+    \item $\displaystyle \int \cot x \, \mathrm{d}x = \ln |\sin x| + C$
+    \item $\displaystyle \int \sec x \, \mathrm{d}x = \ln \left| \tan \left( \frac{\pi}{4} + \frac{x}{2} \right) \right| + C = \ln |\sec x + \tan x| + C$
+    \item $\displaystyle \int \csc x \, \mathrm{d}x = \ln \left| \tan \frac{x}{2} \right| + C = \ln |\csc x - \cot x| + C$
+    \item $\displaystyle \int \sec^2 x \, \mathrm{d}x = \tan x + C$
+    \item $\displaystyle \int \csc^2 x \, \mathrm{d}x = -\cot x + C$
+    \item $\displaystyle \int \sec x \tan x \, \mathrm{d}x = \sec x + C$
+    \item $\displaystyle \int \csc x \cot x \, \mathrm{d}x = -\csc x + C$
+    \item $\displaystyle \int \sin^2 x \, \mathrm{d}x = \frac{x}{2} - \frac{1}{4} \sin 2x + C$
+    \item $\displaystyle \int \cos^2 x \, \mathrm{d}x = \frac{x}{2} + \frac{1}{4} \sin 2x + C$
+    \item $\displaystyle \int \sin^n x \, \mathrm{d}x = -\frac{1}{n} \sin^{n-1} x \cos x + \frac{n - 1}{n} \int \sin^{n-2} x \, \mathrm{d}x$
+    \item $\displaystyle \int \cos^n x \, \mathrm{d}x = \frac{1}{n} \cos^{n-1} x \sin x + \frac{n - 1}{n} \int \cos^{n-2} x \, \mathrm{d}x$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\sin^n x} = -\frac{1}{n - 1} \cdot \frac{\cos x}{\sin^{n-1} x} + \frac{n - 2}{n - 1} \int \frac{\mathrm{d}x}{\sin^{n-2} x}$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{\cos^n x} = \frac{1}{n - 1} \cdot \frac{\sin x}{\cos^{n-1} x} + \frac{n - 2}{n - 1} \int \frac{\mathrm{d}x}{\cos^{n-2} x}$
+    \item $\displaystyle \int \cos^m x \sin^n x \, \mathrm{d}x = \frac{1}{m + n} \cos^{m-1} x \sin^{n+1} x + \frac{m - 1}{m + n} \int \cos^{m-2} x \sin^n x \, \mathrm{d}x$
+    \item[] $\displaystyle = -\frac{1}{m + n} \cos^{m+1} x \sin^{n-1} x + \frac{n - 1}{m + n} \int \cos^m x \sin^{n-2} x \, \mathrm{d}x$
+    \item $\displaystyle \int \sin ax \cos bx \, \mathrm{d}x = -\frac{1}{2(a + b)} \cos(a + b)x - \frac{1}{2(a - b)} \cos(a - b)x + C$
+    \item $\displaystyle \int \sin ax \sin bx \, \mathrm{d}x = -\frac{1}{2(a + b)} \sin(a + b)x + \frac{1}{2(a - b)} \sin(a - b)x + C$
+    \item $\displaystyle \int \cos ax \cos bx \, \mathrm{d}x = \frac{1}{2(a + b)} \sin(a + b)x + \frac{1}{2(a - b)} \sin(a - b)x + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a + b \sin x} = \frac{2}{\sqrt{a^2 - b^2}} \arctan \frac{a \tan \frac{x}{2} + b}{\sqrt{a^2 - b^2}} + C \quad (a^2 > b^2)$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a + b \sin x} = \frac{1}{\sqrt{b^2 - a^2}} \ln \left| \frac{a \tan \frac{x}{2} + b - \sqrt{b^2 - a^2}}{a \tan \frac{x}{2} + b + \sqrt{b^2 - a^2}} \right| + C \quad (a^2 < b^2)$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a + b \cos x} = \frac{2}{a + b} \sqrt{\frac{a + b}{a - b}} \arctan \left( \sqrt{\frac{a - b}{a + b}} \tan \frac{x}{2} \right) + C \quad (a^2 > b^2)$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a + b \cos x} = \frac{1}{a + b} \sqrt{\frac{a + b}{b - a}} \ln \left| \frac{\tan \frac{x}{2} + \sqrt{\frac{a + b}{b - a}}}{\tan \frac{x}{2} - \sqrt{\frac{a + b}{b - a}}} \right| + C \quad (a^2 < b^2)$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a^2 \cos^2 x + b^2 \sin^2 x} = \frac{1}{ab} \arctan \left( \frac{b}{a} \tan x \right) + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{a^2 \cos^2 x - b^2 \sin^2 x} = \frac{1}{2ab} \ln \left| \frac{b \tan x + a}{b \tan x - a} \right| + C$
+    \item $\displaystyle \int x \sin ax \, \mathrm{d}x = \frac{1}{a^2} \sin ax - \frac{1}{a} x \cos ax + C$
+    \item $\displaystyle \int x^2 \sin ax \, \mathrm{d}x = -\frac{1}{a} x^2 \cos ax + \frac{2}{a^2} x \sin ax + \frac{2}{a^3} \cos ax + C$
+    \item $\displaystyle \int x \cos ax \, \mathrm{d}x = \frac{1}{a^2} \cos ax + \frac{1}{a} x \sin ax + C$
+    \item $\displaystyle \int x^2 \cos ax \, \mathrm{d}x = \frac{1}{a} x^2 \sin ax + \frac{2}{a^2} x \cos ax - \frac{2}{a^3} \sin ax + C$
+\end{enumerate}
+
+\subsection*{(十二) 含有反三角函数的积分（其中 $a > 0$）}
+
+\begin{enumerate}
+    \setcounter{enumi}{112}
+    \item $\displaystyle \int \arcsin \frac{x}{a} \, \mathrm{d}x = x \arcsin \frac{x}{a} + \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int x \arcsin \frac{x}{a} \, \mathrm{d}x = \left( \frac{x^2}{2} - \frac{a^2}{4} \right) \arcsin \frac{x}{a} + \frac{x}{4} \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int x^2 \arcsin \frac{x}{a} \, \mathrm{d}x = \frac{x^3}{3} \arcsin \frac{x}{a} + \frac{1}{9} (x^2 + 2a^2) \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int \arccos \frac{x}{a} \, \mathrm{d}x = x \arccos \frac{x}{a} - \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int x \arccos \frac{x}{a} \, \mathrm{d}x = \left( \frac{x^2}{2} - \frac{a^2}{4} \right) \arccos \frac{x}{a} - \frac{x}{4} \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int x^2 \arccos \frac{x}{a} \, \mathrm{d}x = \frac{x^3}{3} \arccos \frac{x}{a} - \frac{1}{9} (x^2 + 2a^2) \sqrt{a^2 - x^2} + C$
+    \item $\displaystyle \int \arctan \frac{x}{a} \, \mathrm{d}x = x \arctan \frac{x}{a} - \frac{a}{2} \ln(a^2 + x^2) + C$
+    \item $\displaystyle \int x \arctan \frac{x}{a} \, \mathrm{d}x = \frac{1}{2} (a^2 + x^2) \arctan \frac{x}{a} - \frac{a}{2} x + C$
+    \item $\displaystyle \int x^2 \arctan \frac{x}{a} \, \mathrm{d}x = \frac{x^3}{3} \arctan \frac{x}{a} - \frac{a}{6} x^2 + \frac{a^3}{6} \ln(a^2 + x^2) + C$
+\end{enumerate}
+
+\subsection*{(十三) 含有指数函数的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{121}
+    \item $\displaystyle \int a^x \, \mathrm{d}x = \frac{1}{\ln a} a^x + C$
+    \item $\displaystyle \int e^{ax} \, \mathrm{d}x = \frac{1}{a} e^{ax} + C$
+    \item $\displaystyle \int x e^{ax} \, \mathrm{d}x = \frac{1}{a^2} (ax - 1) e^{ax} + C$
+    \item $\displaystyle \int x^n e^{ax} \, \mathrm{d}x = \frac{1}{a} x^n e^{ax} - \frac{n}{a} \int x^{n-1} e^{ax} \, \mathrm{d}x$
+    \item $\displaystyle \int x a^x \, \mathrm{d}x = \frac{x}{\ln a} a^x - \frac{1}{(\ln a)^2} a^x + C$
+    \item $\displaystyle \int x^n a^x \, \mathrm{d}x = \frac{1}{\ln a} x^n a^x - \frac{n}{\ln a} \int x^{n-1} a^x \, \mathrm{d}x$
+    \item $\displaystyle \int e^{ax} \sin bx \, \mathrm{d}x = \frac{1}{a^2 + b^2} e^{ax} (a \sin bx - b \cos bx) + C$
+    \item $\displaystyle \int e^{ax} \cos bx \, \mathrm{d}x = \frac{1}{a^2 + b^2} e^{ax} (b \sin bx + a \cos bx) + C$
+    \item $\displaystyle \int e^{ax} \sin^n bx \, \mathrm{d}x = \frac{1}{a^2 + b^2 n^2} e^{ax} \sin^{n-1} bx (a \sin bx - n b \cos bx) + \frac{n(n-1)b^2}{a^2 + b^2 n^2} \int e^{ax} \sin^{n-2} bx \, \mathrm{d}x$
+    \item $\displaystyle \int e^{ax} \cos^n bx \, \mathrm{d}x = \frac{1}{a^2 + b^2 n^2} e^{ax} \cos^{n-1} bx (a \cos bx + n b \sin bx) + \frac{n(n-1)b^2}{a^2 + b^2 n^2} \int e^{ax} \cos^{n-2} bx \, \mathrm{d}x$
+\end{enumerate}
+
+\subsection*{(十四) 含有对数函数的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{131}
+    \item $\displaystyle \int \ln x \, \mathrm{d}x = x \ln x - x + C$
+    \item $\displaystyle \int \frac{\mathrm{d}x}{x \ln x} = \ln |\ln x| + C$
+    \item $\displaystyle \int x^n \ln x \, \mathrm{d}x = \frac{1}{n + 1} x^{n+1} \left( \ln x - \frac{1}{n + 1} \right) + C$
+    \item $\displaystyle \int (\ln x)^n \, \mathrm{d}x = x (\ln x)^n - n \int (\ln x)^{n-1} \, \mathrm{d}x$
+    \item $\displaystyle \int x^m (\ln x)^n \, \mathrm{d}x = \frac{1}{m + 1} x^{m+1} (\ln x)^n - \frac{n}{m + 1} \int x^m (\ln x)^{n-1} \, \mathrm{d}x$
+\end{enumerate}
+
+\subsection*{(十五) 含有双曲函数的积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{136}
+    \item $\displaystyle \int \operatorname{sh} x \, \mathrm{d}x = \operatorname{ch} x + C$
+    \item $\displaystyle \int \operatorname{ch} x \, \mathrm{d}x = \operatorname{sh} x + C$
+    \item $\displaystyle \int \operatorname{th} x \, \mathrm{d}x = \ln \operatorname{ch} x + C$
+    \item $\displaystyle \int \operatorname{sh}^2 x \, \mathrm{d}x = -\frac{x}{2} + \frac{1}{4} \operatorname{sh} 2x + C$
+    \item $\displaystyle \int \operatorname{ch}^2 x \, \mathrm{d}x = \frac{x}{2} + \frac{1}{4} \operatorname{sh} 2x + C$
+\end{enumerate}
+
+\subsection*{(十六) 定积分}
+
+\begin{enumerate}
+    \setcounter{enumi}{141}
+    \item $\displaystyle \int_{-\pi}^{\pi} \cos nx \, \mathrm{d}x = \int_{-\pi}^{\pi} \sin nx \, \mathrm{d}x = 0$
+    \item $\displaystyle \int_{-\pi}^{\pi} \cos mx \sin nx \, \mathrm{d}x = 0$
+    \item $\displaystyle \int_{-\pi}^{\pi} \cos mx \cos nx \, \mathrm{d}x = 
+    \begin{cases}
+        0, & m \neq n \\
+        \pi, & m = n
+    \end{cases}$
+    \item $\displaystyle \int_{-\pi}^{\pi} \sin mx \sin nx \, \mathrm{d}x = 
+    \begin{cases}
+        0, & m \neq n \\
+        \pi, & m = n
+    \end{cases}$
+    \item $\displaystyle \int_0^\pi \sin mx \sin nx \, \mathrm{d}x = \int_0^\pi \cos mx \cos nx \, \mathrm{d}x = 
+    \begin{cases}
+        0, & m \neq n \\
+        \frac{\pi}{2}, & m = n
+    \end{cases}$
+    \item $\displaystyle I_n = \int_0^{\frac{\pi}{2}} \sin^n x \, \mathrm{d}x = \int_0^{\frac{\pi}{2}} \cos^n x \, \mathrm{d}x$
+    \item[] $\displaystyle I_n = \frac{n - 1}{n} I_{n-2}$
+    \item[] $\displaystyle = 
+    \begin{cases}
+        \displaystyle \frac{n - 1}{n} \cdot \frac{n - 3}{n - 2} \cdot \dots \cdot \frac{4}{5} \cdot \frac{2}{3} & (n \text{为大于} 1 \text{的正奇数}), \quad I_1 = 1 \\
+        \displaystyle \frac{n - 1}{n} \cdot \frac{n - 3}{n - 2} \cdot \dots \cdot \frac{3}{4} \cdot \frac{1}{2} \cdot \frac{\pi}{2} & (n \text{为正偶数}), \quad I_0 = \frac{\pi}{2}
+    \end{cases}$
+\end{enumerate}
+
+\section{积分变换}
+傅里叶变换和拉普拉斯变换：

@@ -1,0 +1,80 @@
+\begin{solution}{10}
+如图，在小球 $1$ 未离开竖直墙面之前，杆与竖直墙面之间夹角为 $\theta$ 时，小球 $1$ 的坐标为
+\begin{equation}
+x _ {1} = 0, y _ {1} = l \cos \theta ,
+\label{eq:1.s10}
+\end{equation}
+小球 $2$ 的坐标为
+\begin{equation}
+x _ {2} = l \sin \theta , y _ {2} = 0
+\label{eq:2.s10}
+\end{equation}
+小球 $1$ 的速度为
+\begin{equation}
+v _ {1 x} = \frac {\mathrm{d} x _ {1}}{\mathrm{d} t} = 0, v _ {1 y} = \frac {\mathrm{d} y _ {1}}{\mathrm{d} t} = - \omega l \sin \theta ,
+\label{eq:3.s10}
+\end{equation}
+式中 $\omega=\frac{d\theta}{dt}$ 是杆的转动角速度。小球 $2$ 的速度为
+\begin{equation}
+v _ {2 x} = \frac {\mathrm{d} x _ {2}}{\mathrm{d} t} = \omega l \cos \theta , v _ {2 y} = \frac {\mathrm{d} y _ {2}}{\mathrm{d} t} = 0
+\label{eq:4.s10}
+\end{equation}
+由机械能守恒，有
+\begin{equation}
+m g l = \frac {1}{2} m \left(v _ {1 x} ^ {2} + v _ {1 y} ^ {2}\right) + \frac {1}{2} m \left(v _ {2 x} ^ {2} + v _ {2 y} ^ {2}\right) + m g l \cos \theta = \frac {1}{2} m l ^ {2} \omega^ {2} + m g l \cos \theta 
+\label{eq:5.s10}
+\end{equation}
+由上式得
+\begin{equation}
+\omega = \sqrt {\frac {2 g (1 - \cos \theta)}{l}}
+\label{eq:6.s10}
+\end{equation}
+这里考虑到随着时间 $t$ 的增加， $\theta$ 变大，因此 $\omega > 0$ ，从而舍去负根。
+
+系统质心 $c$ 的 $x$ 坐标为
+\begin{equation}
+x _ {c} = \frac {m x _ {1} + m x _ {2}}{2 m} = \frac {1}{2} l \sin \theta 
+\label{eq:7.s10}
+\end{equation}
+质心速度的 $x$ 分量为
+\begin{equation}
+v _ {c x} = \frac {\mathrm{d} x _ {c}}{\mathrm{d} t} = \frac {1}{2} \omega l \cos \theta 
+\label{eq:8.s10}
+\end{equation}
+质心加速度的 $x$ 分量为
+\begin{equation}
+a _ {c x} = \frac {\mathrm{d} v _ {c x}}{\mathrm{d} t} = - \frac {1}{2} \omega^ {2} l \sin \theta + \frac {1}{2} l \cos \theta \frac {\mathrm{d} \omega}{\mathrm{d} t}
+\label{eq:9.s10}
+\end{equation}
+由\eqref{eq:6.s10}式得
+\begin{equation}
+\frac {\mathrm{d} \omega}{\mathrm{d} t} = \frac {1}{2} \omega \sin \theta \sqrt {\frac {2 g}{l (1 - \cos \theta)}} = \frac {g}{l} \sin \theta 
+\label{eq:10.s10}
+\end{equation}
+在得到上述结果时又利用了\eqref{eq:6.s10}式。把\eqref{eq:6.s10}、\eqref{eq:10.s10}式代入\eqref{eq:9.s10}式，得
+\begin{equation}
+a _ {c x} = \frac {\mathrm{d} v _ {c x}}{\mathrm{d} t} = - g \sin \theta (1 - \cos \theta) + \frac {1}{2} g \sin \theta \cos \theta = g \sin \theta \left(\frac {3}{2} \cos \theta - 1\right)
+\label{eq:11.s10}
+\end{equation}
+设竖直墙面对小球 $1$ 的正压力为 $T$，质心 $c$ 在 $x$ 方向的运动满足
+\begin{equation}
+T = 2 m a _ {c x}
+\label{eq:12.s10}
+\end{equation}
+由\eqref{eq:12.s10}式可知，当 $a_{cx}=0$ 时，
+\begin{equation}
+T = 0,
+\label{eq:13.s10}
+\end{equation}
+小球 $1$ 开始离开竖直墙面。由\eqref{eq:11.s10}式得，小球 $1$ 开始离开竖直墙面时，夹角 $\theta$ 满足方程
+\begin{equation}
+\sin \theta \left(\frac {3}{2} \cos \theta - 1\right) = 0
+\label{eq:14.s10}
+\end{equation}
+方程\eqref{eq:13.s10}的一个解满足 $\sin\theta=0$ ，故 $\theta=0$ ，此角度对应初始位置；方程\eqref{eq:13.s10}的另一个解满足 $\frac{3}{2}\cos\theta-1=0$ ，故
+\begin{equation}
+\theta = \arccos \frac {2}{3}
+\label{eq:15.s10}
+\end{equation}
+此即小球 $1$ 开始离开竖直墙面时杆与竖直墙面之间的夹角。
+\end{solution}

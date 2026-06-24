@@ -1,0 +1,27 @@
+\begin{problem}[2026年博知汇BWPhO][旋转电场的曳引]{33}
+    在真空中建立 $z$ 轴竖直向上的直角坐标系 $O$-$xyz$，重力加速度 $\pmb{g} = -g\hat{\pmb{z}}$。在 $z=0$ 平面放置一绝缘圆环，圆心为原点 $O$，半径为 $a$，环上固定有 $N (N \geq 3)$ 个电荷量均为 $q (q > 0)$ 的点电荷（称为电极点电荷），相邻点电荷间距离相等。在圆环轴线附近有一电荷量为 $Q (Q > 0)$ 的带电测试微粒（视为点电荷），初始时静止于 $z$ 轴上 $z = z_{0} (z_{0} > 0)$。已知真空介电常量为 $\varepsilon_{0}$。忽略电磁感应和相对论效应，并忽略一切辐射与阻尼。
+    \begin{subproblem}
+        先用细玻璃管将测试微粒限制在 $z$ 轴上（玻璃管仅提供水平约束力，不参与竖直受力）。
+        \begin{subsubproblem}
+            求测试粒子的质量 $m$。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            求测试粒子在 $z_0$ 处为稳定平衡的条件以及在该点附近小振动的角频率 $\omega_z$。在本大题后续小问中，均默认本小问导出的条件成立。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        现在撤去玻璃管，但固定 $z = z_0$，并在空间中施加匀强静磁场 $\pmb{B}_0 = -B_0\hat{\pmb{z}} (B_0 > 0)$。引入柱坐标系 $(r,\theta ,z)$，使其中一个电极点电荷恰好位于 $\theta = 0$ 处。（处处无摩擦）
+        \begin{subsubproblem}
+            先只考虑电场力的最低阶非零项，则在 $B_{0}$ 足够大时测试粒子的运动可以视为两个不同角频率的简谐振动的叠加。求出这两个角频率 $\omega_{\pm}$（用 $\omega_{z},\omega_{L} = QB_{0} / (2m)$ 表示）和符合要求的 $B_{0}$ 应满足的条件（用 $B_{0},m,Q,\omega_{z}$ 表示）。在后续两个小问中，均默认满足此条件。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            现在考虑电极点电荷离散分布带来的影响。求出电势 $\varPhi$ 关于 $r$ 的展开式中与角向有关的最低阶非零项，该项应可以表示为 $C_k r^k \cos(N\theta)$ 的形式（$k$ 为正整数）。如下数学公式可能有用：（实际上有用的只有个别项，注意利用对称性减小计算量）
+            \begin{equation}
+                \cos^ {n} \theta = \frac {1}{2 ^ {n}} \sum_ {k = 0} ^ {n} \frac {n !}{k ! (n - k) !} \mathrm{e} ^ {\mathrm{i} (n - 2 k) \theta} = \left\{ \begin{array}{l} \displaystyle \frac {1}{4 ^ {p}} \left[ \frac {(2 p) !}{(p !) ^ {2}} + 2 \sum_ {k = 1} ^ {p} \frac {(2 p) !}{(p - k) ! (p + k) !} \cos (2 k \theta) \right], \quad n = 2 p \\ \displaystyle \frac {1}{4 ^ {p}} \sum_ {k = 0} ^ {p} \frac {(2 p + 1) !}{(p - k) ! (p + k + 1) !} \cos [ (2 k + 1) \theta ], \quad n = 2 p + 1 \end{array} \right.
+            \end{equation}
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            为了体现出曳引的效果，取 $N = 3$ 并令各电极点电荷以绕 $z$ 轴的恒定角速度 $\Omega$ 转动，则势能中的角向项随时间旋转（仅展开至（2.2）问中与角向有关的最低阶非零项）。设存在同步解 $r(t) = r_s, \theta(t) = \Omega t + \theta_s$，其中 $r_s, \theta_s$ 为常量（$0 \leq \theta_s < 2\pi/3, r_s > 0$）。已知 $t = 0$ 时 $\theta = 0$ 方向刚好有一个电极点电荷经过，求 $(r_s, \theta_s)$ 的所有可能组合（用 $\Omega, \omega_L, \omega_z, a, z_0, g$ 表示，不考虑临界情况）。
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}

@@ -1,0 +1,151 @@
+\begin{solution}{35}
+    \begin{subsolution}
+        因为体系稳衡，有
+        \begin{equation}
+            \nabla \times \pmb {E} = \mathbf {0}
+            \label{eq:1.s35}
+        \end{equation}
+        而由欧姆定律的微观形式
+        \begin{equation}
+            \boldsymbol {j} = \sigma \boldsymbol {E}
+            \label{eq:2.s35}
+        \end{equation}
+        和电流密度 $\pmb{j}$ 沿 $x$ 轴正方向的，可知 $\pmb{E}$ 是沿 $x$ 轴正方向的，进而
+        \begin{equation}
+            \pmb {E} = \mathrm{const.} \Rightarrow \pmb {j} = \mathrm{const.}
+            \label{eq:3.s35}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设电子的（平均）运动速度为 $\pmb{u}$，则易知
+        \begin{equation}
+            \pmb {u} = - \frac {j}{n q} \hat {\pmb {x}} = - \frac {I _ {0}}{2 n q d} \hat {\pmb {x}}
+            \label{eq:4.s35}
+        \end{equation}
+        且沿 $x$ 轴负方向。
+
+        导体内的磁感应强度
+        \begin{equation}
+            \pmb {B} = - \frac {\mu_ {0} I _ {0}}{2 d} z \hat {\pmb {y}}
+            \label{eq:5.s35}
+        \end{equation}
+        导体内的电荷密度来自于霍尔效应。由载流子的受力平衡，可知导体内存在 $z$ 方向的电场，有
+        \begin{equation}
+            E _ {z} = - (\pmb {u} \times \pmb {B}) _ {z} = - \frac {\mu_ {0} I _ {0} ^ {2}}{4 n q d ^ {2}} z
+            \label{eq:6.s35}
+        \end{equation}
+        从而由高斯定理的微分形式得
+        \begin{equation}
+            \rho (z) = \varepsilon_ {0} \frac {\partial E _ {z}}{\partial z} = - \frac {I _ {0} ^ {2}}{4 n q d ^ {2} c ^ {2}}
+            \label{eq:7.s35}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设已建立的 $z$ 方向电场强度为 $E_{z}$，由欧姆定律得
+        \begin{equation}
+            j _ {z} = \sigma ((\boldsymbol {u} \times \boldsymbol {B}) _ {z} + E _ {z}) = \sigma \left(\frac {\mu_ {0} I _ {0} ^ {2}}{4 n q d ^ {2}} z + E _ {z}\right)
+            \label{eq:8.s35}
+        \end{equation}
+        由电荷连续性方程
+        \begin{equation}
+            \frac {\partial j _ {z}}{\partial z} + \frac {\partial \rho}{\partial t} = 0
+            \label{eq:9.s35}
+        \end{equation}
+        而由高斯定理的微分形式得
+        \begin{equation}
+            \frac {\partial E _ {z}}{\partial z} = \frac {\rho}{\varepsilon_ {0}}
+            \label{eq:10.s35}
+        \end{equation}
+        将第 \eqref{eq:8.s35} 式代入第 \eqref{eq:9.s35} 式, 然后再将第 \eqref{eq:10.s35} 式代入得
+        \begin{equation}
+            \frac {\partial \rho}{\partial t} = - \sigma \left(\frac {\mu_ {0} I _ {0} ^ {2}}{4 n q d ^ {2}} + \frac {\rho}{\varepsilon_ {0}}\right)
+            \label{eq:11.s35}
+        \end{equation}
+        结合初始时 $\rho (z) = 0$ 解得
+        \begin{equation}
+            \rho (z, t) = - \frac {I _ {0} ^ {2}}{4 n q d ^ {2} c ^ {2}} \left(1 - \exp \left(- \frac {\sigma}{\varepsilon_ {0}} t\right)\right)
+            \label{eq:12.s35}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由电磁感应定律的微分形式，有
+        \begin{equation}
+            \frac {\partial E _ {x}}{\partial z} = - \frac {\partial B _ {y}}{\partial t}
+            \label{eq:13.s35}
+        \end{equation}
+        由安培环路定理的微分形式，有
+        \begin{equation}
+            \frac {\partial B _ {y}}{\partial z} = - \mu_ {0} \sigma E _ {x}
+            \label{eq:14.s35}
+        \end{equation}
+        其中已利用体系在 $x, y$ 方向上的平移对称性。将第 \eqref{eq:13.s35} 式对 $z$ 求偏导，第 \eqref{eq:14.s35} 式对 $t$ 求偏导，联立消去 $B_y$ 得
+        \begin{equation}
+            \frac {\partial^ {2} E _ {x}}{\partial z ^ {2}} = \mu_ {0} \sigma \frac {\partial E _ {x}}{\partial t}
+            \label{eq:15.s35}
+        \end{equation}
+        引入复数法，取 $\mathrm{i}\omega t$ 前的符号为正，则
+        \begin{equation}
+            \frac {\partial^ {2} \tilde {E} _ {x}}{\partial z ^ {2}} = \mathrm{i} \omega \mu_ {0} \sigma \tilde {E} _ {x}
+            \label{eq:16.s35}
+        \end{equation}
+        由对称性得
+        \begin{equation}
+            \tilde {E} _ {x} = \tilde {E} _ {0} \cosh (\sqrt {\mathrm{i} \omega \mu_ {0} \sigma} z) \mathrm{e} ^ {\mathrm{i} \omega t} \approx \tilde {E} _ {0} \left(1 + \frac {\mathrm{i} \omega \mu_ {0} \sigma}{2} z ^ {2}\right) \mathrm{e} ^ {\mathrm{i} \omega t}
+            \label{eq:17.s35}
+        \end{equation}
+        由题给电流条件
+        \begin{equation}
+            I _ {0} = \sigma \int_ {- d} ^ {d} \frac {\tilde {E} _ {x}}{\mathrm{e} ^ {\mathrm{i} \omega t}} \mathrm{d} z = \sigma \left(2 d + \frac {\mathrm{i} \omega \mu_ {0} \sigma}{3} d ^ {3}\right) \tilde {E} _ {0}
+            \label{eq:18.s35}
+        \end{equation}
+        从而
+        \begin{equation}
+            \tilde {E} _ {x} \approx \frac {I _ {0}}{2 \sigma d} \left(1 - \frac {\mathrm{i} \omega \mu_ {0} \sigma}{6} (d ^ {2} - 3 z ^ {2})\right) \mathrm{e} ^ {\mathrm{i} \omega t}
+            \label{eq:19.s35}
+        \end{equation}
+        进而
+        \begin{equation}
+            j (z) = \sigma \operatorname{Re} \tilde {E} _ {x} = \frac {I _ {0}}{2 d} \left(\cos (\omega t) + \frac {\omega \mu_ {0} \sigma}{6} (d ^ {2} - 3 z ^ {2}) \sin (\omega t)\right)
+            \label{eq:20.s35}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由第 \eqref{eq:14.s35}、\eqref{eq:20.s35} 式得
+        \begin{equation}
+            B _ {y} = - \frac {\mu_ {0} I _ {0}}{2 d} \left(\cos (\omega t) + \frac {\omega \mu_ {0} \sigma}{6} (d ^ {2} - z ^ {2}) \sin (\omega t)\right) z
+            \label{eq:21.s35}
+        \end{equation}
+        此时第 \eqref{eq:9.s35}、\eqref{eq:10.s35} 式仍成立，第 \eqref{eq:8.s35} 式改为
+        \begin{equation}
+            j _ {z} = \sigma \left(- \frac {j (z)}{n q} B _ {y} + E _ {z}\right) \approx \sigma \left(\frac {\mu_ {0} I _ {0} ^ {2}}{4 n q d ^ {2}} \left(\cos^ {2} (\omega t) + \frac {\omega \mu_ {0} \sigma}{6} (d ^ {2} - 2 z ^ {2}) \sin (2 \omega t)\right) z + E _ {z}\right)
+            \label{eq:22.s35}
+        \end{equation}
+        仿照第（3）问，将上式代入第 \eqref{eq:9.s35} 式，然后再将第 \eqref{eq:10.s35} 式代入得
+        \begin{equation}
+            \sigma \left(\frac {\mu_ {0} I _ {0} ^ {2}}{4 n q d ^ {2}} \left(\cos^ {2} (\omega t) + \frac {\omega \mu_ {0} \sigma}{6} (d ^ {2} - 6 z ^ {2}) \sin (2 \omega t)\right) + \frac {\rho}{\varepsilon_ {0}}\right) + \frac {\partial \rho}{\partial t} = 0
+            \label{eq:23.s35}
+        \end{equation}
+        显然稳定解为一个常值叠加一个以 $2\omega$ 为变化角频率的交变项，求解并利用 $\omega \varepsilon_0 / \sigma \ll \sqrt{\omega \mu_0\sigma} d\ll 1$ 的近似条件得
+        \begin{equation}
+            \rho (z, t) = - \frac {I _ {0} ^ {2}}{4 n q d ^ {2} c ^ {2}} \cos^ {2} (\omega t) - \frac {\omega \varepsilon_ {0} I _ {0} ^ {2} [ 6 + \sigma^ {2} \mu_ {0} ^ {2} c ^ {2} (d ^ {2} - 6 z ^ {2}) ]}{2 4 \sigma n q d ^ {2} c ^ {2}} \sin (2 \omega t)
+            \label{eq:24.s35}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        只保留最低阶的情况下，易知
+        \begin{equation}
+            j _ {z} (t) = - \frac {\partial \rho}{\partial t} z = \frac {\omega I _ {0} ^ {2}}{4 n q d ^ {2} c ^ {2}} \sin (2 \omega t) z
+            \label{eq:25.s35}
+        \end{equation}
+        从而焦耳热功率体密度
+        \begin{equation}
+            p (z, t) = \frac {j _ {z} ^ {2}}{\sigma} = \frac {\omega^ {2} I _ {0} ^ {4}}{1 6 \sigma n ^ {2} q ^ {2} d ^ {4} c ^ {4}} \sin^ {2} (2 \omega t) z ^ {2}
+            \label{eq:26.s35}
+        \end{equation}
+        所求
+        \begin{equation}
+            \eta (t) = \frac {\int_ {- d} ^ {d} p (z , t) \mathrm{d} z}{\frac {I _ {0} ^ {2}}{2 \sigma d} \cos^ {2} (\omega t)} = \frac {\omega^ {2} I _ {0} ^ {2}}{3 n ^ {2} q ^ {2} c ^ {4}} \sin^ {2} (\omega t)
+            \label{eq:27.s35}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

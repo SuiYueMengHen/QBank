@@ -1,0 +1,140 @@
+\begin{solution}{23}
+    \begin{subsolution}
+        通有电流 i 的钨丝（长直导线）在距其 r 处产生的磁感应强度的大小为
+        \begin{equation}
+            B = k_m \frac{i}{r}
+            \label{eq:1.s23}
+        \end{equation}
+        由右手螺旋定则可知，相应的磁感线是在垂直于钨丝的平面上以钨丝为对称轴的圆，磁感应强度的方向沿圆弧在该点的切向，它与电流 $i$ 的方向成右手螺旋。
+
+        两根相距为 d 的载流钨丝间的安培力是相互吸引力，大小为
+        \begin{equation}
+            F = B \Delta L i = \frac{k_m \Delta L i^2}{d}
+            \label{eq:2.s23}
+        \end{equation}
+        考虑某根载流钨丝所受到的所有其他载流钨丝对它施加的安培力的合力。由系统的对称性可知，每根钨丝受到的合力方向都指向轴心；我们只要将其他钨丝对它的吸引力在径向的分量叠加即可。如图，设两根载流钨丝到轴心连线间的夹角为 $\varphi$，则它们间的距离为
+        \begin{equation}
+            d = 2r\sin\frac{\varphi}{2}
+            \label{eq:3.s23}
+        \end{equation}
+        由\eqref{eq:2.s23}、\eqref{eq:3.s23}式可知，两根载流钨丝之间的安培力在径向的分量为
+        \begin{equation}
+            F_r = \frac{k_m \Delta L i^2}{2r\sin(\varphi/2)}\sin\frac{\varphi}{2} = \frac{k_m \Delta L i^2}{2r}
+            \label{eq:4.s23}
+        \end{equation}
+        它与 $\varphi$ 无关，也就是说虽然处于圆周不同位置的载流钨丝对某根载流钨丝的安培力大小和方向均不同，但在径向方向上的分量大小却是一样的；而垂直于径向方向的力相互抵消。因此，某根载流钨丝所受到的所有其他载流钨丝对它施加的安培力的合力为
+        \begin{equation}
+            F = \frac{(N-1)k_m \Delta L i^2}{2r} = \frac{(N-1)k_m \Delta L I_{\text{内}}^2}{2r N^2}
+            \label{eq:5.s23}
+        \end{equation}
+        其方向指向轴心。
+    \end{subsolution}
+    \begin{subsolution}
+        由系统的对称性可知，所考虑的圆柱面上各处单位面积所受的安培力的合力大小相等，方向与柱轴垂直，且指向柱轴。所考虑的圆柱面，可视为由很多钨丝排布而成，N 很大，但总电流不变。圆柱面上 $\Delta\varphi$ 角对应的柱面面积为
+        \begin{equation}
+            s = r \Delta\varphi \Delta L
+            \label{eq:6.s23}
+        \end{equation}
+        圆柱面上单位面积所受的安培力的合力为
+        \begin{equation}
+            P = \frac{N\Delta\varphi}{2\pi}\frac{F}{s} = \frac{N(N-1)k_m \Delta L i^2}{4\pi r^2 \Delta L}
+            \label{eq:7.s23}
+        \end{equation}
+        由于 $N \gg 1$，有
+        \begin{equation}
+            N(N-1)i^2 = I_{\text{内}}^2
+            \label{eq:8.s23}
+        \end{equation}
+        由\eqref{eq:7.s23}、\eqref{eq:8.s23}式得
+        \begin{equation}
+            P = \frac{k_m I_{\text{内}}^2}{4\pi r^2}
+            \label{eq:9.s23}
+        \end{equation}
+        代入题给数据得
+        \begin{equation}
+            P = 1.02 \times 10^{12} \mathrm{N/m}^2
+            \label{eq:10.s23}
+        \end{equation}
+        一个大气压约为 $10^5 \mathrm{N/m}^2$，所以
+        \begin{equation}
+            P \approx 10^7 \mathrm{atm}
+            \label{eq:11.s23}
+        \end{equation}
+        即相当于一千万大气压。
+    \end{subsolution}
+    \begin{subsolution}
+        考虑均匀通电的长直圆柱面内任意一点 A 的磁场强度。根据对称性可知，其磁场如果不为零，方向一定在过 A 点且平行于通电圆柱的横截面。在 A 点所在的通电圆柱的横截面（纸面上的圆）内，过 A 点作两条相互间夹角为微小角度 $\Delta\theta$ 的直线，在圆上截取两段微小圆弧 $L_1$ 和 $L_2$。由几何关系以及钨丝在圆周上排布的均匀性，通过 $L_1$ 和 $L_2$ 段的电流之比 $I_1/I_2$ 等于它们到 A 点的距离之比 $l_1/l_2$：
+        \begin{equation}
+            \frac{I_1}{I_2} = \frac{L_1}{L_2} = \frac{l_1}{l_2}
+            \label{eq:12.s23}
+        \end{equation}
+        式中，因此有
+        \begin{equation}
+            k_m\frac{I_1}{l_1} = k_m\frac{I_2}{l_2}
+            \label{eq:13.s23}
+        \end{equation}
+        即通过两段微小圆弧在 A 点产生的磁场大小相同，方向相反，相互抵消。整个圆周可以分为许多“对”这样的圆弧段，因此通电的外圈钨丝圆柱面在其内部产生的磁场为零，所以通电外圈钨丝的存在，不改变前述两小题的结果。
+    \end{subsolution}
+    \begin{subsolution}
+        由题中给出的已知规律，内圈电流在外圈钨丝所在处的磁场为
+        \begin{equation}
+            B = k_m\frac{I_{\text{内}}}{R}
+            \label{eq:14.s23}
+        \end{equation}
+        方向在外圈钨丝阵列与其横截面的交点构成的圆周的切线方向，由右手螺旋法则确定。外圈钨丝的任一根载流钨丝所受到的所有其他载流钨丝对它施加的安培力的合力为
+        \begin{equation}
+            F_{\text{外}} = \frac{(M-1)k_m \Delta L I_{\text{外}}^2}{2R M^2} + \frac{I_{\text{外}}}{M}\Delta L \frac{k_m I_{\text{内}}}{R} = \frac{k_m \Delta L (I_{\text{外}}^2 + 2I_{\text{内}}I_{\text{外}})}{2R M}
+            \label{eq:15.s23}
+        \end{equation}
+        式中第一个等号右边的第一项可直接由\eqref{eq:5.s23}式类比而得到，第二项由\eqref{eq:14.s23}式和安培力公式得到。
+
+        因此圆柱面上单位面积所受的安培力的合力为
+        \begin{equation}
+            P_{\text{外}} = \frac{M\Delta\varphi}{2\pi}\frac{F_{\text{外}}}{R\Delta\varphi \Delta L} = \frac{k_m(I_{\text{外}}^2 + 2I_{\text{内}}I_{\text{外}})}{4\pi R^2}
+            \label{eq:16.s23}
+        \end{equation}
+        若要求
+        \begin{equation}
+            \frac{k_m(I_{\text{外}}^2 + 2I_{\text{内}}I_{\text{外}})}{4\pi R^2} > \frac{k_m I_{\text{内}}^2}{4\pi r^2}
+            \label{eq:17.s23}
+        \end{equation}
+        只需满足
+        \begin{equation}
+            \frac{R}{r} < \sqrt{\frac{I_{\text{外}}^2 + 2I_{\text{内}}I_{\text{外}}}{I_{\text{内}}^2}} = \sqrt{\frac{M^2 + 2NM}{N^2}}
+            \label{eq:18.s23}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        考虑均匀通电的长直圆柱面外任意一点 C 的磁场强度。根据对称性可知，长直圆柱面上的均匀电流在该点的磁场方向一定在过 C 点且平行于通电圆柱的横截面（纸面上的圆），与圆的径向垂直，满足右手螺旋法则。在 C 点所在的通电圆柱的横截面内，过 C 点作两条相互间夹角为微小角度 $\Delta\theta$ 的直线，在圆上截取两段微小圆弧 $L_3$ 和 $L_4$。由几何关系以及电流在圆周上排布的均匀性，穿过 $L_3$ 和 $L_4$ 段的电流之比 $I_3/I_4$ 等于它们到 C 点的距离之比 $l_3/l_4$：
+        \begin{equation}
+            \frac{I_3}{I_4} = \frac{L_3}{L_4} = \frac{l_3}{l_4}
+            \label{eq:19.s23}
+        \end{equation}
+        式中，$CL_3 = l_3$，$CL_4 = l_4$，$CO = l$。由此得
+        \begin{equation}
+            \frac{I_3}{l_3} = \frac{I_4}{l_4} = \frac{I_3 + I_4}{l_3 + l_4}
+            \label{eq:20.s23}
+        \end{equation}
+        考虑到磁场分布的对称性，全部电流在 C 点的磁感应强度应与 CO 垂直。穿过 $L_3$ 和 $L_4$ 段的电流在 C 点产生的磁感应强度的垂直于 CO 的分量之和为
+        \begin{equation}
+            B_{\mathrm{C}} = k_m\frac{I_3}{l_3}\cos\theta + k_m\frac{I_4}{l_4}\cos\theta = 2k_m\frac{I_3 + I_4}{l_3 + l_4}\cos\theta
+            \label{eq:21.s23}
+        \end{equation}
+        设过 C 点所作的直线 $CL_3 L_4$ 与直线 CO 的夹角为 $\theta$，直线 $CL_3 L_4$ 与圆的半径 $OL_4$ 的夹角为 $\alpha$（此时，将微小弧元视为点）。由正弦定理有
+        \begin{equation}
+            \frac{l_3}{\sin(\alpha - \theta)} = \frac{l}{\sin\alpha} = \frac{l_4}{\sin(\alpha + \theta)}
+            \label{eq:22.s23}
+        \end{equation}
+        式中，$OCL_3 = \theta$，$CL_4O = \alpha$。于是
+        \begin{equation}
+            B_{\mathrm{C}} = 2k_m\frac{I_3 + I_4}{l_3 + l_4}\cos\theta = 2k_m\frac{I_3 + I_4}{l[\sin(\alpha + \theta) + \sin(\alpha - \theta)]}\sin\alpha\cos\theta = k_m\frac{I_3 + I_4}{l}
+            \label{eq:23.s23}
+        \end{equation}
+        即穿过两段微小圆弧的电流 $I_3$ 和 $I_4$ 在 C 点产生的磁场沿合磁场方向的投影等于 $I_3$ 和 $I_4$ 移至圆柱轴在 C 点产生的磁场。整个圆周可以分为许多“对”这样的圆弧段，因此沿柱轴通有均匀电流的长圆柱面外的磁场等于该圆柱面上所有电流移至圆柱轴后产生的磁场
+        \begin{equation}
+            B = k_m\frac{I_{\text{内}}}{l}, \quad l > r
+            \label{eq:24.s23}
+        \end{equation}
+        方向垂直于 C 点与圆心 O 的连线，满足右手螺旋法则。
+    \end{subsolution}
+\end{solution}

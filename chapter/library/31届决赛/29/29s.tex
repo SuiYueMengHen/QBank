@@ -1,0 +1,113 @@
+\begin{solution}{29}
+  \begin{subsolution}
+    对于微观粒子可以忽略地球重力的作用，因此离子在极板外做匀速直线运动，以入射孔所在处为坐标原点，以垂直于极板的方向为 Y 轴方向，平行于极板方向为 X 轴方向，则离子在坐标 $(h_{1}\cot\theta, h_{1})$ 处进入极板区，进入极板区后离子做斜抛运动，初速度为
+    \begin{equation}
+      v_{0} = \sqrt{2 E / m}
+      \label{eq:1.p29}
+    \end{equation}
+    加速度大小为 $a_{y} = -qV / (md)$
+
+    Y 轴方向速度为零时，对应的坐标为
+    \begin{equation}
+      \left(h_{1} \cot \theta + E d \sin 2\theta / (q V), h_{1} + E d \sin^{2} \theta / (q V)\right)
+      \label{eq:2.p29}
+    \end{equation}
+    离子离开极板时，速度大小仍为 $v_{0} = \sqrt{2E / m}$，后作匀速直线运动，因此出射孔在X轴方向的坐标为
+    \begin{equation}
+      l = (h_{1} + h_{2}) \cot \theta + 2 E d \sin (2 \theta) / (q V)
+      \label{eq:3.p29}
+    \end{equation}
+    离子的能量与 $l$ 的关系为
+    \begin{equation}
+      E = q V \left[ l - (h_{1} + h_{2}) \cot \theta \right] / (2 d \sin 2 \theta)
+      \label{eq:4.p29}
+    \end{equation}
+    能量为 E 的离子在极板内垂直于极板方向的最大飞行距离
+    \begin{equation}
+      H = E d \sin^{2} \theta / (q V)
+      \label{eq:5.p29}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    当 $\Delta\alpha = \theta$ 时，若有
+    \begin{equation}
+      l = (h_{1} + h_{2}) \cot (\theta + \Delta \alpha) + 2 E d \sin [ 2 (\theta + \Delta \alpha) ] / (q V)
+      \label{eq:6.p29}
+    \end{equation}
+    \begin{equation}
+      = (h_{1} + h_{2}) \cot \theta + 2 E d \sin (2 \theta) / (q V)
+    \end{equation}
+    则可以达到要求。又
+    \begin{equation}
+      \begin{array}{l}
+        \cot (\theta + \Delta \alpha) = (\cos \theta \cos \Delta \alpha - \sin \theta \sin \Delta \alpha) / (\sin \theta \cos \Delta \alpha + \cos \theta \sin \Delta \alpha) \\
+        \approx (\cos \theta - \Delta \alpha \sin \theta) / (\sin \theta + \Delta \alpha \cos \theta) = (\cot \theta - \Delta \alpha) / (1 + \Delta \alpha \cot \theta) \approx \cot \theta - \Delta \alpha (1 + \cot^{2} \theta) \\
+        = \cot \theta - \Delta \alpha / \sin^{2} \theta
+      \end{array}
+    \end{equation}
+    其中利用了关系式 $\sin\Delta\alpha\approx\Delta\alpha,\quad\cos\Delta\alpha\approx1$；同样有
+    \begin{equation}
+      \begin{array}{l}
+        \sin [ 2 (\theta + \Delta \alpha) ] = \sin (2 \theta) \cos (2 \Delta \alpha) + \cos (2 \theta) \sin (2 \Delta \alpha) \\
+        \approx \sin (2 \theta) + 2 \Delta \alpha \cos (2 \theta)
+      \end{array}
+    \end{equation}
+    代入 \eqref{eq:4.p29} 式得
+    \begin{equation}
+      \Delta \alpha (h_{1} + h_{2}) / \sin^{2} \theta - 4 \Delta \alpha E d \cos (2 \theta) / (q V) = 0
+    \end{equation}
+    即
+    \begin{equation}
+      h_{2} = 4 E d \sin^{2} \theta \cos (2 \theta) / (q V) - h_{1}
+      \label{eq:7.p29}
+    \end{equation}
+    对应的能量表达式为
+    \begin{equation}
+      E = q V l / \{2 d \sin (2 \theta) [ 1 + \cos (2 \theta) ] \}
+      \label{eq:8.p29}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    为了使所有量程范围的离子均不碰到上极板，则极板间距应大于 \eqref{eq:5.p29} 式的 $H$，则可得
+    \begin{equation}
+      E_{\max} \leq q V / \sin^{2} \theta
+      \label{eq:9.p29}
+    \end{equation}
+    或者说，所加电压必须 $V \geq E_{\max} \sin^{2} \theta / q$
+
+    由 \eqref{eq:8.p29} 式，并根据题意要求，可得 $E_{max}$ 与 $l_{max}$ 的关系为
+    \begin{equation}
+      E_{\max} = \frac{q V l_{\max}}{2 d \sin (2 \theta) [ 1 + \cos (2 \theta) ]}
+      \label{eq:10.p29}
+    \end{equation}
+    将上式代入 \eqref{eq:9.p29} 式，得到极板的最小间距为
+    \begin{equation}
+      d = \frac{l_{\max} \sin^{2} \theta}{2 \sin (2 \theta) [ 1 + \cos (2 \theta) ]}
+      \label{eq:11.p29}
+    \end{equation}
+    若 $\theta = 30^{\circ}$，则要求
+    \begin{equation}
+      d = \frac{\sqrt{3}}{18} l_{\max}
+      \label{eq:12.p29}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    可以加如图所示的垂直于运动平面强度为 B 的半圆形均匀磁场，则离子将做回旋运动，其运动方程为
+    \begin{equation}
+      \frac{m v^{2}}{R} = q v B
+      \label{eq:13.p29}
+    \end{equation}
+    即
+    \begin{equation}
+      m v = q B R
+    \end{equation}
+    测出离子的回旋半径 R，有
+    \begin{equation}
+      \begin{array}{l}
+        m = (m v)^{2} / (2 E) = q B^{2} R^{2} d \sin (2 \theta) [ 1 + \cos (2 \theta) ] / V l \\
+        = q B^{2} R^{2} l_{\max} \sin^{2} \theta / V l
+      \end{array}
+      \label{eq:14.p29}
+    \end{equation}
+  \end{subsolution}
+\end{solution}

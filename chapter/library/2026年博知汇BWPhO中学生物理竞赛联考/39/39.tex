@@ -1,0 +1,30 @@
+\begin{problem}[2026年博知汇BWPhO][盘状卫星的转动]{39}
+    考虑一个盘状卫星绕行星的运动。卫星质量为 $m$（均匀分布），行星质量为 $M$，$M \gg m$，二者距离为 $r$。卫星半径为 $R$，满足 $R \ll r$。某时刻盘状卫星有自转角速度 $\omega$，方向如图，盘面下侧法线方向与 $r$ 方向夹角为 $\pi/2 - \varphi$。
+    \begin{subproblem}
+        直接写出 $m$ 绕 $M$ 的公转角速度 $\omega_{\mathrm{rev}}$。在后续小问中，所有计算结果均需要利用 $\omega_{\mathrm{rev}}$ 表示，不得出现 $GM$。
+    \end{subproblem}
+    \begin{subproblem}
+        由于引力作用，卫星的自转轴将作进动。考虑稳定进动的情形，设进动角速度大小为 $\Omega$，满足 $\Omega \ll \omega_{rev} \ll \omega$，即圆盘的运动相对公转是浸渐的，同时忽略 $\Omega$ 对角动量的贡献。本问所有结果均保留至非零最低阶。
+        \begin{subsubproblem}
+            考虑一个总质量为 $M$、半径为 $r$ 的匀质圆环。以环心为原点 $O$，环所在平面为 $xOz$ 平面建立空间直角坐标系，试求环心附近（即满足 $\sqrt{x^{2}+y^{2}+z^{2}}\ll r$）的引力场强度 $g(x,y,z)$，要求写成直角坐标分量式。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            以盘心为原点 $O$ 建立空间直角坐标系 $O$-$xyz$，使瞬时的角速度矢量 $\omega$ 位于 $xOy$ 平面的第二象限，且 $M$ 位于 $xOz$ 平面内。试求圆盘所受的平均引力矩 $\tau_{1}$（相对 $O$ 点）。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            承第（2.2）问，试求出圆盘稳定进动的角速度 $\Omega$。（$\omega$ 大小恒定且已知）
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        承第（2）问，现在由于某些原因（例如空间中有尘埃，但卫星通过喷气等方式维持公转速率不变），卫星单位质量受力 $f = -kv$，其中 $k$ 为已知的正的常量 $(k \ll \omega)$，$v$ 是相对卫星质心的速度中垂直于盘面的分量。这使 $\varphi$ 随时间 $t$ 缓慢地变化。忽略 $\dot{\varphi}$ 对角动量的贡献。
+        \begin{subsubproblem}
+            求出卫星因为 $f$ 而受到的阻尼力矩 $\tau_{2}$，要求写成在（2.2）问坐标系中的分量式，结果中保留 $\Omega = |\Omega|$。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            先忽略 $\Omega$ 对角动量的贡献。设 $t = 0$ 时 $\varphi = \varphi_0, \omega = \omega_0$。论证 $r$ 为不变量，并求出 $t > 0$ 时的 $\omega(t)$ 和 $\varphi(t)$。(结果中可以直接包含 $r$)
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            现在考虑 $\Omega$ 对角动量的贡献，但仍忽略 $\dot{\varphi}$ 的贡献，将 $\omega$ 改看作 $\varphi$ 的函数，试导出 $\omega (\varphi)$ 的最低阶修正。
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}

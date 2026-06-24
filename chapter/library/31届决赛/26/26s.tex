@@ -1,0 +1,134 @@
+\begin{solution}{26}
+  \begin{subproblem}[参考解答（一）]
+    以两个目标 W 和 N 连线的中点 O 为原点建立如图 1 的坐标系，假设潜艇发射母弹时的位置为 $(x,0,d)$，母弹发射方向的仰角为 $\theta$（与 xoz 平面的夹角），与航线的夹角为 $\alpha$（在 xoz 平面内，发射方向的投影线与 x 轴的夹角）。按题意母弹到达最高点的时间为
+    \begin{equation}
+      t = \frac{v_{0} \sin \theta}{g}
+      \label{eq:1.p26}
+    \end{equation}
+    沿发射方向在海面上质心运动的距离（即射程）为
+    \begin{equation}
+      s = \frac{v_{0}^{2} \sin 2\theta}{g}
+      \label{eq:2.p26}
+    \end{equation}
+    根据题意与动量守恒定律，在母弹参考系中，三个分弹头的飞行方向一定在水平面内呈对称分布，且假弹头3飞行方向与海岸线垂直（如图2所示）。分弹头1、2在与海岸线垂直的方向上飞行的距离为
+    \begin{equation}
+      d = \left(\frac{v}{2} + v_{0} \cos \theta \cdot \sin \alpha\right) \cdot t + v_{0} \cos \theta \cdot \sin \alpha \cdot t
+      \label{eq:3.p26}
+    \end{equation}
+    分弹头1在与海岸线平行的方向上飞行的距离为
+    \begin{equation}
+      \left(\frac{\sqrt{3}}{2} v - v_{0} \cos \theta \cdot \cos \alpha\right) \cdot t = \left(\frac{L}{2} - |x| + \frac{s}{2} \cos \alpha\right)
+      \label{eq:4.p26}
+    \end{equation}
+    分弹头2 在与海岸线平行的方向上飞行的距离为
+    \begin{equation}
+      \left(\frac{\sqrt{3}}{2} v + v_{0} \cos \theta \cdot \cos \alpha\right) \cdot t = \left(|x| + \frac{L}{2} - \frac{s}{2} \cos \alpha\right)
+      \label{eq:5.p26}
+    \end{equation}
+    联立 \eqref{eq:1.p26} \eqref{eq:4.p26} \eqref{eq:5.p26} 式可得
+    \begin{equation}
+      \sqrt{3} v \cdot \frac{v_{0} \sin \theta}{g} = L
+    \end{equation}
+    \begin{equation}
+      \sin \theta = \frac{g L}{\sqrt{3} v_{0} v} \quad \cos \theta = \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}
+      \label{eq:6.p26}
+    \end{equation}
+    将 \eqref{eq:1.p26} \eqref{eq:6.p26} 式代入 \eqref{eq:3.p26} 式，若母弹在海面上空爆炸，有
+    \begin{equation}
+      d = \left(\frac{v}{2} + 2 v_{0} \cos \theta \cdot \sin \alpha\right) \cdot \frac{v_{0} \sin \theta}{g}
+    \end{equation}
+    \begin{equation}
+      \sin \alpha = \pm \frac{(2 \sqrt{3} d - L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \quad \cos \alpha = \sqrt{1 - \frac{9 v^{4} \left(d - \frac{L}{2 \sqrt{3}}\right)^{2}}{L^{2} (3 v_{0}^{2} v^{2} - g^{2} L^{2})}}
+      \label{eq:7.p26}
+    \end{equation}
+    其中，\eqref{eq:7.p26} 式中“+”号表示母弹发射速度的水平分量倾向海岸方向，“-”号表示母弹发射速度的水平分量背向海岸方向。将上述结果代入 \eqref{eq:4.p26} 或 \eqref{eq:5.p26} 式可得
+    \begin{equation}
+      x = \pm \sqrt{\frac{4 L^{2}}{9 v^{4}} (3 v_{0}^{2} v^{2} - g^{2} L^{2}) - (d - \frac{L}{2 \sqrt{3}})^{2}}
+      \label{eq:8.p26}
+    \end{equation}
+    为了实现所述操作，需满足的条件为
+    \begin{equation}
+      0 < \frac{g L}{\sqrt{3} v_{0} v} \leq 1, \left| \frac{(2 \sqrt{3} d - L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \right| \leq 1, d > 0
+      \label{eq:9.p26}
+    \end{equation}
+    其中前两个条件是 \eqref{eq:7.p26} 式所要求的，后一个条件是题意所给的限制。
+
+    如果母弹在陆地上空爆炸，只有 \eqref{eq:7.p26} \eqref{eq:8.p26} \eqref{eq:9.p26} 式有变化，变化后的结果为
+    \begin{equation}
+      x = \pm \sqrt{\frac{4 L^{2}}{9 v^{4}} (3 v_{0}^{2} v^{2} - g^{2} L^{2}) - (d + \frac{L}{2 \sqrt{3}})^{2}}
+      \label{eq:10.p26}
+    \end{equation}
+    \begin{equation}
+      \sin \alpha = \frac{(2 \sqrt{3} d + L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \quad \cos \alpha = \sqrt{1 - \frac{9 v^{4} \left(d + \frac{L}{2 \sqrt{3}}\right)^{2}}{L^{2} (3 v_{0}^{2} v^{2} - g^{2} L^{2})}}
+      \label{eq:11.p26}
+    \end{equation}
+    \begin{equation}
+      0 < \frac{g L}{\sqrt{3} v_{0} v} \leq 1, \quad \frac{(2 \sqrt{3} d + L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \leq 1, \quad d > 0
+      \label{eq:12.p26}
+    \end{equation}
+  \end{subproblem}
+  \begin{subproblem}[参考解答（二）]
+    以两个目标 W 和 N 连线的中点 O 为原点建立如图 1 的坐标系，假设潜艇发射母弹时的位置为 $(x,0,d)$，母弹发射方向的仰角为 $\theta$（与 xoy 平面的夹角），与航线的夹角为 $\alpha$（xoz 平面内与 x 轴的夹角），按题意母弹到达最高点的时间为
+    \begin{equation}
+      t = \frac{v_{0} \sin \theta}{g}
+      \label{eq:13.p26}
+    \end{equation}
+    按题意多弹头母弹的运动可分解为母弹的质心运动及分弹头相对质心的运动，沿发射方向在海面上质心运动的距离（即射程）为
+    \begin{equation}
+      s = \frac{v_{0}^{2} \sin 2\theta}{g}
+      \label{eq:14.p26}
+    \end{equation}
+    如果要求分弹头1、2能够击中军事目标（按题意，必须是同时击中），则质心必须落在两个军事目标W和N连线的垂直中分线上（海面上或陆地上），其俯视图如图3所示（此处仅画出质心落点在海面上的情形）。分析可知有
+    \begin{equation}
+      \frac{v}{2} \cdot t = \frac{L}{2 \sqrt{3}}
+      \label{eq:15.p26}
+    \end{equation}
+    \begin{equation}
+      x^{2} + \left(d \pm \frac{L}{2 \sqrt{3}}\right)^{2} = s^{2}
+      \label{eq:16.p26}
+    \end{equation}
+    \eqref{eq:16.p26} 式右端“-”号和“+”号分别对应于质心落点在海面和地面上的情形。
+
+    将 \eqref{eq:13.p26} 式代入 \eqref{eq:15.p26} 式得
+    \begin{equation}
+      \sin \theta = \frac{g L}{\sqrt{3} v_{0} v}, \quad \cos \theta = \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}
+      \label{eq:17.p26}
+    \end{equation}
+    将 \eqref{eq:13.p26} \eqref{eq:17.p26} 式代入 \eqref{eq:14.p26} 式，对于质心落点在海面上的情形，有
+    \begin{equation}
+      s = \frac{2 L}{3 v^{2}} \sqrt{3 v_{0}^{2} v^{2} - g^{2} L^{2}}
+    \end{equation}
+    \begin{equation}
+      x = \pm \sqrt{\frac{4 L^{2}}{9 v^{4}} (3 v_{0}^{2} v^{2} - g^{2} L^{2}) - (d - \frac{L}{2 \sqrt{3}})^{2}}
+      \label{eq:18.p26}
+    \end{equation}
+    \begin{equation}
+      |x| = s \cos \alpha
+      \label{eq:19.p26}
+    \end{equation}
+    \begin{equation}
+      \cos \alpha = \sqrt{1 - \frac{9 v^{4} \left(d - \frac{L}{2 \sqrt{3}}\right)^{2}}{L^{2} (3 v_{0}^{2} v^{2} - g^{2} L^{2})}} \quad \sin \alpha = \pm \frac{(2 \sqrt{3} d - L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}}
+      \label{eq:20.p26}
+    \end{equation}
+    其中，\eqref{eq:20.p26} 式中“+”号表示母弹发射速度的水平分量倾向海岸方向，“-”号表示母弹发射速度的水平分量背向海岸方向。为了实现所述操作，需满足的条件为
+    \begin{equation}
+      0 < \frac{g L}{\sqrt{3} v_{0} v} \leq 1, \left| \frac{(2 \sqrt{3} d - L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \right| \leq 1, d > 0
+      \label{eq:21.p26}
+    \end{equation}
+    其中前两个条件是 \eqref{eq:20.p26} 式所要求的，后一个条件是题意所给的限制。
+
+    对于质心落点在陆地上的情形，只有 \eqref{eq:18.p26} \eqref{eq:20.p26} \eqref{eq:21.p26} 式有变化，变化后的结果为
+    \begin{equation}
+      x = \pm \sqrt{\frac{4 L^{2}}{9 v^{4}} (3 v_{0}^{2} v^{2} - g^{2} L^{2}) - (d + \frac{L}{2 \sqrt{3}})^{2}}
+      \label{eq:22.p26}
+    \end{equation}
+    \begin{equation}
+      \cos \alpha = \sqrt{1 - \frac{9 v^{4} \left(d + \frac{L}{2 \sqrt{3}}\right)^{2}}{L^{2} (3 v_{0}^{2} v^{2} - g^{2} L^{2})}} \quad \sin \alpha = \frac{(2 \sqrt{3} d + L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}}
+      \label{eq:23.p26}
+    \end{equation}
+    \begin{equation}
+      0 < \frac{g L}{\sqrt{3} v_{0} v} \leq 1, \quad \frac{(2 \sqrt{3} d + L) v}{4 L v_{0} \sqrt{1 - \frac{g^{2} L^{2}}{3 v_{0}^{2} v^{2}}}} \leq 1, \quad d > 0
+      \label{eq:24.p26}
+    \end{equation}
+  \end{subproblem}
+\end{solution}

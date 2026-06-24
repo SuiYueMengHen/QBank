@@ -1,0 +1,125 @@
+\begin{solution}{3}
+\begin{subsolution}
+当杆以角速度 $\omega$ 绕过其一端的光滑水平轴 $O$ 在竖直平面内转动时，其动能是独立变量 $\lambda$、$\omega$ 和 $L$ 的函数，按题意可表示为
+\begin{equation}
+E_{k} = k \lambda^{\alpha} \omega^{\beta} L^{\gamma}
+\label{eq:1.s3}
+\end{equation}
+式中，$k$ 为待定常数（单位为1）。令长度、质量和时间的单位分别为 $[L]$、$[M]$ 和 $[T]$（它们可视为相互独立的基本单位），则 $\lambda$、$\omega$、$L$ 和 $E_{k}$ 的单位分别为
+\begin{align}
+[\lambda] &= [M][L]^{-1}, \nonumber\\
+[\omega] &= [T]^{-1}, \nonumber\\
+[L] &= [L], \nonumber\\
+[E_{k}] &= [M][L]^{2}[T]^{-2} \nonumber
+\end{align}
+在一般情形下，若 $[q]$ 表示物理量 $q$ 的单位，则物理量 $q$ 可写为
+\begin{equation}
+q = (q)[q]
+\label{eq:3.s3}
+\end{equation}
+式中，$(q)$ 表示物理量 $q$ 在取单位 $[q]$ 时的数值。这样，\eqref{eq:1.s3}式可写为
+\begin{equation}
+(E_{k})[E_{k}] = k (\lambda)^{\alpha} (\omega)^{\beta} (L)^{\gamma} [\lambda]^{\alpha} [\omega]^{\beta} [L]^{\gamma}
+\label{eq:4.s3}
+\end{equation}
+在由(2)表示的同一单位制下，上式即
+\begin{align}
+(E_{k}) &= k (\lambda)^{\alpha} (\omega)^{\beta} (L)^{\gamma} \nonumber\\
+[E_{k}] &= [\lambda]^{\alpha} [\omega]^{\beta} [L]^{\gamma} \nonumber
+\end{align}
+将(2)中第四式代入(6)式得
+\begin{equation}
+[M][L]^{2}[T]^{-2} = [M]^{\alpha} [L]^{\gamma-\alpha} [T]^{-\beta}
+\label{eq:7.s3}
+\end{equation}
+(2)式并未规定基本单位 $[L]$、$[M]$ 和 $[T]$ 的绝对大小，因而\eqref{eq:7.s3}式对于任意大小的 $[L]$、$[M]$ 和 $[T]$ 均成立，于是
+\begin{equation}
+\alpha = 1, \quad \beta = 2, \quad \gamma = 3
+\label{eq:8.s3}
+\end{equation}
+所以
+\begin{equation}
+E_{k} = k \lambda \omega^{2} L^{3}
+\label{eq:9.s3}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+由题意，杆的动能为
+\begin{equation}
+E_{k} = E_{k,\mathrm{c}} + E_{k,\mathrm{r}}
+\label{eq:10.s3}
+\end{equation}
+其中，
+\begin{equation}
+E_{k,\mathrm{c}} = \frac{1}{2} m v_{\mathrm{c}}^{2} = \frac{1}{2} (\lambda L) \left(\frac{L}{2} \omega\right)^{2}
+\label{eq:11.s3}
+\end{equation}
+注意到，杆在质心系中的运动可视为两根长度为 $\frac{L}{2}$ 的杆过其公共端（即质心）的光滑水平轴在铅直平面内转动，因而，杆在质心系中的动能 $E_{k,\mathrm{r}}$ 为
+\begin{equation}
+E_{k,\mathrm{r}} = 2 E_{k}(\lambda, \omega, \frac{L}{2}) = 2 k \lambda \omega^{2} \left(\frac{L}{2}\right)^{3}
+\label{eq:12.s3}
+\end{equation}
+将\eqref{eq:9.s3}、\eqref{eq:11.s3}、\eqref{eq:12.s3}式代入\eqref{eq:10.s3}式得
+\begin{equation}
+k \lambda \omega^{2} L^{3} = \frac{1}{2} \lambda L \left(\frac{L}{2} \omega\right)^{2} + 2 k \lambda \omega^{2} \left(\frac{L}{2}\right)^{3}
+\label{eq:13.s3}
+\end{equation}
+由此解得
+\begin{equation}
+k = \frac{1}{6}
+\label{eq:14.s3}
+\end{equation}
+于是
+\begin{equation}
+E_{k} = \frac{1}{6} \lambda \omega^{2} L^{3}.
+\label{eq:15.s3}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+以细杆与地球为系统，下摆过程中机械能守恒
+\begin{equation}
+E_{k} = m g \left(\frac{L}{2} \sin \theta\right)
+\label{eq:16.s3}
+\end{equation}
+由\eqref{eq:15.s3}、\eqref{eq:16.s3}式得
+\begin{equation}
+\omega = \sqrt{\frac{3g \sin \theta}{L}}.
+\label{eq:17.s3}
+\end{equation}
+以在杆上距 $O$ 点为 $r$ 处的横截面外侧长为 $(L-r)$ 的那一段为研究对象，该段质量为 $\lambda(L-r)$，其质心速度为
+\begin{equation}
+v_{c}^{\prime} = \omega \left(r + \frac{L-r}{2}\right) = \omega \frac{L+r}{2}.
+\label{eq:18.s3}
+\end{equation}
+设另一段对该段的切向力为 $T$（以 $\theta$ 增大的方向为正方向），法向（即与截面相垂直的方向）力为 $N$（以指向 $O$ 点方向为正向），由质心运动定理得
+\begin{equation}
+T + \lambda (L-r) g \cos \theta = \lambda (L-r) a_{t}
+\label{eq:19.s3}
+\end{equation}
+\begin{equation}
+N - \lambda (L-r) g \sin \theta = \lambda (L-r) a_{n}
+\label{eq:20.s3}
+\end{equation}
+式中，$a_{t}$ 为质心的切向加速度的大小
+\begin{equation}
+a_{t} = \frac{\mathrm{d} v_{c}^{\prime}}{\mathrm{d} t} = \frac{L+r}{2} \frac{\mathrm{d} \omega}{\mathrm{d} t} = \frac{L+r}{2} \frac{\mathrm{d} \omega}{\mathrm{d} \theta} \frac{\mathrm{d} \theta}{\mathrm{d} t} = \frac{3(L+r) g \cos \theta}{4L}
+\label{eq:21.s3}
+\end{equation}
+而 $a_{n}$ 为质心的法向加速度的大小
+\begin{equation}
+a_{n} = \omega^{2} \frac{L+r}{2} = \frac{3(L+r) g \sin \theta}{2L}.
+\label{eq:22.s3}
+\end{equation}
+由\eqref{eq:19.s3}、\eqref{eq:20.s3}、\eqref{eq:21.s3}、\eqref{eq:22.s3}式解得
+\begin{equation}
+T = \frac{(L-r)(3r-L)}{4L^{2}} m g \cos \theta
+\label{eq:23.s3}
+\end{equation}
+\begin{equation}
+N = \frac{(L-r)(5L+3r)}{2L^{2}} m g \sin \theta
+\label{eq:24.s3}
+\end{equation}
+\end{subsolution}
+\end{solution}

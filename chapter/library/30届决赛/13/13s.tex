@@ -1,0 +1,90 @@
+\begin{solution}{13}
+\begin{subsolution}
+超导细圆环上有电流 $I$ 时，穿过超导圆环的磁通量为
+\begin{equation}
+\Phi = \pi r _ {0} ^ {2} B _ {z} + L I
+\label{eq:1.s13}
+\end{equation}
+把 $B_{z} = B_{0}(1 - 2\alpha z)$ 代入上式，得
+\begin{equation}
+\Phi = \pi r _ {0} ^ {2} B _ {0} (1 - 2 \alpha z) + L I
+\label{eq:2.s13}
+\end{equation}
+由于穿过超导圆环的磁通量保持不变，因此 $\Phi$ 为常量。由初始条件： $t = 0$ 时， $z = 0$ 、 $r = 0$ ， $I = I_{0}$ ，有
+\begin{equation}
+\Phi_ {0} = \pi r _ {0} ^ {2} B _ {0} + L I _ {0}。
+\label{eq:3.s13}
+\end{equation}
+于是
+\begin{equation}
+I = \frac {2}{L} \pi r _ {0} ^ {2} B _ {0} \alpha z + I _ {0} \equiv I (z)
+\label{eq:4.s13}
+\end{equation}
+现在考虑作用在圆环上的安培力。由于磁场为非均匀磁场，因此作用在圆环上的安培力不为零。由于轴对称性，安培力的方向沿轴线。作用在圆环上的安培力为
+\begin{align}
+F _ {\mathrm{A}} (z) &= - B _ {r} (z) I (z) 2 \pi r _ {0} \notag \\
+&= - B _ {0} \alpha r _ {0} \left(\frac {2}{L} \pi r _ {0} ^ {2} B _ {0} \alpha z + I _ {0}\right) 2 \pi r _ {0} \notag \\
+&= - k z - F _ {0},
+\label{eq:5.s13}
+\end{align}
+其中
+\begin{equation}
+k = \frac {4}{L} \pi^ {2} \alpha^ {2} B _ {0} ^ {2} r _ {0} ^ {4},
+\label{eq:6.s13}
+\end{equation}
+\begin{equation*}
+F _ {0} = 2 \pi \alpha B _ {0} r _ {0} ^ {2} I _ {0}
+\end{equation*}
+再考虑到作用在圆环上的重力 $F_{g}(z) = -mg$ ，作用在圆环上的合力为
+\begin{equation}
+F (z) = F _ {\mathrm{A}} (z) + F _ {g} (z) = - k z - \left(m g + F _ {0}\right)
+\label{eq:7.s13}
+\end{equation}
+在平衡位置 $z_0$ 处， $F(z_0) = 0$ 。由上式，得平衡位置为
+\begin{equation}
+z _ {0} = - \frac {m g + F _ {0}}{k} = - \frac {(m g + 2 \pi \alpha B _ {0} r _ {0} ^ {2} I _ {0}) L}{4 \pi^ {2} \alpha^ {2} B _ {0} ^ {2} r _ {0} ^ {4}}
+\label{eq:8.s13}
+\end{equation}
+由\eqref{eq:7.s13}式可知，圆环的运动为在其平衡位置附近的简谐振动，振动角频率为
+\begin{equation}
+\omega = \sqrt {\frac {k}{m}} = \frac {2 \pi \alpha B _ {0} r _ {0} ^ {2}}{\sqrt {m L}},
+\label{eq:9.s13}
+\end{equation}
+圆环在 $t$ 时刻的 $z$ 坐标的一般形式为
+\begin{equation}
+z (t) = z _ {0} + A \cos (\omega t + \varphi_ {0}),
+\label{eq:10.s13}
+\end{equation}
+其中振幅 $A$ 和初始相位 $\varphi_{0}$ 由初始条件
+\begin{equation}
+z (t = 0) = 0, \quad v _ {z} (t = 0) = \frac {\mathrm{d} z}{\mathrm{d} t} \Bigg | _ {t = 0} = 0
+\label{eq:11.s13}
+\end{equation}
+决定。由\eqref{eq:10.s13}、\eqref{eq:11.s13}式得
+\begin{equation*}
+z _ {0} + A \cos \varphi_ {0} = 0, \quad \omega A \sin \varphi_ {0} = 0
+\end{equation*}
+因此，
+\begin{equation}
+A = - z _ {0}, \quad \varphi_ {0} = 0
+\label{eq:12.s13}
+\end{equation}
+于是，
+\begin{align}
+z (t) &= z _ {0} - z _ {0} \cos (\omega t) \notag \\
+&= - z _ {0} [ \cos (\omega t) - 1 ] \notag \\
+&= \frac {\left(m g + 2 \pi \alpha B _ {0} r _ {0} ^ {2} I _ {0}\right) L}{4 \pi^ {2} \alpha^ {2} B _ {0} ^ {2} r _ {0} ^ {4}} \left[ \cos \left(\frac {2 \pi \alpha B _ {0} r _ {0} ^ {2}}{\sqrt {m L}} t\right) - 1 \right]
+\label{eq:13.s13}
+\end{align}
+\end{subsolution}
+
+\begin{subsolution}
+把\eqref{eq:13.s13}式代入\eqref{eq:4.s13}式，得 $t$ 时刻圆环中电流的表达式
+\begin{align}
+I (t) &= \left(\frac {m g}{2 \pi \alpha B _ {0} r _ {0} ^ {2}} + I _ {0}\right) \left[ \cos \left(\frac {2 \pi \alpha B _ {0} r _ {0} ^ {2}}{\sqrt {m L}} t\right) - 1 \right] + I _ {0} \notag \\
+&= \left(\frac {m g}{2 \pi \alpha B _ {0} r _ {0} ^ {2}} + I _ {0}\right) \cos \left(\frac {2 \pi \alpha B _ {0} r _ {0} ^ {2}}{\sqrt {m L}} t\right) - \frac {m g}{2 \pi \alpha B _ {0} r _ {0} ^ {2}}
+\tag{2.5.12.s}
+\label{eq:14.s13}
+\end{align}
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,24 @@
+\begin{problem}[2026年博知汇BWPhO][克努森泵]{38}
+    在真空封装器件中，常利用稀薄气体在温度梯度下的自发输运实现无运动部件的泵送，这类装置常被称为克努森泵。考虑一根半径为 $a$ 的长细圆管，其轴线沿 $x$ 轴。管内充满质量为 $m$ 的单原子理想气体，处于自由分子流区（分子平均自由程 $\lambda \gg a$），且稳态下气体的每个局部均满足理想气体状态方程。管壁温度随 $x$ 缓慢变化为 $T(x)$，并存在恒定梯度 $\mathrm{d}T / \mathrm{d}x$。
+
+    分子与管壁的碰撞满足完全漫反射: 分子撞击壁面后与壁面在该点处的局部温度 $T(x)$ 达到热平衡，然后重新发射。设 $\theta$ 为分子离开壁面时速度方向与壁面外法线的夹角 $(0 \leq \theta \leq \pi/2)$，$\phi$ 为方位角 $(0 \leq \phi < 2\pi)$，则发射方向在出射半球上的概率密度服从余弦发射体规律。
+    \begin{subproblem}
+        若管内某处气体处于温度 $T$、压强 $P$ 的平衡态，试导出单位时间内从同一侧通过管道横截面单位面积的分子数通量 $\Phi$，结果用 $P, T, m, k_{B}$ 表示。
+    \end{subproblem}
+    \begin{subproblem}
+        设管内气体存在沿 $x$ 轴的整体微小漂移速度 $u(|u| \ll \sqrt{k_{\mathrm{B}} T/m})$。取局部壁面处的切平面，使其法线方向为 $y$ 轴、轴向为 $x$ 轴。
+        \begin{subsubproblem}
+            此时气体分子的速度分布不再是原先的 $f_{0}(\pmb{v})$，而是漂移分布 $f(\pmb{v}) \approx f_{0}(\pmb{v})[1 + \alpha (\pmb{v})u]$，试推导 $\alpha (\pmb{v})$ 的表达式，用 $\pmb{v}$ 的分量和 $m, k_{\mathrm{B}}$ 和温度 $T$ 表示。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            由于分子离开壁面时服从余弦发射体规律，分子撞击壁面后再发射的平均轴向动量为零。计算单位面积壁面上气体向壁面传递的轴向动量通量 $M_{x}$，并给出单位长度管段内气体因与壁面碰撞而遭受的轴向阻力 $F_{\mathrm{drag}}$（取正方向为 $+x$）。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        先讨论 $u=0$ 的稳态情形，仅保留温度梯度效应。取垂直于轴线的截面（法线沿 $x$ 轴），将截面两侧局域气体视为分别处于 $(P(x),T(x))$ 与 $(P(x+\mathrm{d}x),T(x+\mathrm{d}x))$ 的平衡态。要求跨越该截面的净分子数通量为零，利用第（1）问结果导出 $P$ 与 $T$ 的微分关系式。再考虑长度为 $dx$ 的气柱：其两端压强差产生的轴向合力为 $F_{press}$，壁面对气体的等效轴向推力密度记为 $F_{th}$（壁面对该段气体的合力为 $F_{th}\mathrm{d}x$）。由力平衡求出 $F_{th}$，结果用 $a, P, T, \mathrm{d}T/\mathrm{d}x$ 表示。
+    \end{subproblem}
+    \begin{subproblem}
+        回到一般稳态情形（允许 $u \neq 0$），长度为 $\mathrm{dx}$ 的气柱受力包括：两端压强差力 $F_{\mathrm{press}}$、壁面阻力 $F_{\mathrm{drag}} \mathrm{dx}$、以及热驱动力 $F_{\mathrm{th}} \mathrm{dx}$（形式与第（3）问相同）。写出轴向力平衡方程并解出漂移速度 $u$ 关于 $\mathrm{d}P / \mathrm{d}x$ 与 $\mathrm{d}T / \mathrm{d}x$ 的表达式。最后导出净分子流率 $\dot{N}$，要求结果用 $a, m, k_{\mathrm{B}}, T, P, \mathrm{d}P / \mathrm{d}x, \mathrm{d}T / \mathrm{d}x$ 表示。
+    \end{subproblem}
+\end{problem}
+

@@ -1,0 +1,88 @@
+\begin{solution}{18}
+    \begin{subsolution}
+        瓶内理想气体经历如下两个气体过程：
+        \begin{equation*}
+            (p_i, V_0, T_0, N_i) \xrightarrow{\text{放气(绝热膨胀)}} (p_0, V_0, T, N_f) \xrightarrow{\text{等容升温}} (p_f, V_0, T_0, N_f)
+        \end{equation*}
+        其中，$(p_i, V_0, T_0, N_i), (p_0, V_0, T, N_f)$ 和 $(p_f, V_0, T_0, N_f)$ 分别是瓶内气体在初态、中间态与末态的压强、体积、温度和摩尔数。根据理想气体方程 $pV = NkT$，考虑到由于气体初、末态的体积和温度相等，有
+        \begin{equation}
+            \frac{p_f}{p_i} = \frac{N_f}{N_i}
+            \label{eq:1.s18}
+        \end{equation}
+        另一方面，设 $V'$ 是初态气体在保持其摩尔数不变的条件下绝热膨胀到压强为 $p_0$ 时的体积，即
+        \begin{equation*}
+            (p_i, V_0, T_0, N_i) \xrightarrow{\text{绝热膨胀}} (p_0, V', T, N_i)
+        \end{equation*}
+        此绝热过程满足
+        \begin{equation}
+            \frac{V_0}{V'} = \left(\frac{p_0}{p_i}\right)^{1/\gamma}
+            \label{eq:2.s18}
+        \end{equation}
+        由状态方程有 $p_0 V' = N_i kT$ 和 $p_0 V_0 = N_f kT$，所以
+        \begin{equation}
+            \frac{N_f}{N_i} = \frac{V_0}{V'}
+            \label{eq:3.s18}
+        \end{equation}
+        联立\eqref{eq:1.s18}、\eqref{eq:2.s18}、\eqref{eq:3.s18}式得
+        \begin{equation}
+            \frac{p_f}{p_i} = \left(\frac{p_0}{p_i}\right)^{1/\gamma}
+            \label{eq:4.s18}
+        \end{equation}
+        此即
+        \begin{equation}
+            \gamma = \frac{\ln \frac{p_i}{p_0}}{\ln \frac{p_i}{p_f}}
+            \label{eq:5.s18}
+        \end{equation}
+        由力学平衡条件有
+        \begin{align}
+            p_i &= p_0 + \rho g h_i \label{eq:6.s18} \\
+            p_f &= p_0 + \rho g h_f \label{eq:7.s18}
+        \end{align}
+        式中，$p_0 = \rho g h_0$ 为瓶外的大气压强，$\rho$ 是 U 形管中液体的密度，g 是重力加速度的大小。由\eqref{eq:5.s18}、\eqref{eq:6.s18}、\eqref{eq:7.s18}式得
+        \begin{equation}
+            \gamma = \frac{\ln \left(1 + \frac{h_i}{h_0}\right)}{\ln \left(1 + \frac{h_i}{h_0}\right) - \ln \left(1 + \frac{h_f}{h_0}\right)}
+            \label{eq:8.s18}
+        \end{equation}
+        利用近似关系式：当 $x \ll 1, \ln(1 + x) \approx x$，以及 $h_i / h_0 \ll 1, h_f / h_0 \ll 1$，有
+        \begin{equation}
+            \gamma = \frac{h_i / h_0}{h_i / h_0 - h_f / h_0} = \frac{h_i}{h_i - h_f}
+            \label{eq:9.s18}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        若仅考虑留在容器内的气体：它首先经历了一个绝热膨胀过程 ab，再通过等容升温过程 bc 达到末态
+        \begin{equation*}
+            (p_i, V_1, T_0) \xrightarrow{\text{绝热膨胀 ab}} (p_0, V_0, T) \xrightarrow{\text{等容升温 bc}} (p_f, V_0, T_0)
+        \end{equation*}
+        其中，$(p_i, V_1, T_0), (p_0, V_0, T)$ 和 $(p_f, V_0, T_0)$ 分别是留在瓶内的气体在初态、中间态和末态的压强、体积与温度。留在瓶内的气体先后满足绝热方程和等容过程方程
+        \begin{align}
+            \text{ab:} \quad p_i^{\gamma - 1} T_0^{-\gamma} &= p_0^{\gamma - 1} T^{-\gamma} \label{eq:10.s18} \\
+            \text{bc:} \quad p_0 / T &= p_f / T_0 \label{eq:11.s18}
+        \end{align}
+        由\eqref{eq:10.s18}、\eqref{eq:11.s18}式得
+        \begin{equation}
+            \frac{p_f}{p_i} = \left(\frac{p_0}{p_i}\right)^{1/\gamma}
+            \label{eq:12.s18}
+        \end{equation}
+        此即
+        \begin{equation}
+            \gamma = \frac{\ln \frac{p_i}{p_0}}{\ln \frac{p_i}{p_f}}
+            \label{eq:13.s18}
+        \end{equation}
+        由力学平衡条件有
+        \begin{align}
+            p_i &= p_0 + \rho g h_i \label{eq:14.s18} \\
+            p_f &= p_0 + \rho g h_f \label{eq:15.s18}
+        \end{align}
+        式中，$p_0 = \rho g h_0$ 为瓶外的大气压强，$\rho$ 是 U 形管中液体的密度，g 是重力加速度的大小。由\eqref{eq:13.s18}、\eqref{eq:14.s18}、\eqref{eq:15.s18}式得
+        \begin{equation}
+            \gamma = \frac{\ln \left(1 + \frac{h_i}{h_0}\right)}{\ln \left(1 + \frac{h_i}{h_0}\right) - \ln \left(1 + \frac{h_f}{h_0}\right)}
+            \label{eq:16.s18}
+        \end{equation}
+        利用近似关系式：当 $x \ll 1, \ln(1 + x) \approx x$，以及 $h_i / h_0 \ll 1, h_f / h_0 \ll 1$，有
+        \begin{equation}
+            \gamma = \frac{h_i / h_0}{h_i / h_0 - h_f / h_0} = \frac{h_i}{h_i - h_f}
+            \label{eq:17.s18}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

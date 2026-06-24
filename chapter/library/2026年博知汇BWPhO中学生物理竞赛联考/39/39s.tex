@@ -1,0 +1,201 @@
+\begin{solution}{39}
+    \begin{subsolution}
+        易知
+        \begin{equation}
+            \omega_ {\mathrm{rev}} = \sqrt {\frac {G M}{r ^ {3}}}
+            \label{eq:1.s39}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            不难推断 $\pmb{g}$ 的 $y$ 分量和 $x, z$ 分量是解耦的，因此先沿 $y$ 轴计算 $y$ 分量，易知
+            \begin{equation}
+                g _ {y} = - \frac {G M}{r ^ {2}} \frac {y}{r} = - \frac {G M}{r ^ {3}} y
+                \label{eq:2.s39}
+            \end{equation}
+            设 $\rho = \sqrt{x^2 + z^2}$，由高斯定理
+            \begin{equation}
+                0 = \nabla \cdot \pmb {g} = \frac {\mathrm{d}}{\rho \mathrm{d} \rho} (\rho g _ {\rho}) - \frac {G M}{r ^ {3}}
+                \label{eq:3.s39}
+            \end{equation}
+            则
+            \begin{equation}
+                g _ {\rho} = \frac {G M}{2 r ^ {3}} \rho
+                \label{eq:4.s39}
+            \end{equation}
+            综合第 \eqref{eq:2.s39}、\eqref{eq:4.s39} 式得
+            \begin{equation}
+                \boldsymbol {g} (x, y, z) = \frac {G M}{2 r ^ {3}} \left(x \hat {\boldsymbol {x}} - 2 y \hat {\boldsymbol {y}} + z \hat {\boldsymbol {z}}\right) = \frac {1}{2} \omega_ {\text {rev}} ^ {2} \left(x \hat {\boldsymbol {x}} - 2 y \hat {\boldsymbol {y}} + z \hat {\boldsymbol {z}}\right)
+                \label{eq:5.s39}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            考虑盘状卫星上的质元 $P$，其位置用 $(r_1,\theta)$ 描述，这里 $\theta_{1} = 0$ 对应于 $xOy$ 平面上的第一象限内的射线方向。则坐标分量（其中 $z$ 分量将在（3.1）问中用到）
+            \begin{equation}
+                x _ {P} = r _ {1} \cos \theta \cos \varphi , y _ {P} = r _ {1} \cos \theta \sin \varphi , z _ {P} = r _ {1} \sin \theta
+                \label{eq:6.s39}
+            \end{equation}
+            质元
+            \begin{equation}
+                \mathrm{d} m = \frac {m}{\pi R ^ {2}} r _ {1} \mathrm{d} r _ {1} \mathrm{d} \theta
+                \label{eq:7.s39}
+            \end{equation}
+            由对称性分析，不难发现力矩必定只有 $z$ 分量，从而力矩微元
+            \begin{equation}
+                \begin{array}{r l} & {\mathrm{d} \tau_ {1 z} = ((x _ {P}, y _ {P}, z _ {P}) \times \pmb {g}) _ {z} \mathrm{d} m = \frac {m \omega_ {\mathrm{rev}} ^ {2}}{2 \pi R ^ {2}} ((x _ {P}, y _ {P}, z _ {P}) \times (x _ {P}, - 2 y _ {P}, z _ {P})) _ {z} r _ {1} \mathrm{d} r _ {1} \mathrm{d} \theta} \\ & {\quad = - \frac {3 m \omega_ {\mathrm{rev}} ^ {2}}{2 \pi R ^ {2}} x _ {P} y _ {P} r _ {1} \mathrm{d} r _ {1} \mathrm{d} \theta = - \frac {3 m \omega_ {\mathrm{rev}} ^ {2} \sin \varphi \cos \varphi}{2 \pi R ^ {2}} r _ {1} ^ {3} \cos^ {2} \theta \mathrm{d} r _ {1} \mathrm{d} \theta} \end{array}
+                \label{eq:8.s39}
+            \end{equation}
+            二重积分得
+            \begin{equation}
+                \tau_ {1 z} = - \frac {3 m \omega_ {\mathrm{rev}} ^ {2} \sin \varphi \cos \varphi}{2 \pi R ^ {2}} \cdot \frac {R ^ {4}}{4} \cdot \pi = - \frac {3}{8} m \omega_ {\mathrm{rev}} ^ {2} R ^ {2} \sin \varphi \cos \varphi
+                \label{eq:9.s39}
+            \end{equation}
+            再补全方向得
+            \begin{equation}
+                \pmb {\tau} _ {1} = - \frac {3}{8} m \omega_ {\mathrm{rev}} ^ {2} R ^ {2} \sin \varphi \cos \varphi \hat {\pmb {z}}
+                \label{eq:10.s39}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            因为 $\Omega \ll \omega$，角动量
+            \begin{equation}
+                \pmb {L} = \frac {1}{2} m R ^ {2} \pmb {\omega}
+                \label{eq:11.s39}
+            \end{equation}
+            由角动量定理
+            \begin{equation}
+                \boldsymbol {\Omega} \times \boldsymbol {L} = \boldsymbol {\tau} _ {1}
+                \label{eq:12.s39}
+            \end{equation}
+            解得
+            \begin{equation}
+                \pmb {\Omega} = - \varOmega \hat {\pmb {y}} = - \frac {3 \omega_ {\mathrm{rev}} ^ {2} \cos \varphi}{4 \omega} \hat {\pmb {y}}
+                \label{eq:13.s39}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由速度关联，不难得到相对速度
+            \begin{equation}
+                \boldsymbol {v} _ {r} = (\boldsymbol {\Omega} + \boldsymbol {\omega}) \times \boldsymbol {r} _ {1}
+                \label{eq:14.s39}
+            \end{equation}
+            其中垂直于盘面的分量
+            \begin{equation}
+                \boldsymbol {v} = \frac {\boldsymbol {v} _ {r} \cdot \boldsymbol {\omega}}{\omega^ {2}} \boldsymbol {\omega} = \Omega z _ {P} (- \sin^ {2} \varphi \hat {\boldsymbol {x}} + \sin \varphi \cos \varphi \hat {\boldsymbol {y}})
+                \label{eq:15.s39}
+            \end{equation}
+            进而力矩微元（其中 $z$ 分量积分后由对称性为零，故此处省略）
+            \begin{equation}
+                \begin{array}{r l} & {\mathrm{d} \pmb {\tau} _ {2} = (- k \pmb {r} _ {1} \times \pmb {v} \mathrm{d} m) _ {x, y} = k \varOmega z _ {P} ^ {2} \sin \varphi (\cos \varphi \hat {\pmb {x}} + \sin \varphi \hat {\pmb {y}}) \mathrm{d} m} \\ & {\quad = \frac {k m \varOmega}{\pi R ^ {2}} r _ {1} ^ {3} \mathrm{d} r _ {1} \sin^ {2} \theta \mathrm{d} \theta (\sin \varphi \cos \varphi \hat {\pmb {x}} + \sin^ {2} \varphi \hat {\pmb {y}})} \end{array}
+                \label{eq:16.s39}
+            \end{equation}
+            二重积分得
+            \begin{equation}
+                \pmb {\tau} _ {2} = \frac {1}{4} k m \varOmega R ^ {2} (\sin \varphi \cos \varphi \hat {\pmb {x}} + \sin^ {2} \varphi \hat {\pmb {y}})
+                \label{eq:17.s39}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            在浸渐假设下，公转角动量可写作
+            \begin{equation}
+                J = m r ^ {2} \omega_ {\mathrm{rev}} = m \sqrt {G M r}
+                \label{eq:18.s39}
+            \end{equation}
+            由于（2.2）中的引力矩和（3.1）中的阻力矩都是力偶矩，只会影响卫星的自转角动量，这说明公转角动量守恒。又公转角动量是 $r$ 的一元单值函数，所以 $r$ 守恒。
+
+            由角动量定理
+            \begin{equation}
+                \frac {\mathrm{d} \pmb {L}}{\mathrm{d} t} = \pmb {\tau} _ {1} + \pmb {\tau} _ {2}
+                \label{eq:19.s39}
+            \end{equation}
+            而
+            \begin{equation}
+                \frac {\mathrm{d} \pmb {L}}{\mathrm{d} t} = (\pmb {\Omega} + \dot {\varphi} \hat {\pmb {z}}) \times \pmb {L} + \frac {\mathrm{d} L}{\mathrm{d} t} \frac {\pmb {L}}{L}
+                \label{eq:20.s39}
+            \end{equation}
+            将第 \eqref{eq:11.s39} 式代入，比较 $z$ 分量发现第 \eqref{eq:13.s39} 式仍成立。
+
+            方法一：分量展开
+
+            将第 \eqref{eq:13.s39} 式也代入，则 $x, y$ 分量分别给出
+            \begin{equation}
+                \omega \dot {\varphi} \cos \varphi + \dot {\omega} \sin \varphi = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega} \sin \varphi \cos^ {2} \varphi
+                \label{eq:21.s39}
+            \end{equation}
+            \begin{equation}
+                \omega \dot {\varphi} \sin \varphi - \dot {\omega} \cos \varphi = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega} \sin^ {2} \varphi \cos \varphi
+                \label{eq:22.s39}
+            \end{equation}
+            由 \eqref{eq:21.s39}$\cdot \sin \varphi$ $-$ \eqref{eq:22.s39}$\cdot \cos \varphi$ 得
+            \begin{equation}
+                \dot {\omega} = 0 \Rightarrow \omega (t) = \omega_ {0}
+                \label{eq:23.s39}
+            \end{equation}
+            进而由 \eqref{eq:21.s39} $\cdot \cos \varphi$ $+$ \eqref{eq:22.s39} $\cdot \sin \varphi$ 得
+            \begin{equation}
+                \omega \dot {\varphi} = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega} \sin \varphi \cos \varphi \implies \frac {\mathrm{d} \varphi}{\sin \varphi \cos \varphi} = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0} ^ {2}} \mathrm{d} t
+                \label{eq:24.s39}
+            \end{equation}
+            方法二：矢量形式
+
+            将第 \eqref{eq:13.s39} 式也代入，得
+            \begin{equation}
+                \dot {\varphi} \hat {\pmb {z}} \times \frac {1}{2} m R ^ {2} \omega \hat {\pmb {L}} + \frac {1}{2} m R ^ {2} \dot {\omega} \hat {\pmb {L}} = \frac {1}{4} k m R ^ {2} \varOmega \sin \varphi (\hat {\pmb {L}} \times \hat {\pmb {z}})
+                \label{eq:21'.s39}
+            \end{equation}
+            因为 $\hat{z} \times \hat{L} \perp \hat{L}$，所以
+            \begin{equation}
+                \dot {\omega} = 0 \implies \omega (t) = \omega_ {0}
+                \label{eq:22'.s39}
+            \end{equation}
+            且
+            \begin{equation}
+                \dot {\varphi} = - \frac {k \Omega}{2 \omega} \sin \varphi = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0} ^ {2}} \sin \varphi \cos \varphi \implies \frac {\mathrm{d} \varphi}{\sin \varphi \cos \varphi} = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0} ^ {2}} \mathrm{d} t
+                \label{eq:23'.s39}
+            \end{equation}
+            回到两个方法的公共部分：
+
+            两边积分并整理得
+            \begin{equation}
+                \ln {\frac {\tan \varphi}{\tan \varphi_ {0}}} = - \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0} ^ {2}} t \Rightarrow \varphi (t) = \arctan \left(\exp \left(- \frac {3 k \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0} ^ {2}} t\right) \tan \varphi_ {0}\right)
+                \label{eq:25.s39}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            旋转坐标架，取 $(\xi, \zeta, z)$ 为新的坐标系，其中 $\zeta$ 方向和 $\omega$ 同向，$\xi$ 方向在原先 $xOy$ 平面内的第一象限内。
+
+            则
+            \begin{equation}
+                \pmb {L} = - \frac {1}{4} m R ^ {2} \varOmega \sin \varphi \hat {\pmb {\xi}} + \frac {1}{2} m R ^ {2} (\omega - \varOmega \cos \varphi) \hat {\pmb {\zeta}}
+                \label{eq:26.s39}
+            \end{equation}
+            由角动量定理
+            \begin{equation}
+                (- \varOmega \sin \varphi \hat {\pmb {\xi}} - \varOmega \cos \varphi \hat {\pmb {\zeta}} + \dot {\varphi} \hat {\pmb {z}}) \times \pmb {L} + \dot {L} _ {\xi} \hat {\pmb {\xi}} + \dot {L} _ {\zeta} \hat {\pmb {\zeta}} = \pmb {\tau} _ {1} + \pmb {\tau} _ {2}
+                \label{eq:27.s39}
+            \end{equation}
+            与第（3.2）问类似，取 $\zeta$ 分量得到
+            \begin{equation}
+                \dot {\omega} = \dot {\varOmega} \cos \varphi - \frac {1}{2} \varOmega \dot {\varphi} \sin \varphi
+                \label{eq:28.s39}
+            \end{equation}
+            为了求出 $\omega (\varphi)$ 的最低阶修正项，在计算 $\Omega$ 时只需计算最低阶项，取角动量定理的 $z$ 分量可得
+            \begin{equation}
+                4 \omega \varOmega - 2 \varOmega^ {2} \cos \varphi = 3 \omega_ {\mathrm{rev}} ^ {2} \cos \varphi \implies \varOmega \approx \frac {3 \omega_ {\mathrm{rev}} ^ {2} \cos \varphi}{4 \omega_ {0}}
+                \label{eq:29.s39}
+            \end{equation}
+            从而
+            \begin{equation}
+                \dot {\omega} = - \frac {9 \omega_ {\mathrm{rev}} ^ {2}}{8 \omega_ {0}} \dot {\varphi} \sin \varphi \cos \varphi
+                \label{eq:30.s39}
+            \end{equation}
+            解得
+            \begin{equation}
+                \omega \approx \omega_ {0} + \frac {9 \omega_ {\mathrm{rev}} ^ {2}}{1 6 \omega_ {0}} (\sin^ {2} \varphi_ {0} - \sin^ {2} \varphi)
+                \label{eq:31.s39}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

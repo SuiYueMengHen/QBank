@@ -1,0 +1,138 @@
+\begin{solution}{11}
+\begin{subsolution}
+当物资（包括托盘，以下类似） $m$ 距地心 $r$ 处时，物资 $m$ 与地球系统的引力势能 $U_{G}$ 和物资 $m$ 受到的由于地球自转引起的惯性离心力 $F_{L}$ 分别为
+\begin{equation}
+U _ {G} = - \frac {G M _ {e} m}{r}, F _ {L} = m \omega_ {e} ^ {2} r
+\label{eq:1.s11}
+\end{equation}
+这里已取由地心向外的方向为力的正向。先计算地球引力对物资 $m$ 所做的功。当物资 $m$ 分别在供应站和飞行器处时，物资 $m$ 与地球系统的引力势能为
+\begin{equation}
+U _ {G} \left(R _ {e}\right) = - \frac {G M _ {e} m}{R _ {e}}, U _ {G} \left(L + R _ {e}\right) = - \frac {G M _ {e} m}{L + R _ {e}} = - \frac {G M _ {e} m}{(\alpha + 1) R _ {e}}
+\label{eq:2.s11}
+\end{equation}
+由功能原理，地球引力对物资 $m$ 所做的功为
+\begin{equation}
+W _ {G} = U _ {G} \left(R _ {e}\right) - U _ {G} \left(L + R _ {e}\right) = - \frac {G M _ {e} m}{R _ {e}} \left(1 - \frac {1}{\alpha + 1}\right) = - \frac {\alpha G M _ {e} m}{(\alpha + 1) R _ {e}}
+\label{eq:3.s11}
+\end{equation}
+再计算惯性离心力对物资 $m$ 所做的功 $W_{L}$ 。由于惯性离心力与 $r$ 成正比，可用物资在供应站处的惯性离心力和物资在飞行器处的惯性离心力的平均值来计算惯性离心力的功。于是
+\begin{equation}
+W _ {L} = \frac {1}{2} \left[ F _ {L} \left(R _ {e}\right) + F _ {L} \left(L + R _ {e}\right) \right] L = \frac {1}{2} m \omega_ {e} ^ {2} \left[ R _ {e} + \left(L + R _ {e}\right) \right] L = \frac {1}{2} \alpha (\alpha + 2) m \omega_ {e} ^ {2} R _ {e} ^ {2}
+\label{eq:4.s11}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+物资离开供应站后，地球吸引力变小而惯性离心力变大。当惯性离心力大于地球吸引力时，就不再需要推动物资做功了。因此，需要外力做正功的路程为从出发点到地球吸引力等于惯性离心力之处。令 $r_{0}$ 为地球吸引力等于惯性离心力之处到地心的距离，则有
+\begin{equation*}
+\frac {G M _ {e} m}{r _ {0} ^ {2}} = m \omega_ {e} ^ {2} r _ {0},
+\end{equation*}
+或
+\begin{equation}
+r _ {0} = \left(\frac {G M _ {e}}{\omega_ {e} ^ {2}}\right) ^ {1 / 3}
+\label{eq:5.s11}
+\end{equation}
+物资到 $r_{0}$ 处时，地球引力所做的功为
+\begin{equation}
+W _ {G} \left(r _ {0}\right) = U _ {G} \left(R _ {e}\right) - U _ {G} \left(r _ {0}\right) = - \frac {G M _ {e} m}{R _ {e}} + \frac {G M _ {e} m}{r _ {0}} = - \frac {G M _ {e} m}{R _ {e}} \left(1 - \frac {R _ {e}}{r _ {0}}\right),
+\label{eq:6.s11}
+\end{equation}
+惯性离心力所做的功为
+\begin{equation}
+W _ {L} \left(r _ {0}\right) = \frac {1}{2} \left[ F _ {L} \left(r _ {0}\right) + F _ {L} \left(R _ {e}\right) \right] \left(r _ {0} - R _ {e}\right) = \frac {1}{2} m \omega_ {e} ^ {2} \left(r _ {0} ^ {2} - R _ {e} ^ {2}\right)
+\label{eq:7.s11}
+\end{equation}
+因此，为了把物资从供应站推送到飞行器，外推力至少需要做的正功为
+\begin{align}
+W _ {\min} &= - \left[ W _ {G} \left(r _ {0}\right) + W _ {L} \left(r _ {0}\right) \right] = \frac {G M _ {e} m}{R _ {e}} \left(1 - \frac {R _ {e}}{r _ {0}}\right) - \frac {1}{2} m \omega_ {e} ^ {2} \left(r _ {0} ^ {2} - R _ {e} ^ {2}\right) \notag \\
+&= \frac {G M _ {e} m}{R _ {e}} \left[ 1 - \frac {3}{2} \frac {R _ {e}}{r _ {0}} + \frac {1}{2} \left(\frac {R _ {e}}{r _ {0}}\right) ^ {3} \right] > 0
+\notag
+\end{align}
+这里，利用了\eqref{eq:5.s11}式。再将\eqref{eq:5.s11}式代入上式得
+\begin{equation}
+W _ {\min} = \frac {G M _ {e} m}{R _ {e}} + \frac {1}{2} m \omega_ {e} ^ {2} R _ {e} ^ {2} - \frac {3}{2} m \left(G M _ {e} \omega_ {e}\right) ^ {2 / 3}
+\label{eq:8.s11}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+令\eqref{eq:3.s11}式和\eqref{eq:4.s11}式之和等于零，则有
+\begin{equation*}
+- \frac {\alpha G M _ {e} m}{(\alpha + 1) R _ {e}} + \frac {1}{2} \alpha (\alpha + 2) m \omega_ {e} ^ {2} R _ {e} ^ {2} = 0,
+\end{equation*}
+即
+\begin{equation}
+\alpha^ {2} + 3 \alpha + 2 \left(1 - \frac {G M _ {e}}{\omega_ {e} ^ {2} R _ {e} ^ {3}}\right) = 0,
+\label{eq:9.s11}
+\end{equation}
+其解为
+\begin{equation}
+\alpha_ {\pm} = \frac {1}{2} \left[ - 3 \pm \left(1 + \frac {8 G M _ {e}}{\omega_ {e} ^ {2} R _ {e} ^ {3}}\right) ^ {1 / 2} \right]
+\label{eq:10.s11}
+\end{equation}
+舍去 $\alpha$ 的负根并令
+\begin{equation}
+\alpha_ {0} \equiv \alpha_ {+} = \frac {1}{2} \left[ - 3 + \left(1 + \frac {8 G M _ {e}}{\omega_ {e} ^ {2} R _ {e} ^ {3}}\right) ^ {1 / 2} \right],
+\label{eq:11.s11}
+\end{equation}
+则飞行器到地面的距离为
+\begin{equation}
+L _ {0} = \alpha_ {0} R _ {e} = \frac {R _ {e}}{2} \left[ - 3 + \left(1 + \frac {8 G M _ {e}}{\omega_ {e} ^ {2} R _ {e} ^ {3}}\right) ^ {1 / 2} \right]
+\label{eq:12.s11}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+为求供应站对输送管的作用力，先计算在输送管向下运动无限小距离 $\Delta l$ 过程中，地球引力、惯性离心力、地面供应站对输送管作用力所做的功。由于输送管处于平衡状态，因此这三个力对任何无限小位移所做功的和为零。为计算地球引力、惯性离心力所做的功，可以把输送管向下运动无限小距离 $\Delta l$ 想象成输送管最上面无限小的一段 $\Delta l$ （质量为 $\Delta m = m_p\Delta l / L$ ）无限缓慢地移动到最下面。在此过程中地球引力和惯性离心力所做的功可从类似于上面\eqref{eq:3.s11}式和\eqref{eq:4.s11}式中的结果求出。这一无限小的一段 $\Delta l$ 在距地心 $r$ 处时，地球引力势能和惯性离心力分别为
+\begin{equation}
+U _ {G} = - \frac {G M _ {e} \Delta m}{r} = - \frac {G M _ {e} m _ {p} \Delta l}{L r}, F _ {L} = \Delta m \omega_ {e} ^ {2} r = \frac {1}{L} m _ {p} \omega_ {e} ^ {2} r \Delta l
+\label{eq:13.s11}
+\end{equation}
+在输送管最上面无限小的一段 $\Delta l$ 无限缓慢地移动到最下面的过程中，地球引力所做的功为
+\begin{equation}
+\Delta W _ {G} = U _ {G} \left(L + R _ {e}\right) - U _ {G} \left(R _ {e}\right) = \frac {G M _ {e} m _ {p}}{L R _ {e}} \left(1 - \frac {1}{\alpha + 1}\right) \Delta l = \frac {G M _ {e} m _ {p}}{(\alpha + 1) R _ {e} ^ {2}} \Delta l,
+\label{eq:14.s11}
+\end{equation}
+惯性离心力所做的功为
+\begin{equation}
+\Delta W _ {L} = - \frac {1}{2} \left[ F _ {L} \left(R _ {e}\right) + F _ {L} \left(L + R _ {e}\right) \right] L = - \frac {1}{2} (\alpha + 2) m _ {p} \omega_ {e} ^ {2} R _ {e} \Delta l
+\label{eq:15.s11}
+\end{equation}
+取供应站对输送管的作用力 $F_{base}$ 向下为正向。在输送管向下运动无限小距离 $\Delta l$ 过程中， $F_{base}$ 所做的功为
+\begin{equation}
+\Delta W _ {\text { base }} = F _ {\text { base }} \Delta l
+\label{eq:16.s11}
+\end{equation}
+由 $\Delta W_{G} + \Delta W_{L} + \Delta W_{\mathrm{base}} = 0$ ，有
+\begin{equation}
+\frac {G M _ {e} m _ {p}}{(\alpha + 1) R _ {e} ^ {2}} \Delta l - \frac {1}{2} (\alpha + 2) m _ {p} \omega_ {e} ^ {2} R _ {e} \Delta l + F _ {\text { base }} \Delta l = 0
+\label{eq:17.s11}
+\end{equation}
+于是，
+\begin{equation}
+F _ {\text { base }} = - \frac {G M _ {e} m _ {p}}{(\alpha + 1) R _ {e} ^ {2}} + \frac {1}{2} (\alpha + 2) m _ {p} \omega_ {e} ^ {2} R _ {e}
+\label{eq:18.s11}
+\end{equation}
+若 $F_{base} < 0$ ，则供应站对输送管作用力的方向向上。
+
+为便于讨论 $L > L_{0}$ 、 $L = L_{0}$ 、 $\alpha_{m} R_{e} < L < L_{0}$ 三种情形，将\eqref{eq:18.s11}式改写为
+\begin{align}
+F _ {\text {base}} &= - \frac {G M _ {e} m _ {p}}{(\alpha + 1) R _ {e} ^ {2}} + \frac {1}{2} (\alpha + 2) m _ {p} \omega_ {e} ^ {2} R _ {e} = \frac {m _ {p} \omega_ {e} ^ {2} R _ {e}}{2 (\alpha + 1)} \left[ (\alpha + 1) (\alpha + 2) - \frac {2 G M _ {e}}{\omega_ {e} ^ {2} R _ {e} ^ {3}} \right] \notag \\
+&= \frac {m _ {p} \omega_ {e} ^ {2} R _ {e}}{2 (\alpha + 1)} \left(\alpha - \alpha_ {+}\right) \left(\alpha - \alpha_ {-}\right) = \frac {m _ {p} \omega_ {e} ^ {2} R _ {e}}{2 (\alpha + 1)} \left(\alpha - \alpha_ {0}\right) \left(\alpha - \alpha_ {-}\right)
+\label{eq:19.s11}
+\end{align}
+式中， $\alpha_{\pm}$ 由\eqref{eq:10.s11}式给出， $\alpha_{0}$ 由\eqref{eq:11.s11}式给出。
+
+对于 $L > L_{0}$ ，亦即 $\alpha > \alpha_{0}$ ，供应站对输送管作用力的大小由\eqref{eq:18.s11}式或\eqref{eq:19.s11}式给出，方向向下。对于 $L = L_{0}$ ，亦即 $\alpha = \alpha_{0}$ ，由\eqref{eq:19.s11}式有
+\begin{equation}
+F _ {\text { base }} = 0 \quad (L = L _ {0})
+\label{eq:20.s11}
+\end{equation}
+对于 $\alpha_{m}R_{e}<L<L_{0}$ ，亦即 $\alpha_{m}<\alpha<\alpha_{0}$ ，由\eqref{eq:19.s11}式可知 $F_{base}<0$ 。在此情形下，供应站对输送管作用力的大小为
+\begin{equation}
+\left| F _ {\text {base}} \right| = \frac {G M _ {e} m _ {p}}{(\alpha + 1) R _ {e} ^ {2}} - \frac {1}{2} (\alpha + 2) m _ {p} \omega_ {e} ^ {2} R _ {e}
+\label{eq:21.s11}
+\end{equation}
+方向向上。
+\end{subsolution}
+\end{solution}

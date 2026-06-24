@@ -1,0 +1,81 @@
+\begin{solution}{8}
+\begin{subsolution}
+设碰撞前电子、光子的动量分别为 $p_e$（$p_e > 0$）、$p_\gamma$（$p_\gamma < 0$），碰撞后电子、光子的能量、动量分别为 $E_e'$、$p_e'$、$E_\gamma'$、$p_\gamma'$。由能量守恒有
+\begin{equation}
+E_e + E_\gamma = E_e' + E_\gamma'.
+\label{eq:1.s8}
+\end{equation}
+由动量守恒有
+\begin{equation}
+\begin{aligned}
+p_e + p_\gamma &= p_e' \cos \alpha + p_\gamma' \cos \theta, \nonumber\\
+p_e' \sin \alpha &= p_\gamma' \sin \theta . 
+\end{aligned}
+\tag{1.8.2.s}
+\label{eq:2.s8}
+\end{equation}
+式中，$\alpha$ 和 $\theta$ 分别是散射后的电子和光子相对于碰撞前电子的夹角。光子的能量和动量满足
+\begin{equation}
+E_\gamma = |p_\gamma| c, \quad E_\gamma' = |p_\gamma'| c.
+\label{eq:3.s8}
+\end{equation}
+电子的能量和动量满足
+\begin{equation}
+E_e^2 - p_e^2 c^2 = m_e^2 c^4, \quad E_e'^2 - p_e'^2 c^2 = m_e^2 c^4
+\label{eq:4.s8}
+\end{equation}
+由\eqref{eq:1.s8}、\eqref{eq:2.s8}、\eqref{eq:3.s8}、\eqref{eq:4.s8}式解得
+\begin{equation}
+E_\gamma' = \frac{E_\gamma \left(E_e + \sqrt{E_e^2 - m_e^2 c^4}\right)}{E_e + E_\gamma + \left(E_\gamma - \sqrt{E_e^2 - m_e^2 c^4}\right) \cos \theta}
+\label{eq:5.s8}
+\end{equation}
+[由\eqref{eq:2.s8}式得
+\begin{equation*}
+p_e'^2 c^2 = p_\gamma'^2 c^2 + (p_e c + p_\gamma c)^2 - 2 p_\gamma' c (p_e c + p_\gamma c) \cos \theta
+\end{equation*}
+此即动量 $p'$、$p_e'$ 和 $p_e + p_\gamma$ 满足三角形法则。将\eqref{eq:3.s8}、\eqref{eq:4.s8}式代入上式，并利用\eqref{eq:1.s8}式，得
+\begin{align*}
+(E_e + E_\gamma - 2 E_\gamma')(E_e + E_\gamma) = E_e^2 + E_\gamma^2 - 2 E_\gamma \sqrt{E_e^2 - m_e^2 c^4} & \\
++ 2 E_\gamma' E_\gamma \cos \theta - 2 E_\gamma' \sqrt{E_e^2 - m_e^2 c^4} \cos \theta &
+\end{align*}
+此即\eqref{eq:5.s8}式。]
+
+当 $\theta \to 0$ 时有
+\begin{equation}
+E_\gamma' = \frac{E_\gamma \left(E_e + \sqrt{E_e^2 - m_e^2 c^4}\right)}{\left(E_e - \sqrt{E_e^2 - m_e^2 c^4}\right) + 2 E_\gamma}
+\label{eq:6.s8}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+为使能量从电子转移到光子，要求 $E_\gamma' > E_\gamma$。由\eqref{eq:5.s8}式可见，需有
+\begin{align}
+E_\gamma' - E_\gamma &= \frac{2 E_\gamma \left(\sqrt{E_e^2 - m_e^2 c^4} - E_\gamma\right)(1 + \cos \theta)}{E_e + E_\gamma + \left(E_\gamma - \sqrt{E_e^2 - m_e^2 c^4}\right) \cos \theta} \nonumber\\
+&= \frac{2 E_\gamma \left(\sqrt{E_e^2 - m_e^2 c^4} - E_\gamma\right)(1 + \cos \theta)}{E_e - \sqrt{E_e^2 - m_e^2 c^4} \cos \theta + E_\gamma (1 + \cos \theta)} > 0 \nonumber
+\end{align}
+此即
+\begin{equation}
+\sqrt{E_e^2 - m_e^2 c^4} > E_\gamma \quad \text{或} \quad p_e > |p_\gamma|
+\label{eq:7.s8}
+\end{equation}
+注意已设 $p_e > 0$、$p_\gamma < 0$。
+\end{subsolution}
+
+\begin{subsolution}
+由于 $E_e \gg m_e c^2$ 和 $E_e \gg E_\gamma$，因而 $|p_e + p_\gamma| \gg |p_\gamma|$，由\eqref{eq:5.s8}式可知 $|p_\gamma'| \gg |p_\gamma|$，因此有 $\theta \approx 0$。又
+\begin{equation}
+\sqrt{E_e^2 - m_e^2 c^4} \approx E_e - \frac{m_e^2 c^4}{2E_e}.
+\label{eq:8.s8}
+\end{equation}
+将\eqref{eq:8.s8}式代入\eqref{eq:6.s8}式得
+\begin{equation}
+E_\gamma' \approx \frac{2 E_e E_\gamma}{2 E_\gamma + m_e^2 c^4 / 2E_e}.
+\label{eq:9.s8}
+\end{equation}
+代入数据，得
+\begin{equation}
+E_\gamma' \approx 29.7 \times 10^{6}\,\mathrm{eV}.
+\label{eq:10.s8}
+\end{equation}
+\end{subsolution}
+\end{solution}

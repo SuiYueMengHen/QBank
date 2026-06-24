@@ -1,0 +1,42 @@
+\begin{solution}{12}
+开关闭合经过较长时间后，电路中将流过稳定的直流电流，导体球上也将有稳定的电荷分布。设第 $i$ 个导体球所带电量为 $Q_{i}$ ，那么包围它的导体球壳就带有电荷 $-Q_{i}$ ，这些电荷必定分别均匀地分布在两个球面上，因而导体球和外球壳之间的电势差为
+\begin{equation}
+\Delta U _ {i} = k Q _ {i} \left(\frac {1}{r} - \frac {1}{r _ {0}}\right),
+\label{eq:1.s12}
+\end{equation}
+而外面的导体球壳是接地的，所以第 $i$ 个导体球本身的电势就是
+\begin{equation}
+U _ {i} = k Q _ {i} \left(\frac {1}{r} - \frac {1}{r _ {0}}\right)
+\label{eq:2.s12}
+\end{equation}
+将\eqref{eq:2.s12}式两边对所有的导体球求和，得
+\begin{equation}
+k \left(\frac {1}{r} - \frac {1}{r _ {0}}\right) Q = \sum_ {i = 1} ^ {N + 1} U _ {i},
+\label{eq:3.s12}
+\end{equation}
+其中
+\begin{equation}
+Q = \sum_ {i = 1} ^ {N + 1} Q _ {i}
+\label{eq:4.s12}
+\end{equation}
+是导体球上所带的总电量。同时，电路中的直流电流为
+\begin{equation}
+I = \frac {E}{N R + R _ {E}}
+\label{eq:5.s12}
+\end{equation}
+于是第 $i$ 个导体球的电势为
+\begin{equation}
+U _ {i} = (i - 1) I R = \frac {(i - 1) E R}{N R + R _ {E}}
+\label{eq:6.s12}
+\end{equation}
+把\eqref{eq:6.s12}式代入\eqref{eq:3.s12}式得
+\begin{equation}
+k \left(\frac {1}{r} - \frac {1}{r _ {0}}\right) Q = \frac {E R}{N R + R _ {E}} \sum_ {i = 1} ^ {N + 1} (i - 1) = \frac {1}{2} N (N + 1) \frac {E R}{N R + R _ {E}}
+\label{eq:7.s12}
+\end{equation}
+由\eqref{eq:7.s12}式可解得
+\begin{equation}
+r = \left(\frac {N (N + 1) E R}{2 k Q (N R + R _ {E})} + \frac {1}{r _ {0}}\right) ^ {- 1}
+\label{eq:8.s12}
+\end{equation}
+\end{solution}

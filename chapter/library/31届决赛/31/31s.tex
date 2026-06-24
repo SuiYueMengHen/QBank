@@ -1,0 +1,311 @@
+\begin{solution}{31}
+  \begin{subsolution}
+    设 A 运动速度为 $v_{\mathrm{A}}$，B 运动速度为 $v_{\mathrm{B}}$，A 和 B 所受空气阻力的分量式分别为
+    \begin{equation}
+      \left\{
+        \begin{array}{l}
+          f_{\mathrm{A} x} = - k (v_{\mathrm{A} x} - u) \\
+          f_{\mathrm{A} y} = - k v_{\mathrm{A} y}
+        \end{array}
+      , \quad
+      \left\{
+        \begin{array}{l}
+          f_{\mathrm{B} x} = - k (v_{\mathrm{B} x} - u) \\
+          f_{\mathrm{B} y} = - k v_{\mathrm{B} y}
+        \end{array}
+      \right. \right.
+    \end{equation}
+    细杆与小球的相互作用力为内力，对作用在系统上的合外力没有影响，考虑到重力，则系统所受合外力的分量式分别为
+    \begin{equation}
+      \left\{
+        \begin{array}{l}
+          F_{x} = - k (v_{\mathrm{A} x} - u) - k (v_{\mathrm{B} x} - u) = - 2 k v_{x}^{\prime} \\
+          F_{y} = - 2 m g - k v_{\mathrm{A} y} - k v_{\mathrm{B} y} = - 2 m g - 2 k v_{y}
+        \end{array}
+      \right.
+      \label{eq:1.p31}
+    \end{equation}
+    式中 $v_{x}^{\prime}=v_{x}-u$ 为质心 C 沿 x 方向相对风的速度；而
+    \begin{equation}
+      v_{x} = \frac{v_{\mathrm{A} x} + v_{\mathrm{B} x}}{2}
+    \end{equation}
+    和
+    \begin{equation}
+      v_{y} = \frac{v_{\mathrm{Ay}} + v_{\mathrm{By}}}{2}
+    \end{equation}
+    分别为质心 C 沿 x 方向和 y 方向上的运动速度。
+
+    \begin{subproblem}[上抛过程中 y 方向上质心 C 的运动]
+      由质心运动定律，有
+      \begin{equation}
+        F_{y} = - 2 m g - 2 k v_{y} = 2 m \frac{\Delta v_{y}}{\Delta t}
+        \label{eq:2.p31}
+      \end{equation}
+      化简上式并求和，有
+      \begin{equation}
+        - m g \sum \Delta t - k \sum v_{y} \Delta t = m \sum \Delta v_{y}
+      \end{equation}
+      设质点系上抛至最高点时质心 C 上升高度为 $y_{1}$，所需时间为 $T_{1}$。解得
+      \begin{equation}
+        - m g T_{1} - k y_{1} = m (0 - v_{0})
+        \label{eq:3.p31}
+      \end{equation}
+    \end{subproblem}
+    \begin{subproblem}[碰撞过程]
+      设碰撞后沿 y 方向上质心 C 的速度为 $v_{y1}$，小石块的速度为 $u_{2}$，由质点系 y 方向动量守恒，有
+      \begin{equation}
+        m_{1} u_{1} = 2 m v_{y 1} + m_{1} u_{2}
+        \label{eq:4.p31}
+      \end{equation}
+      设 $v_{Ay_{1}}$ 和 $v_{By_{1}}$ 分别为碰撞后 A 和 B 沿 y 方向上的速度分量，则
+      \begin{equation}
+        v_{y 1} = \frac{v_{\mathrm{A} y_{1}} + v_{\mathrm{B} y_{1}}}{2}
+      \end{equation}
+      设碰后小球 A 绕质心 C 转动速度的 y 方向分量为 $v_{c0}$，则小球 B 绕质心转动速度的 y 方向分量为 $-v_{c0}$，由相对运动关系，$v_{Ay_{1}}$ 等于 $v_{c0}$ 与质心运动速度 $v_{y1}$ 之和，$v_{By_{1}}$ 等于 $-v_{c0}$ 与 $v_{y1}$ 之和，即有
+      \begin{equation}
+        v_{\mathrm{A} y_{1}} = \boldsymbol{v}_{y 1} + \boldsymbol{v}_{c 0}, v_{\mathrm{B} y_{1}} = \boldsymbol{v}_{y 1} - \boldsymbol{v}_{c 0}
+      \end{equation}
+      碰撞给系统带来的动能贡献为
+      \begin{equation}
+        E_{k y} = \frac{1}{2} m (\boldsymbol{v}_{y 1} + \boldsymbol{v}_{c 0})^{2} + \frac{1}{2} m (\boldsymbol{v}_{y 1} - \boldsymbol{v}_{c 0})^{2} = 2 \times \frac{1}{2} m v_{y 1}^{2} + 2 \times \frac{1}{2} m v_{c 0}^{2}
+      \end{equation}
+      碰撞前后 x 方向速度没变，设为 $v_{x}$，由机械能守恒，有
+      \begin{equation}
+        \frac{1}{2} m_{1} u_{1}^{2} + 2 \times \frac{1}{2} m v_{x}^{2} = \frac{1}{2} (2 m) v_{y 1}^{2} + 2 \times \frac{1}{2} m v_{c 0}^{2} + 2 \times \frac{1}{2} m v_{x}^{2} + \frac{1}{2} m_{1} u_{2}^{2}
+        \label{eq:5.p31}
+      \end{equation}
+      由对惯性系中瞬时与质心 C 重合的一点，由角动量守恒，有
+      \begin{equation}
+        m_{1} l u_{1} = 2 m l v_{c 0} + m_{1} l u_{2}
+        \label{eq:6.p31}
+      \end{equation}
+      由角速度和线速度的关系有
+      \begin{equation}
+        v_{c 0} = l \omega_{0}
+      \end{equation}
+      [或：由机械能守恒，有
+      \begin{equation}
+        \frac{1}{2} m_{1} u_{1}^{2} + 2 \times \frac{1}{2} m v_{x}^{2} = \frac{1}{2} m (v_{\mathrm{Ay}_{1}}^{2} + v_{\mathrm{By}_{1}}^{2}) + 2 \times \frac{1}{2} m v_{x}^{2} + \frac{1}{2} m_{1} u_{2}^{2}
+        \label{eq:7.p31}
+      \end{equation}
+      如图，设碰撞后瞬间，轻杆上静止的点为 $C'$（瞬时转动中心），其距 A 为 $l'$，由对 $C'$ 点的角动量守恒，有
+      \begin{equation}
+        m_{1} l^{\prime} u_{1} = m l^{\prime} v_{\mathrm{Ay}_{1}} + m (2 l - l^{\prime}) v_{\mathrm{By}_{1}} + m_{1} l^{\prime} u_{2}
+        \label{eq:8.p31}
+      \end{equation}
+      碰撞后质点系开始转动，对 C' 点的转动，有
+      \begin{equation}
+        v_{\mathrm{Ay}_{1}} = l^{\prime} \omega_{0}, v_{\mathrm{By}_{1}} = (2 l - l^{\prime}) \omega_{0}, v_{y 1} = (l^{\prime} - l) \omega_{0}
+      \end{equation}
+      联立上述各式，解得
+      \begin{equation}
+        v_{\mathrm{A} y_{1}} = 2 \frac{m_{1}}{m + m_{1}} u_{1}, v_{\mathrm{B} y_{1}} = 0
+        \label{eq:9.p31}
+      \end{equation}
+      \begin{equation}
+        v_{y 1} = v_{c 0} = \frac{m_{1}}{m + m_{1}} u_{1}
+        \label{eq:10.p31}
+      \end{equation}
+      \begin{equation}
+        u_{2} = \frac{m_{1} - m}{m + m_{1}} u_{1}
+        \label{eq:11.p31}
+      \end{equation}
+      \begin{equation}
+        \omega_{0} = \frac{m_{1}}{m + m_{1}} \frac{u_{1}}{l}
+        \label{eq:12.p31}
+      \end{equation}
+    \end{subproblem}
+    \begin{subproblem}[再次上抛过程中 y 方向上质心 C 的运动]
+      质心 C 的运动轨迹如图所示，碰撞后，质心 C 以 $v_{y1}$ 沿 y 轴方向再次作上抛运动。设再次到达最高点时质心 C 又上升的高度为 $y_{2}$，所用时间为 $T_{2}$。类比 \eqref{eq:3.p31} 式，有
+      \begin{equation}
+        - m g T_{2} - k y_{2} = m (0 - v_{y 1})
+        \label{eq:13.p31}
+      \end{equation}
+    \end{subproblem}
+    \begin{subproblem}[平抛过程中 y 方向上质心 C 的运动]
+      质心再次到达最高点后，质心 C 的运动为平抛运动。设此过程所用时间为 $T_{3}$，在 y 方向上质心 C 受力为
+      \begin{equation}
+        F_{y} = - 2 m g - 2 k v_{y}
+        \label{eq:14.p31}
+      \end{equation}
+      由牛顿第二定律，有
+      \begin{equation}
+        - 2 m g - 2 k v_{y} = 2 m \frac{\Delta v_{y}}{\Delta t}
+        \label{eq:15.p31}
+      \end{equation}
+      化简上式并求和，有
+      \begin{equation}
+        - m g \sum \Delta t - k \sum v_{y} \Delta t = m \sum \Delta v_{y}
+      \end{equation}
+      注意到下落过程中有 $\sum v_{y}\Delta t = -(y_{1} + y_{2})$，解得
+      \begin{equation}
+        - m g T_{3} + k (y_{1} + y_{2}) = m (- v_{y s} - 0)
+        \label{eq:16.p31}
+      \end{equation}
+      式中，$v_{ys}$ 为落地时质心 C 在 y 方向上的速度大小，方向向下。由 \eqref{eq:3.p31} \eqref{eq:10.p31} \eqref{eq:13.p31} \eqref{eq:16.p31} 式及
+      \begin{equation}
+        T = T_{1} + T_{2} + T_{3}
+      \end{equation}
+      得
+      \begin{equation}
+        v_{y s} = g T - v_{0} - \frac{m_{1}}{m + m_{1}} u_{1}
+        \label{eq:17.p31}
+      \end{equation}
+    \end{subproblem}
+    \begin{subproblem}[整个过程中 $x$ 方向上质心 C 的运动]
+      质心 C 沿 x 方向相对于风的速度为 $v_{x}^{\prime}=v_{x}-u$，在 x 方向上，质心 C 的位移为 s（题给条件）。设末速度为 $v_{xs}$，由质心运动定理，有
+      \begin{equation}
+        F_{x} = - 2 k v_{x}^{\prime} = - 2 k (v_{x} - u) = 2 m \frac{\Delta v_{x}}{\Delta t}
+        \label{eq:18.p31}
+      \end{equation}
+      化简上式并求和，有
+      \begin{equation}
+        - \frac{k}{m} (\sum v_{x} \Delta t - u \sum \Delta t) = \sum \Delta v_{x}
+      \end{equation}
+      解得
+      \begin{equation}
+        v_{x s} = \frac{k}{m} (u T - s)
+        \label{eq:19.p31}
+      \end{equation}
+      [或：建立随风运行的惯性参照系 $O'x'y'$，初始 $O'x'y'$ 坐标系与 $Oxy$ 坐标系重合，整个运动过程中在 $x'$ 方向上质心 C 只受空气阻力作用，该力沿 $x'$ 正向，其初速度为 $u$，方向沿 $x'$ 负向。由质心运动定理和牛顿第二定律，有
+      \begin{equation}
+        2 k v_{x}^{\prime} = 2 m \frac{\Delta v_{x}^{\prime}}{\Delta t}
+        \label{eq:20.p31}
+      \end{equation}
+      化简并求和，有
+      \begin{equation}
+        k \sum v_{x}^{\prime} \Delta t = m \sum \Delta v_{x}^{\prime}
+      \end{equation}
+      解得
+      \begin{equation}
+        k s^{\prime} = m [ - v_{x s}^{\prime} - (- u) ]
+      \end{equation}
+      式中，$s'$ 和 $v_{xs}'$ 分别为整个过程结束时，质心 C 在 $O'x'y'$ 坐标中 $x'$ 方向的位移大小和末速度大小。有
+      \begin{equation}
+        s = u T - s^{\prime}
+      \end{equation}
+      \begin{equation}
+        v_{x s} = u - v_{x s}^{\prime}
+      \end{equation}
+      由上述各式，解得整个过程结束时质心 C 在 Oxy 坐标中沿 x 方向运动的速度为
+      \begin{equation}
+        v_{x s} = \frac{k}{m} (u T - s)
+      \end{equation}
+      ]
+    \end{subproblem}
+    \begin{subproblem}[转动过程]
+      如图，因轻杆所受合外力与合外力矩均为零，故其施加给 A 和 B 的力必沿轻杆方向，且大小相等方向相反，标记为 $T_{l}$，则有
+      \begin{equation}
+        \left\{
+          \begin{array}{l}
+            F_{\mathrm{Ax}} = - k (v_{\mathrm{Ax}} - u) + T_{l x} = m \frac{\Delta v_{\mathrm{Ax}}}{\Delta t} \\
+            F_{\mathrm{Ay}} = - m g - k v_{\mathrm{Ay}} + T_{l y} = m \frac{\Delta v_{\mathrm{Ay}}}{\Delta t}
+          \end{array}
+        , \left\{
+          \begin{array}{l}
+            F_{\mathrm{Bx}} = - k (v_{\mathrm{Bx}} - u) - T_{l x} = m \frac{\Delta v_{\mathrm{Bx}}}{\Delta t} \\
+            F_{\mathrm{By}} = - m g - k v_{\mathrm{By}} - T_{l y} = m \frac{\Delta v_{\mathrm{By}}}{\Delta t}
+          \end{array}
+        \right. \right.
+      \end{equation}
+      由质心运动定理有
+      \begin{equation}
+        \left\{
+          \begin{array}{l}
+            F_{x} = - 2 k v_{x} + 2 k u = 2 m \frac{\Delta v_{x}}{\Delta t} \\
+            F_{y} = - 2 m g - 2 k v_{y} = 2 m \frac{\Delta v_{y}}{\Delta t}
+          \end{array}
+        \right.
+        \label{eq:21.p31}
+      \end{equation}
+      注意到，相对于质心，A 的相对速度为
+      \begin{equation}
+        \left\{
+          \begin{array}{l}
+            v_{\mathrm{A} x}^{\prime} = v_{\mathrm{A} x} - v_{x} \\
+            v_{\mathrm{A} y}^{\prime} = v_{\mathrm{A} y} - v_{y}
+          \end{array}
+        \right.
+      \end{equation}
+      由 (18)(19) 式，有
+      \begin{equation}
+        \left\{
+          \begin{array}{l}
+            \frac{\Delta v_{\mathrm{Ax}}^{\prime}}{\Delta t} = \frac{\Delta v_{\mathrm{Ax}}}{\Delta t} - \frac{\Delta v_{x}}{\Delta t} = - \frac{k}{m} (v_{\mathrm{Ax}} - v_{x}) + \frac{T_{l x}}{m} = - \frac{k}{m} v_{\mathrm{Ax}}^{\prime} + \frac{T_{l x}}{m} \\
+            \frac{\Delta v_{\mathrm{Ay}}^{\prime}}{\Delta t} = \frac{\Delta v_{\mathrm{Ay}}}{\Delta t} - \frac{\Delta v_{y}}{\Delta t} = - \frac{k}{m} (v_{\mathrm{Ay}} - v_{y}) + \frac{T_{l y}}{m} = - \frac{k}{m} v_{\mathrm{Ay}}^{\prime} + \frac{T_{l y}}{m}
+          \end{array}
+        \right.
+      \end{equation}
+      A 相对于质心 C 作圆周运动，故 $v_{A}^{\prime}$ 方向与杆方向垂直，如图所示。则上式可改写为
+      \begin{equation}
+        \left\{
+          \begin{array}{l}
+            \frac{\Delta v_{\mathrm{Ax}}^{\prime}}{\Delta t} = \frac{k}{m} v_{\mathrm{A}}^{\prime} \cos \theta + \frac{T_{l} \sin \theta}{m} \\
+            \frac{\Delta v_{\mathrm{Ay}}^{\prime}}{\Delta t} = - \frac{k}{m} v_{\mathrm{A}}^{\prime} \sin \theta + \frac{T_{l} \cos \theta}{m}
+          \end{array}
+        \right.
+      \end{equation}
+      利用上式可得，A 相对于质心 C 作圆周运动的切向加速度为
+      \begin{equation}
+        \frac{\Delta v_{\mathrm{A}}^{\prime}}{\Delta t} = - \frac{\Delta v_{\mathrm{Ax}}^{\prime}}{\Delta t} \cos \theta + \frac{\Delta v_{\mathrm{Ay}}^{\prime}}{\Delta t} \sin \theta = - \frac{k}{m} v_{\mathrm{A}}^{\prime}
+        \label{eq:22.p31}
+      \end{equation}
+      注意到 $v_{A}^{\prime}=\omega l$，且圆周运动的切向加速度为 $\frac{\Delta v_{A}^{\prime}}{\Delta t}=\frac{\Delta(\omega l)}{\Delta t}=l\frac{\Delta\omega}{\Delta t}$，则 \eqref{eq:22.p31} 式可改写为
+      \begin{equation}
+        \frac{\Delta \omega}{\Delta t} = - \frac{k}{m} \omega
+        \label{eq:23.p31}
+      \end{equation}
+      化简并对整个过程求和，有
+      \begin{equation}
+        \sum \Delta \omega = - \frac{k}{m} \sum \omega \Delta t
+      \end{equation}
+      根据题意，解得
+      \begin{equation}
+        \omega_{s} - \omega_{0} = - \frac{k}{m} 2 n \pi
+        \label{eq:24.p31}
+      \end{equation}
+      上式代入 $\omega_0$，得
+      \begin{equation}
+        \omega_{s} = \omega_{0} - \frac{2 k n \pi}{m} = \frac{m_{1}}{m + m_{1}} \frac{u_{1}}{l} - \frac{2 k n \pi}{m}
+        \label{eq:25.p31}
+      \end{equation}
+    \end{subproblem}
+  \end{subsolution}
+  \begin{subsolution}
+    当 C 点回落到位置 s 时，质心速度的平方为
+    \begin{equation}
+      v_{s}^{2} = v_{x s}^{2} + v_{y s}^{2}
+      \label{eq:26.p31}
+    \end{equation}
+    在质心系中，A 和 B 绕质心转动的速度 $v_{Ac}$ 和 $v_{Bc}$ 总是大小相等方向相反，即有 $v_{Ac} = -v_{Bc}$，则当 C 点回落到位置 s 时，系统的动能为
+    \begin{equation}
+      E_{k s} = \frac{1}{2} m (\boldsymbol{v}_{s} + \boldsymbol{v}_{\mathrm{Ac}})^{2} + \frac{1}{2} m (\boldsymbol{v}_{s} + \boldsymbol{v}_{\mathrm{Bc}})^{2} = 2 \times \frac{1}{2} m v_{s}^{2} + \frac{1}{2} m v_{\mathrm{Ac}}^{2} + \frac{1}{2} m v_{\mathrm{Bc}}^{2}
+    \end{equation}
+    式中
+    \begin{equation}
+      v_{\mathrm{Ac}} = \omega_{s} l
+    \end{equation}
+    和
+    \begin{equation}
+      v_{\mathrm{Bc}} = \omega_{s} l
+    \end{equation}
+    分别为此时质心系中 A 和 B 的速度大小。于是
+    \begin{equation}
+      E_{k s} = \frac{1}{2} (2 m) (v_{x s}^{2} + v_{y s}^{2}) + \frac{1}{2} (2 m) (\omega_{s} l)^{2}
+      \label{eq:27.p31}
+    \end{equation}
+    碰撞过程中小石块对质点系做功即为碰后质点系的动能，由 \eqref{eq:9.p31} 式得
+    \begin{equation}
+      E_{k m} = 2 \times \frac{1}{2} m v_{\mathrm{Ay}_{1}}^{2} + 2 \times \frac{1}{2} m v_{\mathrm{By}_{1}}^{2} = 2 m (\frac{m_{1}}{m + m_{1}} u_{1})^{2}
+      \label{eq:28.p31}
+    \end{equation}
+    由功能原理及 \eqref{eq:17.p31} \eqref{eq:19.p31} \eqref{eq:25.p31} \eqref{eq:27.p31} \eqref{eq:28.p31} 式，可得整个过程中空气阻力所做的功为
+    \begin{equation}
+      \begin{array}{l}
+        W_{f} = E_{k s} - E_{k m} - E_{k 0} \\
+        = m (g T - v_{0} - \frac{m_{1}}{m + m_{1}} u_{1})^{2} + \frac{k^{2}}{m} (u T - s)^{2} + m (\frac{m_{1}}{m + m_{1}} u_{1} - \frac{2 k n \pi l}{m})^{2} - m v_{0}^{2} - 2 m (\frac{m_{1}}{m + m_{1}} u_{1})^{2}
+      \end{array}
+      \label{eq:29.p31}
+    \end{equation}
+  \end{subsolution}
+\end{solution}

@@ -1,0 +1,204 @@
+\begin{solution}{27}
+  \begin{subsolution}
+    对于理想气体的自由膨胀过程（它是非准静态的），外界没有对气体做功，系统与外界也没有热交换。由热力学第一定律得，容器内气体膨胀前后的内能改变为零，$\Delta U = 0 (\Delta T = 0)$，从而系统的温度没有改变，只是系统的体积增加了一倍，使得压强减少为原来的 $1/2$。
+    \begin{equation}
+      T_{1} = T_{0}, \quad P_{1} = \frac{1}{2} P_{0}
+      \label{eq:1.p27}
+    \end{equation}
+    此后，气体从 $(\frac{1}{2}P_{0},T_{1},2V_{0})$ 经过准静态绝热压缩过程，达到新的 $(P',T',1.7V_{0})$ 平衡态。该绝热过程满足方程
+    \begin{equation}
+      \frac{1}{2} P_{0} (2 V_{0})^{\gamma} = P^{\prime} (1.70 V_{0})^{\gamma}
+    \end{equation}
+    式中，$\gamma = \frac{5}{3}$ 是单原子分子理想气体的热容比。于是
+    \begin{equation}
+      P^{\prime} = 0.85^{- \frac{5}{3}} \times \frac{P_{0}}{2}
+      \label{eq:2.p27}
+    \end{equation}
+    由上式和平衡态 $(P_{0},T_{0},V_{0})$ 和 $(P',T',1.70V_{0})$ 的状态方程
+    \begin{equation}
+      P_{0} V_{0} = \nu_{1} R T_{0}
+    \end{equation}
+    \begin{equation}
+      P^{\prime} \times 1.70 V = \frac{1}{2} \times 0.85^{- \frac{5}{3}} P_{0} \times 1.70 V_{0} = \nu_{1} R T^{\prime}
+    \end{equation}
+    得
+    \begin{equation}
+      T^{\prime} = \frac{P_{0} V_{0}}{\nu_{1} R} \times 0.85 \times 0.85^{- \frac{5}{3}} = 0.85^{- \frac{2}{3}} T_{0}
+      \label{eq:3.p27}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    当容器内的两种气体交换混合共同达到 $(2.7V_{0}, p'', T'')$ 平衡态时，由能量守恒有
+    \begin{equation}
+      \nu_{1} \frac{3}{2} R T^{\prime} + \nu_{2} \frac{5}{2} R T_{c} = (\nu_{1} \frac{3}{2} R + \nu_{2} \frac{5}{2} R) T^{\prime \prime}
+    \end{equation}
+    \begin{equation}
+      T^{\prime \prime} = \frac{3 \nu_{1} T^{\prime} + 5 \nu_{2} T_{c}}{3 \nu_{1} + 5 \nu_{2}} = \frac{3 T^{\prime} + 10 T_{c}}{13} = \frac{3 \times 0.85^{- \frac{2}{3}} + 5}{13} T_{0} = 0.64 T_{0}
+      \label{eq:4.p27}
+    \end{equation}
+    由理想气体方程有，
+    \begin{equation}
+      p_{1}^{\prime \prime} = n_{1} k T^{\prime \prime}, \quad p_{2}^{\prime \prime} = n_{2} k T^{\prime \prime}; \quad p^{\prime \prime} = n k T^{\prime \prime}
+      \label{eq:5.p27}
+    \end{equation}
+    其中，k 为波尔兹曼常量，$p_{1}^{\prime\prime}, p_{2}^{\prime\prime}$ 分别为单原子分子和双原子分子气体的压强，$n_{1}, n_{2}$ 分别为相应的两种分子的分子数密度，n 为混合气体的分子数密度。利用
+    \begin{equation}
+      n = n_{1} + n_{2}
+    \end{equation}
+    和 \eqref{eq:5.p27} 式得
+    \begin{equation}
+      p^{\prime \prime} = n k T^{\prime \prime} = (n_{1} + n_{2}) k T^{\prime \prime} = p_{1}^{\prime \prime} + p_{2}^{\prime \prime} = \frac{(\nu_{1} + \nu_{2})}{2.7 V_{0}} R T^{\prime \prime}
+      \label{eq:6.p27}
+    \end{equation}
+    代入数据得
+    \begin{equation}
+      p^{\prime \prime} = \frac{3}{2.70 V_{0}} R \frac{3 \times 0.85^{- \frac{2}{3}} + 5}{13} T_{0} = \frac{9 \times 0.85^{- \frac{2}{3}} + 15}{35.1} p_{0}
+      \label{eq:7.p27}
+    \end{equation}
+    式中应用了
+    \begin{equation}
+      p_{1}^{\prime \prime} = \frac{\nu_{1}}{2.7 V_{0}} R T^{\prime \prime}, \quad p_{2}^{\prime \prime} = \frac{\nu_{2}}{2.7 V_{0}} R T^{\prime \prime}, \quad P_{0} V_{0} = \nu_{1} R T_{0}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    最后，混合气体从 $(P'', T'', 2.7V_0)$ 经过准静态绝热膨胀达到 $(P''', T''', 3V_0)$ 平衡态。该绝热过程满足方程：
+    \begin{equation}
+      p^{\prime \prime} (2.70 V_{0})^{\gamma_{m}} = P^{\prime \prime \prime} (3 V_{0})^{\gamma_{m}}
+      \label{eq:8.p27}
+    \end{equation}
+    式中，$\gamma_{m}$ 是两种混合气体的热容比由下式决定（证明见后文）
+    \begin{equation}
+      \gamma_{m} = \frac{v_{1} C_{p 1} + v_{2} C_{p 2}}{v_{1} C_{V 1} + v_{2} C_{V 2}}
+      \label{eq:9.p27}
+    \end{equation}
+    这里，$C_{pi}, C_{Vi}$ 分别为第 $i$ 种理想气体的定压和定容摩尔热容量。由题意得
+    \begin{equation}
+      C_{V 1} = \frac{3}{2} R, C_{p 1} = C_{V 1} + R = \frac{5}{2} R; C_{V 2} = \frac{5}{2} R, C_{p 2} = \frac{7}{2} R.
+    \end{equation}
+    从而由 \eqref{eq:9.p27} 式得到混合气体的热容比：
+    \begin{equation}
+      \gamma_{m} = \frac{v_{1} C_{p 1} + v_{2} C_{p 2}}{v_{1} C_{V 1} + v_{2} C_{V 2}} = \frac{5 + 14}{3 + 10} = \frac{19}{13}
+    \end{equation}
+    将上式代入 \eqref{eq:8.p27} 式并利用 \eqref{eq:7.p27} 式得
+    \begin{equation}
+      P^{\prime \prime \prime} = 0.90^{\gamma_{m}} P^{\prime \prime} = 0.90^{\frac{19}{13}} \times \frac{9 \times 0.85^{- \frac{2}{3}} + 15}{35.1} p_{0}
+      \label{eq:10.p27}
+    \end{equation}
+    利用状态方程
+    \begin{equation}
+      \frac{P^{\prime \prime} (2.70 V_{0})}{T^{\prime \prime}} = \frac{P^{\prime \prime} (3 V_{0})}{T^{\prime \prime \prime}}
+    \end{equation}
+    \eqref{eq:8.p27} 式可改写为
+    \begin{equation}
+      T^{\prime \prime} (2.70 V_{0})^{\gamma_{m} - 1} = T^{\prime \prime \prime} (3 V_{0})^{\gamma_{m} - 1}
+      \label{eq:11.p27}
+    \end{equation}
+    由上式和 \eqref{eq:4.p27} 式得
+    \begin{equation}
+      T^{\prime \prime \prime} = 0.90^{(\gamma_{m} - 1)} T^{\prime \prime} = 0.90^{\frac{6}{13}} \times \frac{3 \times 0.85^{- \frac{2}{3}} + 5}{13.0} T_{0}
+      \label{eq:12.p27}
+    \end{equation}
+
+    现证明两种混合气体的热容比为
+    \begin{equation}
+      \gamma_{m} = \frac{v_{1} C_{p 1} + v_{2} C_{p 2}}{v_{1} C_{V 1} + v_{2} C_{V 2}}
+      \label{eq:13.p27}
+    \end{equation}
+    \begin{subproblem}[证法（a）]
+      由提示，对于由两种理想气体构成的热力学体系的绝热过程有
+      \begin{equation}
+        (\Delta S_{1})_{i f} + (\Delta S_{2})_{i f} = 0
+      \end{equation}
+      此即
+      \begin{equation}
+        \nu_{1} C_{V_{1}} \ln (\frac{T_{f}}{T_{i}}) + \nu_{1} R \ln (\frac{V_{f}}{V_{i}}) + \nu_{2} C_{V_{2}} \ln (\frac{T_{f}}{T_{i}}) + \nu_{2} R \ln (\frac{V_{f}}{V_{i}}) = 0
+      \end{equation}
+      它可改写为
+      \begin{equation}
+        (\nu_{1} C_{V_{1}} + \nu_{2} C_{V_{2}}) \ln (\frac{T_{f}}{T_{i}}) = - (\nu_{1} R + \nu_{2} R) \ln (\frac{V_{f}}{V_{i}}) = (\nu_{1} R + \nu_{2} R) \ln (\frac{V_{i}}{V_{f}})
+      \end{equation}
+      此即
+      \begin{equation}
+        (\frac{T_{f}}{T_{i}}) = (\frac{V_{i}}{V_{f}})^{\frac{\nu_{1} R + \nu_{2} R}{\nu_{1} C_{V_{1}} + \nu_{2} C_{V_{2}}}}
+      \end{equation}
+      或
+      \begin{equation}
+        T_{f} V_{f}^{g} = T_{i} V^{g}, \quad g = \frac{\nu_{1} R + \nu_{2} R}{\nu_{1} C_{V_{1}} + \nu_{2} C_{V_{2}}}
+        \label{eq:a1}
+      \end{equation}
+      由理想气体状态方程可得
+      \begin{equation}
+        p_{i} V_{i} = (p_{i 1} + p_{i 2}) V_{i} = (\nu_{1} + \nu_{2}) R T_{i}
+      \end{equation}
+      \begin{equation}
+        p_{f} V_{f} = (p_{f 1} + p_{f 2}) V_{f} = (\nu_{1} + \nu_{2}) R T_{f}
+      \end{equation}
+      式中，$p_{i1}, p_{i2}$ 和 $p_{f1}, p_{f2}$ 分别表示混合气体初态和末态中第 1 与 2 种气体组分的分压强。利用上式和 (a) 式有
+      \begin{equation}
+        \frac{p_{f}}{p_{i}} = \frac{T_{f}}{T_{i}} \frac{V_{i}}{V_{f}} = (\frac{V_{i}}{V_{f}})^{g} \frac{V_{i}}{V_{f}} = (\frac{V_{i}}{V_{f}})^{g + 1}
+      \end{equation}
+      即
+      \begin{equation}
+        p_{f} V_{f}^{\gamma_{m}} = p_{i} V_{i}^{\gamma_{m}}
+        \label{eq:a2}
+      \end{equation}
+      式中
+      \begin{equation}
+        \gamma_{m} = g + 1 = \frac{\nu_{1} R + \nu_{2} R}{\nu_{1} C_{V_{1}} + \nu_{2} C_{V_{2}}} + 1 = \frac{\nu_{1} C_{p_{1}} + \nu_{2} C_{p_{2}}}{\nu_{1} C_{V_{1}} + \nu_{2} C_{V_{2}}}
+      \end{equation}
+      其中 $C_{p_{1}} = C_{V_{1}} + R, \quad C_{p_{2}} = C_{V_{2}} + R$。
+    \end{subproblem}
+    \begin{subproblem}[证法（b）]
+      不利用提示，但需要定积分公式
+      \begin{equation}
+        \int_{i}^{f} \alpha \frac{\mathrm{d} x}{x} = \alpha \ln (\frac{x_{f}}{x_{i}}) = \ln (\frac{x_{f}}{x_{i}})^{\alpha}
+      \end{equation}
+      从绝热过程方程 dQ = 0，和热力学第一定律得，
+      \begin{equation}
+        \mathrm{d} Q = \mathrm{d} Q_{1} + \mathrm{d} Q_{2} = (p_{1} \mathrm{d} V + v_{1} C_{V 1} \mathrm{d} T) + (p_{2} \mathrm{d} V + v_{2} C_{V 2} \mathrm{d} T)
+        \label{eq:b1}
+      \end{equation}
+      \begin{equation}
+        = (p_{1} + p_{2}) \mathrm{d} V + (\nu_{1} C_{V 1} + \nu_{2} C_{V 2}) \mathrm{d} T = p \mathrm{d} V + (\nu_{1} C_{V 1} + \nu_{2} C_{V 2}) \mathrm{d} T = 0
+      \end{equation}
+      式中，$dQ_{i}$ 是第 i 种理想气体在过程中吸收的热量。由理想气体状态方程有
+      \begin{equation}
+        p V = v R T = (v_{1} + v_{2}) R T
+        \label{eq:b2}
+      \end{equation}
+      对上式两边取微分得
+      \begin{equation}
+        p \mathrm{d} V + V \mathrm{d} p = (v_{1} + v_{2}) R \mathrm{d} T
+        \label{eq:b3}
+      \end{equation}
+      从 (b1) 和 (b3) 中，消去 $pdV$ 项有
+      \begin{equation}
+        V \mathrm{d} p = (v_{1} + v_{2}) R \mathrm{d} T + (v_{1} C_{V 1} + v_{2} C_{V 2}) \mathrm{d} T = (v_{1} C_{p 1} + v_{2} C_{p 2}) \mathrm{d} T
+        \label{eq:b4}
+      \end{equation}
+      其中，$C_{p1}=C_{V1}+R,\;C_{p2}=C_{V2}+R$。利用 (b2) 有
+      \begin{equation}
+        V = (v_{1} + v_{2}) R T / p
+      \end{equation}
+      将上式代入 (b4) 式得，
+      \begin{equation}
+        (v_{1} + v_{2}) R \frac{\mathrm{d} p}{p} = (v_{1} C_{p 1} + v_{2} C_{p 2}) \frac{\mathrm{d} T}{T}
+      \end{equation}
+      此即
+      \begin{equation}
+        \frac{\mathrm{d} p}{p} = \frac{(\nu_{1} C_{p 1} + \nu_{2} C_{p 2})}{(\nu_{1} + \nu_{2}) R} \frac{\mathrm{d} T}{T} = \frac{\gamma_{m}}{\gamma_{m} - 1} \frac{\mathrm{d} T}{T}
+        \label{eq:b5}
+      \end{equation}
+      将 (b5) 从初态 $(p_{i},T_{i},V_{i})$ 到末态 $(p_{f},T_{f},V_{f})$ 积分可得
+      \begin{equation}
+        p_{f} T_{f}^{\gamma_{m} / (1 - \gamma_{m})} = p_{i} T_{i}^{\gamma_{m} / (1 - \gamma_{m})},
+        \label{eq:b6}
+      \end{equation}
+      进而，由 (b2) 和 (b6)，消去 T 或 p，可分别得
+      \begin{equation}
+        p_{f} V_{f}^{\gamma_{m}} = p_{i} V_{i}^{\gamma_{m}}, \quad T_{f} V_{f}^{\gamma_{m} - 1} = T_{i} V^{\gamma_{m} - 1}
+        \label{eq:b7}
+      \end{equation}
+    \end{subproblem}
+  \end{subsolution}
+\end{solution}

@@ -1,0 +1,60 @@
+\begin{solution}{25}
+  \begin{subsolution}
+    设细管的角速度 $\omega_{A}$，小球在 A 点相对细管平衡时，有
+    \begin{equation}
+      k_{0} \frac{3}{4} L - k \frac{q Q}{L^{2}} = L m \omega_{A}^{2}
+      \label{eq:1.p25}
+    \end{equation}
+    球在 B 点，细管的角速度 $\omega_{B}$ 满足
+    \begin{equation}
+      k_{0} \frac{1}{4} L + k \frac{q Q}{L^{2} / 4} = \frac{L}{2} m \omega_{B}^{2}
+      \label{eq:2.p25}
+    \end{equation}
+    由角动量守恒有
+    \begin{equation}
+      m L^{2} \omega_{A} = m \frac{L^{2}}{4} \omega_{B}
+      \label{eq:3.p25}
+    \end{equation}
+    则有
+    \begin{equation}
+      \omega_{B} = 4 \omega_{A}
+    \end{equation}
+    代入 \eqref{eq:2.p25} 式得
+    \begin{equation}
+      k_{0} \frac{1}{4} L + k \frac{q Q}{L^{2} / 4} = 8 L m \omega_{A}^{2}
+      \label{eq:4.p25}
+    \end{equation}
+    由 \eqref{eq:1.p25} 和 \eqref{eq:4.p25} 式得
+    \begin{equation}
+      k_{0} = k \frac{48 q Q}{23 L^{3}}
+      \label{eq:5.p25}
+    \end{equation}
+    代入 \eqref{eq:2.p25} 式得细管的角速度 $\omega_{B}$ 为
+    \begin{equation}
+      \omega_{B} = 4 \sqrt{\frac{13 k q Q}{23 m L^{3}}}
+      \label{eq:6.p25}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    令 $r = r_{b} + x$ ($|x| \ll r$)，相对于细管而言，小球平衡点附近所受合力为
+    \begin{equation}
+      F(x) = - k_{0} \left(\frac{L}{4} + x\right) - k \frac{q Q}{\left(\frac{L}{2} + x\right)^{2}} + \left(\frac{L}{2} + x\right) m \omega_{x}^{2}
+      \label{eq:7.p25}
+    \end{equation}
+    由角动量守恒有
+    \begin{equation}
+      m \left(\frac{L}{2} + x\right)^{2} \omega_{x} = m \left(\frac{L}{2}\right)^{2} \omega_{B}
+      \label{eq:8.p25}
+    \end{equation}
+    平衡点附近展开至 $x$ 的一阶项得，小球相对于细管所受的径向合力为
+    \begin{equation}
+      F(x) = - \left(k_{0} + 3 m \omega_{B}^{2} - k \frac{16 q Q}{L^{3}}\right) x = - \frac{304}{23} \frac{k q Q}{L^{3}} x
+      \label{eq:9.p25}
+    \end{equation}
+    所以，小球在平衡点 B 附近存在相对于细管的径向微振动。小球相对于细管的径向微振动周期为
+    \begin{equation}
+      T = \frac{\pi}{2} \sqrt{\frac{23}{19} \frac{m L^{3}}{k q Q}}
+      \label{eq:10.p25}
+    \end{equation}
+  \end{subsolution}
+\end{solution}

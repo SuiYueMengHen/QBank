@@ -1,0 +1,36 @@
+
+\begin{problem}[2026年博知汇BWPhO][拓扑绝缘体]{36}
+    拓扑绝缘体是一类新颖的量子材料，作为绝缘体，其边界上却可以存在受拓扑保护的导电态，体现了“体—边对应”的核心思想。这一概念已从电子系统推广至经典波动系统，如声子晶体、力学超材料等。本题研究一个具有类似特性的简化模型。
+
+    考虑由 $2N$ 个质量均为 $m$ 的质点组成的一维链，质点分为 A、B 两类交替排列。相邻质点之间由两种弹簧交替连接，其劲度系数分别为 $k_{1}$ 与 $k_{2}$（允许 $k_{1} = k_{2}$）。将系统视为由 $N$ 个基元组成，第 $n$ 个基元中 A 质点位移为 $u_{n}$，B 质点位移为 $v_{n}$。只考虑最近邻相互作用。
+
+    约定：若某一正常模的位移幅度在链上不随 $n$ 指数衰减（典型地在整个链上都有同量级振幅，或可写成行波形式），称为体模；若位移主要集中在端部并随远离端部的方向指数衰减，称为端部局域模。
+    \begin{subproblem}
+        本问考虑无限长链。
+        \begin{subsubproblem}
+            写出 $\{u_{n}, v_{n}\}$ 满足的运动方程组（$n$ 为正整数）。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            设存在行波解 $u_{n} = U\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$，$v_{n} = V\mathrm{e}^{\mathrm{i}(nqa - \omega t)}$。由非平凡解条件求色散关系 $\omega (q)$ 的两支，并给出 $q = 0$ 与 $q = \pi / a$ 处两支角频率的简化表达式。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            求对应的振幅比 $V / U$（写成 $q, \omega, k_1, k_2$ 的函数），并说明两支在 $q \to 0$ 时分别对应“同相振动”与“反相振动”的哪一种。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            利用前述结果证明系统存在频率禁带，并写出禁带的端点频率。讨论 $k_{1} = k_{2}$ 时禁带的变化。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        本问考虑半无限长链：基元编号 $n = 1,2,3,\ldots$，左端为一个A质点。规定 $\mathrm{A}_1$ 左侧通过一根劲度系数为 $k_{2}$ 的弹簧连接到刚性墙（墙位移恒为0）。链的连接方式为：$\mathrm{A}_n$ 与 $\mathrm{B}_n$ 之间用 $k_{1}$，$\mathrm{B}_n$ 与 $\mathrm{A}_{n + 1}$ 之间用 $k_{2}$。
+        \begin{subsubproblem}
+            写出 $n = 1$ 处的边界方程与 $n \geq 2$ 的一般方程。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            设存在端部局域解
+            \begin{equation}
+                u _ {n} = A \lambda^ {n - 1} \mathrm{e} ^ {- \mathrm{i} \omega t}, \qquad v _ {n} = B \lambda^ {n - 1} \mathrm{e} ^ {- \mathrm{i} \omega t}, \qquad | \lambda | <   1
+            \end{equation}
+            将其代入（2.1）的方程，联立消去 $A, B$，从而导出端部局域解的频率 $\omega_{edge}$ 与衰减因子 $\lambda$，并给出其存在条件（关于 $k_{1}, k_{2}$ 的不等式）。
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}

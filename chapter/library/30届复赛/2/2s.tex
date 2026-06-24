@@ -1,0 +1,90 @@
+\begin{solution}{2}
+\begin{subsolution}
+由于碰撞时间 $\Delta t$ 很小，弹簧来不及伸缩碰撞已结束。设碰后 $A$、$C$、$D$ 的速度分别为 $v_{A}$、$v_{C}$、$v_{D}$，显然有
+\begin{equation}
+v_{D} = \frac{2l}{r} v_{C}.
+\label{eq:1.s2}
+\end{equation}
+以 $A$、$B$、$C$、$D$ 为系统，在碰撞过程中，系统相对于轴不受外力矩作用，其相对于轴的角动量守恒
+\begin{equation}
+m v_{D} 2l + m v_{C} r + m v_{A} 2l = m v_{0} 2l.
+\label{eq:2.s2}
+\end{equation}
+由于轴对系统的作用力不做功，系统内仅有弹力起作用，所以系统机械能守恒。又由于碰撞时间 $\Delta t$ 很小，弹簧来不及伸缩碰撞已结束，所以不必考虑弹性势能的变化。故
+\begin{equation}
+\frac{1}{2} m v_{D}^{2} + \frac{1}{2} m v_{C}^{2} + \frac{1}{2} m v_{A}^{2} = \frac{1}{2} m v_{0}^{2}.
+\label{eq:3.s2}
+\end{equation}
+由\eqref{eq:1.s2}、\eqref{eq:2.s2}、\eqref{eq:3.s2}式解得
+\begin{equation}
+v_{C} = \frac{4lr}{8l^{2}+r^{2}} v_{0}, \quad v_{D} = \frac{8l^{2}}{8l^{2}+r^{2}} v_{0}, \quad v_{A} = -\frac{r^{2}}{8l^{2}+r^{2}} v_{0}
+\label{eq:4.s2}
+\end{equation}
+[代替\eqref{eq:3.s2}式，可利用弹性碰撞特点]
+\begin{equation*}
+v_{0} = v_{D} - v_{A}.
+\end{equation*}
+同样可解出\eqref{eq:4.s2}。]
+
+设碰撞过程中 $D$ 对 $A$ 的作用力为 $F_{1}^{\prime}$，对 $A$ 用动量定理有
+\begin{equation}
+F_{1}^{\prime} \Delta t = m v_{A} - m v_{0} = -\frac{4l^{2}+r^{2}}{8l^{2}+r^{2}} 2m v_{0},
+\label{eq:5.s2}
+\end{equation}
+方向与 $v_{0}$ 方向相反。于是，$A$ 对 $D$ 的作用力为 $F_{1}$ 的冲量为
+\begin{equation}
+F_{1} \Delta t = \frac{4l^{2}+r^{2}}{8l^{2}+r^{2}} 2m v_{0}
+\label{eq:6.s2}
+\end{equation}
+方向与 $v_{0}$ 方向相同。
+
+以 $B$、$C$、$D$ 为系统，设其质心离转轴的距离为 $x$，则
+\begin{equation}
+x = \frac{m r + m 2l}{(\alpha+2)m} = \frac{2l+r}{\alpha+2}.
+\label{eq:7.s2}
+\end{equation}
+质心在碰后瞬间的速度为
+\begin{equation}
+v = \frac{v_{C}}{r} x = \frac{4l(2l+r)}{(\alpha+2)(8l^{2}+r^{2})} v_{0}.
+\label{eq:8.s2}
+\end{equation}
+轴与杆的作用时间也为 $\Delta t$，设轴对杆的作用力为 $F_{2}$，由质心运动定理有
+\begin{equation}
+F_{2} \Delta t + F_{1} \Delta t = (\alpha+2) m v = \frac{4l(2l+r)}{8l^{2}+r^{2}} m v_{0}.
+\label{eq:9.s2}
+\end{equation}
+由此得
+\begin{equation}
+F_{2} \Delta t = \frac{r(2l-r)}{8l^{2}+r^{2}} 2m v_{0}.
+\label{eq:10.s2}
+\end{equation}
+方向与 $v_{0}$ 方向相同。因而，轴受到杆的作用力的冲量为
+\begin{equation}
+F_{2}^{\prime} \Delta t = -\frac{r(2l-r)}{8l^{2}+r^{2}} 2m v_{0},
+\label{eq:11.s2}
+\end{equation}
+方向与 $v_{0}$ 方向相反。注意：因弹簧处在拉伸状态，碰前轴已受到沿杆方向的作用力；在碰撞过程中还有与向心力有关的力作用于轴。但有限大小的力在无限小的碰撞时间内的冲量趋于零，已忽略。
+
+[代替\eqref{eq:7.s2}-\eqref{eq:9.s2}式，可利用对于系统的动量定理
+\begin{equation*}
+F_{2} \Delta t + F_{1} \Delta t = m v_{C} + m v_{D}.
+\end{equation*}
+]
+
+[也可由对质心的角动量定理代替\eqref{eq:7.s2}-\eqref{eq:9.s2}式。]
+\end{subsolution}
+
+\begin{subsolution}
+值得注意的是，\eqref{eq:1.s2}、\eqref{eq:2.s2}、\eqref{eq:3.s2}式是当碰撞时间极短、以至于弹簧来不及伸缩的条件下才成立的。如果弹簧的弹力恰好提供滑块 $C$ 以速度 $v_{C}=\frac{4lr}{8l^{2}+r^{2}}v_{0}$ 绕过 $B$ 的轴做匀速圆周运动的向心力，即
+\begin{equation}
+k(r-\ell) = m \frac{v_{C}^{2}}{r} = \frac{16 l^{2} r}{(8l^{2}+r^{2})^{2}} m v_{0}^{2}
+\label{eq:12.s2}
+\end{equation}
+则弹簧总保持其长度不变，\eqref{eq:1.s2}、\eqref{eq:2.s2}、\eqref{eq:3.s2}式是成立的。由\eqref{eq:12.s2}式得碰前滑块 $A$ 的速度 $v_{0}$ 应满足的条件
+\begin{equation}
+v_{0} = \frac{(8l^{2}+r^{2})}{4l} \sqrt{\frac{k(r-\ell)}{m r}}
+\label{eq:13.s2}
+\end{equation}
+可见，为了使碰撞后系统能保持匀速转动，碰前滑块 $A$ 的速度大小 $v_{0}$ 应满足\eqref{eq:13.s2}式。
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,65 @@
+\begin{solution}{30}
+  \begin{subsolution}
+    磁通量
+    \begin{equation}
+      \Phi = B_{\mathrm{a}} \cdot A
+      \label{eq:1.p30}
+    \end{equation}
+    由几何关系可知两个正三角形中包含一个磁通量子，所以
+    \begin{equation}
+      A = 2 \times \frac{1}{2} \times \frac{\sqrt{3}}{2} a^{2} = \frac{\sqrt{3}}{2} a^{2}
+      \label{eq:2.p30}
+    \end{equation}
+    此时 $\Phi = \Phi_{0}$，于是
+    \begin{equation}
+      \Phi_{0} = B_{\mathrm{a}} \cdot \frac{\sqrt{3}}{2} a^{2}
+      \label{eq:3.p30}
+    \end{equation}
+    \begin{equation}
+      a = \sqrt{\frac{2}{\sqrt{3}} \cdot \frac{\Phi_{0}}{B_{\mathrm{a}}}} = 2.19 \times 10^{-7} \mathrm{m} = 0.219 \mu \mathrm{m}
+      \label{eq:4.p30}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    随着外加磁场的增加，每个磁通量子所对应面积减少，即磁通密度增大，当相邻两根磁通涡旋线的正常芯开始重叠时，即
+    \begin{equation}
+      a \leq 2 \xi
+      \label{eq:5.p30}
+    \end{equation}
+    整块超导体都变为正常态，此时所对应的磁场为上临界磁场
+    \begin{equation}
+      B_{\mathrm{a}} = B_{c 2} = \frac{\Phi_{0}}{\frac{\sqrt{3}}{2} (2 \xi)^{2}} = \frac{2.07 \times 10^{-15}}{2 \times \sqrt{3} \times 25 \times 10^{-18}} \mathrm{T} = \frac{2.07 \times 10^{-15}}{3.47 \times 25 \times 10^{-18}} \mathrm{T} = 23.85 \mathrm{T}
+      \label{eq:6.p30}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    如图 3 所示，当超导带材中通以电流 I 时，这样在安培力的驱动下，磁通涡旋线将以速度 v 向右运动，等效于超导体以速度 v 向左做切割磁力线运动，从而在超导体的两端产生电势差
+    \begin{equation}
+      U = B_{a} v d
+      \label{eq:7.p30}
+    \end{equation}
+    而
+    \begin{equation}
+      v = \frac{f_{A} \Phi_{0}}{\eta B_{\mathrm{a}}} = \frac{1}{\eta} \cdot \frac{I d \Phi_{0}}{b c d}
+      \label{eq:8.p30}
+    \end{equation}
+    由于磁通流动所产生的电阻为：
+    \begin{equation}
+      R = \frac{U}{I} = \frac{B_{\mathrm{a}} v d}{I} = \frac{\Phi_{0} B_{\mathrm{a}} I d^{2}}{\eta I (b c d)} = \frac{\Phi_{0} B_{\mathrm{a}} d^{2}}{\eta (b c d)}
+      \label{eq:9.p30}
+    \end{equation}
+    根据电阻与电阻率 $\rho$ 的关系
+    \begin{equation}
+      R = \rho \frac{d}{b c}
+      \label{eq:10.p30}
+    \end{equation}
+    有
+    \begin{equation}
+      \rho = \frac{\Phi_{0} B_{\mathrm{a}} b c d}{\eta (b c d)} = \frac{\Phi_{0} B_{\mathrm{a}}}{\eta}
+      \label{eq:11.p30}
+    \end{equation}
+  \end{subsolution}
+  \begin{subsolution}
+    在超导体内部引入缺陷，如空位，位错，填隙原子等，当磁通涡旋线落入这些缺陷时，就会产生磁通钉扎效应，使磁通涡旋线不易流动，即为非理想第二类超导体。
+  \end{subsolution}
+\end{solution}

@@ -1,0 +1,45 @@
+\begin{problem}[2026年博知汇BWPhO][玻尔—索末菲量子化条件]{34}
+    1913 年，玻尔提出原子模型时，主要凭借的是敏锐的物理直觉。他当时使用的工具相对简单——角动量量子化条件，这更像是为氢原子 “量身定制” 的假设。到了 1915－1916 年，当索末菲试图将玻尔的理论推广到更一般的体系时，一套更为强大的数学工具已经为他铺平了道路。
+
+    索末菲敏锐地意识到，分析力学中的作用量积分在周期性系统中是绝热不变量，这恰恰是进行量子化最自然的候选者。于是他将玻尔的角动量量子化推广为更具普遍性的量子化通则，这一形式不仅囊括了玻尔的圆周轨道（作为特例），还能处理椭圆轨道、空间量子化甚至相对论修正。可以说，没有18－19世纪发展起来的分析力学，就没有索末菲对玻尔理论的系统化推广。
+
+    对于一个非相对论性的体系，如果其势能不显含速度 $\dot{q}_{i}$（对于纯力学体系的惯性系而言这是很显然的），那么广义坐标 $q_{i}$ 对应的广义动量 $p_{i}$ 被定义为 $p_{i} = \partial E_{k} / \partial \dot{q}_{i}$，其中 $E_{k}$ 为动能。对于周期性变化的体系，玻尔—索末菲量子化条件给出
+    \begin{equation}
+        \oint p _ {i} \mathrm{d} q _ {i} = n _ {i} h
+    \end{equation}
+    其中 $n_i$ 为非负整数（必要的时候限制其为正整数），而 $h$ 则为普朗克常量。
+    \begin{subproblem}
+        考虑二维极坐标 $(r, \theta)$ 的情形，根据题目所给信息证明：玻尔角动量量子化条件确为玻尔—索末菲量子化条件的一个实例。
+    \end{subproblem}
+    \begin{subproblem}
+        考虑某个在一维势阱中运动的粒子，其单位质量势能 $V(x) = a |x|^{s}$。显然，粒子的广义动量就是机械动量。
+        \begin{subsubproblem}
+            用玻尔—索末菲量子化条件导出第 $n$ 个能级 $E_{n}$ 对 $n$ 的依赖关系（即 $E_{n} \propto n^{?}$）。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            已知分析力学给出对于一维运动的粒子有（无需证明）
+            \begin{equation}
+                T = \frac {\partial}{\partial E} \oint p \mathrm{d} x
+            \end{equation}
+            对于势场为谐振子势和无限深方势阱的情形，通过导出 $T$ 对 $E$ 的幂次依赖关系和上式给出的结论，验证（2.1）结论的正确性。无限深方势阱的势能函数可以表示为
+            \begin{equation}
+                V (x) = {\left\{ \begin{array}{l l} {0,} & {- x _ {0} \leq x \leq x _ {0}} \\ {\infty ,} & {x <   - x _ {0} \text {或} x > x _ {0}} \end{array} \right.}
+            \end{equation}
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        现在考虑在三维谐振子势 $V(\pmb{r}) = \frac{1}{2} m\omega^2\pmb{r}^2$ 中运动的质量为 $m$ 的粒子。引入球坐标系 $(r,\theta ,\varphi)$ 来表述粒子的位置。
+        \begin{subsubproblem}
+            仍根据题给信息推导 $r, \theta, \varphi$ 三个坐标对应的广义动量 $p_r, p_\theta, p_\varphi$，用 $r, \theta, \varphi$ 及它们对时间的导数表示。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            记三个方向的量子数分别为 $n_r, n_\theta, n_\varphi$，通过玻尔—索末菲量子化条件，依次导出（i）$p_\varphi$（ii）总角动量 $L$（iii）总能量 $E$ 的值。如下定积分公式可能有用：
+            \begin{equation}
+                \int_ {x _ {1}} ^ {x _ {2}} \frac {\sqrt {(x ^ {2} - x _ {1} ^ {2}) (x _ {2} ^ {2} - x ^ {2})}}{x} \mathrm{d} x = \frac {\pi}{4} (x _ {2} - x _ {1}) ^ {2} (0 <   x _ {1} <   x _ {2})
+            \end{equation}
+            \begin{equation}
+                \int_ {x _ {0}} ^ {\pi - x _ {0}} \sqrt {\frac {1}{\sin^ {2} x _ {0}} - \frac {1}{\sin^ {2} x}} \mathrm{d} x = \pi \left(\frac {1}{\sin x _ {0}} - 1\right) \left(0 <   x _ {0} <   \frac {\pi}{2}\right)
+            \end{equation}
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}

@@ -1,0 +1,101 @@
+\begin{solution}{37}
+    \begin{subsolution}
+        假设光在高反镜表面的振幅反射率为 $r$，透射率为 $t$（二者均为复数）。记原先入射复振幅为 $1$，考虑时间反演，则有振幅分别为 $r^{*}, t^{*}$ 的光逆着原先反、透射方向进入时，应当有如下斯托克斯倒逆关系（其中第 \eqref{eq:1.s37} 式将在（3.2）问中用到）
+        \begin{equation}
+            \boldsymbol {r} \cdot \boldsymbol {r} ^ {*} + \boldsymbol {t} \cdot \boldsymbol {t} ^ {*} = 1
+            \label{eq:1.s37}
+        \end{equation}
+        \begin{equation}
+            t \cdot r ^ {*} + r \cdot t ^ {*} = 0
+            \label{eq:2.s37}
+        \end{equation}
+        注意到
+        \begin{equation}
+            (t r ^ {*}) ^ {*} = r t ^ {*}
+            \label{eq:3.s37}
+        \end{equation}
+        结合第 \eqref{eq:2.s37} 式可知
+        \begin{equation}
+            \mathrm{Re} (t r ^ {*}) = 0 \implies \phi_ {\mathrm{T}} = \phi_ {\mathrm{R}} \pm \frac {\pi}{2}
+            \label{eq:4.s37}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            关闭激光器后，直接反射回激光器的振幅消失，因此激光器开始接收反射光。在 $t = 0^{+}$ 的瞬间，由于反射端只是少了一个立即反射支 $rA$，因此初态振幅
+            \begin{equation}
+                A = | r | A _ {0}
+                \label{eq:5.s37}
+            \end{equation}
+            其中 $A_{0}$ 为原始激光器出射振幅。这给出初始时光功率
+            \begin{equation}
+                P _ {1} = R P _ {0}
+                \label{eq:6.s37}
+            \end{equation}
+            此后，每经过
+            \begin{equation}
+                \Delta t = \frac {2 L}{c}
+                \label{eq:7.s37}
+            \end{equation}
+            的时间，激光反射两次，谐振腔内少两束光，返回激光器的光束少一条。该过程等效于多一次来回反射，由此得到振幅的递推关系
+            \begin{equation}
+                A _ {n + 1} = | r | ^ {2} A _ {n}
+                \label{eq:8.s37}
+            \end{equation}
+            反射光功率
+            \begin{equation}
+                P _ {n + 1} = \left| r \right| ^ {4} P _ {n} = R ^ {2} P _ {n}
+                \label{eq:9.s37}
+            \end{equation}
+            进而结合初始时的光功率可得总能量为
+            \begin{equation}
+                E _ {\mathrm{tot}} = R P _ {0} \Delta t \sum_ {m = 0} ^ {\infty} R ^ {2 m} = \frac {2 R L P _ {0}}{(1 - R ^ {2}) c}
+                \label{eq:10.s37}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            对第 \eqref{eq:9.s37} 式变形并作连续化近似得到
+            \begin{equation}
+                \frac {\mathrm{d} P}{\mathrm{d} t} \approx \frac {P _ {n + 1} - P _ {n}}{\Delta t} = - \frac {c}{2 L} (1 - R ^ {2}) P
+                \label{eq:11.s37}
+            \end{equation}
+            结合初始条件解得
+            \begin{equation}
+                P (t) = P (0) \exp \left(- \frac {c}{2 L} (1 - R ^ {2}) t\right) = R P _ {0} \exp \left(- \frac {c}{2 L} (1 - R ^ {2}) t\right)
+                \label{eq:12.s37}
+            \end{equation}
+            有趣的是，尽管作了连续化的近似，但如果积分会发现得到的总能量仍然和之前相同。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            相位差 $\delta$ 对应的传播时间
+            \begin{equation}
+                t = \frac {\lambda \delta}{2 \pi c}
+                \label{eq:13.s37}
+            \end{equation}
+            记两束光的复振幅分别为 $E_{1}, E_{2}$，由已知不难得到
+            \begin{equation}
+                \begin{array}{r l} I = \langle (E _ {1} + E _ {2}) ^ {*} (E _ {1} + E _ {2}) \rangle = | E _ {1} | ^ {2} + | E _ {2} | ^ {2} + 2 \operatorname{Re} \langle E _ {1} ^ {*} E _ {2} \rangle \\ \quad = I _ {1} + I _ {2} + 2 \sqrt {I _ {1} I _ {2}} \mathrm{e} ^ {- t / \tau} \cos \delta = I _ {1} + I _ {2} + 2 \sqrt {I _ {1} I _ {2}} \mathrm{e} ^ {- \lambda \delta / (2 \pi c \tau)} \cos \delta \end{array}
+                \label{eq:14.s37}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由于原先反射光束完全消失，说明 $L$ 满足谐振条件，因此除了第一束反射光外，所有反射光相位相同。记入射光光强为 $1$，仿照（3.1）的例子，先计算非干涉项
+            \begin{equation}
+                I _ {0} = | r | ^ {2} + \sum_ {m = 0} ^ {\infty} \left| t ^ {2} r ^ {2 m + 1} \right| ^ {2} = R + \frac {(1 - R) ^ {2} R}{1 - R ^ {2}} = \frac {2 R}{1 + R}
+                \label{eq:15.s37}
+            \end{equation}
+            然后再考虑相差 $n$ 个来回的光的交叉项，衰减因子为 $\mathrm{e}^{-2nL/(c\tau)}$，对光强的贡献为
+            \begin{equation}
+                \begin{array}{r l} I _ {n} = \mathrm{e} ^ {- 2 n L / (c \tau)} \left(- 2 | r | | t ^ {2} r ^ {2 n - 1} | + 2 \sum_ {m = 0} ^ {\infty} | t ^ {2} r ^ {2 m + 1} | | t ^ {2} r ^ {2 (m + n) + 1} |\right) \\ \quad = 2 \mathrm{e} ^ {- 2 n L / (c \tau)} \left(- (1 - R) R ^ {n} + \frac {(1 - R) ^ {2} R ^ {n + 1}}{1 - R ^ {2}}\right) = - \frac {2 (1 - R)}{1 + R} R ^ {n} \mathrm{e} ^ {- 2 n L / (c \tau)} \end{array}
+                \label{eq:16.s37}
+            \end{equation}
+            上述两式推导过程中均已利用第 \eqref{eq:1.s37} 式。从而
+            \begin{equation}
+                R _ {\mathrm{tot}} = I _ {0} + \sum_ {n = 1} ^ {\infty} I _ {n} = \frac {2 R}{1 + R} - \frac {2 R (1 - R) \mathrm{e} ^ {- 2 L / (c \tau)}}{(1 + R) (1 - R \mathrm{e} ^ {- 2 L / (c \tau)})} = \frac {2 R (1 - \mathrm{e} ^ {- 2 L / (c \tau)})}{(1 + R) (1 - R \mathrm{e} ^ {- 2 L / (c \tau)})}
+                \label{eq:17.s37}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

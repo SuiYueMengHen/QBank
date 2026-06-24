@@ -1,0 +1,64 @@
+\begin{solution}{24}
+    \begin{subsolution}
+        由题给条件，观察到星系的谱线的频率分别为 $\nu_1' = 4.549 \times 10^{14}\mathrm{Hz}$ 和 $\nu_2' = 6.141 \times 10^{14}\mathrm{Hz}$，它们分别对应于在实验室中测得的氢原子光谱的两条谱线 $\nu_1$ 和 $\nu_2$。由红移量 z 的定义，根据波长与频率的关系可得
+        \begin{equation}
+            z = \frac{\nu_1 - \nu_1'}{\nu_1'} = \frac{\nu_2 - \nu_2'}{\nu_2'}
+            \label{eq:1.s24}
+        \end{equation}
+        式中，$\nu'$ 是我们观测到的星系中某恒星发出的频率，而 $\nu$ 是实验室中测得的同种原子发出的相应的频率。上式可写成
+        \begin{equation*}
+            \frac{1}{\nu_1'} = (1 + z)\frac{1}{\nu_1}, \quad \frac{1}{\nu_2'} = (1 + z)\frac{1}{\nu_2}
+        \end{equation*}
+        由氢原子的能级公式
+        \begin{equation}
+            E_n = \frac{E_0}{n^2},
+            \label{eq:2.s24}
+        \end{equation}
+        得到其巴耳末系的能谱线为
+        \begin{equation}
+            h\nu = \frac{E_0}{n^2} - \frac{E_0}{2^2}
+            \label{eq:3.s24}
+        \end{equation}
+        由于 $z$ 远小于1，光谱线红移后的频率近似等于其原频率。把 $\nu_1'$ 和 $\nu_2'$ 分别代入上式，得到这两条谱线的相应能级的量子数
+        \begin{equation}
+            n_1 \approx \frac{1}{\sqrt{\frac{1}{4} + \frac{h\nu_1'}{E_0}}} \approx 3, \quad n_2 \approx \frac{1}{\sqrt{\frac{1}{4} + \frac{h\nu_2'}{E_0}}} \approx 4
+            \label{eq:4.s24}
+        \end{equation}
+        从而，证实它们分别由 n=3 和 4 向 k=2 的能级跃迁而产生的光谱，属于氢原子谱线的巴尔末系。这两条谱线在实验室的频率分别为
+        \begin{equation*}
+            \nu_1 = -\frac{E_0}{h}\left(\frac{1}{2^2} - \frac{1}{3^2}\right) = 4.567 \times 10^{14}\mathrm{Hz}, \quad \nu_2 = -\frac{E_0}{h}\left(\frac{1}{2^2} - \frac{1}{4^2}\right) = 6.166 \times 10^{14}\mathrm{Hz}
+        \end{equation*}
+        根据波长与频率的关系可得，在实验室中与之相对应的波长分别是
+        \begin{equation}
+            \lambda_1 = 656.4\mathrm{nm}, \quad \lambda_2 = 486.2\mathrm{nm}
+            \label{eq:5.s24}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由\eqref{eq:1.s24}式可知
+        \begin{equation}
+            z = \frac{1}{2}\left(\frac{\nu_1 - \nu_1'}{\nu_1'} + \frac{\nu_2 - \nu_2'}{\nu_2'}\right) = 0.0040
+            \label{eq:6.s24}
+        \end{equation}
+        由于多普勒效应，观测到的频率
+        \begin{equation*}
+            \nu' = \sqrt{\frac{1 - v/c}{1 + v/c}}\,\nu
+        \end{equation*}
+        因为 $v \ll c$，推导得
+        \begin{equation*}
+            z = v/c
+        \end{equation*}
+        从而，该星系远离我们的速度大小为
+        \begin{equation}
+            v = zc = 0.0040 \times 2.998 \times 10^8 \mathrm{m/s} = 1.2 \times 10^6 \mathrm{m/s}
+            \label{eq:7.s24}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由哈勃定律，该星系与我们的距离为
+        \begin{equation}
+            D = \frac{v}{H} = \frac{1.2 \times 10^6}{6.780 \times 10^4}\mathrm{Mpc} = 18\mathrm{Mpc}
+            \label{eq:8.s24}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

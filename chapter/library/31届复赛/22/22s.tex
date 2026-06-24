@@ -1,0 +1,129 @@
+\begin{solution}{22}
+    \begin{subsolution}
+        整个电容器相当于 $2N$ 个相同的电容器并联，可旋转金属板的转角为 $\theta$ 时
+        \begin{equation}
+            C(\theta) = 2N C_1(\theta)
+            \label{eq:1.s22}
+        \end{equation}
+        式中 $C_1(\theta)$ 为两相邻正、负极板之间的电容
+        \begin{equation}
+            C_1(\theta) = \frac{A(\theta)}{4\pi k s}
+            \label{eq:2.s22}
+        \end{equation}
+        这里，$A(\theta)$ 是两相邻正负极板之间相互重迭的面积，有
+        \begin{equation}
+            A(\theta) = \begin{cases}
+                2 \times \frac{1}{2}R^2(2\theta_0 - \pi), & \text{当 } -\theta_0 \leq \theta \leq \theta_0 - \pi \\
+                2 \times \frac{1}{2}R^2(\theta_0 + \theta), & \text{当 } \theta_0 - \pi \leq \theta \leq 0 \\
+                2 \times \frac{1}{2}R^2(\theta_0 - \theta), & \text{当 } 0 \leq \theta \leq \pi - \theta_0 \\
+                2 \times \frac{1}{2}R^2(2\theta_0 - \pi), & \text{当 } \pi - \theta_0 < \theta < \theta_0
+            \end{cases}
+            \label{eq:3.s22}
+        \end{equation}
+        由\eqref{eq:2.s22}、\eqref{eq:3.s22}式得
+        \begin{equation}
+            C_1(\theta) = \begin{cases}
+                \frac{1}{4\pi k s}R^2(2\theta_0 - \pi), & \text{当 } -\theta_0 \leq \theta \leq \theta_0 - \pi \\
+                \frac{1}{4\pi k s}R^2(\theta_0 + \theta), & \text{当 } \theta_0 - \pi \leq \theta \leq 0 \\
+                \frac{1}{4\pi k s}R^2(\theta_0 - \theta), & \text{当 } 0 \leq \theta \leq \pi - \theta_0 \\
+                \frac{1}{4\pi k s}R^2(2\theta_0 - \pi), & \text{当 } \pi - \theta_0 < \theta < \theta_0
+            \end{cases}
+            \label{eq:4.s22}
+        \end{equation}
+        由\eqref{eq:1.s22}、\eqref{eq:4.s22}式得
+        \begin{equation}
+            C(\theta) = \begin{cases}
+                \frac{N}{2\pi k s}R^2(2\theta_0 - \pi), & \text{当 } -\theta_0 \leq \theta \leq \theta_0 - \pi \\
+                \frac{N}{2\pi k s}R^2(\theta_0 + \theta), & \text{当 } \theta_0 - \pi \leq \theta \leq 0 \\
+                \frac{N}{2\pi k s}R^2(\theta_0 - \theta), & \text{当 } 0 \leq \theta \leq \pi - \theta_0 \\
+                \frac{N}{2\pi k s}R^2(2\theta_0 - \pi), & \text{当 } \pi - \theta_0 < \theta < \theta_0
+            \end{cases}
+            \label{eq:5.s22}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        当电容器两极板加上直流电势差 $E$ 后，电容器所带电荷为
+        \begin{equation}
+            Q(\theta) = C(\theta) E
+            \label{eq:6.s22}
+        \end{equation}
+        当 $\theta = 0$ 时，电容器电容达到最大值 $C_{\max}$，由\eqref{eq:5.s22}式得
+        \begin{equation}
+            C_{\max} = \frac{N R^2 \theta_0}{2\pi k s}
+            \label{eq:7.s22}
+        \end{equation}
+        充电稳定后电容器所带电荷也达到最大值 $Q_{\max}$，由\eqref{eq:6.s22}式得
+        \begin{equation}
+            Q_{\max} = \frac{N R^2 \theta_0}{2\pi k s} E
+            \label{eq:8.s22}
+        \end{equation}
+        断开电源，在转角 $\theta$ 取 $\theta = 0$ 附近的任意值时，由\eqref{eq:5.s22}、\eqref{eq:8.s22}式得，电容器内所储存的能量为
+        \begin{equation}
+            U(\theta) = \frac{Q_{\max}^2}{2C(\theta)} = \frac{N R^2 \theta_0^2 E^2}{4\pi k s (\theta_0 - \theta)} \quad \text{当 } -\theta_0 \leq \theta \leq \pi - \theta_0
+            \label{eq:9.s22}
+        \end{equation}
+        设可旋转金属板所受力矩为 $T(\theta)$（它是由若干作用在可旋转金属板上外力 $F_i$ 产生的，不失普遍性，可认为 $F_i$ 的方向垂直于转轴，其作用点到旋转轴的距离为 $r_i$，其值 $F_i$ 的正负与可旋转金属板所受力矩的正负一致），当金属板旋转 $\Delta\theta$（即从 $\theta$ 变为 $\theta + \Delta\theta$）后，电容器内所储存的能量增加 $\Delta U$，则由功能原理有
+        \begin{equation}
+            T(\theta)\Delta\theta = \left(\sum F_i r_i\right)\Delta\theta = \sum F_i \Delta l_i = \Delta U(\theta)
+            \label{eq:10.s22}
+        \end{equation}
+        式中，由\eqref{eq:9.s22}、\eqref{eq:10.s22}式得
+        \begin{equation}
+            T(\theta) = \frac{\Delta U(\theta)}{\Delta\theta} = \frac{N R^2 \theta_0^2 E^2}{4\pi k s (\theta_0 - \theta)^2} \quad \text{当 } -\theta_0 \leq \theta \leq \pi - \theta_0
+            \label{eq:11.s22}
+        \end{equation}
+        当电容器电容最大时，充电后转动可旋转金属板的力矩为
+        \begin{equation}
+            T = \left(\frac{\Delta U}{\Delta\theta}\right)_{\theta = 0} = \frac{N R^2 E^2}{4\pi k s}
+            \label{eq:12.s22}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        当 $V = V_0\cos\omega t$，则其电容器所储存能量为
+        \begin{align}
+            U &= \frac{1}{2}CV^2 \nonumber \\
+            &= \frac{1}{2}\left[\frac{1}{2}(C_{\max} + C_{\min}) + \frac{1}{2}(C_{\max} - C_{\min})\cos 2\omega_m t\right] V_0^2 \cos^2\omega t \nonumber \\
+            &= \frac{1}{4}\left[\frac{1}{2}(C_{\max} + C_{\min}) + \frac{1}{2}(C_{\max} - C_{\min})\cos 2\omega_m t\right] V_0^2 (1 + \cos 2\omega t) \nonumber \\
+            &= \frac{V_0^2}{8}\bigl[(C_{\max} + C_{\min}) + (C_{\max} + C_{\min})\cos 2\omega t + (C_{\max} - C_{\min})\cos 2\omega_m t \nonumber \\
+            &\quad + (C_{\max} - C_{\min})\cos 2\omega_m t \cos 2\omega t\bigr] \nonumber \\
+            &= \frac{V_0^2}{8}\bigl\{(C_{\max} + C_{\min}) + (C_{\max} + C_{\min})\cos 2\omega t + (C_{\max} - C_{\min})\cos 2\omega_m t \nonumber \\
+            &\quad + \frac{1}{2}(C_{\max} - C_{\min})[\cos 2(\omega_m + \omega)t + \cos 2(\omega_m - \omega)t]\bigr\}
+            \label{eq:13.s22}
+        \end{align}
+        由于边缘效应引起的附加电容远小于 $C_{\max}$，因而可用\eqref{eq:7.s22}式估算 $C_{\max}$。如果 $\omega_m \neq \omega$，利用\eqref{eq:7.s22}式和题设条件以及周期平均值公式
+        \begin{equation}
+            \overline{\cos 2\omega t} = 0, \quad \overline{\cos 2\omega_m t} = 0, \quad \overline{\cos 2(\omega_m + \omega)t} = 0, \quad \overline{\cos 2(\omega_m - \omega)t} = 0
+            \label{eq:14.s22}
+        \end{equation}
+        可得电容器所储存能量的周期平均值为
+        \begin{equation}
+            \bar{U}_1 = \frac{1}{8}(C_{\max} + C_{\min})V_0^2 = \frac{(1 + \lambda)N R^2}{32 k s}V_0^2
+            \label{eq:15.s22}
+        \end{equation}
+        如果 $\omega_m = \omega$，\eqref{eq:14.s22}式中第4式右端不是零，而是1。利用\eqref{eq:7.s22}式和题设条件以及周期平均值公式的前3式得电容器所储存能量的周期平均值为
+        \begin{equation}
+            \bar{U}_2 = \frac{1}{8}(C_{\max} + C_{\min})V_0^2 + \frac{1}{16}(C_{\max} - C_{\min})V_0^2 = \frac{1}{16}(3C_{\max} + C_{\min})V_0^2 = \frac{(3 + \lambda)N R^2}{64 k s}V_0^2
+            \label{eq:16.s22}
+        \end{equation}
+        由于边缘效应引起的附加电容与忽略边缘效应的电容是并联的，因而 $C_{\max}$ 应比用\eqref{eq:7.s22}式估计 $C_{\max}$ 大；这一效应同样使得 $C_{\min} > 0$；可假设实际的 $(C_{\max} - C_{\min})$ 近似等于用\eqref{eq:7.s22}式估计 $C_{\max}$。如果 $\omega_m \neq \omega$，利用\eqref{eq:7.s22}式和题设条件以及周期平均值公式
+        \begin{equation}
+            \overline{\cos 2\omega t} = 0, \quad \overline{\cos 2\omega_m t} = 0, \quad \overline{\cos 2(\omega_m + \omega)t} = 0, \quad \overline{\cos 2(\omega_m - \omega)t} = 0
+            \label{eq:17.s22}
+        \end{equation}
+        可得电容器所储存能量的周期平均值为
+        \begin{equation}
+            \bar{U}_1 = \frac{1}{8}(C_{\max} + C_{\min})V_0^2 = \frac{(1 + 2\lambda)N R^2}{32 k s}V_0^2
+            \label{eq:18.s22}
+        \end{equation}
+        如果 $\omega_m = \omega$，\eqref{eq:14.s22}中第4式右端不是零，而是1。利用\eqref{eq:7.s22}式和题设条件以及周期平均值公式\eqref{eq:14.s22}的前3式得电容器所储存能量的周期平均值为
+        \begin{equation}
+            \bar{U}_2 = \frac{1}{8}(C_{\max} + C_{\min})V_0^2 + \frac{1}{16}(C_{\max} - C_{\min})V_0^2 = \frac{1}{16}(3C_{\max} + C_{\min})V_0^2 = \frac{(3 + 4\lambda)N R^2}{64 k s}V_0^2
+            \label{eq:19.s22}
+        \end{equation}
+        因为 $\bar{U}_2 > \bar{U}_1$，则最大值为 $\bar{U}_2$，所对应的 $\omega_m$ 为
+        \begin{equation}
+            \omega_m = \omega
+            \label{eq:20.s22}
+        \end{equation}
+    \end{subsolution}
+\end{solution}
