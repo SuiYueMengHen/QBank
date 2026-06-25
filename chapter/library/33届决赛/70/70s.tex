@@ -1,0 +1,112 @@
+\begin{solution}{70}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            当引力波穿过时，在原点附近，$x-y$ 平面上两临近点 $(x,y)$ 和 $(x+\mathrm{d}x,y+\mathrm{d}y)$ 之间的距离 $\mathrm{d}r$ 满足
+            \begin{equation}
+                \mathrm{d}r = \sqrt{(1 + A\sin\omega t)(\mathrm{d}x)^{2} + (1 - A\sin\omega t)(\mathrm{d}y)^{2}} \label{eq:1.p70}
+            \end{equation}
+            在没有引力波的情形下，$(x,y)$ 可用极坐标 $(\rho,\theta)$ 表示
+            \begin{equation}
+                x = \rho\cos\theta,\quad y = \rho\sin\theta \label{eq:2.p70}
+            \end{equation}
+            于是当引力波穿过时，对固定的 $\theta$ 方向，有
+            \begin{align}
+                \mathrm{d}r &= \sqrt{(1 + A\sin\omega t)\cos^{2}\theta + (1 - A\sin\omega t)\sin^{2}\theta}\,\mathrm{d}\rho \nonumber \\
+                &= \sqrt{1 + A\sin\omega t(\cos^{2}\theta - \sin^{2}\theta)}\,\mathrm{d}\rho \nonumber \\
+                &= \sqrt{1 + A\sin\omega t\cos 2\theta}\,\mathrm{d}\rho \label{eq:3.p70}
+            \end{align}
+            在与 $x$ 轴夹角为 $\theta$ 方向上，两个微探测器之间的距离为
+            \begin{equation}
+                D = R\sqrt{1 + A\sin\omega t\cos 2\theta} \label{eq:4.p70}
+            \end{equation}
+            由引力波的振幅 $A << 1$ 得
+            \begin{equation}
+                D = R\left(1 + \frac{1}{2}A\cos 2\theta\sin\omega t\right) \label{eq:5.p70}
+            \end{equation}
+            两个微探测器之间的距离相对于 $R$ 的偏离为
+            \begin{equation}
+                D - R = R\left(\frac{1}{2}A\cos 2\theta\right)\sin\omega t \label{eq:6.p70}
+            \end{equation}
+            这是在 $R$ 附近的振幅为 $\frac{1}{2}RA\cos 2\theta$ 、角频率为 $\omega$ 的简谐振动。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            无引力波穿过时，微探测器阵列分布在 $x-y$ 平面上以 $R$ 为半径、原点为圆心的圆周上
+            \begin{equation}
+                x^{2} + y^{2} = R^{2} \label{eq:7.p70}
+            \end{equation}
+            引力波穿过原点时，系数 $f_{1}$ 和 $f_{2}$ 产生了变化；为了使时空形式上成为平直的，可定义
+            \begin{equation}
+                X = \sqrt{1 + A\sin\omega t}\,x,\quad Y = \sqrt{1 - A\sin\omega t}\,y \label{eq:8.p70}
+            \end{equation}
+            由 \eqref{eq:7.p70}、\eqref{eq:8.p70} 式得
+            \begin{equation}
+                \frac{X^{2}}{\left[R\sqrt{1 + A\sin\omega t}\right]^{2}} + \frac{Y^{2}}{\left[R\sqrt{1 - A\sin\omega t}\right]^{2}} = 1 \label{eq:9.p70}
+            \end{equation}
+            因此，对于给定的时刻 $t$ ，微探测器阵列分布在如 \eqref{eq:9.p70} 式所示的椭圆上；该椭圆的长轴和短轴的长度是随时间而变的。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            在 $z=0$ 处两列波发生干涉，合成结果为
+            \begin{equation}
+                A_{\mathrm{tot}}\sin(\omega_{\mathrm{tot}} t + \Phi) = A\sin\omega t + A\sin(\omega t + \phi) \label{eq:10.p70}
+            \end{equation}
+            它相当于振幅为 $A_{\mathrm{tot}}$ 、频率为 $\omega_{\mathrm{tot}}$ 的一列引力波在 $z=0$ 处产生的扰动，而 $\Phi$ 与时间 $t$ 无关。
+            由三角函数和差化积公式，\eqref{eq:10.p70} 式右端可写为
+            \begin{equation}
+                2A\cos\frac{\phi}{2}\sin(\omega t + \frac{\phi}{2}) \label{eq:11.p70}
+            \end{equation}
+            此时，由第 (1)(i) 问结果可知，两个微探测器距离的扰动为
+            \begin{equation}
+                \Delta r = D - R = \left( A R \cos\frac{\phi}{2}\cos 2\theta \right) \sin(\omega t + \frac{\phi}{2}) \label{eq:12.p70}
+            \end{equation}
+            两微探测器距离的扰动幅度最小为
+            \begin{equation*}
+                A R \cos\frac{\phi}{2}\cos 2\theta = 0
+            \end{equation*}
+            解为
+            \begin{equation}
+                \theta = \frac{\pi}{4},\ \frac{3\pi}{4},\ \frac{5\pi}{4},\ \frac{7\pi}{4},\ \phi \text{ 任意；或 } \theta \text{ 任意，} \phi = \pi \label{eq:13.p70}
+            \end{equation}
+            两微探测器距离的扰动幅度最大为
+            \begin{equation*}
+                |A R \cos\frac{\phi}{2}\cos 2\theta| = A R
+            \end{equation*}
+            解为
+            \begin{equation}
+                \theta = 0,\ \frac{\pi}{2},\ \pi,\ \frac{3\pi}{2},\ \text{且 } \phi = 0 \label{eq:14.p70}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        双星系统质量相等，因此系统质心与两星体距离相等，即为 $\frac{L}{2}$ 。假设在 $t=0$ 时刻，两星体在其质心系中的坐标可近似为
+        \begin{equation}
+            x_{1}'(0) = \frac{L}{2},\ y_{1}'(0) = 0;\quad x_{2}'(0) = -\frac{L}{2},\ y_{2}'(0) = 0 \label{eq:15.p70}
+        \end{equation}
+        在任意时刻 $t$，两组坐标值可表示为
+        \begin{align}
+            x_{1}'(t) &= \frac{L}{2}\cos\Omega t,\quad y_{1}'(t) = \frac{L}{2}\sin\Omega t; \nonumber \\
+            x_{2}'(t) &= -\frac{L}{2}\cos\Omega t,\quad y_{2}'(t) = -\frac{L}{2}\sin\Omega t \label{eq:16.p70}
+        \end{align}
+        代入题给 $I_{1}$ 、$I_{2}$ 的表达式得
+        \begin{align}
+            I_{1}(t) &= \frac{8\pi G}{c^{4}} \frac{2}{l} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} M\left[ x_{1}^{\prime 2}(t) + x_{2}^{\prime 2}(t) \right] = -\frac{16\pi G}{c^{4}} \frac{\Omega^{2} M L^{2}}{l} \cos 2\Omega t \nonumber \\
+            I_{2}(t) &= \frac{8\pi G}{c^{4}} \frac{2}{l} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \left[ x_{1}'(t) y_{2}'(t) \right] = \frac{8\pi G}{c^{4}} \frac{\Omega^{2} M L^{2}}{l} \sin 2\Omega t
+        \end{align}
+        于是得到引力波在到双星系统质心的距离为 $l$ 处的表达式为
+        \begin{align}
+            f_{1} &= -\frac{16\pi G}{c^{4}} \frac{\Omega^{2} M L^{2}}{l} \cos 2\Omega(t - \frac{l}{c}), \nonumber \\
+            f_{2} &= \frac{8\pi G}{c^{4}} \frac{\Omega^{2} M L^{2}}{l} \sin 2\Omega(t - \frac{l}{c}) \label{eq:17.p70}
+        \end{align}
+        由 \eqref{eq:17.p70} 式可知，$f_{1}, f_{2}$ 的振幅分别为 $\frac{16\pi G}{c^{4}}\frac{\Omega^{2} M L^{2}}{l}$ ，$\frac{8\pi G}{c^{4}}\frac{\Omega^{2} M L^{2}}{l}$ ；双星系统的角频率 $\Omega$ 是引力波频率 $\omega$ 的一半即 $\Omega = \frac{\omega}{2}$ 。应用牛顿万有引力定律和牛顿第二定律有
+        \begin{equation}
+            G\frac{M^{2}}{L^{2}} = M\Omega^{2}\frac{L}{2} = M\left(\frac{\omega}{2}\right)^{2}\frac{L}{2} \label{eq:18.p70}
+        \end{equation}
+        由 \eqref{eq:18.p70} 式得，两星体之间的距离为
+        \begin{equation}
+            L = 2\left(\frac{G M}{\omega^{2}}\right)^{1/3} \label{eq:19.p70}
+        \end{equation}
+        将上式代入引力波的振幅表达式，可得引力波 $f_{1}, f_{2}$ 的振幅为
+        \begin{equation}
+            \frac{16\pi}{l c^{4}} \omega^{2/3}(G M)^{5/3},\quad \frac{8\pi}{l c^{4}} \omega^{2/3}(G M)^{5/3} \label{eq:20.p70}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

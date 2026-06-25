@@ -1,0 +1,105 @@
+\begin{solution}{62}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            两杆AB和BC对于A点的转动惯量分别为
+            \begin{equation}
+                I _ {1} = \frac {1}{3} m l^{2}
+                \label{eq:1.s62}
+            \end{equation}
+            \begin{equation}
+                I _ {2} = \frac {1}{12} m l^{2} + m\left(\frac {\sqrt {3}}{2} l\right)^{2}
+                \label{eq:2.s62}
+            \end{equation}
+            两杆固结在一起，因而两杆可视为一个刚体绕A点做定轴转动，总的转动惯量为
+            \begin{equation}
+                I = I _ {1} + I _ {2} = \frac {7}{6} m l^{2}
+                \label{eq:3.s62}
+            \end{equation}
+            撤去外力作用后，两杆所受到的重力相对于 A 点的总力矩为
+            \begin{equation}
+                M = \frac {1}{4} m g l + \frac {3}{4} m g l
+                \label{eq:4.s62}
+            \end{equation}
+            两杆的角加速度相同，设为 $\alpha$ （以顺时针方向为正方向），则由刚体转动定理得
+            \begin{equation}
+                M = I \alpha
+                \label{eq:5.s62}
+            \end{equation}
+            联立\eqref{eq:1.s62}\eqref{eq:2.s62}\eqref{eq:3.s62}\eqref{eq:4.s62}\eqref{eq:5.s62}式得，两杆的角加速度为
+            \begin{equation}
+                \alpha = \frac {6 g}{7 l}
+                \label{eq:6.s62}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            考虑 AB 杆从初始位置到与水平线 AD 的夹角为 $\theta$ 位置这一过程，两杆重力势能的变化量为
+            \begin{equation}
+                \Delta E _ {p} = - m g \frac {l}{2} \sin \theta - m g \frac {\sqrt {3} l}{2} \sin\left(\theta - \frac {\pi}{6}\right) - 2\left(- m g \frac {l}{2} \sin \frac {\pi}{3}\right)
+                \label{eq:7.s62}
+            \end{equation}
+            \begin{equation}
+                \Delta E _ {k} = \frac {1}{2} I \omega^{2} - 0
+                \label{eq:8.s62}
+            \end{equation}
+            式中， $\omega$ 为AB杆与水平线AD的夹角为 $\theta$ 时绕A点转动的角速度。整个过程中机械能守恒定律
+            \begin{equation}
+                \Delta E _ {k} + \Delta E _ {p} = 0
+                \label{eq:9.s62}
+            \end{equation}
+            联立\eqref{eq:3.s62}\eqref{eq:7.s62}\eqref{eq:8.s62}\eqref{eq:9.s62}式得
+            \begin{equation}
+                \omega = \sqrt {\frac {3 g}{7 l} \left(5 \sin \theta - \sqrt {3} \cos \theta - 2 \sqrt {3}\right)}
+                \label{eq:10.s62}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        两杆在 B 点由光滑铰链连接，因而杆 AB 和 BC 不能整体视为一个刚体，其角加速度不相等，分别设为 $\alpha_{1} 、 \alpha_{2}$ (以顺时针方向为正方向)；取 B 点为原点， $x 、 y$ 轴正方向分别水平向右、竖直向下，设 BC 杆对 AB 杆的作用力沿 x 、 y 轴的分量分别为 $F_{x}$ 、 $F_{y}$ 。对于 AB 杆，相对于 A 点，由刚体转动定理得
+        \begin{equation}
+            \left(\frac {1}{3} m l^{2}\right) \alpha_{1} = \frac {1}{4} m g l + \frac {1}{2} F _ {y} l - \frac {\sqrt {3}}{2} F _ {x} l
+            \label{eq:11.s62}
+        \end{equation}
+        对于 BC 杆，AB 杆对 BC 杆的作用力沿 x 、 y 轴的分量分别为 $-F_{x}$ 、 $-F_{y}$ ，设 BC 杆质心的加速度沿 x 、 y 轴的分量分别为 $a_{x}$ 、 $a_{y}$ ，由刚体质心运动定理得
+        \begin{equation}
+            m a _ {x} = - F _ {x}
+            \label{eq:12.s62}
+        \end{equation}
+        \begin{equation}
+            m a _ {y} = m g - F _ {y}
+            \label{eq:13.s62}
+        \end{equation}
+        BC 杆同时还绕其质心转动，由刚体转动定理得
+        \begin{equation}
+            \left(\frac {1}{12} m l^{2}\right) \alpha_{2} = \frac {1}{4} F _ {y} l + \frac {\sqrt {3}}{4} F _ {x} l
+            \label{eq:14.s62}
+        \end{equation}
+        两杆连接点 B 的加速度沿 x 、 y 轴的分量 $a_{Bx}$ 、 $a_{By}$ 为
+        \begin{equation}
+            a _ {\mathrm{B} x} = - \frac {\sqrt {3}}{2} l \alpha_{1} = a _ {x} - \frac {\sqrt {3}}{4} l \alpha_{2}
+            \label{eq:15.s62}
+        \end{equation}
+        \begin{equation}
+            a _ {\mathrm{By}} = \frac {1}{2} l \alpha_{1} = a _ {y} - \frac {1}{4} l \alpha_{2}
+            \label{eq:16.s62}
+        \end{equation}
+        联立\eqref{eq:11.s62}\eqref{eq:12.s62}\eqref{eq:13.s62}\eqref{eq:14.s62}\eqref{eq:15.s62}\eqref{eq:16.s62}式得
+        \begin{equation}
+            \alpha_{1} = \frac {9 g}{11 l}, \quad \alpha_{2} = \frac {15 g}{11 l}
+            \label{eq:17.s62}
+        \end{equation}
+        \begin{equation}
+            F _ {x} = \frac {3 \sqrt {3}}{44} m g, F _ {y} = \frac {1}{4} m g
+            \label{eq:18.s62}
+        \end{equation}
+        两杆间相互作用力的大小为
+        \begin{equation}
+            F = \sqrt {F _ {x}^{2} + F _ {y}^{2}} = \frac {\sqrt {37}}{22} m g \approx 0.276 m g
+            \label{eq:19.s62}
+        \end{equation}
+        设 BC 杆对 AB 杆的作用力与竖直方向夹角为 $\phi$ ，则
+        \begin{equation}
+            \tan \phi = \frac {F _ {x}}{F _ {y}} = \frac {3 \sqrt {3}}{11} \approx 0.472
+            \label{eq:20.s62}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

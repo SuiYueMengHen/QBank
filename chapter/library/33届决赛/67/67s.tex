@@ -1,0 +1,122 @@
+\begin{solution}{67}
+    \begin{subsolution}
+        该束激光的频率
+        \begin{equation}
+            \nu = \frac{c}{\lambda} = 3.61 \times 10^{14}\,\mathrm{Hz} \label{eq:1.p67}
+        \end{equation}
+        入射激光的强度
+        \begin{equation}
+            I = \frac{P}{\pi (d/2)^{2}} = 1.77 \times 10^{10}\,\mathrm{W/m^{2}} \label{eq:2.p67}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        金纳米球颗粒的质量
+        \begin{equation}
+            m = \frac{4}{3}\pi R^{3}\rho = 8.09 \times 10^{-17}\,\mathrm{kg} \label{eq:3.p67}
+        \end{equation}
+        该颗粒绕其过球心的转轴的转动惯量
+        \begin{equation}
+            J = \frac{2mR^{2}}{5} = 3.24 \times 10^{-31}\,\mathrm{kg\cdot m^{2}} \label{eq:4.p67}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        金纳米球颗粒在 $\mathrm{d}t$ 时间内吸收的光的能量
+        \begin{equation}
+            \mathrm{d}E_{\mathrm{abs}} = I \sigma_{\mathrm{abs}} \mathrm{d}t \label{eq:5.p67}
+        \end{equation}
+        一个光子的能量为 $h\nu$ ，因此金颗粒在 $\mathrm{d}t$ 时间内吸收的光子数
+        \begin{equation}
+            \mathrm{d}N = \frac{\mathrm{d}E_{\mathrm{abs}}}{h\nu} = \frac{I\sigma_{\mathrm{abs}}\mathrm{d}t}{h\nu} \label{eq:6.p67}
+        \end{equation}
+        根据角动量守恒定律，一个光子被颗粒吸收后，将角动量 $\hbar$ 转移到颗粒上。在 $\mathrm{d}t$ 时间内，金颗粒总角动量的改变量
+        \begin{equation}
+            \mathrm{d}L = \hbar \mathrm{d}N = \frac{I\sigma_{\mathrm{abs}}\mathrm{d}t}{2\pi\nu} \label{eq:7.p67}
+        \end{equation}
+        根据角动量定理，由光产生的扭转力矩大小为
+        \begin{equation}
+            M = \frac{\mathrm{d}L}{\mathrm{d}t} = \frac{I\sigma_{\mathrm{abs}}}{2\pi\nu} = 3.02 \times 10^{-20}\,\mathrm{N\cdot m} \label{eq:8.p67}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        金纳米球颗粒的旋转达到稳定状态的条件是：作用在金纳米球颗粒上的合力矩为零，即光施加在颗粒上的力矩大小 $M$ 与水施加在颗粒上的粘滞摩擦力矩大小 $M_{f}$ 相等
+        \begin{equation}
+            M - M_{f} = 0 \label{eq:9.p67}
+        \end{equation}
+        由已知的摩擦力矩表达式与 \eqref{eq:8.p67}、\eqref{eq:9.p67} 式得金纳米球颗粒达到稳定旋转时的转速
+        \begin{equation}
+            f = \frac{\omega}{2\pi} = \frac{I\sigma_{\mathrm{abs}}}{32\pi^{3}\eta R^{3}\nu} = 2.39 \times 10^{2}\,\mathrm{s^{-1}} \label{eq:10.p67}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        根据刚体的定轴转动定理有
+        \begin{equation}
+            J \frac{\mathrm{d}\omega}{\mathrm{d}t} = M - M_{f} \label{eq:11.p67}
+        \end{equation}
+        由 \eqref{eq:8.p67} 式得
+        \begin{equation}
+            J \frac{\mathrm{d}\omega}{\mathrm{d}t} = \frac{I\sigma_{\mathrm{abs}}}{2\pi\nu} - 8\pi\eta R^{3}\omega \label{eq:12.p67}
+        \end{equation}
+        将 \eqref{eq:4.p67} 式代入 \eqref{eq:12.p67} 式，可得当金颗粒的旋转速率为 $\omega$ 时，其转动角速度的变化率满足
+        \begin{equation}
+            \frac{\mathrm{d}\omega}{\mathrm{d}t} = A\omega + B \label{eq:13.p67}
+        \end{equation}
+        其中
+        \begin{equation*}
+            A = -\frac{20\pi\eta R}{m},\quad B = \frac{5\sigma_{\mathrm{abs}}}{4\pi m R^{2}\nu}I
+        \end{equation*}
+        \eqref{eq:13.p67} 式可写为
+        \begin{equation*}
+            \frac{\mathrm{d}\omega}{A\omega + B} = \mathrm{d}t
+        \end{equation*}
+        将上式两边从 $t=0$ 到 $t$ 积分得
+        \begin{equation}
+            \int_{t=0}^{t} \frac{\mathrm{d}\omega}{A\omega + B} = \int_{0}^{t} \mathrm{d}t' \label{eq:14.p67}
+        \end{equation}
+        此即
+        \begin{equation*}
+            \ln\frac{A\omega + B}{B} = At
+        \end{equation*}
+        这里已经利用到初始条件 $t=0$ 时 $\omega=0$ 。上式可写为
+        \begin{equation*}
+            \omega = \frac{B}{A}e^{At} - \frac{B}{A}
+        \end{equation*}
+        此即
+        \begin{equation}
+            f(t) = \frac{\omega}{2\pi} = \frac{I\sigma_{\mathrm{abs}}}{32\pi^{3}\eta R^{3}\nu} \left(1 - e^{-\frac{20\pi\eta R}{m}t}\right) \label{eq:15.p67}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        对 \eqref{eq:13.p67} 式两边从 $t_{1}$ 到 $t_{2}$ 积分得
+        \begin{equation*}
+            \int_{t_{1}}^{t_{2}} \frac{\mathrm{d}\omega}{A\omega + B} = \int_{t_{1}}^{t_{2}} \mathrm{d}t'
+        \end{equation*}
+        解为
+        \begin{equation*}
+            \omega(t_{2}) = \omega(t_{1}) e^{A(t_{2}-t_{1})} - \frac{B}{A} \left[1 - e^{A(t_{2}-t_{1})}\right]
+        \end{equation*}
+        式中，$A$ 是常量，$B$ 与 $I$ 成正比。由此得
+        \begin{align}
+            \omega(nT + T_{1}) &= \omega(nT) e^{A T_{1}} - \frac{B}{A}(1 - e^{A T_{1}}) \label{eq:16.p67} \\
+            \omega[(n+1)T] &= \omega(nT + T_{1}) e^{A T_{2}} \label{eq:17.p67}
+        \end{align}
+        式中 $T = T_{1} + T_{2}$ 。在方波脉冲激光照射下，颗粒在一个脉冲周期 $T$ 中先做 $T_{1}$ 时间的加速转动，在接下来 $T_{2}$ 时间内做减速转动。于是
+        \begin{equation}
+            \omega[(n+1)T] = \omega(nT) e^{A T} - \frac{B}{A} e^{A T_{2}}(1 - e^{A T_{1}}) \label{eq:18.p67}
+        \end{equation}
+        式中 $\omega_{n}\equiv\omega(nT)$ 。类似地有
+        \begin{align*}
+            \omega_{n} &= \omega_{n-1} e^{A(T_{1}+T_{2})} - \frac{B}{A} e^{A T_{2}}(1 - e^{A T_{1}}) \\
+            \omega_{n-1} e^{A(T_{1}+T_{2})} &= \omega_{n-2} e^{2A(T_{1}+T_{2})} - \frac{B}{A} e^{A T_{2}}(1 - e^{A T_{1}}) e^{A(T_{1}+T_{2})} \\
+            &\vdots \\
+            \omega_{1} e^{(n-1)A(T_{1}+T_{2})} &= \omega_{0} e^{nA(T_{1}+T_{2})} - \frac{B}{A} e^{A T_{2}}(1 - e^{A T_{1}}) e^{(n-1)A(T_{1}+T_{2})}
+        \end{align*}
+        其中 $\omega_{0}$ 表示第 1 个脉冲之前时刻颗粒的转速，即 $\omega_{0}=0$ 。将上列所有等式两边分别相加得
+        \begin{equation}
+            f_{n} = \frac{\omega_{n}}{2\pi} = -\frac{B}{2\pi A} \frac{1 - e^{A T_{1}}}{e^{-A T_{2}} - e^{A T_{1}}} \left(1 - e^{nA(T_{1}+T_{2})}\right) \label{eq:19.p67}
+        \end{equation}
+        当 $n\to\infty$ 时，$f_{n}$ 的极限为
+        \begin{equation}
+            f_{n\to\infty} = -\frac{B}{2\pi A} \frac{1 - e^{A T_{1}}}{e^{-A T_{2}} - e^{A T_{1}}} = \frac{I\sigma_{\mathrm{abs}}}{32\pi^{3}\eta R^{3}\nu} \frac{1 - e^{-\frac{20\pi\eta R}{m}T_{1}}}{e^{\frac{20\pi\eta R}{m}T_{2}} - e^{-\frac{20\pi\eta R}{m}T_{1}}} \label{eq:20.p67}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

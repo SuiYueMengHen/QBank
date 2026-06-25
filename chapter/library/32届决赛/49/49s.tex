@@ -1,0 +1,83 @@
+\begin{solution}{49}
+\begin{subsolution}
+轨道型电磁发射器的等效电路如图所示：
+
+以导轨所在直线为 x 轴，电枢运动方向为 x 轴正方向，导轨近电源端为坐标原点。设电路的总电感为 $L(x)$、总电阻为 $R(x)$，则：
+\begin{equation}
+\begin{array}{l}
+L(x) = L_{0} + L_{r}^{\prime}x + L_{s} \\
+R(x) = R_{0} + R_{r}^{\prime}x + R_{s}
+\end{array}
+\label{eq:1.s49}
+\end{equation}
+利用等效电路，回路方程（基尔霍夫定律）为：
+\begin{equation}
+u = \frac{d}{dt}[L(x)i] + R(x)i = L(x)\frac{di}{dt} + iL_{r}^{\prime}v_{s} + iR(x)
+\label{eq:2.s49}
+\end{equation}
+式中 u 为电源端电压，i 为回路电流，$v_{s}$ 为发射体运动速度。
+\end{subsolution}
+\begin{subsolution}
+电源输出功率为：
+\begin{equation}
+p = iu = L(x)i\frac{di}{dt} + i^{2}L_{r}^{\prime}v_{s} + i^{2}R(x)
+\label{eq:3.s49}
+\end{equation}
+设在 dt 时间内，输入给电磁发射系统的电能为 dE，由能量守恒有
+\begin{equation}
+\begin{array}{rl}
+dE &= dE_{m} + dE_{k} + dE_{R} \\
+&= d[\frac{1}{2}L(x)i^{2}] + d[\frac{1}{2}(m_{s}+m_{a})v_{s}^{2}] + i^{2}R(x)dt
+\end{array}
+\label{eq:4.s49}
+\end{equation}
+式中，$dE_{m}$ 和 $dE_{k}$ 分别是回路磁能、电枢和发射体的总动能的改变，$dE_{R}$ 是回路的热损耗。由\eqref{eq:4.s49}式得
+\begin{equation}
+\begin{array}{rl}
+\frac{dE}{dt} &= \frac{d[\frac{1}{2}L(x)i^{2}]}{dt} + \frac{d[\frac{1}{2}(m_{s}+m_{a})v_{s}^{2}]}{dt} + i^{2}R(x) \\
+&= L(x)i\frac{di}{dt} + \frac{1}{2}L_{r}^{\prime}i^{2}v_{s} + (m_{s}+m_{a})v_{s}\frac{dv_{s}}{dt} + i^{2}R(x)
+\end{array}
+\label{eq:5.s49}
+\end{equation}
+由
+\begin{equation}
+p = \frac{dE}{dt}
+\label{eq:6.s49}
+\end{equation}
+与\eqref{eq:3.s49}\eqref{eq:5.s49}式可得
+\begin{equation}
+\begin{array}{c}
+L(x)i\frac{di}{dt} + i^{2}L_{r}^{\prime}v_{s} + i^{2}R(x) \\
+= L(x)i\frac{di}{dt} + \frac{1}{2}L_{r}^{\prime}i^{2}v_{s} + (m_{s}+m_{a})v_{s}\frac{dv_{s}}{dt} + i^{2}R(x)
+\end{array}
+\label{eq:7.s49}
+\end{equation}
+由\eqref{eq:7.s49}式得发射体加速度大小与回路电流的关系为
+\begin{equation}
+a_{s} = \frac{dv_{s}}{dt} = \frac{1}{2(m_{s}+m_{a})}L_{r}^{\prime}i^{2}
+\label{eq:8.s49}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+若回路电流为恒流 I，则由\eqref{eq:8.s49}式可知，电枢和发射体在时刻 t 的加速度
+\begin{equation}
+a_{s} = \frac{dv_{s}}{dt} = \frac{1}{2(m_{a}+m_{s})}L_{r}^{\prime}I^{2}
+\label{eq:9.s49}
+\end{equation}
+可见，电枢和发射体在导轨中做初速为零的匀加速直线运动。要使发射体出口速度 $v_{sm}$ 达到 $3.0 \times 10^{3} \, m/s$，则题给数据得
+\begin{equation}
+a_{sm} = \frac{v_{sm}^{2}}{2x_{sm}} = \frac{9.0 \times 10^{9}}{2 \times 5.0} \mathrm{m}/\mathrm{s}^{2} = 9.0 \times 10^{8} \mathrm{m}/\mathrm{s}^{2}
+\label{eq:10.s49}
+\end{equation}
+由\eqref{eq:9.s49}\eqref{eq:10.s49}式得
+\begin{equation}
+I = \sqrt{\frac{2(m_{s}+m_{a})a_{sm}}{L_{r}^{\prime}}} = \sqrt{\frac{2 \times 0.50 \times 9.0 \times 10^{6}}{1.0 \times 10^{-6}}} \mathrm{A} = 3.0 \times 10^{6} \mathrm{A}
+\label{eq:11.s49}
+\end{equation}
+加速时间为
+\begin{equation}
+\tau = \frac{v_{sm}}{a_{sm}} = \frac{3.0 \times 10^{3}}{9.0 \times 10^{6}} \mathrm{s} = 3.3 \times 10^{-4} \mathrm{s}
+\label{eq:12.s49}
+\end{equation}
+\end{subsolution}
+\end{solution}

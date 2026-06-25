@@ -1,0 +1,55 @@
+\begin{solution}{64}
+    \begin{subsolution}
+        火车和煤从大同到秦皇岛（去程）总的重力势能的改变的一部分用于火车在去程中克服阻力所做的功，另一部分驱动火车发电机发电。因而火车发电机的输入能量是
+        \begin{equation}
+            E_{1} = (m_{c} + m_{t}) g (h_{c} - 0) - \mu (m_{c} + m_{t}) g l
+            \label{eq:1.p64}
+        \end{equation}
+        发电机发出的电能为
+        \begin{equation}
+            E_{2} = \eta_{1} E_{1}
+            \label{eq:2.p64}
+        \end{equation}
+        设空车返程后剩余电能为 $E$，按题意，返程中给火车电动机输入的能量为 $(E_{2} - E)$ ，电动机输出的能量为
+        \begin{equation}
+            E_{3} = \eta_{2} (E_{2} - E)
+            \label{eq:3.p64}
+        \end{equation}
+        $E_{3}$ 用于火车返程中克服阻力和重力所做的功，故
+        \begin{equation}
+            E_{3} = \mu m_{t} g l + m_{t} g (h_{c} - 0)
+            \label{eq:4.p64}
+        \end{equation}
+        联立 \eqref{eq:1.p64} - \eqref{eq:4.p64} 式得
+        \begin{align}
+            E &= \eta_{1} \left[ (m_{c} + m_{t}) g h_{c} - \mu (m_{c} + m_{t}) g l \right] - \frac{\mu m_{t} g l + m_{t} g h_{c}}{\eta_{2}} \nonumber \\
+              &= \eta_{1} (m_{c} + m_{t}) g (h_{c} - \mu l) - m_{t} g \frac{h_{c} + \mu l}{\eta_{2}}
+            \label{eq:5.p64}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        由 $E_{1} \geq 0$ 可知阻力系数 $\mu$ 应满足 $\mu < h_{c}/l$ 。据题意，如果火车能返回，则 $E \geq 0$ ，可得
+        \begin{equation}
+            m_{c} \geq m_{\text{cmin}} = \left( \frac{1}{\eta_{1} \eta_{2}} \frac{h_{c} + \mu l}{h_{c} - \mu l} - 1 \right) m_{t}
+            \label{eq:6.p64}
+        \end{equation}
+        \eqref{eq:6.p64} 式右边即为装煤的最小值 $m_{\text{cmin}}$。
+    \end{subsolution}
+    \begin{subsolution}
+        运行时间为
+        \begin{equation}
+            t = \frac{l}{v}
+            \label{eq:7.p64}
+        \end{equation}
+        利用 \eqref{eq:1.p64} 和 \eqref{eq:2.p64} 式，发电机输出平均功率 $P$ 为
+        \begin{equation}
+            P = \frac{E_{2}}{t} = \frac{\eta_{1} \left[ (m_{c} + m_{t}) g h_{c} - \mu (m_{c} + m_{t}) g l \right]}{t}
+            \label{eq:8.p64}
+        \end{equation}
+        由 \eqref{eq:7.p64} 和 \eqref{eq:8.p64} 式得
+        \begin{equation}
+            P = \eta_{1} (m_{c} + m_{t}) g v \left( \frac{h_{c}}{l} - \mu \right)
+            \label{eq:9.p64}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

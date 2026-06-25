@@ -1,0 +1,98 @@
+\begin{solution}{44}
+    在 de 边未出磁场的过程中，ab、cf 和 de 三边切割磁力线运动，每条边产生的感应电动势相等，但感应电流为零，故不需要外力做功
+    \begin{equation}
+        W_{1} = 0
+        \label{eq:1.s44}
+    \end{equation}
+
+    在 de 边出磁场但 cf 边未出磁场过程中，ab 和 cf 两条边做切割磁力线运动，导线框的等效电路如图 a 所示。等效电路中每个电阻的阻值 $R = 1.0\,\Omega$。按如图所示电流方向，根据基尔霍夫第一定律可得
+    \begin{equation}
+        \begin{cases}
+            I_{1} + I_{3} = I_{6}, \\
+            I_{2} + I_{5} = I_{1}, \\
+            I_{6} = I_{7} + I_{8}, \\
+            I_{4} + I_{7} = I_{3} + I_{5}.
+        \end{cases}
+        \label{eq:2.s44}
+    \end{equation}
+    由基尔霍夫第二定律，对 4 个回路可列出 4 个独立方程
+    \begin{equation}
+        \begin{cases}
+            U - 2I_{1}R + I_{3}R - U - I_{5}R = 0, \\
+            U - 2I_{2}R + I_{5}R - U + I_{4}R = 0, \\
+            U - I_{3}R - 2I_{6}R - I_{7}R = 0, \\
+            U - I_{4}R + I_{7}R - 2I_{8}R = 0.
+        \end{cases}
+        \label{eq:3.s44}
+    \end{equation}
+    式中，感应电动势 $U$ 为
+    \begin{equation}
+        U = B l v = 0.20\,\mathrm{V}
+        \label{eq:4.s44}
+    \end{equation}
+    联立\eqref{eq:2.s44}\eqref{eq:3.s44}\eqref{eq:4.s44}式得：
+    \begin{equation}
+        I_{1} = I_{2} = 0.025\,\mathrm{A}
+        \label{eq:5.s44}
+    \end{equation}
+    \begin{equation}
+        I_{3} = I_{4} = 0.050\,\mathrm{A}
+        \label{eq:6.s44}
+    \end{equation}
+    此时，ab 边和 cf 边所受的安培力大小分别为
+    \begin{equation}
+        F_{\mathrm{ab}} = B I_{1} l_{\mathrm{ab}} = 0.0050\,\mathrm{N}
+        \label{eq:7.s44}
+    \end{equation}
+    \begin{equation}
+        F_{\mathrm{cf}} = B I_{3} l_{\mathrm{cf}} = 0.010\,\mathrm{N}
+        \label{eq:8.s44}
+    \end{equation}
+    式中 $l_{\mathrm{ab}}$ 和 $l_{\mathrm{cf}}$ 分别为 ab 边和 cf 边的长度。外力所做的功为
+    \begin{equation}
+        W_{2} = F_{\mathrm{ab}} l_{\mathrm{ef}} + F_{\mathrm{cf}} l_{\mathrm{ef}} = 0.0015\,\mathrm{J}
+        \label{eq:9.s44}
+    \end{equation}
+    式中 $l_{\mathrm{ef}}$ 表示 ef 边的长度。
+
+    在 cf 边移出磁场后，只有边 ab 切割磁力线运动产生感应电动势。此时，等效电路如图 b 所示，电路中电动势的大小和电阻阻值不变。根据基尔霍夫定律可得
+    \begin{equation}
+        \begin{cases}
+            I_{1} + I_{3} = I_{6}, \\
+            I_{2} + I_{5} = I_{1}, \\
+            I_{6} = I_{7} + I_{8}, \\
+            I_{4} + I_{7} = I_{3} + I_{5}.
+        \end{cases}
+        \label{eq:10.s44}
+    \end{equation}
+    和
+    \begin{equation}
+        \begin{cases}
+            U - 2I_{1}R + I_{3}R - I_{5}R = 0, \\
+            U - 2I_{2}R + I_{5}R + I_{4}R = 0, \\
+            -I_{3}R - 2I_{6}R - I_{7}R = 0, \\
+            -I_{4}R + I_{7}R - 2I_{8}R = 0.
+        \end{cases}
+        \label{eq:11.s44}
+    \end{equation}
+    联立\eqref{eq:10.s44}\eqref{eq:11.s44}式得
+    \begin{equation}
+        I_{1} = I_{2} = 0.075\,\mathrm{A}
+        \label{eq:12.s44}
+    \end{equation}
+    此时，ab 边受到的安培力为
+    \begin{equation}
+        F_{\mathrm{ab}} = B I_{1} l_{\mathrm{ab}} = 0.015\,\mathrm{N}
+        \label{eq:13.s44}
+    \end{equation}
+    外力所做的功为
+    \begin{equation}
+        W_{3} = F_{\mathrm{ab}} l_{\mathrm{af}} = 0.0015\,\mathrm{J}
+        \label{eq:14.s44}
+    \end{equation}
+    整个过程中外力做的功为
+    \begin{equation}
+        W = W_{1} + W_{2} + W_{3} = 0.0030\,\mathrm{J}
+        \label{eq:15.s44}
+    \end{equation}
+\end{solution}

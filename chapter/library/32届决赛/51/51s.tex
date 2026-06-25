@@ -1,0 +1,83 @@
+\begin{solution}{51}
+\begin{subsolution}
+\begin{subsubsolution}
+先计算每个光子对于物体的作用。假定光的频率为 $\nu$，每个光子的能量和动量大小分别为
+\begin{equation}
+E_{0} = h\nu
+\label{eq:1.s51}
+\end{equation}
+\begin{equation}
+p_{0} = \frac{E_{0}}{c} = \frac{h\nu}{c}
+\label{eq:2.s51}
+\end{equation}
+式中，h 为普朗克常量。
+
+现分析光子反射后（相对于反射前）动量的变化。如 yz 剖面图所示，光子沿 z 轴负向入射到物体的 B 面，入射角和反射角都等于等腰三角形的底角 $\theta$，光子出射方向与 z 轴成 $2\theta$ 角；由题设，光子动量的大小在反射前后基本不变。光子在反射时给物体的冲量的 x-分量为零，z-分量与 xy 平面支持力的冲量相互抵消，只有 y-分量不为零；且 xy 平面光滑，所以物体只会沿水平 y 轴运动。可用等腰三角形顶点在 y 轴上垂足 $Q(0,y,0)$ 的 y-坐标随时间的变化来表征整个物体的运动。单个光子在 B 面反射给物体的冲量 y-分量的大小为
+\begin{equation}
+|I_{0y}| = \frac{h\nu}{c}\sin 2\theta
+\label{eq:3.s51}
+\end{equation}
+方向指向坐标原点O。
+
+再计算当 $Q(0,y,0)$ 点处在y轴的正半轴上不同位置即 $y\geq0$ 时，单位时间内入射到斜面B上的光子数。这时，激光束入射到物体的B面，其横截面积为
+\begin{equation}
+s = yd
+\label{eq:4.s51}
+\end{equation}
+式中，d 为该三棱柱形小物体的棱长。此时物体接受到的激光的入射功率为
+\begin{equation}
+w = Is = Iyd
+\label{eq:5.s51}
+\end{equation}
+每单位时间内入射物体 B 面的光子数为
+\begin{equation}
+n = \frac{w}{E_{0}} = \frac{Iyd}{h\nu}
+\label{eq:6.s51}
+\end{equation}
+同理，当 $Q(0,y,0)$ 点处在y轴的负半轴上即 $y\leq0$ 时，每单位时间内入射到物体的A面的光子数为
+\begin{equation}
+n = \frac{w}{E_{0}} = -\frac{Iyd}{h\nu}
+\label{eq:7.s51}
+\end{equation}
+光束在反射时给物体施加的作用力的 z-分量以及物体本身的重力始终与 xy 平面的支持力抵消。由\eqref{eq:3.s51}式结果，并考虑到单个光子反射给物体的冲量的 y-分量的方向总是指向坐标原点，可知物体受到的合外力 F 与物体上 $Q(0,y,0)$ 点的 y-坐标的关系为
+\begin{equation}
+F = nI_{0y} = -\frac{Id\sin 2\theta}{c} y = -ky
+\label{eq:8.s51}
+\end{equation}
+式中 $k = \frac{Id\sin 2\theta}{c}$。这是一个线性回复力。
+
+由\eqref{eq:8.s51}式可知，物体从初始位置开始、在受到激光场照射后，以坐标原点为中心沿着 y 轴做简谐运动，对应的振动角频率为
+\begin{equation}
+\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{Id\sin 2\theta / c}{\rho L^{2}d\tan \theta}} = \sqrt{\frac{2I\cos^{2}\theta}{c\rho L^{2}}}
+\label{eq:9.s51}
+\end{equation}
+式中 $m = \rho L^{2}d\tan \theta$。物体上 $Q(0,y,0)$ 点只有 $y$-坐标随时间 $t$ 而变化，其动力学方程为
+\begin{equation}
+\ddot{y}(t) + \frac{2I\cos^{2}\theta}{c\rho L^{2}} y(t) = 0
+\label{eq:10.s51}
+\end{equation}
+\end{subsubsolution}
+\begin{subsubsolution}
+考虑到 $Q(0,y,0)$ 点的初始位置为 $(0,L,0)$，简谐运动方程\eqref{eq:10.s51}的解 $y(t)$ 为
+\begin{equation}
+y(t) = L\cos\left(t\sqrt{\frac{2I\cos^{2}\theta}{c\rho L^{2}}}\right)
+\label{eq:11.s51}
+\end{equation}
+小物体从初始位置向 y 轴负方向移动 3L/2 的距离的时候 $y = -\frac{1}{2}L$，由\eqref{eq:10.s51}式得
+\begin{equation}
+-\frac{1}{2}L = L\cos\left(t_{1}\sqrt{\frac{2I\cos^{2}\theta}{c\rho L^{2}}}\right)
+\label{eq:12.s51}
+\end{equation}
+式中，$t_{1}$ 是小物体从初始位置向 y 轴负方向移动 3L/2 的距离的时间。由上式得
+\begin{equation}
+t_{1} = \frac{2\pi L}{3\cos\theta}\sqrt{\frac{c\rho}{2I}}
+\label{eq:13.s51}
+\end{equation}
+\end{subsubsolution}
+\end{subsolution}
+\begin{subsolution}
+当小物体从题图的初始位置开始向 y 轴负方向移动到距离为 L 的过程中，由于反射光子速度的 y-分量与小物体的运动方向相反，根据多普勒效应，反射光子的频率比入射光子的频率小；随着时间的增加，反射光子的频率会越来越小（即与入射光子的频率的差距越来越大）。
+
+当小物体继续向 y 轴负方向移动到离初始位置的距离为 3L/2 的过程中，由于反射光子速度的 y-分量与小物体运动方向相同，根据多普勒效应，反射光子的频率比入射光子的频率大；随着时间的增加，反射光子的频率会越来越小（即与入射光子频率差距越来越小）。
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,42 @@
+\begin{problem}[33届物理竞赛决赛]{70}
+    七、爱因斯坦引力理论预言物质分布的变化会导致时空几何结构的波动——引力波。为简明起见，考虑沿 $z$ 轴传播的平面引力波。对于任意给定的 $z$，在 $x-y$ 二维空间中两个无限邻近点 $(x,y)$ 和 $(x+\mathrm{d}x,y+\mathrm{d}y)$ 之间距离 $\mathrm{d}r$ 的表达式为
+    \begin{equation*}
+        \mathrm{d}r = \sqrt{(1+f_{1})(\mathrm{d}x)^{2} + f_{2}(\mathrm{d}x\mathrm{d}y + \mathrm{d}y\mathrm{d}x) + (1-f_{1})(\mathrm{d}y)^{2}}
+    \end{equation*}
+    引力波体现为 $f_{1}$ 和 $f_{2}$ 的变化（波动）。
+    \begin{subproblem}
+        假设一列平面引力波传来时，$f_{1}$ 和 $f_{2}$ 可表示为
+        \begin{equation*}
+            f_{1} = A\sin[\omega(t - \frac{z}{c})],\quad f_{2} = 0;\quad 0 < A << 1
+        \end{equation*}
+        式中，$A$ 和 $\omega$ 分别是波的振幅和角频率，$c$ 是引力波的传播速度（其值等于光速）。
+        \begin{subsubproblem}
+            无引力波穿过时，在 $x-y$ 平面上，在原点 $O$ 处和与 $O$ 点距离为 $R$ 、与 $x$ 轴夹角为 $\theta$ 处各放置一个微探测器。求当所考虑的引力波穿过时，两个探测器之间的距离相对于 $R$ 的偏离的近似表达式。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            设无引力波穿过时，在 $x-y$ 平面上，在以 $R$ 为半径、原点 $O$ 为圆心的圆周上放置了一个微探测器阵列。当前述引力波存在时，可将空间坐标重新定义为 $(X,Y)$ ，使得 $X-Y$ 二维空间中邻近两点 $(X,Y)$ 和 $(X+\mathrm{d}X,Y+\mathrm{d}Y)$ 距离为 $\sqrt{(\mathrm{d}X)^{2}+(\mathrm{d}Y)^{2}}$ 。求对于给定的时刻 $t$ ，微探测器阵列在新定义的坐标系中的分布形状。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            若一列平面引力波
+            \begin{equation*}
+                f_{1} = A\sin[\omega(t - \frac{z}{c})],\quad f_{2} = 0
+            \end{equation*}
+            和另一列平面引力波
+            \begin{equation*}
+                f_{1} = A\sin[\omega(t - \frac{z}{c}) + \phi],\quad f_{2} = 0,\quad \phi\ (0 \leq \phi < 2\pi) \text{ 是常数}
+            \end{equation*}
+            同时沿 $z$ 轴正向传播，问 $\phi$ 、$\theta$ 满足什么条件，可使引力波对原点 $O$ 处和 $x-y$ 二维空间中坐标为 $(R\cos\theta, R\sin\theta)$ 的点处的两个微探测器之间距离的扰动的振幅达到最大或者最小？
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        假定引力波的波源为双星系统。设该双星系统两星体质量均为 $M$ 。取双星系统的质心为坐标原点 $O'$ ，双星系统在 $x'-y'$ 二维空间中旋转。已知在特定条件下，$f_{1}$ 和 $f_{2}$ 可近似表示为
+        \begin{equation*}
+            f_{1} = \frac{8\pi G}{c^{4}} \frac{2}{l} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \left[ I_{1}(t - \frac{l}{c}) \right],\quad f_{2} = \frac{8\pi G}{c^{4}} \frac{2}{l} \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} \left[ I_{2}(t - \frac{l}{c}) \right]
+        \end{equation*}
+        式中 $G$ 为引力常量，$l$ 为在 $z'$ 轴上引力波探测点到 $O'$ 点的距离（远大于双星系统中两星体之间的距离），而
+        \begin{equation*}
+            I_{1}(t) = [x_{1}^{\prime 2}(t) + x_{2}^{\prime 2}(t)] M,\quad I_{2}(t) = x_{1}'(t) y_{2}'(t) M
+        \end{equation*}
+        $(x_{1}'(t), y_{1}'(t))$ 、$(x_{2}'(t), y_{2}'(t))$ 为两星体在其质心系中的坐标（注：在这样的定义下，$\mathrm{d}r$ 表达中的系数应替换为 $f_{1} \to f_{1}$ ，$f_{2} \to 2f_{2}$ ）。已知该引力波的频率为 $\omega$ ，假设引力波辐射对双星系统轨道运动的影响可忽略，求 $f_{1}$ 和 $f_{2}$ 在探测点处的振幅。
+    \end{subproblem}
+\end{problem}

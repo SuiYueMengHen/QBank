@@ -1,0 +1,121 @@
+\begin{solution}{50}
+\begin{subsolution}
+用牛顿力学求火箭获得的速度与质量比之间的关系。
+
+根据动量守恒定律，火箭动量的变化等于排出质量为 dm 的气体引起的动量的变化
+\begin{equation}
+d(MV_{1}) = V_{2}dm
+\label{eq:1.s50}
+\end{equation}
+由质量守恒定律得
+\begin{equation}
+dM + dm = 0
+\label{eq:2.s50}
+\end{equation}
+由速度叠加原理有
+\begin{equation}
+V_{2} = V_{e} - V_{1}
+\label{eq:3.s50}
+\end{equation}
+将\eqref{eq:3.s50}式代入\eqref{eq:1.s50}式得
+\begin{equation}
+d(MV_{1}) = (V_{e} - V_{1})dm
+\label{eq:4.s50}
+\end{equation}
+将\eqref{eq:2.s50}式代入\eqref{eq:4.s50}式得
+\begin{equation}
+\frac{dM}{M} = -\frac{dV_{1}}{V_{e}}
+\label{eq:5.s50}
+\end{equation}
+两边积分得
+\begin{equation}
+\int_{M_{i}}^{M} \frac{dM}{M} = -\frac{1}{V_{e}} \int_{0}^{V_{1}} dV_{1}
+\label{eq:6.s50}
+\end{equation}
+利用题给积分公式完成积分，并考虑初始条件，得
+\begin{equation}
+\ln \frac{M}{M_{i}} = -\frac{V_{1}}{V_{e}}
+\label{eq:7.s50}
+\end{equation}
+或
+\begin{equation}
+V_{1} = -V_{e} \ln \frac{M}{M_{i}}
+\label{eq:8.s50}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+用狭义相对论求火箭获得的速度与质量比之间的关系。
+
+根据相对论动量守恒定律，火箭动量的变化等于排出质量为 dm 的气体引起的动量变化
+\begin{equation}
+d\left(\frac{MV_{1}}{\sqrt{1 - V_{1}^{2}/c^{2}}}\right) = V_{2}\frac{dm}{\sqrt{1 - V_{2}^{2}/c^{2}}}
+\label{eq:9.s50}
+\end{equation}
+根据相对论能量守恒定律，火箭能量的减少等于排出质量 dm 的气体对应的能量
+\begin{equation}
+-d\left(\frac{Mc^{2}}{\sqrt{1 - V_{1}^{2}/c^{2}}}\right) = \frac{dmc^{2}}{\sqrt{1 - V_{2}^{2}/c^{2}}}
+\label{eq:10.s50}
+\end{equation}
+由相对论速度叠加原理有
+\begin{equation}
+V_{2} = \frac{V_{e} - V_{1}}{1 - V_{1}V_{e}/c^{2}}
+\label{eq:11.s50}
+\end{equation}
+将\eqref{eq:11.s50}式代入\eqref{eq:9.s50}式并利用\eqref{eq:10.s50}式得
+\begin{equation}
+d\left(\frac{MV_{1}}{\sqrt{1 - V_{1}^{2}/c^{2}}}\right) = \frac{V_{1} - V_{e}}{1 - V_{1}V_{e}/c^{2}} d\left(\frac{M}{\sqrt{1 - V_{1}^{2}/c^{2}}}\right)
+\label{eq:12.s50}
+\end{equation}
+此即
+\begin{equation}
+\frac{dM}{M} = -\frac{dV_{1}}{V_{e}(1 - V_{1}^{2}/c^{2})}.
+\label{eq:13.s50}
+\end{equation}
+对\eqref{eq:13.s50}式两边积分，并利用恒等式
+\begin{equation}
+\frac{1}{1 - x^{2}} = \frac{1}{2}\left(\frac{1}{1 - x} + \frac{1}{1 + x}\right)
+\label{eq:14.s50}
+\end{equation}
+得
+\begin{equation}
+\int_{M_{i}}^{M} \frac{dM}{M} = -\frac{1}{2V_{e}}\left(\int_{0}^{V_{1}} \frac{dV_{1}}{1 - V_{1}/c} + \int_{0}^{V_{1}} \frac{dV_{1}}{1 + V_{1}/c}\right)
+\label{eq:15.s50}
+\end{equation}
+利用题给积分公式完成积分，并考虑初始条件，得
+\begin{equation}
+\ln \frac{M}{M_{i}} = -\frac{c}{2V_{e}} \ln \left(\frac{1 + V_{1}/c}{1 - V_{1}/c}\right),
+\label{eq:16.s50}
+\end{equation}
+或
+\begin{equation}
+\frac{M}{M_{i}} = \left(\frac{1 - V_{1}/c}{1 + V_{1}/c}\right)^{\frac{c}{2V_{e}}},
+\label{eq:17.s50}
+\end{equation}
+或
+\begin{equation}
+V_{1} = \frac{1 - (M/M_{i})^{\frac{2V_{e}}{c}}}{1 + (M/M_{i})^{\frac{2V_{e}}{c}}}c.
+\label{eq:18.s50}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+当火箭速度 $V_{1}$ 很小时，利用公式
+\begin{equation}
+\ln(1+x) \approx x - \frac{x^{2}}{2}, \quad \text{当} |x| \ll 1
+\label{eq:19.s50}
+\end{equation}
+得
+\begin{equation}
+\ln\left(1 + \frac{V_{1}}{c}\right) \approx \frac{V_{1}}{c} - \frac{1}{2}\left(\frac{V_{1}}{c}\right)^{2} \text{和} \ln\left(1 - \frac{V_{1}}{c}\right) \approx -\frac{V_{1}}{c} - \frac{1}{2}\left(\frac{V_{1}}{c}\right)^{2}
+\label{eq:20.s50}
+\end{equation}
+将\eqref{eq:20.s50}式代入用相对论力学求得的结果\eqref{eq:16.s50}式，并利用\eqref{eq:8.s50}式，得
+\begin{equation}
+\begin{array}{rl}
+&\left(\ln \frac{M}{M_{i}}\right)_{\text{相对论}}(V_{1}) - \left(\ln \frac{M}{M_{i}}\right)_{\text{牛顿力学}}(V_{1}) \\
+&= -\frac{c}{2V_{e}} \ln \left(\frac{1 + V_{1}/c}{1 - V_{1}/c}\right) - \left(-\frac{V_{1}}{V_{e}}\right) = O\left(\left(\frac{V_{1}}{c}\right)^{3}\right)
+\end{array}
+\label{eq:21.s50}
+\end{equation}
+可见，在火箭速度 $V_{1}$ 很小的情况下，相对论力学的结果与牛顿力学的结果之差直至 $\left(\frac{V_{1}}{c}\right)^{2}$ 量级为零，实际上为 $\left(\frac{V_{1}}{c}\right)^{3}$ 的量级。
+\end{subsolution}
+\end{solution}

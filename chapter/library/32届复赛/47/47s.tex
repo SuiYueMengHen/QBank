@@ -1,0 +1,104 @@
+\begin{solution}{47}
+    \begin{subsolution}
+        对于光线在波导层和衬底层的折射情况，根据折射定律有
+        \begin{equation}
+            n_{1}\sin\theta_{\mathrm{i}1} = n_{0}\sin\theta_{\mathrm{t}0}
+            \label{eq:1.s47}
+        \end{equation}
+        若要求光线不会折射到衬底中，即发生全反射，应有
+        \begin{equation}
+            \theta_{\mathrm{i}1} \geq \theta_{10\mathrm{C}}
+            \label{eq:2.s47}
+        \end{equation}
+        式中，$\theta_{10\mathrm{C}}$ 为光线在波导层和衬底层的交界面上发生全反射的临界角
+        \begin{equation}
+            \theta_{10\mathrm{C}} = \arcsin\left(\frac{n_{0}}{n_{1}}\right)
+            \label{eq:3.s47}
+        \end{equation}
+        同理应有
+        \begin{equation}
+            \theta_{\mathrm{i}2} \geq \theta_{12\mathrm{C}}
+            \label{eq:4.s47}
+        \end{equation}
+        式中，$\theta_{12\mathrm{C}}$ 为光线在波导层和覆盖层的交界面上发生全反射的临界角
+        \begin{equation}
+            \theta_{12\mathrm{C}} = \arcsin\left(\frac{n_{2}}{n_{1}}\right)
+            \label{eq:5.s47}
+        \end{equation}
+        由题设 $n_{1} > n_{0} \geq n_{2}$，可知
+        \begin{equation}
+            \theta_{10\mathrm{C}} \geq \theta_{12\mathrm{C}}
+            \label{eq:6.s47}
+        \end{equation}
+        所以，当入射角 $\theta_{\mathrm{i}1} \geq \arcsin\left(\frac{n_{0}}{n_{1}}\right)$ 时，光被完全限制在波导薄膜里。
+    \end{subsolution}
+    \begin{subsolution}
+        考虑光波在波导薄膜中传播时处于临界的全反射状态。此时光波的波长可由光的入射角
+        \begin{equation*}
+            \theta_{\mathrm{i}1} = \arcsin\left(\frac{n_{0}}{n_{1}}\right)
+        \end{equation*}
+        决定。此时光在介质 $n_{1}$ 与 $n_{0}$ 交界面的反射处于全反射的临界状态，光在介质 $n_{1}$ 与 $n_{2}$ 交界面的反射也为全反射。如图所示，$\varphi_{10}$ 和 $\varphi_{12}$ 分别为 1 和 0 界面以及 1 和 2 界面上的反射引入的相位（$r_{10} = e^{-i\varphi_{10}}$ 和 $r_{12} = e^{-i\varphi_{12}}$）。
+
+        过 1 和 2 界面上的反射点做直线（虚线）垂直于光线 A，设光线 A 到虚线之前的路程长为 $l$。此后，光线 A 与再经过两次反射的光线 B 之间的相位差应该为 $2\pi$ 的整数倍，以致光可在波导薄膜中传输。故
+        \begin{equation}
+            \begin{aligned}
+                2m\pi &= \frac{2d\sec\theta_{\mathrm{i}1} - l}{\lambda}2\pi - \varphi_{10} - \varphi_{12} \\
+                &= \frac{2d\sec\theta_{\mathrm{i}1} - 2d\tan\theta_{\mathrm{i}1}\sin\theta_{\mathrm{i}1}}{\lambda}2\pi - \varphi_{10} - \varphi_{12} \\
+                &= \frac{4d\pi\cos\theta_{\mathrm{i}1}}{\lambda} - \varphi_{10} - \varphi_{12} \\
+                &= \frac{4d\pi}{\lambda}\sqrt{1 - \frac{n_{0}^{2}}{n_{1}^{2}}} - \varphi_{10} - \varphi_{12}
+            \end{aligned}
+            \label{eq:7.s47}
+        \end{equation}
+        式中，$m = 0, 1, 2, 3, \cdots$，$\lambda$ 为所传输光波在波导薄膜介质中的波长。
+
+        考虑介质 $n_{1}$ 与 $n_{0}$ 交界面的反射，由\eqref{eq:1.s47}式得
+        \begin{equation}
+            \sin\theta_{\mathrm{t}0} = \frac{n_{1}\sin\theta_{\mathrm{i}1}}{n_{0}} = 1
+            \label{eq:8.s47}
+        \end{equation}
+        考虑到\eqref{eq:8.s47}式，在介质 $n_{1}$ 与 $n_{0}$ 交界面的反射系数为
+        \begin{equation}
+            r_{10} = \frac{n_{1}\cos\theta_{\mathrm{i}1} - n_{0}\cos\theta_{\mathrm{t}0}}{n_{1}\cos\theta_{\mathrm{i}1} + n_{0}\cos\theta_{\mathrm{t}0}} = \frac{n_{1}\cos\theta_{\mathrm{i}1}}{n_{1}\cos\theta_{\mathrm{i}1}} = 1
+            \label{eq:9.s47}
+        \end{equation}
+        由上式可以得到介质 $n_{1}$ 与 $n_{0}$ 交界面的反射相位
+        \begin{equation}
+            \varphi_{10} = 0
+            \label{eq:10.s47}
+        \end{equation}
+        再考虑介质 $n_{1}$ 与 $n_{2}$ 交界面的反射，由\eqref{eq:1.s47}式得
+        \begin{equation}
+            \sin\theta_{\mathrm{t}2} = \frac{n_{1}\sin\theta_{\mathrm{i}1}}{n_{2}} = \frac{n_{0}}{n_{2}}
+            \label{eq:11.s47}
+        \end{equation}
+        按照题给的推广的定义，上式右边大于或等于1也并不奇怪。当 $n_{0} > n_{2}$ 时，按照题给的推广的正弦和余弦的定义可知，$\cos\theta_{\mathrm{t}2}$ 是一个纯虚数，可以写为
+        \begin{equation}
+            \cos\theta_{\mathrm{t}2} = i\sqrt{\frac{n_{0}^{2}}{n_{2}^{2}} - 1}
+            \label{eq:12.s47}
+        \end{equation}
+        考虑到\eqref{eq:12.s47}式，则在介质 $n_{1}$ 与 $n_{2}$ 交界面的反射系数为
+        \begin{equation}
+            \begin{aligned}
+                r_{12} &= \frac{n_{1}\cos\theta_{\mathrm{i}1} - n_{2}\cos\theta_{\mathrm{t}2}}{n_{1}\cos\theta_{\mathrm{i}1} + n_{2}\cos\theta_{\mathrm{t}2}} \\
+                &= \frac{n_{1}\sqrt{1 - \frac{n_{0}^{2}}{n_{1}^{2}}} - n_{2}i\sqrt{\frac{n_{0}^{2}}{n_{2}^{2}} - 1}}{n_{1}\sqrt{1 - \frac{n_{0}^{2}}{n_{1}^{2}}} + n_{2}i\sqrt{\frac{n_{0}^{2}}{n_{2}^{2}} - 1}} \\
+                &= \exp\left(-2i\arctan\sqrt{\frac{n_{0}^{2} - n_{2}^{2}}{n_{1}^{2} - n_{0}^{2}}}\right)
+            \end{aligned}
+            \label{eq:13.s47}
+        \end{equation}
+        由上式可以得到介质 $n_{1}$ 与 $n_{2}$ 交界面的反射相位为
+        \begin{equation}
+            \varphi_{12} = 2\arctan\sqrt{\frac{n_{0}^{2} - n_{2}^{2}}{n_{1}^{2} - n_{0}^{2}}}
+            \label{eq:14.s47}
+        \end{equation}
+        将\eqref{eq:10.s47}和\eqref{eq:14.s47}式代入到\eqref{eq:7.s47}式中得，在给定 $m$ 的情况下能在薄膜波导中传输的光波在该介质中的最长波长（截止波长）为
+        \begin{equation}
+            \lambda = \frac{2\pi d\sqrt{1 - \frac{n_{0}^{2}}{n_{1}^{2}}}}{m\pi + \arctan\sqrt{\frac{n_{0}^{2} - n_{2}^{2}}{n_{1}^{2} - n_{0}^{2}}}}
+            \label{eq:15.s47}
+        \end{equation}
+        式中，$m = 0, 1, 2, 3, \cdots$。当 $m = 0$ 时可得，能在薄膜波导中传输的光波在该介质中的最长波长为
+        \begin{equation}
+            \lambda_{\max} = \frac{2\pi d\sqrt{1 - \frac{n_{0}^{2}}{n_{1}^{2}}}}{\arctan\sqrt{\frac{n_{0}^{2} - n_{2}^{2}}{n_{1}^{2} - n_{0}^{2}}}}
+            \label{eq:16.s47}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

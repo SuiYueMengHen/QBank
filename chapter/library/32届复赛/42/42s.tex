@@ -1,0 +1,100 @@
+\begin{solution}{42}
+    \begin{subsolution}
+        设圆环的质量为 $m$，它在碰撞过程中受到的地面对它的水平冲量为 $I_{t}$；碰撞后圆环质心的速度大小为 $v$，$v$ 与竖直向上方向的夹角（按如图所示的顺时针方向计算）为 $\beta$，圆环的角速度为 $\omega$。规定水平向右方向和顺时针方向分别为水平动量和角速度的正方向。在水平方向，由动量定理有
+        \begin{equation}
+            m v \sin\beta - m v_{0} \sin\theta = I_{t}
+            \label{eq:1.s42}
+        \end{equation}
+        由对质心的动量矩定理有
+        \begin{equation}
+            r m (r\omega) - r m (r\omega_{0}) = -r I_{t}
+            \label{eq:2.s42}
+        \end{equation}
+        按题意，圆环在弹起前刚好与地面无相对滑动，因而此时圆环上与地面的接触点的水平速度为零，即
+        \begin{equation}
+            v \sin\beta - r \omega = 0
+            \label{eq:3.s42}
+        \end{equation}
+        由题意知
+        \begin{equation}
+            \frac{0 - v \cos\beta}{v_{0} \cos\theta - 0} = k
+            \label{eq:4.s42}
+        \end{equation}
+        联立\eqref{eq:1.s42}\eqref{eq:2.s42}\eqref{eq:3.s42}\eqref{eq:4.s42}式得
+        \begin{equation}
+            v = \frac{1}{2} \sqrt{4k^{2} v_{0}^{2} \cos^{2}\theta + (r \omega_{0} + v_{0} \sin\theta)^{2}}
+            \label{eq:5.s42}
+        \end{equation}
+        \begin{equation}
+            \tan\beta = -\frac{1}{2k} \left(\tan\theta + \frac{r \omega_{0}}{v_{0} \cos\theta}\right)
+            \label{eq:6.s42}
+        \end{equation}
+        \begin{equation}
+            \omega = \frac{1}{2r} (r \omega_{0} + v_{0} \sin\theta)
+            \label{eq:7.s42}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        若圆环与地面碰后能竖直弹起，则其速度与竖直方向的夹角
+        \begin{equation}
+            \beta = 0
+            \label{eq:8.s42}
+        \end{equation}
+        将上式代入\eqref{eq:6.s42}式得，使圆环在与地面碰后能竖直弹起的条件为
+        \begin{equation}
+            \sin\theta = -\frac{r \omega_{0}}{v_{0}}
+            \label{eq:9.s42}
+        \end{equation}
+        在此条件下，在与地面刚刚碰后的瞬间有
+        \begin{equation}
+            \omega = 0,\quad v = -v_{0} k \cos\theta
+            \label{eq:10.s42}
+        \end{equation}
+        即圆环做竖直上抛运动。圆环上升的最大高度为
+        \begin{equation}
+            h = \frac{v^{2}}{2g} = \frac{v_{0}^{2} k^{2} \cos^{2}\theta}{2g} = \frac{k^{2}(v_{0}^{2} - r^{2} \omega_{0}^{2})}{2g}
+            \label{eq:11.s42}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由于忽略空气阻力，圆环再次弹起后，角速度保持为 $\omega$ 不变，质心做以初速度为 $v$ 的斜抛运动。圆环第二次落地点到首次落地点之间的水平距离 $s$ 随 $\theta$ 变化的函数关系式为
+        \begin{equation}
+            s = \frac{v^{2} \sin 2\beta}{g} = -\frac{k v_{0} \cos\theta}{g}(v_{0} \sin\theta + r \omega_{0})
+            \label{eq:12.s42}
+        \end{equation}
+        $s$ 取最大值时，$\theta$ 的取值 $\bar{\theta}$ 满足
+        \begin{equation}
+            \left.\frac{ds}{d\theta}\right|_{\bar{\theta}} = -\frac{k v_{0}}{g}(v_{0} \cos 2\bar{\theta} - r \omega_{0} \sin\bar{\theta}) = 0
+            \label{eq:13.s42}
+        \end{equation}
+        由\eqref{eq:13.s42}式得
+        \begin{equation}
+            \sin\bar{\theta} = \frac{-r \omega_{0} \pm \sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}}}{4v_{0}}
+            \label{eq:14.s42}
+        \end{equation}
+        将\eqref{eq:14.s42}代入\eqref{eq:12.s42}式得
+        \begin{equation}
+            s_{1} = \frac{k\left(\sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}} + 3r \omega_{0}\right)\sqrt{8v_{0}^{2} - 2r \omega_{0}(r \omega_{0} - \sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}})}}{16g}
+            \label{eq:15.s42}
+        \end{equation}
+        \begin{equation}
+            s_{2} = -\frac{k\left(\sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}} - 3r \omega_{0}\right)\sqrt{8v_{0}^{2} - 2r \omega_{0}(r \omega_{0} + \sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}})}}{16g}
+            \label{eq:16.s42}
+        \end{equation}
+        式中 $s_{1}$ 和 $s_{2}$ 分别对应于\eqref{eq:14.s42}式右端根号前取正和负号的情形。由以上两式可知，$s$ 的最大值为
+        \begin{equation}
+            s_{\max} = \frac{k\left(\sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}} + 3r|\omega_{0}|\right)\sqrt{8v_{0}^{2} - 2r|\omega_{0}|(r|\omega_{0}| - \sqrt{r^{2} \omega_{0}^{2} + 8v_{0}^{2}})}}{16g}
+            \label{eq:17.s42}
+        \end{equation}
+        又因为
+        \begin{equation}
+            -1 < \sin\bar{\theta} < 1
+            \label{eq:18.s42}
+        \end{equation}
+        由上式得，当 $s$ 取最大值时，$r$、$v_{0}$ 和 $\omega_{0}$ 应满足
+        \begin{equation}
+            v_{0} > r|\omega_{0}|
+            \label{eq:19.s42}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

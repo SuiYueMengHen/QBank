@@ -1,0 +1,178 @@
+\begin{solution}{57}
+    \begin{subsolution}
+        清晨加完水封闭后，罐内空气的状态方程为
+        \begin{equation}
+            p _ {0} V _ {0} = n R T _ {0}
+            \label{eq:1.s57}
+        \end{equation}
+        式中 n 为罐内空气的摩尔数， $p_{0}$ 、 $V_{0}=\pi m^{3}$ 和 $T_{0}=277.15K$ 分别是此时罐内空气的压强、体积和温度。
+
+        至中午时，由于气温升高，罐内空气压强增大，设此时罐内空气的压强、体积和温度分别为 $p_{1}$ 、 $V_{1}$ 和 $T_{1}$ ，相应的状态方程为
+        \begin{equation}
+            p _ {1} V _ {1} = n R T _ {1}
+            \label{eq:2.s57}
+        \end{equation}
+        式中 $T_{1}=297.15K$ 。空气和水的体积都发生变化，使得观察柱中水位发生变化，此时观察柱内水位和罐内水位之差为，
+        \begin{equation}
+            \Delta h = \frac {V _ {1} - V _ {0}}{S _ {1}} + \frac {V _ {1} - V _ {0}}{S _ {2}} + \frac {\kappa (T _ {1} - T _ {0}) (S _ {1} + S _ {2}) l _ {0}}{S _ {2}}
+            \label{eq:3.s57}
+        \end{equation}
+        式中右端第三项是由原罐内和观察柱内水的膨胀引起的贡献， $l_{0}=1.00\ m$ 为早上加水后观测柱内水面的高度， $S_{1}=\pi\ m^{2}$ 、 $S_{2}=4\pi\times10^{-4}\ m^{2}$ 分别为罐、观察柱的横截面积。由力平衡条件有
+        \begin{equation}
+            p _ {1} = p _ {0} + \rho_{1} g \Delta h _ {1}
+            \label{eq:4.s57}
+        \end{equation}
+        式中
+        \begin{equation}
+            \rho_{1} = \frac {\rho_{0}}{1 + \kappa (T _ {1} - T _ {0})}
+            \label{eq:5.s57}
+        \end{equation}
+        是水在温度为 $T_{1}$ 时的密度。联立\eqref{eq:1.s57}\eqref{eq:2.s57}\eqref{eq:3.s57}\eqref{eq:4.s57}\eqref{eq:5.s57}式得关于 $\Delta h$ 的一元二次方程为
+        \begin{equation}
+            \rho_{1} g S^{\prime} (\Delta h)^{2} + \left(p _ {0} S _ {1} + \lambda \rho_{1} g V _ {0}\right) \Delta h - \left(\frac {T _ {1}}{T _ {0}} - \lambda\right) p _ {0} V _ {0} = 0
+            \label{eq:6.s57}
+        \end{equation}
+        式中
+        \begin{equation}
+            S^{\prime} = \frac {S _ {1} S _ {2}}{S _ {1} + S _ {2}}, \quad \lambda = 1 - \kappa (T _ {1} - T _ {0})
+            \label{eq:7.s57}
+        \end{equation}
+        解方程\eqref{eq:6.s57}得
+        \begin{equation}
+            \Delta h = \frac {- \left(p _ {0} S _ {1} + \lambda \rho_{1} g V _ {0}\right) + \sqrt {\left(p _ {0} S _ {1} + \lambda \rho_{1} g V _ {0}\right)^{2} + 4 \rho_{1} g S^{\prime} p _ {0} V _ {0} \left(\frac {T _ {1}}{T _ {0}} - \lambda\right)}}{2 \rho_{1} g S^{\prime}} = 0.812 \mathrm{m}
+            \label{eq:8.s57}
+        \end{equation}
+        另一解不合题意，舍去。由\eqref{eq:3.s57}\eqref{eq:5.s57}\eqref{eq:7.s57}\eqref{eq:8.s57}式和题给数据得
+        \begin{equation}
+            V _ {1} - V _ {0} = S^{\prime} \Delta h - \kappa (T _ {1} - T _ {0}) S _ {1} l _ {0} = - 0.0180 \mathrm{m}^{3}
+            \label{eq:9.s57}
+        \end{equation}
+        由上式和题给数据得，中午观察柱内水位为
+        \begin{equation}
+            l _ {1} = \Delta h - \frac {V _ {1} - V _ {0}}{S _ {1}} + l _ {0} = 1.82 \mathrm{m}
+            \label{eq:10.s57}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        先求罐内空气从清晨至中午对外所做的功。
+
+        （解法一）早上罐内空气压强 $p_{0}=1.01\times10^{5}$ Pa；中午观察柱内水位相对于此时罐内水位升高 $\Delta h$ ，罐内空气压强升高了
+        \begin{equation}
+            \Delta p = \rho_{1} g \Delta h = 7.913 \times 10^{3} \mathrm{Pa} = 7.91 \times 10^{3} \mathrm{Pa}
+            \label{eq:11.s57}
+        \end{equation}
+        由于 $\Delta p \ll p_{0}$ ，可认为在准静态升温过程中，罐内空气平均压强为
+        \begin{equation}
+            \overline{p} = p _ {0} + \frac {1}{2} \Delta p = 1.0495 \times 10^{5} \mathrm{Pa} = 1.05 \times 10^{5} \mathrm{Pa}
+            \label{eq:12.s57}
+        \end{equation}
+        罐内空气体积缩小了
+        \begin{equation}
+            \Delta V = 0.0180 \mathrm{m}^{3}
+            \label{eq:13.s57}
+        \end{equation}
+        可见 $\Delta V / V_{0} << 1$ ，这说明\eqref{eq:12.s57}式是合理的。罐内空气对外做功
+        \begin{equation}
+            W = \overline{p} (- \Delta V) = - 1.889 \times 10^{3} \mathrm{J} = - 1.9 \times 10^{3} \mathrm{J}
+            \label{eq:14.s57}
+        \end{equation}
+
+        （解法二）缓慢升温是一个准静态过程，在封闭水罐后至中午之间的任意时刻，设罐内空气都处于热平衡状态，设其体积、温度和压强分别为V、T和p。水温为T时水的密度为
+        \begin{equation}
+            \rho = \frac {\rho_{0}}{1 + \kappa (T - T _ {0})}
+            \label{eq:15.s57}
+        \end{equation}
+        将\eqref{eq:2.s57}\eqref{eq:3.s57}\eqref{eq:4.s57}式中的 $V_{1}$ 、 $T_{1}$ 和 $p_{1}$ 换为V、T和p，利用\eqref{eq:15.s57}式得，罐内空气在温度为T时的状态方程为
+        \begin{equation}
+            \begin{array}{r l}
+                p & = p _ {0} + \frac {\rho g}{S^{\prime}} \left[ V - V _ {0} + \kappa (T - T _ {0}) S _ {1} l _ {0} \right] \\
+                & = p _ {0} + \frac {\rho_{0} g S _ {1} l _ {0}}{S^{\prime}} \frac {(V - V _ {0}) / (S _ {1} l _ {0}) + \kappa (T - T _ {0})}{1 + \kappa (T - T _ {0})}
+            \end{array}
+            \label{eq:16.s57}
+        \end{equation}
+        由题设数据和前面计算结果可知
+        \begin{equation}
+            \begin{array}{l}
+                \kappa (T - T _ {0}) < \kappa (T _ {1} - T _ {0}) = 0.0060 \\
+                \left| \frac {V - V _ {0}}{S _ {1} l _ {0}} \right| < \left| \frac {V _ {1} - V _ {0}}{S _ {1} l _ {0}} \right| = 0.0057
+            \end{array}
+            \label{eq:17.s57}
+        \end{equation}
+        这说明\eqref{eq:16.s57}式右端分子中与 $T$ 有关的项不可略去，而右端分母中与 $T$ 有关的项可略去。于是\eqref{eq:16.s57}式可简化，并利用状态方程，上式可改写成
+        \begin{equation}
+            p = \frac {p _ {0} - \frac {\rho_{0} g}{S^{\prime}} \left(V _ {0} + \kappa T _ {0} S _ {1} l _ {0}\right) + \frac {n R}{\kappa S _ {1} l _ {0}}}{1 - \frac {\kappa \rho_{0} g l _ {0}}{n R} \frac {S _ {1}}{S^{\prime}} V} - \frac {n R}{\kappa S _ {1} l _ {0}}
+            \label{eq:18.s57}
+        \end{equation}
+        从封闭水罐后至中午，罐内空气对外界做的功为
+        \begin{equation}
+            \begin{array}{l}
+                W = \int_{V _ {0}}^{V _ {1}} p \mathrm{d} V = \int_{V _ {0}}^{V _ {1}} \left[ \frac {p _ {0} - \frac {\rho_{0} g}{S^{\prime}} (V _ {0} + \kappa T _ {0} S _ {1} l _ {0}) + \frac {n R}{\kappa S _ {1} l _ {0}}}{1 - \frac {\kappa \rho_{0} g l _ {0}}{n R} \frac {S _ {1}}{S^{\prime}} V} - \frac {n R}{\kappa S _ {1} l _ {0}} \right] \mathrm{d} V \\
+                = - \frac {n R}{\kappa S _ {1} l _ {0}} \left\{(V _ {1} - V _ {0}) - \frac {S^{\prime}}{\rho_{0} g} \left[ p _ {0} - \frac {\rho_{0} g}{S^{\prime}} (V _ {0} + \kappa T _ {0} S _ {1} l _ {0}) + \frac {n R}{\kappa S _ {1} l _ {0}} \right] \ln \frac {1 - \frac {\kappa \rho_{0} g l _ {0}}{n R} \frac {S _ {1}}{S^{\prime}} V _ {1}}{1 - \frac {\kappa \rho_{0} g l _ {0}}{n R} \frac {S _ {1}}{S^{\prime}} V _ {0}} \right\} \\
+                = - 1.890 \times 10^{3} \mathrm{J} = - 1.9 \times 10^{3} \mathrm{J}
+            \end{array}
+            \label{eq:19.s57}
+        \end{equation}
+
+        （解法三）缓慢升温是一个准静态过程，在封闭水罐后至中午的任意时刻，罐内空气都处于热平衡状态，设其体积、温度和压强分别为V、T和p。水在温度为T时的密度为
+        \begin{equation}
+            \rho = \frac {\rho_{0}}{1 + \kappa (T - T _ {0})}
+            \label{eq:20.s57}
+        \end{equation}
+        将\eqref{eq:2.s57}\eqref{eq:3.s57}\eqref{eq:4.s57}式中的 $V_{1}$ 、 $T_{1}$ 和 $p_{1}$ 换为V、T和p，利用\eqref{eq:20.s57}式得，罐内空气在温度为T时的状态方程为
+        \begin{equation}
+            \begin{array}{l}
+                p = p _ {0} + \frac {\rho g}{S^{\prime}} \left[ V - V _ {0} + \kappa (T - T _ {0}) S _ {1} l _ {0} \right] \\
+                = p _ {0} + \frac {\rho_{0} g}{S^{\prime}} \frac {V - V _ {0} + \kappa (T - T _ {0}) S _ {1} l _ {0}}{1 + \kappa (T - T _ {0})} \\
+                = p _ {0} + \frac {\rho_{0} g}{S^{\prime}} S _ {1} l _ {0} + \frac {\rho_{0} g}{S^{\prime}} \frac {V - V _ {0} - S _ {1} l _ {0}}{1 + \kappa (T - T _ {0})} \\
+                \approx p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} (V - V _ {0} - S _ {1} l _ {0}) [ 1 - \kappa (T - T _ {0}) ] \\
+                = p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} \left[ (V - V _ {0} - S _ {1} l _ {0}) (1 + \kappa T _ {0}) - \frac {\kappa}{n R} p V (V - V _ {0} - S _ {1} l _ {0}) \right] \\
+                \approx p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} (V - V _ {0} - S _ {1} l _ {0}) (1 + \kappa T _ {0}) + \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa S _ {1} l _ {0}}{n R} p V \\
+                = p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} (V - 2 V _ {0}) (1 + \kappa T _ {0}) + \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa V _ {0}}{n R} p V \\
+                = p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} (V - 2 V _ {0}) (1 + \kappa T _ {0}) + \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa T _ {0}}{p _ {0}} p V
+            \end{array}
+            \label{eq:21.s57}
+        \end{equation}
+        式中应用了
+        \begin{equation}
+            \kappa (T - T _ {0}) < \kappa (T _ {1} - T _ {0}) = 0.0060,
+            \label{eq:22.s57}
+        \end{equation}
+        \begin{equation}
+            \left| \frac {V - V _ {0}}{S _ {1} l _ {0}} \right| < \left| \frac {V _ {1} - V _ {0}}{S _ {1} l _ {0}} \right| = 0.0057
+            \label{eq:23.s57}
+        \end{equation}
+        \eqref{eq:21.s57}式可改写成
+        \begin{equation}
+            \begin{array}{r l}
+                p & = \frac {p _ {0} + \frac {\rho_{0} g l _ {0} S _ {1}}{S^{\prime}} + \frac {\rho_{0} g}{S^{\prime}} (V - 2 V _ {0}) (1 + \kappa T _ {0})}{1 - \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa T _ {0}}{p _ {0}} V} \\
+                & = - \frac {(1 + \kappa T _ {0}) p _ {0}}{\kappa T _ {0}} + \frac {\frac {1 + 2 \kappa T _ {0}}{\kappa T _ {0}} p _ {0} - \frac {\rho_{0} g V _ {0}}{S^{\prime}} (1 + 2 \kappa T _ {0})}{1 - \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa T _ {0}}{p _ {0}} V}
+            \end{array}
+            \label{eq:24.s57}
+        \end{equation}
+        从封闭水罐后至中午，罐内空气对外界做的功为
+        \begin{equation}
+            \begin{array}{l}
+                W = \int_{V _ {0}}^{V _ {1}} p \mathrm{d} V = \int_{V _ {0}}^{V _ {1}} \left[ - \frac {(1 + \kappa T _ {0}) p _ {0}}{\kappa T _ {0}} + \frac {\frac {1 + 2 \kappa T _ {0}}{\kappa T _ {0}} p _ {0} - \frac {\rho_{0} g V _ {0}}{S^{\prime}} (1 + 2 \kappa T _ {0})}{1 - \frac {\rho_{0} g}{S^{\prime}} \frac {\kappa T _ {0}}{p _ {0}} V} \right] \mathrm{d} V \\
+                = - \frac {(1 + \kappa T _ {0}) p _ {0}}{\kappa T _ {0}} \left[ V _ {1} - V _ {0} + \left(\frac {S^{\prime} p _ {0}}{\rho_{0} g \kappa T _ {0}} - V _ {0}\right) \ln \frac {S^{\prime} p _ {0} - \rho_{0} g \kappa T _ {0} V _ {1}}{S^{\prime} p _ {0} - \rho_{0} g \kappa T _ {0} V _ {0}} \right] \\
+                = - 1.896 \times 10^{3} \mathrm{J} = - 1.9 \times 10^{3} \mathrm{J}
+            \end{array}
+            \label{eq:25.s57}
+        \end{equation}
+
+        现计算罐内空气的内能变化。由能量均分定理知，罐内空气中午相对于清晨的内能改变为
+        \begin{equation}
+            \Delta U = \frac {5}{2} n R (T _ {1} - T _ {0}) = \frac {5}{2} \frac {p _ {0} V _ {0}}{T _ {0}} (T _ {1} - T _ {0}) = 5.724 \times 10^{4} \mathrm{J} = 5.72 \times 10^{4} \mathrm{J}
+            \label{eq:26.s57}
+        \end{equation}
+        式中 5 是常温下空气分子的自由度。由热力学第一定律得，罐内空气的吸热为
+        \begin{equation}
+            \Delta Q = W + \Delta U = 5.535 \times 10^{4} \mathrm{J} = 5.54 \times 10^{4} \mathrm{J}
+            \label{eq:27.s57}
+        \end{equation}
+        从密闭水罐后至中午，罐内空气在这个过程中的热容量为
+        \begin{equation}
+            C = \frac {\Delta Q}{T _ {1} - T _ {0}} = 2.77 \times 10^{3} \mathrm{J} \cdot \mathrm{K}^{-1}
+            \label{eq:28.s57}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

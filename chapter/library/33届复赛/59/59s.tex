@@ -1,0 +1,184 @@
+\begin{solution}{59}
+    \begin{subsolution}
+        由题意，均匀弹性绳在自重作用下几乎不可伸长，此即其劲度系数非常大。因而，虽然绳的弹力大小不可忽略，但绳在自重作用下的弹性势能却可忽略不计。取桥面为重力势能零点，系统总的初始能量是绳的初始势能，即
+        \begin{equation}
+            E _ {i} = E _ {p i} = - m g \frac {L}{4}
+            \label{eq:1.s59}
+        \end{equation}
+        式中，m 是绳的质量，L 是绳的原长。蹦极者下落距离 y 时，系统的动能为
+        \begin{equation}
+            E _ {k} = \frac {1}{2} M v^{2} + \frac {1}{2} m \frac {L - y}{2 L} v^{2}
+            \label{eq:2.s59}
+        \end{equation}
+        式中，M 是蹦极者的质量，v 是蹦极者的速度大小，它等于下落的绳的速度。下落的那段绳的重力势能为
+        \begin{equation}
+            E _ {p, \text{动}} = - m \frac {L - y}{2 L} g (y + \frac {L - y}{4})
+            \label{eq:3.s59}
+        \end{equation}
+        而此时静止的那段绳的重力势能为
+        \begin{equation}
+            E _ {p, \text{静}} = - m \frac {L + y}{2 L} g \frac {L + y}{4}
+            \label{eq:4.s59}
+        \end{equation}
+        由\eqref{eq:2.s59}\eqref{eq:3.s59}\eqref{eq:4.s59}式得，此时系统（蹦极者和绳）总的机械能为
+        \begin{equation}
+            \begin{array}{r l}
+                E _ {f} & = E _ {k} + E _ {p, \text{动}} + E _ {p, \text{静}} - M g y \\
+                & = \frac {1}{2} M v^{2} + \frac {1}{2} m \frac {L - y}{2 L} v^{2} - m \frac {L - y}{2 L} g (y + \frac {L - y}{4}) - m \frac {L + y}{2 L} g \frac {L + y}{4} - M g y
+            \end{array}
+            \label{eq:5.s59}
+        \end{equation}
+        按题意，不考虑可能的能量损失，有
+        \begin{equation}
+            E _ {i} = E _ {f}
+            \label{eq:6.s59}
+        \end{equation}
+        由\eqref{eq:1.s59}\eqref{eq:2.s59}\eqref{eq:3.s59}\eqref{eq:4.s59}\eqref{eq:5.s59}\eqref{eq:6.s59}式得
+        \begin{equation}
+            v^{2} = g y \frac {4 M L + 2 m L - m y}{2 M L + m L - m y}
+            \label{eq:7.s59}
+        \end{equation}
+        将\eqref{eq:7.s59}式两边对时间求导得
+        \begin{equation}
+            2 v \frac {d v}{d t} = g \frac {d y}{d t} \left[ 2 + \frac {m y (4 M L + 2 m L - m y)}{(2 M L + m L - m y)^{2}} \right]
+            \label{eq:8.s59}
+        \end{equation}
+        将 $\frac{dy}{dt} = v$ 代入\eqref{eq:8.s59}式得，蹦极者加速度大小 $a = \frac{dv}{dt}$ 为
+        \begin{equation}
+            a = \frac {g}{2} \left[ 1 + \frac {(2 M L + m L)^{2}}{(2 M L + m L - m y)^{2}} \right] \text{或} a = g \left[ 1 + \frac {m y (4 M L + 2 m L - m y)}{2 (2 M L + m L - m y)^{2}} \right]
+            \label{eq:9.s59}
+        \end{equation}
+        在所考虑的下落过程中，加速度向下，速度大小的上限为
+        \begin{equation}
+            v _ {y \rightarrow L} = \sqrt {2 g L + \frac {1}{2} \frac {m}{M} g L}
+            \label{eq:10.s59}
+        \end{equation}
+        由\eqref{eq:9.s59}式有
+        \begin{equation}
+            \frac {d a}{d y} = m g \frac {(2 M + m)^{2} L^{2}}{(2 M L + m L - m y)^{3}} > 0
+            \label{eq:11.s59}
+        \end{equation}
+        加速度大小的上限为
+        \begin{equation}
+            a _ {y \rightarrow L} = g \left[ 1 + \frac {m (4 M + m)}{8 M^{2}} \right]
+            \label{eq:12.s59}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        解法（一）设蹦极者在时刻 $t$ 下落到离起始水平面距离 $y$ 处，在时刻 $t + dt$ 下落到离起始水平面距离 $y + dy$ 处。考虑时刻 $t$ 绳底端右边长度为 $dy / 2$ 的一小段绳，它在时刻 $t + dt$ 静止于绳底端左边，如图所示。在这个过程中，在竖直方向上，对这一小段绳应用冲量定理有
+        \begin{equation}
+            \left(F _ {1} + F _ {2}\right) d t + \frac {m}{L} \frac {d y}{2} g d t = 0 - \frac {m}{L} \frac {d y}{2} v
+            \label{eq:13.s59}
+        \end{equation}
+        式中 $F_{1}$ 和 $F_{2}$ 分别是绳的弯曲段左、右两端在时刻 $t$ 张力的大小。
+
+        另一方面，对于右边正在下落的那段绳，由牛顿第二定律有
+        \begin{equation}
+            \left(M + \frac {m}{L} \frac {L - y}{2}\right) \ddot{y} = \frac {m}{L} \frac {L - y}{2} g + M g + F _ {2}
+            \label{eq:14.s59}
+        \end{equation}
+        联立\eqref{eq:5.s59}\eqref{eq:6.s59}\eqref{eq:13.s59}\eqref{eq:14.s59}式得
+        \begin{equation}
+            0 = \frac {d E _ {f}}{d t} = - \frac {1}{2} (F _ {1} - F _ {2}) \dot{y}
+            \label{eq:15.s59}
+        \end{equation}
+        由\eqref{eq:13.s59}\eqref{eq:15.s59}式得
+        \begin{equation}
+            F _ {1} = F _ {2} = - \frac {1}{2} \frac {m}{L} \frac {d y}{2} g - \frac {1}{4} \frac {m}{L} v^{2}
+            \label{eq:16.s59}
+        \end{equation}
+        取 $dy \to 0$ ，绳在其上端悬点b处的张力大小为
+        \begin{equation}
+            F _ {\mathrm{b}} = \frac {m}{L} \frac {L + y}{2} g + \frac {1}{4} \frac {m}{L} v^{2}
+            \label{eq:17.s59}
+        \end{equation}
+        由\eqref{eq:10.s59}\eqref{eq:17.s59}式得
+        \begin{equation}
+            F _ {\mathrm{b}} = m g \left(\frac {L + y}{2 L} + \frac {y}{4 L} \frac {4 M L + 2 m L - m y}{2 M L + m L - m y}\right)
+            \label{eq:18.s59}
+        \end{equation}
+
+        解法（二）设蹦极者在时刻 t 下落到离起始水平面距离 y 处，在时刻 $t + dt$ 下落到离起始水平面距离 $y + dy$ 处。整个系统（整段绳、蹦极者和地球）在这段时间始末动量的改变为
+        \begin{equation}
+            \begin{array}{r l}
+                d p & = \left[ M + \frac {m}{L} \frac {L - (y + d y)}{2} \right] v (y + d y) - \left[ M + \frac {m}{L} \frac {L - y}{2} \right] v (y) \\
+                & = \left[ M + \frac {m}{L} \frac {L - y}{2} \right] \left[ v (y + d y) - v (y) \right] - \frac {m}{L} \frac {d y}{2} v (y + d y)
+            \end{array}
+            \label{eq:19.s59}
+        \end{equation}
+        外力的冲量为
+        \begin{equation}
+            I = (M + m) g d t - F _ {\mathrm{b}} d t
+            \label{eq:20.s59}
+        \end{equation}
+        由动量定理
+        \begin{equation}
+            I = d p
+            \label{eq:21.s59}
+        \end{equation}
+        并利用
+        \begin{equation}
+            v (y + d y) = v (y) + \frac {d v}{d y} d y
+            \label{eq:22.s59}
+        \end{equation}
+        可得
+        \begin{equation}
+            F _ {\mathrm{b}} = \frac {m}{L} \frac {L + y}{2} g + \frac {m}{L} \frac {d y}{2 d t} v (y) + \left[ \left(M + \frac {m}{L} \frac {L - y}{2}\right) g - \left(M + \frac {m}{L} \frac {L - (y + d y)}{2}\right) \frac {d v}{d t} \right]
+            \label{eq:23.s59}
+        \end{equation}
+        对右边那段绳应用牛顿第二定律有
+        \begin{equation}
+            (M + \frac {m}{L} \frac {L - y}{2}) g - \left[ M + \frac {m}{L} \frac {L - (y + d y)}{2} \right] \frac {d v}{d t} = F _ {2} + \frac {m}{L} \frac {d y}{2} g = \frac {1}{2} \frac {m}{L} \frac {d y}{2} g - \frac {1}{4} \frac {m}{L} v^{2}
+            \label{eq:24.s59}
+        \end{equation}
+        这里利用了解法（一）的\eqref{eq:16.s59}式。将上式代入\eqref{eq:23.s59}式，并取 $dy \rightarrow 0$ 得
+        \begin{equation}
+            F _ {\mathrm{b}} = \frac {m}{L} \frac {L + y}{2} g + \frac {1}{4} \frac {m}{L} v^{2}
+            \label{eq:25.s59}
+        \end{equation}
+        由\eqref{eq:10.s59}\eqref{eq:25.s59}式得
+        \begin{equation}
+            F _ {\mathrm{b}} = m g \left(\frac {L + y}{2 L} + \frac {y}{4 L} \frac {4 M L + 2 m L - m y}{2 M L + m L - m y}\right)
+            \label{eq:26.s59}
+        \end{equation}
+
+        解法（三）设蹦极者在时刻 t 下落到离起始水平面距离 y 处，在时刻 $t + dt$ 下落到离起始水平面距离 $y + dy$ 处。整个系统（整段绳、蹦极者和地球）在这段时间始末动量的改变为
+        \begin{equation}
+            \begin{array}{r l}
+                d p & = \Bigg[ M + \frac {m}{L} \frac {L - (y + d y)}{2} \Bigg] v (y + d y) - \Bigg[ M + \frac {m}{L} \frac {L - y}{2} \Bigg] v (y) \\
+                & = \Bigg[ M + \frac {m}{L} \frac {L - y}{2} \Bigg] \big[ v (y + d y) - v (y) \big] - \frac {m}{L} \frac {d y}{2} v (y + d y)
+            \end{array}
+            \label{eq:27.s59}
+        \end{equation}
+        外力的冲量为
+        \begin{equation}
+            I = (M + m) g d t - F _ {\mathrm{b}} d t
+            \label{eq:28.s59}
+        \end{equation}
+        由动量定理
+        \begin{equation}
+            I = d p
+            \label{eq:29.s59}
+        \end{equation}
+        并利用
+        \begin{equation}
+            v (y + d y) = v (y) + \frac {d v}{d y} d y
+            \label{eq:30.s59}
+        \end{equation}
+        可得
+        \begin{equation}
+            F _ {\mathrm{b}} = \frac {m}{L} \frac {L + y}{2} g + \frac {m}{2 L} v^{2} (y) + (M + \frac {m}{L} \frac {L - y}{2}) [ g - a (y) ] + \frac {m}{L} \frac {d y}{2} a (y)
+            \label{eq:31.s59}
+        \end{equation}
+        利用\eqref{eq:9.s59}式，\eqref{eq:31.s59}式成为
+        \begin{equation}
+            F _ {\mathrm{b}} = \frac {m}{L} \frac {L + y}{2} g + \frac {m}{2 L} v^{2} (y) - (M + \frac {m}{L} \frac {L - y}{2}) g \frac {m y (4 M L + 2 m L - m y)}{2 (2 M L + m L - m y)^{2}}
+            \label{eq:32.s59}
+        \end{equation}
+        式中右端已取 $dy \to 0$ 。由\eqref{eq:7.s59}\eqref{eq:32.s59}式得
+        \begin{equation}
+            F _ {\mathrm{b}} = m g \left(\frac {L + y}{2 L} + \frac {y}{4 L} \frac {4 M L + 2 m L - m y}{2 M L + m L - m y}\right)
+            \label{eq:33.s59}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,86 @@
+\begin{solution}{71}
+    \begin{subsolution}
+        考虑氢原子的基态。设电子相对于质子的距离为 $r$，相对于质子的速度大小为 $v$，则在 p-e$^{-}$ 体系质心系中，质子、电子各自的运动方程为
+        \begin{equation}
+            k\frac{e^{2}}{r^{2}} = m_{i}\frac{v_{i}^{2}}{r_{i}} = \mu_{H}\frac{v^{2}}{r},\quad i = \mathrm{p}, \mathrm{e}^{-};\quad \mu_{H} = \frac{m_{p} m_{e}}{m_{p} + m_{e}} \label{eq:1.p71}
+        \end{equation}
+        式中 $m_{p}$ 、$m_{e}$ 分别是质子、电子的质量，而 $r_{p}$ 、$r_{e}$ 和 $v_{p}$ 、$v_{e}$ 分别为质子、电子相对于质心的距离和速度大小
+        \begin{equation*}
+            r_{p} = \frac{m_{e}}{m_{p} + m_{e}} r,\quad r_{e} = \frac{m_{p}}{m_{p} + m_{e}} r
+        \end{equation*}
+        \begin{equation*}
+            v_{p} = \frac{m_{e}}{m_{p} + m_{e}} v,\quad v_{e} = \frac{m_{p}}{m_{p} + m_{e}} v
+        \end{equation*}
+        $e$ 是质子电荷，而 $\mu_{H}$ 被称为 p-e$^{-}$ 体系的约化质量。利用考虑到质子质量有限性的氢原子量子化条件，质心系轨道总角动量为
+        \begin{equation}
+            L = m_{1} v_{1} r_{1} + m_{2} v_{2} r_{2} = \mu_{H} v r = n\frac{h}{2\pi},\quad n = 1,2,\dots \label{eq:2.p71}
+        \end{equation}
+        式中 $n$ 是氢原子能级量子数。氢原子的基态（$n=1$）能为
+        \begin{equation}
+            E_{n=1}^{H} = \frac{1}{2}m_{1}v_{1}^{2} + \frac{1}{2}m_{2}v_{2}^{2} - \frac{k e^{2}}{r} = \frac{1}{2}\mu_{H} v^{2} - \frac{k e^{2}}{r} = -\mu_{H}\left(\frac{2\pi}{h}\right)^{2}\frac{(k e^{2})^{2}}{2} \label{eq:3.p71}
+        \end{equation}
+        可见，氢原子基态能正比于其约化质量 $\mu_{H}$ 。$e^{+}-e^{-}$ 体系的约化质量为 $\mu_{Ps}=m_{e}/2$ 。类比 \eqref{eq:3.p71} 式，利用题给数据，电子偶素（Ps）原子基态（$n=1$）能量为
+        \begin{align}
+            E_{n=1}^{Ps} &= -\mu_{Ps}\left(\frac{2\pi}{h}\right)^{2}\frac{(k e^{2})^{2}}{2} = \frac{\mu_{Ps}}{\mu_{H}} E_{n=1}^{H} = \frac{m_{p} + m_{e}}{2m_{p}} E_{n=1}^{H}, \nonumber \\
+            &= -\frac{1}{2} \times \frac{1837}{1836} \times 13.60\,\mathrm{eV} \approx -6.804\,\mathrm{eV} \label{eq:4.p71}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            Ps 的静质量 $m_{Ps}$ 为
+            \begin{equation}
+                m_{Ps} = 2m_{e} + \frac{E_{n=1}^{Ps}}{c^{2}} \approx 2m_{e} \label{eq:5.p71}
+            \end{equation}
+            这里利用了 $E_{n=1}^{Ps} << m_{e}c^{2}$ （见 \eqref{eq:4.p71} 式）。设电子偶素（Ps）基态原子相对实验室参照系以速度 $v_{0}$ （$v_{0} << c$ ）运动时发生湮没而生成两个光子 $\gamma_{1}$ 和 $\gamma_{2}$ 。湮没前后体系的能量和动量守恒
+            \begin{align}
+                2m_{e}c^{2} &= E_{1} + E_{2} \label{eq:6.p71} \\
+                2m_{e}v_{0} &= p_{1}\cos\theta_{1} + p_{2}\cos\theta_{2} \label{eq:7.p71} \\
+                0 &= p_{1}\sin\theta_{1} + p_{2}\sin\theta_{2} \label{eq:8.p71}
+            \end{align}
+            式中，$p_{1}$ 和 $p_{2}$ 是两光子 $\gamma_{1}$ 和 $\gamma_{2}$ 动量的大小，它们分别满足
+            \begin{equation}
+                E_{1} = p_{1}c,\quad E_{2} = p_{2}c \label{eq:9.p71}
+            \end{equation}
+            由 \eqref{eq:6.p71}-\eqref{eq:9.p71} 式得
+            \begin{align}
+                E_{1} &= m_{e}c^{2}\left(1 + \frac{v_{0}}{c}\cos\theta_{1}\right) \label{eq:10.p71} \\
+                E_{2} &= m_{e}c^{2}\left(1 - \frac{v_{0}}{c}\cos\theta_{1}\right) \label{eq:11.p71} \\
+                v_{0} &= \frac{\Delta\theta}{2\sin\theta_{1}} c \label{eq:12.p71}
+            \end{align}
+            \eqref{eq:12.p71} 式中 $\Delta\theta = \theta_{2} - (\theta_{1} + \pi)$ ，推导中已应用了 $\Delta\theta << 1$ 。利用题给数据 $\theta_{1} = \frac{\pi}{3}$ ，$\Delta\theta = 3.462 \times 10^{-3}$ ，由 \eqref{eq:10.p71}-\eqref{eq:12.p71} 式得
+            \begin{align}
+                v_{0} &= 2.000 \times 10^{-3} c = 5.996 \times 10^{5}\,\mathrm{m/s}, \nonumber \\
+                E_{1} &= 0.5115\,\mathrm{MeV}, \nonumber \\
+                E_{2} &= 0.5105\,\mathrm{MeV} \label{eq:13.p71}
+            \end{align}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由 \eqref{eq:5.p71} 式与 \eqref{eq:10.p71}、\eqref{eq:11.p71} 两等式（不是约等于的结果）得
+            \begin{equation*}
+                E_{1,2} = \frac{m_{Ps}c^{2}}{2} = m_{e}c^{2} + \frac{E_{n=1}^{Ps}}{2}
+            \end{equation*}
+            于是由上式和 \eqref{eq:4.p71} 式得
+            \begin{equation}
+                \Delta E = E_{1,2} - m_{e}c^{2} = \frac{E_{n=1}^{Ps}}{2} = -3.402\,\mathrm{eV} \label{eq:14.p71}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        基态电子偶素原子 (Ps) 以速度 $v_{0} = c/2$ 运行时发生湮没，设湮没生成的两光子 $\gamma_{1}$ 和 $\gamma_{2}$ 的动量大小分别为 $p_{1}$ 和 $p_{2}$ ，光子 $\gamma_{1}$ 的运行方向相对于基态原子 Ps 动量的方向的夹角为 $\theta_{1}$ ，光子 $\gamma_{2}$ 的运行方向相对于 Ps 基态的动量的方向的夹角为 $\theta_{2}$ 。湮没前后能量和动量守恒，有
+        \begin{align}
+            \frac{m_{Ps}c^{2}}{\sqrt{1 - (v_{0}/c)^{2}}} &= E_{1} + E_{2} \label{eq:15.p71} \\
+            p_{Ps} = \frac{m_{Ps}v_{0}}{\sqrt{1 - (v_{0}/c)^{2}}} &= p_{1}\cos\theta_{1} + p_{2}\cos\theta_{2} \label{eq:16.p71}
+        \end{align}
+        两光子 $\gamma_{1}$ 和 $\gamma_{2}$ 的能量和动量仍满足 \eqref{eq:8.p71}、\eqref{eq:9.p71} 式，联立 \eqref{eq:8.p71}、\eqref{eq:9.p71}、\eqref{eq:15.p71}、\eqref{eq:16.p71} 式得
+        \begin{align}
+            E_{1} &= \frac{m_{Ps}c^{2}}{2\sqrt{1 - (v_{0}/c)^{2}}} \frac{1 - (v_{0}/c)^{2}}{1 - \frac{v_{0}}{c}\cos\theta_{1}} \label{eq:17.p71} \\
+            E_{2} &= \frac{m_{Ps}c^{2}}{2\sqrt{1 - (v_{0}/c)^{2}}} \frac{1 - 2\frac{v_{0}}{c}\cos\theta_{1} + (v_{0}/c)^{2}}{1 - \frac{v_{0}}{c}\cos\theta_{1}} \label{eq:18.p71} \\
+            \sin\theta_{2} &= -\frac{1 - (v_{0}/c)^{2}}{1 - 2\frac{v_{0}}{c}\cos\theta_{1} + (v_{0}/c)^{2}} \sin\theta_{1} \label{eq:19.p71}
+        \end{align}
+        将题给数据 $v_{0} = \frac{c}{2}$ 、$\theta_{1} = \frac{\pi}{3}$ 以及 \eqref{eq:5.p71} 式代入 \eqref{eq:17.p71}-\eqref{eq:19.p71} 式得
+        \begin{equation}
+            E_{1} = E_{2} = 0.5900\,\mathrm{MeV},\quad \theta_{2} = \frac{5\pi}{3} \label{eq:20.p71}
+        \end{equation}
+        \eqref{eq:19.p71} 式的另一解 $\theta_{2} = \frac{4\pi}{3}$ 与 \eqref{eq:16.p71} 式矛盾，已舍去。
+    \end{subsolution}
+\end{solution}

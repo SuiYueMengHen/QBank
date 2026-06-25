@@ -1,0 +1,129 @@
+\begin{solution}{58}
+    \begin{subsolution}
+        若太阳质量突然变为零，地球和木星围绕太阳转动速度不会突然改变，因而应当等于在太阳质量变为零之前的瞬间，地球和木星围绕太阳转动的速度。设在太阳质量变为零之前，地球和木星绕太阳转动速度分别是 $v_{\mathrm{e}}$ 和 $v_{\mathrm{j}}$ 。以太阳为原点、地球和木星公转轨道平面为 $x - y$ 平面建立坐标系。由万有引力定律和牛顿第二定律有
+        \begin{equation}
+            G \frac {m _ {\mathrm{s}} m _ {\mathrm{e}}}{r _ {\mathrm{e}}^{2}} = m _ {\mathrm{e}} \frac {v _ {\mathrm{e}}^{2}}{r _ {\mathrm{e}}}
+            \label{eq:1.s58}
+        \end{equation}
+        由\eqref{eq:1.s58}式得
+        \begin{equation}
+            v _ {\mathrm{e}} = \sqrt {\frac {G m _ {\mathrm{s}}}{r _ {\mathrm{e}}}}
+            \label{eq:2.s58}
+        \end{equation}
+        同理有
+        \begin{equation}
+            v _ {\mathrm{j}} = \sqrt {\frac {G m _ {\mathrm{s}}}{r _ {\mathrm{j}}}}
+            \label{eq:3.s58}
+        \end{equation}
+        现计算地球不被木星引力俘获所需要的最小速率 $v_{0}$ （不考虑太阳引力）。若地球相对木星刚好以速度 $v_{0}$ 运动，也就是说，当地球在木星的引力场里运动到无限远时，速度刚好为零，此时木星-地球系统引力势能为零，动能也为零，即总机械能为零。按机械能守恒定律，在地球离木星距离为 $r_{ej}$ 时，速度 $v_{0}$ 满足
+        \begin{equation}
+            \frac {1}{2} m _ {\mathrm{e}} v _ {0}^{2} - G \frac {m _ {\mathrm{e}} m _ {\mathrm{j}}}{r _ {\mathrm{ej}}} = 0
+            \label{eq:4.s58}
+        \end{equation}
+        即
+        \begin{equation}
+            v _ {0} = \sqrt {\frac {2 G m _ {\mathrm{j}}}{r _ {\mathrm{ej}}}}
+            \label{eq:5.s58}
+        \end{equation}
+        可见，地球不被木星引力俘获所需要的最小速率 $v_{0}$ 的大小与木星质量和地球离木星的距离有关。
+
+        设在太阳质量变为零的瞬间，木星的位矢为
+        \begin{equation}
+            \boldsymbol{r} _ {\mathrm{j}} = (r _ {\mathrm{j}}, 0)
+            \label{eq:6.s58}
+        \end{equation}
+        地球的位矢为
+        \begin{equation}
+            \boldsymbol{r} _ {\mathrm{e}} = \left(r _ {\mathrm{e}} \cos \theta , r _ {\mathrm{e}} \sin \theta\right)
+            \label{eq:7.s58}
+        \end{equation}
+        式中 $\theta$ 为地球此时的位矢与 x-轴的夹角。此时地球和木星的距离为
+        \begin{equation}
+            r _ {\mathrm{ej}} = \sqrt {r _ {\mathrm{e}}^{2} + r _ {\mathrm{j}}^{2} - 2 r _ {\mathrm{e}} r _ {\mathrm{j}} \cos \theta}
+            \label{eq:8.s58}
+        \end{equation}
+        此时地球相对于木星的速度大小为
+        \begin{equation}
+            v _ {\mathrm{ej}} = \left| \boldsymbol{v} _ {\mathrm{e}} - \boldsymbol{v} _ {\mathrm{j}} \right| = \sqrt {v _ {\mathrm{e}}^{2} + v _ {\mathrm{j}}^{2} - 2 v _ {\mathrm{e}} v _ {\mathrm{j}} \cos \theta} = \sqrt {G m _ {\mathrm{s}}} \sqrt {\frac {1}{r _ {\mathrm{e}}} + \frac {1}{r _ {\mathrm{j}}} - \frac {2 \cos \theta}{\sqrt {r _ {\mathrm{e}} r _ {\mathrm{j}}}}}
+            \label{eq:9.s58}
+        \end{equation}
+        式中 $\cos \theta$ 项前面取减号是因为考虑到木星和地球同方向绕太阳旋转的缘故。由\eqref{eq:5.s58}\eqref{eq:8.s58}式得
+        \begin{equation}
+            v _ {0} = \sqrt {\frac {2 G m _ {\mathrm{j}}}{r _ {\mathrm{ej}}}} = \frac {(2 G m _ {\mathrm{j}})^{1 / 2}}{(r _ {\mathrm{e}}^{2} + r _ {\mathrm{j}}^{2} - 2 r _ {\mathrm{e}} r _ {\mathrm{j}} \cos \theta)^{1 / 4}}
+            \label{eq:10.s58}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        解法（一）
+
+        为了判断地球是否会围绕木星转动，只需比较 $v_{\mathrm{ej}}$ 和 $v_{0}$ 的大小。由开普勒第三定律有
+        \begin{equation}
+            \frac {r _ {\mathrm{j}}^{3}}{T _ {\mathrm{j}}^{2}} = \frac {r _ {\mathrm{e}}^{3}}{T _ {\mathrm{e}}^{2}}
+            \label{eq:11.s58}
+        \end{equation}
+        式中 $T_{j}=12\ y$ 是木星公转周期，而 $T_{e}=1y$ 是地球公转周期。由\eqref{eq:11.s58}式得
+        \begin{equation}
+            \frac {r _ {\mathrm{j}}}{r _ {\mathrm{e}}} = \sqrt[3]{\frac {T _ {\mathrm{j}}^{2}}{T _ {\mathrm{e}}^{2}}} = \sqrt[3]{144} \approx 5.2
+            \label{eq:12.s58}
+        \end{equation}
+        $v_{ej}$ 和 $v_{0}$ 都是正数，所以，由\eqref{eq:9.s58}\eqref{eq:10.s58}\eqref{eq:12.s58}式有：
+        \begin{equation}
+            \begin{array}{r l}
+                \frac {v _ {\mathrm{ej}}}{v _ {0}} & \approx \sqrt {\frac {m _ {\mathrm{s}}}{2 m _ {\mathrm{j}}}} \sqrt {\frac {1}{r _ {\mathrm{e}}} + \frac {1}{5.2 r _ {\mathrm{e}}} - \frac {2 \cos \theta}{\sqrt {5.2} r _ {\mathrm{e}}}} \sqrt{r _ {\mathrm{e}}}^{4} \sqrt {1 + (5.2)^{2} - 2 \times 5.2 \times \cos \theta} \\
+                & = \sqrt {\frac {m _ {\mathrm{s}}}{2 m _ {\mathrm{j}}}} \sqrt {1 + \frac {1}{5.2} - \frac {2 \cos \theta}{\sqrt {5.2}}}^{4} \sqrt {1 + (5.2)^{2} - 2 \times 5.2 \times \cos \theta}
+            \end{array}
+            \label{eq:13.s58}
+        \end{equation}
+        显然，\eqref{eq:13.s58}式右端当 $\cos \theta = 1$ ，即
+        \begin{equation}
+            \theta = 0
+            \label{eq:14.s58}
+        \end{equation}
+        时取最小值，此时太阳、地球、木星共线，且地球和木星在太阳同侧。由\eqref{eq:13.s58}\eqref{eq:14.s58}式和题给数据有
+        \begin{equation}
+            \left(\frac {v _ {\mathrm{ej}}}{v _ {0}}\right)_{\min} = \sqrt {\frac {m _ {\mathrm{s}}}{2 m _ {\mathrm{j}}}} \sqrt {1 + \frac {1}{5.2} - \frac {2}{\sqrt {5.2}}} \sqrt[4]{1 + (5.2)^{2} - 2 \times 5.2} \approx 26 >> 1
+            \label{eq:15.s58}
+        \end{equation}
+        也就是说，在任何情况下，
+        \begin{equation}
+            v _ {\mathrm{ej}} >> v _ {0}
+            \label{eq:16.s58}
+        \end{equation}
+        即若太阳质量突然变为零，地球必定不会被木星引力俘获，不会围绕木星旋转。这里考虑的是地球与木星绕太阳运动方向相同的情况。若地球和木星绕太阳转动方向相反，则地球和木星的相对速度会更大，而 $v_{0}$ 不变，地球也不会围绕木星旋转。
+
+        解法（二）
+
+        为了判断地球是否会围绕木星转动，只需比较 $v_{ej}$ 和 $v_{0}$ 的大小。首先讨论 $\theta=0$ 时的情况，即在太阳质量变为零的瞬间，太阳、地球、木星共线，且地球和木星在太阳同侧的情形。由开普勒第三定律有
+        \begin{equation}
+            \frac {r _ {\mathrm{j}}^{3}}{T _ {\mathrm{j}}^{2}} = \frac {r _ {\mathrm{e}}^{3}}{T _ {\mathrm{e}}^{2}}
+            \label{eq:17.s58}
+        \end{equation}
+        式中 $T_{i}=12\ y$ 是木星公转周期，而 $T_{e}=1y$ 是地球公转周期。由\eqref{eq:17.s58}式得
+        \begin{equation}
+            r _ {\mathrm{j}} = \left(\frac {T _ {\mathrm{j}}}{T _ {\mathrm{e}}}\right)^{2 / 3} r _ {\mathrm{e}} = \sqrt[3]{144} r _ {\mathrm{e}} \approx 5.2 r _ {\mathrm{e}}
+            \label{eq:18.s58}
+        \end{equation}
+        将\eqref{eq:18.s58}式和有关数据代入\eqref{eq:9.s58}\eqref{eq:10.s58}式得
+        \begin{equation}
+            v _ {\mathrm{ej}} = \sqrt {G m _ {\mathrm{s}}} \sqrt {\frac {1}{r _ {\mathrm{e}}} + \frac {1}{r _ {\mathrm{j}}} - \frac {2 \cos \theta}{\sqrt {r _ {\mathrm{e}} r _ {\mathrm{j}}}}} \approx 0.56 \sqrt {m _ {\mathrm{s}}} \sqrt {\frac {G}{r _ {\mathrm{e}}}} = 7.9 \times 10^{14} \sqrt {\frac {G}{r _ {\mathrm{e}}}}
+            \label{eq:19.s58}
+        \end{equation}
+        \begin{equation}
+            v _ {0} = \frac {\left(2 G m _ {\mathrm{j}}\right)^{1 / 2}}{\left(r _ {\mathrm{e}}^{2} + r _ {\mathrm{j}}^{2} - 2 r _ {\mathrm{e}} r _ {\mathrm{j}} \cos \theta\right)^{1 / 4}} \approx 0.44 \sqrt {2 m _ {\mathrm{j}}} \sqrt {\frac {G}{r _ {\mathrm{e}}}} = 2.7 \times 10^{13} \sqrt {\frac {G}{r _ {\mathrm{e}}}}
+            \label{eq:20.s58}
+        \end{equation}
+        可见，此时有
+        \begin{equation}
+            v _ {\mathrm{ej}} >> v _ {0}
+            \label{eq:21.s58}
+        \end{equation}
+        所以这种情形下地球不会围绕木星旋转。这里考虑的是地球与木星绕太阳运动方向相同的情况。若地球和木星绕太阳转动方向相反，则地球和木星的相对速度会更大，而 $v_{0}$ 不变，地球也不会围绕木星旋转。
+
+        对于 $\theta \neq 0$ 的情况，当 $\theta$ 从 0 到 $\pi$ （或从 0 到 $-\pi$ ）改变时，从式\eqref{eq:9.s58}\eqref{eq:10.s58}式可以看到，
+        \begin{equation}
+            v _ {\mathrm{ej}} \text{单调增大}, v _ {0} \text{单调减小}
+            \label{eq:22.s58}
+        \end{equation}
+        所以总有\eqref{eq:21.s58}式成立。因此，若太阳质量突然变为零，地球仍不会围绕木星旋转。
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,122 @@
+\begin{solution}{61}
+    \begin{subsolution}
+        设从光阴极逸出的电子个数为 $n_{p}$ ，按题述，从第一个倍增级逸出的电子个数为
+        \begin{equation}
+            m _ {1} = \eta n _ {p} \delta
+            \label{eq:1.s61}
+        \end{equation}
+        可用归纳法得出从第i个倍增级逸出的电子个数为
+        \begin{equation}
+            m _ {i} = \eta n _ {p} \delta (\sigma \delta)^{i - 1}, i = 1, \dots , n
+            \label{eq:2.s61}
+        \end{equation}
+        光阴极及第 $i$ 个倍增级向阳极贡献的电子数 $n_{p\to a}$ 、 $m_{i\to a}$ 分别为
+        \begin{equation}
+            \left\{
+            \begin{array}{l}
+                n _ {p \rightarrow a} = n _ {p} (1 - \eta), \\
+                m _ {i \rightarrow a} = m _ {i} (1 - \sigma), i = 1, \dots , n - 1, \\
+                m _ {n \rightarrow a} = m _ {n}.
+            \end{array}
+            \right.
+            \label{eq:3.s61}
+        \end{equation}
+        光阴极与阳极间电势差 $V_{pa}$ 、第i倍增级与阳极之间的电势差 $V_{ia}$ 分别为
+        \begin{equation}
+            \left\{
+            \begin{array}{l}
+                V _ {p a} = (1 + n) V, \\
+                V _ {i a} = (n - i + 1) V, i = 1, \dots , n
+            \end{array}
+            \right.
+            \label{eq:4.s61}
+        \end{equation}
+        从光阴极溢出的电子被电势差加速所消耗的能量 $E_{p}$ 、从第 i 倍增级溢出到阳极的电子被电势差加速所消耗的能量 $E_{ia}$ 、第 i 倍增级溢出到第 $i+1$ 倍增级的电子被电势差加速所消耗的能量 $E_{i\rightarrow i+1}$ 分别为
+        \begin{equation}
+            \left\{
+            \begin{array}{l}
+                E _ {p} = e n _ {p} \eta V + e n _ {p \rightarrow a} V _ {p a}, \\
+                E _ {i a} = e m _ {i \rightarrow a} V _ {i a}, i = 1, \dots , n, \\
+                E _ {i \rightarrow i + 1} = e m _ {i} \sigma V, i = 1, \dots , n - 1.
+            \end{array}
+            \right.
+            \label{eq:5.s61}
+        \end{equation}
+        总耗费的电能为
+        \begin{equation}
+            E = E _ {p} + \sum_{i = 1}^{n} E _ {i a} + \sum_{i = 1}^{n - 1} E _ {i \rightarrow i + 1}
+            \label{eq:6.s61}
+        \end{equation}
+        将\eqref{eq:2.s61}\eqref{eq:3.s61}\eqref{eq:4.s61}\eqref{eq:5.s61}式代入\eqref{eq:6.s61}式得，放大单个光阴极逸出的电子耗费的平均能量为
+        \begin{equation}
+            \frac {E}{n _ {p}} = \left[ 1 + n + \eta (\delta - 1) \left\{\frac {\sigma \delta [ (\sigma \delta)^{n} - 1 ]}{(\sigma \delta - 1)^{2}} - \frac {n}{\sigma \delta - 1} \right\} \right] e V
+            \label{eq:7.s61}
+        \end{equation}
+        当 $\delta \sigma > 1$ 、 $n >> 1$ 时，上式各项中含 $(\delta \sigma)^n$ 因子的部分的贡献远大于其他部分，因此可仅保留含 $(\delta \sigma)^{n}$ 级因子的项，有
+        \begin{equation}
+            \frac {E}{n _ {p}} = \frac {\eta (\delta - 1) (\delta \sigma)^{n + 1}}{(\delta \sigma - 1)^{2}} e V
+            \label{eq:8.s61}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        所加磁场应当垂直纸面向里。磁场提供洛仑兹力，且忽略重力和电场力，电子在匀强磁场中作匀速圆周运动。由于电子的逃逸速度垂直于电极，电子运动轨迹的圆心将在电极所在的直线上。运动轨迹如右图所示。
+
+        当第 i 倍增级最左端的电子到达第 $i+1$ 倍增级最右端时，轨迹为 1，其圆心在第 i 倍增级的延长线上，由几何关系可知，对应的半径 $r_{1}$ 满足
+        \begin{equation}
+            r _ {1} = \sqrt {\left(3 a - r _ {1}\right)^{2} + a^{2}}
+            \label{eq:9.s61}
+        \end{equation}
+        当第 i 倍增级最左端的电子到达第 $i+1$ 倍增级最左端时，轨迹为 2，对应的轨道半径 $r_{2}$ 满足
+        \begin{equation}
+            r _ {2} = \sqrt {\left(2 a - r _ {2}\right)^{2} + a^{2}}
+            \label{eq:10.s61}
+        \end{equation}
+        当第 $i$ 倍增级最右端的电子到达第 $i + 1$ 倍增级最右端时，轨迹为3，对应的轨道半径 $r_3$ 满足
+        \begin{equation}
+            r _ {3} = \sqrt {(2 a - r _ {3})^{2} + a^{2}}
+            \label{eq:11.s61}
+        \end{equation}
+        当第 $i$ 倍增级最右端的电子到达第 $i + 1$ 倍增级最左端时，轨迹为4，对应的轨道半径 $r_4$ 满足
+        \begin{equation}
+            r _ {4} = \sqrt {(a - r _ {4})^{2} + a^{2}}
+            \label{eq:12.s61}
+        \end{equation}
+        由\eqref{eq:9.s61}\eqref{eq:10.s61}\eqref{eq:11.s61}\eqref{eq:12.s61}式分别解得
+        \begin{equation}
+            r _ {1} = \frac {5}{3} a, r _ {2} = \frac {5}{4} a, r _ {3} = \frac {5}{4} a, r _ {4} = a
+            \label{eq:13.s61}
+        \end{equation}
+        设电子在磁场中作匀速圆周运动的速率为 $v$ ，有洛仑兹力公式和牛顿第二定律有
+        \begin{equation}
+            e v B = \frac {m v^{2}}{r}
+            \label{eq:14.s61}
+        \end{equation}
+        由\eqref{eq:14.s61}式得
+        \begin{equation}
+            r = \frac {m v}{e B} = \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e B}
+            \label{eq:15.s61}
+        \end{equation}
+        式中 $E_{e}$ 是速率为 v 的电子的动能。由\eqref{eq:13.s61}\eqref{eq:15.s61}式可解出相应的 $B_{1}$ 、 $B_{2}$ 、 $B_{3}$ 、 $B_{4}$ 的大小为
+        \begin{equation}
+            B _ {1} = \frac {3}{5} \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}, B _ {2} = \frac {4}{5} \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}, B _ {3} = \frac {4}{5} \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}, B _ {4} = \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}
+            \label{eq:16.s61}
+        \end{equation}
+        当 $B = B_{1}$ 时，第 i 级释放的电子中只有最左边的被收集到；若 $B < B_{1}$ ，则一个电子都不会被收集。因此为使第 $i + 1$ 倍增级能收集到电子，应当有 $B \geq B_{1}$ 。
+
+        当 $B = B_{2} = B_{3}$ 时，所有电子都被第 $i + 1$ 倍增级收集。
+
+        当 $B = B_{4}$ 时，第 $i$ 倍增级释放的电子中只有最右边的被收集到；若 $B > B_{4}$ ，则一个电子都不会被收集。因此为使第 $i + 1$ 倍增级能收集到电子，应当有 $B \leq B_{4}$ 。
+
+        因此，当
+        \begin{equation}
+            B = \frac {4}{5} \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}
+            \label{eq:17.s61}
+        \end{equation}
+        时收集到的电子最多；当
+        \begin{equation}
+            \frac {3}{5} \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a} \leq B \leq \frac {\sqrt {2 m E _ {\mathrm{e}}}}{e a}
+            \label{eq:18.s61}
+        \end{equation}
+        时，会有电子被收集。
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,127 @@
+\begin{solution}{53}
+\textbf{解法一}
+
+选如图所示地球、火星和太阳三点共线（火星冲日）时为计时零点，逆时针方向为 $\phi$ 角的正方向。经过时间 t 后，火星在如图所示的以地心为原点的平动坐标系 o-xy 中的位置为：
+\begin{equation}
+\begin{array}{l}
+x = R_{\mathrm{m}}\cos\omega_{\mathrm{m}}t - R_{0}\cos\omega_{0}t \\
+y = R_{\mathrm{m}}\sin\omega_{\mathrm{m}}t - R_{0}\sin\omega_{0}t,
+\end{array}
+\label{eq:1.s53}
+\end{equation}
+$\omega_{\mathrm{m}}$ 和 $\omega_0$ 分别为火星和地球的公转角速度。火星与地球的连线在地球坐标系 $o - xy$ 中与 $x$ 轴的夹角 $\phi$ 为
+\begin{equation}
+\tan\phi = \frac{R_{\mathrm{m}}\sin\omega_{\mathrm{m}}t - R_{0}\sin\omega_{0}t}{R_{\mathrm{m}}\cos\omega_{\mathrm{m}}t - R_{0}\cos\omega_{0}t}
+\label{eq:2.s53}
+\end{equation}
+\eqref{eq:2.s53}式两边对时间求导，得
+\begin{equation}
+\frac{\dot{\phi}}{\cos^{2}\phi} = \frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2} + \omega_{0}R_{0}^{2} - (\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}\cos[(\omega_{0}-\omega_{\mathrm{m}})t]}{(R_{\mathrm{m}}\cos\omega_{\mathrm{m}}t - R_{0}\cos\omega_{0}t)^{2}}
+\label{eq:3.s53}
+\end{equation}
+火星的顺行或逆行分别对应于 $\dot{\phi}$ 为正或为负的情形。令 $\dot{\phi}=0$，有
+\begin{equation}
+\omega_{\mathrm{m}}R_{\mathrm{m}}^{2} + \omega_{0}R_{0}^{2} - (\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}\cos[(\omega_{0}-\omega_{\mathrm{m}})t] = 0
+\label{eq:4.s53}
+\end{equation}
+解得
+\begin{equation}
+t = \pm\frac{1}{\omega_{0}-\omega_{\mathrm{m}}}\arccos\frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2}+\omega_{0}R_{0}^{2}}{(\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}}
+\label{eq:5.s53}
+\end{equation}
+火星在经历相邻两次冲日的时间间隔内，仅当
+\begin{equation}
+t \in \left(-\frac{1}{\omega_{0}-\omega_{\mathrm{m}}}\arccos\frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2}+\omega_{0}R_{0}^{2}}{(\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}}, \frac{1}{\omega_{0}-\omega_{\mathrm{m}}}\arccos\frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2}+\omega_{0}R_{0}^{2}}{(\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}}\right)
+\label{eq:6.s53}
+\end{equation}
+时，$\phi$ 恒为负（由于 $t = 0$ 时\eqref{eq:3.s53}式右端分子小于零）。因此，在经历相邻两次冲日的过程中，火星视运动逆行的总时间为
+\begin{equation}
+t_{\text{逆}} = \frac{2}{\omega_{0}-\omega_{\mathrm{m}}}\arccos\frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2}+\omega_{0}R_{0}^{2}}{(\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}}
+\label{eq:7.s53}
+\end{equation}
+根据开普勒第三定律，有
+\begin{equation}
+\omega_{\mathrm{m}}^{2}R_{\mathrm{m}}^{3} = \omega_{0}^{2}R_{0}^{3}
+\label{eq:8.s53}
+\end{equation}
+将\eqref{eq:8.s53}式代入\eqref{eq:7.s53}式得
+\begin{equation}
+t_{\text{逆}} = \frac{2}{\omega_{0}-\omega_{\mathrm{m}}}\arccos\frac{\omega_{\mathrm{m}}R_{\mathrm{m}}^{2}+\omega_{0}R_{0}^{2}}{(\omega_{\mathrm{m}}+\omega_{0})R_{\mathrm{m}}R_{0}} = \frac{T_{0}}{\pi(1-n^{-3/2})}\arccos\frac{n+n^{1/2}}{n^{3/2}+1}
+\label{eq:9.s53}
+\end{equation}
+式中 $n = \frac{R_{\mathrm{m}}}{R_0}$，$T_{0} = \frac{2\pi}{\omega_{0}}$。代入数据 $n = 1.524$，$T_{0} = 365\mathrm{d}$，得
+\begin{equation}
+t_{\text{逆}} = 0.1991T_{0} = 72.7\mathrm{d} \approx 73\mathrm{d}
+\label{eq:10.s53}
+\end{equation}
+火星经历相邻两次冲日的时间 $T$ 满足
+\begin{equation}
+T = \frac{2\pi}{\omega_{0}-\omega_{\mathrm{m}}} = \frac{T_{0}T_{\mathrm{m}}}{T_{\mathrm{m}}-T_{0}} = \frac{T_{0}}{1-n^{-3/2}} \approx 779\mathrm{d}
+\label{eq:11.s53}
+\end{equation}
+火星顺行的时间为
+\begin{equation}
+t_{\text{顺}} = (779 - 73)\mathrm{d} = 706\mathrm{d}
+\label{eq:12.s53}
+\end{equation}
+
+\textbf{解法二}
+
+当火星相对于地球的速度
+\begin{equation}
+\pmb{v}_{\mathrm{m}}^{\prime} = \pmb{v}_{\mathrm{m}} - \pmb{v}_{\mathrm{E}}
+\label{eq:13.s53}
+\end{equation}
+的方向与地球、火星的连心线 EM 平行
+\begin{equation}
+v_{\mathrm{m}}^{\prime} \parallel \overline{\mathrm{EM}}
+\label{eq:14.s53}
+\end{equation}
+时（即火星在相对于地球的切向速度为零时）的位置为留。留的位置如图所示。此时地球和火星相对于日心的位置矢量的大小满足
+\begin{equation}
+\frac{R_{\mathrm{m}}}{\sin(\theta+\varphi)} = \frac{R_{0}}{\sin\varphi}
+\label{eq:15.s53}
+\end{equation}
+速度大小 $v_{\mathrm{m}}$ 和 $v_{\mathrm{E}}$ 满足
+\begin{equation}
+\frac{v_{\mathrm{m}}}{\sin(\frac{\pi}{2}-\theta-\varphi)} = \frac{v_{0}}{\sin(\frac{\pi}{2}+\varphi)}
+\label{eq:16.s53}
+\end{equation}
+根据开普勒第三定律，有
+\begin{equation}
+\omega_{\mathrm{m}}^{2}R_{\mathrm{m}}^{3} = \omega_{0}^{2}R_{0}^{3}
+\label{eq:17.s53}
+\end{equation}
+由\eqref{eq:13.s53}-\eqref{eq:17.s53}式得
+\begin{equation}
+\cos\theta = \frac{n+n^{1/2}}{n^{3/2}+1}
+\label{eq:18.s53}
+\end{equation}
+式中 $n = \frac{R_{\mathrm{m}}}{R_0}$。代入数据 $n = 1.524$，$T_{0} = 365\mathrm{d}$，得
+\begin{equation}
+\theta = \pm 16.79^{\circ}
+\label{eq:19.s53}
+\end{equation}
+火星在经历相邻两次冲日的时间间隔内，仅当
+\begin{equation}
+\theta \in (-16.79^{\circ}, 16.79^{\circ})
+\label{eq:20.s53}
+\end{equation}
+时，火星的视运动为逆行。
+
+火星经历相邻两次冲日的时间 T 满足
+\begin{equation}
+T = \frac{2\pi}{\omega_{0}-\omega_{\mathrm{m}}} = \frac{T_{0}T_{\mathrm{m}}}{T_{\mathrm{m}}-T_{0}} = \frac{T_{0}}{1-n^{-3/2}} \approx 779\mathrm{d}
+\label{eq:21.s53}
+\end{equation}
+式中已利用 $T_{0}=365d$。在经历相邻两次冲日的过程中，火星视运动逆行的总时间为
+\begin{equation}
+t_{\text{逆}} = \frac{2 \times 16.79^{\circ}}{360^{\circ}} T = 0.09328 T = 73\mathrm{d}
+\label{eq:22.s53}
+\end{equation}
+火星顺行的时间为
+\begin{equation}
+t_{\text{顺}} = T - T_{\text{逆}} = (779 - 73)\mathrm{d} = 706\mathrm{d}
+\label{eq:23.s53}
+\end{equation}
+\end{solution}

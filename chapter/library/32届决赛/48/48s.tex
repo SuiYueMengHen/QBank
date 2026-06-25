@@ -1,0 +1,107 @@
+\begin{solution}{48}
+\begin{subsolution}
+沿竖直方向建立如图所示的坐标轴 $ox$（原点 $o$ 在天花板下沿，方向竖直向下）。记弹簧A、B和C的原长分别为 $l_{1}$、$l_{2}$ 和 $l_{3}$，不妨设 $l_{2} > l_{1}$。设系统处于平衡位置时，弹簧A、B和C相对于各自原长的伸长分别为 $\Delta x_{1}$、$\Delta x_{2}$ 和 $\Delta x_{3}$；此时物块D处于平衡状态，有
+\begin{equation}
+mg = k_{3}\Delta x_{3}
+\label{eq:1.s48}
+\end{equation}
+即
+\begin{equation}
+\Delta x_{3} = \frac{mg}{k_{3}}
+\label{eq:2.s48}
+\end{equation}
+设此时弹簧 A 和 B 的末端对轻杆的拉力分别为 $F_{1}$ 和 $F_{2}$。以弹簧 C 与轻杆的连接点为支点，由力矩平衡有
+\begin{equation}
+F_{1}a = F_{2}b
+\label{eq:3.s48}
+\end{equation}
+竖直方向轻杆所受合力为零，有
+\begin{equation}
+F_{1} + F_{2} - mg = 0
+\label{eq:4.s48}
+\end{equation}
+由胡克定律有
+\begin{equation}
+\begin{array}{l}
+F_{1} = k_{1}\Delta x_{1} \\
+F_{2} = k_{2}\Delta x_{2}
+\end{array}
+\label{eq:5.s48}
+\end{equation}
+由\eqref{eq:3.s48}-\eqref{eq:5.s48}式得
+\begin{equation}
+\Delta x_{1} = \frac{mgb}{(a+b)k_{1}}
+\label{eq:6.s48}
+\end{equation}
+\begin{equation}
+\Delta x_{2} = \frac{mga}{(a+b)k_{2}}
+\label{eq:7.s48}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+挂上物块 D 前，系统平衡时弹簧 C 的末端 E 点的坐标 $x_{E}$ 为
+\begin{equation}
+x_{E} = l_{1} + l_{3} + \frac{a(l_{2} - l_{1})}{a+b}
+\label{eq:8.s48}
+\end{equation}
+挂上物块 D 后，系统重新处于平衡位置时，弹簧 C 的末端从 E 点移动到 $E'$ 点。$E'$ 点的坐标 $x_{E'}$ 为
+\begin{equation}
+x_{E^{\prime}} = l_{1} + \Delta x_{1} + l_{3} + \Delta x_{3} + \frac{a(l_{2} - l_{1} + \Delta x_{2} - \Delta x_{1})}{a+b}
+\label{eq:9.s48}
+\end{equation}
+将系统视为一等效弹簧，则系统处于静平衡时等效弹簧伸长为
+\begin{equation}
+\Delta x_{E} = x_{E^{\prime}} - x_{E} = \Delta x_{1} + \Delta x_{3} + \frac{a(\Delta x_{2} - \Delta x_{1})}{a+b}
+\label{eq:10.s48}
+\end{equation}
+将\eqref{eq:2.s48}\eqref{eq:6.s48}\eqref{eq:7.s48}式代入\eqref{eq:10.s48}式，得系统处于静平衡时等效弹簧的伸长为
+\begin{equation}
+\Delta x_{E} = \frac{mg(a^{2}k_{1} + b^{2}k_{2})}{(a+b)^{2}k_{1}k_{2}} + \frac{mg}{k_{3}}
+\label{eq:11.s48}
+\end{equation}
+因此，等效弹簧的等效劲度系数为
+\begin{equation}
+k_{\mathrm{e}} = \frac{mg}{\Delta x_{E}} = \frac{(a+b)^{2}k_{1}k_{2}k_{3}}{a^{2}k_{1}k_{3} + b^{2}k_{2}k_{3} + (a+b)^{2}k_{1}k_{2}}
+\label{eq:12.s48}
+\end{equation}
+物块 D 上下微小振动的固有频率为
+\begin{equation}
+\omega_{\mathrm{e}} = \sqrt{\frac{k_{\mathrm{e}}}{m}} = \sqrt{\frac{(a+b)^{2}k_{1}k_{2}k_{3}}{m\left[a^{2}k_{1}k_{3} + b^{2}k_{2}k_{3} + (a+b)^{2}k_{1}k_{2}\right]}}
+\label{eq:13.s48}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+物块 D 的最大固有频率满足
+\begin{equation}
+\frac{d\omega_{\mathrm{e}}}{da} = 0
+\label{eq:14.s48}
+\end{equation}
+将\eqref{eq:13.s48}式代入\eqref{eq:14.s48}式有
+\begin{equation}
+a = \frac{k_{2}}{k_{1}}b
+\label{eq:15.s48}
+\end{equation}
+此时
+\begin{equation}
+\frac{d^{2}\omega_{\mathrm{e}}}{da^{2}} = -\frac{k_{1}^{3}}{k_{2}b^{2}\sqrt{m}}\left(\frac{k_{3}}{(k_{1}+k_{2})(k_{1}+k_{2}+k_{3})}\right)^{3/2} < 0
+\label{eq:16.s48}
+\end{equation}
+因此，\eqref{eq:15.s48}式为物块 D 固有频率取最大值的条件；其最大固有频率的值为
+\begin{equation}
+\omega_{\mathrm{e}} = \sqrt{\frac{(k_{1}+k_{2})k_{3}}{(k_{1}+k_{2}+k_{3})m}}
+\label{eq:17.s48}
+\end{equation}
+\end{subsolution}
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+

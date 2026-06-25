@@ -1,0 +1,128 @@
+\begin{solution}{69}
+    \begin{subsolution}
+        对于每个喷气细孔，已知内、外压强分别为 $P$ 、$P_{\mathrm{low}}$ ，细孔内部气体流速为零，内外高度差可忽略。设细孔外部稳定流速设为 $v$，对细孔内外对应流管应用伯努利方程可得
+        \begin{equation}
+            P = P_{\mathrm{low}} + \frac{1}{2}\rho v^{2} \label{eq:1.p69}
+        \end{equation}
+        对于单个细孔，由喷射气体造成的垂直于细孔横截面（即沿径向）的有效推力大小为
+        \begin{equation}
+            f = -\frac{\mathrm{d}m}{\mathrm{d}t} v = \rho s v^{2} = 2(P - P_{\mathrm{low}}) s \label{eq:2.p69}
+        \end{equation}
+        对运输车，细孔提供的净有效压强为
+        \begin{equation*}
+            P_{\mathrm{eff}} = \frac{f}{s} = 2(P - P_{\mathrm{low}})
+        \end{equation*}
+        运输车在竖直方向上受重力和净有效压力作用。以横截面中心为原点，竖直向下为极轴方向建立极坐标，记极角为 $\theta$ 。因细孔面积很小，故可采用分离变量连续化的方法。此外，按题设，除细孔外其他车厢表面均受环境压强 $P_{\mathrm{low}}$ ，则极角为 $\theta$ 到 $\theta + \mathrm{d}\theta$ 之间的运输车窄条提供的竖直向上的力为
+        \begin{equation*}
+            \mathrm{d}N = P_{\mathrm{eff}} n s l R \mathrm{d}\theta \cos\theta
+        \end{equation*}
+        从 $\theta = -\frac{\pi}{2}$ 到 $\theta = \frac{\pi}{2}$ 之间细孔提供的总的向上的力为
+        \begin{equation}
+            N = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} P_{\mathrm{eff}} n s l R \mathrm{d}\theta \cos\theta = 2 n s l R P_{\mathrm{eff}} = 4 n s l R (P - P_{\mathrm{low}}) \label{eq:3.p69}
+        \end{equation}
+        为将运输车刚好托离管壁，在竖直方向上力的平衡给出
+        \begin{equation}
+            4 n s l R (P - P_{\mathrm{low}}) = M g \label{eq:4.p69}
+        \end{equation}
+        由此得
+        \begin{equation}
+            P = \frac{M g}{4 n s l R} + P_{\mathrm{low}} \label{eq:5.p69}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设长度为 $D$ 的导轨的电阻为 $R_{1}$ ，运输车上每根导线电阻为 $R_{2}=2R_{1}$ ，则有
+        \begin{equation}
+            R_{1} = \rho_{d} \frac{D}{\pi r_{d}^{2}} \label{eq:6.p69}
+        \end{equation}
+        以导线 1 进入磁场的时刻为计时零点。设在导线 2 未进入磁场的某时刻 $t$，导线速度为 $v(t)$ ，切割磁力线产生的感应电动势 $E$ 为
+        \begin{equation}
+            E = B \cdot 2D \cdot v(t) \label{eq:7.p69}
+        \end{equation}
+        设 $I$ 是通过导线 1、2 和导轨构成的回路中的电流，由欧姆定律有
+        \begin{equation}
+            E = I (2R_{2} + 2R_{1}) \label{eq:8.p69}
+        \end{equation}
+        导线 1 中的电流在磁场中受力应与回路运动方向相反。由牛顿定律有
+        \begin{equation}
+            -M \dot{v}(t) = I \cdot 2D \cdot B \label{eq:9.p69}
+        \end{equation}
+        联立 \eqref{eq:6.p69}-\eqref{eq:9.p69} 式求解，并利用初始条件 $v(t=0)=v_{0}$ 得
+        \begin{equation}
+            v(t) = v_{0} \exp\left( -\frac{2B^{2} D^{2}}{3M R_{1}} t \right) \label{eq:10.p69}
+        \end{equation}
+        设导线2到达磁场边界的时刻为 $t_{1}$ ，应有
+        \begin{equation}
+            \int_{0}^{t_{1}} v(t) \mathrm{d}t = \int_{0}^{t_{1}} v_{0} \exp\left( -\frac{2B^{2} D^{2}}{3M R_{1}} t \right) \mathrm{d}t = D \label{eq:11.p69}
+        \end{equation}
+        由 \eqref{eq:11.p69} 式可得 $t_{1}$ ，由 \eqref{eq:10.p69} 式可求得对应的速度 $v_{1}$ ，此即导线2进入磁场后的滑行速度
+        \begin{equation}
+            t_{1} = -\frac{3M R_{1}}{2B^{2} D^{2}} \ln\left( 1 - \frac{2B^{2} D^{3}}{3M R_{1} v_{0}} \right), \quad v_{1} = v(t=t_{1}) = v_{0} - \frac{2\pi B^{2} D^{2} r_{d}^{2}}{3M \rho_{d}} \label{eq:12.p69}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        将滑轨上的电流记为 $I_{1}$ 和 $I_{2}$ 。由导线左右两侧的对称性可知两侧对应导轨段上的电流大小相同。对电源、导轨和导线 1 构成的回路，以及电源、导轨与导线 2 构成的回路根据欧姆定律有
+        \begin{equation}
+            \begin{cases}
+                (I_{2} - I_{1}) R_{2} + I_{2} (2R_{1}) = \mathcal{E}, \\
+                I_{1} (R_{2} + 2R_{1}) + I_{2} (2R_{1}) = \mathcal{E}.
+            \end{cases} \label{eq:13.p69}
+        \end{equation}
+        联立 \eqref{eq:6.p69}、\eqref{eq:13.p69} 式解得
+        \begin{equation}
+            I_{1} = \frac{1}{10} \frac{\mathcal{E}}{R_{1}}, \quad I_{2} = \frac{3}{10} \frac{\mathcal{E}}{R_{1}} \label{eq:14.p69}
+        \end{equation}
+        当导轨和电源线上通有电流时，就会在导线位置产生垂直于导轨-导线平面的磁场，而通电导线在这个磁场中会受到安培力的作用。为求安培力的大小，我们首先计算导轨和电源线在导线位置产生的磁场。由题给
+        \begin{equation*}
+            B = \frac{\mu_{0} I}{4\pi r_{0}} (\cos\theta_{1} + \cos\theta_{2})
+        \end{equation*}
+        由几何关系，一段导轨和紧邻、次紧邻的一段导线之间夹角分别满足
+        \begin{align*}
+            \text{紧邻：} &\theta_{1} = \frac{\pi}{2},\quad |\cos\theta_{2}| = \frac{D}{\sqrt{r_{0}^{2} + D^{2}}} \\
+            \text{次紧邻：} &|\cos\theta_{1}| = \frac{D}{\sqrt{r_{0}^{2} + D^{2}}},\quad |\cos\theta_{2}| = \frac{2D}{\sqrt{r_{0}^{2} + 4D^{2}}}
+        \end{align*}
+        因此，一段导轨在紧邻和次紧邻导线位置产生的磁感应强度大小分别为
+        \begin{align}
+            \text{紧邻：} &\ |B_{n}| = \frac{\mu_{0}}{4\pi} \frac{I}{r_{0}} \frac{D}{\sqrt{r_{0}^{2} + D^{2}}} \nonumber \\
+            \text{次紧邻：} &\ |B_{nn}| = \frac{\mu_{0}}{4\pi} \frac{I}{r_{0}} \left( \frac{2D}{\sqrt{r_{0}^{2} + 4D^{2}}} - \frac{D}{\sqrt{r_{0}^{2} + D^{2}}} \right) \label{eq:15.p69}
+        \end{align}
+        由安培力公式，紧邻、次紧邻的导轨产生的磁场对电流为 $I_{c}$ 的导线的安培力为沿导轨方向，大小为
+        \begin{align}
+            \text{紧邻：} &\ F = \int_{r_{d}}^{2D+r_{d}} |B_{n}| I_{c} \mathrm{d}r_{0} = \int_{r_{d}}^{2D+r_{d}} \frac{\mu_{0}}{4\pi} \frac{I \cdot I_{c}}{r_{0}} \frac{D}{\sqrt{r_{0}^{2} + D^{2}}} \mathrm{d}r_{0} = \frac{\mu_{0} I \cdot I_{c}}{4\pi} \Pi_{n}, \nonumber \\
+            \text{次紧邻：} &\ F = \int_{r_{d}}^{2D+r_{d}} |B_{nn}| I_{c} \mathrm{d}r_{0} = \int_{r_{d}}^{2D+r_{d}} \frac{\mu_{0}}{4\pi} \frac{I \cdot I_{c}}{r_{0}} \left( \frac{2D}{\sqrt{r_{0}^{2} + 4D^{2}}} - \frac{D}{\sqrt{r_{0}^{2} + D^{2}}} \right) \mathrm{d}r_{0} \nonumber \\
+            &\ = \frac{\mu_{0} I \cdot I_{c}}{4\pi} (\Pi_{nn} - \Pi_{n}) \label{eq:16.p69}
+        \end{align}
+        其中在积分中使用了题给公式有
+        \begin{align}
+            \Pi_{n} &= \ln\left( \frac{2D + r_{d}}{r_{d}} \frac{D + \sqrt{D^{2} + r_{d}^{2}}}{D + \sqrt{D^{2} + (2D + r_{d})^{2}}} \right), \nonumber \\
+            \Pi_{nn} &= \ln\left( \frac{2D + r_{d}}{r_{d}} \frac{2D + \sqrt{4D^{2} + r_{d}^{2}}}{2D + \sqrt{4D^{2} + (2D + r_{d})^{2}}} \right)
+        \end{align}
+        对导线 1，其上电流为 $I_{1}$ ，同侧与之紧邻的一段导轨上的电流为 $I_{1}$ ，与之次紧邻的一段导轨上的电流为 $I_{2}$ ；对导线 2，其上电流为 $I_{2}-I_{1}$ ，同侧与之紧邻的两段导轨上的电流为 $I_{1}$ 和 $I_{2}$ 。由题意知，电动势 $\mathcal{E}$ 上端为正，两侧导轨对导线 1 和 2 所施加的安培力均为向左。可得导线 1 和 2 受到导轨的总安培力 $F_{1G}$ 和 $F_{2G}$ 大小分别为：
+        \begin{align}
+            |F_{1G}| &= \frac{\mu_{0} I_{1}}{2\pi} \left[ I_{1} \Pi_{n} + I_{2} (\Pi_{nn} - \Pi_{n}) \right], \nonumber \\
+            |F_{2G}| &= \frac{\mu_{0} (I_{2} - I_{1})}{2\pi} (I_{2} + I_{1}) \Pi_{n} \label{eq:17.p69}
+        \end{align}
+        其次，电源所接导线在导线 1 上 $x$ 点和导线 2 上 $x'$ 点产生的垂直于导线的磁感应强度 $B_{1}$ 和 $B_{2}$ 大小为
+        \begin{align}
+            |B_{1}| &= \frac{\mu_{0}}{4\pi} \frac{I_{2}}{2D} \left( \frac{2D - x}{\sqrt{(2D - x)^{2} + (2D)^{2}}} + \frac{x}{\sqrt{x^{2} + (2D)^{2}}} \right), \nonumber \\
+            |B_{2}| &= \frac{\mu_{0}}{4\pi} \frac{I_{2}}{D} \left( \frac{2D - x'}{\sqrt{(2D - x')^{2} + D^{2}}} + \frac{x'}{\sqrt{x'^{2} + D^{2}}} \right) \label{eq:18.p69}
+        \end{align}
+        由左手定则可知，电源所接导线对固定在运输车上的导线1和导线2的安培力 $F_{1\varepsilon}$ 和 $F_{2\varepsilon}$ 方向向左；由安培力公式得，$F_{1\varepsilon}$ 和 $F_{2\varepsilon}$ 的大小为
+        \begin{align}
+            |F_{1\varepsilon}| &= \int_{0}^{2D} I_{1} \cdot |B_{1}(x)| \mathrm{d}x = \frac{1}{2\pi} \mu_{0} I_{1} I_{2} (\sqrt{2} - 1), \nonumber \\
+            |F_{2\varepsilon}| &= \int_{0}^{2D} (I_{2} - I_{1}) \cdot |B_{2}(x)| \mathrm{d}x = \frac{1}{2\pi} \mu_{0} (I_{2} - I_{1}) I_{2} (\sqrt{5} - 1) \label{eq:19.p69}
+        \end{align}
+        导线产生的磁场对彼此之间的力属于系统内力，不会引起整体加速度，可不予考虑。
+
+        由 \eqref{eq:17.p69}、\eqref{eq:19.p69} 式可求得导线1和2所受总安培力 $F_{\mathrm{total}}$ 
+        \begin{align}
+            F_{\mathrm{total}} &= |F_{1G}| + |F_{2G}| + |F_{1\varepsilon}| + |F_{2\varepsilon}| \nonumber \\
+            &= \frac{3\mu_{0} \mathcal{E}^{2}}{200\pi R_{1}^{2} D} \left( 2\Pi_{n} + \Pi_{nn} + \sqrt{2} + 2\sqrt{5} - 3 \right)
+        \end{align}
+        由牛顿第二定律得，总安培力 $F_{\mathrm{total}}$ 为运输车提供的加速度大小为
+        \begin{align}
+            a &= \frac{F_{\mathrm{total}}}{M} \nonumber \\
+            &= \frac{3\pi \mu_{0} r_{d}^{4} \mathcal{E}^{2}}{200(\rho_{d} D)^{2} M} \Bigg[ \sqrt{2} + 2\sqrt{5} - 3 \nonumber \\
+            &\quad + \ln\left( \frac{(2D + r_{d})^{3}}{r_{d}^{3}} \frac{(D + \sqrt{D^{2} + r_{d}^{2}})^{2}}{(D + \sqrt{D^{2} + (2D + r_{d})^{2}})^{2}} \frac{2D + \sqrt{4D^{2} + r_{d}^{2}}}{2D + \sqrt{4D^{2} + (2D + r_{d})^{2}}} \right) \Bigg] \label{eq:20.p69}
+        \end{align}
+    \end{subsolution}
+\end{solution}

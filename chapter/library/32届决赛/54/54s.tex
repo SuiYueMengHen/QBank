@@ -1,0 +1,131 @@
+\begin{solution}{54}
+\begin{subsolution}
+在离子源区，离子做初速度为零的匀加速直线运动，加速度大小为
+\begin{equation}
+a_{0} = \frac{qE_{s}}{m}
+\label{eq:1.s54}
+\end{equation}
+离子在离子源区的飞行时间为
+\begin{equation}
+t_{s} = \sqrt{\frac{2S}{a_{1}}} = \sqrt{\frac{2mS}{qE_{s}}}
+\label{eq:2.s54}
+\end{equation}
+在漂移区，离子做匀速直线运动，末速度大小为
+\begin{equation}
+v_{0} = a_{0}t_{s} = \sqrt{\frac{2qE_{s}S}{m}}
+\label{eq:3.s54}
+\end{equation}
+离子在漂移区的飞行时间为
+\begin{equation}
+t_{L} = \frac{L}{v_{0}} = L\sqrt{\frac{m}{2qE_{s}S}}
+\label{eq:4.s54}
+\end{equation}
+离子总飞行时间为
+\begin{equation}
+t = t_{s} + t_{L} = \sqrt{\frac{m}{q}}\left(\sqrt{\frac{2S}{E_{s}}} + \frac{L}{\sqrt{2E_{s}S}}\right)
+\label{eq:5.s54}
+\end{equation}
+\eqref{eq:5.s54}式可写成
+\begin{equation}
+\frac{m}{q} = \frac{t^{2}}{k_{0}^{2}}
+\label{eq:6.s54}
+\end{equation}
+其中 $k_{0} = \sqrt{\frac{2S}{E_{s}}} +\frac{L}{\sqrt{2E_{s}S}}$，所以质荷比 $m/q$ 不同的离子的总飞行时间 $t$ 不同。对\eqref{eq:6.s54}式两边微分
+\begin{equation}
+\frac{1}{q}dm = \frac{2t}{k_{0}^{2}}dt \quad \text{或} \quad dm = \frac{2qt}{k_{0}^{2}}dt
+\label{eq:7.s54}
+\end{equation}
+于是
+\begin{equation}
+\frac{dm}{m} = \frac{2qt}{k_{0}^{2}}dt \frac{k_{0}^{2}}{qt^{2}} = \frac{2dt}{t},
+\label{eq:8.s54}
+\end{equation}
+探测器此时分辨率 $R$ 与 $t$ 和 $\Delta t$ 之间的关系为
+\begin{equation}
+R = \frac{m}{\Delta m} = \frac{t}{2\Delta t}
+\label{eq:9.s54}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+离子在离子源区的飞行时间 $t_{s}$ 仍如\eqref{eq:2.s54}式所示。在第二加速区，离子做初速度为 $v_{0}$ 的匀加速直线运动，加速度大小为
+\begin{equation}
+a_{1} = \frac{qE_{1}}{m}
+\label{eq:10.s54}
+\end{equation}
+设离子在第二加速区的飞行时间为 $t_{d1}$，由运动学公式得
+\begin{equation}
+(v_{0} + a_{1}t_{d1})^{2} - v_{0}^{2} = 2a_{1}D_{1}
+\label{eq:11.s54}
+\end{equation}
+解得
+\begin{equation}
+t_{d1} = \sqrt{\frac{2m}{q}}\frac{1}{E_{1}}\left(\sqrt{E_{s}S+E_{1}D_{1}} - \sqrt{E_{s}S}\right)
+\label{eq:12.s54}
+\end{equation}
+同理可得离子在漂移区的飞行时间 $t_{L}$
+\begin{equation}
+t_{L} = \sqrt{\frac{2m}{q}}\frac{L}{2}\frac{1}{\sqrt{E_{s}S+E_{1}D_{1}}}
+\label{eq:13.s54}
+\end{equation}
+离子到达探测器的总时间为
+\begin{equation}
+t = t_{s} + t_{d1} + t_{L}
+\label{eq:14.s54}
+\end{equation}
+将上式两边对 S 微商得
+\begin{equation}
+\frac{dt}{dS} = \sqrt{\frac{2m}{q}}\frac{1}{2}\left(\frac{1}{\sqrt{E_{s}S}} + \frac{E_{s}}{E_{1}\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{E_{s}}{E_{1}\sqrt{E_{s}S}} - \frac{L}{2}\frac{E_{s}}{\sqrt{(E_{s}S+E_{1}D_{1})^{3}}}\right)
+\label{eq:15.s54}
+\end{equation}
+要使 $dt$ 受 $dS$ 的影响最小，则要求 $\frac{dt}{dS} = 0$，即
+\begin{equation}
+\frac{1}{\sqrt{E_{s}S}} + \frac{E_{s}}{E_{1}\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{E_{s}}{E_{1}\sqrt{E_{s}S}} - \frac{L}{2}\frac{E_{s}}{\sqrt{(E_{s}S+E_{1}D_{1})^{3}}} = 0
+\label{eq:16.s54}
+\end{equation}
+由\eqref{eq:16.s54}式得
+\begin{equation}
+\begin{array}{rl}
+L &= 2\sqrt{(E_{s}S+E_{1}D_{1})^{3}}\left(\frac{1}{E_{s}\sqrt{E_{s}S}} + \frac{1}{E_{1}\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{1}{E_{1}\sqrt{E_{s}S}}\right) \\
+&= 2\left(\sqrt{k^{3}} - k(\sqrt{k}-1)\frac{E_{s}}{E_{1}}\right)S
+\end{array}
+\label{eq:17.s54}
+\end{equation}
+式中 $k=\frac{E_{s}S+E_{1}D_{1}}{E_{s}S}$。
+\end{subsolution}
+\begin{subsolution}
+离子到达探测器的总时间为
+\begin{equation}
+t = t_{\mathrm{s}} + t_{\mathrm{d}1} + 2t_{\mathrm{L}} + 2t_{\mathrm{d}2} + 2t_{\mathrm{d}3}
+\label{eq:18.s54}
+\end{equation}
+式中，$t_{s}$、$t_{d1}$ 和 $t_{L}$ 是离子在离子源区、第二加速区和漂移区的单程飞行时间，其结果仍分别如\eqref{eq:2.s54}、\eqref{eq:12.s54}和\eqref{eq:13.s54}式所示，而 $t_{d2}$ 和 $t_{d3}$ 分别是离子在反射区的两级电场区域的单程飞行时间，因子2是考虑到离子往返飞行过程的对称性的缘故。按照前述同样的考虑，有
+\begin{equation}
+t_{d2} = \sqrt{\frac{2m}{q}}\frac{1}{E_{2}}\left(\sqrt{E_{s}S+E_{1}D_{1}} - \sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}\right)
+\label{eq:19.s54}
+\end{equation}
+\begin{equation}
+t_{d3} = \sqrt{\frac{2m}{q}}\frac{1}{E_{3}}\sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}
+\label{eq:20.s54}
+\end{equation}
+将\eqref{eq:18.s54}式两边对 S 微商，并利用\eqref{eq:2.s54}\eqref{eq:12.s54}\eqref{eq:13.s54}\eqref{eq:19.s54}\eqref{eq:20.s54}式，得
+\begin{equation}
+\begin{array}{rl}
+\frac{dt}{dS} = \sqrt{\frac{2m}{q}}\frac{1}{2} & \left[ \frac{1}{\sqrt{E_{s}S}} + \frac{1}{E_{1}}\left(\frac{E_{s}}{\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{E_{s}}{\sqrt{E_{s}S}}\right) - L\frac{E_{s}}{\sqrt{(E_{s}S+E_{1}D_{1})^{3}}} \right. \\
+& \left. + \frac{2}{E_{2}}\left(\frac{E_{s}}{\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{E_{s}}{\sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}}\right) \right. \\
+& \left. + \frac{2}{E_{3}}\frac{E_{s}}{\sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}} \right]
+\end{array}
+\label{eq:21.s54}
+\end{equation}
+同样要求 $dt/dS = 0$，得
+\begin{equation}
+\begin{array}{rl}
+L = \sqrt{(E_{s}S+E_{1}D_{1})^{3}} & \left[ \frac{1}{E_{s}\sqrt{E_{s}S}} + \frac{1}{E_{1}}\left(\frac{1}{\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{1}{\sqrt{E_{s}S}}\right) \right. \\
+& \left. + \frac{2}{E_{2}}\left(\frac{1}{\sqrt{E_{s}S+E_{1}D_{1}}} - \frac{1}{\sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}}\right) \right. \\
+& \left. + \frac{2}{E_{3}}\frac{1}{\sqrt{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}} \right] \\
+= (E_{s}S+E_{1}D_{1}) & \left(\frac{\sqrt{k}}{E_{s}} + \frac{1-\sqrt{k}}{E_{1}} + \frac{2(1-\sqrt{k^{\prime}})}{E_{2}} + \frac{2\sqrt{k^{\prime}}}{E_{3}}\right)
+\end{array}
+\label{eq:22.s54}
+\end{equation}
+式中，$k'=\frac{E_{s}S+E_{1}D_{1}}{E_{s}S+E_{1}D_{1}-E_{2}D_{2}}$。
+\end{subsolution}
+\end{solution}

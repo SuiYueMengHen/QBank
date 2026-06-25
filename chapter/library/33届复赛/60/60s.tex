@@ -1,0 +1,97 @@
+\begin{solution}{60}
+    \begin{subsolution}
+        如图 a 所示，由几何关系知，传感器轴向和细绳的横截面之间的夹角也是 $\theta$ 。传感器两电极之间的长度（原长）为
+        \begin{equation}
+            L _ {1} = N \frac {2 r _ {1}}{\cos \theta}
+            \label{eq:1.s60}
+        \end{equation}
+        每圈绳可看作长半轴为 $r_{2}^{\prime}/\cos\theta$ 、短半轴为 $r_{2}^{\prime}$ 的椭圆环，其周长为
+        \begin{equation}
+            l = \pi \left(3 \frac {\frac {r _ {2}^{\prime}}{\cos \theta} + r _ {2}^{\prime}}{2} - \sqrt {\frac {r _ {2}^{\prime 2}}{\cos \theta}}\right) = \frac {\pi r _ {2}^{\prime}}{2} \left(\frac {3}{\cos \theta} - \frac {2}{\sqrt {\cos \theta}} + 3\right)
+            \label{eq:2.s60}
+        \end{equation}
+        式中 $r_2' = t + r_1 + r_2 \approx r_2$ 。拉伸后，传感器的伸长率为 $\varepsilon$ ，产生了 $n$ 个缝隙，设每个缝隙宽 $L$ ，传感器的长度变为
+        \begin{equation}
+            L _ {2} = L _ {1} (1 + \varepsilon) = L _ {1} + n \left(L - \frac {2 r _ {1}}{\cos \theta}\right) = (N - n) \frac {2 r _ {1}}{\cos \theta} + n L
+            \label{eq:3.s60}
+        \end{equation}
+        式中
+        \begin{equation}
+            L = l - 2 \pi r _ {2} + 2 r _ {1} = \frac {\pi r _ {2}}{2} \left(\frac {3}{\cos \theta} - \frac {2}{\sqrt {\cos \theta}} - 1\right) + 2 r _ {1}
+            \label{eq:4.s60}
+        \end{equation}
+        由\eqref{eq:1.s60}\eqref{eq:2.s60}\eqref{eq:3.s60}\eqref{eq:4.s60}式得
+        \begin{equation}
+            \begin{array}{l}
+                \varepsilon = \frac {n (L - \frac {2 r _ {1}}{\cos \theta})}{L _ {1}} = \frac {\pi r _ {2} (3 - 2 \sqrt {\cos \theta} - \cos \theta) + 4 r _ {1} (\cos \theta - 1)}{4 r _ {1}} \frac {n}{N} \\
+                \approx \frac {\pi r _ {2} (3 - 2 \sqrt {\cos \theta} - \cos \theta)}{4 r _ {1}} \frac {n}{N}
+            \end{array}
+            \label{eq:5.s60}
+        \end{equation}
+        式中最后一步是因为考虑到 $r_1 \ll r_2$ 的缘故。
+
+        由电阻定律并利用\eqref{eq:2.s60}式得，每圈椭圆环形细绳沿着塑料棒轴向的电阻为
+        \begin{equation}
+            R _ {1} = \frac {1}{2} \rho \frac {\pi r _ {1}}{l t} = \frac {\rho r _ {1} \cos \theta}{(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) r _ {2} t}
+            \label{eq:6.s60}
+        \end{equation}
+        式中因子 1/2 是由于细绳内、外半圈的电阻并联的缘故。未拉伸时传感器的电阻为
+        \begin{equation}
+            R _ {0} = N R _ {1} + (N - 1) R _ {c} \approx N (R _ {1} + R _ {c}), N >> 1
+            \label{eq:7.s60}
+        \end{equation}
+        拉伸后，产生缝隙地方的电阻将由原来的接触电阻 $2R_{c}$ 和 $R_{1}$ 之和变为 $R_{2}$ （ $R_{2}$ 为细绳单独绕圆柱形塑料棒一圈的电阻）
+        \begin{equation}
+            R _ {2} = \rho \frac {l}{2 \pi r _ {1} t} = \rho \frac {\frac {\pi r _ {2}}{2} \left(\frac {3}{\cos \theta} - \frac {2}{\sqrt {\cos \theta}} + 3\right)}{2 \pi r _ {1} t} = \frac {(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) \rho r _ {2}}{4 r _ {1} t \cos \theta}
+            \label{eq:8.s60}
+        \end{equation}
+        传感器在其伸长率为 $\varepsilon$ 时的电阻变为
+        \begin{equation}
+            R _ {3} = R _ {0} - n (2 R _ {c} + R _ {1}) + n R _ {2}
+            \label{eq:9.s60}
+        \end{equation}
+        由\eqref{eq:6.s60}\eqref{eq:7.s60}\eqref{eq:8.s60}\eqref{eq:9.s60}式得，传感器在其伸长率为 $\varepsilon$ 时的电阻变化率为
+        \begin{equation}
+            \begin{array}{l}
+                \frac {\Delta R}{R _ {0}} = \frac {R _ {3} - R _ {0}}{R _ {0}} = \frac {\frac {(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) \rho r _ {2}}{4 r _ {1} t \cos \theta} - 2 R _ {c} - \frac {\rho r _ {1} \cos \theta}{(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) r _ {2} t}}{\frac {\rho r _ {1} \cos \theta}{(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) r _ {2} t} + R _ {c}} \frac {n}{N} \\
+                = \frac {\frac {(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta)^{2} \rho r _ {2}^{2}}{4 r _ {1} \cos \theta} - 2 (3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) r _ {2} t R _ {c} - \rho r _ {1} \cos \theta}{\rho r _ {1} \cos \theta + (3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) r _ {2} t R _ {c}} \frac {n}{N} \\
+                = \left[ \frac {(3 - 2 \sqrt {\cos \theta} + 3 \cos \theta)^{2} \rho r _ {2}^{2} + 4 \rho r _ {1}^{2} \cos^{2} \theta}{4 \rho r _ {1}^{2} \cos^{2} \theta + 4 \cos \theta (3 - 2 \sqrt {\cos \theta} + 3 \cos \theta) t r _ {1} r _ {2} R _ {c}} - 2 \right] \frac {n}{N}
+            \end{array}
+            \label{eq:10.s60}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在未拉伸时电流沿着塑料棒轴向，根据毕奥-萨伐尔定律，此时不会产生沿塑料棒轴向的磁场，P点处沿塑料棒轴向的磁感应强度为零。
+
+        同理，只有拉伸后每个缝隙处的细圆环绳中的电流才会产生沿塑料棒轴向的磁场。现仅考虑一圈中心与 P 点的距离为 $r_{z}$ 的细圆环绳产生的磁场。如右图所示，在圆环上任一直径 AA' 一端各取电流元 Idl 和 -Idl，它在 P 点产生的磁场 dB 和 $dB'$ ，dB 和 $dB'$ 的垂直于轴线的分量相互抵消，它们的合磁感应强度沿塑料棒轴向，其大小为 $2dB\cos\alpha$ （ $\alpha$ 是 AP 与 AA' 的夹角）。将整个圆环电流类似地按各直径两端分割成一个个电流元，P 点沿塑料棒轴向的总磁场即为各元电流在该点产生的磁场的轴向分量 $dB\cos\alpha$ 之和。注意到 Idl 可以写为 $Ir_{2}d\beta$ （ $d\beta$ 是弧元 dl 所对的圆心角），由毕奥-萨伐尔定律有
+        \begin{equation}
+            B = \int_{0}^{2 \pi} d B \cos \alpha = \int_{0}^{2 \pi} \frac {\mu_{0}}{4 \pi} \frac {I r _ {2} d \beta}{r^{2}} \cos \alpha
+            \label{eq:11.s60}
+        \end{equation}
+        式中 $r = \frac{r_z}{\sin\alpha}$ 。对于给定的P点， $\alpha$ 是常数，于是有
+        \begin{equation}
+            B = \frac {\mu_{0}}{4 \pi} \frac {I r _ {2}}{r _ {z}^{2}} \sin^{2} \alpha \cos \alpha \int_{0}^{2 \pi} d \beta = \mu_{0} \frac {I r _ {2}}{2 r _ {z}^{2}} \sin^{2} \alpha \cos \alpha
+            \label{eq:12.s60}
+        \end{equation}
+        式中
+        \begin{equation}
+            \cos \alpha = \frac {r _ {2}}{\sqrt {r _ {2}^{2} + r _ {\mathrm{z}}^{2}}}, \quad \sin \alpha = \frac {r _ {\mathrm{z}}}{\sqrt {r _ {2}^{2} + r _ {\mathrm{z}}^{2}}}
+            \label{eq:13.s60}
+        \end{equation}
+        将\eqref{eq:13.s60}式代入\eqref{eq:12.s60}式得
+        \begin{equation}
+            B = \mu_{0} \frac {r _ {2}^{2} I}{2 (r _ {2}^{2} + r _ {\mathrm{z}}^{2})^{3 / 2}}
+            \label{eq:14.s60}
+        \end{equation}
+        由题设， $D$ 远大于传感器的长度，故也远大于 $r_2$ ，因而 $r_{\mathrm{z}} \approx D >> r_{2}$ ，于是
+        \begin{equation}
+            B = \mu_{0} \frac {r _ {2}^{2} I}{2 D^{3}}
+            \label{eq:15.s60}
+        \end{equation}
+        传感器伸长后有 n 个缝隙，由\eqref{eq:15.s60}式得
+        \begin{equation}
+            B _ {\mathrm{total}} = \mu_{0} \frac {r _ {2}^{2} n I}{2 D^{3}}
+            \label{eq:16.s60}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

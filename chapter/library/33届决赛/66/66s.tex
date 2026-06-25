@@ -1,0 +1,70 @@
+\begin{solution}{66}
+    \begin{subsolution}
+        在火星某高度 $h$ 处的大气中划出一水平放置的薄盒子区域。该区域体积为 $V$，其内部大气质量为 $M$，压强为 $P(h)$ ，温度为 $T(h)$ 。由于盒子很薄，可认为气体的密度、压强、温度都是常量。由理想气体状态方程有
+        \begin{equation}
+            P(h) V = n R T(h) \label{eq:1.p66}
+        \end{equation}
+        盒子内部火星大气的体积为
+        \begin{equation}
+            V = \frac{M}{\rho(h)} \label{eq:2.p66}
+        \end{equation}
+        盒子内部火星大气的摩尔数为
+        \begin{equation}
+            n = \frac{M}{\mu} \label{eq:3.p66}
+        \end{equation}
+        由 \eqref{eq:1.p66}-\eqref{eq:3.p66} 式得
+        \begin{equation}
+            T(h) = \frac{P(h) \mu}{\rho(h) R} \label{eq:4.p66}
+        \end{equation}
+        现计算 $P(h)$：考虑高度为 $x$ 到 $x+\mathrm{d}x$ ，所占立体角为 $\Delta\Omega$ 的球冠状薄大气壳层；取 $\Delta\Omega$ 很小，以至于球冠薄大气壳层的侧面上的径向直线可视为相互平行。由受力分析知
+        \begin{equation}
+            (P(x)+\mathrm{d}P) \cdot \Delta\Omega (R_{m}+x)^{2} + \rho(x) g(x) \cdot \Delta\Omega (R_{m}+x)^{2} \mathrm{d}x = P(x) \cdot \Delta\Omega (R_{m}+x)^{2} \label{eq:5.p66}
+        \end{equation}
+        在 \eqref{eq:5.p66} 式中只保留到 $\mathrm{d}x$ 的一阶项，有
+        \begin{equation}
+            \mathrm{d}P = -\rho(x) g(x) \mathrm{d}x \label{eq:6.p66}
+        \end{equation}
+        在火星高度 $h$ 处，重力加速度大小为
+        \begin{equation}
+            g(h) = \frac{G M_{m}}{(R_{m}+h)^{2}} \label{eq:7.p66}
+        \end{equation}
+        代入 \eqref{eq:6.p66} 式并积分得
+        \begin{equation}
+            P(h) = G M_{m} \int_{h}^{\infty} \frac{\rho(x)}{(R_{m}+x)^{2}} \mathrm{d}x \label{eq:8.p66}
+        \end{equation}
+        将 \eqref{eq:8.p66} 式代入 \eqref{eq:4.p66} 式并利用题给大气密度表达式，积分得
+        \begin{equation}
+            T(h) = \frac{\mu G M_{m}}{n R (R_{m}+h)} \label{eq:9.p66}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        以初始释放时刻为计时零点，设在时刻 $t$ 着陆器高度为 $h(t)$ ，着陆器的速度和加速度大小分别为 $v(t)$ 和 $\dot{v}(t)$ 。设其受到的大气阻力为向上，大小为 $F_{a}$，
+        \begin{equation}
+            F_{a} = k \rho(h(t)) v(t)^{2} \label{eq:10.p66}
+        \end{equation}
+        忽略大气对着陆器的引力，着陆器受到的火星引力 $F$ 为
+        \begin{equation}
+            F = \frac{G M_{m} m_{t}}{(R_{m}+h(t))^{2}} \label{eq:11.p66}
+        \end{equation}
+        由题意，可不考虑大气的浮力。根据牛顿第二定律有
+        \begin{equation}
+            F_{a} - F = m_{t} \dot{v}(t) \label{eq:12.p66}
+        \end{equation}
+        由 \eqref{eq:9.p66}-\eqref{eq:12.p66} 式得
+        \begin{equation}
+            m_{t} \dot{v}(t) = k \rho_{0} (h(t)) v^{2}(t) - \frac{G M_{m} m_{t}}{(R_{m}+h(t))^{2}} \label{eq:13.p66}
+        \end{equation}
+        由题意，密度和重力加速度可近似为火星表面的值，故 \eqref{eq:13.p66} 式可近似为
+        \begin{equation}
+            \dot{v}(t) = \frac{k \rho_{0}}{m_{t}} v(t)^{2} - \frac{G M_{m}}{R_{m}^{2}} \label{eq:14.p66}
+        \end{equation}
+        积分得
+        \begin{equation}
+            v(t) = -\sqrt{\frac{G M_{m} m_{t}}{k \rho_{0} R_{m}^{2}}} \tanh \left[ \sqrt{\frac{k \rho_{0} G M_{m}}{R_{m}^{2} m_{t}}} (t+C) \right] \label{eq:15.p66}
+        \end{equation}
+        其中 $C$ 为待定常数。由初始条件 $v(t=0)=0$ 可知，$C=0$ 。由此得，着陆器落到火星表面时相对于火星的速度为
+        \begin{equation}
+            v(t_{l}) = -\sqrt{\frac{G M_{m} m_{t}}{k \rho_{0} R_{m}^{2}}} \tanh \left[ \sqrt{\frac{k \rho_{0} G M_{m}}{R_{m}^{2} m_{t}}} t_{l} \right] \label{eq:16.p66}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

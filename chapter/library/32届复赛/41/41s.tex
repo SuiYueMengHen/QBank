@@ -1,0 +1,78 @@
+\begin{solution}{41}
+    \begin{subsolution}
+        取碰前 B 球所在位置 O 为原点，建立坐标系。碰撞前后系统的动量及其对细杆中心的角动量都守恒，有
+        \begin{equation}
+            m v_{0} = m v_{x} + M V_{\mathrm{A}x} + M V_{\mathrm{B}x}
+            \label{eq:1.s41}
+        \end{equation}
+        \begin{equation}
+            0 = m v_{y} + M V_{\mathrm{A}y} + M V_{\mathrm{B}y}
+            \label{eq:2.s41}
+        \end{equation}
+        \begin{equation}
+            m \frac{L}{2} v_{0} = m \frac{L}{2} v_{x} + M \frac{L}{2} V_{\mathrm{A}x} - M \frac{L}{2} V_{\mathrm{B}x}
+            \label{eq:3.s41}
+        \end{equation}
+        式中，$v_{x}$ 和 $v_{y}$ 表示球 C 碰后的沿 x 方向和 y 方向的速度分量。由于轻杆长度为 $L$，按照图中建立的坐标系有
+        \begin{equation}
+            \left[x_{\mathrm{A}}(t) - x_{\mathrm{B}}(t)\right]^{2} + \left[y_{\mathrm{A}}(t) - y_{\mathrm{B}}(t)\right]^{2} = L^{2}
+            \label{eq:4.s41}
+        \end{equation}
+        由上式对时间求导得
+        \begin{equation}
+            [x_{\mathrm{A}}(t) - x_{\mathrm{B}}(t)][V_{\mathrm{A}x}(t) - V_{\mathrm{B}x}(t)] + [y_{\mathrm{A}}(t) - y_{\mathrm{B}}(t)][V_{\mathrm{A}y}(t) - V_{\mathrm{B}y}(t)] = 0
+            \label{eq:5.s41}
+        \end{equation}
+        在碰撞后的瞬间有
+        \begin{equation}
+            x_{\mathrm{A}}(t = 0) = x_{\mathrm{B}}(t = 0),\quad y_{\mathrm{A}}(t = 0) - y_{\mathrm{B}}(t = 0) = L
+            \label{eq:6.s41}
+        \end{equation}
+        利用\eqref{eq:6.s41}式，\eqref{eq:5.s41}式在碰撞后的瞬间成为
+        \begin{equation}
+            V_{\mathrm{A}y} \equiv V_{\mathrm{A}y}(t = 0) = V_{\mathrm{B}y}(t = 0) \equiv V_{\mathrm{B}y}
+            \label{eq:7.s41}
+        \end{equation}
+        由\eqref{eq:1.s41}\eqref{eq:2.s41}\eqref{eq:7.s41}式得
+        \begin{equation}
+            V_{\mathrm{A}y} = V_{\mathrm{B}y} = -\frac{m}{2M} v_{y}
+            \label{eq:8.s41}
+        \end{equation}
+        由\eqref{eq:1.s41}\eqref{eq:2.s41}\eqref{eq:3.s41}式得
+        \begin{equation}
+            V_{\mathrm{A}x} = \frac{m}{M}(v_{0} - v_{x})
+            \label{eq:9.s41}
+        \end{equation}
+        \begin{equation}
+            V_{\mathrm{B}x} = 0
+            \label{eq:10.s41}
+        \end{equation}
+        利用\eqref{eq:8.s41}\eqref{eq:9.s41}\eqref{eq:10.s41}式，碰撞后系统的动能为
+        \begin{equation}
+            \begin{aligned}
+                E &= \frac{1}{2} m(v_{x}^{2} + v_{y}^{2}) + \frac{1}{2} M(V_{\mathrm{A}x}^{2} + V_{\mathrm{A}y}^{2}) + \frac{1}{2} M(V_{\mathrm{B}x}^{2} + V_{\mathrm{B}y}^{2}) \\
+                &= \frac{1}{2} m(v_{x}^{2} + v_{y}^{2}) + \frac{1}{2} M(V_{\mathrm{A}x}^{2} + 2V_{\mathrm{A}y}^{2}) \\
+                &= \frac{1}{2} m v_{x}^{2} + \frac{1}{2} \frac{m^{2}}{M}(v_{0} - v_{x})^{2} + \frac{2M + m}{4M} m v_{y}^{2}
+            \end{aligned}
+            \label{eq:11.s41}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        \eqref{eq:11.s41}式即为
+        \begin{equation}
+            E = \frac{1}{2} \frac{(M + m)m}{M} \left(v_{x} - \frac{m}{M + m} v_{0}\right)^{2} + \frac{2M + m}{4M} m v_{y}^{2} + \frac{1}{2} \frac{m^{2}}{M + m} v_{0}^{2}
+            \label{eq:12.s41}
+        \end{equation}
+        可见，在条件
+        \begin{equation}
+            v_{x} = \frac{m}{M + m} v_{0},\quad v_{y} = 0
+            \label{eq:13.s41}
+        \end{equation}
+        下，碰后系统动能达到其最小值
+        \begin{equation}
+            E = \frac{1}{2} \frac{m^{2}}{M + m} v_{0}^{2}
+            \label{eq:14.s41}
+        \end{equation}
+        它是小球仅与球 A 做完全非弹性碰撞后系统所具有的动能。
+    \end{subsolution}
+\end{solution}

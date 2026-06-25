@@ -1,0 +1,122 @@
+\begin{solution}{68}
+    \begin{subsolution}
+        设在竖直方向上，车受到地面向上的支持力为 $N$ 。此方向上力的平衡给出
+        \begin{equation}
+            mg = N + c_{B} v^{2} \label{eq:1.p68}
+        \end{equation}
+        赛车在水平直道上行驶，应有 $N \geq 0$，因而
+        \begin{equation}
+            v \leq v_{1} = \sqrt{\frac{mg}{c_{B}}} \label{eq:2.p68}
+        \end{equation}
+        记 $F_{p}$ 为发动机产生的牵引力（通过赛车与地面之间的静摩擦力实现）大小，赛车匀速行驶的速度大小为 $v$ 时，发动机功率 $P$ 为
+        \begin{equation}
+            P = F_{p} v \label{eq:3.p68}
+        \end{equation}
+        由于赛车匀速行驶，在水平方向上牵引力与滚动摩擦力和空气阻力平衡
+        \begin{equation}
+            F_{p} = \mu_{R} N + c_{A} v^{2} \label{eq:4.p68}
+        \end{equation}
+        赛车的拉力是通过地面静摩擦实现，因此应小于最大静摩擦力
+        \begin{equation}
+            F_{p} \leq \mu_{S} N \label{eq:5.p68}
+        \end{equation}
+        由 \eqref{eq:1.p68}、\eqref{eq:4.p68}、\eqref{eq:5.p68} 式得，
+        \begin{equation}
+            v \leq v_{5} = \sqrt{\frac{(\mu_{S} - \mu_{R}) mg}{(\mu_{S} - \mu_{R}) c_{B} + c_{A}}} \label{eq:6.p68}
+        \end{equation}
+        比较 \eqref{eq:2.p68} 和 \eqref{eq:6.p68} 知，由于 $\mu_{S} > \mu_{R}$ ，$c_{B} > 0$ ，$c_{A} > 0$ ，可知 \eqref{eq:6.p68} 是比 \eqref{eq:2.p68} 更强的约束，$v$ 只需符合 \eqref{eq:6.p68} 即可。由 \eqref{eq:1.p68}、\eqref{eq:3.p68}、\eqref{eq:4.p68} 式得，功率 $P$ 可表示为 $v$ 的下述函数
+        \begin{align}
+            P &= \mu_{R} (mg - c_{B} v^{2}) v + c_{A} v^{3} \nonumber \\
+              &= (c_{A} - \mu_{R} c_{B}) v^{3} + \mu_{R} mg v \label{eq:7.p68}
+        \end{align}
+        为从 \eqref{eq:7.p68} 式求出赛车速度大小满足条件 \eqref{eq:2.p68} 下功率 $P$ 的最大值 $P_{\max}$ ，兹作如下讨论：
+
+        (A) 如果 $c_{A} \geq \mu_{R} c_{B}$ ，则 $P$ 是 $v$ 的单调递增函数。当 $v$ 取 \eqref{eq:6.p68} 式最大值 $v_{5}$ 时，功率也取最大值
+        \begin{equation}
+            P_{\max} = c_{A} \mu_{S} \sqrt{(\mu_{S} - \mu_{R})} \left( \frac{mg}{c_{B}(\mu_{S} - \mu_{R}) + c_{A}} \right)^{3/2} \label{eq:8.p68}
+        \end{equation}
+
+        (B) 如果 $c_{A} < \mu_{R} c_{B}$ ，则 $P$ 随着 $v$ 先增大后减小。在暂不考虑条件 \eqref{eq:6.p68} 的情形下，将 $P$ 的最大值所对应的速度记为 $v_{2}$ 。将 \eqref{eq:7.p68} 式对 $v$ 求导并令其为零可求得 $v_{2}$ ，即
+        \begin{equation*}
+            \left.\frac{\mathrm{d}P}{\mathrm{d}v}\right|_{v=v_{2}} = \mu_{R} mg - 3(\mu_{R} c_{B} - c_{A}) v_{2}^{2} = 0
+        \end{equation*}
+        由上式得
+        \begin{equation}
+            v_{2} = \sqrt{\frac{\mu_{R} mg}{3(\mu_{R} c_{B} - c_{A})}} \label{eq:9.p68}
+        \end{equation}
+        现比较 \eqref{eq:6.p68}、\eqref{eq:9.p68} 式，化简知可有如下两种情况：
+
+        (B1) 如果 $\mu_{R} c_{B} > c_{A} \geq \frac{2\mu_{R} c_{B}}{3}\left[1 - \frac{\mu_{R}}{(3\mu_{S} - 2\mu_{R})}\right]$ ，则 $v_{5} < v_{2}$ ，则此时功率最大值仍在 $v_{5}$ 处取值，最大功率 $P_{\max} = P(v_{5})$ 仍由 \eqref{eq:8.p68} 式给出。
+
+        (B2) 如果 $c_{A} < \frac{2\mu_{R} c_{B}}{3}\left[1 - \frac{\mu_{R}}{(3\mu_{S} - 2\mu_{R})}\right]$ ，则 $v_{5} > v_{2}$ ，则此时功率最大值在 $v_{2}$ 处取值，最大功率 $P_{\max}$ 为
+        \begin{equation}
+            P_{\max} = P(v_{2}) = \frac{2\sqrt{3} (mg\mu_{R})^{3/2}}{9\sqrt{(\mu_{R} c_{B} - c_{A})}} \label{eq:10.p68}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设赛车做匀速圆周运动时的切向速度大小为 $v$，地面提供的竖直向上的支持力为 $N'$ 。在竖直方向上受力平衡给出
+        \begin{equation}
+            mg + \varepsilon c_{B} v^{2} = N' \label{eq:11.p68}
+        \end{equation}
+        其中当导流板后翘时 $\varepsilon=1$ ，前翘时 $\varepsilon=-1$ 。由 $N'\geq 0$ 知，当 $\varepsilon=-1$ 时，应有
+        \begin{equation}
+            v \leq \sqrt{\frac{mg}{c_{B}}} \label{eq:12.p68}
+        \end{equation}
+        设车在运动方向上受到发动机前向拉力为 $F_{\parallel}'$ ，它通过车与地面的静摩擦实现，而且大小与迎面空气阻力平衡，得
+        \begin{equation*}
+            F_{\parallel}' = c_{A} v^{2}
+        \end{equation*}
+        车在水平面上做匀速圆周运动，地面静摩擦力沿径向的分量 $F_{\perp}'$ 提供向心力
+        \begin{equation}
+            F_{\perp}' = \frac{m v^{2}}{r} \label{eq:13.p68}
+        \end{equation}
+        地面为赛车提供的总摩擦力不应大于最大静摩擦力 $\mu_{S} N'$ ，因而
+        \begin{equation*}
+            F_{\parallel}'^{2} + F_{\perp}'^{2} \leq (\mu_{S} N')^{2}
+        \end{equation*}
+        将 \eqref{eq:11.p68}、\eqref{eq:13.p68} 式代入上式得
+        \begin{equation*}
+            a v^{4} + b v^{2} + c \geq 0
+        \end{equation*}
+        其中
+        \begin{equation}
+            a = c_{B}^{2}\mu_{S}^{2} - \frac{m^{2}}{r^{2}} - c_{A}^{2},\quad b = 2\varepsilon m g c_{B}\mu_{S}^{2},\quad c = m^{2} g^{2}\mu_{S}^{2} > 0 \label{eq:14.p68}
+        \end{equation}
+        下面分情况讨论满足 \eqref{eq:14.p68} 式的速度取值范围：
+
+        情况(A)：当 $a=0$ 时，
+        情况(A.1)：如果 $\varepsilon=1$ ，为使 \eqref{eq:14.p68} 式成立，显然任何速率 $v$ 均适合，即
+        \begin{equation}
+            v_{\max} = \infty \label{eq:15.p68}
+        \end{equation}
+        情况(A.2)：如果 $\varepsilon=-1$ ，则应有
+        \begin{equation}
+            v \leq \sqrt{\frac{mg}{2c_{B}}} \label{eq:16.p68}
+        \end{equation}
+
+        情况(B)：当 $a \neq 0$ 时，记 \eqref{eq:14.p68} 式取等号时的两个根为 $v_{1}^{2}$ 和 $v_{2}^{2}$ ，有
+        \begin{equation}
+            v_{1}^{2} = -\frac{mg\mu_{S}}{\varepsilon c_{B}\mu_{S} + \sqrt{m^{2}/r^{2} + c_{A}^{2}}},\quad v_{2}^{2} = -\frac{mg\mu_{S}}{\varepsilon c_{B}\mu_{S} - \sqrt{m^{2}/r^{2} + c_{A}^{2}}} \label{eq:17.p68}
+        \end{equation}
+        为进一步求出有关速度的范围，需再分情况讨论：
+
+        情况(B1)：如果 $a > 0$ ，即 $c_{B}\mu_{S} > \sqrt{m^{2}/r^{2} + c_{A}^{2}}$ ，则 \eqref{eq:14.p68} 式左边为开口向上的 $v^{2}$ 的二次函数，且 $v_{1}^{2}\cdot v_{2}^{2} = c/a > 0$ 。
+        情况(B1.1)：如果 $\varepsilon=1$ ，则 $v_{2}^{2} < v_{1}^{2} < 0$ ，即二次函数与横轴的交点都小于零。为使 \eqref{eq:14.p68} 式成立，显然任何速率 $v$ 均适合，即
+        \begin{equation}
+            v_{\max} = \infty \label{eq:18.p68}
+        \end{equation}
+        情况(B1.2)：如果 $\varepsilon=-1$ ，则 $0 < v_{2}^{2} < v_{1}^{2}$ ，即二次函数与横轴的交点都大于零。为使 \eqref{eq:14.p68} 式成立，显然速率 $v$ 应满足 $v \geq \sqrt{v_{1}^{2}}$ 或 $0 \leq v \leq v_{\max} = \sqrt{v_{2}^{2}}$ 。前者不满足 \eqref{eq:12.p68} 式，后者满足要求，故
+        \begin{equation}
+            0 \leq v \leq v_{\max} = \sqrt{v_{2}^{2}} = \sqrt{\frac{mg\mu_{S}}{c_{B}\mu_{S} + \sqrt{m^{2}/r^{2} + c_{A}^{2}}}} \label{eq:19.p68}
+        \end{equation}
+
+        情况(B2)：如果 $a < 0$ ，则对 $\varepsilon = \pm 1$ ，都有 $v_{1}^{2} < 0 < v_{2}^{2}$ ，且 \eqref{eq:14.p68} 式左边为开口向下的 $v^{2}$ 的二次函数，其与横轴的交点一个大于零，另一个小于零。为使 \eqref{eq:14.p68} 式成立，要求 $0 \leq v^{2} \leq v_{2}^{2}$ ，即
+        \begin{equation}
+            0 \leq v \leq v_{\max} = \sqrt{v_{2}^{2}} = \sqrt{\frac{mg\mu_{S}}{-\varepsilon c_{B}\mu_{S} + \sqrt{m^{2}/r^{2} + c_{A}^{2}}}} \label{eq:20.p68}
+        \end{equation}
+
+        总结各情况可知：当导流板后翘时，如果 $a<0$ ，满足要求的速率范围由 \eqref{eq:20.p68} 式取 $\varepsilon=1$ 给出；其他情况时，满足要求的速率范围可以合并由 \eqref{eq:18.p68} 式给出。当导流板前翘时，\eqref{eq:16.p68}、\eqref{eq:19.p68}、\eqref{eq:20.p68} 各情况下对速度的要求可以合并为一个表达式，即满足要求的速率范围由 \eqref{eq:19.p68} 式给出。
+
+        因此，比较以上几种情况可知，无论在何种条件下，导流板后翘都要比前翘所允许的最大速度更大。
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,61 @@
+\begin{solution}{65}
+    \begin{subsolution}
+        D 点与质心 C 距离为 $x - l_{2}/2$ 。设在冲量作用后的瞬间，质心平动速度大小为 $v_{C}$ 。B、C 点以同一角速度绕 O 点转动，B 点的速度大小 $v_{B}$ 应满足
+        \begin{align}
+            v_{B} &= \omega_{0} l_{1} \label{eq:1.p65} \\
+            v_{B} &= v_{C} - \omega_{0} \frac{l_{2}}{2} \label{eq:2.p65}
+        \end{align}
+        由冲量定理得
+        \begin{equation}
+            I = m v_{C} \label{eq:3.p65}
+        \end{equation}
+        由于冲量作用点不在质心，冲量 $I$ 的冲量矩还引起杆绕质心的转动。由刚体转动定理得
+        \begin{equation}
+            \left( \frac{1}{12} m l_{2}^{2} \right) \omega_{0} = I \left( x - \frac{l_{2}}{2} \right) \label{eq:4.p65}
+        \end{equation}
+        联立 \eqref{eq:1.p65} - \eqref{eq:4.p65} 式得
+        \begin{align}
+            x &= \left[ \frac{1}{2} + \frac{l_{2}}{6(2l_{1} + l_{2})} \right] l_{2} \label{eq:5.p65} \\
+            \omega_{0} &= \frac{2I}{m(2l_{1} + l_{2})} \label{eq:6.p65}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        在 O、B、A 三点所在竖直平面内，以 O 为原点、水平向右的射线为 x 轴、竖直向上的射线为 y 轴，建立平面坐标系。杆的质心 C 的加速度 $(a_{Cx}, a_{Cy})$ 满足质心运动定理
+        \begin{align}
+            m a_{Cx} &= -T \sin \theta_{1}, \quad m a_{Cy} = -mg + T \cos \theta_{1} \label{eq:7.p65}
+        \end{align}
+        式中，$T$ 是绳的张力的大小。同时，杆在绳张力 $T$ 相对于杆的质心的力矩作用下绕质心转动，由转动定理得
+        \begin{equation}
+            \frac{1}{12} m l_{2}^{2} \alpha_{2} = -T \frac{1}{2} l_{2} \sin(\theta_{2} - \theta_{1}) \label{eq:8.p65}
+        \end{equation}
+        由几何关系得
+        \begin{align}
+            x_{B}(t) &= x_{C}(t) - \frac{1}{2} l_{2} \sin \theta_{2}(t), \quad y_{B}(t) = y_{C}(t) + \frac{1}{2} l_{2} \cos \theta_{2}(t) \label{eq:9.p65}
+        \end{align}
+        将 \eqref{eq:9.p65} 式两边对时间 $t$ 微商得，B 点的速度满足条件
+        \begin{align}
+            v_{Bx}(t) &= v_{Cx}(t) - \frac{1}{2} \omega_{2}(t) l_{2} \cos \theta_{2}(t), \quad v_{By}(t) = v_{Cy}(t) - \frac{1}{2} \omega_{2}(t) l_{2} \sin \theta_{2}(t) \label{eq:10.p65}
+        \end{align}
+        将 \eqref{eq:10.p65} 式两边对时间 $t$ 微商得，B 点的加速度满足条件
+        \begin{align}
+            a_{Bx} &= a_{Cx} - \frac{1}{2} \alpha_{2} l_{2} \cos \theta_{2} + \frac{1}{2} \omega_{2}^{2} l_{2} \sin \theta_{2}, \quad a_{By} = a_{Cy} - \frac{1}{2} \alpha_{2} l_{2} \sin \theta_{2} - \frac{1}{2} \omega_{2}^{2} l_{2} \cos \theta_{2} \label{eq:11.p65}
+        \end{align}
+        同时 B 点随不可伸长的绳绕 O 点做定轴转动，应有
+        \begin{align}
+            x_{B}(t) &= l_{1} \sin \theta_{1}(t), \quad y_{B}(t) = -l_{1} \cos \theta_{1}(t) \label{eq:12.p65}
+        \end{align}
+        将 \eqref{eq:12.p65} 式两边对时间 $t$ 微商得，B 点的速度还满足条件
+        \begin{align}
+            v_{Bx}(t) &= \omega_{1}(t) l_{1} \cos \theta_{1}(t), \quad v_{By}(t) = \omega_{1}(t) l_{1} \sin \theta_{1}(t) \label{eq:13.p65}
+        \end{align}
+        将 \eqref{eq:13.p65} 式两边对时间 $t$ 微商得，B 点的加速度还满足条件
+        \begin{align}
+            a_{Bx} &= \alpha_{1} l_{1} \cos \theta_{1} - \omega_{1}^{2} l_{1} \sin \theta_{1}, \quad a_{By} = \alpha_{1} l_{1} \sin \theta_{1} + \omega_{1}^{2} l_{1} \cos \theta_{1} \label{eq:14.p65}
+        \end{align}
+        联立 \eqref{eq:7.p65}、\eqref{eq:8.p65}、\eqref{eq:11.p65}、\eqref{eq:14.p65} 式，可解得绳绕悬点和杆绕质心的角加速度分别为
+        \begin{align}
+            \alpha_{1} &= -\frac{g \sin \theta_{1} + \sin(\theta_{1} - \theta_{2}) \left[ 3g \cos \theta_{2} + 3l_{1} \omega_{1}^{2} \cos(\theta_{1} - \theta_{2}) + 2l_{2} \omega_{2}^{2} \right]}{l_{1} \left[ 1 + 3 \sin^{2}(\theta_{1} - \theta_{2}) \right]}, \nonumber \\
+            \alpha_{2} &= \frac{3 \sin(\theta_{1} - \theta_{2}) \left[ 2g \cos \theta_{1} + 2l_{1} \omega_{1}^{2} + l_{2} \omega_{2}^{2} \cos(\theta_{1} - \theta_{2}) \right]}{l_{2} \left[ 1 + 3 \sin^{2}(\theta_{1} - \theta_{2}) \right]} \label{eq:15.p65}
+        \end{align}
+    \end{subsolution}
+\end{solution}

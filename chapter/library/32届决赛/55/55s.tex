@@ -1,0 +1,137 @@
+\begin{solution}{55}
+\begin{subsolution}
+把大气层分成许多水平薄层，设第 $i$ 层上下的高度为 $y_{i}$ 和 $y_{i+1} = y_i + dy$，该层空气的折射率为 $n(y_{i})$，如右图所示。光线在该薄层下上两个界面上的折射角和入射角都是 $\theta(y_i)$，由折射定律和几何关系得
+\begin{equation}
+n(y_{i-1})\sin\theta(y_{i-1}) = n(y_{i})\sin\theta(y_{i}) = n(y_{i+1})\sin\theta(y_{i+1}) = \text{常数}
+\label{eq:1.s55}
+\end{equation}
+此即
+\begin{equation}
+n(y)\sin\theta(y) = \text{常数}
+\label{eq:2.s55}
+\end{equation}
+由几何关系得
+\begin{equation}
+\frac{dx}{dy} = \tan\theta = \frac{\sin\theta}{\sqrt{1-\sin^{2}\theta}} = \frac{1}{\sqrt{\frac{1}{\sin^{2}\theta}-1}}
+\label{eq:3.s55}
+\end{equation}
+由上两式可得
+\begin{equation}
+\frac{dy}{dx} = \sqrt{\frac{n^{2}}{n_{0}^{2}\sin^{2}\theta_{0}}-1}
+\label{eq:4.s55}
+\end{equation}
+把已知的大气折射率变化规律 $n^{2}=n_{0}^{2}+\alpha^{2}y$ 代入\eqref{eq:4.s55}式中，得
+\begin{equation}
+\frac{dy}{dx} = \sqrt{\frac{n_{0}^{2}+\alpha^{2}y}{n_{0}^{2}\sin^{2}\theta_{0}}-1} = \frac{\alpha}{n_{0}\sin\theta_{0}}\sqrt{\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}+y}
+\label{eq:5.s55}
+\end{equation}
+即
+\begin{equation}
+\frac{dy}{\sqrt{\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}+y}} = \frac{\alpha}{n_{0}\sin\theta_{0}}dx
+\label{eq:6.s55}
+\end{equation}
+对上式积分得
+\begin{equation}
+2\sqrt{\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}+y} + C = \frac{\alpha}{n_{0}\sin\theta_{0}}x
+\label{eq:7.s55}
+\end{equation}
+因为激光是从坐标原点 O 出射的，所以 x=0 时 y=0，即
+\begin{equation}
+2\sqrt{\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}+0} + C = 0
+\label{eq:8.s55}
+\end{equation}
+考虑到 $n_0$ 和 $\alpha$ 均为正数且 $0 \leq \theta_0 \leq \pi/2$，可得
+\begin{equation}
+C = -2\sqrt{\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}} = -2\frac{n_{0}}{\alpha}\cos\theta_{0}
+\label{eq:9.s55}
+\end{equation}
+把\eqref{eq:9.s55}式代入\eqref{eq:7.s55}式中，经过整理即得激光的轨迹方程为
+\begin{equation}
+y = \left(\frac{\alpha}{2n_{0}\sin\theta_{0}}x + \frac{n_{0}}{\alpha}\cos\theta_{0}\right)^{2} - \frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0} = \frac{\alpha^{2}}{4n_{0}^{2}\sin^{2}\theta_{0}}x^{2} + \frac{x}{\tan\theta_{0}}
+\label{eq:10.s55}
+\end{equation}
+这是顶点 $\left(-\frac{n_{0}^{2}}{\alpha^{2}}\sin 2\theta_{0}, -\frac{n_{0}^{2}}{\alpha^{2}}\cos^{2}\theta_{0}\right)$ 在第III象限、开口向上、且过O点的一段抛物线。
+\end{subsolution}
+\begin{subsolution}
+从\eqref{eq:10.s55}式可以看出：当 $y$ 给定时，若 $\theta_0$ 变大，则 $x$ 也单调地变大，在 $\theta_0 = \pi/2$ 时抛物线的顶点到达了 $O$ 点，此时曲线也达到了 $x$ 方向上最远的距离。把 $\theta_0 = \pi/2$ 和 $A$ 点的坐标 $(x_a, y_a)$ 代入光线轨迹方程\eqref{eq:10.s55}式可得
+\begin{equation}
+x_{a\max} = \frac{2n_{0}}{\alpha}\sqrt{y_{a}}
+\label{eq:11.s55}
+\end{equation}
+这是飞行高度为 $y_{a}$ 的目标飞行器A可被激光照射或攻击时的最大水平距离。
+\end{subsolution}
+\begin{subsolution}
+将目标 A 的坐标 $(x_{a},y_{a})$ 代入光线轨迹方程\eqref{eq:10.s55}式得
+\begin{equation}
+y_{a} = \frac{\alpha^{2}}{4n_{0}^{2}\sin^{2}\theta_{0}}x_{a}^{2} + \frac{x_{a}}{\tan\theta_{0}}
+\label{eq:12.s55}
+\end{equation}
+将三角函数关系 $\sin^{2}\theta_{0} = \frac{\tan^{2}\theta_{0}}{1+\tan^{2}\theta_{0}}$ 代入上式可得
+\begin{equation}
+y_{a} = \frac{\alpha^{2}x_{a}^{2}}{4n_{0}^{2}\tan^{2}\theta_{0}}(1+\tan^{2}\theta_{0}) + \frac{x_{a}}{\tan\theta_{0}}
+\label{eq:13.s55}
+\end{equation}
+进一步整理上式可得关于 $\tan\theta_{0}$ 的一元二次方程
+\begin{equation}
+(4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2})\tan^{2}\theta_{0} - 4n_{0}^{2}x_{a}\tan\theta_{0} - \alpha^{2}x_{a}^{2} = 0
+\label{eq:14.s55}
+\end{equation}
+解得
+\begin{equation}
+\tan\theta_{0} = \frac{2n_{0}^{2}x_{a}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}} \pm \sqrt{\left(\frac{2n_{0}^{2}x_{a}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}}\right)^{2} + \frac{\alpha^{2}x_{a}^{2}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}}}
+\label{eq:15.s55}
+\end{equation}
+因为目标 A 在第 I 象限且处于可攻击范围内，所以由（2）中的结论可知
+\begin{equation}
+0 \leq x_{a} \leq \frac{2n_{0}}{\alpha}\sqrt{y_{a}},
+\label{eq:16.s55}
+\end{equation}
+同时 $0 \leq \theta_{0} \leq \frac{\pi}{2}$。故
+\begin{equation}
+\tan\theta_{0} \geq 0,
+\label{eq:17.s55}
+\end{equation}
+于是，上述解的右端根号前应取正号，因而
+\begin{equation}
+\tan\theta_{0} = \frac{2n_{0}^{2}x_{a}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}} + \sqrt{\left(\frac{2n_{0}^{2}x_{a}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}}\right)^{2} + \frac{\alpha^{2}x_{a}^{2}}{4n_{0}^{2}y_{a} - \alpha^{2}x_{a}^{2}}}
+\label{eq:18.s55}
+\end{equation}
+由题设可知目标 A 的运动轨迹为
+\begin{equation}
+x_{a} = x_{0} - vt, \quad y_{a} = y_{0}
+\label{eq:19.s55}
+\end{equation}
+将\eqref{eq:19.s55}式代入\eqref{eq:18.s55}式，可得激光出射角度 $\theta_{0}$ 随时间 $t$ 的变化规律为
+\begin{equation}
+\theta_{0} = \arctan\left(\frac{2n_{0}^{2}(x_{0}-vt)}{4n_{0}^{2}y_{0} - \alpha^{2}(x_{0}-vt)^{2}} + \sqrt{\left(\frac{2n_{0}^{2}(x_{0}-vt)}{4n_{0}^{2}y_{0} - \alpha^{2}(x_{0}-vt)^{2}}\right)^{2} + \frac{\alpha^{2}(x_{0}-vt)^{2}}{4n_{0}^{2}y_{0} - \alpha^{2}(x_{0}-vt)^{2}}}\right)
+\label{eq:20.s55}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+假设水平飞行器正好完成对激光器的投弹攻击，则其飞行时间可分为两部分，其一是它受到激光照射直至被摧毁的时间 $t_a$，飞行器在其刚好被摧毁时投出炸弹；其二是炸弹从投出直至落到水平地面的时间 $t_g$。炸弹自投出后做平抛运动，故
+\begin{equation}
+t_{g} = \sqrt{\frac{2y_{a}}{g}}
+\label{eq:21.s55}
+\end{equation}
+目标飞行器 A 从被激光照射开始到最后炸弹落地的整个过程中水平运动的距离为
+\begin{equation}
+s = v(t_{a} + t_{g}) = v\left(t_{a} + \sqrt{\frac{2y_{a}}{g}}\right)
+\label{eq:22.s55}
+\end{equation}
+位于坐标原点的激光器若能安全击毁目标飞行器 A，应有
+\begin{equation}
+s < x_{a\max}
+\label{eq:23.s55}
+\end{equation}
+式中 $x_{a\max}$ 为飞行高度为 $y_{a}$ 的飞行器A可以被激光照射时的最大水平距离（见\eqref{eq:11.s55}式）。由\eqref{eq:11.s55}\eqref{eq:22.s55}式得，目标飞行器A的水平速度 $v$ 应满足
+\begin{equation}
+v < \frac{\frac{2n_{0}}{\alpha}\sqrt{y_{a}}}{t_{a} + \sqrt{\frac{2y_{a}}{g}}} = \frac{2n_{0}(t_{a}\sqrt{gy_{a}} - \sqrt{2}y_{a})}{\alpha(gt_{a}^{2} - 2y_{a})}
+\label{eq:24.s55}
+\end{equation}
+换言之，该目标飞行器 A 的速度范围为
+\begin{equation}
+\left(0, \frac{2n_{0}(t_{a}\sqrt{gy_{a}} - \sqrt{2}y_{a})}{\alpha(gt_{a}^{2} - 2y_{a})}\right)
+\label{eq:25.s55}
+\end{equation}
+\end{subsolution}
+\end{solution}

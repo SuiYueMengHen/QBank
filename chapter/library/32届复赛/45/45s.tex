@@ -1,0 +1,96 @@
+\begin{solution}{45}
+    \begin{subsolution}
+        设 $t$ 时刻导线框平面与长直导线和转轴组成平面之间的夹角为 $\theta$ 的值为 $\theta = \omega t$，导线框旋转过程中只有左、右两边（图中分别用 A、B 表示）切割磁力线产生感应电动势。A、B 两条边的速度大小相等，
+        \begin{equation}
+            v = \omega a
+            \label{eq:1.s45}
+        \end{equation}
+        A、B 处对应的磁感应强度大小分别为
+        \begin{equation}
+            B_{1} = \frac{\mu_{0} I}{2\pi r_{1}}
+            \label{eq:2.s45}
+        \end{equation}
+        \begin{equation}
+            B_{2} = \frac{\mu_{0} I}{2\pi r_{2}}
+            \label{eq:3.s45}
+        \end{equation}
+        其中，$\mu_{0}$ 为真空磁导率，$r_{1}$、$r_{2}$ 分别为 A 和 B 到长直导线的垂直距离。A、B 两边对应的感应电动势分别为
+        \begin{equation}
+            \begin{aligned}
+                E_{1} &= B_{1} 2a v \sin\chi_{1} = \frac{\omega a^{2} \mu_{0} I}{\pi r_{1}} \sin\chi_{1} \\
+                E_{2} &= B_{2} 2a v \sin\chi_{2} = \frac{\omega a^{2} \mu_{0} I}{\pi r_{2}} \sin\chi_{2}
+            \end{aligned}
+            \label{eq:4.s45}
+        \end{equation}
+        式中 $\frac{\pi}{2} - \chi_{1}$、$\frac{\pi}{2} - \chi_{2}$ 分别为 A、B 的速度方向与 $r_{1}$、$r_{2}$ 的夹角。根据几何关系得
+        \begin{equation}
+            \chi_{1} = \theta + \alpha,\quad \chi_{2} = \theta - \beta
+            \label{eq:5.s45}
+        \end{equation}
+        其中 $\alpha$、$\beta$ 分别为 $r_{1}$、$r_{2}$ 与 $x$ 方向的夹角。\eqref{eq:5.s45}式代入\eqref{eq:4.s45}式得导线框中的感应电动势为
+        \begin{equation}
+            E = E_{1} + E_{2} = \frac{\omega a^{2} \mu_{0} I}{\pi} \left[\frac{\sin(\theta + \alpha)}{r_{1}} + \frac{\sin(\theta - \beta)}{r_{2}}\right]
+            \label{eq:6.s45}
+        \end{equation}
+        根据几何关系及三角形余弦定理得 $\alpha$、$\beta$、$r_{1}$、$r_{2}$ 与 $a$、$b$、$\theta$ 之间的关系为
+        \begin{equation}
+            \begin{cases}
+                \cos\alpha = \frac{b - a\cos\theta}{r_{1}} \\
+                \sin\alpha = \frac{a\sin\theta}{r_{1}}
+            \end{cases}
+            \label{eq:7.s45}
+        \end{equation}
+        \begin{equation}
+            \begin{cases}
+                \cos\beta = \frac{b + a\cos\theta}{r_{2}} \\
+                \sin\beta = \frac{a\sin\theta}{r_{2}}
+            \end{cases}
+            \label{eq:8.s45}
+        \end{equation}
+        \begin{equation}
+            \begin{cases}
+                r_{1}^{2} = a^{2} + b^{2} - 2ab\cos\theta \\
+                r_{2}^{2} = a^{2} + b^{2} + 2ab\cos\theta
+            \end{cases}
+            \label{eq:9.s45}
+        \end{equation}
+        将\eqref{eq:7.s45}\eqref{eq:8.s45}\eqref{eq:9.s45}式代入\eqref{eq:6.s45}式得导线框的感应电动势为
+        \begin{equation}
+            \begin{aligned}
+                E &= \frac{\omega a^{2} \mu_{0} I b \sin\theta}{\pi} \left(\frac{1}{a^{2} + b^{2} - 2ab\cos\theta} + \frac{1}{a^{2} + b^{2} + 2ab\cos\theta}\right) \\
+                &= \frac{a^{2} b \mu_{0} I \omega \sin\omega t}{\pi} \left(\frac{1}{a^{2} + b^{2} - 2ab\cos\omega t} + \frac{1}{a^{2} + b^{2} + 2ab\cos\omega t}\right)
+            \end{aligned}
+            \label{eq:10.s45}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        导线框在电流 $I$ 的磁场中旋转，受到安培力相对于轴的合力矩 $M_{0}$ 的作用，要使导线框保持角速度为 $\omega$ 的匀速旋转，所加的外力矩 $M$ 必须满足
+        \begin{equation}
+            M + M_{0} = 0
+            \label{eq:11.s45}
+        \end{equation}
+        此时，安培力的合力矩的功率 $P_{0}$ 应与导线框中感应电流的功率 $P_{i}$ 相等，即
+        \begin{equation}
+            P_{0} = P_{i}
+            \label{eq:12.s45}
+        \end{equation}
+        式中
+        \begin{equation}
+            P_{i} = \frac{E^{2}}{R} = \frac{\omega^{2} a^{4} \mu_{0}^{2} I^{2} b^{2} \sin^{2}\omega t}{\pi^{2} R} \left(\frac{1}{a^{2} + b^{2} - 2ab\cos\omega t} + \frac{1}{a^{2} + b^{2} + 2ab\cos\omega t}\right)^{2}
+            \label{eq:13.s45}
+        \end{equation}
+        安培力的合力矩为
+        \begin{equation}
+            M_{0} = \frac{P_{0}}{\omega} = \frac{P_{i}}{\omega} = \frac{\omega a^{4} \mu_{0}^{2} I^{2} b^{2} \sin^{2}\omega t}{\pi^{2} R} \left(\frac{1}{a^{2} + b^{2} - 2ab\cos\omega t} + \frac{1}{a^{2} + b^{2} + 2ab\cos\omega t}\right)^{2}
+            \label{eq:14.s45}
+        \end{equation}
+        由\eqref{eq:11.s45}式可得，外力矩 $M$ 为
+        \begin{equation}
+            \begin{aligned}
+                M &= -M_{0} = -\frac{\omega a^{4} \mu_{0}^{2} I^{2} b^{2} \sin^{2}\omega t}{\pi^{2} R} \left(\frac{1}{a^{2} + b^{2} - 2ab\cos\omega t} + \frac{1}{a^{2} + b^{2} + 2ab\cos\omega t}\right)^{2} \\
+                &= -\frac{4\mu_{0}^{2} a^{4} b^{2} I^{2} \omega}{\pi^{2} R} \left(\frac{(a^{2} + b^{2})\sin\omega t}{(a^{2} + b^{2}) - 4a^{2}b^{2}\cos^{2}\omega t}\right)^{2}
+            \end{aligned}
+            \label{eq:15.s45}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

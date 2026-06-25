@@ -1,0 +1,131 @@
+\begin{solution}{46}
+    \begin{subsolution}
+        根据热力学第一定律，有
+        \begin{equation}
+            dU = \delta Q + \delta W
+            \label{eq:1.s46}
+        \end{equation}
+        这里，对于 1mol 理想气体经历的任一缓慢变化过程中，$\delta Q$，$\delta W$ 和 $dU$ 可分别表示为
+        \begin{equation}
+            \delta Q = C_{\pi} dT,\quad \delta W = -p dV,\quad dU = C_{V} dT
+            \label{eq:2.s46}
+        \end{equation}
+        将理想气体状态方程
+        \begin{equation*}
+            pV = RT
+        \end{equation*}
+        两边对 $T$ 求导，可得
+        \begin{equation}
+            p\frac{dV}{dT} + V\frac{dp}{dV}\frac{dV}{dT} = R
+            \label{eq:3.s46}
+        \end{equation}
+        式中利用了
+        \begin{equation*}
+            \frac{dp}{dT} = \frac{dp}{dV}\frac{dV}{dT}
+        \end{equation*}
+        根据\eqref{eq:3.s46}式有
+        \begin{equation}
+            \frac{dV}{dT} = \frac{R}{p + V\frac{dp}{dV}}
+            \label{eq:4.s46}
+        \end{equation}
+        联立\eqref{eq:1.s46}\eqref{eq:2.s46}\eqref{eq:4.s46}式得
+        \begin{equation}
+            C_{\pi} = C_{V} + \frac{pR}{p + V\frac{dp}{dV}}
+            \label{eq:5.s46}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设 $bc'$ 过程方程为
+        \begin{equation}
+            p = \alpha - \beta V
+            \label{eq:6.s46}
+        \end{equation}
+        根据
+        \begin{equation*}
+            C_{\pi} = C_{V} + \frac{pR}{p + V\frac{dp}{dV}}
+        \end{equation*}
+        可得该直线过程的摩尔热容为
+        \begin{equation}
+            C_{\pi} = C_{V} + \frac{\alpha - \beta V}{\alpha - 2\beta V}R
+            \label{eq:7.s46}
+        \end{equation}
+        式中，$C_{V}$ 是单原子理想气体的定容摩尔热容，$C_{V} = \frac{3}{2}R$。对 $bc'$ 过程的初态 $(3p_{1}, V_{1})$ 和终态 $(p_{1}, 5V_{1})$，有
+        \begin{equation}
+            \begin{aligned}
+                3p_{1} &= \alpha - \beta V_{1} \\
+                p_{1} &= \alpha - 5\beta V_{1}
+            \end{aligned}
+            \label{eq:8.s46}
+        \end{equation}
+        由\eqref{eq:8.s46}式得
+        \begin{equation}
+            \alpha = \frac{7}{2}p_{1},\quad \beta = \frac{p_{1}}{2V_{1}}
+            \label{eq:9.s46}
+        \end{equation}
+        由\eqref{eq:6.s46}\eqref{eq:7.s46}\eqref{eq:8.s46}\eqref{eq:9.s46}式得
+        \begin{equation}
+            C_{\pi} = \frac{8V - 35V_{1}}{4V - 14V_{1}}R
+            \label{eq:10.s46}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        根据过程热容的定义有
+        \begin{equation}
+            C_{\pi} = \frac{\Delta Q}{\Delta T}
+            \label{eq:11.s46}
+        \end{equation}
+        式中，$\Delta Q$ 是气体在此直线过程中，温度升高 $\Delta T$ 时从外界吸收的热量。由\eqref{eq:10.s46}\eqref{eq:11.s46}式得
+        \begin{equation}
+            \Delta T = \frac{4V - 14V_{1}}{8V - 35V_{1}}R\Delta Q
+            \label{eq:12.s46}
+        \end{equation}
+        \begin{equation}
+            \Delta Q = \frac{8V - 35V_{1}}{4V - 14V_{1}}\frac{\Delta T}{R}
+            \label{eq:13.s46}
+        \end{equation}
+        由\eqref{eq:12.s46}式可知，$bc'$ 过程中的升降温的转折点 $A$ 在 $p-V$ 图上的坐标为
+        \begin{equation}
+            A\left(\frac{7}{2}V_{1}, \frac{7}{4}p_{1}\right)
+            \label{eq:14.s46}
+        \end{equation}
+        由\eqref{eq:10.s46}式可知，$bc'$ 过程中的吸放热的转折点 $B$ 在 $p-V$ 图上的坐标为
+        \begin{equation}
+            B\left(\frac{35V_{1}}{8}, \frac{21p_{1}}{16}\right)
+            \label{eq:15.s46}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        对于 $abcda$ 循环过程，$ab$ 和 $bc$ 过程吸热，$cd$ 和 $da$ 过程放热
+        \begin{equation}
+            \begin{aligned}
+                Q_{ab} &= n C_{V}(T_{b} - T_{a}) = 1.5(RT_{b} - RT_{a}) = 3p_{1}V_{1} \\
+                Q_{bc} &= n C_{p}(T_{c} - T_{b}) = 2.5(RT_{c} - RT_{b}) = 15p_{1}V_{1}
+            \end{aligned}
+            \label{eq:16.s46}
+        \end{equation}
+        式中，已利用已知条件 $n = 1\mathrm{mol}$，单原子理想气体定容摩尔热容 $C_{V} = \frac{3}{2}R$，定压摩尔热容 $C_{p} = \frac{5}{2}R$。气体在 $abcda$ 循环过程的效率可表示为循环过程中对外做的功除以总吸热，即
+        \begin{equation}
+            \eta_{abcda} = \frac{W_{abcda}}{Q_{ab} + Q_{bc}} = \frac{4p_{1}V_{1}}{18p_{1}V_{1}} = 0.22
+            \label{eq:17.s46}
+        \end{equation}
+        对于 $abc'a$ 循环过程，$ab$ 和 $bB$ 过程吸热，$Bc'$ 和 $c'a$ 过程放热。由热力学第一定律可得，$bB$ 过程吸热为
+        \begin{equation}
+            \begin{aligned}
+                Q_{bB} &= \Delta U_{bB} - W_{bB} \\
+                &= n C_{V}(T_{B} - T_{b}) + \frac{1}{2}(p_{B} + 3p_{1})(V_{B} - V_{1}) \\
+                &= 11.39p_{1}V_{1}
+            \end{aligned}
+            \label{eq:18.s46}
+        \end{equation}
+        所以，循环过程 $abc'a$ 的效率为
+        \begin{equation}
+            \eta_{abc'a} = \frac{W_{abc'a}}{Q_{ab} + Q_{bB}} = \frac{4p_{1}V_{1}}{14.39p_{1}V_{1}} = 0.278
+            \label{eq:19.s46}
+        \end{equation}
+        由\eqref{eq:17.s46}\eqref{eq:19.s46}式可知
+        \begin{equation}
+            \eta_{abc'a} > \eta_{abcda}
+            \label{eq:20.s46}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

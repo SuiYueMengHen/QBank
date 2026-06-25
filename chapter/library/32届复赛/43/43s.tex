@@ -1,0 +1,140 @@
+\begin{solution}{43}
+    \begin{subsolution}
+        取航线 $KA$ 和直线 $BC$ 所构成的平面为新的坐标平面。$K$ 为坐标原点，航线 $KA$ 为 $x$ 轴，从 $K$ 指向 $BC$ 与 $Z$ 轴交点的直线为 $y$ 轴；在时刻 $t_{1}$，飞机所在位置 $A$ 点的坐标为 $(x_{1} = x_{\mathrm{A}}, 0)$；目标点 $P$ 的位置 $(x_{\mathrm{P}}, R_{0})$ 在这个坐标系里是固定的。
+
+        设机载雷达于时刻 $t$ 发出的发射信号的相位为
+        \begin{equation}
+            \Phi(t) = \omega_{0} t + \varphi
+            \label{eq:1.s43}
+        \end{equation}
+        式中 $\omega_{0}$ 和 $\varphi$ 分别是相应的角频率和初相位。机载雷达于时刻 $t_{1}$ 在 $A'$ 点 $(x_{2} = x_{\mathrm{A}}(t_{1}), 0)$ 接收到的经 $P$ 反射的信号是机载雷达于时刻 $t_{1} - \tau$ 在 $A$ 点 $(x_{1} = x_{\mathrm{A}}(t_{1} - \tau), 0)$ 发出的，其相位为
+        \begin{equation}
+            \Phi'(t_{1}) = \omega_{0}(t_{1} - \tau) + \varphi
+            \label{eq:2.s43}
+        \end{equation}
+        式中 $\tau$ 为信号往返过程所需的时间，它满足
+        \begin{equation}
+            \sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}} + \sqrt{R_{0}^{2} + (x_{2} - x_{\mathrm{P}})^{2}} = c\tau
+            \label{eq:3.s43}
+        \end{equation}
+        \begin{equation}
+            x_{2} - x_{1} = v\tau
+            \label{eq:4.s43}
+        \end{equation}
+        经过时间间隔 $\Delta t$，同理有
+        \begin{equation}
+            \Phi'(t_{1} + \Delta t) = \omega_{0}(t_{1} + \Delta t - \tau') + \varphi
+            \label{eq:5.s43}
+        \end{equation}
+        \begin{equation}
+            \sqrt{R_{0}^{2} + (x_{1}' - x_{\mathrm{P}})^{2}} + \sqrt{R_{0}^{2} + (x_{2}' - x_{\mathrm{P}})^{2}} = c\tau'
+            \label{eq:6.s43}
+        \end{equation}
+        \begin{equation}
+            x_{2}' - x_{1}' = v\tau'
+            \label{eq:7.s43}
+        \end{equation}
+        另外，由于同样的原因（飞机作匀速直线运动），还有
+        \begin{equation}
+            x_{1}' - x_{1} = v\Delta t,\quad x_{2}' - x_{2} = v\Delta t
+            \label{eq:8.s43}
+        \end{equation}
+        设机载雷达收到的信号的圆频率为 $\omega$，则应有
+        \begin{equation}
+            \Phi'(t_{1} + \Delta t) - \Phi'(t_{1}) = \omega\Delta t
+            \label{eq:9.s43}
+        \end{equation}
+        由\eqref{eq:3.s43}\eqref{eq:4.s43}式和 $v \ll c$ 得
+        \begin{equation}
+            \begin{aligned}
+                \tau &= \frac{1}{c}\left[\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}} + \sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}} + x_{2} - x_{1})^{2}}\right] \\
+                &= \frac{1}{c}\left[\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}} + \sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2} + 2v\tau(x_{1} - x_{\mathrm{P}}) + v^{2}\tau^{2}}\right] \\
+                &\approx \frac{2\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}{c} + \frac{x_{1} - x_{\mathrm{P}}}{\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}\frac{v}{c}\tau
+            \end{aligned}
+            \label{eq:10.s43}
+        \end{equation}
+        由\eqref{eq:10.s43}式解得
+        \begin{equation}
+            \begin{aligned}
+                \tau &\approx \frac{2\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}{c}\frac{1}{1 - \frac{v}{c}\frac{x_{1} - x_{\mathrm{P}}}{\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}} \\
+                &\approx \frac{2\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}{c}\left(1 + \frac{v}{c}\frac{x_{1} - x_{\mathrm{P}}}{\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}\right) \\
+                &= \frac{2\sqrt{R_{0}^{2} + (x_{1} - x_{\mathrm{P}})^{2}}}{c} + \frac{2v}{c^{2}}(x_{1} - x_{\mathrm{P}})
+            \end{aligned}
+            \label{eq:11.s43}
+        \end{equation}
+        同理，由\eqref{eq:6.s43}\eqref{eq:7.s43}式和 $v \ll c$ 得
+        \begin{equation}
+            \tau' \approx \frac{2\sqrt{R_{0}^{2} + (x_{1}' - x_{\mathrm{P}})^{2}}}{c} + \frac{2v}{c^{2}}(x_{1}' - x_{\mathrm{P}})
+            \label{eq:12.s43}
+        \end{equation}
+        由\eqref{eq:2.s43}\eqref{eq:5.s43}\eqref{eq:9.s43}式得
+        \begin{equation}
+            \omega\Delta t = \omega_{0}(\Delta t - \tau') - \omega_{0}(-\tau)
+            \label{eq:13.s43}
+        \end{equation}
+        将
+        \begin{equation}
+            \omega = 2\pi f
+            \label{eq:14.s43}
+        \end{equation}
+        代入\eqref{eq:13.s43}式，利用\eqref{eq:8.s43}\eqref{eq:11.s43}\eqref{eq:12.s43}式，在 $\Delta t$ 很小的情形下，略去 $\Delta t$ 的高阶项，得
+        \begin{equation}
+            f_{\mathrm{D}} \equiv f - f_{0} = -\frac{2(x_{\mathrm{A}} - x_{\mathrm{P}})}{\sqrt{R_{0}^{2} + (x_{\mathrm{A}} - x_{\mathrm{P}})^{2}}}\frac{v}{c}f_{0}
+            \label{eq:15.s43}
+        \end{equation}
+        或
+        \begin{equation}
+            f_{\mathrm{D}} \equiv f - f_{0} = -2\frac{v}{c}f_{0}\cos\alpha
+            \label{eq:16.s43}
+        \end{equation}
+        式中
+        \begin{equation}
+            \cos\alpha \equiv \frac{x_{\mathrm{A}} - x_{\mathrm{P}}}{\sqrt{R_{0}^{2} + (x_{\mathrm{A}} - x_{\mathrm{P}})^{2}}}
+            \label{eq:17.s43}
+        \end{equation}
+        即 $\alpha$ 为从机载雷达射出的光线与飞机航线之间的夹角。
+    \end{subsolution}
+    \begin{subsolution}
+        由于机载雷达天线发射的无线电波束面的张角的限制，有
+        \begin{equation}
+            \frac{\pi}{2} - \frac{L_{s}/2}{\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}} \leq \alpha \leq \frac{\pi}{2} + \frac{L_{s}/2}{\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}}
+            \label{eq:18.s43}
+        \end{equation}
+        频移 $f_{\mathrm{D}}$ 分别为正、零或负的条件是：
+        当 $\alpha < \pi/2$（$x_{\mathrm{A}} < x_{\mathrm{P}}$）时，频移 $f_{\mathrm{D}} > 0$；
+        当 $\alpha = \pi/2$（$x_{\mathrm{A}} = x_{\mathrm{P}}$）时，即机载雷达发射信号时正好位于 $P$ 点到航线的垂足处，频移
+        \begin{equation}
+            f_{\mathrm{D}} = 0
+            \label{eq:19.s43}
+        \end{equation}
+        当 $\alpha > \pi/2$（$x_{\mathrm{A}} > x_{\mathrm{P}}$）时，频移 $f_{\mathrm{D}} < 0$。
+
+        当 $\alpha = \pi/2 - L_{s}/2\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}$（$x_{\mathrm{A}} - x_{\mathrm{P}} = -L_{s}/2$）时，即机载雷达发射信号时正好位于 $(x_{\mathrm{A}} = x_{\mathrm{P}} - L_{s}/2, h, 0)$ 处，正的频移最大
+        \begin{equation}
+            f_{\mathrm{D}1} = \frac{L_{s}}{\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}}\frac{v}{c}f_{0}
+            \label{eq:20.s43}
+        \end{equation}
+        当 $\alpha = \pi/2 + L_{s}/2\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}$（$x_{\mathrm{A}} - x_{\mathrm{P}} = L_{s}/2$）时，即机载雷达发射信号时正好位于 $(x_{\mathrm{A}} = x_{\mathrm{P}} + L_{s}/2, h, 0)$ 处，负的频移的绝对值最大
+        \begin{equation}
+            f_{\mathrm{D}2} = -\frac{L_{s}}{\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}}\frac{v}{c}f_{0}
+            \label{eq:21.s43}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在飞机持续发射的无线电波束前沿 $BC$ 全部通过目标 $P$ 点过程中，多普勒频移的带宽为
+        \begin{equation}
+            \Delta f_{\mathrm{D}} \equiv |f_{\mathrm{D}1} - f_{\mathrm{D}2}| = \frac{2L_{s}}{\sqrt{R_{0}^{2} + (L_{s}/2)^{2}}}\frac{v}{c}f_{0} = 4\frac{v}{c}f_{0}\sin\frac{\theta}{2}
+            \label{eq:22.s43}
+        \end{equation}
+        由于 $R_{0} >> L_{s}$，有 $\theta << 1$，故
+        \begin{equation}
+            \sin\frac{\theta}{2} \approx \frac{\theta}{2}
+            \label{eq:23.s43}
+        \end{equation}
+        将上式代入到\eqref{eq:22.s43}式得
+        \begin{equation}
+            \Delta f_{\mathrm{D}} = f_{0}\frac{2v}{c}\theta
+            \label{eq:24.s43}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

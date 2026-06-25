@@ -1,0 +1,97 @@
+\begin{solution}{52}
+\begin{subsolution}
+作用在两筒壁之间的水面与玻璃壁的交界线上水面的表面张力沿器壁方向的投影 $F_{s}$ 的大小为
+\begin{equation}
+F_{\mathrm{s}} = 2\pi R_{1}\alpha\cos\theta + 2\pi R_{2}\alpha\cos\theta
+\label{eq:1.s52}
+\end{equation}
+该力大小不变，方向竖直向下。当水由于毛细作用上升到相对于大容器中的水面高度为h时，力 $F_{s}$ 所做的功为
+\begin{equation}
+W_{\mathrm{s}} = -F_{\mathrm{s}}h
+\label{eq:2.s52}
+\end{equation}
+系统毛细作用引起的势能变化为
+\begin{equation}
+E_{\mathrm{s}}(h) - E_{\mathrm{s}}(0) = W_{\mathrm{s}}
+\label{eq:3.s52}
+\end{equation}
+式中，$E_{\mathrm{s}}(0)$ 是系统毛细作用的势能在h=0处的值。由题设有
+\begin{equation}
+E_{s}(0) = 0
+\label{eq:4.s52}
+\end{equation}
+联立\eqref{eq:1.s52}-\eqref{eq:4.s52}式得
+\begin{equation}
+E_{\mathrm{s}}(h) = -2\pi\alpha\cos\theta\left(R_{1}+R_{2}\right)h
+\label{eq:5.s52}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+两圆筒之间水面上升 $h$ 所引起的重力势能的改变为
+\begin{equation}
+E_{\mathrm{G}} = \frac{1}{2}\rho g(\pi R_{1}^{2} - \pi R_{2}^{2})h^{2}
+\label{eq:6.s52}
+\end{equation}
+联立\eqref{eq:5.s52}\eqref{eq:6.s52}式，可知系统达到平衡时的系统毛细作用的总势能为
+\begin{equation}
+E(h) = E_{\mathrm{s}}(h) + E_{\mathrm{G}}(h) = \frac{1}{2}\pi\rho g(R_{1}^{2} - R_{2}^{2})h^{2} - 2\pi\alpha\cos\theta(R_{1}+R_{2})h
+\label{eq:7.s52}
+\end{equation}
+根据系统平衡时势能最小原理
+\begin{equation}
+\left.\frac{dE(h)}{dh}\right|_{h=h_{\mathrm{e}}} = 0
+\label{eq:8.s52}
+\end{equation}
+可知
+\begin{equation}
+\rho g h_{\mathrm{e}}(R_{1}^{2} - R_{2}^{2}) = 2R_{1}\alpha\cos\theta + 2R_{2}\alpha\cos\theta
+\label{eq:9.s52}
+\end{equation}
+系统平衡时，两圆筒之间水面上升的高度是
+\begin{equation}
+h_{\mathrm{e}} = \frac{2\alpha\cos\theta}{\rho g(R_{1} - R_{2})}
+\label{eq:10.s52}
+\end{equation}
+因此，在平衡时，由\eqref{eq:5.s52}\eqref{eq:6.s52}\eqref{eq:10.s52}式得
+\begin{equation}
+E_{\mathrm{s}}(h_{\mathrm{e}}) = -\frac{4\pi\alpha^{2}\cos^{2}\theta(R_{1}+R_{2})}{\rho g(R_{1}-R_{2})}
+\label{eq:11.s52}
+\end{equation}
+\begin{equation}
+E_{\mathrm{G}}(h_{\mathrm{e}}) = \frac{2\pi\alpha^{2}\cos^{2}\theta(R_{1}+R_{2})}{\rho g(R_{1}-R_{2})}
+\label{eq:12.s52}
+\end{equation}
+毛细作用势能的减小，一部分转化为水的重力势能，另一部分用来克服系统摩擦而做的功，这部分的功转化为热耗散了。因此，系统平衡时释放的热量为
+\begin{equation}
+Q = [-E_{\mathrm{s}}(h_{\mathrm{e}})] - E_{\mathrm{G}}(h_{\mathrm{e}})
+\label{eq:13.s52}
+\end{equation}
+由\eqref{eq:11.s52}-\eqref{eq:13.s52}式得
+\begin{equation}
+Q = \frac{2\pi\alpha^{2}\cos^{2}\theta(R_{1}+R_{2})}{\rho g(R_{1}-R_{2})}
+\label{eq:14.s52}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+设飞机处在距离地球地面高度 $z$ 处，根据
+\begin{equation}
+mg_{z} = \frac{GMm}{(R_{\text{地}}+z)^{2}}, \quad g = \frac{GM}{R_{\text{地}}^{2}}
+\label{eq:15.s52}
+\end{equation}
+式中 $R_{地}$ 为地球半径，G 为万有引力常数，M 为地球质量。可得重力加速度随地面高度的变化规律为
+\begin{equation}
+g_{z} = \frac{g}{(1+z/R_{\text{地}})^{2}}
+\label{eq:16.s52}
+\end{equation}
+将\eqref{eq:16.s52}式代入\eqref{eq:14.s52}式，可得在地球不同高度处，所释放的热量随高度的变化关系为
+\begin{equation}
+Q = \frac{2\pi\alpha^{2}\cos^{2}\theta(R_{1}+R_{2})}{\rho g(R_{1}-R_{2})} \left(1+\frac{z}{R_{\text{地}}}\right)^{2}
+\label{eq:17.s52}
+\end{equation}
+飞机距离地球地面高度 $z$ 为
+\begin{equation}
+z = R_{\text{地}}\left(\sqrt{\frac{Q\rho g(R_{1}-R_{2})}{2\pi\alpha^{2}\cos^{2}\theta(R_{1}+R_{2})}} - 1\right)
+\label{eq:18.s52}
+\end{equation}
+\end{subsolution}
+\end{solution}
