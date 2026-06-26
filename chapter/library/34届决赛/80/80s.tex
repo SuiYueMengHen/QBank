@@ -1,0 +1,117 @@
+\begin{solution}{80}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            如图 I，$t$ 时刻弹簧的伸长量为
+            \begin{equation}
+                u = l - l_{0}
+                \label{eq:1.s80}
+            \end{equation}
+            有
+            \begin{equation}
+                \mu \frac{d^{2} u}{d t^{2}} = - k_{0} u
+                \label{eq:2.s80}
+            \end{equation}
+            (图 I 略)
+
+            式中
+            \begin{equation}
+                \mu = \frac{m_{\mathrm{a}} m_{\mathrm{b}}}{m_{\mathrm{a}} + m_{\mathrm{b}}}
+                \label{eq:3.s80}
+            \end{equation}
+            为两小球的约化质量。由\eqref{eq:1.s80}和\eqref{eq:2.s80}式知，弹簧伸长量 $u$ 服从简谐振动的动力学方程，振动频率为
+            \begin{equation}
+                f = \frac{\omega}{2\pi} = \frac{1}{2\pi} \sqrt{\frac{k_{0}}{\mu}} = \frac{1}{2\pi} \sqrt{\frac{m_{\mathrm{a}} + m_{\mathrm{b}}}{m_{\mathrm{a}} m_{\mathrm{b}}} k_{0}}
+                \label{eq:4.s80}
+            \end{equation}
+            最后一步利用了\eqref{eq:3.s80}式。$t$ 时刻弹簧的伸长量 $u$ 的表达式为
+            \begin{equation}
+                u = A \sin \omega t + B \cos \omega t
+                \label{eq:5.s80}
+            \end{equation}
+            式中 $A$、$B$ 为待定常量。$t=0$ 时，弹簧处于原长，即
+            \[
+                u(0) = B = 0
+            \]
+            将 $B=0$ 代入\eqref{eq:5.s80}式得
+            \begin{equation}
+                u = A \sin \omega t
+                \label{eq:6.s80}
+            \end{equation}
+            a 相对于 b 的速度为
+            \begin{equation}
+                v_{\mathrm{a}}^{\prime} = \frac{d r_{\mathrm{a}}}{d t} - \frac{d r_{\mathrm{b}}}{d t} = \frac{d u}{d t} = A \omega \cos \omega t
+                \label{eq:7.s80}
+            \end{equation}
+            $t=0$ 时有
+            \begin{equation}
+                v_{\mathrm{a}}^{\prime}(0) = v_{0} - 0 = A \omega
+                \label{eq:8.s80}
+            \end{equation}
+            由\eqref{eq:7.s80}、\eqref{eq:8.s80}式得
+            \begin{equation}
+                v_{\mathrm{a}}^{\prime} = v_{0} \cos \omega t
+                \label{eq:9.s80}
+            \end{equation}
+            系统在运动过程中动量守恒
+            \begin{equation}
+                m_{\mathrm{a}} v_{0} = m_{\mathrm{a}} v_{\mathrm{a}} + m_{\mathrm{b}} v_{\mathrm{b}}
+                \label{eq:10.s80}
+            \end{equation}
+            小球 a 相对于地面的速度为
+            \begin{equation}
+                v_{\mathrm{a}} = v_{\mathrm{a}}^{\prime} + v_{\mathrm{b}}
+                \label{eq:11.s80}
+            \end{equation}
+            由\eqref{eq:4.s80}、\eqref{eq:9.s80}、\eqref{eq:10.s80}、\eqref{eq:11.s80}式可得，$t$ 时刻小球 a 和小球 b 的速度分别为
+            \begin{align}
+                v_{\mathrm{a}} &= \left[ 1 + \frac{m_{\mathrm{b}}}{m_{\mathrm{a}}} \cos \left( \sqrt{\frac{(m_{\mathrm{a}} + m_{\mathrm{b}}) k_{0}}{m_{\mathrm{a}} m_{\mathrm{b}}}} t \right) \right] \frac{m_{\mathrm{a}}}{m_{\mathrm{a}} + m_{\mathrm{b}}} v_{0}, \label{eq:12.s80}\\
+                v_{\mathrm{b}} &= \left[ 1 - \cos \left( \sqrt{\frac{(m_{\mathrm{a}} + m_{\mathrm{b}}) k_{0}}{m_{\mathrm{a}} m_{\mathrm{b}}}} t \right) \right] \frac{m_{\mathrm{a}}}{m_{\mathrm{a}} + m_{\mathrm{b}}} v_{0}. \label{eq:13.s80}
+            \end{align}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            若两球带等量同号电荷，电荷量为 $q$，系统平衡时有
+            \begin{equation}
+                K \frac{q^{2}}{L_{0}^{2}} = k_{0} (L_{0} - l_{0})
+                \label{eq:14.s80}
+            \end{equation}
+            由\eqref{eq:14.s80}式得
+            \begin{equation}
+                q = L_{0} \sqrt{\frac{k_{0}}{K} (L_{0} - l_{0})}
+                \label{eq:15.s80}
+            \end{equation}
+            (图 II 略)
+
+            设 $t$ 时刻弹簧的长度为 $L$（见图 II），有
+            \begin{equation}
+                \mu \frac{d^{2} L}{d t^{2}} = - k_{0} (L - l_{0}) + K \frac{q^{2}}{L^{2}}
+                \label{eq:16.s80}
+            \end{equation}
+            令 $x = L - L_{0}$ 为 $t$ 时刻弹簧相对平衡时弹簧长度 $L_{0}$ 的伸长量，\eqref{eq:16.s80}式可改写为
+            \begin{equation}
+                \mu \frac{d^{2} x}{d t^{2}} = - k_{0} x - k_{0} (L_{0} - l_{0}) + K \frac{q^{2}}{L_{0}^{2}} \left(1 + \frac{x}{L_{0}}\right)^{-2}
+                \label{eq:17.s80}
+            \end{equation}
+            系统做微振动时有 $x \ll L_{0}$，因而
+            \begin{equation}
+                \left(1 + \frac{x}{L_{0}}\right)^{-2} = 1 - 2 \frac{x}{L_{0}} + O\left[\left(\frac{x}{L_{0}}\right)^{2}\right]
+                \label{eq:18.s80}
+            \end{equation}
+            利用上式，\eqref{eq:17.s80}式可写为
+            \begin{equation}
+                \mu \frac{d^{2} x}{d t^{2}} = \left[ - k_{0} (L_{0} - l_{0}) + K \frac{q^{2}}{L_{0}^{2}} \right] - \left( k_{0} + 2 K \frac{q^{2}}{L_{0}^{3}} \right) x + O\left[\left(\frac{x}{L_{0}}\right)^{2}\right]
+                \label{eq:19.s80}
+            \end{equation}
+            略去 $O\left[\left(\frac{x}{L_{0}}\right)^{2}\right]$，并利用\eqref{eq:14.s80}或\eqref{eq:15.s80}式，\eqref{eq:19.s80}式可写为
+            \begin{equation}
+                \mu \frac{d^{2} x}{d t^{2}} = - \left( k_{0} + 2 K \frac{q^{2}}{L_{0}^{3}} \right) x = - \frac{3 L_{0} - 2 l_{0}}{L_{0}} k_{0} x
+                \label{eq:20.s80}
+            \end{equation}
+            由\eqref{eq:14.s80}式知，$L_{0}>l_{0}$，故 $3L_{0}-2l_{0}>0$。系统的微振动服从简谐振动的动力学方程，振动频率为
+            \begin{equation}
+                f = \frac{1}{2\pi} \sqrt{\frac{\left(\frac{3 L_{0} - 2 l_{0}}{L_{0}}\right) k_{0}}{\mu}} = \frac{1}{2\pi} \sqrt{\left(\frac{3 L_{0} - 2 l_{0}}{L_{0}}\right) \left(\frac{m_{\mathrm{a}} + m_{\mathrm{b}}}{m_{\mathrm{a}} m_{\mathrm{b}}}\right) k_{0}}
+                \label{eq:21.s80}
+            \end{equation}
+            最后一步利用了\eqref{eq:3.s80}式。
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

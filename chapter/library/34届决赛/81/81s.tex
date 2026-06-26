@@ -1,0 +1,154 @@
+\begin{solution}{81}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            两体系统的相对运动相当于质量为 $\mu = \frac{Mm}{M+m}$ 的质点在固定力场中的运动，其运动方程是
+            \begin{equation}
+                \frac{M m}{M+m} \ddot{\boldsymbol{r}} = - \frac{G M m}{r^{3}} \boldsymbol{r}
+                \label{eq:1.s81}
+            \end{equation}
+            其中 $\boldsymbol{r}$ 是两星体间的相对位矢。\eqref{eq:1.s81}式可化为
+            \begin{equation}
+                \ddot{\boldsymbol{r}} = - \frac{G (M+m)}{r^{3}} \boldsymbol{r}
+                \label{eq:2.s81}
+            \end{equation}
+            由\eqref{eq:2.s81}式可知，双星系统的相对运动可视为质点在质量为 $M+m$ 的固定等效引力源的引力场中的运动。爆炸前为圆周运动，其运动方程是
+            \begin{equation}
+                \frac{G (M+m)}{r_{0}^{2}} = \left(\frac{2\pi}{T_{0}}\right)^{2} r_{0}
+                \label{eq:3.s81}
+            \end{equation}
+            由\eqref{eq:3.s81}式解得
+            \begin{equation}
+                r_{0} = \left(\frac{G (M+m) T_{0}^{2}}{4\pi^{2}}\right)^{1/3}
+                \label{eq:4.s81}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            爆炸前，$m$ 星相对于 $M$ 星的速度大小是
+            \begin{equation}
+                v_{0} = \frac{2\pi r_{0}}{T_{0}} = \frac{2\pi}{T_{0}} \left(\frac{G (M+m) T_{0}^{2}}{4\pi^{2}}\right)^{1/3} = \left(\frac{2\pi G (M+m)}{T_{0}}\right)^{1/3}
+                \label{eq:5.s81}
+            \end{equation}
+            方向与两星体连线垂直。
+
+            爆炸后，等效引力源的质量变为
+            \begin{equation}
+                M_{\square} = M' + m = M + m - \Delta M
+                \label{eq:6.s81}
+            \end{equation}
+            相对运动轨道从圆变成了椭圆、抛物线或双曲线。由爆炸刚刚完成时（取为初始时刻）两星体的位置和运动状态可知，两星体初始距离为 $r_{0}$，初始相对速度的大小为 $v_{0}$，其方向与两星体连线垂直，所以初始位置必定是椭圆、抛物线或双曲线的顶点。对于椭圆轨道，它是椭圆长轴的一个端点。
+
+            设椭圆轨道长轴的另一个端点与等效引力源的距离为 $r_{1}$，在 $r_{1}$ 处的速度（最小速度）为 $v_{\min}$（理由见\eqref{eq:11.s81}式），由角动量守恒和机械能守恒得
+            \begin{align}
+                r_{1} v_{1} &= r_{0} v_{0}, \label{eq:7.s81}\\
+                \frac{v_{1}^{2}}{2} - \frac{G M_{\square}}{r_{1}} &= \frac{v_{0}^{2}}{2} - \frac{G M_{\square}}{r_{0}}. \label{eq:8.s81}
+            \end{align}
+            由\eqref{eq:7.s81}、\eqref{eq:8.s81}式得 $r_{1}$ 满足方程
+            \begin{equation}
+                \left(\frac{2 G M_{\square}}{r_{0}} - v_{0}^{2}\right) r_{1}^{2} - 2 G M_{\square} r_{1} + r_{0}^{2} v_{0}^{2} = 0
+                \label{eq:9.s81}
+            \end{equation}
+            由\eqref{eq:9.s81}式解得
+            \begin{align}
+                r_{1} &= \left(\frac{2 G M_{\square}}{r_{0}} - v_{0}^{2}\right)^{-1} \left( G M_{\square} + \sqrt{ G^{2} M_{\square}^{2} - \left(\frac{2 G M_{\square}}{r_{0}} - v_{0}^{2}\right) r_{0}^{2} v_{0}^{2} } \right) \notag\\
+                &= \frac{r_{0}}{2 G M_{\square} - r_{0} v_{0}^{2}} ( G M_{\square} + r_{0} v_{0}^{2} - G M_{\square} ) = \frac{r_{0} v_{0}^{2}}{2 G M_{\square} - r_{0} v_{0}^{2}} r_{0}.
+                \label{eq:10.s81}
+            \end{align}
+            另一解 $r_{0}$ 可在根号前取减号得到。由\eqref{eq:10.s81}式可知
+            \begin{equation}
+                r_{1} > r_{0}.
+                \label{eq:11.s81}
+            \end{equation}
+            利用方程\eqref{eq:9.s81}和韦达定理（或由\eqref{eq:10.s81}式），椭圆的半长轴是
+            \begin{equation}
+                a = \frac{r_{0} + r_{1}}{2} = \frac{G M_{\square}}{2 G M_{\square} - r_{0} v_{0}^{2}} r_{0} = \left(\frac{G (M+m) T_{0}^{2}}{4\pi^{2}}\right)^{1/3} \frac{M+m-\Delta M}{M+m-2\Delta M}
+                \label{eq:12.s81}
+            \end{equation}
+            要使运行轨道为椭圆，应有
+            \begin{equation}
+                0 < a < \infty
+                \label{eq:13.s81}
+            \end{equation}
+            由\eqref{eq:12.s81}、\eqref{eq:13.s81}式得
+            \begin{equation}
+                M + m - 2\Delta M > 0
+                \label{eq:14.s81}
+            \end{equation}
+            据开普勒第三定律得
+            \begin{equation}
+                T_{1} = 2\pi \sqrt{\frac{a^{3}}{G M_{\square}}}
+                \label{eq:15.s81}
+            \end{equation}
+            将\eqref{eq:6.s81}、\eqref{eq:12.s81}式代入\eqref{eq:15.s81}式得
+            \begin{equation}
+                T_{1} = \sqrt{\frac{(M+m)(M+m-\Delta M)^{2}}{(M+m-2\Delta M)^{3}}} \, T_{0}.
+                \label{eq:16.s81}
+            \end{equation}
+
+            \textbf{解法（二）}
+
+            爆炸前，设 $M$ 星与 $m$ 星之间的相对运动的速度为 $v_{\text{相对}0}$，有
+            \begin{equation}
+                v_{\text{相对}0} = \sqrt{\frac{G(M+m)}{r_{0}}}
+                \label{eq:17.s81}
+            \end{equation}
+            爆炸后瞬间，$m$ 星的速度没有改变，$M-\Delta M$ 星与爆炸前的速度相等，设 $M-\Delta M$ 星与 $m$ 星之间的相对运动的速度为 $v_{\text{相对}}$，有
+            \begin{equation}
+                v_{\text{相对}} = v_{\text{相对}0}
+                \label{eq:18.s81}
+            \end{equation}
+            爆炸后质心系的总动能为
+            \begin{equation}
+                E_{\mathrm{k}}' = \frac{1}{2} \frac{(M-\Delta M) m}{M+m-\Delta M} v_{\text{相对}}^{2}
+                \label{eq:19.s81}
+            \end{equation}
+            质心系总能量为
+            \begin{equation}
+                E' = E_{\mathrm{k}}' - \frac{G(M-\Delta M) m}{r_{0}}
+                \label{eq:20.s81}
+            \end{equation}
+            对于椭圆轨道运动有
+            \begin{equation}
+                E' = - \frac{G(M-\Delta M) m}{2A}
+                \label{eq:21.s81}
+            \end{equation}
+            式中
+            \begin{equation}
+                A = \frac{M+m-\Delta M}{M+m-2\Delta M} r_{0}
+                \label{eq:22.s81}
+            \end{equation}
+            由开普勒第三定律有
+            \begin{equation}
+                T_{0} = 2\pi \sqrt{\frac{r_{0}^{3}}{G(M+m)}}
+                \label{eq:23.s81}
+            \end{equation}
+            由\eqref{eq:22.s81}、\eqref{eq:23.s81}式有
+            \begin{equation}
+                T_{1} = 2\pi \sqrt{\frac{A^{3}}{G(M+m-\Delta M)}}
+                \label{eq:24.s81}
+            \end{equation}
+            有
+            \begin{equation}
+                T_{1} = \left[ \frac{(M+m)(M+m-\Delta M)^{2}}{(M+m-2\Delta M)^{3}} \right]^{1/2} T_{0}
+                \label{eq:25.s81}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            根据\eqref{eq:12.s81}式，当 $\Delta M \geq (M+m)/2$ 的时候，\eqref{eq:13.s81}式不再成立，轨道不再是椭圆。所以若 $M'$ 星和 $m$ 星最终能永远分开，须满足
+            \begin{equation}
+                \Delta M \geq (M+m)/2
+                \label{eq:26.s81}
+            \end{equation}
+            由题意知
+            \begin{equation}
+                M > \Delta M
+                \label{eq:27.s81}
+            \end{equation}
+            联立\eqref{eq:26.s81}、\eqref{eq:27.s81}式知，还须满足
+            \begin{equation}
+                M > m
+                \label{eq:28.s81}
+            \end{equation}
+            \eqref{eq:26.s81}、\eqref{eq:28.s81}式即为所求的条件。
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

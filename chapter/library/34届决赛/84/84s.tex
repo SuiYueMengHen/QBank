@@ -1,0 +1,123 @@
+\begin{solution}{84}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由于本问题在 $xOy$ 平面上具有以圆点为中心的圆对称性，不妨设某一带正电荷的粒子的速度为
+            $(0, v\sin\theta, v\cos\theta)$。
+            被电场和磁场束缚的粒子将在以材料表面为底的圆柱形区域内做 $z$ 方向的螺旋运动（即在 $xOy$ 平面做匀速圆周运动，在 $z$ 方向做匀变速直线运动）。
+
+            粒子在 $xOy$ 平面内的投影做匀速圆周运动的半径为
+            \begin{equation}
+                r(\theta) = \frac{m v \sin\theta}{q B}
+                \label{eq:1.s84}
+            \end{equation}
+            (图略)
+
+            若该粒子能被该电场和磁场束缚在以圆形材料为底的圆柱形区域内，则有
+            \begin{equation}
+                r(\theta) \leq \frac{R_{0}}{2}
+                \label{eq:2.s84}
+            \end{equation}
+            假设被电场和磁场束缚住的粒子的发射方向均匀分布在以 $z$ 轴为对称轴的立体角 $\Delta\Omega: 0\leq\theta\leq\Theta, 0\leq\phi\leq 2\pi$ 内，这一立体角对应半径为一个长度单位的球面的面积（即立体角的值 $\Delta\Omega$）为
+            \begin{equation}
+                \Delta\Omega = -2\pi \int_{0}^{\Theta} d\cos\theta = 2\pi(1-\cos\Theta)
+                \label{eq:3.s84}
+            \end{equation}
+            从原点 $O$ 向 $xOy$ 平面上方各方向均匀发射的带正电荷的粒子所占的立体角为 $2\pi$。按题意，被该电场和磁场束缚的粒子占发射粒子总数的百分比 $\eta$ 为
+            \begin{equation}
+                \eta = \frac{\Delta\Omega}{2\pi} = \frac{\pi}{2\pi} = 50\%
+                \label{eq:4.s84}
+            \end{equation}
+            由\eqref{eq:3.s84}、\eqref{eq:4.s84}式得
+            \begin{equation}
+                \theta \leq \Theta = \frac{\pi}{3}
+                \label{eq:5.s84}
+            \end{equation}
+            可见，只要粒子速度方向与 $z$ 轴的夹角 $\theta$ 满足条件\eqref{eq:5.s84}式，它就必然会被电场和磁场束缚住。
+            由\eqref{eq:1.s84}--\eqref{eq:5.s84}式可知
+            \begin{equation}
+                R = \frac{\sqrt{3} m v}{q B}
+                \label{eq:6.s84}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            \begin{subsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    带正电荷的粒子在磁场和电场区域做螺旋运动，由\eqref{eq:1.s84}式得，粒子在 $xOy$ 平面的投影点做一次圆周运动的时间为
+                    \begin{equation}
+                        T = \frac{2\pi r}{v\sin\theta} = \frac{2\pi m}{q B}
+                        \label{eq:7.s84}
+                    \end{equation}
+                    粒子在 $z$ 方向做匀变速直线运动，以粒子发射时刻为计时零点，设粒子第一次与材料表面碰撞前的瞬间为时刻 $t_{1}(\theta)$，由运动学公式有
+                    \begin{equation}
+                        v\cos\theta - a \frac{t_{1}(\theta)}{2} = 0
+                        \label{eq:8.s84}
+                    \end{equation}
+                    式中
+                    \begin{equation}
+                        a = \frac{q E}{m}
+                        \label{eq:9.s84}
+                    \end{equation}
+                    由\eqref{eq:8.s84}、\eqref{eq:9.s84}式得
+                    \begin{equation}
+                        t_{1}(\theta) = \frac{2 m v \cos\theta}{q E}
+                        \label{eq:10.s84}
+                    \end{equation}
+                    粒子在 $xOy$ 平面的投影点做一次圆周运动的路程为
+                    \begin{equation}
+                        d(\theta) = 2\pi r(\theta) = \frac{2\pi m v \sin\theta}{q B}
+                        \label{eq:11.s84}
+                    \end{equation}
+                    粒子在 $xOy$ 平面的投影点在 $t_{1}$ 时间走过的总路程 $s_{z=0}(\theta)$ 为
+                    \begin{equation}
+                        s_{z=0}(\theta) = \frac{t_{1}(\theta)}{T} d(\theta) = \frac{m v^{2}}{q E} \sin 2\theta
+                        \label{eq:12.s84}
+                    \end{equation}
+                    当
+                    \begin{equation}
+                        \theta = \frac{\pi}{4}
+                        \label{eq:13.s84}
+                    \end{equation}
+                    时，$s_{z=0}$ 最大
+                    \begin{equation}
+                        s_{z=0}^{\max} = s_{z=0}\left(\theta=\frac{\pi}{4}\right) = \frac{m v^{2}}{q E}
+                        \label{eq:14.s84}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    若粒子的投影在 $xOy$ 平面上走过的总路程恰好达到最大值，则 $\theta$ 的取值如\eqref{eq:13.s84}式所示。粒子在 $z$ 方向做匀减速直线运动，在 $xOy$ 平面上做匀速圆周运动，以粒子发射时刻为计时零点，粒子在发射后时刻 $t$ 的合速度大小为
+                    \begin{equation}
+                        v_{\text{合}} = \sqrt{ (v\sin\frac{\pi}{4})^{2} + (v\cos\frac{\pi}{4} - a t)^{2} }
+                        \label{eq:15.s84}
+                    \end{equation}
+                    该粒子从发射到第一次与材料表面碰撞前的瞬间运动的路程为
+                    \begin{equation}
+                        s_{1} = 2 \int_{0}^{t_{1}(\theta=\pi/4)/2} dt\, v_{\text{合}} = \frac{m v^{2}}{q E} \int_{0}^{1} du \sqrt{1+u^{2}}
+                        \label{eq:16.s84}
+                    \end{equation}
+                    已利用\eqref{eq:10.s84}、\eqref{eq:15.s84}式。利用题给积分公式，由\eqref{eq:16.s84}式得
+                    \begin{equation}
+                        s_{1} = \frac{\sqrt{2} + \ln(1+\sqrt{2})}{q E} \frac{1}{2} m v^{2}
+                        \label{eq:17.s84}
+                    \end{equation}
+                    它与粒子发射时的动能成正比。
+
+                    粒子每一次与材料表面碰撞前后，$z$ 方向速度反向，而沿 $xOy$ 平面的速度方向不变，且沿 $z$ 方向的速度和沿 $xOy$ 平面的速度都按同样比例减小；以至于动能减小 $10\%$，粒子再次出射的出射角大小不变。粒子按照同样的规律运动下去，其第 $n$ 次发射到与材料表面碰撞前的瞬间走过的路程 $s_{n}$ 为
+                    \begin{equation}
+                        s_{n} = k^{\,n-1} s_{1}, \quad k = 1 - 10\%
+                        \label{eq:18.s84}
+                    \end{equation}
+                    最终其动能耗尽（沉积到材料表面）。利用\eqref{eq:18.s84}式，粒子从发射直至最终动能耗尽而沉积于材料表面的过程中运动的总路程 $s_{\text{总}}$ 为
+                    \begin{equation}
+                        s_{\text{总}} = s_{1} + s_{2} + \dots + s_{n} + \dots = (1+k+\dots+k^{n-1}+\dots) s_{1} = \frac{s_{1}}{1-k} = 10 s_{1}
+                        \label{eq:19.s84}
+                    \end{equation}
+                    由\eqref{eq:17.s84}、\eqref{eq:19.s84}式得
+                    \begin{equation}
+                        s_{\text{总}} = [ \sqrt{2} + \ln(1+\sqrt{2}) ] \frac{5 m v^{2}}{q E}
+                        \label{eq:20.s84}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+            \end{subsubsubsolution}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

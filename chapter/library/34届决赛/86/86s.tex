@@ -1,0 +1,120 @@
+\begin{solution}{86}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            \begin{subsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    对于能量为 $\frac{hc}{\lambda_0}$ 的光子，根据质能关系有
+                    \begin{equation}
+                        \frac{hc}{\lambda_{0}} = m c^{2}
+                        \label{eq:1.s86}
+                    \end{equation}
+                    式中，$m$ 是该光子的等效质量。设在星球的引力场中，星球表面的重力加速度为 $g'$，根据万有引力定律有
+                    \begin{equation}
+                        g' = \frac{G M}{R^{2}}
+                        \label{eq:2.s86}
+                    \end{equation}
+                    由能量守恒知，光子在 $A$、$B$ 两点的能量相等，即
+                    \begin{equation}
+                        \frac{hc}{\lambda_{0}} = \frac{hc}{\lambda'} + m g' L
+                        \label{eq:3.s86}
+                    \end{equation}
+                    由\eqref{eq:1.s86}、\eqref{eq:3.s86}式得
+                    \begin{equation}
+                        \frac{1}{\lambda'} = \frac{1}{\lambda_{0}} \left(1 - \frac{g' L}{c^{2}}\right)
+                        \label{eq:4.s86}
+                    \end{equation}
+                    由\eqref{eq:4.s86}式解得
+                    \begin{equation}
+                        \lambda' = \lambda_{0} \frac{1}{1 - \frac{g' L}{c^{2}}} \approx \lambda_{0} \left(1 + \frac{g' L}{c^{2}}\right)
+                        \label{eq:5.s86}
+                    \end{equation}
+                    将\eqref{eq:2.s86}式代入\eqref{eq:5.s86}式得
+                    \begin{equation}
+                        \lambda' \approx \lambda_{0} \left(1 + \frac{G M}{R^{2}} \frac{L}{c^{2}}\right)
+                        \label{eq:6.s86}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    光在真空中的速度大小 $c$ 与发射器的运动状态无关。设 $A$ 发出的光以光速 $c$ 射向接收器 $B$ 直至到达 $B$ 的运动过程需要的时间为 $t$，有
+                    \begin{equation}
+                        c t = L + \frac{1}{2} a t^{2}
+                        \label{eq:7.s86}
+                    \end{equation}
+                    设接收器 $B$ 接收到激光时相对于地面的速度为
+                    \begin{equation}
+                        v = a t
+                        \label{eq:8.s86}
+                    \end{equation}
+                    由\eqref{eq:7.s86}、\eqref{eq:8.s86}式得
+                    \begin{equation}
+                        v \approx \frac{a L}{c}
+                        \label{eq:9.s86}
+                    \end{equation}
+                    已略去 $\frac{aL}{c^{2}}$ 的高阶小量。按照多普勒频移公式，$B$ 点接收到的光的波长 $\lambda''$ 满足
+                    \begin{equation}
+                        \frac{c}{\lambda''} = \sqrt{\frac{1-\beta}{1+\beta}} \frac{c}{\lambda_{0}}
+                        \label{eq:10.s86}
+                    \end{equation}
+                    式中
+                    \begin{equation}
+                        \beta = \frac{v}{c} = \frac{a L}{c^{2}}
+                        \label{eq:11.s86}
+                    \end{equation}
+                    由于 $\beta \ll 1$，有
+                    \begin{equation}
+                        \sqrt{\frac{1-\beta}{1+\beta}} = \sqrt{1 - \frac{2\beta}{1+\beta}} \approx 1 - \frac{\beta}{1+\beta} = \frac{1}{1+\beta}
+                        \label{eq:12.s86}
+                    \end{equation}
+                    将\eqref{eq:11.s86}、\eqref{eq:12.s86}式代入\eqref{eq:10.s86}式得，$B$ 点的接收器收到的激光波长为
+                    \begin{equation}
+                        \lambda'' = \lambda_{0} \left(1 + a \frac{L}{c^{2}}\right)
+                        \label{eq:13.s86}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    根据等效性原理，若将在（i）和（ii）中所计算的 $B$ 点接收器收到的激光的波长 $\lambda'$ 和 $\lambda''$ 视为同一事件，\eqref{eq:6.s86}式和\eqref{eq:13.s86}式便应表达相同的物理规律；比较（i）和（ii）的结果有
+                    \begin{equation}
+                        a = \frac{G M}{R^{2}}
+                        \label{eq:14.s86}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+            \end{subsubsubsolution}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            在地球表面，重力加速度大小为 $g$，用 $g$ 代替\eqref{eq:4.s86}式中的 $g'$ 得，$B$ 点接收到的光子的频率 $\nu'$ 为
+            \begin{equation}
+                \nu' = \nu_{0} \left(1 - \frac{g L}{c^{2}}\right)
+                \label{eq:15.s86}
+            \end{equation}
+            由\eqref{eq:15.s86}式得，地球重力作用造成的光子频移为
+            \[
+                \Delta \nu = \nu' - \nu_{0} = - \nu_{0} \frac{g L}{c^{2}}
+            \]
+            可见，重力作用造成的频率减小了 $\nu_{0}\frac{gL}{c^{2}}$（红移），需要由穆斯堡尔探测器的相对于地面的运动来进行补偿，以便用穆斯堡尔探测器能探测到该光子。设穆斯堡尔探测器相对于地面沿 $BA$ 方向运动的速度为 $v$ 时，穆斯堡尔探测器能探测到的光子的频率。按照多普勒频移公式有
+            \begin{equation}
+                \nu_{0} = \sqrt{\frac{1+\beta}{1-\beta}} \nu'
+                \label{eq:16.s86}
+            \end{equation}
+            由\eqref{eq:12.s86}、\eqref{eq:16.s86}式可知
+            \begin{equation}
+                \nu' = \frac{\nu_{0}}{1+\beta} \approx \nu_{0} \left(1 - \frac{v}{c}\right)
+                \label{eq:17.s86}
+            \end{equation}
+            由\eqref{eq:15.s86}、\eqref{eq:17.s86}式得
+            \begin{equation}
+                \frac{g L}{c^{2}} = \frac{v}{c}
+                \label{eq:18.s86}
+            \end{equation}
+            即
+            \begin{equation}
+                v = \frac{g L}{c}
+                \label{eq:19.s86}
+            \end{equation}
+            由\eqref{eq:19.s86}式和题给数据得
+            \begin{equation}
+                v = \frac{9.81 \times 22.6}{3.00 \times 10^{8}}\,\mathrm{m\cdot s^{-1}} = 7.39 \times 10^{-7}\,\mathrm{m\cdot s^{-1}}
+                \label{eq:20.s86}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

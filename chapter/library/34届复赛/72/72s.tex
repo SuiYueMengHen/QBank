@@ -1,0 +1,104 @@
+\begin{solution}{72}
+    \begin{subsolution}
+        如图，$\theta$ 为在某时刻小圆柱质心在其横截面上到圆筒中心轴的垂线与竖直方向的夹角。小圆柱受三个力作用：重力，圆筒对小圆柱的支持力和静摩擦力。设圆筒对小圆柱的静摩擦力大小为 $F$，方向沿两圆柱切点的切线方向（向右为正）。考虑小圆柱质心的运动，由质心运动定理得
+        \begin{equation}
+            F - m g \sin \theta = m a
+            \label{eq:1.s72}
+        \end{equation}
+        式中，$a$ 是小圆柱质心运动的加速度。由于小圆柱与圆筒间作无滑滚动，小圆柱绕其中心轴转过的角度 $\theta_{1}$（规定小圆柱在最低点时 $\theta_{1}=0$）与 $\theta$ 之间的关系为
+        \begin{equation}
+            R \theta = r (\theta_{1} + \theta)
+            \label{eq:2.s72}
+        \end{equation}
+        由 \eqref{eq:2.s72} 式得，$a$ 与 $\theta$ 的关系为
+        \begin{equation}
+            a = r \frac{\mathrm{d}^{2} \theta_{1}}{\mathrm{d} t^{2}} = (R - r) \frac{\mathrm{d}^{2} \theta}{\mathrm{d} t^{2}}
+            \label{eq:3.s72}
+        \end{equation}
+        考虑小圆柱绕其自身轴的转动，由转动定理得
+        \begin{equation}
+            - r F = I \frac{\mathrm{d}^{2} \theta_{1}}{\mathrm{d} t^{2}}
+            \label{eq:4.s72}
+        \end{equation}
+        式中，$I$ 是小圆柱绕其自身轴的转动惯量
+        \begin{equation}
+            I = \frac{1}{2} m r^{2}
+            \label{eq:5.s72}
+        \end{equation}
+        由 \eqref{eq:1.s72} \eqref{eq:2.s72} \eqref{eq:3.s72} \eqref{eq:4.s72} \eqref{eq:5.s72} 式及小角近似
+        \begin{equation}
+            \sin \theta \approx \theta
+            \label{eq:6.s72}
+        \end{equation}
+        得
+        \begin{equation}
+            \frac{\mathrm{d}^{2} \theta}{\mathrm{d} t^{2}} + \frac{2 g}{3 (R - r)} \theta = 0
+            \label{eq:7.s72}
+        \end{equation}
+        由 \eqref{eq:7.s72} 式知，小圆柱质心在其平衡位置附近的微振动是简谐振动，其振动频率为
+        \begin{equation}
+            f = \frac{1}{\pi} \sqrt{\frac{g}{6 (R - r)}}
+            \label{eq:8.s72}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        用 $F$ 表示小圆柱与圆筒之间的静摩擦力的大小，$\theta_{1}$ 和 $\theta_{2}$ 分别为小圆柱与圆筒转过的角度（规定小圆柱相对于大圆筒向右运动为正方向，开始时小圆柱处于最低点位置 $\theta_{1} = \theta_{2} = 0$）。对于小圆柱，由转动定理得
+        \begin{equation}
+            - F r = \left(\frac{1}{2} m r^{2}\right) \frac{\mathrm{d}^{2} \theta_{1}}{\mathrm{d} t^{2}}
+            \label{eq:9.s72}
+        \end{equation}
+        对于圆筒，同理有
+        \begin{equation}
+            F R = (M R^{2}) \frac{\mathrm{d}^{2} \theta_{2}}{\mathrm{d} t^{2}}
+            \label{eq:10.s72}
+        \end{equation}
+        由 \eqref{eq:9.s72} \eqref{eq:10.s72} 式得
+        \begin{equation}
+            - F \left(\frac{2}{m} + \frac{1}{M}\right) = r \frac{\mathrm{d}^{2} \theta_{1}}{\mathrm{d} t^{2}} - R \frac{\mathrm{d}^{2} \theta_{2}}{\mathrm{d} t^{2}}
+            \label{eq:11.s72}
+        \end{equation}
+        设在圆柱横截面上小圆柱质心到圆筒中心轴的垂线与竖直方向的夹角为 $\theta$，由于小圆柱与圆筒间做无滑滚动，有
+        \begin{equation}
+            R \theta = r (\theta_{1} + \theta) - R \theta_{2}
+            \label{eq:12.s72}
+        \end{equation}
+        由 \eqref{eq:12.s72} 式得
+        \begin{equation}
+            (R - r) \frac{\mathrm{d}^{2} \theta}{\mathrm{d} t^{2}} = r \frac{\mathrm{d}^{2} \theta_{1}}{\mathrm{d} t^{2}} - R \frac{\mathrm{d}^{2} \theta_{2}}{\mathrm{d} t^{2}}
+            \label{eq:13.s72}
+        \end{equation}
+        设小圆柱质心沿运动轨迹切线方向的加速度为 $a$，由质心运动定理得
+        \begin{equation}
+            F - m g \sin \theta = m a
+            \label{eq:14.s72}
+        \end{equation}
+        由 \eqref{eq:12.s72} 式得
+        \begin{equation}
+            a = (R - r) \frac{\mathrm{d}^{2} \theta}{\mathrm{d} t^{2}}
+            \label{eq:15.s72}
+        \end{equation}
+        由 \eqref{eq:11.s72} \eqref{eq:13.s72} \eqref{eq:14.s72} \eqref{eq:15.s72} 式及小角近似 $\sin \theta \approx \theta$，得
+        \begin{equation}
+            \frac{\mathrm{d}^{2} \theta}{\mathrm{d} t^{2}} + \frac{2 M + m}{3 M + m} \frac{g}{R - r} \theta = 0
+            \label{eq:16.s72}
+        \end{equation}
+        由 \eqref{eq:16.s72} 式可知，小圆柱质心在其平衡位置附近的微振动是简谐振动，其振动频率为
+        \begin{equation}
+            f = \frac{1}{2 \pi} \sqrt{\frac{2 M + m}{3 M + m} \frac{g}{R - r}}
+            \label{eq:17.s72}
+        \end{equation}
+    \end{subsolution}
+\end{solution}
+
+
+
+
+
+
+
+
+
+
+
+
+

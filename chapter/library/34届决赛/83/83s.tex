@@ -1,0 +1,121 @@
+\begin{solution}{83}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            线框 $ab$ 边和 $cd$ 边绕 $OO'$ 轴的转动惯量 $J_{ab}$ 和 $J_{cd}$ 均为
+            \begin{equation}
+                J_{\mathrm{ab}} = J_{\mathrm{cd}} = \frac{m}{4} \left(\frac{l}{2}\right)^{2} = \frac{m l^{2}}{16}
+                \label{eq:1.s83}
+            \end{equation}
+            线框 $ad$ 边和 $bc$ 边绕 $OO'$ 轴的转动惯量 $J_{ad}$ 和 $J_{bc}$ 均为
+            \begin{equation}
+                J_{\mathrm{ad}} = J_{\mathrm{bc}} = 2 \int_{0}^{l/2} \frac{m}{4l} r^{2} \,dr = \frac{m l^{2}}{48}
+                \label{eq:2.s83}
+            \end{equation}
+            线框绕 $OO'$ 轴的转动惯量 $J$ 为
+            \begin{equation}
+                J = J_{\mathrm{ab}} + J_{\mathrm{cd}} + J_{\mathrm{ad}} + J_{\mathrm{bc}} = \frac{m l^{2}}{6}
+                \label{eq:3.s83}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            当线框中通过电流 $I$ 时，$ab$ 和 $cd$ 两边受到大小相等、方向分别指向 $X$ 轴正向和反向的安培力。设线框的 $ab$ 边转到与 $X$ 轴的夹角为 $\theta$ 时其角速度为 $\dot{\theta}$，角加速度为 $\ddot{\theta}$，$ab$ 边和 $cd$ 边的线速度则为 $v = \frac{l}{2}\dot{\theta}$，所受安培力大小为 $F = B l I$，线框所受力偶矩为
+            \begin{equation}
+                M = -2 \cdot \frac{l}{2} B l I \sin\theta \approx - B l^{2} I \theta
+                \label{eq:4.s83}
+            \end{equation}
+            式中已利用了小角近似 $\sin\theta\approx\theta$，而负号表示力偶矩与线框角位移 $\theta$ 方向相反。根据刚体转动定理，有
+            \begin{equation}
+                J \ddot{\theta} = - B l^{2} I \theta
+                \label{eq:5.s83}
+            \end{equation}
+            此方程与单摆的动力学方程在形式上完全一致，所以线框将做简谐运动，可设
+            \begin{equation}
+                \theta = \theta_{0} \cos \omega t
+                \label{eq:6.s83}
+            \end{equation}
+            将其代入\eqref{eq:5.s83}式得
+            \begin{equation}
+                \omega = l \sqrt{\frac{B I}{J}} = \sqrt{\frac{6 B I}{m}}
+                \label{eq:7.s83}
+            \end{equation}
+            于是，角位移 $\theta$ 随时间 $t$ 而变化的关系式为
+            \begin{equation}
+                \theta = \theta_{0} \cos \sqrt{\frac{6 B I}{m}} t
+                \label{eq:8.s83}
+            \end{equation}
+            角速度 $\dot{\theta}$ 随时间 $t$ 而变化的关系式为
+            \begin{equation}
+                \dot{\theta} = - \theta_{0} \sqrt{\frac{6 B I}{m}} \sin \sqrt{\frac{6 B I}{m}} t
+                \label{eq:9.s83}
+            \end{equation}
+            角加速度 $\ddot{\theta}$ 随时间 $t$ 而变化的关系式为
+            \begin{equation}
+                \ddot{\theta} = - \theta_{0} \frac{6 B I}{m} \cos \sqrt{\frac{6 B I}{m}} t
+                \label{eq:10.s83}
+            \end{equation}
+            由\eqref{eq:8.s83}--\eqref{eq:10.s83}式知，当 $t=\overline{t}=\frac{\pi}{2}\sqrt{\frac{m}{6BI}}$ 时，$\theta(\overline{t})=0$, $\dot{\theta}(\overline{t})=-\theta_{0}\sqrt{\frac{6BI}{m}}$ 达到反向最大值，$\ddot{\theta}(\overline{t})=0$。可见，线框的运动是以 $\theta=0$ 为平衡位置、圆频率 $\omega=\sqrt{\frac{6BI}{m}}$、周期 $T=2\pi\sqrt{\frac{m}{6BI}}$、振幅为 $\theta_{0}$ 的简谐运动。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            线框在做上述简谐运动的过程中，当在 $t=t_{0}>0$ 时逆时针转至 $da$ 边与 $X$ 轴正向重合，有
+            \begin{equation}
+                \theta(t_{0}) = 0,\ \text{且}\ \dot{\theta}_{0} = \dot{\theta}(t_{0}) = \theta_{0} \sqrt{\frac{6 B I}{m}},
+                \label{eq:11.s83}
+            \end{equation}
+            此时 $P$、$Q$ 形成断路，线框内没有电流，不再受到安培力的力矩的作用，线框将保持作角速度为 $\dot{\theta}_{0}$ 的匀角速转动
+            \begin{equation}
+                \dot{\theta}(t) = \dot{\theta}_{0}, \quad t \geq t_{0}
+                \label{eq:12.s83}
+            \end{equation}
+            因为 $ab$ 和 $cd$ 边切割磁力线，线框中产生的感应电动势随时间变化的关系为
+            \begin{align}
+                \varepsilon &= 2 B l v \sin\left[ \theta_{0} \sqrt{\frac{6 B I}{m}} (t-t_{0}) \right] \notag\\
+                &= 2 B l \frac{l}{2} \dot{\theta} \sin\left[ \theta_{0} \sqrt{\frac{6 B I}{m}} (t-t_{0}) \right] \notag\\
+                &= B l^{2} \theta_{0} \sqrt{\frac{6 B I}{m}} \sin\left[ \theta_{0} \sqrt{\frac{6 B I}{m}} (t-t_{0}) \right]
+                \label{eq:13.s83}
+            \end{align}
+            方向沿 $P\rightarrow a\rightarrow b\rightarrow c\rightarrow d\rightarrow Q$。$P$、$Q$ 间电压 $V_{PQ}$ 随时间变化的表达式为
+            \begin{equation}
+                V_{\mathrm{PQ}} = - B l^{2} \theta_{0} \sqrt{\frac{6 B I}{m}} \sin\left[ \theta_{0} \sqrt{\frac{6 B I}{m}} (t-t_{0}) \right]
+                \label{eq:14.s83}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            当 $P$、$Q$ 短路后，设线框转到某一角位置 $\theta$ 时的角速度为 $\dot{\theta}$。由于 $ab$ 和 $cd$ 边切割磁力线产生的感应电动势为 $B l^{2} \dot{\theta} \sin\theta$，在线框中产生的电流为 $\frac{B l^{2} \dot{\theta}}{R} \sin\theta$，$ab$ 和 $cd$ 边受到的安培力大小为 $B\left(\frac{B l^{2} \dot{\theta}}{R}\right) l \sin\theta = \frac{B^{2} l^{3}}{R} \dot{\theta} \sin\theta$，分别指向 $X$ 轴正向和反向，形成的力偶矩为
+            \begin{equation}
+                M = - \frac{B^{2} l^{4}}{R} \dot{\theta} \sin^{2} \theta
+                \label{eq:15.s83}
+            \end{equation}
+            设 $P$、$Q$ 刚短路的时刻为 $t_{1}$，此时线框还在以\eqref{eq:11.s83}式的角速度逆时针转动，其角动量为
+            \begin{equation}
+                J \dot{\theta}_{0} = \frac{m l^{2}}{6} \theta_{0} \sqrt{\frac{6 B I}{m}} = l^{2} \theta_{0} \sqrt{\frac{m B I}{6}}
+                \label{eq:16.s83}
+            \end{equation}
+            由于受到上述力偶矩的作用，线框转动会减慢直至停止。设停止转动时的时刻为 $t_{x}$，角位置为 $\theta_{1}+\alpha$，此时线框的角动量为 $0$。根据角动量定理，应有
+            \begin{equation}
+                0 - J \dot{\theta}_{0} = \int_{t_{1}}^{t_{x}} M \,dt,
+                \label{eq:17.s83}
+            \end{equation}
+            由此得
+            \begin{align}
+                J \dot{\theta}_{0} &= \int_{t_{1}}^{t_{x}} \frac{B^{2} l^{4}}{R} \dot{\theta} \sin^{2} \theta \,dt = \int_{\theta_{1}}^{\theta_{1}+\alpha} \frac{B^{2} l^{4}}{R} \sin^{2} \theta \,d\theta \notag\\
+                &\approx \frac{B^{2} l^{4}}{R} \alpha \sin^{2} \theta_{1}
+                \label{eq:18.s83}
+            \end{align}
+            式中右端积分已应用了 $\alpha$ 是小角度的题设条件。由\eqref{eq:3.s83}、\eqref{eq:18.s83}式得
+            \begin{equation}
+                \alpha = \frac{R J \dot{\theta}_{0}}{B^{2} l^{4} \sin^{2} \theta_{1}} = \frac{R \theta_{0}}{B l^{2} \sin^{2} \theta_{1}} \sqrt{\frac{m I}{6 B}}
+                \label{eq:19.s83}
+            \end{equation}
+            当
+            \begin{equation}
+                \theta_{1} = \frac{\pi}{2}
+                \label{eq:20.s83}
+            \end{equation}
+            时，$\alpha$ 达到其最小值 $\alpha_{\min}$
+            \begin{equation}
+                \alpha_{\min} = \frac{R}{B l^{2}} \sqrt{\frac{m I}{6 B}} \, \theta_{0}
+                \label{eq:21.s83}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

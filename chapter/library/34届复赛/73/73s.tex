@@ -1,0 +1,91 @@
+\begin{solution}{73}
+    \begin{subsolution}
+        由题设，彗星的运动轨道为抛物线，故
+        \begin{equation}
+            \varepsilon = 1,\quad E = 0
+        \end{equation}
+        彗星绕太阳运动的轨道方程为
+        \begin{equation}
+            r = \frac{k}{1 + \cos \theta}
+            \label{eq:1.s73}
+        \end{equation}
+        彗星绕太阳运动过程中，机械能守恒
+        \begin{equation}
+            \frac{1}{2} m \dot{r}^{2} + \frac{L^{2}}{2 m r^{2}} + V(r) = E = 0
+            \label{eq:2.s73}
+        \end{equation}
+        式中
+        \begin{equation}
+            V(r) = - G \frac{M m}{r}
+            \label{eq:3.s73}
+        \end{equation}
+        当彗星运动到近日点 $A$ 时，其径向速度为零，设其到太阳的距离为 $r_{\min}$，由 \eqref{eq:2.s73} 式得
+        \begin{equation}
+            \frac{L^{2}}{2 m r_{\min}^{2}} = - V(r_{\min}) = G \frac{M m}{r_{\min}}
+            \label{eq:4.s73}
+        \end{equation}
+        由 \eqref{eq:4.s73} 式和题给条件得
+        \begin{equation}
+            \frac{L^{2}}{2 G M m^{2}} = r_{\min} = \frac{R_{\mathrm{E}}}{3}
+            \label{eq:5.s73}
+        \end{equation}
+        由 \eqref{eq:2.s73} 式得
+        \begin{equation}
+            \frac{\mathrm{d} r}{\mathrm{d} t} = \sqrt{\frac{2 G M}{r} - \frac{L^{2}}{m^{2} r^{2}}}
+        \end{equation}
+        或
+        \begin{equation}
+            \mathrm{d} t = \frac{\mathrm{d} r}{\sqrt{\frac{2 G M}{r} - \frac{L^{2}}{m^{2} r^{2}}}}
+            \label{eq:6.s73}
+        \end{equation}
+        设彗星由近日点 $A$ 运动到与地球轨道的交点 $C$ 所需的时间为 $\Delta t$，对 \eqref{eq:6.s73} 式两边积分，并利用 \eqref{eq:5.s73} 式得
+        \begin{equation}
+            \Delta t = \int_{r_{\min}}^{R_{\mathrm{E}}} \frac{\mathrm{d} r}{\sqrt{\frac{2 G M}{r} - \frac{L^{2}}{m^{2} r^{2}}}} = \frac{1}{\sqrt{2 G M}} \int_{\frac{R_{\mathrm{E}}}{3}}^{R_{\mathrm{E}}} \frac{r \,\mathrm{d} r}{\sqrt{r - \frac{R_{\mathrm{E}}}{3}}}
+            \label{eq:7.s73}
+        \end{equation}
+        对 \eqref{eq:7.s73} 式应用题给积分公式得
+        \begin{align}
+            \Delta t &= \frac{1}{\sqrt{2 G M}} \int_{\frac{R_{\mathrm{E}}}{3}}^{R_{\mathrm{E}}} \frac{r \,\mathrm{d} r}{\sqrt{r - \frac{R_{\mathrm{E}}}{3}}} \nonumber \\
+            &= \frac{1}{\sqrt{2 G M}} \left[ \frac{2}{3} \left(R_{\mathrm{E}} - \frac{R_{\mathrm{E}}}{3}\right)^{3/2} + \frac{2 R_{\mathrm{E}}}{3} \left(R_{\mathrm{E}} - \frac{R_{\mathrm{E}}}{3}\right)^{1/2} \right] \nonumber \\
+            &= \frac{10 \sqrt{3}}{27} \frac{R_{\mathrm{E}}^{3/2}}{\sqrt{G M}}
+            \label{eq:8.s73}
+        \end{align}
+        由对称性可知，彗星两次穿越地球轨道所用的时间间隔为
+        \begin{equation}
+            T = 2 \Delta t = \frac{20 \sqrt{3}}{27} \frac{R_{\mathrm{E}}^{3/2}}{\sqrt{G M}}
+            \label{eq:9.s73}
+        \end{equation}
+        将题给数据代入 \eqref{eq:9.s73} 式得
+        \begin{equation}
+            T \approx 6.40 \times 10^{6}\,\mathrm{s}
+            \label{eq:10.s73}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        彗星在运动过程中机械能守恒
+        \begin{equation}
+            \frac{1}{2} m v^{2} - \frac{G M m}{r} = E = 0
+            \label{eq:11.s73}
+        \end{equation}
+        式中 $v$ 是彗星离太阳的距离为 $r$ 时的运行速度的大小。由 \eqref{eq:11.s73} 式有
+        \begin{equation}
+            v = \sqrt{\frac{2 G M}{r}}
+            \label{eq:12.s73}
+        \end{equation}
+        当彗星经过 $C$、$D$ 处时
+        \begin{equation}
+            r_{\mathrm{C}} = r_{\mathrm{D}} = R_{\mathrm{E}}
+            \label{eq:13.s73}
+        \end{equation}
+        由 \eqref{eq:12.s73} \eqref{eq:13.s73} 式得，彗星经过 $C$、$D$ 两点处的速度的大小为
+        \begin{equation}
+            v_{\mathrm{C}} = v_{\mathrm{D}} = \sqrt{\frac{2 G M}{R_{\mathrm{E}}}}
+            \label{eq:14.s73}
+        \end{equation}
+        由 \eqref{eq:14.s73} 式和题给数据得
+        \begin{equation}
+            v_{\mathrm{C}} = v_{\mathrm{D}} = 4.22 \times 10^{4}\,\mathrm{m/s}
+            \label{eq:15.s73}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

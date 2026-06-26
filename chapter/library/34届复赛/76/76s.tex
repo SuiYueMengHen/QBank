@@ -1,0 +1,116 @@
+\begin{solution}{76}
+    \begin{subsolution}
+        设离子从 $O$ 点射入磁场时的速率为 $v$，由能量守恒得
+        \begin{equation}
+            q U = \frac{1}{2} m v^{2}
+            \label{eq:1.s76}
+        \end{equation}
+        由 \eqref{eq:1.s76} 式得
+        \begin{equation}
+            v = \sqrt{\frac{2 q U}{m}}
+            \label{eq:2.s76}
+        \end{equation}
+        设离子在磁场中做匀速圆周运动的轨迹半径为 $r$，有
+        \begin{equation}
+            q B v = m \frac{v^{2}}{r}
+            \label{eq:3.s76}
+        \end{equation}
+        由 \eqref{eq:2.s76} \eqref{eq:3.s76} 式得
+        \begin{equation}
+            r = \frac{1}{B} \sqrt{\frac{2 m U}{q}}
+            \label{eq:4.s76}
+        \end{equation}
+        若
+        \begin{equation}
+            r > \frac{b D}{2} \quad \text{或} \quad \frac{D}{2} < r < \frac{b D}{2}
+        \end{equation}
+        则离子只能打到器壁或离子源外壁被吸收，不能从 $P$ 射出。若离子从 $O$ 射出后只运动半个圆周即从 $P$ 射出，则
+        \begin{equation}
+            r = \frac{b D}{2}
+            \label{eq:5.s76}
+        \end{equation}
+        将 \eqref{eq:5.s76} 式代入 \eqref{eq:4.s76} 式得，离子能够从 $P$ 出射，可能的磁感应强度 $B$ 的最小值为
+        \begin{equation}
+            B_{\min} = \frac{2}{b D} \sqrt{\frac{2 m U}{q}}
+            \label{eq:6.s76}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        若
+        \begin{equation}
+            r < \frac{D}{2}
+        \end{equation}
+        则离子将穿过上极板进入电场区域，被减速到零后，又重新反向加速至进入时的速率，从进入处再回到磁场区域。设这样的过程进行了 $k$ 次，然后离子将绕过两极板右端从下极板进入电场区域被加速，再穿过上极板进入磁场时能量增加到 $2qU$，运动半径增加到
+        \begin{equation}
+            r_{1} = \sqrt{2} r = \sqrt{1 + 1} r
+            \label{eq:7.s76}
+        \end{equation}
+        这样加速 $n$ 次后，离子做圆周运动的半径 $r_{n}$ 为
+        \begin{equation}
+            r_{n} = \sqrt{n + 1} r
+            \label{eq:8.s76}
+        \end{equation}
+        当满足条件
+        \begin{equation}
+            k r + r_{n} = (\sqrt{n + 1} + k) r = \frac{b D}{2}
+            \label{eq:9.s76}
+        \end{equation}
+        或
+        \begin{equation}
+            r = \frac{b D}{2(\sqrt{n + 1} + k)}
+        \end{equation}
+        时，离子可从 $P$ 处射出。另一方面，显然有 $k \geq 1$，且
+        \begin{equation}
+            2 k r \leq D < 2 (k + 1) r
+            \label{eq:10.s76}
+        \end{equation}
+        由 \eqref{eq:10.s76} 式得
+        \begin{equation}
+            \frac{D}{2 (k + 1)} < r \leq \frac{D}{2 k}
+            \label{eq:11.s76}
+        \end{equation}
+        由 \eqref{eq:9.s76} \eqref{eq:10.s76} \eqref{eq:11.s76} 式有
+        \begin{equation}
+            (\sqrt{n + 1} + k) \frac{D}{2 (k + 1)} < \frac{b D}{2} \leq (\sqrt{n + 1} + k) \frac{D}{2 k}
+            \label{eq:12.s76}
+        \end{equation}
+        由 \eqref{eq:12.s76} 式得
+        \begin{equation}
+            (b - 1)^{2} k^{2} - 1 \leq n < [ (b - 1) k + b ]^{2} - 1
+            \label{eq:13.s76}
+        \end{equation}
+        由 \eqref{eq:4.s76} \eqref{eq:11.s76} 式可得
+        \begin{equation}
+            k \leq \frac{D}{2 r_{\max}} = \frac{D B_{\max}}{2} \sqrt{\frac{q}{2 m U}} \equiv \frac{a}{2}
+            \label{eq:14.s76}
+        \end{equation}
+        式中 $r_{\max}$ 是当 $B = B_{\max}$ 时由 \eqref{eq:4.s76} 式定出的。因此，$k$ 为不大于 $\frac{a}{2}$ 的最大自然数 $[\frac{a}{2}]$
+        \begin{equation}
+            k \leq \left[ \frac{a}{2} \right]
+            \label{eq:15.s76}
+        \end{equation}
+        由 \eqref{eq:4.s76} \eqref{eq:9.s76} 式知，磁感应强度 $B$ 的其它所有可能值为
+        \begin{equation}
+            B = \frac{1}{r} \sqrt{\frac{2 m U}{q}} = \frac{2 (\sqrt{n + 1} + k)}{b D} \sqrt{\frac{2 m U}{q}}
+            \label{eq:16.s76}
+        \end{equation}
+        式中 $n$ 的取值范围由 \eqref{eq:13.s76} 式给出，对于每个 $k$，$n$ 可取该范围内的所有整数。
+    \end{subsolution}
+    \begin{subsolution}
+        离子被电场加速了 $n+1$ 次后，其出射能量为
+        \begin{equation}
+            E = (n + 1) q U
+            \label{eq:17.s76}
+        \end{equation}
+        对于满足 \eqref{eq:15.s76} 式的 $k$，$n$ 可以取到最大值为
+        \begin{equation}
+            n_{\max} = [ (b - 1) k + b ]^{2} - 2
+            \label{eq:18.s76}
+        \end{equation}
+        由 \eqref{eq:17.s76} \eqref{eq:18.s76} 式得，出射离子的能量最大值为
+        \begin{equation}
+            E_{\max} = (n_{\max} + 1) q U = \left\{ \left[ (b - 1) \left[ \frac{a}{2} \right] + b \right]^{2} - 1 \right\} q U
+            \label{eq:19.s76}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

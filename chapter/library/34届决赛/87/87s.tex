@@ -1,0 +1,145 @@
+\begin{solution}{87}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            已知入射光的波长范围为 $450 - 1200\,\mathrm{nm}$，由色散关系可得到折射率范围
+            \[
+                2.278 \leq n \leq 2.436
+            \]
+            可见，氮化镓的折射率小于硅的折射率，在空气-氮化镓和氮化镓-硅界面处均要考虑半波损失，但对于两界面反射光的干涉不需要考虑半波损失。
+
+            设对于波长为 $600\,\mathrm{nm}$ 的入射光，薄膜的折射率为 $n_{1}$；对于波长 $\lambda$ 的入射光，薄膜的折射率为 $n$。对于波长为 $600\,\mathrm{nm}$ 的入射光，光经厚度为 $d$ 的氮化镓薄膜的前、后面反射后，在表面相遇，相干加强条件为
+            \begin{equation}
+                2 n_{1} d = k_{1} \lambda_{1} \quad (k_{1}=1,2,\dots)
+                \label{eq:1.s87}
+            \end{equation}
+            同理，对于波长 $\lambda$ 的入射光，相干加强的条件为
+            \begin{equation}
+                2 n d = k \lambda \quad (k=1,2,\dots)
+                \label{eq:2.s87}
+            \end{equation}
+            由\eqref{eq:1.s87}、\eqref{eq:2.s87}式有
+            \begin{equation}
+                \frac{k_{1}}{k} \frac{n}{n_{1}} = \frac{\lambda}{\lambda_{1}} \quad \text{或} \quad \frac{k_{1}}{k} = \frac{n_{1}}{n} \frac{\lambda}{\lambda_{1}}
+                \label{eq:3.s87}
+            \end{equation}
+            由\eqref{eq:3.s87}式，根据题意，设 $\lambda'$ 和 $\lambda''$ 分别对应 $450\,\mathrm{nm}$ 和 $1200\,\mathrm{nm}$ 的入射光波长，薄膜相应的折射率分别为 $n'$ 和 $n''$，根据题给色散关系得
+            \begin{equation}
+                n_{1}(600\,\mathrm{nm}) \approx 2.342,\quad n'(450\,\mathrm{nm}) \approx 2.436,\quad n''(1200\,\mathrm{nm}) \approx 2.278
+                \label{eq:4.s87}
+            \end{equation}
+            由\eqref{eq:4.s87}式有
+            \begin{equation}
+                \frac{k_{1}}{k'} = \frac{n_{1}(600)}{n'(450)} \frac{450}{600} \approx 0.721,\quad \frac{k_{1}}{k''} = \frac{n_{1}(600)}{n''(1200)} \frac{1200}{600} \approx 2.056
+                \label{eq:5.s87}
+            \end{equation}
+            由\eqref{eq:5.s87}式和题意得
+            \[
+                \frac{k_{1}}{k'} < \frac{k_{1}}{k} < \frac{k_{1}}{k''}
+            \]
+            由上式及题给条件知仅有
+            \begin{equation}
+                k_{1} = 2,\ k = 1
+                \label{eq:6.s87}
+            \end{equation}
+            符合条件。由\eqref{eq:4.s87}、\eqref{eq:6.s87}式代入\eqref{eq:1.s87}式得
+            \begin{equation}
+                d \approx 256\,\mathrm{nm}
+                \label{eq:7.s87}
+            \end{equation}
+            将\eqref{eq:6.s87}、\eqref{eq:7.s87}式代入\eqref{eq:2.s87}式得
+            \begin{equation}
+                \frac{\lambda}{n} \approx 512.38
+                \label{eq:8.s87}
+            \end{equation}
+            由题给色散关系式和\eqref{eq:8.s87}式得
+            \[
+                2.41 n^{4} - 12.97 n^{2} + 2.32 = 0
+            \]
+            或
+            \[
+                2.41 \left(\frac{\lambda}{512.38}\right)^{4} - 12.97 \left(\frac{\lambda}{512.38}\right)^{2} + 2.32 = 0
+            \]
+            由此方程解得
+            \begin{equation}
+                \lambda = 1168\,\mathrm{nm}
+                \label{eq:9.s87}
+            \end{equation}
+            另一解 $\lambda = 220\,\mathrm{nm}$ 不在题给波长范围内，舍去。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            设频率为 $\nu$ 的单色光，每秒垂直入射到物体表面每平方米上的光子数为 $N$。每个光子传给物体的动量为 $\frac{h\nu}{c}$（$h$ 为普朗克常量，$c$ 是真空中的光速），若入射光子全被物体吸收，则该表面每平方米在每秒内所获得的动量即光压 $P_{0}$ 为
+            \[
+                P_{0} = N \frac{h\nu}{c}
+            \]
+            每个光子传给物体的能量为 $h\nu$，每秒垂直入射到全吸收物体表面每平方米上的能量为
+            \[
+                N h\nu = \overline{w} c
+            \]
+            式中 $\overline{w}$ 为电磁波平均能量密度
+            \[
+                \overline{w} = \varepsilon_{0} E^{2}
+            \]
+            由以上三式得，频率为 $\nu$ 的单色光正入射到全吸收表面时对该表面的光压 $P_{0}$ 为
+            \begin{equation}
+                P_{0} = \overline{w} = \varepsilon_{0} E^{2}
+                \label{eq:10.s87}
+            \end{equation}
+            辐射压强对样品的合力矩为
+            \begin{align}
+                L_{p} &= \left(2 P_{0} \cdot \frac{a b}{2} \cdot \cos\alpha\right) \cdot \frac{a}{4} \cdot \cos\alpha - \left(P_{0} \cdot \frac{a b}{2} \cdot \cos\alpha\right) \cdot \frac{a}{4} \cdot \cos\alpha \notag\\
+                &= P_{0} \cdot \frac{a^{2} b}{8} \cdot \cos^{2}\alpha
+                \label{eq:11.s87}
+            \end{align}
+            如图，由几何关系可知
+            \[
+                A C = a \sin\frac{\alpha}{2}
+            \]
+            由此得
+            \begin{equation}
+                \beta = \frac{\alpha}{2}
+                \label{eq:12.s87}
+            \end{equation}
+            样品在竖直方向受力平衡
+            \begin{equation}
+                2 N \cos\beta = M g
+                \label{eq:13.s87}
+            \end{equation}
+            式中 $N$ 为细绳的拉力，$M$ 为基片质量 $m'$ 和氮化镓薄膜质量 $m$ 的和
+            \begin{equation}
+                M = m' + m = (\rho' d' + \rho d) a b
+                \label{eq:14.s87}
+            \end{equation}
+            轻细线拉力 $N$ 提供给样品转矩为
+            \begin{equation}
+                L_{N} = 2 (N \sin\beta) \cdot \left(\frac{a}{2} \cos\frac{\alpha}{2}\right)
+                \label{eq:15.s87}
+            \end{equation}
+            根据样品所受力矩平衡条件 $L_{N} = L_{p}$，将\eqref{eq:12.s87}--\eqref{eq:15.s87}式代入上式得
+            \begin{align}
+                (\rho' d' + \rho d) a b \cdot g \cdot \frac{a}{2} \sin\frac{\alpha}{2} = P_{0} \cdot \frac{a^{2} b}{8} \cdot \cos^{2}\alpha
+                \label{eq:16.s87}
+            \end{align}
+            由\eqref{eq:10.s87}、\eqref{eq:16.s87}式得
+            \[
+                \frac{\sin\frac{\alpha}{2}}{\cos^{2}\alpha} = \frac{\varepsilon_{0} E^{2}}{4 (\rho' d' + \rho d) g}
+            \]
+            即
+            \begin{equation}
+                E = 2 \left[ \frac{(\rho' d' + \rho d) g}{\varepsilon_{0}} \frac{\sin\frac{\alpha}{2}}{\cos^{2}\alpha} \right]^{1/2}
+                \label{eq:17.s87}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            将题给数据代入\eqref{eq:17.s87}式得
+            \begin{equation}
+                \frac{\sin\frac{\alpha}{2}}{\cos^{2}\alpha} = 8.12 \times 10^{-4}
+                \label{eq:18.s87}
+            \end{equation}
+            考虑到\eqref{eq:18.s87}式右边很小，$\alpha$ 也很小。由\eqref{eq:18.s87}式和小角度近似 $\sin\alpha\approx\alpha$ 与 $\cos\alpha\approx1$，得
+            \begin{equation}
+                \alpha \approx 1.62 \times 10^{-3}\,\mathrm{rad}
+                \label{eq:19.s87}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

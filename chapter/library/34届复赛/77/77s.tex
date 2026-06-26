@@ -1,0 +1,107 @@
+\begin{solution}{77}
+    \begin{subsolution}
+        由氢原子的能级公式
+        \begin{equation}
+            E_{n} = - \frac{13.6\,\mathrm{eV}}{n^{2}},\quad n = 1, 2, \dots
+            \label{eq:1.s77}
+        \end{equation}
+        可得氢原子的能级图如图所示。
+        可见光光子能量的上限 $E_{1}^{\prime}$ 和下限 $E_{2}^{\prime}$ 分别为
+        \begin{align}
+            E_{1}^{\prime} &= \frac{h c}{\lambda_{1}} = \frac{1240\,\mathrm{nm \cdot eV}}{400\,\mathrm{nm}} = 3.10\,\mathrm{eV} \label{eq:2.s77} \\
+            E_{2}^{\prime} &= \frac{h c}{\lambda_{2}} = \frac{1240\,\mathrm{nm \cdot eV}}{760\,\mathrm{nm}} = 1.63\,\mathrm{eV} \label{eq:3.s77}
+        \end{align}
+        要能观察到可见光范围内的光谱线，发生跃迁的两能级的能量之差应在可见光的能量范围
+        \begin{equation}
+            1.63\,\mathrm{eV} \sim 3.10\,\mathrm{eV}
+            \label{eq:4.s77}
+        \end{equation}
+        内。要仅能观察到一条可见光范围内的光谱线，由氢原子的能级图可知，只能将氢原子激发到第二激发态，即能级
+        \begin{equation}
+            n = 3
+            \label{eq:5.s77}
+        \end{equation}
+        氢原子第二激发态（$n=3$）到第一激发态（$n=2$）的能量差为
+        \begin{equation}
+            E_{32} = E_{3} - E_{2} = (-1.51\,\mathrm{eV}) - (-3.40\,\mathrm{eV}) = 1.89\,\mathrm{eV}
+            \label{eq:6.s77}
+        \end{equation}
+        氢原子从第二激发态跃迁到第一激发态所发出的可见光的波长为
+        \begin{equation}
+            \lambda = \frac{h c}{E_{32}} = 656\,\mathrm{nm}
+            \label{eq:7.s77}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        要使氢原子能激发到能级 $n=3$，需要提供的能量至少为
+        \begin{equation}
+            E_{31} = E_{3} - E_{1} = (-1.51\,\mathrm{eV}) - (-13.60\,\mathrm{eV}) = 12.09\,\mathrm{eV}
+            \label{eq:8.s77}
+        \end{equation}
+        设电子质量为 $m_{\mathrm{e}}$，电子碰撞前后的速度分别为 $v_{1}$ 和 $v_{2}$，氢原子碰撞前后的速度分别为 $u_{1} \approx 0$（由题意）和 $u_{2}$，电子因激发氢原子而损失的能量为 $\Delta E$（被氢原子吸收为激发能）。由动量和能量守恒有
+        \begin{equation}
+            m_{\mathrm{e}} v_{1} = m_{\mathrm{e}} v_{2} + M u_{2}
+            \label{eq:9.s77}
+        \end{equation}
+        \begin{equation}
+            \frac{1}{2} m_{\mathrm{e}} v_{1}^{2} = \frac{1}{2} m_{\mathrm{e}} v_{2}^{2} + \frac{1}{2} M u_{2}^{2} + \Delta E
+            \label{eq:10.s77}
+        \end{equation}
+        由 \eqref{eq:9.s77} \eqref{eq:10.s77} 式消去 $u_{2}$，得
+        \begin{equation}
+            m_{\mathrm{e}} (M + m_{\mathrm{e}}) v_{2}^{2} - 2 m_{\mathrm{e}}^{2} v_{1} v_{2} + m_{\mathrm{e}} (m_{\mathrm{e}} - M) v_{1}^{2} + 2 M \Delta E = 0
+            \label{eq:11.s77}
+        \end{equation}
+        此式是关于 $v_{2}$ 的一元二次方程。注意到 $v_{2}$ 为实的常量，故方程 \eqref{eq:11.s77} 的系数应满足条件
+        \begin{equation}
+            (-2 m_{\mathrm{e}}^{2} v_{1})^{2} - 4 m_{\mathrm{e}} (M + m_{\mathrm{e}}) [ m_{\mathrm{e}} (m_{\mathrm{e}} - M) v_{1}^{2} + 2 M \Delta E ] \geq 0
+            \label{eq:12.s77}
+        \end{equation}
+        化简得
+        \begin{equation}
+            E_{k} \equiv \frac{1}{2} m_{\mathrm{e}} v_{1}^{2} \geq \left(1 + \frac{m_{\mathrm{e}}}{M}\right) \Delta E
+            \label{eq:13.s77}
+        \end{equation}
+        要使原子从基态仅激发到第二激发态，$\Delta E$ 应满足
+        \begin{equation}
+            E_{31} \leq \Delta E < E_{41}
+            \label{eq:14.s77}
+        \end{equation}
+        式中 $E_{31}$ 已由 \eqref{eq:8.s77} 式给出，而
+        \begin{equation}
+            E_{41} = E_{4} - E_{1} = (-0.85\,\mathrm{eV}) - (-13.60\,\mathrm{eV}) = 12.75\,\mathrm{eV}
+            \label{eq:15.s77}
+        \end{equation}
+        由 \eqref{eq:13.s77} \eqref{eq:14.s77} \eqref{eq:15.s77} 式得
+        \begin{equation}
+            \left(1 + \frac{m_{\mathrm{e}}}{M}\right) E_{31} \leq E_{\mathrm{k}} < \left(1 + \frac{m_{\mathrm{e}}}{M}\right) E_{41}
+            \label{eq:16.s77}
+        \end{equation}
+        由 \eqref{eq:16.s77} 式和题给条件得
+        \begin{equation}
+            12.10\,\mathrm{eV} \leq E_{\mathrm{k}} < 12.76\,\mathrm{eV}
+            \label{eq:17.s77}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        如果将电子改为质子，\eqref{eq:16.s77} 式成为
+        \begin{equation}
+            \left(1 + \frac{m_{\mathrm{p}}}{M}\right) E_{31} \leq E_{k} < \left(1 + \frac{m_{\mathrm{p}}}{M}\right) E_{41}
+            \label{eq:18.s77}
+        \end{equation}
+        式中 $m_{\mathrm{p}}$ 为质子的质量。由 \eqref{eq:18.s77} 式和题给条件得
+        \begin{equation}
+            24.17\,\mathrm{eV} \leq E_{\mathrm{k}} < 25.49\,\mathrm{eV}
+            \label{eq:19.s77}
+        \end{equation}
+        设加速质子的加速电压为 $V$。由
+        \begin{equation}
+            e V = E_{\mathrm{k}} \quad (e \text{ 为质子电荷})
+        \end{equation}
+        和 \eqref{eq:19.s77} 式得
+        \begin{equation}
+            24.17\,\mathrm{V} \leq V < 25.49\,\mathrm{V}
+            \label{eq:20.s77}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

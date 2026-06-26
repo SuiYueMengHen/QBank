@@ -1,0 +1,76 @@
+\begin{solution}{79}
+    \begin{subsolution}
+        考虑单个球面的折射。如图，设某一与光轴距离为 $h$ 的光线平行于光轴 $Z$ 从折射率为 $n$ 的介质中射向半径为 $R$、球心位于 $C$ 点的球面，入射点为球面上的 $A$ 点，$CA$ 为球面半径，入射角为 $\alpha$，球面外是空气，折射角为 $\beta$，折射线与 $Z$ 轴交点为 $F$。由 $A$ 作 $Z$ 轴的垂线，垂足为 $O$，$\mathrm{AO} = h$。由折射定律，有
+        \begin{equation}
+            \sin \beta = n \sin \alpha
+            \label{eq:1.s79}
+        \end{equation}
+        在 $\Delta ACF$ 中，由正弦定理有
+        \begin{equation}
+            \frac{\mathrm{CF}}{\sin \beta} = \frac{\mathrm{AF}}{\sin \alpha}
+            \label{eq:2.s79}
+        \end{equation}
+        在 $\Delta AOF$ 中，由勾股定理有
+        \begin{equation}
+            \mathrm{AF} = \sqrt{\mathrm{AO}^{2} + \mathrm{OF}^{2}}
+            \label{eq:3.s79}
+        \end{equation}
+        \begin{equation}
+            R = \mathrm{CA} = \sqrt{\mathrm{CO}^{2} + \mathrm{AO}^{2}}
+            \label{eq:4.s79}
+        \end{equation}
+        又
+        \begin{equation}
+            \mathrm{CO} = \mathrm{CF} - \mathrm{OF},\quad \mathrm{AO} = h,\quad \mathrm{OF} = f,
+            \label{eq:5.s79}
+        \end{equation}
+        由 \eqref{eq:1.s79}--\eqref{eq:5.s79} 式得
+        \begin{equation}
+            \mathrm{CF} = n \sqrt{h^{2} + f^{2}}
+            \label{eq:6.s79}
+        \end{equation}
+        \begin{align}
+            R &= \sqrt{(n \sqrt{h^{2} + f^{2}} - f)^{2} + h^{2}} \nonumber \\
+            &= \sqrt{(n^{2} + 1)(h^{2} + f^{2}) - 2 n f \sqrt{h^{2} + f^{2}}}
+            \label{eq:7.s79}
+        \end{align}
+        在制作给定焦点和焦距的菲涅尔透镜时，应按 \eqref{eq:6.s79} \eqref{eq:7.s79} 式来确定各环带球面的球心位置和球半径，即对第 $k$（$k=0,1,2,\cdots$）个环带球台，其球心在光轴上与焦点的距离应为
+        \begin{equation}
+            \mathrm{C}_{k} \mathrm{F} = n \sqrt{h_{k}^{2} + f^{2}} = n \sqrt{k^{2} d^{2} + f^{2}}
+            \label{eq:8.s79}
+        \end{equation}
+        球半径则为
+        \begin{align}
+            R_{k} &= \sqrt{(n^{2} + 1)(h_{k}^{2} + f^{2}) - 2 n f \sqrt{h_{k}^{2} + f^{2}}} \nonumber \\
+            &= \sqrt{(n^{2} + 1)(k^{2} d^{2} + f^{2}) - 2 n f \sqrt{k^{2} d^{2} + f^{2}}}
+            \label{eq:9.s79}
+        \end{align}
+        特别地，位于透镜中心的环带（$k=0$）球心与焦点距离为
+        \begin{equation}
+            \mathrm{C}_{0} \mathrm{F} = n f
+            \label{eq:10.s79}
+        \end{equation}
+        球半径为
+        \begin{equation}
+            R_{0} = (n - 1) f
+            \label{eq:11.s79}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        当 $f$ 不变而 $h$ 取某一值 $h_{\mathrm{m}}$ 时，图中 $\angle \mathrm{CAF}$ 成为直角，这意味着光线的入射角达到全反射的临界角 $\alpha_{\mathrm{C}}$。在此情况下有
+        \begin{equation}
+            \sin \alpha_{\mathrm{C}} = \frac{1}{n} = \frac{f}{\sqrt{h_{\mathrm{m}}^{2} + f^{2}}}
+            \label{eq:12.s79}
+        \end{equation}
+        由 \eqref{eq:12.s79} 式得
+        \begin{equation}
+            h_{\mathrm{m}} = \sqrt{n^{2} - 1} f
+            \label{eq:13.s79}
+        \end{equation}
+        这就是透镜能够达到的最大有效半径。透镜的最大有效环带数 $k_{\mathrm{m}}$ 则为不大于 $\frac{\sqrt{n^{2} - 1} f}{d}$ 的最大整数
+        \begin{equation}
+            k_{\mathrm{m}} = \left[ \frac{\sqrt{n^{2} - 1} f}{d} \right]
+            \label{eq:14.s79}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

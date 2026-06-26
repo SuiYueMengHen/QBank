@@ -1,0 +1,83 @@
+\begin{solution}{75}
+    \begin{subsolution}
+        考虑从初始时刻 $t=0$ 至时刻 $0 \leq t \leq \frac{\pi}{2\omega}$，金属棒 $OP$ 扫过的磁场区域的面积为
+        \begin{equation}
+            S = S_{\text{扇形}OPM} - S_{\text{扇形}O_{1}QM} - S_{\Delta O_{1}QO}
+            \label{eq:1.s75}
+        \end{equation}
+        式中，$S_{\text{扇形}OPM}$、$S_{\text{扇形}O_{1}QM}$ 和 $S_{\Delta O_{1}QO}$ 分别是扇形 $OPM$、扇形 $O_{1}QM$ 和 $\Delta O_{1}QO$ 的面积。由几何关系得
+        \begin{equation}
+            S_{\text{扇形}OPM} = \frac{1}{2} (\omega t) (2 a)^{2}
+            \label{eq:2.s75}
+        \end{equation}
+        \begin{equation}
+            S_{\text{扇形}O_{1}QM} = \frac{1}{2} (2 \omega t) a^{2}
+            \label{eq:3.s75}
+        \end{equation}
+        \begin{equation}
+            S_{\Delta O_{1}QO} = (a \sin \omega t)(a \cos \omega t)
+            \label{eq:4.s75}
+        \end{equation}
+        由 \eqref{eq:1.s75} \eqref{eq:2.s75} \eqref{eq:3.s75} \eqref{eq:4.s75} 式得
+        \begin{equation}
+            S = \frac{1}{2} (2 \omega t - \sin 2 \omega t) a^{2}
+            \label{eq:5.s75}
+        \end{equation}
+        通过回路 $QPMQ$ 的磁通量为
+        \begin{equation}
+            \phi = B S
+            \label{eq:6.s75}
+        \end{equation}
+        由法拉第电磁感应定律得，沿回路 $QPMQ$ 的感应电动势为
+        \begin{equation}
+            \varepsilon = - \frac{\mathrm{d} \phi}{\mathrm{d} t}
+            \label{eq:7.s75}
+        \end{equation}
+        式中，负号表示感应电动势沿回路逆时针方向（即沿回路 $QPMQ$）。由 \eqref{eq:5.s75} \eqref{eq:6.s75} \eqref{eq:7.s75} 式得
+        \begin{equation}
+            \varepsilon = - (1 - \cos 2 \omega t) \omega a^{2} B,\quad 0 \leq \omega t \leq \frac{\pi}{2}
+            \label{eq:8.s75}
+        \end{equation}
+        当 $\frac{\pi}{2\omega} \leq t \leq \frac{\pi}{\omega}$ 时，沿回路 $QPMQ$ 的感应电动势与 $t = \frac{\pi}{2\omega}$ 时的一样，即
+        \begin{equation}
+            \varepsilon = - 2 \omega a^{2} B,\quad \frac{\pi}{2} \leq \omega t \leq \pi
+            \label{eq:9.s75}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在 $t$ 时刻流经回路 $QPMQ$ 的电流为
+        \begin{equation}
+            i = \frac{\varepsilon}{R_{1}}
+            \label{eq:10.s75}
+        \end{equation}
+        式中
+        \begin{equation}
+            R_{1} = R \frac{L}{2 a}
+            \label{eq:11.s75}
+        \end{equation}
+        这里，$L$ 为 $PQ$ 的长。由几何关系得
+        \begin{equation}
+            L = 2 a - 2 a \cos \omega t,\quad 0 \leq \omega t \leq \frac{\pi}{2}
+            \label{eq:12.s75}
+        \end{equation}
+        \begin{equation}
+            L = 2 a,\quad \frac{\pi}{2} \leq \omega t \leq \pi
+            \label{eq:13.s75}
+        \end{equation}
+        半径 $OP$ 所受到的原磁场 $B$ 的作用力的大小为
+        \begin{equation}
+            F = i L B
+            \label{eq:14.s75}
+        \end{equation}
+        由 \eqref{eq:8.s75} \eqref{eq:10.s75} \eqref{eq:11.s75} \eqref{eq:12.s75} \eqref{eq:14.s75} 式得
+        \begin{equation}
+            F = (1 - \cos 2 \omega t) \frac{2 \omega a^{3} B^{2}}{R},\quad 0 \leq \omega t \leq \frac{\pi}{2}
+            \label{eq:15.s75}
+        \end{equation}
+        由 \eqref{eq:9.s75} \eqref{eq:10.s75} \eqref{eq:11.s75} \eqref{eq:13.s75} \eqref{eq:14.s75} 式得
+        \begin{equation}
+            F = \frac{4 \omega a^{3} B^{2}}{R},\quad \frac{\pi}{2} \leq \omega t \leq \pi
+            \label{eq:16.s75}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

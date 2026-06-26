@@ -1,0 +1,168 @@
+\begin{solution}{74}
+    \begin{subsolution}
+        若重物和车厢前壁不发生碰撞。卡车在水平直公路上做匀减速运动，设其加速度大小为 $a_{1}$。由牛顿第二定律有
+        \begin{equation}
+            \mu_{1} (M + m) g - \mu_{2} m g = M a_{1}
+            \label{eq:1.s74}
+        \end{equation}
+        由 \eqref{eq:1.s74} 式得
+        \begin{equation}
+            a_{1} = \frac{\mu_{1} M + (\mu_{1} - \mu_{2}) m}{M} g
+        \end{equation}
+        由匀减速运动公式，卡车从制动开始到静止时所用的时间 $t_{1}$ 和移动的距离 $s_{1}$ 分别为
+        \begin{equation}
+            t_{1} = \frac{v_{0}}{a_{1}} = \frac{M}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} \frac{v_{0}}{g},\quad 
+            s_{1} = \frac{v_{0}^{2}}{2 a_{1}} = \frac{M}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} \frac{v_{0}^{2}}{2 g}
+            \label{eq:2.s74}
+        \end{equation}
+        重物 $B$ 在卡车 $A$ 的车厢底板上做匀减速直线运动，设 $B$ 相对于地面的加速度大小为 $a_{2}$。由牛顿第二定律有
+        \begin{equation}
+            \mu_{2} m g = m a_{2}
+            \label{eq:3.s74}
+        \end{equation}
+        由 \eqref{eq:3.s74} 式得
+        \begin{equation}
+            a_{2} = \frac{\mu_{2} m g}{m} = \mu_{2} g
+        \end{equation}
+        从卡车制动开始到重物对地面速度为零时所用的时间 $t_{2}$ 和重物移动的距离 $s_{2}$ 分别为
+        \begin{equation}
+            t_{2} = \frac{v_{0}}{a_{2}} = \frac{v_{0}}{\mu_{2} g},\quad 
+            s_{2} = \frac{v_{0}^{2}}{2 a_{2}} = \frac{v_{0}^{2}}{2 \mu_{2} g}
+            \label{eq:4.s74}
+        \end{equation}
+        由于 $\mu_{2}<\mu_{1}$，由 \eqref{eq:2.s74} \eqref{eq:4.s74} 二式比较可知，$t_{2}>t_{1}$，即卡车先停，重物后停。
+        若 $s_{2} \leq s_{1} + L$，重物 $B$ 与车厢前壁不会发生碰撞，因此不发生碰撞的条件是
+        \begin{equation}
+            L \geq s_{2} - s_{1} = \frac{v_{0}^{2}}{2 a_{2}} - \frac{v_{0}^{2}}{2 a_{1}} = \frac{(\mu_{1} - \mu_{2})(M + m)}{\mu_{2} [\mu_{1} M + (\mu_{1} - \mu_{2}) m]} \frac{v_{0}^{2}}{2 g}
+            \label{eq:5.s74}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由 \eqref{eq:5.s74} 式知，当满足条件
+        \begin{equation}
+            L < s_{2} - s_{1} = \frac{(\mu_{1} - \mu_{2})(M + m)}{2 \mu_{2} [\mu_{1} M + (\mu_{1} - \mu_{2}) m]} \frac{v_{0}^{2}}{g}
+        \end{equation}
+        时，重物 $B$ 与车厢前壁必定发生碰撞。
+        设从开始制动到发生碰撞时的时间间隔为 $t$，此时有几何条件
+        \begin{equation}
+            s_{2}(t) = s_{1}(t) + L
+            \label{eq:6.s74}
+        \end{equation}
+        这里又可分为两种情况：$t_{2}>t>t_{1}$（重物在卡车停下后与车厢前壁发生碰撞）和 $t\leq t_{1}$（重物在卡车停下前与车厢前壁发生碰撞）。
+
+        \begin{subsubsolution}
+            卡车停下的时间和向前滑动的距离是 \eqref{eq:2.s74} 给出的 $t_{1}$ 和 $s_{1}$，同时重物相对于地面向前滑动的距离是
+            \begin{align}
+                s_{2}^{\prime} &= v_{0} t_{1} - \frac{1}{2} a_{2} t_{1}^{2} \nonumber \\
+                &= \frac{M [M(2 \mu_{1} - \mu_{2}) + 2 m (\mu_{1} - \mu_{2})]}{[\mu_{1} M + (\mu_{1} - \mu_{2}) m]^{2}} \frac{v_{0}^{2}}{2 g}
+                \label{eq:7.s74}
+            \end{align}
+            重物相对于车厢向前滑动的距离是
+            \begin{align}
+                s_{2}^{\prime} - s_{1} &= \frac{M [M(2 \mu_{1} - \mu_{2}) + 2 m (\mu_{1} - \mu_{2})]}{[\mu_{1} M + (\mu_{1} - \mu_{2}) m]^{2}} \frac{v_{0}^{2}}{2 g} - \frac{M}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} \frac{v_{0}^{2}}{2 g} \nonumber \\
+                &= \frac{(\mu_{1} - \mu_{2})(M + m) M}{[\mu_{1} M + (\mu_{1} - \mu_{2}) m]^{2}} \frac{v_{0}^{2}}{2 g}
+            \end{align}
+            如果
+            \begin{equation}
+                s_{2}^{\prime} - s_{1} < L < s_{2} - s_{1},
+            \end{equation}
+            即当
+            \begin{equation}
+                \frac{(\mu_{1} - \mu_{2})(m + M) M v_{0}^{2}}{2 [\mu_{1} M + (\mu_{1} - \mu_{2}) m]^{2} g} < L < \frac{(\mu_{1} - \mu_{2})(M + m)}{2 \mu_{2} [\mu_{1} M + (\mu_{1} - \mu_{2}) m]} \frac{v_{0}^{2}}{g}
+            \end{equation}
+            满足时，在车已停稳后重物仍会向前运动并且撞上车厢前壁。
+            从制动到重物 $B$ 与车厢前壁碰撞前，重物 $B$ 克服摩擦力做功。设在碰撞前的瞬间重物 $B$ 相对地面的速度为 $v_{2}$，由动能定理有
+            \begin{equation}
+                \frac{1}{2} m v_{2}^{2} = \frac{1}{2} m v_{0}^{2} - \mu_{2} m g (s_{1} + L)
+                \label{eq:8.s74}
+            \end{equation}
+            由 \eqref{eq:8.s74} 式得
+            \begin{equation}
+                v_{2} = \sqrt{v_{0}^{2} - 2 \mu_{2} g (s_{1} + L)} = \sqrt{\frac{(\mu_{1} - \mu_{2})(M + m) v_{0}^{2}}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} - 2 \mu_{2} g L}
+            \end{equation}
+            设碰撞后瞬间重物 $B$ 与卡车 $A$ 的速度均为 $v$，由于碰撞时间极短，碰撞前后动量守恒
+            \begin{equation}
+                m v_{2} = (m + M) v
+                \label{eq:9.s74}
+            \end{equation}
+            由 \eqref{eq:9.s74} 式得
+            \begin{equation}
+                v = \frac{m}{m + M} v_{2} = \frac{m}{m + M} \sqrt{\frac{(\mu_{1} - \mu_{2})(M + m) v_{0}^{2}}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} - 2 \mu_{2} g L}
+            \end{equation}
+            碰撞过程中重物 $B$ 对车厢前壁的冲量为
+            \begin{equation}
+                I = M v - 0 = \frac{m M}{m + M} \sqrt{\frac{(\mu_{1} - \mu_{2})(M + m) v_{0}^{2}}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} - 2 \mu_{2} g L}
+                \label{eq:10.s74}
+            \end{equation}
+            碰撞后，卡车和重物又一起运动了一段时间
+            \begin{equation}
+                t^{\prime} = \frac{v}{\mu_{1} g} = \frac{m}{\mu_{1} (m + M)} \frac{v_{2}}{g}
+                \label{eq:11.s74}
+            \end{equation}
+            再移动了一段路程
+            \begin{equation}
+                s_{1}^{\prime} = \frac{v^{2}}{2 \mu_{1} g} = \frac{m^{2}}{2 \mu_{1} (m + M)^{2} g} \left[ \frac{(\mu_{1} - \mu_{2})(M + m) v_{0}^{2}}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} - 2 \mu_{2} g L \right]
+                \label{eq:12.s74}
+            \end{equation}
+            才最终停止下来（对于卡车而言，这是第二次停下来）。
+            重物撞上车厢前壁的时间是
+            \begin{equation}
+                t_{2}^{\prime} = \frac{v_{0} - v_{2}}{\mu_{2} g}
+                \label{eq:13.s74}
+            \end{equation}
+            所以，从卡车制动到车和重物都停下所用的总时间为
+            \begin{align}
+                t^{(i)} &= t_{2}^{\prime} + t^{\prime} = \frac{v_{0} - v_{2}}{\mu_{2} g} + \frac{m v_{2}}{\mu_{1} g (M + m)} = \frac{v_{0}}{\mu_{2} g} - \left[ \frac{1}{\mu_{2} g} - \frac{m}{\mu_{1} g (M + m)} \right] v_{2} \nonumber \\
+                &= \frac{v_{0}}{\mu_{2} g} - \frac{\mu_{1} M + (\mu_{1} - \mu_{2}) m}{\mu_{1} \mu_{2} g (m + M)} \sqrt{\frac{(\mu_{1} - \mu_{2})(M + m) v_{0}^{2}}{\mu_{1} M + (\mu_{1} - \mu_{2}) m} - 2 \mu_{2} g L}
+                \label{eq:14.s74}
+            \end{align}
+            卡车移动的总路程则为
+            \begin{equation}
+                s_{1}^{(i)} = s_{1} + s_{1}^{\prime} = \frac{[ \mu_{1} M (m + M) + (\mu_{1} - \mu_{2}) m^{2} ] v_{0}^{2}}{2 \mu_{1} (m + M) [ \mu_{1} M + (\mu_{1} - \mu_{2}) m ] g} - \frac{\mu_{2} m^{2} L}{\mu_{1} (m + M)^{2}}
+                \label{eq:15.s74}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由 \eqref{eq:9.s74} 式的推导可知，条件 $t \leq t_{1}$ 可写成
+            \begin{equation}
+                L \leq \frac{(\mu_{1} - \mu_{2})(m + M) M v_{0}^{2}}{2 [ \mu_{1} M + (\mu_{1} - \mu_{2}) m ]^{2} g}
+            \end{equation}
+            由匀减速运动学公式，\eqref{eq:6.s74} 式成为
+            \begin{equation}
+                v_{0} t - \frac{1}{2} a_{2} t^{2} = \left(v_{0} t - \frac{1}{2} a_{1} t^{2}\right) + L
+            \end{equation}
+            解得碰撞发生的时间
+            \begin{equation}
+                t = \sqrt{\frac{2 L}{a_{1} - a_{2}}} = \sqrt{\frac{2 L M}{(\mu_{1} - \mu_{2})(m + M) g}}
+            \end{equation}
+            在碰撞前的瞬间，卡车 $A$ 的速度 $v_{1}^{\prime}$ 和重物 $B$ 的速度 $v_{2}^{\prime}$ 分别为
+            \begin{align}
+                v_{1}^{\prime} &= v_{0} - a_{1} t = v_{0} - a_{1} \sqrt{\frac{2 L M}{(\mu_{1} - \mu_{2})(m + M) g}}, \\
+                v_{2}^{\prime} &= v_{0} - a_{2} t = v_{0} - a_{2} \sqrt{\frac{2 L M}{(\mu_{1} - \mu_{2})(m + M) g}}
+                \label{eq:16.s74}
+            \end{align}
+            由碰撞前后动量守恒，可得碰撞后重物 $B$ 和卡车 $A$ 的共同速度 $v^{\prime}$ 为
+            \begin{align}
+                v^{\prime} &= \frac{m v_{2}^{\prime} + M v_{1}^{\prime}}{m + M} = v_{0} - \frac{m a_{2} + M a_{1}}{m + M} \sqrt{\frac{2 L M}{(\mu_{1} - \mu_{2})(m + M) g}} \nonumber \\
+                &= v_{0} - \mu_{1} \sqrt{\frac{2 L M g}{(\mu_{1} - \mu_{2})(m + M)}}
+                \label{eq:17.s74}
+            \end{align}
+            由冲量定理和以上两式得碰撞过程中重物 $B$ 对车厢前壁的冲量为
+            \begin{equation}
+                I^{\prime} = M (v^{\prime} - v_{1}^{\prime}) = \frac{M m}{m + M} \sqrt{2 (a_{1} - a_{2}) L} = m \sqrt{\frac{2 (\mu_{1} - \mu_{2}) M}{m + M} g L}
+                \label{eq:18.s74}
+            \end{equation}
+            卡车运动时间为碰撞前后的两段时间之和，由 $t = \sqrt{\frac{2LM}{(\mu_1 - \mu_2)(m + M)g}}$ 与 \eqref{eq:17.s74} 式可得
+            \begin{equation}
+                t^{\mathrm{(ii)}} = t + \frac{v^{\prime}}{\mu_{1} g} = \frac{v_{0}}{\mu_{1} g}
+                \label{eq:19.s74}
+            \end{equation}
+            卡车总路程等于碰前和碰后两段路程之和
+            \begin{align}
+                s_{1}^{\mathrm{(ii)}} &= v_{0} t + \frac{1}{2} a_{1} t^{2} + \frac{v^{\prime 2}}{2 \mu_{1} g} \nonumber \\
+                &= \frac{v_{0}^{2}}{2 \mu_{1} g} - \frac{m L}{M + m}
+                \label{eq:20.s74}
+            \end{align}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

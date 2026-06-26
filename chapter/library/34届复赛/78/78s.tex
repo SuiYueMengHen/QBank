@@ -1,0 +1,107 @@
+\begin{solution}{78}
+    \begin{subsolution}
+        直线 $AB$ 过程中任一平衡态的气体压强 $p$ 和体积 $V$ 满足方程
+        \begin{equation}
+            \frac{P - P_{0}}{P_{0} - \frac{P_{0}}{2}} = \frac{V - \frac{V_{0}}{2}}{\frac{V_{0}}{2} - V_{0}}
+        \end{equation}
+        此即
+        \begin{equation}
+            P = \frac{3}{2} P_{0} - \frac{P_{0}}{V_{0}} V
+            \label{eq:1.s78}
+        \end{equation}
+        根据理想气体状态方程有
+        \begin{equation}
+            P V = \nu R T
+            \label{eq:2.s78}
+        \end{equation}
+        式中 $T$ 是相应的绝对温度。由 \eqref{eq:1.s78} \eqref{eq:2.s78} 式得
+        \begin{equation}
+            T = \frac{1}{\nu R} \left(- \frac{P_{0}}{V_{0}} V^{2} + \frac{3}{2} P_{0} V\right) = \frac{- P_{0}}{\nu R V_{0}} \left(V - \frac{3}{4} V_{0}\right)^{2} + \frac{9}{16} \frac{P_{0} V_{0}}{\nu R}
+            \label{eq:3.s78}
+        \end{equation}
+        由 \eqref{eq:3.s78} 式知，当
+        \begin{equation}
+            V = \frac{3}{4} V_{0}
+            \label{eq:4.s78}
+        \end{equation}
+        时，气体达到直线 $AB$ 过程中的最高温度为
+        \begin{equation}
+            T_{\max} = \frac{9 P_{0} V_{0}}{16 \nu R}
+            \label{eq:5.s78}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由直线 $AB$ 过程的摩尔热容量 $C_{\mathrm{m}}$ 的定义有
+        \begin{equation}
+            \mathrm{d} Q = \nu C_{\mathrm{m}} \mathrm{d} T
+            \label{eq:6.s78}
+        \end{equation}
+        由热力学第一定律有
+        \begin{equation}
+            \mathrm{d} U = \mathrm{d} Q - P \mathrm{d} V
+            \label{eq:7.s78}
+        \end{equation}
+        由理想气体内能公式和题给数据有
+        \begin{equation}
+            \mathrm{d} U = \nu C_{V} \mathrm{d} T = \nu \frac{5 R}{2} \mathrm{d} T
+            \label{eq:8.s78}
+        \end{equation}
+        由 \eqref{eq:1.s78} \eqref{eq:6.s78} \eqref{eq:7.s78} \eqref{eq:8.s78} 式得
+        \begin{align}
+            C_{\mathrm{m}} &= C_{V} + \frac{P}{\nu} \frac{\mathrm{d} V}{\mathrm{d} T} = \frac{5}{2} R + \left(\frac{3}{2} P_{0} - \frac{P_{0}}{V_{0}} V\right) \frac{1}{\nu} \frac{\mathrm{d} V}{\mathrm{d} T}
+            \label{eq:9.s78}
+        \end{align}
+        由 \eqref{eq:3.s78} 式两边微分得
+        \begin{equation}
+            \frac{\mathrm{d} V}{\mathrm{d} T} = \frac{2 \nu R V_{0}}{P_{0} (3 V_{0} - 4 V)}
+            \label{eq:10.s78}
+        \end{equation}
+        将 \eqref{eq:10.s78} 式代入 \eqref{eq:9.s78} 式得
+        \begin{equation}
+            C_{\mathrm{m}} = \frac{21 V_{0} - 24 V}{3 V_{0} - 4 V} \frac{R}{2}
+            \label{eq:11.s78}
+        \end{equation}
+        由 \eqref{eq:6.s78} \eqref{eq:10.s78} \eqref{eq:11.s78} 式得，直线 $AB$ 过程中，
+        在 $V$ 从 $\frac{V_{0}}{2}$ 增大到 $\frac{3 V_{0}}{4}$ 的过程中，$C_{\mathrm{m}} > 0$，$\frac{\mathrm{d}T}{\mathrm{d}V} > 0$，故 $\frac{\mathrm{d}Q}{\mathrm{d}V} > 0$，吸热；
+        在 $V$ 从 $\frac{3}{4} V_{0}$ 增大到 $\frac{21 V_{0}}{24}$ 的过程中，$C_{\mathrm{m}} < 0$，$\frac{\mathrm{d}T}{\mathrm{d}V} < 0$，故 $\frac{\mathrm{d}Q}{\mathrm{d}V} > 0$，吸热；
+        在 $V$ 从 $\frac{21 V_{0}}{24}$ 增大到 $V_{0}$ 的过程中，$C_{\mathrm{m}} > 0$，$\frac{\mathrm{d}T}{\mathrm{d}V} < 0$，故 $\frac{\mathrm{d}Q}{\mathrm{d}V} < 0$，放热。
+        由以上分析可知，系统从吸热到放热转折点发生在
+        \begin{equation}
+            V = V_{\mathrm{c}} = \frac{21}{24} V_{0}
+            \label{eq:12.s78}
+        \end{equation}
+        处。由 \eqref{eq:3.s78} 式和上式得
+        \begin{equation}
+            T_{\mathrm{c}} = \frac{1}{\nu R} \left(- \frac{P_{0}}{V_{0}} V_{\mathrm{c}}^{2} + \frac{3}{2} P_{0} V_{\mathrm{c}}\right) = \frac{35}{64} \frac{P_{0} V_{0}}{\nu R}
+            \label{eq:13.s78}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        对于直线 $AB$ 过程，由 \eqref{eq:6.s78} \eqref{eq:10.s78} 式得
+        \begin{equation}
+            \mathrm{d} Q = \nu C_{\mathrm{m}} \frac{\mathrm{d} T}{\mathrm{d} V} \mathrm{d} V = \frac{21 V_{0} - 24 V}{4 V_{0}} P_{0} \mathrm{d} V = \left(\frac{21}{4} - \frac{6 V}{V_{0}}\right) P_{0} \mathrm{d} V
+            \label{eq:14.s78}
+        \end{equation}
+        将 \eqref{eq:14.s78} 式两边对直线过程积分得，整个直线 $AB$ 过程中所吸收的净热量为
+        \begin{align}
+            Q_{\text{直线}} &= \int_{V_{0}/2}^{V_{0}} \left(\frac{21}{4} - \frac{6 V}{V_{0}}\right) P_{0} \mathrm{d} V \nonumber \\
+            &= P_{0} \left(\frac{21}{4} V - \frac{3 V^{2}}{V_{0}}\right) \Bigg|_{V_{0}/2}^{V_{0}} = \frac{3}{8} P_{0} V_{0}
+            \label{eq:15.s78}
+        \end{align}
+        直线 $AB$ 过程中气体对外所作的功为
+        \begin{equation}
+            W_{\text{直线}} = \frac{1}{2} \left(P_{0} + \frac{P_{0}}{2}\right) \left(V_{0} - \frac{V_{0}}{2}\right) = \frac{3}{8} P_{0} V_{0}
+            \label{eq:16.s78}
+        \end{equation}
+        等温过程中气体对外所作的功为
+        \begin{equation}
+            W_{\text{等温}} = \int_{V_{0}}^{V_{0}/2} P \mathrm{d} V = \int_{V_{0}}^{V_{0}/2} P_{0} \frac{V_{0}}{2} \frac{\mathrm{d} V}{V} = - \frac{P_{0} V_{0}}{2} \ln 2
+            \label{eq:17.s78}
+        \end{equation}
+        一个正循环过程中气体对外所作的净功为
+        \begin{equation}
+            W = W_{\text{直线}} + W_{\text{等温}} = \left(\frac{3}{8} - \frac{\ln 2}{2}\right) P_{0} V_{0}
+            \label{eq:18.s78}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

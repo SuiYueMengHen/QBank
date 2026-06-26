@@ -1,0 +1,133 @@
+\begin{solution}{82}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            假定在始终完全蹲下和始终完全站立过程中没有机械能损失。将人和秋千作为一个系统。人在 $A$ 处位于完全站立状态，此时系统的机械能为
+            \begin{equation}
+                U_{A}=K_{A}+V_{A}=0+mg[l(1-\cos\alpha_{A})+d]=mgh_{1}
+                \label{eq:1.s82}
+            \end{equation}
+            式中，$K_{A}=0$ 和 $V_{A}=mgh_{1}$ 分别是人在 $A$ 处时系统的动能和重力势能，$\alpha_{A}$ 是秋千与竖直方向的夹角（以下使用类似记号），如图所示。
+
+            人在 $A'$ 处完全下蹲，在 $A\rightarrow A'$ 过程中系统重力势能减少，（因受到摆底板的限制）动能仍然为零。人在 $A'$ 处时系统的机械能为
+            \begin{equation}
+                U_{\mathrm{A'}} = K_{\mathrm{A'}} + V_{\mathrm{A'}} = 0 + mg(d+l)(1-\cos\alpha_{\mathrm{A}}) = mg\frac{l+d}{l}(h_{1}-d)
+                \label{eq:2.s82}
+            \end{equation}
+
+            (图略)
+
+            人在 $B$ 仍处位于完全下蹲状态，在 $A'\rightarrow B$ 过程中系统机械能守恒。人在 $B$ 处的动能为
+            \begin{equation}
+                K_{\mathrm{B1}} = \frac{1}{2} m v_{\mathrm{B1}}^{2} = U_{\mathrm{A'}},
+                \label{eq:3.s82}
+            \end{equation}
+            式中下标 $1$ 表示秋千第 $1$ 次到 $B$ 处。
+
+            人在 $B'$ 处突然站立，人做功，机械能增加。设人站立前后体系的角动量分别为 $L_{B1}$ 和 $L_{B'1}$。在 $B\rightarrow B'$ 过程中系统角动量守恒
+            \begin{align}
+                L_{\mathrm{B1}} &= m v_{\mathrm{B1}} (l+d) = m(l+d) \sqrt{2K_{\mathrm{B1}}/m} \notag\\
+                &= m(l+d) \sqrt{2g\frac{l+d}{l}(h_{1}-d)} \notag\\
+                &= L_{\mathrm{B'1}} = m l v_{B'1}
+                \label{eq:4.s82}
+            \end{align}
+            由此得
+            \begin{equation}
+                v_{B'1} = \frac{l+d}{l} \sqrt{2g\frac{l+d}{l}(h_{1}-d)}
+                \label{eq:5.s82}
+            \end{equation}
+            人在 $B'$ 处的机械能为
+            \begin{equation}
+                U_{B'1} = \frac{1}{2} m v_{B1}'^{2} + mgd = \frac{1}{2} m \cdot 2 \left(\frac{l+d}{l}\right)^{3} g (h_{1}-d) + mgd
+                \label{eq:6.s82}
+            \end{equation}
+            人在 $C$ 仍处于完全站立状态，在 $B'\rightarrow C$ 过程中系统机械能守恒。人在 $C$ 处时系统的机械能为
+            \begin{equation}
+                U_{\mathrm{C}} = m g h_{2} = m g \frac{(l+d)^{3}}{l^{3}} (h_{1}-d) + m g d = U_{B'1}
+                \label{eq:7.s82}
+            \end{equation}
+            由\eqref{eq:6.s82}、\eqref{eq:7.s82}式得
+            \[
+                h_{2} - d = \left(\frac{l+d}{l}\right)^{3} (h_{1}-d)
+            \]
+            于是
+            \begin{equation}
+                U_{\mathrm{C}} - U_{\mathrm{A}} = m g \left[ \left(\frac{l+d}{l}\right)^{3} - 1 \right] (h_{1}-d)
+                \label{eq:8.s82}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            \begin{subsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    考虑在始终完全蹲下和始终完全站立过程中的机械能损失。按题给模型，人第 $n$ 次在 $B$ 处时系统的动能为
+                    \begin{align}
+                        \frac{1}{2} m v_{\mathrm{B}n}^{2} &= m g h_{n}' - k_{1}(m g h_{0} + m g h_{n}') \notag\\
+                        &= (1-k_{1}) m g h_{n}' - k_{1} m g h_{0} \notag\\
+                        &= (1-k_{1}) m g \frac{l+d}{l} (h_{n}-d) - k_{1} m g h_{0}
+                        \label{eq:9.s82}
+                    \end{align}
+                    即
+                    \begin{equation}
+                        v_{\mathrm{B}n}^{2} = 2(1-k_{1}) g \frac{l+d}{l} (h_{n}-d) - 2 k_{1} g h_{0}
+                        \label{eq:10.s82}
+                    \end{equation}
+                    按题给模型，人第 $n$ 次在 $B'$ 处时系统的动能为
+                    \begin{align}
+                        \frac{1}{2} m v_{\mathrm{B}'n}^{2} &= m g (h_{n+1}-d) + k_{2}[ m g h_{0}' + m g (h_{n+1}-d) ] \notag\\
+                        &= (1+k_{2}) m g (h_{n+1}-d) + k_{2} m g h_{0}'
+                        \label{eq:11.s82}
+                    \end{align}
+                    即
+                    \begin{equation}
+                        v_{\mathrm{B}'n}^{2} = 2(1+k_{2}) g (h_{n+1}-d) + 2 k_{2} g h_{0}'
+                        \label{eq:12.s82}
+                    \end{equation}
+                    在第 $n$ 次 $\mathrm{B}\rightarrow\mathrm{B}'$ 过程中，系统角动量守恒，有
+                    \begin{equation}
+                        (l+d) m v_{\mathrm{B}n} = l m v_{\mathrm{B}'n}
+                        \label{eq:13.s82}
+                    \end{equation}
+                    由\eqref{eq:10.s82}、\eqref{eq:12.s82}、\eqref{eq:13.s82}式得
+                    \begin{align}
+                        2(1+k_{2}) l^{2} g (h_{n+1}-d) + 2 k_{2} l^{2} g h_{0}' &= 2(1-k_{1}) (l+d)^{2} g \frac{l+d}{l} (h_{n}-d) - 2 k_{1} (l+d)^{2} g h_{0}
+                        \label{eq:14.s82}
+                    \end{align}
+                    由\eqref{eq:14.s82}式得
+                    \begin{align}
+                        h_{n+1} - d &= \frac{1-k_{1}}{1+k_{2}} \left(\frac{l+d}{l}\right)^{3} (h_{n}-d) - \frac{k_{1}}{1+k_{2}} \left(\frac{l+d}{l}\right)^{2} h_{0} - \frac{k_{2}}{1+k_{2}} h_{0}' \notag\\
+                        &= \lambda (h_{n}-d) - \mu
+                        \label{eq:15.s82}
+                    \end{align}
+                    式中
+                    \begin{align}
+                        \lambda &= \frac{1-k_{1}}{1+k_{2}} \left(\frac{l+d}{l}\right)^{3},
+                        \label{eq:16.s82}\\
+                        \mu &= \frac{k_{1}}{1+k_{2}} \left(\frac{l+d}{l}\right)^{2} h_{0} + \frac{k_{2}}{1+k_{2}} h_{0}'.
+                        \label{eq:17.s82}
+                    \end{align}
+                \end{subsubsubsubsolution}
+                \begin{subsubsubsubsolution}
+                    由\eqref{eq:15.s82}--\eqref{eq:17.s82}式有
+                    \begin{align}
+                        h_{n+1} - d &= \lambda (h_{n}-d) - \mu \notag\\
+                        &= \lambda [ \lambda (h_{n-1}-d) - \mu ] - \mu \notag\\
+                        &= \lambda^{2} (h_{n-1}-d) - \mu(1+\lambda) \notag\\
+                        &= \dots \notag\\
+                        &= \lambda^{n} (h_{1}-d) - \mu(1+\lambda+\dots+\lambda^{n-1}) \notag\\
+                        &= \lambda^{n} (h_{1}-d) - \mu \frac{1-\lambda^{n}}{1-\lambda}
+                        \label{eq:18.s82}
+                    \end{align}
+                    即
+                    \begin{equation}
+                        h_{n+1} = \lambda^{n} (h_{1}-d) + d - \mu \frac{1-\lambda^{n}}{1-\lambda}
+                        \label{eq:19.s82}
+                    \end{equation}
+                    于是
+                    \begin{equation}
+                        h_{n+1} - h_{n} = \lambda^{n-1} [ (\lambda-1)(h_{1}-d) - \mu ].
+                        \label{eq:20.s82}
+                    \end{equation}
+                \end{subsubsubsubsolution}
+            \end{subsubsubsolution}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}
