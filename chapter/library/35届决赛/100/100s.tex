@@ -1,0 +1,122 @@
+\begin{solution}{100}
+    \begin{subsolution}
+        设小孔垂直于 $x$ 方向。在 $\mathrm{dt}$ 时间范围内泄出小孔的气体分子数等于处于小孔内侧体积为 $v_{x}S\mathrm{dt}$ 柱体中垂直小孔方向速度分量在 $v_{x}$ 到 $v_{x} + \mathrm{d}v_{x}$ 范围内的气体分子数。该柱体中的符合条件的气体分子数为 $n_{v_x}Sv_x\mathrm{d}t\mathrm{d}v_x$ ，其中 $n_{v_x}$ 为速度为 $v_{x}$ 的气体分子的分子数密度，其与分子数密度 $n$ 的关系为
+        \begin{equation}
+            n _ {v _ {x}} = n f (v _ {x}) = n \sqrt {\frac {m}{2 \pi k T}} \exp (- \frac {m v _ {x} ^ {2}}{2 k T})
+            \label{eq:1.p100}
+        \end{equation}
+        小孔处单位时间单位面积泄出气体的平均分子数为
+        \begin{equation}
+            N _ {\text {泄}} = \int_ {0} ^ {\infty} n _ {v _ {x}} v _ {x} \mathrm{d} v _ {x} = \sqrt {\frac {m}{2 \pi k T}} \int_ {0} ^ {\infty} v _ {x} n \exp \left(- \frac {m v _ {x} ^ {2}}{2 k T}\right) \mathrm{d} v _ {x} = n \sqrt {\frac {k T}{2 \pi m}}
+            \label{eq:2.p100}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在当气体温度为 $T$ 时, 泄出气体分子的平均动能为
+        \begin{equation}
+            \overline {{{E}}} _ {\mathrm{k}} = \frac {1}{N _ {\text {泄}}} \int_ {0} ^ {\infty} \frac {1}{2} m v _ {x} ^ {2} n _ {v _ {x}} v _ {x} d v _ {x} + k T
+            \label{eq:3.p100}
+        \end{equation}
+        其中 $kT$ 为气体分子垂直于 $x$ 方向速度对平均动能的贡献。将\eqref{eq:1.p100}和\eqref{eq:2.p100}式代入\eqref{eq:3.p100}式得
+        \begin{equation}
+            \begin{array}{l} \overline {{{E}}} _ {\mathrm{k}} = \frac {1}{n \sqrt {\frac {k T}{2 \pi m}}} \int_ {0} ^ {\infty} \frac {1}{2} m n \sqrt {\frac {m}{2 \pi k T}} v _ {x} ^ {3} \exp (- \frac {m v _ {x} ^ {2}}{2 k T}) \mathrm{d} v _ {x} + k T \\ = \frac {1}{\sqrt {\frac {k T}{2 \pi m}}} \frac {1}{2} m \sqrt {\frac {m}{2 \pi k T}} \frac {1}{2 (m / 2 k T) ^ {2}} + k T = 2 k T \end{array}
+            \label{eq:4.p100}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由于小孔垂直于 $x$ 方向，考虑到对称性，气体泄出后，容器运动速度沿 $x$ 轴负方向。设在时刻 $t$ 容器中气体的分子数为 $N$ ，容器整体运动速度大小为 $u$ ；在时刻 $t + \mathrm{d}t$ 容器中气体的分子数为 $N + \mathrm{d}N$ ，容器整体运动速度大小为 $u + \mathrm{d}u$ 。此过程中整个体系的动量守恒
+        \begin{equation}
+            (M + N m) u = \left[ (M + N m + m \mathrm{d} N) (u + \mathrm{d} u) \right] - m \mathrm{d} N (u - \overline {{{v}}} _ {x})
+            \label{eq:5.p100}
+        \end{equation}
+        其中 $\overline{v}_{x}$ 为 $\mathrm{d}t$ 时间内泄出的气体分子在 $x$ 方向上的平均速度大小，注意 $\mathrm{d}N$ 为负值。化简后并去除高阶小量得
+        \begin{equation}
+            (M + N m) \mathrm{d} u = - m \overline {{v}} _ {x} \mathrm{d} N
+            \label{eq:6.p100}
+        \end{equation}
+        在此过程中体系的能量守恒。因此有
+        \begin{equation}
+            \begin{array}{r l} \frac {1}{2} (M + N m) u ^ {2} + \frac {3}{2} N k T & = \frac {1}{2} (M + N m + \mathrm{d} N m) (u + \mathrm{d} u) ^ {2} + \frac {3}{2} (N + \mathrm{d} N) k (T + d T) \\ & - \frac {1}{2} \mathrm{d} N m \overline {{(u - v _ {x}) ^ {2}}} - \mathrm{d} N k T \end{array}
+            \label{eq:7.p100}
+        \end{equation}
+        方程左边两项分别为 $\mathrm{d}t$ 前体系整体平动动能和内能。右边前两项分别为 $\mathrm{d}t$ 后体系整体平动动能、内能；后两项对应泄出气体分子的平均动能。化简后并去除高阶小量得
+        \begin{equation}
+            (M + N m) u \mathrm{d} u + \frac {3}{2} N k \mathrm{d} T + \frac {1}{2} k T \mathrm{d} N + m u \overline {{v}} _ {x} \mathrm{d} N - \frac {1}{2} m \overline {{v _ {x} ^ {2}}} \mathrm{d} N = 0
+            \label{eq:8.p100}
+        \end{equation}
+        将\eqref{eq:6.p100}式代入\eqref{eq:8.p100}式得
+        \begin{equation}
+            \left(\frac {1}{2} m \overline {{v _ {x} ^ {2}}} - \frac {1}{2} k T\right) \mathrm{d} N = \frac {3}{2} N k \mathrm{d} T
+            \label{eq:9.p100}
+        \end{equation}
+        由\eqref{eq:4.p100}式得
+        \begin{equation*}
+            \frac {1}{2} m \overline {{v _ {x} ^ {2}}} + k T = 2 k T
+        \end{equation*}
+        此即
+        \begin{equation*}
+            \frac {1}{2} m \overline {{v _ {x} ^ {2}}} = k T
+        \end{equation*}
+        将上式代入\eqref{eq:9.p100}式得
+        \begin{equation*}
+            \frac {1}{2} k T \mathrm{d} N = \frac {3}{2} N k \mathrm{d} T
+        \end{equation*}
+        此即
+        \begin{equation}
+            \frac {\mathrm{d} N}{N} = 3 \frac {\mathrm{d} T}{T}
+            \label{eq:10.p100}
+        \end{equation}
+        两边积分得
+        \begin{equation}
+            T = C N ^ {1 / 3}
+            \label{eq:11.p100}
+        \end{equation}
+        式中 $C$ 为积分常数。代入初始条件得
+        \begin{equation}
+            T _ {0} = C N _ {0} ^ {1 / 3} \quad C = \frac {T _ {0}}{N _ {0} ^ {1 / 3}}
+            \label{eq:12.p100}
+        \end{equation}
+        由\eqref{eq:2.p100}式，$\mathrm{d}t$ 时间内泄漏出的气体分子数为
+        \begin{equation}
+            \mathrm{d} N = - \frac {N}{V} S \sqrt {\frac {k T}{2 \pi m}} \mathrm{d} t = - \frac {N ^ {7 / 6}}{V} S \sqrt {\frac {k C}{2 \pi m}} \mathrm{d} t
+            \label{eq:13.p100}
+        \end{equation}
+        积分得
+        \begin{equation}
+            N = N _ {0} \left(1 + \frac {S}{6 V} \sqrt {\frac {k T _ {0}}{2 \pi m} t}\right) ^ {- 6}
+            \label{eq:14.p100}
+        \end{equation}
+        由此得，$t$ 时刻容器中气体的温度为
+        \begin{equation}
+            T = C N ^ {1 / 3} = T _ {0} \left(1 + \frac {S}{6 V} \sqrt {\frac {k T _ {0}}{2 \pi m}} t\right) ^ {- 2}
+            \label{eq:15.p100}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由\eqref{eq:6.p100}式得
+        \begin{equation}
+            \mathrm{d} u = - \frac {m \overline {{v}} _ {x} \mathrm{d} N}{M + N m}
+            \label{eq:16.p100}
+        \end{equation}
+        其中 $\overline{v}_{x}$ 为泄出气体分子的平均速度大小
+        \begin{equation}
+            \begin{array}{r l} \overline {{{v}}} _ {x} & = \frac {1}{N _ {\text {泄}}} \int_ {0} ^ {\infty} v _ {x} n _ {v _ {x}} v _ {x} d v _ {x} = \frac {1}{\sqrt {\frac {k T}{2 \pi m}}} \int_ {0} ^ {\infty} \sqrt {\frac {m}{2 \pi k T}} v _ {x} ^ {2} \exp (- \frac {m v _ {x} ^ {2}}{2 k T}) \mathrm{d} v _ {m x} \\ & = \frac {1}{4} \frac {1}{\sqrt {\frac {k T}{2 \pi m}}} \sqrt {\frac {m}{2 \pi k T}} \sqrt {\frac {\pi}{(m / 2 k T) ^ {3}}} = \sqrt {\frac {\pi k T}{2 m}} \end{array}
+            \label{eq:17.p100}
+        \end{equation}
+        将\eqref{eq:17.p100}式代入\eqref{eq:16.p100}式得
+        \begin{equation}
+            u (t) = - \int_ {N _ {0}} ^ {N (t)} \sqrt {\frac {\pi m k T}{2}} \frac {\mathrm{d} N}{M + N m} = - \sqrt {\frac {\pi m k T _ {0}}{2 N _ {0} ^ {1 / 3}}} \int_ {N _ {0}} ^ {N (t)} \frac {N ^ {1 / 6} \mathrm{d} N}{M + N m}
+            \label{eq:18.p100}
+        \end{equation}
+        当容器质量远大于其中气体质量（ $M \gg N_{0}m$ ）时，上式可近似为
+        \begin{equation}
+            u (t) \approx - \frac {1}{M} \sqrt {\frac {\pi m k T _ {0}}{2 N _ {0} ^ {1 / 3}}} \int_ {N _ {0}} ^ {N (t)} N ^ {1 / 6} d N = - \frac {6}{7 M} \sqrt {\frac {\pi m k T _ {0}}{2 N _ {0} ^ {1 / 3}}} \left(N (t) ^ {7 / 6} - N _ {0} ^ {7 / 6}\right)
+            \label{eq:19.p100}
+        \end{equation}
+        将\eqref{eq:14.p100}式代入\eqref{eq:19.p100}式得，$t$ 时刻容器运动速度的大小为
+        \begin{equation}
+            u (t) \approx \frac {6 N _ {0}}{7 M} \sqrt {\frac {\pi m k T _ {0}}{2}} \left(1 - \left(1 + \frac {S}{6 V} \sqrt {\frac {k T _ {0}}{2 \pi m}} t\right) ^ {- 7}\right)
+            \label{eq:20.p100}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

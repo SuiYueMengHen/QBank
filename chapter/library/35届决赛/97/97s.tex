@@ -1,0 +1,219 @@
+\begin{solution}{97}
+    \begin{subsolution}
+        在平板3离开极板2之前, 平板3的带电量为
+        \begin{equation*}
+            Q = C _ {0} U = \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        设平板3离开极板2之后，各板电荷面密度如图a所示。由电荷守恒有
+        \begin{equation}
+            \sigma_ {1} - \sigma_ {2} = \sigma \equiv \frac {Q}{S} = \frac {\varepsilon_ {0}}{d} U
+            \label{eq:1.p97}
+        \end{equation}
+        设上、下两电容器各自两极板间电场的场强分别为 $E_{1}$ 、 $E_{2}$ （见图a），有
+        \begin{equation*}
+            E _ {1} = \frac {\sigma_ {1}}{\varepsilon_ {0}}, E _ {2} = \frac {\sigma_ {2}}{\varepsilon_ {0}}
+        \end{equation*}
+        将上式代入\eqref{eq:1.p97}式得
+        \begin{equation*}
+            \varepsilon_ {0} E _ {1} - \varepsilon_ {0} E _ {2} = \frac {\varepsilon_ {0}}{d} U
+        \end{equation*}
+        即
+        \begin{equation}
+            E _ {1} - E _ {2} = \frac {U}{d}
+            \label{eq:2.p97}
+        \end{equation}
+        另外，两个串联电容器的总电势差为 $U$ ，故
+        \begin{equation}
+            E _ {2} x + E _ {1} (d - x) = U
+            \label{eq:3.p97}
+        \end{equation}
+        联立\eqref{eq:2.p97}\eqref{eq:3.p97}式得
+        \begin{equation}
+            E _ {1} = \frac {U}{d} \frac {d + x}{d}
+            \label{eq:4.p97}
+        \end{equation}
+        \begin{equation}
+            E _ {2} = \frac {U}{d} \frac {x}{d}
+            \label{eq:5.p97}
+        \end{equation}
+        由\eqref{eq:4.p97}\eqref{eq:5.p97}式得，极板1、2上电荷面密度分别为
+        \begin{equation*}
+            \sigma_ {1} = \varepsilon_ {0} E _ {1}, \quad \sigma_ {2} = \varepsilon_ {0} E _ {2}
+        \end{equation*}
+        平板3受到的电场力（向上为正方向，下同）为
+        \begin{equation}
+            \begin{array}{r l} F _ {\mathrm{e}} & = - \sigma_ {2} S \cdot \frac {E _ {2}}{2} + \sigma_ {1} S \cdot \frac {E _ {1}}{2} = \frac {\varepsilon_ {0} S}{2} (E _ {1} ^ {2} - E _ {2} ^ {2}) = \varepsilon_ {0} S (E _ {1} - E _ {2}) \left(\frac {E _ {1} + E _ {2}}{2}\right) \\ & = \varepsilon_ {0} S \frac {U}{d} \cdot (E _ {1} + E _ {2}) / 2 = \varepsilon_ {0} S \frac {U}{d} \cdot \frac {U}{d} \left(\frac {2 x + d}{2 d}\right) = \frac {\varepsilon_ {0} S U ^ {2}}{2 d ^ {3}} (2 x + d) \end{array}
+            \label{eq:6.p97}
+        \end{equation}
+        平板3受到的竖直方向的合力为
+        \begin{equation*}
+            F _ {\text { total }} = F _ {\mathrm{e}} - m g = \frac {\varepsilon_ {0} S U ^ {2}}{2 d ^ {3}} (2 x + d) - m g = \left(\frac {\varepsilon_ {0} S U ^ {2}}{2 d ^ {2}} - m g\right) + \frac {\varepsilon_ {0} S U ^ {2}}{d ^ {3}} x
+        \end{equation*}
+        由此得，平板3在图a所示位置的加速度为
+        \begin{equation}
+            a = \frac {F _ {\text { total }}}{m} = \left(\frac {\varepsilon_ {0} S U ^ {2}}{2 m d ^ {2}} - g\right) + \frac {\varepsilon_ {0} S U ^ {2}}{m d ^ {3}} x
+            \label{eq:7.p97}
+        \end{equation}
+        为使平板 3 向上运动，应有条件
+        \begin{equation*}
+            \frac {\varepsilon_ {0} S U ^ {2}}{2 m d ^ {2}} \geq g
+        \end{equation*}
+        且开始运动之后加速度始终为正，因此最终将撞到极板2上。上述条件意味着电源电动势U至少应为
+        \begin{equation}
+            U _ {\min} = \sqrt {\frac {2 m d ^ {2} g}{\varepsilon_ {0} S}}
+            \label{eq:8.p97}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由\eqref{eq:7.p97}式可知
+        \begin{equation*}
+            a = a _ {0} + B x
+        \end{equation*}
+        其中
+        \begin{equation*}
+            a _ {0} = \frac {1}{2} B d - g, \quad B = \frac {\varepsilon_ {0} S U ^ {2}}{m d ^ {3}}
+        \end{equation*}
+        于是
+        \begin{equation*}
+            a = \frac {v \mathrm{d} v}{\mathrm{d} x} = a _ {0} + B x
+        \end{equation*}
+        即
+        \begin{equation*}
+            v \mathrm{d} v = (a _ {0} + B x) \mathrm{d} x
+        \end{equation*}
+        对上式两边作积分
+        \begin{equation*}
+            \int_ {0} ^ {v} v ^ {\prime} \mathrm{d} v ^ {\prime} = \int_ {0} ^ {x} (a _ {0} + B x ^ {\prime}) \mathrm{d} x ^ {\prime}
+        \end{equation*}
+        完成积分得
+        \begin{equation*}
+            \frac {1}{2} v ^ {2} = a _ {0} x + \frac {1}{2} B x ^ {2}
+        \end{equation*}
+        或
+        \begin{equation*}
+            v = \sqrt {2 a _ {0} x + B x ^ {2}}
+        \end{equation*}
+        其中 $v$ 为平板3与极板2相距 $x$ 时速度的大小。上式即
+        \begin{equation}
+            \mathrm{d} t = \frac {\mathrm{d} x}{\sqrt {2 a _ {0} x + B x ^ {2}}}
+            \label{eq:9.p97}
+        \end{equation}
+        两边积分，可得平板 3 从极板 2 运动到极板 1（位移为 $d$）的时间间隔为
+        \begin{equation*}
+            t _ {1} = \int_ {0} ^ {t _ {1}} \mathrm{d} t = \int_ {0} ^ {d} \frac {\mathrm{d} x}{\sqrt {2 a _ {0} x + B x ^ {2}}}
+        \end{equation*}
+        完成上述积分得
+        \begin{equation*}
+            t _ {1} = \sqrt {\frac {1}{B}} \ln \left[ \frac {(3 B d - 2 g) + \sqrt {8 B d (B d - g)}}{B d - 2 g} \right]
+        \end{equation*}
+        将 $B = \frac{\varepsilon_0SU^2}{md^3}$ 代入上式得
+        \begin{equation}
+            t _ {1} = \frac {d}{U} \sqrt {\frac {m d}{\varepsilon_ {0} S}} \ln \left[ \frac {\left(3 \varepsilon_ {0} S U ^ {2} - 2 m g d ^ {2}\right) + 2 U \sqrt {2 \varepsilon_ {0} S \left(\varepsilon_ {0} S U ^ {2} - m g d ^ {2}\right)}}{\varepsilon_ {0} S U ^ {2} - 2 m g d ^ {2}} \right]
+            \label{eq:10.p97}
+        \end{equation}
+        平板 3 到达极板 1 时，其上表面所带的正电荷与极板 1 所带负电荷交换后相互抵消；下表面所带电荷为
+        \begin{equation*}
+            - Q _ {2} = - \varepsilon_ {0} E _ {2} S = - Q = - \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        极板 2 带电为
+        \begin{equation*}
+            Q _ {2} = \varepsilon_ {0} E _ {2} S = Q = \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        平板 3 与极板 1 碰撞后，速度为零，在重力和电场力的作用下又向下运动，并与极板 2 发生完全非弹性碰撞。
+
+        在平板3向下运动过程中，其总带电量为
+        \begin{equation*}
+            - Q = - \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        设平板3离开极板1后，各板电荷面密度如图b所示。由电荷守恒有
+        \begin{equation}
+            \sigma_ {1} ^ {\prime} - \sigma_ {2} ^ {\prime} = - \frac {\varepsilon_ {0}}{d} U
+            \label{eq:11.p97}
+        \end{equation}
+        上、下两个电容器各自两极板间的场强 $E_{1}^{\prime}$ 和 $E_{2}^{\prime}$ （见图b）分别为
+        \begin{equation*}
+            E _ {1} ^ {\prime} = \frac {\sigma_ {1} ^ {\prime}}{\varepsilon_ {0}}, E _ {2} ^ {\prime} = \frac {\sigma_ {2} ^ {\prime}}{\varepsilon_ {0}}
+        \end{equation*}
+        将上式代入\eqref{eq:11.p97}式得
+        \begin{equation}
+            E _ {1} ^ {\prime} - E _ {2} ^ {\prime} = - \frac {U}{d}
+            \label{eq:12.p97}
+        \end{equation}
+        另外，两个串联电容器的总电势差为U，故
+        \begin{equation}
+            E _ {2} ^ {\prime} x + E _ {1} ^ {\prime} (d - x) = U
+            \label{eq:13.p97}
+        \end{equation}
+        联立\eqref{eq:12.p97}\eqref{eq:13.p97}式得
+        \begin{equation}
+            E _ {1} ^ {\prime} = \frac {U}{d} \frac {(d - x)}{d}
+            \label{eq:14.p97}
+        \end{equation}
+        \begin{equation}
+            E _ {2} ^ {\prime} = \frac {U}{d} \frac {2 d - x}{d}
+            \label{eq:15.p97}
+        \end{equation}
+        由此可得电荷面密度
+        \begin{equation*}
+            \sigma_ {1} ^ {\prime} = \varepsilon_ {0} E _ {1} ^ {\prime}, \quad \sigma_ {2} ^ {\prime} = \varepsilon_ {0} E _ {2} ^ {\prime}
+        \end{equation*}
+        以及平板3受到的电场力
+        \begin{equation}
+            \begin{array}{r l} F _ {\mathrm{e}} ^ {\prime} & = - \sigma_ {2} ^ {\prime} S \frac {E _ {2} ^ {\prime}}{2} + \sigma_ {1} ^ {\prime} S \frac {E _ {1} ^ {\prime}}{2} = \frac {\varepsilon_ {0} S}{2} (E _ {1} ^ {\prime 2} - E _ {2} ^ {\prime 2}) = \varepsilon_ {0} S (E _ {1} ^ {\prime} - E _ {2} ^ {\prime}) \frac {E _ {1} ^ {\prime} + E _ {2} ^ {\prime}}{2} \\ & = \varepsilon_ {0} S (- \frac {U}{d}) \cdot \frac {E _ {1} ^ {\prime} + E _ {2} ^ {\prime}}{2} = \varepsilon_ {0} S (- \frac {U}{d}) \frac {U}{d} \left(\frac {3 d - 2 x}{2 d}\right) = - \frac {\varepsilon_ {0} S U ^ {2}}{2 d ^ {3}} (3 d - 2 x) \end{array}
+            \label{eq:16.p97}
+        \end{equation}
+        平板3受到竖直方向的合力为
+        \begin{equation*}
+            F _ {\text { total }} ^ {\prime} = F _ {\mathrm{e}} ^ {\prime} - m g = - \frac {\varepsilon_ {0} S U ^ {2}}{2 d ^ {3}} (3 d - 2 x) - m g = - \left(\frac {3 \varepsilon_ {0} S U ^ {2}}{2 d ^ {2}} + m g\right) + \frac {\varepsilon_ {0} S U ^ {2}}{d ^ {3}} x
+        \end{equation*}
+        由此得，平板3在图b所示位置的加速度
+        \begin{equation}
+            a ^ {\prime} = \frac {F _ {\text { total }} ^ {\prime}}{m} = - \left(\frac {3 \varepsilon_ {0} S U ^ {2}}{2 m d ^ {2}} + g\right) + \frac {\varepsilon_ {0} S U ^ {2}}{m d ^ {3}} x
+            \label{eq:17.p97}
+        \end{equation}
+        因为 $\frac{\varepsilon_0SU^2}{2md^2} + g \geq 0$ ，则 $a' < 0$ ，平板3能一直向下加速运动。令
+        \begin{equation*}
+            a ^ {\prime} = - a _ {0} ^ {\prime} - B ^ {\prime} (d - x)
+        \end{equation*}
+        其中
+        \begin{equation*}
+            a _ {0} ^ {\prime} = \frac {1}{2} B ^ {\prime} d + g, \quad B ^ {\prime} = B = \frac {\varepsilon_ {0} S U ^ {2}}{m d ^ {3}}
+        \end{equation*}
+        重复前述关于平板 3 上升过程的类似处理，可得
+        \begin{equation*}
+            \frac {1}{2} v ^ {2} = \left[ a _ {0} ^ {\prime} (d - x) + \frac {1}{2} B (d - x) ^ {2} \right]
+        \end{equation*}
+        其中 $v$ 为平板3离开极板1后坐标为 $x$ （原点在极板2）时的速度。上式即
+        \begin{equation}
+            \mathrm{d} t = - \frac {\mathrm{d} x}{\sqrt {2 a _ {0} ^ {\prime} (d - x) + B (d - x) ^ {2}}}
+            \label{eq:18.p97}
+        \end{equation}
+        两边积分得，平板3从极板1运动到极板2（位移为-d）的时间 $t_{2}$ 为
+        \begin{equation*}
+            t _ {2} = \int_ {0} ^ {t _ {2}} \mathrm{d} t = - \int_ {d} ^ {0} \frac {\mathrm{d} x}{\sqrt {2 a _ {0} ^ {\prime} (d - x) + B (d - x) ^ {2}}}
+        \end{equation*}
+        完成上述积分得
+        \begin{equation*}
+            t _ {2} = \sqrt {\frac {1}{B}} \ln \left[ \frac {(3 B d + 2 g) + \sqrt {8 B d (B d + g)}}{B d + 2 g} \right]
+        \end{equation*}
+        将 $B = \frac{\varepsilon_0SU^2}{md^3}$ 代入上式得
+        \begin{equation}
+            t _ {2} = \frac {d}{U} \sqrt {\frac {m d}{\varepsilon_ {0} S}} \ln \left[ \frac {\left(3 \varepsilon_ {0} S U ^ {2} + 2 m g d ^ {2}\right) + 2 U \sqrt {\varepsilon_ {0} S \left(2 \varepsilon_ {0} S U ^ {2} + m g d ^ {2}\right)}}{\varepsilon_ {0} S U ^ {2} + 2 m g d ^ {2}} \right]
+            \label{eq:19.p97}
+        \end{equation}
+        平板 3 从极板 1 运动到极板 2 后，与极板 2 发生完全非弹性碰撞，速度变为零。其下表面所带的负电荷与极板 2 所带正电荷交换后相互抵消，上表面所带电荷为
+        \begin{equation*}
+            Q _ {1} ^ {\prime} = \varepsilon_ {0} E _ {1} ^ {\prime} S = Q = \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        极板 1 所带电荷为
+        \begin{equation*}
+            - Q _ {1} ^ {\prime} = - \varepsilon_ {0} E _ {1} ^ {\prime} S = - Q = - \frac {\varepsilon_ {0} S}{d} U
+        \end{equation*}
+        这时系统状态与初始状态完全相同，平板 3 完成一个完整的周期运动，此后平板 3 重复以上的上下往复运动过程。导体平板 3 的运动周期为
+        \begin{equation}
+            \begin{array}{l} T = t _ {1} + t _ {2} \\ = \frac {d}{U} \sqrt {\frac {m d}{\varepsilon_ {0} S}} \left\{\ln \left[ \frac {(3 \varepsilon_ {0} S U ^ {2} - 2 m g d ^ {2}) + 2 U \sqrt {2 \varepsilon_ {0} S (\varepsilon_ {0} S U ^ {2} - m g d ^ {2})}}{\varepsilon_ {0} S U ^ {2} - 2 m g d ^ {2}} \right] \right. \\ + \ln \left[ \frac {(3 \varepsilon_ {0} S U ^ {2} + 2 m g d ^ {2}) + 2 U \sqrt {\varepsilon_ {0} S (2 \varepsilon_ {0} S U ^ {2} + m g d ^ {2})}}{\varepsilon_ {0} S U ^ {2} + 2 m g d ^ {2}} \right] \Bigg \} \end{array}
+            \label{eq:20.p97}
+        \end{equation}
+        已利用\eqref{eq:10.p97}式和\eqref{eq:19.p97}式。
+    \end{subsolution}
+\end{solution}

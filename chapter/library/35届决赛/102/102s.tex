@@ -1,0 +1,201 @@
+\begin{solution}{102}
+    \begin{subsolution}
+        根据动能定理
+        \begin{equation}
+            \mathrm{d} K = \boldsymbol {F} \cdot \mathrm{d} \boldsymbol {r} = \frac {\mathrm{d} \boldsymbol {p}}{\mathrm{d} t} \cdot \mathrm{d} \boldsymbol {r} = \boldsymbol {v} \cdot \mathrm{d} \boldsymbol {p}
+            \label{eq:1.p102}
+        \end{equation}
+        并利用真实的自由粒子动能的表达式，有
+        \begin{equation}
+            \mathrm{d} K = \frac {\boldsymbol {p}}{m} \cdot \mathrm{d} \boldsymbol {p}
+            \label{eq:2.p102}
+        \end{equation}
+        由\eqref{eq:1.p102}\eqref{eq:2.p102}式得
+        \begin{equation*}
+            \left(\frac {\boldsymbol {p}}{m} - \boldsymbol {v}\right) \cdot \mathrm{d} \boldsymbol {p} = 0
+        \end{equation*}
+        考虑到上式对任意的 $\mathbf{dp}$ 都成立，有
+        \begin{equation}
+            \boldsymbol {v} = \frac {\boldsymbol {p}}{m}
+            \label{eq:3.p102}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        利用题给的准粒子动能的表达式, 有
+        \begin{equation}
+            \mathrm{d} K = \frac {\boldsymbol {p}}{m} \cdot \mathrm{d} \boldsymbol {p} + \alpha \frac {\boldsymbol {p}}{p} \cdot \mathrm{d} \boldsymbol {p}
+            \label{eq:4.p102}
+        \end{equation}
+        由\eqref{eq:1.p102}\eqref{eq:4.p102}式得
+        \begin{equation*}
+            \left(\frac {\boldsymbol {p}}{m} + \alpha \frac {\boldsymbol {p}}{p} - \boldsymbol {v}\right) \cdot \mathrm{d} \boldsymbol {p} = 0
+        \end{equation*}
+        考虑到上式对任意的 $\mathbf{dp}$ 都成立，有
+        \begin{equation}
+            \boldsymbol {v} = \frac {\boldsymbol {p}}{m} + \alpha \frac {\boldsymbol {p}}{p}
+            \label{eq:5.p102}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由\eqref{eq:5.p102}式可得
+        \begin{equation*}
+            v ^ {2} = \frac {p ^ {2}}{m ^ {2}} + 2 \alpha \frac {p}{m} + \alpha^ {2}
+        \end{equation*}
+        因此有
+        \begin{equation}
+            v = \frac {p}{m} + \alpha
+            \label{eq:6.p102}
+        \end{equation}
+        能量为 $K$ 的准粒子动量为
+        \begin{equation}
+            p = - m \alpha + \sqrt {m ^ {2} \alpha^ {2} + 2 m K}
+            \label{eq:7.p102}
+        \end{equation}
+        利用\eqref{eq:6.p102}和\eqref{eq:7.p102}可得
+        \begin{equation}
+            v = \sqrt {\alpha^ {2} + \frac {2 K}{m}}
+            \label{eq:8.p102}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在匀强磁场中，准粒子做匀速率圆周运动
+        \begin{equation*}
+            v = \omega R
+        \end{equation*}
+        其动量改变率的大小为
+        \begin{equation*}
+            \left| \frac {\mathrm{d} \boldsymbol {p}}{\mathrm{d} t} \right| = \omega p
+        \end{equation*}
+        由以上两式得
+        \begin{equation}
+            \left| \frac {\mathrm{d} \boldsymbol {p}}{\mathrm{d} t} \right| = \frac {v}{R} p
+            \label{eq:9.p102}
+        \end{equation}
+        准粒子做匀速率圆周运动的动力学方程为
+        \begin{equation}
+            p \frac {v}{R} = q v B
+            \label{eq:10.p102}
+        \end{equation}
+        利用\eqref{eq:7.p102}式解得
+        \begin{equation}
+            R = \frac {p}{q B} = \frac {- m \alpha + \sqrt {m ^ {2} \alpha^ {2} + 2 m K}}{q B}
+            \label{eq:11.p102}
+        \end{equation}
+        准粒子做匀速率圆周运动的周期为
+        \begin{equation}
+            T = \frac {2 \pi R}{v} = \frac {2 \pi \left(- m \alpha + \sqrt {m ^ {2} \alpha^ {2} + 2 m K}\right)}{q B \sqrt {\alpha^ {2} + \frac {2 K}{m}}}
+            \label{eq:12.p102}
+        \end{equation}
+        准粒子角动量的大小为
+        \begin{equation}
+            L = p R
+            \label{eq:13.p102}
+        \end{equation}
+        将\eqref{eq:7.p102}式代入\eqref{eq:13.p102}式得
+        \begin{equation}
+            L = \frac {2 m ^ {2} \alpha^ {2} + 2 m K - 2 m \alpha \sqrt {m ^ {2} \alpha^ {2} + 2 m K}}{q B}
+            \label{eq:14.p102}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        (解法一)
+
+        由\eqref{eq:5.p102}式得
+        \begin{equation}
+            \boldsymbol {p} = m \boldsymbol {v} - m \alpha \frac {\boldsymbol {v}}{v}
+            \label{eq:15.p102}
+        \end{equation}
+        因准粒子在电场中的运动方程为
+        \begin{equation}
+            \frac {\mathrm{d} \pmb {p}}{\mathrm{d} t} = q \pmb {E}
+            \label{eq:16.p102}
+        \end{equation}
+        即准粒子的加速度有
+        \begin{equation}
+            {\frac {\mathrm{d} \boldsymbol {v}}{\mathrm{d} t}} = \alpha {\frac {\mathrm{d}}{\mathrm{d} t}} {\left({\frac {\boldsymbol {v}}{v}}\right)} + {\frac {q}{m}} \boldsymbol {E}
+            \label{eq:17.p102}
+        \end{equation}
+        写成分量形式有
+        \begin{align*}
+            a _ {x} = \frac {\alpha}{v} \frac {\mathrm{d} v _ {x}}{\mathrm{d} t} - \frac {\alpha v _ {x}}{v ^ {2}} \frac {\mathrm{d} v}{\mathrm{d} t} + q E \\
+            a _ {y} = \frac {\alpha}{v} \frac {\mathrm{d} v _ {y}}{\mathrm{d} t} - \frac {\alpha v _ {y}}{v ^ {2}} \frac {\mathrm{d} v}{\mathrm{d} t}
+        \end{align*}
+        利用关系式
+        \begin{equation}
+            \frac {\mathrm{d} v}{\mathrm{d} t} = \frac {v _ {x}}{v} a _ {x} + \frac {v _ {y}}{v} a _ {y}
+            \label{eq:18.p102}
+        \end{equation}
+        \eqref{eq:17.p102}式可改写成
+        \begin{equation}
+            \left\{ \begin{array}{l} \left(1 - \frac {\alpha}{v} + \frac {\alpha v _ {x} ^ {2}}{v ^ {3}}\right) a _ {x} + \frac {\alpha v _ {x} v _ {y}}{v ^ {3}} a _ {y} = \frac {q E}{m} \\ \left(1 - \frac {\alpha}{v} + \frac {\alpha v _ {y} ^ {2}}{v ^ {3}}\right) a _ {y} + \frac {\alpha v _ {x} v _ {y}}{v ^ {3}} a _ {x} = 0 \end{array} \right.
+            \label{eq:19.p102}
+        \end{equation}
+        或写成
+        \begin{align*}
+            \left(1 - \frac {\alpha \sin^ {2} \theta}{v}\right) a _ {x} + \frac {\alpha \sin \theta \cos \theta}{v} a _ {y} = \frac {q E}{m} \\
+            \left(1 - \frac {\alpha \cos^ {2} \theta}{v}\right) a _ {y} + \frac {\alpha \sin \theta \cos \theta}{v} a _ {x} = 0
+        \end{align*}
+        解此二元一次方程组得
+        \begin{equation}
+            \left\{ \begin{array}{l} a _ {x} = \frac {q E}{m} + \frac {q E}{m} \frac {\alpha \sin^ {2} \theta}{v - \alpha} \\ a _ {y} = - \frac {q E}{m} \frac {\alpha \cos \theta \sin \theta}{v - \alpha} \end{array} \right.
+            \label{eq:20.p102}
+        \end{equation}
+        [（解法二）
+
+        由\eqref{eq:5.p102}式得
+        \begin{equation*}
+            \boldsymbol {p} = m \boldsymbol {v} - m \alpha \frac {\boldsymbol {v}}{v}
+        \end{equation*}
+        因准粒子在电场中的运动方程为
+        \begin{equation*}
+            \frac {\mathrm{d} \boldsymbol {p}}{\mathrm{d} t} = q \boldsymbol {E}
+        \end{equation*}
+        在直角坐标系中
+        \begin{equation*}
+            \left\{ \begin{array}{l} \frac {\mathrm{d} p}{\mathrm{d} t} \cos \theta - p \sin \theta \frac {\mathrm{d} \theta}{\mathrm{d} t} = q E \\ \frac {\mathrm{d} p}{\mathrm{d} t} \sin \theta + p \cos \theta \frac {\mathrm{d} \theta}{\mathrm{d} t} = 0 \end{array} \right.
+        \end{equation*}
+        由此解得
+        \begin{equation*}
+            \left\{ \begin{array}{l} \frac {\mathrm{d} p}{\mathrm{d} t} = q E \cos \theta \\ \frac {\mathrm{d} \theta}{\mathrm{d} t} = - \frac {q E}{p} \sin \theta \end{array} \right.
+        \end{equation*}
+        由\eqref{eq:5.p102}式得
+        \begin{equation*}
+            \left\{ \begin{array}{l} a _ {x} = \frac {\mathrm{d} v _ {x}}{\mathrm{d} t} = \frac {d}{d t} \left[ \left(\frac {p}{m} + \alpha\right) \cos \theta \right] = \frac {1}{m} \cos \theta \frac {d p}{d t} - \left(\frac {p}{m} + \alpha\right) \sin \theta \frac {d \theta}{d t} \\ a _ {y} = \frac {\mathrm{d} v _ {y}}{\mathrm{d} t} = \frac {d}{d t} \left[ \left(\frac {p}{m} + \alpha\right) \sin \theta \right] = \frac {1}{m} \sin \theta \frac {d p}{d t} + \left(\frac {p}{m} + \alpha\right) \cos \theta \frac {d \theta}{d t} \end{array} \right.
+        \end{equation*}
+        将上式代入，并利用\eqref{eq:6.p102}式，得
+        \begin{equation*}
+            \left\{ \begin{array}{l} a _ {x} = \frac {q E}{m} + \frac {q E}{m} \frac {\alpha \sin^ {2} \theta}{v - \alpha} \\ a _ {y} = - \frac {q E}{m} \frac {\alpha \cos \theta \sin \theta}{v - \alpha} \end{array} \right.
+        \end{equation*}
+        (解法三)
+
+        由\eqref{eq:5.p102}式得
+        \begin{equation*}
+            \boldsymbol {p} = m \boldsymbol {v} - m \alpha \frac {\boldsymbol {v}}{v}
+        \end{equation*}
+        准粒子在电场中的运动方程为
+        \begin{equation*}
+            \frac {\mathrm{d} \boldsymbol {p}}{\mathrm{d} t} = q \boldsymbol {E}
+        \end{equation*}
+        在直角坐标系中，上式可写成分量形式
+        \begin{equation*}
+            \left\{ \begin{array}{l} p _ {x} = m (v - \alpha) \cos \theta \\ p _ {y} = m (v - \alpha) \sin \theta \end{array} \right.
+        \end{equation*}
+        由上两式得
+        \begin{equation*}
+            \left\{ \begin{array}{l} - m (v - \alpha) \sin \theta \frac {\mathrm{d} \theta}{\mathrm{d} t} + m \cos \theta \frac {\mathrm{d} v}{\mathrm{d} t} = q E \\ m (v - \alpha) \cos \theta \frac {\mathrm{d} \theta}{\mathrm{d} t} + m \sin \theta \frac {\mathrm{d} v}{\mathrm{d} t} = 0 \end{array} \right.
+        \end{equation*}
+        由此解得
+        \begin{equation*}
+            \left\{ \begin{array}{l} \frac {\mathrm{d} v}{\mathrm{d} t} = \frac {q E}{m} \cos \theta \\ \frac {\mathrm{d} \theta}{\mathrm{d} t} = - \frac {q E}{m} \frac {\sin \theta}{v - \alpha} \end{array} \right.
+        \end{equation*}
+        将上式代入下式
+        \begin{equation*}
+            \left\{ \begin{array}{l} a _ {x} = \frac {d v _ {x}}{d t} = \frac {d v}{d t} \cos \theta - \sin \theta \frac {d \theta}{d t} \\ a _ {y} = \frac {d v _ {y}}{d t} = \frac {d v}{d t} \sin \theta + \cos \theta \frac {d \theta}{d t} \end{array} \right.
+        \end{equation*}
+        得
+        \begin{equation*}
+            \left\{ \begin{array}{l} a _ {x} = \frac {q E}{m} + \frac {q E}{m} \frac {\alpha \sin^ {2} \theta}{v - \alpha} \\ a _ {y} = - \frac {q E}{m} \frac {\alpha \cos \theta \sin \theta}{v - \alpha} \end{array} \right.
+        \end{equation*}
+        ]
+    \end{subsolution}
+\end{solution}

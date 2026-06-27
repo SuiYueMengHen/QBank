@@ -1,0 +1,152 @@
+
+\begin{solution}{88}
+\begin{subsolution}
+解法 (一)
+
+假设小物体初始速度大小为 $v_{0}$ ，在地球引力场中其能量为
+\begin{equation}
+E = \frac {1}{2} m v _ {0} ^ {2} - G \frac {M m}{R + h}
+\label{eq:1.s88}
+\end{equation}
+式中 $m$ 是小物体的质量。小物体相对于地球中心的角动量为
+\begin{equation}
+L = m v _ {0} (R + h)
+\label{eq:2.s88}
+\end{equation}
+该物体能绕地球做周期运动，其能量应
+\begin{equation}
+E <   0
+\label{eq:3.s88}
+\end{equation}
+由此条件以及 $E$ 的表达式，得
+\begin{equation}
+v _ {0} ^ {2} <   \frac {2 G M}{R + h}, \text {即} v _ {0} <   \sqrt {\frac {2 G M}{R + h}}
+\label{eq:4.s88}
+\end{equation}
+物体能绕地球做持续的周期运动，不能坠落到地球表面。当物体初始速度 $v_{0}$ 降低到某个值 $v_{0min}$ 时，物体运动的椭圆轨道将与地球表面相切，设这种情况下物体在与地球表面相切时的运动速度为 $v$，由角动量守恒定律
+\begin{equation}
+m v _ {0 \min} (R + h) = m v R, \text {即} v = v _ {0 \min} \frac {R + h}{R}
+\label{eq:5.s88}
+\end{equation}
+由能量守恒定律有
+\begin{equation}
+\frac {1}{2} m v _ {0 \min} ^ {2} - G \frac {M m}{R + h} = \frac {1}{2} m v ^ {2} - G \frac {M m}{R}
+\label{eq:6.s88}
+\end{equation}
+将\eqref{eq:5.s88}式代入\eqref{eq:6.s88}式得
+\begin{equation}
+v _ {0 \min} = \sqrt {\frac {2 G M R}{(R + h) (2 R + h)}}
+\label{eq:7.s88}
+\end{equation}
+当物体初速度 $v_{0}$ 低于 $v_{0min}$ 时，其轨道都将与地球表面相交，因此会坠落到地面上。所以物体绕地球作椭圆或圆形轨道运动，但不会坠落到地球表面的条件是
+\begin{equation}
+\sqrt {\frac {2 G M R}{(R + h) (2 R + h)}} <   v _ {0} <   \sqrt {\frac {2 G M}{R + h}}
+\label{eq:8.s88}
+\end{equation}
+
+解法（二）
+
+该物体能绕地球做周期运动，其运动轨迹应为椭圆（圆被视为椭圆的特殊情形），设其近或远地点之一与地心的距离和速度大小分别为 $r_{1}$ 和 $v_{1}$ ，另一近或远地点与地心的距离和速度大小分别为 $r_{2}$ 和 $v_{2}$ 。由角动量守恒和能量守恒有
+\begin{equation}
+\begin{array}{l} r _ {1} v _ {1} = r _ {2} v _ {2} \\ \frac {1}{2} m v _ {1} ^ {2} - G \frac {M m}{r _ {1}} = \frac {1}{2} m v _ {2} ^ {2} - G \frac {M m}{r _ {2}} \end{array}
+\label{eq:9.s88}
+\end{equation}
+式中 $m$ 是小物体的质量。消去 $v_{2}$ 得
+\begin{equation}
+\frac {1}{r _ {2} ^ {2}} - \frac {2 G M}{r _ {1} ^ {2} v _ {1} ^ {2}} \frac {1}{r _ {2}} - \frac {1}{r _ {1} ^ {2} v _ {1} ^ {2}} \left(v _ {1} ^ {2} - \frac {2 G M}{r _ {1}}\right) = 0
+\label{eq:10.s88}
+\end{equation}
+将 $r_1$ 和 $v_1$ 视为已知，上式是 $\frac{1}{r_2}$ 满足的一个一元二次方程。 $r_2 = r_1$ 显然满足方程\eqref{eq:9.s88}，因而 $\frac{1}{r_1}$ 是一元二次方程的解。利用韦达定理，另一解是
+\begin{equation}
+\frac {1}{r _ {2}} = \frac {1}{r _ {1}} \left(\frac {2 G M}{r _ {1} v _ {1} ^ {2}} - 1\right)
+\label{eq:11.s88}
+\end{equation}
+显然， $r_2 > R$ ，且有限，故有
+\begin{equation}
+0 <   \frac {1}{r _ {2}} <   \frac {1}{R}
+\label{eq:12.s88}
+\end{equation}
+由\eqref{eq:11.s88}\eqref{eq:12.s88}式得，当 $r_{1}$ 给定时， $v_{1}$ 必须满足
+\begin{equation}
+\sqrt {\frac {2 G M R}{r _ {1} \left(r _ {1} + R\right)}} <   v _ {1} <   \sqrt {\frac {2 G M}{r _ {1}}}.
+\label{eq:13.s88}
+\end{equation}
+由题意知
+\begin{equation}
+r _ {1} = R + h, v _ {1} = v _ {0}
+\label{eq:14.s88}
+\end{equation}
+故有
+\begin{equation}
+\sqrt {\frac {2 G M R}{(R + h) (2 R + h)}} <   v _ {0} <   \sqrt {\frac {2 G M}{R + h}}
+\label{eq:15.s88}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+如果
+\begin{equation}
+v _ {0} <   \sqrt {\frac {2 G M R}{(R + h) (2 R + h)}}
+\label{eq:16.s88}
+\end{equation}
+则物体会落到地球上。根据能量守恒，它落到地面时的速度大小 $v$ 满足方程
+\begin{equation}
+\frac {1}{2} m v ^ {2} - G \frac {M m}{R} = \frac {1}{2} m v _ {0} ^ {2} - G \frac {M m}{R + h}
+\label{eq:17.s88}
+\end{equation}
+由\eqref{eq:17.s88}式得
+\begin{equation}
+v = \sqrt {v _ {0} ^ {2} + \frac {2 G M}{R} - \frac {2 G M}{R + h}} = \sqrt {v _ {0} ^ {2} + \frac {2 G M h}{R (R + h)}}
+\label{eq:18.s88}
+\end{equation}
+设物体落地点相对于地心的矢径与物体初始位置相对于地心的矢径之间的夹角为 $\theta$ 。根据角动量守恒，物体落到地面时的水平速度 $v_{\theta}$ 满足方程
+\begin{equation}
+R v _ {\theta} = (R + h) v _ {0}
+\label{eq:19.s88}
+\end{equation}
+上式即
+\begin{equation}
+v _ {\theta} = \frac {R + h}{R} v _ {0}
+\label{eq:20.s88}
+\end{equation}
+物体的速度方向与水平面的夹角是
+\begin{equation}
+\alpha = \arccos \frac {v _ {\theta}}{v} = \arccos \frac {(R + h) v _ {0}}{\sqrt {R ^ {2} v _ {0} ^ {2} + \frac {2 G M R h}{R + h}}}
+\label{eq:21.s88}
+\end{equation}
+将物体的运动用极坐标 $\theta(t)$ 、 $r(t)$ 描写，角动量守恒和能量守恒可分别表为
+\begin{equation}
+r ^ {2} \frac {\mathrm{d} \theta}{\mathrm{d} t} = (R + h) v _ {0}
+\label{eq:22.s88}
+\end{equation}
+和
+\begin{equation}
+\frac {1}{2} m \left(\frac {\mathrm{d} r}{\mathrm{d} t}\right) ^ {2} + \frac {1}{2} m r ^ {2} \left(\frac {\mathrm{d} \theta}{\mathrm{d} t}\right) ^ {2} - G \frac {M m}{r} = \frac {1}{2} m v _ {0} ^ {2} - G \frac {M m}{R + h}
+\label{eq:23.s88}
+\end{equation}
+消去 $\frac{\mathrm{d}\theta}{\mathrm{d}t}$ 得
+\begin{equation}
+\frac {\mathrm{d} r}{\mathrm{d} t} = - \sqrt {- \frac {(R + h) ^ {2} v _ {0} ^ {2}}{r ^ {2}} + \frac {2 G M}{r} + v _ {0} ^ {2} - \frac {2 G M}{R + h}}
+\label{eq:24.s88}
+\end{equation}
+物体从开始发射直至落地需要的时间为
+\begin{equation}
+\begin{array}{l} t = \int_ {R} ^ {R + h} \frac {\mathrm{d} r}{\sqrt {- \frac {(R + h) ^ {2} v _ {0} ^ {2}}{r ^ {2}} + \frac {2 G M}{r} + v _ {0} ^ {2} - \frac {2 G M}{R + h}}} \\ = \int_ {R} ^ {R + h} \frac {r \mathrm{d} r}{\sqrt {\left(v _ {0} ^ {2} - \frac {2 G M}{R + h}\right) r ^ {2} + 2 G M r - (R + h) ^ {2} v _ {0} ^ {2}}} \end{array}
+\label{eq:25.s88}
+\end{equation}
+取参量 $a = -\left(R + h\right)^2 v_0^2$ ， $b = 2GM$ ， $c = v_0^2 -\frac{2GM}{R + h} < 0$ ，有
+\begin{equation}
+\begin{array}{r l} \Delta & = b ^ {2} - 4 a c \\ & = (2 G M) ^ {2} + 4 (R + h) ^ {2} v _ {0} ^ {2} \left(v _ {0} ^ {2} - \frac {2 G M}{R + h}\right) \\ & = 4 (R + h) ^ {2} \left(v _ {0} ^ {2} - \frac {2 G M}{R + h}\right) ^ {2} > 0 \end{array}
+\label{eq:26.s88}
+\end{equation}
+利用题给积分公式，完成积分得
+\begin{equation}
+\begin{array}{l} t = \frac {R + h}{2 G M - v _ {0} ^ {2} (R + h)} \sqrt {\frac {2 G M R h}{R + h} - v _ {0} ^ {2} (2 R + h) h} \\ \quad + G M \left[ \frac {R + h}{2 G M - v _ {0} ^ {2} (R + h)} \right] ^ {\frac {3}{2}} \left[ \frac {\pi}{2} + \arcsin \frac {v _ {0} ^ {2} R (R + h) - G M (R - h)}{G M (R + h) - v _ {0} ^ {2} (R + h) ^ {2}} \right] \end{array}
+\label{eq:27.s88}
+\end{equation}
+当初始速度大小为临界值 $v_{0}=\sqrt{\frac{2GMR}{(R+h)(2R+h)}}$ 时，下落时间为
+\begin{equation}
+t = \frac {\pi}{\sqrt {G M}} \left(\frac {2 R + h}{2}\right) ^ {\frac {3}{2}}
+\label{eq:28.s88}
+\end{equation}
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,161 @@
+\begin{solution}{99}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            设稳定时, 弦上向右传播的机械波的波的表达式为
+            \begin{equation}
+                y _ {R} (x, t) = A _ {1} e ^ {- \gamma x} \cos \left(\omega t - \frac {\omega x}{u} + \varphi_ {1}\right)
+                \label{eq:1.p99}
+            \end{equation}
+            其中 $A_{1}$ 和 $\varphi_{1}$ 为待定系数。由于弦的右端点固定，在右端点反射后弦上反射波的波的表达式为
+            \begin{equation}
+                y _ {L} (x, t) = A _ {1} \mathrm{e} ^ {- 2 \gamma L + \gamma x} \cos \left(\omega t + \frac {\omega x}{u} - 2 \frac {\omega L}{u} + \pi + \varphi_ {1}\right)
+                \label{eq:2.p99}
+            \end{equation}
+            因此，稳定时在弦上横向振动的表达式为
+            \begin{equation*}
+                y (x, t) = y _ {\mathrm{L}} (x, t) + y _ {\mathrm{R}} (x, t) = A (x) \cos [ \omega t + \varphi (x) ]
+            \end{equation*}
+            这里
+            \begin{equation}
+                A (x) = A _ {1} \sqrt {\mathrm{e} ^ {- 2 \gamma x} + \mathrm{e} ^ {- 4 \gamma L + 2 \gamma x} - 2 \mathrm{e} ^ {- 2 \gamma L} \cos \left(2 \frac {\omega}{u} x - 2 \frac {\omega L}{u}\right)}
+                \label{eq:3.p99}
+            \end{equation}
+            由于稳定时弦的左端点的振动表达式是已知的，有
+            \begin{equation*}
+                A (x = 0) = A _ {1} \sqrt {1 + \mathrm{e} ^ {- 4 \gamma L} - 2 \mathrm{e} ^ {- 2 \gamma L} \cos \left(2 \frac {\omega L}{u}\right)} = A _ {0}
+            \end{equation*}
+            比较以上两式得
+            \begin{equation}
+                A _ {1} = \frac {A _ {0}}{\sqrt {1 + \mathrm{e} ^ {- 4 \gamma L} - 2 \mathrm{e} ^ {- 2 \gamma L} \cos \left(2 \frac {\omega L}{u}\right)}}
+                \label{eq:4.p99}
+            \end{equation}
+            于是，稳定时弦上各处振动的振幅为
+            \begin{equation}
+                A (x) = \frac {A _ {0}}{\sqrt {1 + \mathrm{e} ^ {- 4 \gamma L} - 2 \mathrm{e} ^ {- 2 \gamma L} \cos \left(2 \frac {\omega L}{u}\right)}} \sqrt {\mathrm{e} ^ {- 2 \gamma x} + \mathrm{e} ^ {- 4 \gamma L + 2 \gamma x} - 2 \mathrm{e} ^ {- 2 \gamma L} \cos \left(2 \frac {\omega}{u} x - 2 \frac {\omega L}{u}\right)}
+                \label{eq:5.p99}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            忽略波传播方向上振幅的衰减，在弦上激发的驻波表达式可写成
+            \begin{equation}
+                y (x, t) = A \sin \left(\frac {\omega x}{u} + \varphi\right) \cos (\omega t + \phi)
+                \label{eq:6.p99}
+            \end{equation}
+            弦的右端点固定，即
+            \begin{equation*}
+                y (x = L, t) = 0
+            \end{equation*}
+            由以上两式得
+            \begin{equation*}
+                \frac {\omega L}{u} + \varphi = m \pi , m = 0, 1, 2, \dots
+            \end{equation*}
+            可取 $m = 0$ ，得
+            \begin{equation}
+                \varphi = - \frac {\omega L}{u}
+                \label{eq:7.p99}
+            \end{equation}
+            $m$ 的其它取值所得到的结果，只是对应的 $\phi$ 取值不同而已，实际上是相互等价的。利用弦的左端点振动表达式 $y(x = 0, t) = A_0 \cos (\omega t)$ ，有
+            \begin{equation*}
+                A \sin \left(- \frac {\omega L}{u}\right) \cos (\omega t + \phi) = A _ {0} \cos \omega t
+            \end{equation*}
+            由于上式在任意时刻 $t$ 都成立，有
+            \begin{equation}
+                A = - \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)}
+                \label{eq:8.p99}
+            \end{equation}
+            \begin{equation}
+                \phi = 0
+                \label{eq:9.p99}
+            \end{equation}
+            将\eqref{eq:8.p99}\eqref{eq:9.p99}式代入\eqref{eq:6.p99}式得，弦上驻波的表达式为
+            \begin{equation}
+                y (x, t) = - \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)} \sin \left(\frac {\omega x}{u} - \frac {\omega L}{u}\right) \cos (\omega t)
+                \label{eq:10.p99}
+            \end{equation}
+            由\eqref{eq:10.p99}式知，在坐标为 $x$ 处质点振动的振幅 $A(x)$ 为
+            \begin{equation*}
+                A (x) = \left| \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)} \sin \left(\frac {\omega x}{u} - \frac {\omega L}{u}\right) \right|
+            \end{equation*}
+            波节点 $x_{n}$ 的位置满足
+            \begin{equation*}
+                \left| A (x _ {n}) \right| = 0
+            \end{equation*}
+            即
+            \begin{equation*}
+                \sin \left(\frac {\omega x _ {n}}{u} - \frac {\omega L}{u}\right) = 0
+            \end{equation*}
+            由此解得
+            \begin{equation}
+                x _ {n} = L - n \pi \frac {u}{\omega}
+                \label{eq:11.p99}
+            \end{equation}
+            这里， $n$ 为满足
+            \begin{equation}
+                0 \leq n <   \frac {L \omega}{\pi u}
+                \label{eq:12.p99}
+            \end{equation}
+            的整数。
+
+            在波腹位置 $x_{a}$ 点，振幅 $A(x)$ 最大，即可得
+            \begin{equation}
+                x _ {a} = L - \pi \frac {u}{2 \omega} - l \pi \frac {u}{\omega}
+                \label{eq:13.p99}
+            \end{equation}
+            $l$ 为满足
+            \begin{equation}
+                0 <   l <   \frac {L \omega}{\pi u}
+                \label{eq:14.p99}
+            \end{equation}
+            的整数。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        将弦上各处振动的表达式分解成
+
+        A: 弦的左端点振动、右端点固定
+
+        B: 弦的右端点振动、左端点固定
+
+        两种情形的叠加。设在情形 A 中弦上各点的振动表达式为 $y_{1}(x,t)$ ，而在情形 B 中弦上各点的振动表达式为 $y_{2}(x,t)$ 。利用（1.ii）的结果，可得弦中驻波表达式为
+        \begin{equation*}
+            y _ {1} (x, t) = - \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)} \sin \left(\frac {\omega x}{u} - \frac {\omega L}{u}\right) \cos (\omega t)
+        \end{equation*}
+        利用（1.ii）中的结果，可得弦中驻波表达式为
+        \begin{equation}
+            y _ {2} (x, t) = \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)} \sin \left(\frac {\omega x}{u}\right) \cos (\omega t + \varphi_ {0})
+            \label{eq:15.p99}
+        \end{equation}
+        当弦的左、右端都有振动时，弦上各处合振动的表达式为以上两式的叠加
+        \begin{equation*}
+            y (x, t) = y _ {1} (x, t) + y _ {2} (x, t) = \frac {A _ {0}}{\sin \left(\frac {\omega L}{u}\right)} \left[ \sin \left(\frac {\omega L}{u} - \frac {\omega x}{u}\right) \cos \omega t + \sin \left(\frac {\omega x}{u}\right) \cos (\omega t + \varphi_ {0}) \right]
+        \end{equation*}
+        当 $\varphi_0 = 0$ 时，弦线中各处合振动为
+        \begin{equation}
+            y (x, t) = \frac {A _ {0}}{\cos \left(\frac {\omega L}{2 u}\right)} \cos \left(\frac {\omega L}{2 u} - \frac {\omega x}{u}\right) \cos \omega t
+            \label{eq:16.p99}
+        \end{equation}
+        共振时
+        \begin{equation*}
+            \cos \left(\frac {\omega L}{2 u}\right) = 0,
+        \end{equation*}
+        由此解得
+        \begin{equation}
+            \omega = \frac {(2 n _ {1} + 1) \pi u}{L}, n _ {1} = 0, 1, 2, 3 \dots
+            \label{eq:17.p99}
+        \end{equation}
+        当 $\varphi_0 = \pi$ 时，弦线中各处合振动为
+        \begin{equation}
+            y (x, t) = \frac {A _ {0}}{\sin \left(\frac {\omega L}{2 u}\right)} \sin \left(\frac {\omega L}{2 u} - \frac {\omega x}{u}\right) \cos \omega t
+            \label{eq:18.p99}
+        \end{equation}
+        共振时
+        \begin{equation*}
+            \sin \left(\frac {\omega L}{2 u}\right) = 0
+        \end{equation*}
+        由此解得
+        \begin{equation}
+            \omega = \frac {2 n _ {2} \pi u}{L}, n _ {2} = 1, 2, 3 \dots
+            \label{eq:19.p99}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

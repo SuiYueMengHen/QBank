@@ -1,0 +1,130 @@
+\begin{solution}{91}
+\begin{subsolution}
+四根通有直流电流 $I$ 的导线在 $x-y$ 平面内的空间坐标依次是
+\begin{equation}
+(- a, a), (a, a), (a, - a), (- a, - a)
+\label{eq:1.s91}
+\end{equation}
+取 $x$ 轴和 $y$ 轴方向单位矢量为 $\boldsymbol{i}$ 和 $\boldsymbol{j}$，考虑通电导线外任一点 $(x, y)$ 。导线 $1$、$2$、$3$、$4$ 上的电流在点 $(x, y)$ 产生的磁场 $\boldsymbol{B}_{1}$ 、 $\boldsymbol{B}_{2}$ 、 $\boldsymbol{B}_{3}$ 、 $\boldsymbol{B}_{4}$ 为
+\begin{equation}
+\boldsymbol {B} _ {1} = \frac {\mu_ {0} (- I)}{2 \pi} \frac {- (y - a) \boldsymbol {i} + (x + a) \boldsymbol {j}}{(x + a) ^ {2} + (y - a) ^ {2}}
+\label{eq:2.s91}
+\end{equation}
+\begin{equation}
+\boldsymbol {B} _ {2} = \frac {\mu_ {0} I}{2 \pi} \frac {- (y - a) \boldsymbol {i} + (x - a) \boldsymbol {j}}{(x - a) ^ {2} + (y - a) ^ {2}}
+\label{eq:3.s91}
+\end{equation}
+\begin{equation}
+\boldsymbol {B} _ {3} = \frac {\mu_ {0} (- I)}{2 \pi} \frac {- (y + a) \boldsymbol {i} + (x - a) \boldsymbol {j}}{(x - a) ^ {2} + (y + a) ^ {2}}
+\label{eq:4.s91}
+\end{equation}
+\begin{equation}
+\boldsymbol {B} _ {4} = \frac {\mu_ {0} I}{2 \pi} \frac {- (y + a) \boldsymbol {i} + (x + a) \boldsymbol {j}}{(x + a) ^ {2} + (y + a) ^ {2}}
+\label{eq:5.s91}
+\end{equation}
+导线电流在通电导线外产生的总磁场的空间分布为
+\begin{equation}
+\begin{aligned} \boldsymbol {B} = \boldsymbol {B} _ {1} + \boldsymbol {B} _ {2} + \boldsymbol {B} _ {3} + \boldsymbol {B} _ {4} = \frac {\mu_ {0} I}{2 \pi} \left\{\left[ \frac {y - a}{(x + a) ^ {2} + (y - a) ^ {2}} - \frac {y - a}{(x - a) ^ {2} + (y - a) ^ {2}} + \frac {y + a}{(x - a) ^ {2} + (y + a) ^ {2}} - \frac {y + a}{(x + a) ^ {2} + (y + a) ^ {2}} \right] \boldsymbol{i} \right. \\ \left. + \left[ - \frac {x + a}{(x + a) ^ {2} + (y - a) ^ {2}} + \frac {x - a}{(x - a) ^ {2} + (y - a) ^ {2}} - \frac {x - a}{(x - a) ^ {2} + (y + a) ^ {2}} + \frac {x + a}{(x + a) ^ {2} + (y + a) ^ {2}} \right] \boldsymbol{j} \right\} \end{aligned}
+\label{eq:6.s91}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+对于原点 $O$ 附近的任一点 $(x, y)$ ，有
+\begin{equation}
+| x | <   <   a, | y | <   <   a
+\label{eq:7.s91}
+\end{equation}
+保留至 $\frac{x}{a}$ 、 $\frac{y}{a}$ 的一次项， $B_{1}$ 、 $B_{2}$ 、 $B_{3}$ 、 $B_{4}$ 可近似为
+\begin{equation}
+\boldsymbol {B} _ {1} \approx \frac {\mu_ {0} I}{4 \pi a ^ {2}} [ - (a - x) \boldsymbol {i} - (a + y) \boldsymbol {j} ]
+\label{eq:8.s91}
+\end{equation}
+\begin{equation}
+\pmb {B} _ {2} \approx \frac {\mu_ {0} I}{4 \pi a ^ {2}} [ (a + x) \pmb {i} - (a + y) \pmb {j} ]
+\label{eq:9.s91}
+\end{equation}
+\begin{equation}
+\pmb {B} _ {3} \approx \frac {\mu_ {0} I}{4 \pi a ^ {2}} [ (a + x) \pmb {i} + (a - y) \pmb {j} ]
+\label{eq:10.s91}
+\end{equation}
+\begin{equation}
+\boldsymbol {B} _ {4} \approx \frac {\mu_ {0} I}{4 \pi a ^ {2}} [ - (a - x) \boldsymbol {i} + (a - y) \boldsymbol {j} ]
+\label{eq:11.s91}
+\end{equation}
+电流在原点附近任一点 $(x,y)$ 产生的总磁场可近似为
+\begin{equation}
+\boldsymbol {B} \approx \frac {\mu_ {0} I}{\pi a ^ {2}} (x \boldsymbol {i} - y \boldsymbol {j})
+\label{eq:12.s91}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+在原点附近的总磁感应强度为
+\begin{equation}
+\pmb {B} _ {\mathrm{tot}} \approx \frac {\mu_ {0} I}{\pi a ^ {2}} (x \pmb {i} - y \pmb {j}) + B _ {0} \pmb {k}
+\label{eq:13.s91}
+\end{equation}
+在原点 $O$ 附近总磁感应强度的大小为
+\begin{equation}
+\left| \boldsymbol {B} _ {\text {tot}} \right| = \sqrt {B _ {0} ^ {2} + \left(\frac {\mu_ {0} I}{\pi a ^ {2}}\right) ^ {2} \left(x ^ {2} + y ^ {2}\right)} \approx B _ {0} + \frac {1}{2 B _ {0}} \left(\frac {\mu_ {0} I}{\pi a ^ {2}}\right) ^ {2} \left(x ^ {2} + y ^ {2}\right)
+\label{eq:14.s91}
+\end{equation}
+原子在原点 $O$ 附近所受的磁作用的束缚势能为
+\begin{equation}
+V = \mu \mid \boldsymbol {B} _ {\text { tot }} \mid \approx \mu B _ {0} + \frac {1}{2} \frac {\mu}{B _ {0}} \left(\frac {\mu_ {0} I}{\pi a ^ {2}}\right) ^ {2} (x ^ {2} + y ^ {2})
+\label{eq:15.s91}
+\end{equation}
+除开常数项外，这是二维（ $x-y$ 平面）简谐振子势能，因此该原子在原点 $O$ 附近所受磁场的作用力应是 $x-y$ 平面上沿径向指向原点 $O$ 的力
+\begin{equation}
+\boldsymbol {F} = - \frac {\mu}{B _ {0}} \left(\frac {\mu_ {0} I}{\pi a ^ {2}}\right) ^ {2} (x \boldsymbol {i} + y \boldsymbol {j})
+\label{eq:16.s91}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+原子在磁阱中所受的磁作用的束缚势能为
+\begin{equation}
+V = \mu | \boldsymbol {B} _ {\mathrm{tot}} | = \mu \sqrt {B _ {0} ^ {2} + | \boldsymbol {B} | ^ {2}}
+\label{eq:17.s91}
+\end{equation}
+式中 $\boldsymbol{B}$ 如\eqref{eq:6.s91}式所示。
+
+由系统的电流分布可以断定，在 $x-y$ 平面内磁感线最稀疏的位置应该在 $x$ 轴或 $y$ 轴上，或者说束缚势垒高度最小的位置应该在 $x$ 轴或 $y$ 轴上，这也是原子在 $x-y$ 平面内最容易逸出的方向。由\eqref{eq:6.s91}式，当 $y=0$ 时，在 $x$ 轴上束缚势能为
+\begin{equation}
+V (x, y = 0) = \mu \sqrt {B _ {0} ^ {2} + \left(\frac {\mu_ {0} I a}{\pi}\right) ^ {2} \left[ \frac {1}{(x - a) ^ {2} + a ^ {2}} - \frac {1}{(x + a) ^ {2} + a ^ {2}} \right] ^ {2}}
+\label{eq:18.s91}
+\end{equation}
+由极值条件 $\frac{\mathrm{d}V(x)}{\mathrm{d}x} = 0$ 得
+\begin{equation}
+x \left(3 x ^ {4} - 4 a ^ {4}\right) = 0
+\label{eq:19.s91}
+\end{equation}
+解为
+\begin{equation}
+x _ {1} = \left(\frac {4}{3}\right) ^ {\frac {1}{4}} a, x _ {2} = - \left(\frac {4}{3}\right) ^ {\frac {1}{4}} a, x _ {3} = 0
+\label{eq:20.s91}
+\end{equation}
+其中，极值点 $x_{3}=0$ ，即原点位置对应于势能最小值位置；而极值点 $x_{1}$ 和 $x_{2}$ 对应于 $x$ 轴上势能极大值位置。在 $y$ 轴方向也有类似结果。
+
+因此，运动原子在 $x-y$ 平面内最容易沿 $x$ 轴或 $y$ 轴方向，在下述空间位置
+\begin{equation}
+(\pm \left(\frac {4}{3}\right) ^ {1 / 4} a, 0), (0, \pm \left(\frac {4}{3}\right) ^ {1 / 4} a)
+\label{eq:21.s91}
+\end{equation}
+从磁阱中逸出。
+
+由\eqref{eq:18.s91}式知，在 $(x = \pm \left(\frac{4}{3}\right)^{1 / 4}a,0)$ 处，原子的束缚势能为
+\begin{equation}
+V (x = \pm \left(\frac {4}{3}\right) ^ {1 / 4} a, y = 0) = \mu \sqrt {B _ {0} ^ {2} + \frac {3 \sqrt {3}}{8} \left(\frac {\mu_ {0} I}{\pi a}\right) ^ {2}}
+\label{eq:22.s91}
+\end{equation}
+类似的，在 $(x = 0, y = \pm \left(\frac{4}{3}\right)^{1/4} a)$ 处，原子的束缚势能也为\eqref{eq:22.s91}式所示。由\eqref{eq:6.s91}式，在磁阱中心 $(x = 0, y = 0)$ 原子所受磁作用的束缚势能为
+\begin{equation}
+V _ {O} = \mu B _ {0}
+\label{eq:23.s91}
+\end{equation}
+所以刚好能够逸出磁阱的原子的动能为
+\begin{equation}
+\begin{array}{r l} E _ {\mathrm{k}} & = V (x = \pm \left(\frac {4}{3}\right) ^ {1 / 4} a, y = 0) - V _ {O} \\ & = V (x = 0, y = \pm \left(\frac {4}{3}\right) ^ {1 / 4} a) - V _ {O} \\ & = \mu B _ {0} \left[ \sqrt {1 + \frac {3 \sqrt {3}}{8} \left(\frac {\mu_ {0} I}{\pi a B _ {0}}\right) ^ {2}} - 1 \right] \end{array}
+\label{eq:24.s91}
+\end{equation}
+\end{subsolution}
+\end{solution}

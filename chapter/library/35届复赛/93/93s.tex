@@ -1,0 +1,138 @@
+\begin{solution}{93}
+\begin{subsolution}
+根据斯特藩定律（下同），由球壳外表面单位时间向外界辐射的热量为
+\begin{equation}
+Q ^ {\prime} = 4 \pi R _ {2} ^ {2} \sigma \left(T _ {2} ^ {4} - T ^ {4}\right)
+\label{eq:1.s93}
+\end{equation}
+在热稳定情形下有
+\begin{equation}
+Q = Q ^ {\prime}
+\label{eq:2.s93}
+\end{equation}
+联立\eqref{eq:1.s93}\eqref{eq:2.s93}式得
+\begin{equation}
+T _ {2} = \left(\frac {Q}{4 \pi R _ {2} ^ {2} \sigma} + T ^ {4}\right) ^ {1 / 4}
+\label{eq:3.s93}
+\end{equation}
+将题给数据代入\eqref{eq:3.s93}式得
+\begin{equation}
+T _ {2} = 8 8. 6 \mathrm{K}
+\label{eq:4.s93}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+在热稳定状态下，球壳中不同半径的球面上在单位时间内通过的热量相同，故单位时间球壳中不同半径球面上传导的热量也为 $Q$。由傅里叶热传导定律得
+\begin{equation}
+Q = - 4 \pi R ^ {2} \kappa \frac {\mathrm{d} T}{\mathrm{d} R}
+\label{eq:5.s93}
+\end{equation}
+\eqref{eq:5.s93}式可写成
+\begin{equation}
+Q \frac {\mathrm{d} R}{R ^ {2}} = - 4 \pi \kappa \mathrm{d} T
+\label{eq:6.s93}
+\end{equation}
+对上式两边积分
+\begin{equation}
+\int_ {R _ {1}} ^ {R _ {2}} Q \frac {\mathrm{d} R}{R ^ {2}} = - \int_ {T _ {1}} ^ {T _ {2}} 4 \pi \kappa \mathrm{d} T
+\label{eq:7.s93}
+\end{equation}
+得
+\begin{equation}
+Q \left(\frac {1}{R _ {1}} - \frac {1}{R _ {2}}\right) = 4 \pi \kappa (T _ {1} - T _ {2})
+\label{eq:8.s93}
+\end{equation}
+此即
+\begin{equation}
+Q = 4 \pi \kappa R _ {1} R _ {2} \frac {T _ {1} - T _ {2}}{R _ {2} - R _ {1}}
+\label{eq:9.s93}
+\end{equation}
+由\eqref{eq:9.s93}式有
+\begin{equation}
+T _ {1} = \frac {\left(R _ {2} - R _ {1}\right) Q}{4 \pi \kappa R _ {1} R _ {2}} + T _ {2}
+\label{eq:10.s93}
+\end{equation}
+将题给数据代入\eqref{eq:10.s93}式，并利用\eqref{eq:4.s93}式得
+\begin{equation}
+T _ {1} = 1 2 8 \mathrm{K}
+\label{eq:11.s93}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+记内球表面为 I，其表面积
+\begin{equation}
+S _ {\mathrm{I}} = 4 \pi r ^ {2}
+\label{eq:12.s93}
+\end{equation}
+壳内表面为 II，其表面积
+\begin{equation}
+S _ {\mathrm{II}} = 4 \pi R _ {1} ^ {2}
+\label{eq:13.s93}
+\end{equation}
+根据斯特藩定律（下同），由 I 在单位时间内发射的热量为
+\begin{equation}
+Q _ {\mathrm{I0}} = e \sigma T _ {0} ^ {4} S _ {\mathrm{I}}
+\label{eq:14.s93}
+\end{equation}
+由于物体在某一温度下的吸收比等于其在同一温度下的比辐射率（下同）， $Q_{10}$ 被 II 在单位时间内吸收的热量为
+\begin{equation}
+Q _ {\mathrm{IIa}} ^ {(1)} = E Q _ {\mathrm{I0}} = E e \sigma T _ {0} ^ {4} S _ {\mathrm{I}}
+\label{eq:15.s93}
+\end{equation}
+$Q_{10}$ 被 II 在单位时间内反射到小球的热量为
+\begin{equation}
+Q _ {\mathrm{IIr}} ^ {(1)} = k (1 - E) Q _ {\mathrm{I0}} = k (1 - E) e \sigma T _ {0} ^ {4} S _ {\mathrm{I}}
+\label{eq:16.s93}
+\end{equation}
+式中已经考虑到，表面的辐射是各向同性的，且 II 向内的辐射只有一部分到达 I，这一部分的热量所占的份额为
+\begin{equation}
+k = \frac {- \int_ {0} ^ {2 \pi} \mathrm{d} \varphi \int_ {0} ^ {\theta_ {0}} \boldsymbol {n} _ {\theta} \cdot \Delta \boldsymbol {S} \mathrm{d} \cos \theta}{- \int_ {0} ^ {2 \pi} \mathrm{d} \varphi \int_ {0} ^ {\pi / 2} \boldsymbol {n} _ {\theta} \cdot \Delta \boldsymbol {S} \mathrm{d} \cos \theta} = \frac {\int_ {0} ^ {\theta_ {0}} \cos \theta \mathrm{d} \cos \theta}{\int_ {0} ^ {\pi / 2} \cos \theta \mathrm{d} \cos \theta} = \sin^ {2} \theta_ {0} = \left(\frac {r}{R _ {1}}\right) ^ {2}
+\label{eq:17.s93}
+\end{equation}
+这里 $\theta$ 是从 II 上任意一面元 $\Delta S$ 向内球所作的切线与从该点到内球球心连线的夹角， $\boldsymbol{n}_{\theta}$ 是与面元法向夹角为 $\theta$ 的辐射线的方向。 $Q_{\mathrm{Irr}}^{(1)}$ 被 I 在单位时间内反射的热量为
+\begin{equation}
+Q _ {\mathrm{Ir}} ^ {(1)} = (1 - e) Q _ {\mathrm{Ilr}} ^ {(1)} = (1 - e) k (1 - E) e \sigma T _ {0} ^ {4} S _ {\mathrm{I}}
+\label{eq:18.s93}
+\end{equation}
+$Q_{Ir}^{(1)}$ 被 II 在单位时间内吸收的热量为
+\begin{equation}
+Q _ {\mathrm{IIa}} ^ {(2)} = E Q _ {\mathrm{Ir}} ^ {(1)} = E (1 - e) (1 - E) e \sigma T _ {0} ^ {4} S _ {\mathrm{I}}
+\label{eq:19.s93}
+\end{equation}
+如此等等。不断反射、吸收后，被 II 在单位时间内吸收的总热量为
+\begin{equation}
+\begin{array}{r l} Q _ {\mathrm{IIa}} & = Q _ {\mathrm{IIa}} ^ {(1)} + Q _ {\mathrm{IIa}} ^ {(2)} + \mathrm{L} \\ & = E e \sigma T _ {0} ^ {4} S _ {\mathrm{I}} \left[ 1 + (1 - e) k (1 - E) + (1 - e) ^ {2} k ^ {2} (1 - E) ^ {2} + \mathrm{L} \right] \end{array}
+\label{eq:20.s93}
+\end{equation}
+同理可得由 II 发射的热量 $Q_{II0}=e\sigma T_{1}^{4}S_{II}$ 被 I 在单位时间内吸收的总热量为
+\begin{equation}
+\begin{array}{r l} Q _ {\mathrm{Ia}} & = E e \sigma T _ {1} ^ {4} k S _ {\mathrm{II}} \left[ 1 + (1 - e) k (1 - E) + (1 - e) ^ {2} k ^ {2} (1 - E) ^ {2} + \mathrm{L} \right] \\ & = E e \sigma T _ {1} ^ {4} S _ {\mathrm{I}} \left[ 1 + (1 - e) k (1 - E) + (1 - e) ^ {2} k ^ {2} (1 - E) ^ {2} + \mathrm{L} \right] \end{array}
+\label{eq:21.s93}
+\end{equation}
+内球与球壳内表面之间在单位时间内交换的热量为
+\begin{equation}
+\begin{array}{r l} Q ^ {\prime \prime} & = Q _ {\mathrm{Ia}} - Q _ {\mathrm{IIa}} \\ & = E e \sigma \left(T _ {0} ^ {4} - T _ {1} ^ {4}\right) S _ {\mathrm{I}} \left[ 1 + (1 - e) k (1 - E) + (1 - e) ^ {2} k ^ {2} (1 - E) ^ {2} + L \right] \end{array}
+\label{eq:22.s93}
+\end{equation}
+完成\eqref{eq:22.s93}式右边的求和得，单位时间内从内球传递给球壳内表面的净热量为
+\begin{equation}
+Q ^ {\prime \prime} = 4 \pi E e \sigma \left(T _ {0} ^ {4} - T _ {1} ^ {4}\right) r ^ {2} \frac {1 - (1 - e) ^ {n} k ^ {n} (1 - E) ^ {n}}{1 - (1 - e) k (1 - E)} \Bigg | _ {n \rightarrow \infty} = 4 \pi E e \sigma r ^ {2} \frac {T _ {0} ^ {4} - T _ {1} ^ {4}}{1 - (1 - e) k (1 - E)}
+\label{eq:23.s93}
+\end{equation}
+由热稳定条件
+\begin{equation}
+Q ^ {\prime \prime} = Q
+\label{eq:24.s93}
+\end{equation}
+和\eqref{eq:23.s93}式有
+\begin{equation}
+T _ {0} = \left\{\frac {1 - (1 - e) k (1 - E)}{4 \pi E e \sigma r ^ {2}} Q + T _ {1} ^ {4} \right\} ^ {1 / 4} = \left\{\frac {1 - (1 - e) (1 - E) \frac {r ^ {2}}{R _ {1} ^ {2}}}{4 \pi E e \sigma r ^ {2}} Q + T _ {1} ^ {4} \right\} ^ {1 / 4}
+\label{eq:25.s93}
+\end{equation}
+将题给数据代入\eqref{eq:25.s93}式，并利用\eqref{eq:11.s93}式得
+\begin{equation}
+T _ {0} = 2 2 7 \mathrm{K}
+\label{eq:26.s93}
+\end{equation}
+\end{subsolution}
+\end{solution}

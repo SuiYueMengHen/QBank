@@ -1,0 +1,162 @@
+\begin{solution}{90}
+\begin{subsolution}
+设打击中心位置距转轴距离为 $L$，水平外力 $F$ 作用于打击中心后杆的角加速度为 $\beta$ 。由刚体定轴转动的动力学方程有
+\begin{equation}
+F L = \frac {1}{3} M l ^ {2} \beta
+\label{eq:1.s90}
+\end{equation}
+式中 $\frac{1}{3} M l^{2}$ 是杆绕过其端点 $A$（即 $O$ 点）的水平轴转动的转动惯量。由\eqref{eq:1.s90}式得
+\begin{equation}
+\beta = \frac {3 F L}{M l ^ {2}}
+\label{eq:2.s90}
+\end{equation}
+在弹丸撞击杆后的瞬间，杆的质心加速度的水平分量为
+\begin{equation}
+a _ {x} = \frac {l}{2} \beta = \frac {3 F L}{2 M l}
+\label{eq:3.s90}
+\end{equation}
+设轴对杆的作用力的水平分量为 $F_{x}$ ，由质心运动定理有
+\begin{equation}
+F - F _ {x} = M a _ {x}
+\label{eq:4.s90}
+\end{equation}
+将\eqref{eq:3.s90}式代入\eqref{eq:4.s90}式，水平外力打击到杆的打击中心处，轴对杆的作用力的水平分量应为零
+\begin{equation}
+F _ {x} = \left(1 - \frac {3 L}{2 l}\right) F = 0
+\label{eq:5.s90}
+\end{equation}
+由此得，杆的打击中心到 $O$ 点的距离为
+\begin{equation}
+L = \frac {2}{3} l
+\label{eq:6.s90}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+弹丸与杆的碰撞过程满足动量守恒
+\begin{equation}
+m v _ {0} = (M + m) v
+\label{eq:7.s90}
+\end{equation}
+解得
+\begin{equation}
+v = \frac {m v _ {0}}{M + m}
+\label{eq:8.s90}
+\end{equation}
+设碰撞后带弹丸的杆的质心位置与 $O$ 点的距离为 $L_{c}$ ，则
+\begin{equation}
+(M + m) L _ {\mathrm{c}} = \frac {1}{2} M l + m L
+\label{eq:9.s90}
+\end{equation}
+即
+\begin{equation}
+L _ {\mathrm{c}} = \frac {4 m + 3 M}{6 (M + m)} l
+\label{eq:10.s90}
+\end{equation}
+在碰撞后的瞬间，杆转动的角速度为
+\begin{equation}
+\omega_ {0} = \frac {v}{L _ {\mathrm{c}}} = \frac {6 m v _ {0}}{(4 m + 3 M) l}
+\label{eq:11.s90}
+\end{equation}
+带弹丸的杆的转动惯量为
+\begin{equation}
+I = \frac {1}{3} M l ^ {2} + m \left(\frac {2}{3} l\right) ^ {2} = \frac {1}{9} (3 M + 4 m) l ^ {2}
+\label{eq:12.s90}
+\end{equation}
+在杆从垂直位置转过 $\theta$ （ $0 \leq \theta < \pi$ ）角的过程中，系统的机械能守恒，有
+\begin{equation}
+\frac {1}{2} I \omega_ {0} ^ {2} = \frac {1}{2} I \omega^ {2} + (M + m) g L _ {\mathrm{c}} (1 - \cos \theta)
+\label{eq:13.s90}
+\end{equation}
+解得
+\begin{equation}
+\omega^ {2} = \omega_ {0} ^ {2} - \frac {2 (M + m) g L _ {\mathrm{c}} (1 - \cos \theta)}{I}
+\label{eq:14.s90}
+\end{equation}
+将\eqref{eq:8.s90}\eqref{eq:10.s90}\eqref{eq:11.s90}式以及转动惯量 $I$ 的表达式代入上式得
+\begin{equation}
+\omega = \sqrt {\frac {3 6 m ^ {2} v _ {0} ^ {2}}{(4 m + 3 M) ^ {2} l ^ {2}} - \frac {3 g}{l} (1 - \cos \theta)}
+\label{eq:15.s90}
+\end{equation}
+另一方面，杆由初始位置转过 $\theta$ 角时，由刚体定轴转动的动力学方程有
+\begin{equation}
+(M + m) g L _ {\mathrm{c}} \sin \theta = I \beta^ {\prime}
+\label{eq:16.s90}
+\end{equation}
+式中 $\beta'$ 是重力矩产生的角加速度。由此得
+\begin{equation}
+\beta^ {\prime} = \frac {(M + m) g L _ {\mathrm{c}} \sin \theta}{I} = \frac {3 g}{2 l} \sin \theta
+\label{eq:17.s90}
+\end{equation}
+此时质心加速度的 $x$ 分量 $a_{\mathrm{cx}}$ 和 $y$ 分量 $a_{\mathrm{cy}}$ 分别为
+\begin{equation}
+\begin{array}{l} a _ {\mathrm{cx}} = L _ {\mathrm{c}} \beta^ {\prime} \cos \theta + L _ {\mathrm{c}} \omega^ {2} \sin \theta \\ a _ {\mathrm{cy}} = L _ {\mathrm{c}} \omega^ {2} \cos \theta - L _ {\mathrm{c}} \beta^ {\prime} \sin \theta \end{array}
+\label{eq:18.s90}
+\end{equation}
+其中角速度 $\omega$ 由\eqref{eq:15.s90}式给出。设撤除转轴前，杆被撞击后转过 $\theta$ 角时转轴对杆的作用力的 $x$ 分量和 $y$ 分量分别为 $N_{x}$ 和 $N_{y}$ ，由质心运动定理有
+\begin{equation}
+N _ {x} = (M + m) a _ {\mathrm{cx}} = (M + m) L _ {\mathrm{c}} \left(\beta^ {\prime} \cos \theta + \omega^ {2} \sin \theta\right)
+\label{eq:19.s90}
+\end{equation}
+\begin{equation}
+N _ {y} = (M + m) \left(g + a _ {\mathrm{cy}}\right) = (M + m) \left[ g + L _ {\mathrm{c}} \left(\omega^ {2} \cos \theta - \beta^ {\prime} \sin \theta\right) \right]
+\label{eq:20.s90}
+\end{equation}
+将\eqref{eq:10.s90}\eqref{eq:15.s90}\eqref{eq:17.s90}式代入\eqref{eq:19.s90}\eqref{eq:20.s90}式得
+\begin{equation}
+N _ {x} = \frac {(4 m + 3 M) g}{4} (3 \sin \theta \cos \theta - 2 \sin \theta) + \frac {6 m ^ {2} v _ {0} ^ {2}}{(4 m + 3 M) l} \sin \theta
+\label{eq:21.s90}
+\end{equation}
+\begin{equation}
+N _ {y} = (M + m) g + \frac {6 m ^ {2} v _ {0} ^ {2}}{(4 m + 3 M) l} \cos \theta + \frac {(4 m + 3 M) g}{4} (3 \cos^ {2} \theta - 2 \cos \theta - 1)
+\label{eq:22.s90}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+当杆转到竖直位置即 $\theta = \pi$ 时，由\eqref{eq:15.s90}式得，角速度 $\omega'$ 为
+\begin{equation}
+\omega^ {\prime} = \sqrt {\frac {3 6 m ^ {2} v _ {0} ^ {2}}{(4 m + 3 M) ^ {2} l ^ {2}} - \frac {6 g}{l}}
+\label{eq:23.s90}
+\end{equation}
+撤除转轴后，带弹丸的杆的质心做平抛运动，同时杆绕其质心以角速度 $\omega'$ 在竖直平面内做顺时针转动。以撤除转轴的瞬间为计时零点，在 $t$ 时刻的质心坐标为
+\begin{equation}
+\begin{array}{l} x _ {\mathrm{c}} = v _ {\mathrm{c}} t = \left(L _ {\mathrm{c}} \omega^ {\prime}\right) t \\ y _ {\mathrm{c}} = L _ {\mathrm{c}} - \frac {1}{2} g t ^ {2} \end{array}
+\label{eq:24.s90}
+\end{equation}
+建立如图所示的质心坐标系，由于杆同时绕质心以角速度 $\omega'$ 在竖直平面内顺时针转动，在 $t$ 时刻杆的 $B$ 端相对于其质心的坐标为
+\begin{equation}
+x _ {\mathrm{B}} ^ {\prime} = \left(l - L _ {\mathrm{c}}\right) \sin \omega^ {\prime} t \quad y _ {\mathrm{B}} ^ {\prime} = \left(l - L _ {\mathrm{c}}\right) \cos \omega^ {\prime} t
+\label{eq:25.s90}
+\end{equation}
+在地面参考系中，$t$ 时刻杆的 $B$ 端的坐标为
+\begin{equation}
+x _ {\mathrm{B}} (t) = x _ {\mathrm{c}} + x _ {\mathrm{B}} ^ {\prime} = \left(L _ {\mathrm{c}} \omega^ {\prime}\right) t + \left(l - L _ {\mathrm{c}}\right) \sin \omega^ {\prime} t
+\label{eq:26.s90}
+\end{equation}
+\begin{equation}
+y _ {\mathrm{B}} (t) = y _ {\mathrm{c}} + y _ {\mathrm{B}} ^ {\prime} = L _ {\mathrm{c}} - \frac {1}{2} g t ^ {2} + \left(l - L _ {\mathrm{c}}\right) \cos \omega^ {\prime} t
+\label{eq:27.s90}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+撤除转轴后，经过时间 $t_{1}$ ，杆再转了半圈，即
+\begin{equation}
+\omega^ {\prime} t _ {1} = \pi
+\label{eq:28.s90}
+\end{equation}
+设此时 $O$ 、 $B$ 两点的高度差为 $h$ ，即此时杆 $B$ 端的 $y$ 坐标的绝对值。由\eqref{eq:27.s90}式得
+\begin{equation}
+h = \left| y _ {\mathrm{B}} \left(t _ {1}\right) \right| = \left| 2 L _ {\mathrm{c}} - l - \frac {1}{2} g \left(\frac {\pi}{\omega^ {\prime}}\right) ^ {2} \right|
+\label{eq:29.s90}
+\end{equation}
+将\eqref{eq:10.s90}\eqref{eq:23.s90}式代入\eqref{eq:29.s90}式得
+\begin{equation}
+h = \left| \frac {\pi^ {2} g}{2} \left[ \frac {3 6 m ^ {2} v _ {0} ^ {2}}{(4 m + 3 M) ^ {2} l ^ {2}} - \frac {6 g}{l} \right] ^ {- 1} - \frac {m l}{3 (M + m)} \right|
+\label{eq:30.s90}
+\end{equation}
+或
+\begin{equation}
+h = \left| \frac {\pi^ {2} g (4 m + 3 M) ^ {2} l ^ {2}}{1 2 \left[ 6 m ^ {2} v _ {0} ^ {2} - g (4 m + 3 M) ^ {2} l \right]} - \frac {m l}{3 (M + m)} \right|
+\label{eq:31.s90}
+\end{equation}
+\end{subsolution}
+\end{solution}

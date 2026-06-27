@@ -1,0 +1,136 @@
+\begin{solution}{98}
+    \begin{subsolution}
+        考虑滑轮左右两侧绳子的竖直部分及滑轮上任意一小段绳子的运动。对于滑轮左侧绳子的竖直部分，取向下为正。$\mathrm{d}t$ 时间段由滑轮转入 $\mathrm{d}x=v\mathrm{d}t$ 一小段，同样长度的另一小段落到地面，传入的静动量为零，从而动量的改变为 $\lambda L\mathrm{d}v$ 。软绳落到地面的一段对绳没有反作用，所以，作用在这一段上的力为 $\lambda Lg-T_{1}$ ，冲量是 $(\lambda Lg-T_{1})\mathrm{d}t$ 。由动量定理得
+        \begin{equation}
+            - T _ {1} + \lambda L g = \lambda L \frac {\mathrm{d} v}{\mathrm{d} t}
+            \label{eq:1.p98}
+        \end{equation}
+        对于右侧绳子的竖直部分，取向上为正。先考虑 $\mathrm{d}t$ 时间从地面上提升的一小段 $\mathrm{d}x = v \mathrm{d}t$，其动量由 0 变为 $\lambda \mathrm{d}x v = \lambda v^{2}\mathrm{d}t$ ，右侧绳子的竖直部分受力 $T' - \lambda \mathrm{d}x g$ ， $T'$ 是绳在地面处的张力。由动量定理得
+        \begin{equation*}
+            T ^ {\prime} - \lambda \mathrm{d} x g = \lambda v ^ {2}
+        \end{equation*}
+        略去无穷小量后得
+        \begin{equation*}
+            T ^ {\prime} = \lambda v ^ {2}
+        \end{equation*}
+        右侧绳子的竖直部分动量的变化为 $\lambda L \mathrm{d}v$ ，作用于其上的力为 $T_{2}-\lambda L g-T'=T_{2}-\lambda L g-\lambda v^{2}$ 。由动量定理得
+        \begin{equation}
+            T _ {2} - \lambda v ^ {2} - \lambda L g = \lambda L \frac {\mathrm{d} v}{\mathrm{d} t}
+            \label{eq:2.p98}
+        \end{equation}
+        对于滑轮上角度为 $\varphi$ （取逆时针方向为正）处 $R\Delta\varphi$ 小段的软绳（见图 a），其质量为 $\lambda R\Delta\varphi$ ，两端所受的张力分别为 $T(\varphi + \Delta\varphi)$ 和 $T(\varphi)$ ，滑轮对其支撑力为 $N R\Delta\varphi$ ，其中 $N$ 为 $\varphi$ 处对单位长度软绳的支撑力。分别沿切向和法向按牛顿第二定律列出方程
+        \begin{align*}
+            T (\varphi + \Delta \varphi) \cos \frac {\Delta \varphi}{2} - T (\varphi) \cos \frac {\Delta \varphi}{2} + \mu N R \Delta \varphi - \lambda R \Delta \varphi g \cos \varphi \\
+            = \lambda R \Delta \varphi \frac {\mathrm{d} v}{\mathrm{d} t} \\
+            T (\varphi + \Delta \varphi) \sin \frac {\Delta \varphi}{2} + T (\varphi) \sin \frac {\Delta \varphi}{2} - N R \Delta \varphi + \lambda R \Delta \varphi g \sin \varphi \\
+            = \lambda R \Delta \varphi \frac {v ^ {2}}{R}
+        \end{align*}
+        当 $\Delta\varphi$ 趋于0时，以上两式成为
+        \begin{equation}
+            \frac {\mathrm{d} T}{\mathrm{d} \varphi} + \mu N R - \lambda R g \cos \varphi = \lambda R \frac {\mathrm{d} v}{\mathrm{d} t}
+            \label{eq:3.p98}
+        \end{equation}
+        \begin{equation}
+            T - N R + \lambda R g \sin \varphi = \lambda R \frac {v ^ {2}}{R}
+            \label{eq:4.p98}
+        \end{equation}
+        从\eqref{eq:3.p98}\eqref{eq:4.p98}式消去 $N$ 得到
+        \begin{equation}
+            \frac {\mathrm{d} T}{\mathrm{d} \varphi} + \mu T - \lambda R g (\cos \varphi - \mu \sin \varphi) = \lambda R \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+            \label{eq:5.p98}
+        \end{equation}
+        \eqref{eq:1.p98}\eqref{eq:2.p98}\eqref{eq:3.p98}\eqref{eq:4.p98}式或者\eqref{eq:1.p98}\eqref{eq:2.p98}\eqref{eq:5.p98}式构成了软绳运动所满足的动力学方程组。
+    \end{subsolution}
+    \begin{subsolution}
+        由于 $\omega$ 的取值不同，可以有两种情况；其一是 $\omega$ 足够大，在绳子达到最大速度值时，绳子和滑轮之间仍然有滑动；其二是 $\omega$ 较小，在绳子达到最大速度值时，绳子和滑轮之间没有滑动，则绳子速度的最大值就是 $R\omega$ 。
+
+        (解法一)
+
+        注意到\eqref{eq:1.p98}\eqref{eq:2.p98}式中只出现 $T_{1}$ 和 $T_{2}$ ，所以只需要由\eqref{eq:5.p98}式得到 $T_{1}$ 和 $T_{2}$ 的关系，而无需求出 $T(\varphi)$ 。借助于关系式
+        \begin{equation}
+            \frac {\mathrm{d} T}{\mathrm{d} \varphi} + \mu T = e ^ {- \mu \varphi} \frac {\mathrm{d} (T e ^ {\mu \varphi})}{\mathrm{d} \varphi}
+            \label{eq:6.p98}
+        \end{equation}
+        \eqref{eq:5.p98}式可写为
+        \begin{equation}
+            \frac {\mathrm{d} \left(T e ^ {\mu \varphi}\right)}{\mathrm{d} \varphi} = \lambda R g e ^ {\mu \varphi} (\cos \varphi - \mu \sin \varphi) + e ^ {\mu \varphi} \lambda R \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+            \label{eq:7.p98}
+        \end{equation}
+        两边积分后得
+        \begin{equation}
+            T _ {1} e ^ {\mu \pi} - T _ {2} = \lambda R g \left(\int_ {0} ^ {\pi} e ^ {\mu \varphi} \cos \varphi \mathrm{d} \varphi - \mu \int_ {0} ^ {\pi} e ^ {\mu \varphi} \sin \varphi \mathrm{d} \varphi\right) + \lambda R \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right) \int_ {0} ^ {\pi} e ^ {\mu \varphi} \mathrm{d} \varphi
+            \label{eq:8.p98}
+        \end{equation}
+        此即
+        \begin{equation}
+            T _ {2} - T _ {1} e ^ {\mu \pi} = \lambda R g \frac {2 \mu}{1 + \mu^ {2}} (e ^ {\mu \pi} + 1) - \frac {\lambda R}{\mu} (e ^ {\mu \pi} - 1) \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+            \label{eq:9.p98}
+        \end{equation}
+        [（解法二）
+
+        令
+        \begin{equation*}
+            T = \bar {T} + C _ {1} \sin \varphi + C _ {2} \cos \varphi + C _ {3}
+        \end{equation*}
+        代入\eqref{eq:5.p98}式，令等式左右两边三角函数项系数和常数项相同，得
+        \begin{equation*}
+            C _ {1} = \lambda R g \frac {1 - \mu^ {2}}{1 + \mu^ {2}}
+        \end{equation*}
+        \begin{equation*}
+            C _ {2} = \lambda R g \frac {2 \mu}{1 + \mu^ {2}}
+        \end{equation*}
+        \begin{equation*}
+            C _ {3} = \frac {\lambda R}{\mu} \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+        \end{equation*}
+        方程变为
+        \begin{equation*}
+            \frac {\mathrm{d} \overline {{T}}}{\overline {{T}}} = - \mu \mathrm{d} \varphi
+        \end{equation*}
+        积分得
+        \begin{equation*}
+            \overline {{T}} = \overline {{T}} _ {0} e ^ {- \mu \varphi}
+        \end{equation*}
+        即
+        \begin{equation*}
+            T = \bar {T} _ {0} e ^ {- \mu \varphi} + \lambda R g \frac {1 - \mu^ {2}}{1 + \mu^ {2}} \sin \varphi + \lambda R g \frac {2 \mu}{1 + \mu^ {2}} \cos \varphi + \frac {\lambda R}{\mu} \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+        \end{equation*}
+        在滑轮两边与软绳相切处，对应于 $\varphi = 0$ 和 $\varphi = \pi$ ，张力分别为 $T_{2} = T(0)$ 和 $T_{1} = T(\pi)$ 。
+        \begin{equation*}
+            T _ {2} = \overline {{T}} _ {0} + \lambda R g \frac {2 \mu}{1 + \mu^ {2}} + \frac {\lambda R}{\mu} \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+        \end{equation*}
+        \begin{equation*}
+            T _ {1} = \bar {T} _ {0} e ^ {- \mu \pi} - \lambda R g \frac {2 \mu}{1 + \mu^ {2}} + \frac {\lambda R}{\mu} \left(\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R}\right)
+        \end{equation*}
+        由此得到
+        \begin{equation*}
+            T _ {2} - T _ {1} e ^ {\mu \pi} = \lambda R g \frac {2 \mu}{1 + \mu^ {2}} (e ^ {\mu \pi} + 1) - \frac {\lambda R}{\mu} (e ^ {\mu \pi} - 1) (\frac {\mathrm{d} v}{\mathrm{d} t} + \mu \frac {v ^ {2}}{R})
+        \end{equation*}
+        ]
+
+        由\eqref{eq:1.p98}和\eqref{eq:2.p98}式得到
+        \begin{equation}
+            T _ {2} - T _ {1} e ^ {\mu \pi} = \lambda v ^ {2} - \lambda L g (e ^ {\mu \pi} - 1) + \lambda L (e ^ {\mu \pi} + 1) \frac {\mathrm{d} v}{\mathrm{d} t}
+            \label{eq:10.p98}
+        \end{equation}
+        由\eqref{eq:9.p98}\eqref{eq:10.p98}式得
+        \begin{equation}
+            L g \left(e ^ {\mu \pi} - 1\right) + R g \frac {2 \mu}{1 + \mu^ {2}} \left(e ^ {\mu \pi} + 1\right) - e ^ {\mu \pi} v ^ {2} = \left(L \left(e ^ {\mu \pi} + 1\right) + \frac {R}{\mu} \left(e ^ {\mu \pi} - 1\right)\right) \frac {\mathrm{d} v}{\mathrm{d} t}
+            \label{eq:11.p98}
+        \end{equation}
+        假设绳子与滑轮之间一直有滑动。当 $\frac{\mathrm{d}v}{\mathrm{d}t}=0$ 时，绳子达到最大速度值 $v_{\max}$ ，由\eqref{eq:11.p98}式得
+        \begin{equation*}
+            v _ {\max} ^ {2} = L g \left(1 - e ^ {- \mu \pi}\right) + R g \frac {2 \mu}{1 + \mu^ {2}} \left(1 + e ^ {- \mu \pi}\right)
+        \end{equation*}
+        即
+        \begin{equation}
+            v _ {\max} = \sqrt {L g (1 - e ^ {- \mu \pi}) + R g \frac {2 \mu}{1 + \mu^ {2}} (1 + e ^ {- \mu \pi})}
+            \label{eq:12.p98}
+        \end{equation}
+        在此情况下，必有
+        \begin{equation}
+            R \omega > \sqrt {L g (1 - e ^ {- \mu \pi}) + R g \frac {2 \mu}{1 + \mu^ {2}} (1 + e ^ {- \mu \pi})}
+            \label{eq:13.p98}
+        \end{equation}
+        如果上式不满足，绳子达到最大速度值时与滑轮之间已经没有相对滑动，对应于 $v_{\max}=R\omega$ 。
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,112 @@
+\begin{solution}{92}
+解法（一）
+\begin{subsolution}
+以正离子中心为原点 $O$ 的实验室参考系 $Oxyz$ 与以角速度 $\omega$ 绕 $z$ 轴旋转的参考系 $Ox'y'z'$ 如图所示，$z$ 轴和 $z'$ 轴重合，沿磁场方向。记两参考系坐标轴正向单位矢量分别为 $\boldsymbol{i}$、$\boldsymbol{j}$、$\boldsymbol{k}$ 和 $\boldsymbol{i}'$ 、 $\boldsymbol{j}'$ 、 $\boldsymbol{k}'$ 。旋转系中，价电子除受线性回复力 $-m\omega_{0}^{2}\boldsymbol{r}$ 和洛伦兹力 $-e\boldsymbol{v}\times\boldsymbol{B}$ 外，还受惯性离心力 $-m\boldsymbol{\omega}\times(\boldsymbol{\omega}\times\boldsymbol{r})$ 和科里奥利力 $-2m\boldsymbol{\omega}\times\boldsymbol{v}'$ 作用，其合力为
+\begin{equation}
+\boldsymbol {F} ^ {\prime} = - m \omega_ {0} ^ {2} \boldsymbol {r} - e \boldsymbol {v} \times \boldsymbol {B} - m \boldsymbol {\omega} \times (\boldsymbol {\omega} \times \boldsymbol {r}) - 2 m \boldsymbol {\omega} \times \boldsymbol {v} ^ {\prime}
+\label{eq:1.s92}
+\end{equation}
+或写成等价的分量形式
+\begin{equation}
+\left\{ \begin{array}{l} F _ {z ^ {\prime}} ^ {\prime} = - m \omega_ {0} ^ {2} z ^ {\prime} \\ F _ {x ^ {\prime}} ^ {\prime} = - m \omega_ {0} ^ {2} x ^ {\prime} - e v _ {y ^ {\prime}} B + m \omega^ {2} x ^ {\prime} + 2 m \omega v _ {y ^ {\prime}} ^ {\prime} \\ F _ {y ^ {\prime}} ^ {\prime} = - m \omega_ {0} ^ {2} y ^ {\prime} + e v _ {x ^ {\prime}} B + m \omega^ {2} y ^ {\prime} - 2 m \omega v _ {x ^ {\prime}} ^ {\prime} \end{array} \right.
+\label{eq:2.s92}
+\end{equation}
+式中 $v_{x'}$ 和 $v_{y'}$ 是实验室参考系中价电子速度 $\boldsymbol{v}$ 在 $x'$ 和 $y'$ 坐标轴上的分量，而 $v_{x'}'$ 和 $v_{y'}'$ 是旋转系中价电子速度 $\boldsymbol{v}'$ 在 $x'$ 和 $y'$ 坐标轴上的分量。两参考系位矢之间和速度之间的变换关系为
+\begin{equation}
+\left\{ \begin{array}{l} \boldsymbol {r} = \boldsymbol {r} ^ {\prime} \\ \boldsymbol {v} = \boldsymbol {\omega} \times \boldsymbol {r} ^ {\prime} + \boldsymbol {v} ^ {\prime} \end{array} \right.
+\label{eq:3.s92}
+\end{equation}
+速度之间的变换关系可写成等价的分量形式
+\begin{equation}
+\left\{ \begin{array}{l} v _ {x ^ {\prime}} = v _ {x ^ {\prime}} ^ {\prime} - \omega y ^ {\prime} \\ v _ {y ^ {\prime}} = v _ {y ^ {\prime}} ^ {\prime} + \omega x ^ {\prime} \end{array} \right.
+\label{eq:4.s92}
+\end{equation}
+\eqref{eq:1.s92}式可写为
+\begin{equation}
+\boldsymbol {F} ^ {\prime} = - m \omega_ {0} ^ {2} \boldsymbol {r} + m (2 \omega_ {\mathrm{L}} - \omega) \times (\boldsymbol {\omega} \times \boldsymbol {r}) + 2 m (\omega_ {\mathrm{L}} - \omega) \times \boldsymbol {v} ^ {\prime}
+\label{eq:5.s92}
+\end{equation}
+式中， $\boldsymbol{\omega}_{L}=\omega_{L}\boldsymbol{k}^{\prime}$ ， $\boldsymbol{\omega}=\omega \boldsymbol{k}^{\prime}$ ，而
+\begin{equation}
+\omega_ {\mathrm{L}} = \frac {e B}{2 m}
+\label{eq:6.s92}
+\end{equation}
+\eqref{eq:5.s92}式也可写成等价的分量形式
+\begin{equation}
+\left\{ \begin{array}{l} F _ {x} ^ {\prime} = - m \left[ \omega_ {0} ^ {2} + (2 \omega_ {\mathrm{L}} - \omega) \omega \right] x ^ {\prime} - 2 m (\omega_ {\mathrm{L}} - \omega) v _ {y ^ {\prime}} ^ {\prime} \\ F _ {y} ^ {\prime} = - m \left[ \omega_ {0} ^ {2} + (2 \omega_ {\mathrm{L}} - \omega) \omega \right] y ^ {\prime} + 2 m (\omega_ {\mathrm{L}} - \omega) v _ {x ^ {\prime}} ^ {\prime} \end{array} \right.
+\label{eq:7.s92}
+\end{equation}
+令
+\begin{equation}
+\omega = \omega_ {\mathrm{L}}
+\label{eq:8.s92}
+\end{equation}
+有
+\begin{equation}
+\boldsymbol {F} ^ {\prime} = - m \omega_ {0} ^ {2} \boldsymbol {r} + m \omega_ {\mathrm{L}} \times (\omega_ {\mathrm{L}} \times \boldsymbol {r}) = - m \left[ \left(\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}\right) \left(x ^ {\prime} \boldsymbol {i} ^ {\prime} + y ^ {\prime} \boldsymbol {j} ^ {\prime}\right) + \omega_ {0} ^ {2} z ^ {\prime} \boldsymbol {k} ^ {\prime} \right]
+\label{eq:9.s92}
+\end{equation}
+这是各向异性的线性回复力。旋转系中价电子运动的动力学方程为
+\begin{equation}
+m \boldsymbol {a} ^ {\prime} = \boldsymbol {F} ^ {\prime}
+\label{eq:10.s92}
+\end{equation}
+利用\eqref{eq:8.s92}式，\eqref{eq:10.s92}式的分量形式为
+\begin{equation}
+\left\{ \begin{array}{l} \ddot {x} ^ {\prime} = - \left(\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}\right) x ^ {\prime} \\ \ddot {y} ^ {\prime} = - \left(\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}\right) y ^ {\prime} \\ \ddot {z} ^ {\prime} = - \omega_ {0} ^ {2} z ^ {\prime} \end{array} \right.
+\label{eq:11.s92}
+\end{equation}
+这是三维简谐振动的动力学方程，其解为
+\begin{equation}
+\left\{ \begin{array}{l} x ^ {\prime} = A _ {1} \cos \left(\sqrt {\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}} t + \varphi_ {1}\right) \\ y ^ {\prime} = A _ {2} \sin \left(\sqrt {\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}} t + \varphi_ {2}\right) \\ z ^ {\prime} = A _ {3} \cos \left(\omega_ {0} t + \varphi_ {3}\right) \end{array} \right.
+\label{eq:12.s92}
+\end{equation}
+式中，常量 $A_{1}$ 、 $A_{2}$ 、 $A_{3}$ 和 $\varphi_{1}$ 、 $\varphi_{2}$ 、 $\varphi_{3}$ 分别是相应的振幅和相位，它们由价电子的初始位置与初始速度决定。
+\end{subsolution}
+\begin{subsolution}
+由几何关系，可得两参考系之间的坐标变换关系为
+\begin{equation}
+\left\{ \begin{array}{l} x = x ^ {\prime} \cos \omega t - y ^ {\prime} \sin \omega t \\ y = x ^ {\prime} \sin \omega t + y ^ {\prime} \cos \omega t \\ z = z ^ {\prime} \end{array} \right.
+\label{eq:13.s92}
+\end{equation}
+将\eqref{eq:12.s92}式代入\eqref{eq:13.s92}式，利用积化和差公式，并注意到\eqref{eq:8.s92}式，可得实验室参考系中的解为
+\begin{equation}
+\left\{ \begin{array}{l} x = \left[ \frac {A _ {1}}{2} \cos (\omega_ {+} t + \varphi_ {1}) + \frac {A _ {2}}{2} \cos (\omega_ {+} t + \varphi_ {2}) \right] + \left[ \frac {A _ {1}}{2} \cos (\omega_ {-} t + \varphi_ {1}) - \frac {A _ {2}}{2} \cos (\omega_ {-} t + \varphi_ {2}) \right] \\ y = \left[ \frac {A _ {1}}{2} \sin (\omega_ {+} t + \varphi_ {1}) + \frac {A _ {2}}{2} \sin (\omega_ {+} t + \varphi_ {2}) \right] - \left[ \frac {A _ {1}}{2} \sin (\omega_ {-} t + \varphi_ {1}) - \frac {A _ {2}}{2} \sin (\omega_ {-} t + \varphi_ {2}) \right] \\ z = A _ {3} \cos (\omega_ {0} t + \varphi_ {3}) \end{array} \right.
+\label{eq:14.s92}
+\end{equation}
+式中
+\begin{equation}
+\omega_ {\pm} = \sqrt {\omega_ {0} ^ {2} + \omega_ {\mathrm{L}} ^ {2}} \pm \omega_ {\mathrm{L}}
+\label{eq:15.s92}
+\end{equation}
+\end{subsolution}
+\begin{subsolution}
+根据同方向同频率简谐振动合成的振幅矢量法，可令
+\begin{equation}
+\left\{ \begin{array}{l} \frac {A _ {1}}{2} \cos (\omega_ {+} t + \varphi_ {1}) + \frac {A _ {2}}{2} \cos (\omega_ {+} t + \varphi_ {2}) = A _ {+} \cos (\omega_ {+} t + \varphi_ {+}) \\ \frac {A _ {1}}{2} \sin (\omega_ {+} t + \varphi_ {1}) + \frac {A _ {2}}{2} \sin (\omega_ {+} t + \varphi_ {2}) = A _ {+} \sin (\omega_ {+} t + \varphi_ {+}) \\ \frac {A _ {1}}{2} \cos (\omega_ {-} t + \varphi_ {1}) - \frac {A _ {2}}{2} \cos (\omega_ {-} t + \varphi_ {2}) = A _ {-} \cos (\omega_ {-} t + \varphi_ {-}) \\ \frac {A _ {1}}{2} \sin (\omega_ {-} t + \varphi_ {1}) - \frac {A _ {2}}{2} \sin (\omega_ {-} t + \varphi_ {2}) = A _ {-} \sin (\omega_ {-} t + \varphi_ {-}) \end{array} \right.
+\label{eq:16.s92}
+\end{equation}
+而\eqref{eq:14.s92}式化为
+\begin{equation}
+\left\{ \begin{array}{l} x = A _ {+} \cos \left(\omega_ {+} t + \varphi_ {+}\right) + A _ {-} \cos \left(\omega_ {-} t + \varphi_ {-}\right) \\ y = A _ {+} \sin \left(\omega_ {+} t + \varphi_ {+}\right) - A _ {-} \sin \left(\omega_ {-} t + \varphi_ {-}\right) \\ z = A _ {3} \cos \left(\omega_ {0} t + \varphi_ {3}\right) \end{array} \right.
+\label{eq:17.s92}
+\end{equation}
+可见，处于磁场中的原子的价电子参与三个频率的振动，发出三种园频率分别为
+\begin{equation}
+\omega_ {+} \text {、} \omega_ {0} \text {、} \omega_ {-}
+\label{eq:18.s92}
+\end{equation}
+的光。
+
+对弱磁场（即 $\omega_{L} \ll \omega_{0}$ ）情形，由\eqref{eq:15.s92}式，略去二阶小量得，园频率可近似为
+\begin{equation}
+\omega_ {\pm} \approx \omega_ {0} \pm \omega_ {\mathrm{L}}
+\label{eq:19.s92}
+\end{equation}
+三条谱线的园频率间隔为
+\begin{equation}
+\omega_ {+} - \omega_ {0} = \omega_ {0} - \omega_ {-} = \omega_ {\mathrm{L}}
+\label{eq:20.s92}
+\end{equation}
+\end{subsolution}
+\end{solution}
