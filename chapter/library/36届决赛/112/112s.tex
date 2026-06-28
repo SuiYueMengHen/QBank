@@ -1,0 +1,156 @@
+\begin{solution}{112}
+    \begin{subsolution}
+        考虑某一半径为 $r$ 的半圆周，如解题图 a 所示。设 $0 \leq \varphi < \theta_{0}$ 区域、$\theta_{0} < \varphi \leq \pi$ 区域的电场强度与电位移矢量大小分别为 $E_{1}$ 和 $D_{1}$、$E_{2}$ 和 $D_{2}$，方向均沿角向。由电流的连续性和欧姆定律有
+        \begin{equation}
+            J_{1} = J_{2}, \quad \sigma_{1} E_{1} = \sigma_{2} E_{2}
+            \label{eq:1.s112}
+        \end{equation}
+        两介质上的电压之和为
+        \begin{equation}
+            E_{1} r \theta_{0} + E_{2} r (\pi - \theta_{0}) = V_{0}
+            \label{eq:2.s112}
+        \end{equation}
+        由\eqref{eq:1.s112} \eqref{eq:2.s112}式得
+        \begin{equation}
+            E_{1} = \frac{V_{0}}{\left[ \theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0}) \right] r}
+            \label{eq:3.s112}
+        \end{equation}
+        \begin{equation}
+            E_{2} = \frac{V_{0}}{\left[ \frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0}) \right] r}
+            \label{eq:4.s112}
+        \end{equation}
+        假设负极板电势为零，由电势和电场强度之间的关系得：
+
+        对于 $0 \leq \varphi < \theta_0$ 区域，
+        \begin{equation}
+            V_{\varphi} = V_{0} - E_{1} r \varphi = \left[ 1 - \frac{\varphi}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} \right] V_{0} = \frac{\left(\theta_{0} - \varphi\right) + \frac{\sigma_{1}}{\sigma_{2}} \left(\pi - \theta_{0}\right)}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} \left(\pi - \theta_{0}\right)} V_{0}
+            \label{eq:5.s112}
+        \end{equation}
+
+        对于 $\theta_0 < \varphi \leq \pi$ 区域，
+        \begin{equation}
+            \begin{aligned}
+                V_{\varphi} &= V_{0} - E_{1} r \theta_{0} - E_{2} r (\varphi - \theta_{0}) \\
+                &= \left[ 1 - \frac{\theta_{0}}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} - \frac{\varphi - \theta_{0}}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0})} \right] V_{0} = \frac{\pi - \varphi}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0})} V_{0}
+            \end{aligned}
+            \label{eq:6.s112}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在 $\varphi = \theta_0$ 的界面上的总电荷密度为
+        \begin{equation}
+            \sigma_{e} = \varepsilon_{0} \left(E_{2} - E_{1}\right) = \frac{\varepsilon_{0} V_{0}}{\left[ \frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0}) \right] r} - \frac{\varepsilon_{0} V_{0}}{\left[ \theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0}) \right] r} = \frac{\frac{\sigma_{1}}{\sigma_{2}} - 1}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0}) r} \varepsilon_{0} V_{0}
+            \label{eq:7.s112}
+        \end{equation}
+        在 $\varphi = \theta_0$ 的界面上的总电荷为
+        \begin{equation}
+            Q = \int_{a}^{b} \sigma_{e} l \mathrm{d} r = \frac{\varepsilon_{0} (\frac{\sigma_{1}}{\sigma_{2}} - 1) l \ln \frac{b}{a}}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} V_{0}
+            \label{eq:8.s112}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        计算介质区域 $\varphi=0\sim\theta_{0}$ 的电容 $C_{1}$。设半圆柱体的右极板上 $r$ 处的自由电荷密度为 $\sigma_{e01}$，有
+        \begin{equation}
+            \sigma_{e01} = D_{1} = \varepsilon_{r1} \varepsilon_{0} E_{1} = \frac{\varepsilon_{r1} \varepsilon_{0} V_{0}}{\left[ \theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0}) \right] r}
+            \label{eq:9.s112}
+        \end{equation}
+        右极板上总的自由电荷
+        \begin{equation}
+            Q_{01} = \int_{a}^{b} \sigma_{e01} l \mathrm{d} r = \int_{a}^{b} \frac{\varepsilon_{r1} \varepsilon_{0} V_{0} l}{\left[ \theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0}) \right] r} \mathrm{d} r = \frac{\varepsilon_{r1} \varepsilon_{0} V_{0} l}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} \ln \frac{b}{a}
+            \label{eq:10.s112}
+        \end{equation}
+        $\varphi=0$ 与 $\varphi=\theta_{0}$ 之间电势差
+        \begin{equation}
+            V_{10} = E_{1} \theta_{0} r = \frac{\theta_{0} V_{0}}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})}
+            \label{eq:11.s112}
+        \end{equation}
+        介质区域 $\varphi = 0\sim \theta_0$ 的电容 $C_1$ 为
+        \begin{equation}
+            C_{1} = \frac{Q_{01}}{V_{10}} = \frac{\varepsilon_{r1} \varepsilon_{0} l}{\theta_{0}} \ln \frac{b}{a}
+            \label{eq:12.s112}
+        \end{equation}
+
+        计算介质区域 $\varphi = \theta_{0} \sim \pi$ 的电容 $C_{2}$。设半圆柱体左极板上 $r$ 处的自由电荷密度为 $\sigma_{e02}$，有
+        \begin{equation}
+            \sigma_{e02} = D_{2} = \varepsilon_{r2} \varepsilon_{0} E_{2} = \frac{\varepsilon_{r2} \varepsilon_{0} V_{0}}{\left[ \frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0}) \right] r}
+            \label{eq:13.s112}
+        \end{equation}
+        左极板上的自由电荷为
+        \begin{equation}
+            Q_{02} = \int_{a}^{b} \sigma_{e02} l \mathrm{d} r = \int_{a}^{b} \frac{\varepsilon_{r2} \varepsilon_{0} V_{0} l}{\left[ \frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0}) \right] r} \mathrm{d} r = \frac{\varepsilon_{r2} \varepsilon_{0} V_{0} l}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + (\pi - \theta_{0})} \ln \frac{b}{a}
+            \label{eq:14.s112}
+        \end{equation}
+        $\varphi=\theta_{0}$ 与 $\varphi=\pi$ 之间电势差为
+        \begin{equation}
+            V_{20} = E_{2} \left(\pi - \theta_{0}\right) r = \frac{\left(\pi - \theta_{0}\right) V_{0}}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + \left(\pi - \theta_{0}\right)}
+            \label{eq:15.s112}
+        \end{equation}
+        介质区域 $\varphi = \theta_{0} \sim \pi$ 区域的电容 $C_{2}$ 为
+        \begin{equation}
+            C_{2} = \frac{Q_{02}}{V_{20}} = \frac{\varepsilon_{r2} \varepsilon_{0} l}{\pi - \theta_{0}} \ln \frac{b}{a}
+            \label{eq:16.s112}
+        \end{equation}
+
+        计算介质区域 $\varphi = 0\sim \theta_0$ 的电阻 $R_{1}$：考虑 $r$ 处厚度为 $\mathrm{d}r$ 的半圆柱壳。该半圆柱壳在介质区域 $\varphi = 0\sim \theta_0$ 中的部分的电导为
+        \begin{equation}
+            \mathrm{d} G_{1} = \sigma_{1} \frac{l \mathrm{d} r}{\theta_{0} r}
+        \end{equation}
+        介质区域 $\varphi = 0\sim \theta_0$ 的电导为
+        \begin{equation}
+            G_{1} = \int_{a}^{b} \sigma_{1} \frac{l \mathrm{d} r}{\theta_{0} r} = \frac{\sigma_{1} l}{\theta_{0}} \ln \frac{b}{a}
+        \end{equation}
+        相应的电阻为
+        \begin{equation}
+            R_{1} = \frac{1}{G_{1}} = \frac{\theta_{0}}{\sigma_{1} l \ln \frac{b}{a}}
+            \label{eq:17.s112}
+        \end{equation}
+
+        计算介质区域 $\varphi = \theta_{0} \sim \pi$ 的电阻 $R_{2}$。所考虑的半圆柱壳在介质区域 $\varphi = \theta_{0} \sim \pi$ 中的部分的电导为
+        \begin{equation}
+            \mathrm{d} G_{2} = \sigma_{2} \frac{l \mathrm{d} r}{(\pi - \theta_{0}) r}
+        \end{equation}
+        介质区域 $\varphi = \theta_{0} \sim \pi$ 的电导为
+        \begin{equation}
+            G_{2} = \int_{a}^{b} \sigma_{2} \frac{l \mathrm{d} r}{(\pi - \theta_{0}) r} = \frac{\sigma_{2} l}{\pi - \theta_{0}} \ln \frac{b}{a}
+        \end{equation}
+        相应的电阻为
+        \begin{equation}
+            R_{2} = \frac{1}{G_{2}} = \frac{\pi - \theta_{0}}{\sigma_{2} l \ln \frac{b}{a}}
+            \label{eq:18.s112}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        当断开电源后，形成两个相互独立的 RC 回路，其等效电路如解题图 b 所示，其电势差从 $V_{10}$ 和 $V_{20}$ 分别衰减到零。
+        \begin{equation}
+            i R_{i} + \frac{q_{i}}{C_{i}} = 0
+        \end{equation}
+        式中下标 $i=1,2$ 分别对应于第一、二个 RC 回路，而 $q_{i}$ 是断开电源后 $t$ 时刻电容 $C_{i}$ 正极板上所到的电量。上式即
+        \begin{equation}
+            \frac{\mathrm{d} q_{i}}{q_{i}} = - \frac{1}{R_{i} C_{i}}
+        \end{equation}
+        解为
+        \begin{equation}
+            q_{i} = q_{0} e^{- \frac{1}{R_{i} C_{i}} t}
+        \end{equation}
+        式中 $q_{0}$ 是断开电源时电容 $C_{i}$ 正极板上所到的电量，或
+        \begin{equation}
+            V_{i} = \frac{q_{i}}{C_{i}} = \frac{q_{0}}{C_{i}} e^{- \frac{1}{R_{i} C_{i}} t} = V_{i0} e^{- \frac{1}{R_{i} C_{i}} t}
+            \label{eq:19.s112}
+        \end{equation}
+        式中
+        \begin{align}
+            R_{1} C_{1} &= \frac{\theta_{0}}{\sigma_{1} l \ln \frac{b}{a}} \times \frac{\varepsilon_{r1} \varepsilon_{0} l}{\theta_{0}} \ln \frac{b}{a} = \frac{\varepsilon_{r1} \varepsilon_{0}}{\sigma_{1}}, \quad \frac{1}{R_{1} C_{1}} = \frac{\sigma_{1}}{\varepsilon_{r1} \varepsilon_{0}} \label{eq:20.s112} \\
+            R_{2} C_{2} &= \frac{\pi - \theta_{0}}{\sigma_{2} l \ln \frac{b}{a}} \times \frac{\varepsilon_{r2} \varepsilon_{0} l}{\pi - \theta_{0}} \ln \frac{b}{a} = \frac{\varepsilon_{r2} \varepsilon_{0}}{\sigma_{2}}, \quad \frac{1}{R_{2} C_{2}} = \frac{\sigma_{2}}{\varepsilon_{r2} \varepsilon_{0}} \label{eq:21.s112}
+        \end{align}
+        于是
+        \begin{align}
+            V_{1}(t) &= \frac{\theta_{0} V_{0}}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} e^{- \frac{\sigma_{1}}{\varepsilon_{r1} \varepsilon_{0}} t} \label{eq:22.s112} \\
+            V_{2}(t) &= \frac{(\pi - \theta_{0}) V_{0}}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + \pi - \theta_{0}} e^{- \frac{\sigma_{2}}{\varepsilon_{r2} \varepsilon_{0}} t} \label{eq:23.s112}
+        \end{align}
+        两金属膜之间的电压为
+        \begin{equation}
+            V(t) = V_{1}(t) + V_{2}(t) = \frac{\theta_{0} V_{0}}{\theta_{0} + \frac{\sigma_{1}}{\sigma_{2}} (\pi - \theta_{0})} e^{- \frac{\sigma_{1}}{\varepsilon_{r1} \varepsilon_{0}} t} + \frac{(\pi - \theta_{0}) V_{0}}{\frac{\sigma_{2}}{\sigma_{1}} \theta_{0} + \pi - \theta_{0}} e^{- \frac{\sigma_{2}}{\varepsilon_{r2} \varepsilon_{0}} t}
+            \label{eq:24.s112}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

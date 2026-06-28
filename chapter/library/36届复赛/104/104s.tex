@@ -1,0 +1,138 @@
+\begin{solution}{104}
+\begin{subsolution}
+以凳面中心 $O$ 为坐标原点，以过 $O$ 点向上的竖直线为 $y$ 轴。茶杯（包括茶水在内）的质心位置 $y_{CM}$ 为
+\begin{equation}
+y_{\mathrm{CM}} = \frac{\frac{4m}{5}\frac{H}{2} + \rho(\pi r^{2} h)\frac{h}{2}}{m + \rho(\pi r^{2} h)}
+\label{eq:1.s104}
+\end{equation}
+式中 $h$ 是杯中茶水的高度. 令 $\lambda = \rho \pi r^{2}$ ，\eqref{eq:1.s104} 式即
+\[
+y_{\mathrm{CM}} = \frac{\frac{4m}{5}\frac{H}{2} + \lambda \frac{h^{2}}{2}}{m + \lambda h}
+\]
+事实上，考虑在茶杯中茶水的水平面从杯底逐渐缓慢上升的过程，茶水杯整体的质心先是逐渐降低，然后再逐渐上升。为了使茶水杯盛尽可能多的茶水并保持足够稳定，茶水杯整体的质心应尽可能接近凳面，处于最低点的位置 $y_{\mathrm{CM}}(h = h_{\max}) = (y_{\mathrm{CM}})_{\min}$ ，故有
+\begin{equation}
+\left.\frac{\mathrm{d} y_{\mathrm{CM}}}{\mathrm{d} h}\right|_{h = h_{\max}} = 0
+\label{eq:2.s104}
+\end{equation}
+由\eqref{eq:1.s104}和\eqref{eq:2.s104}式得
+\begin{equation}
+h_{\max} = \frac{m}{\lambda}\left[-1 \pm \sqrt{1 + \frac{4}{5}\frac{H\lambda}{m}}\right]
+\label{eq:3.s104}
+\end{equation}
+舍弃负值（不合题意），杯中茶水的最佳高度为
+\begin{equation}
+\begin{array}{r l}
+h_{\max} & = \frac{m}{\lambda}\left(\sqrt{1 + \frac{4}{5}\frac{\lambda H}{m}} - 1\right) \\
+& = \frac{m}{\rho\pi r^{2}}\left(\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}} - 1\right)
+\end{array}
+\label{eq:4.s104}
+\end{equation}
+
+[另一解法:
+事实上，考虑在茶杯中的茶水的水平面从杯底逐渐缓慢上升的过程，茶水杯整体的质心先是逐渐降低，然后再逐渐上升. 为了使茶水杯盛尽可能多的茶水并保持足够稳定，茶水杯整体的质心应尽可能接近凳面，处于最低点的位置 $y_{\mathrm{CM}}(h = h_{\max}) = (y_{\mathrm{CM}})_{\min}$ . \eqref{eq:1.s104}式即
+\begin{equation}
+y_{\mathrm{CM}} = \frac{\frac{2mH}{5} + \frac{m^{2}}{2\lambda}}{m + \lambda h} + \frac{m + \lambda h}{2\lambda} - \frac{m}{\lambda}
+\label{eq:5.s104}
+\end{equation}
+它满足代数不等式
+\begin{equation}
+y_{\mathrm{CM}} \geq 2\sqrt{\frac{\frac{2mH}{5} + \frac{m^{2}}{2\lambda}}{m + \lambda h} \frac{m + \lambda h}{2\lambda}} - \frac{m}{\lambda} = 2\sqrt{\frac{\frac{2mH}{5} + \frac{m^{2}}{2\lambda}}{2\lambda}} - \frac{m}{\lambda} = (y_{\mathrm{CM}})_{\min}
+\label{eq:6.s104}
+\end{equation}
+式中当 $h$ 满足
+\begin{equation}
+\frac{m + \lambda h}{2\lambda} = \frac{\frac{2mH}{5} + \frac{m^{2}}{2\lambda}}{m + \lambda h}
+\label{eq:7.s104}
+\end{equation}
+即
+\begin{equation}
+\begin{array}{r l}
+h = h_{\max} & = \frac{m}{\lambda}\left(\sqrt{1 + \frac{4}{5}\frac{\lambda H}{m}} - 1\right) \\
+& = \frac{m}{\rho\pi r^{2}}\left(\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}} - 1\right)
+\end{array}
+\label{eq:8.s104}
+\end{equation}
+时取等号，$h_{\max}$ 即杯中茶水的最佳高度.]
+\end{subsolution}
+
+\begin{subsolution}
+记凳子质量为 $M$. 该茶水杯的底面边缘刚好滑移到与圆凳的边缘内切于 $D$ 点静止后，坐标系及三脚圆凳的受力分析分别如解题图a和解题图b所示，其中 $N_{A}$、$N_{B}$ 和 $N_{C}$ 分别是车内底板对凳脚 $A$、$B$ 和 $C$ 的支持力．由几何关系有
+\begin{equation}
+\overline{O' A} = \overline{O' B} = \frac{a/2}{\cos 30^{\circ}} = \frac{a}{\sqrt{3}}
+\label{eq:9.s104}
+\end{equation}
+\begin{equation}
+\overline{O' O''} = \frac{a}{2}\tan 30^{\circ} = \frac{a}{2\sqrt{3}}
+\label{eq:10.s104}
+\end{equation}
+三脚圆凳处于力平衡状态，竖直方向合力为零
+\begin{equation}
+N_{A} + N_{B} + N_{C} - Q - P = 0
+\label{eq:11.s104}
+\end{equation}
+\begin{equation}
+N_{A} = N_{C}
+\label{eq:12.s104}
+\end{equation}
+式中，$Q = mg + \lambda h_{\max}g$，$P = Mg$．由\eqref{eq:11.s104}和\eqref{eq:12.s104}式得
+\[
+2N_{A} + N_{B} - Q - P = 0
+\]
+以 $x$ 轴为转动轴，力矩平衡
+\begin{equation}
+Q(R - r) + N_{B}\overline{O' B} - (N_{A} + N_{C})\overline{O' O''} = 0
+\label{eq:13.s104}
+\end{equation}
+记 $R' = R - r$，由\eqref{eq:9.s104}、\eqref{eq:10.s104}和\eqref{eq:13.s104}式有
+\[
+Q R' + N_{B}\frac{a}{\sqrt{3}} - 2N_{A}\frac{a}{2\sqrt{3}} = 0
+\]
+
+[另一解法:
+以 $AC$ 为转动轴，由力矩平衡条件有
+\begin{equation}
+Q\left(R' - \overline{O' O''}\right) + N_{B}\left(\overline{O' B} + \overline{O' O''}\right) - P\overline{O' O''} = 0
+\label{eq:14.s104}
+\end{equation}
+即
+\[
+Q\left(R' - \frac{a}{2\sqrt{3}}\right) + N_{B}\left(\frac{a}{\sqrt{3}} + \frac{a}{2\sqrt{3}}\right) - P\frac{a}{2\sqrt{3}} = 0
+\]
+联立以上各式得
+\begin{equation}
+\begin{array}{r l}
+N_{B} & = \frac{(a - 2\sqrt{3}R')Q + aP}{3a} \\
+& = \left[\left(1 - 2\sqrt{3}\frac{R - r}{a}\right)\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}}\, m + M\right]\frac{g}{3}
+\end{array}
+\label{eq:15.s104}
+\end{equation}
+\begin{equation}
+\begin{array}{r l}
+N_{A} = N_{C} & = \frac{(a + \sqrt{3}R')Q + aP}{3a} \\
+& = \left[\left(1 + \sqrt{3}\frac{R - r}{a}\right)\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}}\, m + M\right]\frac{g}{3}
+\end{array}
+\label{eq:16.s104}
+\end{equation}
+值得指出的是，解\eqref{eq:15.s104}满足 $N_{B}>0$，即
+\[
+M > \frac{2\sqrt{3}(R - r) - a}{a}\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}}\, m
+\]
+这已由题给条件保证了.]
+
+由\eqref{eq:11.s104}、\eqref{eq:15.s104}和\eqref{eq:16.s104}式得，此时旅行车内底板对各凳脚的支持力相对于茶水杯滑移前的改变为
+\begin{equation}
+\begin{array}{r l}
+\Delta N_{B} & = \frac{(a - 2\sqrt{3}R')Q + aP}{3a} - \frac{P + Q}{3} \\
+& = - \frac{2\sqrt{3}}{3}\frac{R - r}{a}\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}}\, m g
+\end{array}
+\label{eq:17.s104}
+\end{equation}
+\begin{equation}
+\begin{array}{r l}
+\Delta N_{A} = \Delta N_{C} & = \frac{(a + \sqrt{3}R')Q + aP}{3a} - \frac{P + Q}{3} \\
+& = \frac{\sqrt{3}}{3}\frac{R - r}{a}\sqrt{1 + \frac{4\pi}{5}\frac{\rho r^{2} H}{m}}\, m g
+\end{array}
+\label{eq:18.s104}
+\end{equation}
+\end{subsolution}
+\end{solution}

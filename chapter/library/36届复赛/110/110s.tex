@@ -1,0 +1,212 @@
+\begin{solution}{110}
+\begin{subsolution}
+该圆柱形雷电云空域的电荷分布可近似认为是一个平行板电容器，其电容为
+\begin{equation}
+C = \frac{\varepsilon_{0} S}{d}
+\label{eq:1.s110}
+\end{equation}
+式中 $S = \pi r^{2}$，$r = 2.5\,\mathrm{km}$，$d = 1.0\,\mathrm{km}$。该区域上下两端的电势差为
+\begin{equation}
+U = E d = 150\,\mathrm{MV}
+\label{eq:2.s110}
+\end{equation}
+式中 $E = 0.15\,\mathrm{MV/m}$。所带正电荷总量为
+\begin{equation}
+Q = C U = \frac{\varepsilon_{0} \pi r^{2} U}{d} = 26\,\mathrm{C}
+\label{eq:3.s110}
+\end{equation}
+携带的总电能为
+\begin{equation}
+W = \frac{1}{2} Q U = 2.0 \times 10^{9}\,\mathrm{J}
+\label{eq:4.s110}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+将地面考虑为平面导体. 应用镜像电荷法，可得高度为 $h$ 的点电荷 $Q$ 产生的地面电场为
+\begin{equation}
+E = 2 \times \frac{1}{4\pi\varepsilon_{0}} \frac{Q}{h^{2}} = \frac{Q}{2\pi\varepsilon_{0} h^{2}}
+\label{eq:5.s110}
+\end{equation}
+雷电云正负电荷产生的总地表电场为
+\begin{equation}
+E = \frac{Q}{2\pi\varepsilon_{0} (h + d)^{2}} + \frac{(-Q)}{2\pi\varepsilon_{0} h^{2}} = \frac{Q}{2\pi\varepsilon_{0}} \left[ \frac{1}{(h + d)^{2}} - \frac{1}{h^{2}} \right] = -3.5\,\mathrm{kV/m}
+\label{eq:6.s110}
+\end{equation}
+已利用\eqref{eq:3.s110}式和题给数据 $h = 6.0\,\mathrm{km}, d = 1.0\,\mathrm{km}, r = 2.5\,\mathrm{km}$。结果为负，说明电场方向垂直于地面朝上。
+
+[另一解法（较为精确的计算）：
+考虑圆盘上一圆环形的电荷微元
+\[
+\mathrm{d}q = \sigma 2\pi r' \mathrm{d}r'
+\]
+其中 $r'$ 为圆盘半径，$\sigma = Q/(\pi r^{2})$ 为圆盘面电荷密度。该电荷微元在圆盘中轴线上与盘相距 $x$ 处产生的电势为
+\[
+\mathrm{d}U = \frac{\mathrm{d}q}{4\pi\varepsilon_{0} \sqrt{r'^{2} + x^{2}}} = \frac{\sigma r' \mathrm{d}r'}{2\varepsilon_{0} \sqrt{r'^{2} + x^{2}}}
+\]
+整个带电圆盘在圆盘中轴线上与盘相距 $x$ 处产生的电势为
+\[
+U = \int_{0}^{r} \mathrm{d}U = \frac{\sigma}{2\varepsilon_{0}} \int_{0}^{r} \frac{r' \mathrm{d}r'}{\sqrt{r'^{2} + x^{2}}} = \frac{\sigma}{2\varepsilon_{0}} (\sqrt{r^{2} + x^{2}} - x)
+\]
+整个带电圆盘在圆盘中轴线上与盘相距 $x$ 处产生的电场为
+\[
+E = - \frac{\mathrm{d}U}{\mathrm{d}x} = \frac{\sigma}{2\varepsilon_{0}} \left(1 - \frac{x}{\sqrt{r^{2} + x^{2}}}\right)
+\]
+雷电云负电荷圆盘在 $x = h$ 产生的电场为
+\[
+E_{-} = \frac{-\sigma}{2\varepsilon_{0}} \left(1 - \frac{h}{\sqrt{r^{2} + h^{2}}}\right)
+\]
+正电荷圆盘在 $x = h + d$ 产生的电场为
+\[
+E_{+} = \frac{\sigma}{2\varepsilon_{0}} \left(1 - \frac{h + d}{\sqrt{r^{2} + (h + d)^{2}}}\right)
+\]
+将地面考虑为平面导体. 应用镜像电荷法，得到正负电荷产生的地面电场为
+\[
+E_{\text{地面}} = 2(E_{+} + E_{-}) = \frac{\sigma}{\varepsilon_{0}} \left[ \frac{h}{\sqrt{r^{2} + h^{2}}} - \frac{h + d}{\sqrt{r^{2} + (h + d)^{2}}} \right] = \frac{Q}{\varepsilon_{0} \pi r^{2}} \left[ \frac{h}{\sqrt{r^{2} + h^{2}}} - \frac{h + d}{\sqrt{r^{2} + (h + d)^{2}}} \right]
+\]
+代入数据得 $E_{\text{地面}} = -2.8\,\mathrm{kV/m}$，电场方向垂直于地面朝上.]
+\end{subsolution}
+
+\begin{subsolution}
+闪电通道的线电荷密度为
+\begin{equation}
+\eta = \frac{Q}{h} = 4.2 \times 10^{-4}\,\mathrm{C/m}
+\label{eq:7.s110}
+\end{equation}
+式中 $Q = 2.5\,\mathrm{C}$，$h = 6.0\,\mathrm{km}$．利用高斯定理得，圆柱电荷体系外的电场为
+\begin{equation}
+E_{r'} = \frac{\eta}{2\pi\varepsilon_{0} r'}
+\label{eq:8.s110}
+\end{equation}
+式中 $r'$ 为到圆柱中轴线的距离. 闪电通道的表面（柱面）电场应为击穿电场，故其直径为
+\begin{equation}
+D \approx \frac{\eta}{\pi\varepsilon_{0} E_{\mathrm{击穿}}} = 5.0\,\mathrm{m}
+\label{eq:9.s110}
+\end{equation}
+式中 $E_{\mathrm{击穿}} = 3.0\,\mathrm{MV/m}$.
+
+由题设，闪电通道的长度远大于其直径，闪电通道的直径远大于中心放电细路径的直径，闪电通道可视为无穷长的直圆柱体。在该直圆柱体上下两端面的电场通量（边缘效应）可忽略。在闪电通道内部，取与闪电通道同轴的圆柱形封闭面（包含中心放电细路径），应用高斯定理得
+\begin{equation}
+2\pi r L E_{\mathrm{击穿}} = \frac{\int_{0}^{r} 2\pi r' L \mathrm{d}r' \rho(r')}{\varepsilon_{0}}
+\label{eq:10.s110}
+\end{equation}
+此即
+\[
+r \varepsilon_{0} E_{\mathrm{击穿}} = \int_{0}^{r} r' \mathrm{d}r' \rho(r')
+\]
+将上式两边对 $r$ 求导得
+\begin{equation}
+\varepsilon_{0} E_{\mathrm{击穿}} = r \rho(r)
+\label{eq:11.s110}
+\end{equation}
+于是，闪电通道内（中心放电细路径除外）电荷密度分布为
+\begin{equation}
+\rho(r) = \varepsilon_{0} E_{\mathrm{击穿}} r^{-1}
+\label{eq:12.s110}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+电离层底部光环产生与扩展的物理过程示意图如解题图a所示.
+无线电波从闪电 $O$ 点在 $t=0$ 时刻以球面波形式辐射出来，波前在 $t=t_{A}$ 时刻到达电离层底面 $A$ 处时开始加热该电离层底部的 $A$ 处，这对应光环的出现时刻。由于频率低于电离层截止频率（$30\,\mathrm{kHz} \ll 20\,\mathrm{MHz}$），无线电波不能进入电离层，无线电波的波前会掠过电离层底面。当波前在 $t=t_{B}$ 时刻到达 $B$ 点时，对应的光环的半径就为 $\overline{AB}=r$。
+假设在较短的时间 $\Delta t$ 内，光环外径从 $B$ 传播到 $C$；对应的无线电波的波前从 $B$ 点传播到了 $D$ 点。由于无线电波的传播速度为 $c$，故
+\begin{equation}
+\overline{BD} = c \Delta t
+\label{eq:13.s110}
+\end{equation}
+光环从 $B$ 到 $C$ 的移动速度为
+\begin{equation}
+v = \frac{\overline{BC}}{\Delta t} = \frac{\overline{BC}}{\overline{BD}} c = \frac{c}{\cos\theta}
+\label{eq:14.s110}
+\end{equation}
+由几何关系有
+\begin{equation}
+\cos\theta = \frac{\overline{AB}}{\overline{OB}} = \frac{\overline{AB}}{\sqrt{\overline{OA}^{2} + \overline{AB}^{2}}}
+\label{eq:15.s110}
+\end{equation}
+由\eqref{eq:14.s110}和\eqref{eq:15.s110}式得
+\begin{equation}
+v = c \frac{\sqrt{\overline{OA}^{2} + \overline{AB}^{2}}}{\overline{AB}}
+\label{eq:16.s110}
+\end{equation}
+代入题给数据 $\overline{OA}=80\,\mathrm{km},\;\overline{AB}=100\,\mathrm{km}$，得
+\begin{equation}
+v = 1.28c = 3.8 \times 10^{8}\,\mathrm{m/s}
+\label{eq:17.s110}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+气球在高空悬浮的条件是
+\begin{equation}
+m_{\text{负载}} g + \rho_{\mathrm{He}} V_{0} g = \rho_{1} V_{0} g
+\label{eq:18.s110}
+\end{equation}
+式中 $m_{\text{负载}}$ 为气球及载荷的总质量，$\rho_{1}$ 为高空的大气密度，$V_{0}$ 是此气球在此高度悬浮时的体积。由\eqref{eq:18.s110}式得
+\begin{equation}
+V_{0} = \frac{m_{\text{负载}}}{\rho_{1} - \rho_{\mathrm{He}}}
+\label{eq:19.s110}
+\end{equation}
+求出 $\rho_{1}$ 即可得气球体积.
+
+按题意，空气温度随高度的变化关系为
+\begin{equation}
+T = T_{0} - \alpha z
+\label{eq:20.s110}
+\end{equation}
+其中 $\alpha = 5.0\times 10^{-3}\,\mathrm{K/m}$，空气压强随高度的变化满足
+\begin{equation}
+\mathrm{d}p = - \rho g \mathrm{d}z
+\label{eq:21.s110}
+\end{equation}
+由理想气体状态方程
+\[
+p V = \frac{m}{M} R T
+\]
+可得空气密度
+\begin{equation}
+\rho = \frac{m}{V} = \frac{M p}{R T}
+\label{eq:22.s110}
+\end{equation}
+将\eqref{eq:22.s110}式代入\eqref{eq:21.s110}式得
+\begin{equation}
+\mathrm{d}p = - \frac{M g}{R T} p \mathrm{d}z = - \frac{M g}{R} \frac{p}{T_{0} - \alpha z} \mathrm{d}z
+\label{eq:23.s110}
+\end{equation}
+由\eqref{eq:23.s110}式得
+\begin{equation}
+\frac{\mathrm{d}p}{p} = - \frac{M g}{R} \frac{\mathrm{d}z}{T_{0} - \alpha z} = \frac{M g}{\alpha R} \frac{\mathrm{d}(T_{0} - \alpha z)}{T_{0} - \alpha z}
+\label{eq:24.s110}
+\end{equation}
+两边积分得
+\begin{equation}
+\ln\left(\frac{p}{p_{0}}\right) = \frac{M g}{\alpha R} \ln\left(\frac{T_{0} - \alpha z}{T_{0}}\right)
+\label{eq:25.s110}
+\end{equation}
+于是
+\begin{equation}
+p = p_{0} \left(1 - \frac{\alpha z}{T_{0}}\right)^{\frac{M g}{\alpha R}}
+\label{eq:26.s110}
+\end{equation}
+相应的空气密度为
+\begin{equation}
+\rho = \frac{M p_{0}}{R T} \left(1 - \frac{\alpha z}{T_{0}}\right)^{\frac{M g}{\alpha R}} = \rho_{0} \frac{T_{0}}{T} \left(1 - \frac{\alpha z}{T_{0}}\right)^{\frac{M g}{\alpha R}} = \rho_{0} \left(1 - \frac{\alpha z}{T_{0}}\right)^{\frac{M g}{\alpha R} - 1}
+\label{eq:27.s110}
+\end{equation}
+推导中用到了
+\begin{equation}
+\rho_{0} = \frac{M p_{0}}{R T_{0}}
+\label{eq:28.s110}
+\end{equation}
+由\eqref{eq:27.s110}式和题给数据得，离地高度 $z = 12\,\mathrm{km}$ 处的空气密度为
+\begin{equation}
+\rho_{1} = 0.31\,\mathrm{kg/m^{3}}
+\label{eq:29.s110}
+\end{equation}
+将\eqref{eq:29.s110}式代入\eqref{eq:19.s110}式得
+\begin{equation}
+V_{0} = 3.8 \times 10^{2}\,\mathrm{m^{3}}
+\label{eq:30.s110}
+\end{equation}
+\end{subsolution}
+\end{solution}

@@ -1,0 +1,123 @@
+\begin{solution}{111}
+    \begin{subsolution}
+        轮盘对过 O 点且与轮面垂直的轴的转动惯量为
+        \begin{equation}
+            J_{\mathrm{O}1} = \int_{R_{1}}^{R_{0}} \sigma \cdot 2\pi r \mathrm{d}r \cdot r^{2} = \frac{1}{2} \sigma \pi \left(R_{0}^{4} - R_{1}^{4}\right) = \frac{1}{2} M \left(R_{0}^{2} + R_{1}^{2}\right)
+            \label{eq:1.s111}
+        \end{equation}
+        式中 $\sigma$ 是轮环面单位面积上的质量。两根辐条对该 O 轴的转动惯量为
+        \begin{equation}
+            J_{\mathrm{O}2} = \frac{1}{3} m R_{1}^{2} \times 2
+            \label{eq:2.s111}
+        \end{equation}
+        轮子对 O 轴的总转动惯量为
+        \begin{equation}
+            J_{\mathrm{O}} = J_{\mathrm{O}1} + J_{\mathrm{O}2} = \frac{1}{6} (3 M + 4 m) R_{1}^{2} + \frac{1}{2} M R_{0}^{2} = \frac{524}{75} m R_{0}^{2}
+            \label{eq:3.s111}
+        \end{equation}
+        以轮子中心 O 为坐标原点，建立如解题图 a 所示的坐标系。令
+        \begin{equation}
+            M' = M + 2m = 10m
+        \end{equation}
+        轮子质心 C 的 x-坐标为
+        \begin{equation}
+            x_{\mathrm{C}} = \frac{(M' + m) \cdot 0 + (-m) \cdot (-R_{1}/2)}{M'} = \frac{m R_{1}}{2 M'} = \frac{R_{0}}{25}
+            \label{eq:4.s111}
+        \end{equation}
+        由平行轴定理，求得轮子对过质心 C 且与轮面垂直的轴的转动惯量为
+        \begin{equation}
+            J_{\mathrm{C}} = J_{\mathrm{O}} - M' x_{\mathrm{C}}^{2} = \frac{2614}{375} m R_{0}^{2}
+            \label{eq:5.s111}
+        \end{equation}
+        在辐条 OB 从初始位置转到竖直位置的过程中，任一位置对轮子在地面做纯滚动的瞬时轴 P 的转动惯量为
+        \begin{equation}
+            \begin{aligned}
+                J_{\mathrm{P}} &= J_{\mathrm{C}} + M' r_{\mathrm{CP}}^{2} \\
+                &= J_{\mathrm{C}} + M' \left[ R_{0}^{2} + x_{\mathrm{C}}^{2} - 2 R_{0} x_{\mathrm{C}} \cos\left(\frac{\pi}{2} - \theta\right) \right] \\
+                &= J_{\mathrm{C}} + M' \left(R_{0}^{2} + x_{\mathrm{C}}^{2} - 2 R_{0} x_{\mathrm{C}} \sin\theta\right)
+            \end{aligned}
+            \label{eq:6.s111}
+        \end{equation}
+        其中 $\theta$ 为质心 C 从起始位置到当前位置所转过的角度，如解题图 b 所示。
+
+        由机械能守恒定律有
+        \begin{equation}
+            \frac{1}{2} J_{\mathrm{P}} \omega^{2} = M' g x_{\mathrm{C}} \sin\theta
+            \label{eq:7.s111}
+        \end{equation}
+        由此得
+        \begin{equation}
+            \omega^{2} = \frac{2 M' g x_{\mathrm{C}} \sin\theta}{J_{\mathrm{P}}}
+        \end{equation}
+        将\eqref{eq:6.s111}式代入\eqref{eq:7.s111}式后，方程两边对 $t$ 求导，可求得转动角加速度 $\alpha$
+        \begin{equation}
+            \frac{1}{2} \omega^{2} (- M' 2 R_{0} x_{\mathrm{C}} \cos\theta \cdot \omega) + J_{\mathrm{P}} \omega \alpha = M' g x_{\mathrm{C}} \cos\theta \cdot \omega
+        \end{equation}
+        结果为
+        \begin{equation}
+            \alpha = \frac{M' x_{\mathrm{C}} \cos\theta (g + \omega^{2} R_{0})}{J_{\mathrm{P}}}
+            \label{eq:8.s111}
+        \end{equation}
+
+        轮子从图 a 所示位置由静止开始释放时，$\theta=0$，由\eqref{eq:6.s111}式得，轮子对瞬时轴 P 的转动惯量为
+        \begin{equation}
+            J_{P,\theta=0} = J_{C} + M' \left(R_{0}^{2} + x_{C}^{2}\right) = \frac{2614}{375} m R_{0}^{2} + 10 m \left(R_{0}^{2} + x_{C}^{2}\right) = \frac{1274}{75} m R_{0}^{2}
+        \end{equation}
+        此时 $\omega = 0$，由\eqref{eq:8.s111}式得
+        \begin{equation}
+            \alpha_{\theta=0} = \frac{M' g x_{\mathrm{C}}}{J_{P,\theta=0}} = \frac{15}{637} \frac{g}{R_{0}}
+            \label{eq:9.s111}
+        \end{equation}
+        或者直接用对任意瞬时轴 $P$ 的转动定律求解
+        \begin{equation}
+            \frac{\mathrm{d} \boldsymbol{L}_{P}}{\mathrm{d}t} = \boldsymbol{M}_{P} + \boldsymbol{r}_{PC} \times (- M' \boldsymbol{\alpha}_{p})
+        \end{equation}
+        但此时轮子刚开始转动，角速度为零，相对于地面接触点的加速度 $\alpha_{p}$（$\omega^{2} R_{0}$）为零，故 $J_{P,\theta=0}\alpha = M'g \cdot x_{C}$。
+        则此时的转动角加速度即为\eqref{eq:9.s111}式。
+    \end{subsolution}
+    \begin{subsolution}
+        当辐条 OB 转到竖直位置时，$\theta = 30^{\circ}$，由\eqref{eq:6.s111}式得
+        \begin{equation}
+            J_{P,\theta=30^{\circ}} = J_{C} + M' \left(R_{0}^{2} + x_{C}^{2} - 2 R_{0} x_{C} \sin 30^{\circ}\right) = \frac{1244}{75} m R_{0}^{2}
+            \label{eq:10.s111}
+        \end{equation}
+        由\eqref{eq:7.s111}式得
+        \begin{equation}
+            \omega_{\theta=30^{\circ}}^{2} = \frac{2 M' g x_{C} \sin 30^{\circ}}{J_{P,\theta=30^{\circ}}} = \frac{15}{622} \frac{g}{R_{0}}
+            \label{eq:11.s111}
+        \end{equation}
+        由\eqref{eq:8.s111}式得
+        \begin{equation}
+            \alpha_{\theta=30^{\circ}} = \frac{M' x_{C} \cos 30^{\circ} \left(g + \omega_{\theta=30^{\circ}}^{2} R_{0}\right)}{J_{P,\theta=30^{\circ}}} = \frac{9555 \sqrt{3}}{773768} \frac{g}{R_{0}}
+            \label{eq:12.s111}
+        \end{equation}
+        据题意，轮子中心 O 相对于地面的加速度 $a_{\mathrm{O}}$ 和质心 C 相对于轮子中心 O 的切向加速度 $a_{\mathrm{CO}}^{t}$ 与法向加速度 $a_{\mathrm{CO}}^{n}$ 分别为
+        \begin{equation}
+            a_{\mathrm{O}} = \alpha R_{0}, \quad a_{\mathrm{CO}}^{t} = \alpha x_{C}, \quad a_{\mathrm{CO}}^{n} = \omega^{2} x_{\mathrm{C}}
+            \label{eq:13.s111}
+        \end{equation}
+        质心 C 相对地面参考系的加速度（见解题图 c）
+        \begin{align}
+            a_{Cx} &= a_{O} - a_{CO}^{t}\sin\theta - a_{CO}^{n}\cos\theta \\
+            a_{Cy} &= a_{CO}^{n}\sin\theta - a_{CO}^{t}\cos\theta
+            \label{eq:14.s111}
+        \end{align}
+        根据质心运动定理可求此时的摩擦力 $F_{f}$ 和支持力 $F_{N}$
+        \begin{equation}
+            \begin{aligned}
+                M' a_{Cx} &= F_{f} \\
+                M' a_{Cy} &= F_{N} - M' g
+            \end{aligned}
+            \label{eq:15.s111}
+        \end{equation}
+        联立以上各式可解得
+        \begin{equation}
+            \begin{aligned}
+                F_{f} &= \frac{89907 \sqrt{3}}{773768} m g \\
+                F_{N} &= \frac{7735679}{773768} m g
+            \end{aligned}
+            \label{eq:16.s111}
+        \end{equation}
+        上述结果可以用 $J_{C}\alpha = F_{N}x_{C}\cos\theta -F_{f}(R_{0} - x_{C}\sin\theta)$ 来验证。
+    \end{subsolution}
+\end{solution}

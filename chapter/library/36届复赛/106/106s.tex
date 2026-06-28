@@ -1,0 +1,156 @@
+\begin{solution}{106}
+\begin{subsolution}
+由于弹丸直径 $d$ 很小，每根载流导轨均可视为半无限长载流直导线，弹丸上离某导轨轴线距离为 $r'$ 处的磁场的磁感应强度大小为
+\begin{equation}
+B = \frac{\mu_{0} I}{4\pi r'} + \frac{\mu_{0} I}{4\pi (d + 2b - r')}
+\label{eq:1.s106}
+\end{equation}
+方向垂直于两导轨对称轴所在平面斜向下。弹丸长为 $\mathrm{d}r'$ 的一段所受到的磁场作用力（安培力）为
+\[
+\mathrm{d}F = I B \mathrm{d}r'
+\]
+方向平行于导轨轴线斜向上. 弹丸所受到的安培力大小为
+\begin{equation}
+\begin{array}{r l}
+F & = \int \mathrm{d}F = \int_{b}^{b+d} \left[ \frac{\mu_{0} I}{4\pi r'} + \frac{\mu_{0} I}{4\pi (d + 2b - r')} \right] I \mathrm{d}r' \\
+& = \frac{\mu_{0} I^{2}}{4\pi} \ln\frac{b+d}{b} + \frac{\mu_{0} I^{2}}{4\pi} \ln\frac{(d+2b-b)}{(d+2b-b-d)} \\
+& = \frac{\mu_{0} I^{2}}{2\pi} \ln\frac{b+d}{b}
+\end{array}
+\label{eq:2.s106}
+\end{equation}
+方向平行于导轨轴线斜向上.
+\end{subsolution}
+
+\begin{subsolution}
+设弹丸的加速度大小为 $a$。由牛顿第二定律有
+\begin{equation}
+F - mg\sin\theta = m a
+\label{eq:3.s106}
+\end{equation}
+由\eqref{eq:2.s106}和\eqref{eq:3.s106}式得，弹丸的加速度大小为
+\begin{equation}
+a = \frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta
+\label{eq:4.s106}
+\end{equation}
+方向平行于导轨轴线斜向上.
+弹丸作匀加速直线运动，弹丸的出射速度 $v_{\max}$ 满足
+\begin{equation}
+v_{\max}^{2} - v_{0}^{2} = 2 a L
+\label{eq:5.s106}
+\end{equation}
+由\eqref{eq:4.s106}和\eqref{eq:5.s106}式得
+\begin{equation}
+v_{\max} = \sqrt{2L\left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)}
+\label{eq:6.s106}
+\end{equation}
+方向平行于导轨轴线斜向上.
+\end{subsolution}
+
+\begin{subsolution}
+两导轨之间离某导轨轴线距离为 $r$ 处（不一定是弹丸上一点）的磁场为
+\begin{equation}
+B_{r} = \frac{\mu_{0} I}{2\pi r} + \frac{\mu_{0} I}{2\pi (d + 2b - r)}
+\label{eq:7.s106}
+\end{equation}
+通过两导轨各自从下端开始长为 $l$ 的一段以及弹丸长为 $\mathrm{d}r$ 的一段组成平面回路的磁通量为
+\begin{equation}
+\mathrm{d}\Phi = B_{r} l \mathrm{d}r = \left(\frac{\mu_{0} I}{2\pi r} + \frac{\mu_{0} I}{2\pi (d + 2b - r)}\right) l \mathrm{d}r
+\label{eq:8.s106}
+\end{equation}
+通过两导轨各自从下端开始长为 $l$ 的一段以及弹丸组成平面回路的磁通量为
+\begin{equation}
+\Phi = \int_{b}^{b+d} \left(\frac{\mu_{0} I}{2\pi r} + \frac{\mu_{0} I}{2\pi (d + 2b - r)}\right) l \mathrm{d}r = \frac{\mu_{0} I l}{\pi}\ln\frac{b+d}{b}
+\label{eq:9.s106}
+\end{equation}
+根据法拉第电磁感应定律，回路中的感应电动势为
+\begin{equation}
+\varepsilon = -\frac{\mathrm{d}\Phi}{\mathrm{d}t} = -\frac{\mu_{0} I v}{\pi}\ln\frac{d+b}{b}
+\label{eq:10.s106}
+\end{equation}
+式中 $v = \frac{\mathrm{d}l}{\mathrm{d}t}$ 是弹丸沿导轨的运动速度. 由全电路欧姆定律得
+\begin{equation}
+U + \varepsilon = 2\lambda l I + I R
+\label{eq:11.s106}
+\end{equation}
+式中 $U$ 为恒流源两端的电压。弹丸做匀加速直线运动，在通电后任意时刻 $t$ 有
+\begin{equation}
+v = a t
+\label{eq:12.s106}
+\end{equation}
+\begin{equation}
+l = \frac{1}{2} a t^{2}
+\label{eq:13.s106}
+\end{equation}
+由\eqref{eq:10.s106}～\eqref{eq:13.s106}式得，在时刻 $t$ 恒流源两端的电压为
+\[
+U = 2\lambda I \frac{1}{2} a t^{2} + I R + \frac{\mu_{0} I}{\pi}\ln\frac{d+b}{b} a t
+\]
+即
+\begin{equation}
+U = \lambda I \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) t^{2} + I R + \frac{\mu_{0} I}{\pi}\ln\frac{d+b}{b} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) t
+\label{eq:14.s106}
+\end{equation}
+由\eqref{eq:6.s106}和\eqref{eq:12.s106}式得，弹丸的加速时间为
+\begin{equation}
+T = \frac{v_{\max}}{a} = \sqrt{2L}\left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)^{-1/2}
+\label{eq:15.s106}
+\end{equation}
+由\eqref{eq:14.s106}和\eqref{eq:15.s106}式得，弹丸出射时电源两端的电压
+\begin{equation}
+U_{T} = 2\lambda I L + I R + \frac{\sqrt{2L}\,\mu_{0} I}{\pi}\ln\frac{d+b}{b} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)^{1/2}
+\label{eq:16.s106}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+在弹丸的整个加速过程中，恒流源所做的功为
+\begin{equation}
+\begin{array}{l}
+W = \int_{0}^{T} U I \mathrm{d}t \\
+= \int_{0}^{T} \lambda I^{2} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) t^{2} \mathrm{d}t + \int_{0}^{T} I^{2} R \mathrm{d}t \\
+\quad + \int_{0}^{T} \frac{\mu_{0} I^{2}}{\pi}\ln\frac{d+b}{b} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) t \mathrm{d}t
+\end{array}
+\label{eq:17.s106}
+\end{equation}
+下面依次计算\eqref{eq:17.s106}式右端的第一项 $W_{1}$、第二项 $W_{2}$ 和第三项 $W_{3}$：
+\begin{align*}
+W_{1} &= \int_{0}^{T} \lambda I^{2} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) t^{2} \mathrm{d}t \\
+&= \frac{\lambda I^{2}}{3} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) T^{3} \\
+&= \frac{2\sqrt{2}\lambda I^{2}}{3} L^{3/2} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)^{-1/2} \\
+W_{2} &= I^{2} R T = I^{2} R \sqrt{2L} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)^{-1/2} \\
+W_{3} &= \frac{\mu_{0} I^{2}}{2\pi}\ln\frac{d+b}{b} \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) T^{2}
+= \frac{\mu_{0} I^{2} L}{\pi}\ln\frac{d+b}{b}
+\end{align*}
+于是
+\begin{equation}
+\begin{array}{l}
+W = W_{1} + W_{2} + W_{3} \\
+= \sqrt{2L} I^{2} \left(\frac{2\lambda L}{3} + R\right) \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right)^{-1/2} + \frac{\mu_{0} I^{2} L}{\pi}\ln\frac{d+b}{b}
+\end{array}
+\label{eq:18.s106}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+弹丸出射时的动能为：
+\begin{equation}
+E_{k\max} = \frac{1}{2} m v_{\max}^{2} = m L \left(\frac{\mu_{0} I^{2}}{2\pi m}\ln\frac{d+b}{b} - g\sin\theta\right) = \frac{\mu_{0} I^{2} L}{2\pi}\ln\frac{d+b}{b} - m g L \sin\theta
+\label{eq:19.s106}
+\end{equation}
+在 $\theta = 0^{\circ}$ 的条件下，弹丸出射时的动能为
+\begin{equation}
+E_{k\max} = \frac{\mu_{0} I^{2} L}{2\pi}\ln\frac{d+b}{b}
+\label{eq:20.s106}
+\end{equation}
+若导轨和弹丸的电阻可忽略，恒流源所做的功为
+\begin{equation}
+W = \frac{\mu_{0} I^{2} L}{\pi}\ln\frac{d+b}{b}
+\label{eq:21.s106}
+\end{equation}
+弹丸出射时的动能与恒流源所做的功之比
+\begin{equation}
+\eta = \frac{E_{k\max}}{W} = 50\%
+\label{eq:22.s106}
+\end{equation}
+\end{subsolution}
+\end{solution}

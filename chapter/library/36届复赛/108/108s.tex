@@ -1,0 +1,180 @@
+\begin{solution}{108}
+\begin{subsolution}
+进入光纤芯的光束只有在光纤芯与包层界面满足全反射条件，才能使得光束在光纤中长距离传输。设光线最大入射角为 $\theta$，相应的折射角为 $\alpha$，如解题图a所示。由折射定律和全反射条件有
+\begin{equation}
+n_{0}\sin\theta = n_{1}\sin\alpha
+\label{eq:1.s108}
+\end{equation}
+\begin{equation}
+n_{1}\sin(90^{\circ} - \alpha) = n_{2}
+\label{eq:2.s108}
+\end{equation}
+由\eqref{eq:1.s108}和\eqref{eq:2.s108}式得
+\begin{equation}
+\sin\theta = \frac{n_{1}\sin\alpha}{n_{0}} = \sqrt{\left(\frac{n_{1}}{n_{0}}\right)^{2} - \left(\frac{n_{2}}{n_{0}}\right)^{2}} = \sqrt{1.46^{2} - 1.45^{2}} = 0.17
+\label{eq:3.s108}
+\end{equation}
+由\eqref{eq:3.s108}式得
+\begin{equation}
+\theta = \arcsin 0.17 = 9.8^{\circ}
+\label{eq:4.s108}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+平行激光束首先在微球透镜前表面一次成像，其成像位置 $i_{1}$（相对于微球透镜前表面顶点）可利用球面镜折射成像公式得到
+\begin{equation}
+\frac{n_{0}}{o_{1}} + \frac{n}{i_{1}} = \frac{n - n_{0}}{r}
+\label{eq:5.s108}
+\end{equation}
+式中，$o_{1}$ 为物距，由于是平行光束 $o_{1}=\infty$，$i_{1}$ 是一次成像位置，$n$ 是微球透镜玻璃材料折射率 $n=1.50$，$r$ 是微球前表面曲率半径，$r=\frac{D}{2}$。由\eqref{eq:5.s108}式得
+\begin{equation}
+i_{1} = \frac{n D}{2(n - n_{0})} = \frac{1.50 \times 3.00\,\mathrm{mm}}{2(1.50 - 1.00)} = 4.5\,\mathrm{mm}
+\label{eq:6.s108}
+\end{equation}
+光束在微球透镜后表面第二次成像位置 $i_{2}$（相对于微球透镜后表面顶点 $O$）可由球面镜折射成像公式得到
+\begin{equation}
+\frac{n}{o_{2}} + \frac{n_{0}}{i_{2}} = \frac{n_{0} - n}{r_{2}}
+\label{eq:7.s108}
+\end{equation}
+式中，$o_{2}$ 为相对于微球透镜后表面顶点 $O$ 的物距
+\[
+o_{2} = i_{1} - D = \frac{(2n_{0} - n)D}{2(n - n_{0})} = \frac{(2\times1.00 - 1.50)\times3.00\,\mathrm{mm}}{2(1.50 - 1.00)} = 1.50\,\mathrm{mm}
+\]
+由于此时是虚物，$o_{2}$ 应取负值，即
+\[
+o_{2} = \frac{(n - 2n_{0})D}{2(n - n_{0})} = -1.50\,\mathrm{mm}
+\]
+而 $r_{2}$ 是微球后表面曲率半径
+\[
+r_{2} = -\frac{D}{2}
+\]
+将以上数据代入\eqref{eq:7.s108}式可得二次成像位置 $i_{2}$ 为
+\begin{equation}
+i_{2} = \frac{(2n_{0} - n)D}{4(n - n_{0})} = 0.75\,\mathrm{mm}
+\label{eq:8.s108}
+\end{equation}
+即微球透镜后表面中心顶点 $O$ 与光纤端面距离应为 $0.75\,\mathrm{mm}$.
+\end{subsolution}
+
+\begin{subsolution}
+微球透镜的等效主点与球心重合，而等效焦距为
+\begin{equation}
+f_{\mathrm{e}} = \frac{(2n_{0} - n)D}{4(n - n_{0})} + \frac{D}{2} = \frac{n D}{4(n - n_{0})} = \frac{1.50 \times 3.00\,\mathrm{mm}}{4(1.50 - 1.00)} = 2.25\,\mathrm{mm}
+\label{eq:9.s108}
+\end{equation}
+为了使进入光纤的全部光束能在光纤内长距离传输，平行入射激光束的直径 $d$ 最大时，光束在光纤端面上的入射角应满足最大入射角条件：
+\[
+\frac{\frac{d}{2}}{\sqrt{\left(\frac{d}{2}\right)^{2} + \left(\frac{n D}{4(n - n_{0})}\right)^{2}}} = \frac{1}{\sqrt{1 + \left(\frac{n D}{2 d (n - n_{0})}\right)^{2}}} = \sin\theta
+\]
+注意到
+\[
+\frac{1}{\sqrt{1 + \left(\frac{n D}{2 (n - n_{0}) d}\right)^{2}}} = \frac{2(n - n_{0})}{n}\frac{d}{D}\frac{1}{\sqrt{1 + \left(\frac{2(n - n_{0})}{n}\frac{d}{D}\right)^{2}}} \approx \frac{2(n - n_{0})}{n}\frac{d}{D}
+\]
+上式已略去 $\left(\frac{d}{D}\right)^{3}$ 项，将上式结果代入条件式，结合\eqref{eq:3.s108}和题给数据得
+\begin{equation}
+d = \frac{n}{2(n - n_{0})} D \sin\theta = 0.76\,\mathrm{mm}
+\label{eq:10.s108}
+\end{equation}
+平行入射激光束的直径最大不能超过 $0.76\,\mathrm{mm}$.
+
+[解法二
+2）如解题图b，$O'$ 是微球球心，入射光束边缘的一根光线入射到微球面上的 $A$ 点，入射角为 $\alpha$，折射角为 $\angle O'AB \equiv \beta$；在微球的大圆内射到微球面上的 $B$ 点，由于 $O'A = O'B$，光线在 $B$ 点的入射角 $\angle O'BA = \beta$，折射角必定为 $\alpha$；折射出的光线与光轴交于 $F$ 点（按题意，$F$ 点恰好在光纤端面上），而 $AB$ 的延长线与光轴交于 $C$ 点.
+由题给条件有
+\[
+n_{0} = 1.00,\quad n = 1.50
+\]
+由折射定律有
+\[
+n_{0}\alpha = n\beta
+\]
+即
+\[
+\beta = \frac{2}{3}\alpha
+\]
+于是
+\[
+\gamma = \frac{1}{3}\alpha,\quad \theta' = 2\gamma
+\]
+式中，$\theta' = \angle BFO'$ 是光线在光纤端面上的入射角。而
+\[
+\angle CBF = \gamma = \angle FCB
+\]
+\[
+\angle BO'C = \alpha - \theta' = \gamma
+\]
+因而，$\Delta BO'C$ 和 $\Delta FCB$ 均为等腰三角形. 于是
+\[
+\overline{O'O} = \overline{OC}
+\]
+\[
+\overline{OF} = \overline{FC} = \frac{D}{4} = 0.75\,\mathrm{mm}
+\]
+这里由于小角度近似，可近似认为 $O$ 点为线段 $O'C$ 的中点.
+
+3）为了使进入光纤的全部光束能在光纤内长距离传输，平行入射激光束的直径取最大值 $d$ 时，光束在光纤端面上的入射角 $\angle BFO'$ 应满足最大入射角条件，即
+\[
+\theta' = \theta = 0.17
+\]
+由几何关系和上式得
+\[
+\alpha = \frac{d}{D} = \frac{3}{2}\theta
+\]
+于是
+\[
+d = \frac{3}{2} D \times 0.17 = 0.76\,\mathrm{mm}
+\]
+平行入射激光束的直径最大不能超过 $0.76\,\mathrm{mm}$.]
+
+[解法三：
+2）如解题图b，$O'$ 是微球球心，入射光束边缘的一根光线入射到微球面上的 $A$ 点，入射角为 $\alpha$，折射角为 $\angle O'AB \equiv \beta$；在微球的大圆内入射到微球面上的 $B$ 点，由于 $O'A = O'B$，光线在 $B$ 点的入射角 $\angle O'BA = \beta$，折射角必定为 $\alpha$；折射出的光线与光轴交于 $F$ 点（按题意，$F$ 点恰好在光纤端面上），而 $AB$ 的延长线与光轴交于 $C$ 点.
+由折射定律有
+\begin{equation}
+n_{0}\sin\alpha = n\sin\beta
+\label{eq:11.s108}
+\end{equation}
+在 $\Delta BO'F$ 中，由正弦定理有
+\begin{equation}
+\frac{\overline{O'F}}{\sin\alpha} = \frac{\overline{O'B}}{\sin\theta'}
+\label{eq:12.s108}
+\end{equation}
+式中，$\theta' = \angle BFO'$ 是光线在光纤端面上的入射角。记 $\angle BO'C = \gamma$，由几何关系有
+\[
+\alpha + \gamma = 2\beta
+\]
+\[
+\theta' = \alpha - \gamma = 2(\alpha - \beta)
+\]
+由\eqref{eq:12.s108}和上式得
+\[
+\overline{O'F} = \frac{\sin\alpha}{\sin[2(\alpha - \beta)]}\frac{D}{2}
+\]
+于是
+\[
+\overline{OF} = \overline{O'F} - \frac{D}{2} \approx \left[\frac{n}{2(n - n_{0})} - 1\right]\frac{D}{2} = \frac{(2n_{0} - n)D}{4(n - n_{0})} = 0.75\,\mathrm{mm}
+\]
+式中第三步利用了近轴近似，略去了 $O(\alpha^{2})$ 项.
+
+3）为了使进入光纤的全部光束能在光纤内长距离传输，平行入射激光束的直径取最大值 $d$ 时，光束在光纤端面上的入射角 $\angle BFO'$ 应满足最大入射角条件，即
+\[
+\theta' = \theta
+\]
+由上式得
+\[
+\sin\theta = \sin 2(\alpha - \beta) = \cdots \approx 2\left(1 - \frac{n_{0}}{n}\right)\sin\alpha
+\]
+在右端略去了 $O(\alpha^{3})$ 项后得
+\[
+\sin\theta = 2\left(1 - \frac{n_{0}}{n}\right)\sin\alpha
+\]
+由几何关系得
+\[
+\sin\alpha = \frac{d}{D}
+\]
+由上两式和题给数据得
+\[
+d = \frac{1}{2\left(1 - \frac{n_{0}}{n}\right)} D \sin\theta = 0.76\,\mathrm{mm}
+\]
+平行入射激光束的直径最大不能超过 $0.76\,\mathrm{mm}$.]
+\end{subsolution}
+\end{solution}

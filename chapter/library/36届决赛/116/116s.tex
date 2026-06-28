@@ -1,0 +1,339 @@
+\begin{solution}{116}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            \begin{equation}
+                \Phi = \frac{D}{S_{\text{日地}}} = \frac{d}{L}
+                \label{eq:1.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            主要误差来自于是否刚好充满竹竿内管，可以在竹竿圆孔前加一半径可调的遮挡圆盘，原理类似于日冕仪。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            $\Phi = \frac{1}{80}$（目前准确值为 $\frac{1}{109}$）。
+            \label{eq:2.s116}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由万有引力定律
+            \begin{equation}
+                G \frac{M m}{r^{2}} = m \left(\frac{2\pi}{T}\right)^{2} r
+                \label{eq:3.s116}
+            \end{equation}
+            （或直接由开普勒第三定律得）可得
+            \begin{equation}
+                r_{\mathrm{VE}} = \frac{S_{\text{日金}}}{S_{\text{日地}}} = \left(\frac{T_{\text{金}}}{T_{\text{地}}}\right)^{2/3} = 0.72
+                \label{eq:4.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            凌日开始时，即在凌始点，地球与金星的连线相切于太阳盘面，经过凌日时间 $t_{p}$ 后，即在凌终点，地球与金星的连线相切于太阳盘面的另一边，如解题图a所示。忽略地球和金星各自的轨道平面相互之间成很小的倾角，并利用小角度近似，有
+            \begin{equation}
+                \frac{D_{\mathrm{P}}}{S_{\text{日金}}} = \frac{D_{\mathrm{P}}}{S_{\text{日地}}} + 2\pi \left(\frac{t_{\mathrm{P}}}{T_{\text{金}}} - \frac{t_{\mathrm{P}}}{T_{\text{地}}}\right)
+                \label{eq:5.s116}
+            \end{equation}
+            由此得
+            \begin{equation}
+                \frac{D_{\mathrm{P}}}{S_{\text{日地}}} = \frac{r_{\mathrm{VE}}}{1 - r_{\mathrm{VE}}} 2\pi t_{\mathrm{P}} \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right)
+                \label{eq:6.s116}
+            \end{equation}
+            由图a可读出
+            \begin{equation}
+                t_{\mathrm{p}} = 6:21:47 = 6.36 \,\mathrm{h} = 0.265 \,\mathrm{d}
+            \end{equation}
+            将\eqref{eq:4.s116}式和上述数据代入\eqref{eq:6.s116}式得
+            \begin{equation}
+                \frac{D_{\mathrm{p}}}{S_{\text{日地}}} = \frac{1.44}{0.28} \pi (1.18 \times 10^{-3} - 0.72 \times 10^{-3}) = 7.4 \times 10^{-3} = \frac{1}{135}
+            \end{equation}
+            设弦离圆心的距离为 $h_{p}$，由几何关系得
+            \begin{equation}
+                h_{\mathrm{p}} = \frac{1}{2} \sqrt{D^{2} - D_{\mathrm{p}}^{2}}
+                \label{eq:7.s116}
+            \end{equation}
+            已知 $h_{p}=5D/16$，由\eqref{eq:7.s116}式得
+            \begin{equation}
+                D = 1.28 D_{\mathrm{p}}
+            \end{equation}
+            太阳视角为
+            \begin{equation}
+                \Phi = \frac{D}{S_{\text{日地}}} = \frac{1.28}{135} = \frac{1}{105}
+                \label{eq:8.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            从\eqref{eq:6.s116}式可知，凌日扫过的弦长 $D_{p}$ 正比于凌日时间 $t_{p}$
+            \begin{equation}
+                \frac{D_{\mathrm{P}}}{S_{\text{日地}}} = \frac{r_{\mathrm{VE}}}{1 - r_{\mathrm{VE}}} 2\pi \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right) t_{\mathrm{P}} = 2.57 \,\mathrm{s^{-1}} \times t_{\mathrm{P}}
+                \label{eq:9.s116}
+            \end{equation}
+            由\eqref{eq:7.s116}式得，$D_{p}$ 与 $D_{p'}$ 对金星所张的角为
+            \begin{equation}
+                \begin{aligned}
+                    \Theta &= \frac{h_{\mathrm{P}} - h_{\mathrm{P}^{\prime}}}{S_{\text{日金}}} = \frac{1}{2 r_{\mathrm{VE}}} \left(\sqrt{\frac{D^{2}}{S_{\text{日地}}^{2}} - \frac{D_{\mathrm{P}}^{2}}{S_{\text{日地}}^{2}}} - \sqrt{\frac{D^{2}}{S_{\text{日地}}^{2}} - \frac{D_{\mathrm{P}^{\prime}}^{2}}{S_{\text{日地}}^{2}}}\right) \\
+                    &= \frac{1}{2 r_{\mathrm{VE}}} \left(\sqrt{\Phi^{2} - \left(\frac{2\pi r_{\mathrm{VE}} t_{\mathrm{P}}}{1 - r_{\mathrm{VE}}}\right)^{2} \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right)^{2}} - \sqrt{\Phi^{2} - \left(\frac{2\pi r_{\mathrm{VE}} t_{\mathrm{P}^{\prime}}}{1 - r_{\mathrm{VE}}}\right)^{2} \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right)^{2}}\right)
+                \end{aligned}
+            \end{equation}
+            由小角度（见解题图 b）近似得
+            \begin{equation}
+                \Theta = \frac{H}{S_{\text{日地}} - S_{\text{日金}}} = \frac{H}{S_{\text{日地}} (1 - r_{\mathrm{VE}})}
+            \end{equation}
+            式中 $H$ 是地面同一经度上两位观察者 $\mathrm{P}$ 和 $\mathrm{P}'$ 之间的直线距离（在垂直于观测方向上的投影）。上述两式右边相等，可得
+            \begin{equation}
+                S_{\text{日地}} = \frac{2 r_{\mathrm{VE}} H}{1 - r_{\mathrm{VE}}} \left(\sqrt{\Phi^{2} - \left(\frac{2\pi r_{\mathrm{VE}} t_{\mathrm{P}}}{1 - r_{\mathrm{VE}}}\right)^{2} \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right)^{2}} - \sqrt{\Phi^{2} - \left(\frac{2\pi r_{\mathrm{VE}} t_{\mathrm{P}^{\prime}}}{1 - r_{\mathrm{VE}}}\right)^{2} \left(\frac{1}{T_{\text{金}}} - \frac{1}{T_{\text{地}}}\right)^{2}}\right)^{-1}
+                \label{eq:10.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            北京的纬度为 $39.5^{\circ}$，香港的纬度为 $22.5^{\circ}$，对应的地面两纬线之间最短距离为
+            \begin{equation}
+                H = \frac{17^{\circ}}{180^{\circ}} \times \pi \times 6370 \,\mathrm{km} = 1900 \,\mathrm{km}
+                \label{eq:11.s116}
+            \end{equation}
+            北京: 凌始外切 6:10:00, 凌终内切 12:31:57, 因而
+            \begin{equation}
+                t_{\mathrm{p}} = 6:21:57
+            \end{equation}
+            香港：凌始外切 6:11:48, 凌终内切 12:31:19，因而
+            \begin{equation}
+                t_{\mathrm{p}^{\prime}} = 6:19:31
+            \end{equation}
+            将相关数据代入\eqref{eq:10.s116}式得
+            \begin{equation}
+                S_{\mathrm{日地}} = 1.6 \times 10^{8} \,\mathrm{km}
+                \label{eq:12.s116}
+            \end{equation}
+            太阳直径为
+            \begin{equation}
+                D = \frac{D}{S_{\mathrm{日地}}} S_{\mathrm{日地}} = \frac{1}{105} \times 1.6 \times 10^{8} \,\mathrm{km} = 1.5 \times 10^{6} \,\mathrm{km}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            地球接收到的太阳光辐射功率为
+            \begin{equation}
+                W_{\text{总}} = \pi R_{\text{地}}^{2} I = 3.14 \times 6.4^{2} \times 10^{12} \times 1.37 \times 10^{3} \,\mathrm{W} = 1.76 \times 10^{17} \,\mathrm{W}
+                \label{eq:13.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            全球每年消耗的总能量为
+            \begin{equation}
+                E_{\text{消耗}} = 70 \times 10^{8} \times 3 \times 10^{3} \times 4 \times 3.6 \times 10^{6} \,\mathrm{J} = 3 \times 10^{20} \,\mathrm{J}
+            \end{equation}
+            地球一年接受到的太阳辐射能量为
+            \begin{equation}
+                E_{\mathrm{辐射}} = 365 \times 24 \times 3600 \times W_{\mathrm{总}} = 5.5 \times 10^{24} \,\mathrm{J}
+            \end{equation}
+            能耗占比为
+            \begin{equation}
+                E_{\text{消耗}} : E_{\text{辐射}} = 1 : 1.6 \times 10^{4}
+                \label{eq:14.s116}
+            \end{equation}
+            不到万分之一，表明我们利用太阳能源的潜力还很大。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            太阳单位时间辐射的总能量
+            \begin{equation}
+                W_{\mathrm{太阳}} = 4\pi S_{\mathrm{日地}}^{2} I = 3.87 \times 10^{26} \,\mathrm{W}
+                \label{eq:15.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            太阳单位时间单位面积辐射的能量
+            \begin{equation}
+                I_{\text{太阳}} = \frac{W_{\text{太阳}}}{4\pi R_{\text{太阳}}^{2}} = \frac{S_{\text{日地}}^{2}}{R_{\text{太阳}}^{2}} I = 6.5 \times 10^{7} \,\mathrm{W/m^{2}}
+            \end{equation}
+            太阳表面温度为
+            \begin{equation}
+                T_{\text{表面}} = \left(\frac{I_{\text{太阳}}}{\sigma}\right)^{1/4} = 5.8 \times 10^{3} \,\mathrm{K}
+                \label{eq:16.s116}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            由万有引力定律有
+            \begin{equation}
+                G \frac{M_{\text{日}} m}{S_{\text{日地}}^{2}} = m \frac{4\pi^{2}}{T_{\text{地球}}^{2}} S_{\text{日地}}
+            \end{equation}
+            太阳质量为
+            \begin{equation}
+                \begin{aligned}
+                    M_{\text{日}} &= \frac{4\pi^{2}}{G T_{\text{地球}}^{2}} S_{\text{日地}}^{3} \\
+                    &= \frac{4\pi^{2}}{6.67 \times 10^{-11} \times (365 \times 24 \times 3600)^{2}} \times (1.5 \times 10^{11})^{3} \,\mathrm{kg} \\
+                    &= 2.0 \times 10^{30} \,\mathrm{kg}
+                \end{aligned}
+                \label{eq:17.s116}
+            \end{equation}
+            太阳平均密度
+            \begin{equation}
+                \rho = \frac{M_{\text{日}}}{\frac{4}{3}\pi R_{\text{日}}^{3}} = 1.4 \times 10^{3} \,\mathrm{kg/m^{3}}
+                \label{eq:18.s116}
+            \end{equation}
+            是水的密度的 1.4 倍。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            若太阳能源来自化学反应，假设来自煤的燃烧，那么每秒钟需要烧煤的质量为
+            \begin{equation}
+                \frac{\Delta m}{\Delta t} = \frac{W_{\text{太阳}}}{4 \times 3.6 \times 10^{6}} = 2.7 \times 10^{19} \,\mathrm{kg/s}
+            \end{equation}
+            可持续燃烧的时间
+            \begin{equation}
+                t_{\text{总}} = \frac{M}{\frac{\Delta m}{\Delta t}} = 7.4 \times 10^{10} \,\mathrm{s} = 2400 \,\mathrm{y}
+                \label{eq:19.s116}
+            \end{equation}
+            达尔文当年从生物进化的角度认为，地球至少要存在一亿年以上，若太阳作为恒星存在50亿年以上，那么太阳产能效率至少是燃煤效率200万倍以上，因此太阳的能源不可能来自化学能，只能来自于核能。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            整个核聚变过程相当于消耗掉了4个质子，产生了一个氦原子核，并有2个正电子与两个等离子体中的电子淹灭成光子，不考虑中微子带走的能量，放出的能量为
+            \begin{equation}
+                \begin{aligned}
+                    1 \,\mathrm{MeV} &= 1.60217733(49) \times 10^{-13} \,\mathrm{J} \\
+                    \Delta E &= (4 M_{\mathrm{p}} - M_{^{4}\mathrm{He}} - 2 m_{\mathrm{e}} + 4 m_{\mathrm{e}}) c^{2} \\
+                    &= 938.3 \times 4 - 3727.5 + 0.51 \times 2 = 26.7 \,\mathrm{MeV} = 4.27 \times 10^{-12} \,\mathrm{J}
+                \end{aligned}
+                \label{eq:20.s116}
+            \end{equation}
+            单位时间需要消耗质子数为
+            \begin{equation}
+                \frac{\Delta N_{\mathrm{p}}}{\Delta t} = \frac{3.87 \times 10^{26}}{4.27 \times 10^{-12} / 4} = 3.62 \times 10^{38} \,\mathrm{s^{-1}}
+                \label{eq:21.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            太阳总的质子数为
+            \begin{equation}
+                N_{\mathrm{p}} = \frac{0.71 \times 2.0 \times 10^{30} \,\mathrm{kg}}{1.67 \times 10^{-27} \,\mathrm{kg}} = 8.5 \times 10^{56}
+            \end{equation}
+            假设所有质子最后均参与核聚变反应（实际上太阳外层由于温度太低，不会产生聚变），则能维持聚变的时间为
+            \begin{equation}
+                \Delta t = \frac{8.5 \times 10^{56}}{3.62 \times 10^{38}} \,\mathrm{s} = 2.3 \times 10^{18} \,\mathrm{s} = 7.3 \times 10^{10} \,\mathrm{y}
+                \label{eq:22.s116}
+            \end{equation}
+            单位时间的反应概率为
+            \begin{equation}
+                P_{\mathrm{pp}} = \frac{3.62 \times 10^{38}}{8.5 \times 10^{56}} \,\mathrm{s^{-1}} = 4.2 \times 10^{-19} \,\mathrm{s^{-1}}
+                \label{eq:23.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            2个质子反应产生一个中微子，因此每秒产生的中微子数为
+            \begin{equation}
+                \frac{\Delta N_{\nu_{\mathrm{e}}}}{\Delta t} = 1.81 \times 10^{38} \,\mathrm{s^{-1}}
+            \end{equation}
+            地球上单位时间单位面积能接受到的中微子数为
+            \begin{equation}
+                \frac{\Delta N_{\nu_{\mathrm{e}}}}{\Delta t} \frac{1}{4\pi S_{\text{日地}}^{2}} = 6.4 \times 10^{14} \,\mathrm{s^{-1} m^{-2}}
+                \label{eq:24.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            \begin{equation}
+                \frac{\Delta M_{\text{太阳}}}{\Delta t} = \frac{W_{\text{太阳}}}{c^{2}} = \frac{3.87 \times 10^{26} \,\mathrm{kg}}{9 \times 10^{16} \,\mathrm{s}} = 4.3 \times 10^{9} \,\mathrm{kg/s} = 1.3 \times 10^{17} \,\mathrm{kg/y}
+                \label{eq:25.s116}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        核心区的平均密度 $\bar{\rho}_{\text{核心区}}$ 高于平均密度 $\bar{\rho}$，但小于平均密度 $\bar{\rho}$ 的 64 倍
+        \begin{equation}
+            \bar{\rho} = \frac{M_{\text{日}}}{\frac{4}{3}\pi R^{3}} < \bar{\rho}_{\text{核心区}} = \frac{M_{\text{日核心区}}}{\frac{4}{3}\pi \left(\frac{R}{4}\right)^{3}} = 64 \frac{M_{\text{日核心区}}}{\frac{4}{3}\pi R^{3}} < 64 \frac{M_{\text{日}}}{\frac{4}{3}\pi R^{3}} = 64 \bar{\rho}
+        \end{equation}
+        即小于
+        \begin{equation}
+            64 \bar{\rho} = 9 \times 10^{4} \,\mathrm{kg \cdot m^{-3}}
+        \end{equation}
+        质子数密度满足
+        \begin{equation}
+            8.4 \times 10^{23} \,\mathrm{cm^{-3}} = \frac{9 \times 10^{4} \,\mathrm{kg \cdot m^{-3}}}{64 \times 1.67 \times 10^{-27} \,\mathrm{kg}} < n_{\mathrm{p}} < \frac{9 \times 10^{4} \,\mathrm{kg \cdot m^{-3}}}{1.67 \times 10^{-27} \,\mathrm{kg}} = 5.4 \times 10^{25} \,\mathrm{cm^{-3}}
+        \end{equation}
+        于是
+        \begin{equation}
+            5.4 \times 10^{-45} \,\mathrm{cm^{3}/s} = \frac{2.9 \times 10^{-19} \,\mathrm{s^{-1}}}{5.4 \times 10^{25} \,\mathrm{cm^{-3}}} < R(T) = \frac{P_{\mathrm{pp}}}{n_{\mathrm{p}}} < \frac{64 \times 2.9 \times 10^{-19} \,\mathrm{s^{-1}}}{5.4 \times 10^{25} \,\mathrm{cm^{-3}}} = 3.5 \times 10^{-43} \,\mathrm{cm^{3}/s}
+            \label{eq:26.s116}
+        \end{equation}
+        由于质子-质子的反应率远低于另外两个反应，因此决定总体的反应概率是质子-质子的概率，过上述反应率的横坐标平行线与 PP 反应率相交，可得反应温度为
+        \begin{equation}
+            T \approx 1.0 \times 10^{7} \,\mathrm{K}
+            \label{eq:27.s116}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        聚变过程(a)的质量亏损为 $0.49 \,\mathrm{MeV}$，远大于质子的动能 ($1.5 \,\mathrm{keV}$)，因此可以将质子看作静止，反应后总动量为零，总动能为质量亏损乘以光速度平方；
+
+        对于三体问题，根据能动量守恒计算各粒子的能量和动量有不确定性，但中微子的最大动能对应于氘与正电子没有相对运动（即具有相同速度）时其所具有的能量。由于氘的动能远小于其静止质量乘以光速平方，因此可以用非相对论表达式，而中微子静止质量近似为零，需要用相对论表达式。因此有
+        \begin{align}
+            (m_{\mathrm{D}} + m_{\mathrm{e}}) v - p_{\nu} &= 0 \label{eq:28.s116} \\
+            \frac{p_{\mathrm{D}}^{2}}{2 m_{\mathrm{D}}} + \frac{p_{\mathrm{e}}^{2}}{2 m_{\mathrm{e}}} + p_{\nu} c &= 0.49 \,\mathrm{MeV} \label{eq:29.s116}
+        \end{align}
+        又
+        \begin{equation}
+            p_{\mathrm{e}} = \frac{m_{\mathrm{e}}}{m_{\mathrm{D}}} p_{\mathrm{D}}
+        \end{equation}
+        故
+        \begin{equation}
+            \frac{p_{\mathrm{e}}^{2}}{2 m_{\mathrm{e}}} = \frac{m_{\mathrm{e}} p_{\mathrm{D}}^{2}}{2 m_{\mathrm{D}}^{2}} \ll \frac{p_{\mathrm{D}}^{2}}{2 m_{\mathrm{D}}}
+        \end{equation}
+        再由\eqref{eq:28.s116}\eqref{eq:29.s116}式得
+        \begin{equation}
+            \frac{p_{\nu}^{2} c^{2}}{2 m_{\mathrm{D}} c^{2}} + p_{\nu} c = 0.49 \,\mathrm{MeV}
+        \end{equation}
+        略去小量 $\frac{p_{\nu}^{2}c^{2}}{2m_{\mathrm{D}}c^{2}}$ 得
+        \begin{equation}
+            E_{\nu \max} = 0.49 \,\mathrm{MeV}
+            \label{eq:30.s116}
+        \end{equation}
+        中微子总能量占聚变放出的能量之比小于
+        \begin{equation}
+            \frac{0.49 \times 2}{26.7} = 3.7\%
+            \label{eq:31.s116}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            一亿年内由于辐射引起的质量减少量 $\Delta M$ 为
+            \begin{equation}
+                \Delta M = \frac{\Delta M_{\text{日}}}{\Delta t} \times \Delta t = (1.3 \times 10^{17} \,\mathrm{kg/y}) \times (1.0 \times 10^{8} \,\mathrm{y}) = 1.3 \times 10^{25} \,\mathrm{kg}
+                \label{eq:32.s116}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            万有引力提供向心力，有
+            \begin{equation}
+                G \frac{M m}{r_{1}^{2}} = m \left(\frac{2\pi}{T_{1}}\right)^{2} r_{1}, \quad G \frac{(M - \Delta M) m}{r_{2}^{2}} = m \left(\frac{2\pi}{T_{2}}\right)^{2} r_{2}
+            \end{equation}
+            因此
+            \begin{equation}
+                \frac{M T_{1}^{2}}{r_{1}^{3}} = \frac{(M - \Delta M) T_{2}^{2}}{r_{2}^{3}}
+                \label{eq:33.s116}
+            \end{equation}
+            由于是太阳的径向辐射引起其质量减少，因此地球相对于太阳的角动量守恒，有
+            \begin{equation}
+                m v_{1} r_{1} = m v_{2} r_{2}
+            \end{equation}
+            或
+            \begin{equation}
+                m \frac{2\pi r_{1}}{T_{1}} r_{1} = m \frac{2\pi r_{2}}{T_{2}} r_{2}
+            \end{equation}
+            即
+            \begin{equation}
+                \frac{r_{1}^{2}}{T_{1}} = \frac{r_{2}^{2}}{T_{2}}
+                \label{eq:34.s116}
+            \end{equation}
+            由\eqref{eq:32.s116}\eqref{eq:33.s116}\eqref{eq:34.s116}式得
+            \begin{equation}
+                \frac{T_{2}}{T_{1}} = \left(1 - \frac{\Delta M}{M}\right)^{-2} = 1 + 2 \frac{\Delta M}{M}
+                \label{eq:35.s116}
+            \end{equation}
+            地球公转周期的变化量为
+            \begin{equation}
+                T_{2} - T_{1} = 1.3 \times 10^{-5} T_{1}
+                \label{eq:36.s116}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+\end{solution}

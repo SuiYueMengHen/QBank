@@ -1,0 +1,250 @@
+\begin{solution}{105}
+\begin{subsolution}
+车轮被一装置卡住而不能前后移动，但仍可绕轮轴转动。把手绕车轴的转动惯量为
+\[
+J_{1} = 2\left[ \frac{1}{12} m (2l)^{2} + m\left(\frac{1}{2}l\right)^{2} \right] = 2\left(\frac{4}{12} m l^{2} + \frac{1}{4} m l^{2}\right) = \frac{7}{6} m l^{2}
+\]
+平板绕车轴的转动惯量为
+\[
+J_{2} = \frac{1}{12} 2m l^{2} = \frac{1}{6} m l^{2}
+\]
+平板与把手整体绕车轴的转动惯量为
+\begin{equation}
+J = J_{1} + J_{2} = \frac{7}{6} m l^{2} + \frac{1}{6} m l^{2} = \frac{4}{3} m l^{2}
+\label{eq:1.s105}
+\end{equation}
+把手和平板整体的质心位置到车轴的距离 $r_{C}$ （见解题图a）为
+\begin{equation}
+r_{c} = \frac{2m \frac{l}{2}}{4m} = \frac{l}{4}
+\label{eq:2.s105}
+\end{equation}
+设把手与地面碰撞前的瞬间的角速度为 $\omega$，由机械能守恒有
+\begin{equation}
+\frac{1}{2} J \omega^{2} = 4 m g h
+\label{eq:3.s105}
+\end{equation}
+式中 $h$ 是把手和平板整体的质心下降的距离（见解题图b）
+\[
+\frac{h}{r_{c}} = \frac{r}{3l/2}
+\]
+将\eqref{eq:2.s105}式代入上式得
+\[
+h = \frac{2r}{3l}\frac{l}{4} = \frac{r}{6}
+\]
+由上式和\eqref{eq:1.s105}、\eqref{eq:3.s105}式得
+\begin{equation}
+\omega = \frac{\sqrt{g r}}{l}
+\label{eq:4.s105}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+在把手与地面碰撞前的瞬间，把手和平板整体的质心的速度大小为
+\[
+v_{C1} = \omega r_{C} = \frac{\sqrt{g r}}{l}\frac{l}{4} = \frac{\sqrt{g r}}{4}
+\]
+由几何关系有
+\[
+\sin\theta = \frac{2r}{3l},\quad \cos\theta = \frac{\sqrt{9l^{2} - 4r^{2}}}{3l}
+\]
+碰前瞬间把手和平板质心速度的水平与竖直分量（从把手末端朝向把手前端为正）分别为
+\begin{equation}
+v_{C1x} = v_{C1}\sin\theta
+\label{eq:5.s105}
+\end{equation}
+\begin{equation}
+v_{C1y} = -v_{C1}\cos\theta
+\label{eq:6.s105}
+\end{equation}
+记碰撞时间间隔为 $\Delta t$，由题设，把手、平板与车轮组成的系统在碰撞过程中可视为一个物体。刚碰时，由于把手末端与地面之间有相对速度，把手末端与地面之间在碰撞过程中水平方向的相互作用力是滑动摩擦力。设碰撞过程中地面对系统在竖直方向上总的支持力为 $N'$，在碰撞后的瞬间系统的水平速度为 $v_{0}$ $(v_{0} \geq 0)$。在水平和竖直方向上分别对此系统应用动量定理有
+\begin{equation}
+\int_{0}^{\Delta t} (-\mu N') \mathrm{d}t = 6m v_{0} - 4m v_{C1x}
+\label{eq:7.s105}
+\end{equation}
+\begin{equation}
+\int_{0}^{\Delta t} N' \mathrm{d}t = 0 - (-4m v_{C1y})
+\label{eq:8.s105}
+\end{equation}
+值得注意的是，\eqref{eq:8.s105}式左端的冲量不可能等于零，因而\eqref{eq:7.s105}式左端的冲量也不可能等于零．由\eqref{eq:7.s105}和\eqref{eq:8.s105}式得
+\[
+6m v_{0} = 4m v_{C1x} - \mu 4m v_{C1y} = 4m v_{C1}\sin\theta - \mu 4m v_{C1}\cos\theta
+\]
+由此解得
+\[
+v_{0} = \frac{2}{3}(\sin\theta - \mu\cos\theta) v_{C1} = (\sin\theta - \mu\cos\theta)\frac{\sqrt{g r}}{6}
+\]
+当
+\[
+\mu \geq \tan\theta = \frac{2r}{\sqrt{9l^{2} - 4r^{2}}}
+\]
+系统静止，故
+\[
+s = 0
+\]
+当
+\begin{equation}
+\mu < \tan\theta = \frac{2r}{\sqrt{9l^{2} - 4r^{2}}}
+\label{eq:9.s105}
+\end{equation}
+系统开始运动. 下面分两阶段讨论系统开始运动后直至停止的过程:
+
+\textbf{阶段 I. 车轮又滑又滚阶段}
+两车轮的受力如解题图c所示，图中 $N_{01}$ 是地面对两车轮的正压力，$N_{ox}$ 和 $N_{oy}$ 是把手和平板通过轴对两车轮分别在水平方向和竖直方向的作用力，地面对车轮的滑动摩擦力 $f_{1} = \mu N_{01}$．把手和平板作为一个整体的受力解题图d所示，图中 $N$ 是地面对把手末端的正压力.
+
+地面与车之间的总滑动摩擦力为
+\begin{equation}
+f = -\mu(N + N_{01}) = -\mu(6mg)
+\label{eq:10.s105}
+\end{equation}
+把手、平板和车轮组成的系统的质心加速度 $a_{c}$ 为
+\begin{equation}
+a_{c} = \frac{f}{6m} = -\mu g
+\label{eq:11.s105}
+\end{equation}
+对把手和平板系统应用质心运动定理有
+\begin{equation}
+N_{ox} - \mu N = 4m a_{C}
+\label{eq:12.s105}
+\end{equation}
+\begin{equation}
+N + N_{oy} - 4mg = 0
+\label{eq:13.s105}
+\end{equation}
+对把手和平板系统应用相对于过质心的水平轴的转动定理有
+\begin{equation}
+\mu N \frac{5l}{4}\sin\theta + N \frac{5l}{4}\cos\theta + N_{ox}\frac{l}{4}\sin\theta - N_{oy}\frac{l}{4}\cos\theta = 0
+\label{eq:14.s105}
+\end{equation}
+由\eqref{eq:11.s105}、\eqref{eq:12.s105}和\eqref{eq:13.s105}式得
+\[
+N_{ox} = \mu N + 4m(-\mu g) = \mu N - 4\mu m g,\quad N_{oy} = 4mg - N
+\]
+将以上两式代入\eqref{eq:14.s105}式得
+\[
+\mu N \frac{5l}{4}\sin\theta + N \frac{5l}{4}\cos\theta + (\mu N - 4\mu m g)\frac{l}{4}\sin\theta - (4mg - N)\frac{l}{4}\cos\theta = 0
+\]
+于是
+\[
+N = \frac{2}{3} m g
+\]
+因而
+\[
+N_{ox} = \mu\frac{2}{3}mg - 4\mu m g = -\frac{10}{3}\mu m g,\quad N_{oy} = 4mg - \frac{2}{3}mg = \frac{10}{3}mg
+\]
+对两车轮在竖直方向上应用质心运动定理有
+\begin{equation}
+N_{0} - 2mg - N_{oy} = 0
+\label{eq:15.s105}
+\end{equation}
+对两车轮应运用转动定理有
+\begin{equation}
+\mu N_{0} r = 2m r^{2} \beta
+\label{eq:16.s105}
+\end{equation}
+由\eqref{eq:15.s105}式得
+\[
+N_{0} = 2mg + N_{oy} = 2mg + \frac{10}{3}mg = \frac{16}{3}mg
+\]
+再由\eqref{eq:16.s105}式得
+\[
+\beta = \frac{\mu N_{0} r}{2m r^{2}} = \frac{\mu}{2m r}\frac{16}{3}mg = \frac{8\mu g}{3r}
+\]
+设车轮经历时间间隔 $t$ 后开始纯滚动，由纯滚动条件有
+\begin{equation}
+\omega r = \beta t r = v = v_{0} + a_{C} t
+\label{eq:17.s105}
+\end{equation}
+此即
+\[
+(\beta r - a_{C}) t = v_{0}
+\]
+由此得
+\[
+t = \frac{v_{0}}{(\beta r - a_{C})} = \frac{(\sin\theta - \mu\cos\theta)}{22\mu}\sqrt{\frac{r}{g}}
+\]
+车轮开始做纯滚动时的速度为
+\begin{equation}
+v_{1} = v_{0} + a_{C} t = \frac{4\sqrt{gr}}{33}(\sin\theta - \mu\cos\theta)
+\label{eq:18.s105}
+\end{equation}
+在整个又滑又滚阶段，车轴移动的距离 $s_{1}$ 为
+\[
+v_{1}^{2} - v_{0}^{2} = 2 a_{C} s_{1}
+\]
+于是有
+\begin{equation}
+s_{1} = \frac{v_{1}^{2} - v_{0}^{2}}{2 a_{C}} = \frac{57 r}{78408 \mu l^{2}} (2r - \mu\sqrt{9l^{2} - 4r^{2}})^{2}
+\label{eq:19.s105}
+\end{equation}
+
+\textbf{阶段 II. 车轮纯滚动阶段}
+两车轮的受力如解题图e所示，图中 $N_{02}$ 是地面对两车轮的正压力，$N_{ox2}$ 和 $N_{oy2}$ 分别是把手和平板通过轴对两车轮在水平方向和竖直方向的作用力，$f_{2}$ 是地面对车轮的作用力（静摩擦力）。把手和平板作为一个整体的受力解题图f所示，图中 $N_{2}$ 是地面对把手末端的正压力.
+
+对两车轮运用质心运动定理有
+\begin{equation}
+f_{2} - N_{ox2} = 2m a_{C2}
+\label{eq:20.s105}
+\end{equation}
+对两车轮运用转动定理有
+\begin{equation}
+- f_{2} r = 2m r^{2} \beta_{2}
+\label{eq:21.s105}
+\end{equation}
+由纯滚动条件有
+\begin{equation}
+a_{C2} = \beta_{2} r
+\label{eq:22.s105}
+\end{equation}
+由\eqref{eq:20.s105}、\eqref{eq:21.s105}和\eqref{eq:22.s105}式得
+\[
+N_{ox2} = -4m a_{C2}
+\]
+对把手和平板系统在水平方向上应用质心运动定理有
+\[
+N_{ox2} - \mu N_{2} = 4m a_{C2}
+\]
+联立以上两式有
+\[
+a_{C2} = -\frac{\mu N_{2}}{8m},\quad N_{ox2} = \frac{\mu N_{2}}{2}
+\]
+对把手和平板系统在竖直方向上应用质心运动定理有
+\[
+N_{oy2} = 4mg - N_{2}
+\]
+对把手和平板系统应用相对于过质心 $C$ 的水平轴的转动定理有
+\[
+\mu N_{2} \frac{5l}{4}\sin\theta + N_{2} \frac{5l}{4}\cos\theta + N_{ox2}\frac{l}{4}\sin\theta - N_{oy2}\frac{l}{4}\cos\theta = 0
+\]
+联立以上三式消去 $N_{ox2}$ 和 $N_{oy2}$ 得
+\[
+\mu N_{2} \frac{5l}{4}\sin\theta + N_{2} \frac{5l}{4}\cos\theta + \frac{\mu N_{2}}{2}\frac{l}{4}\sin\theta - (4mg - N_{2})\frac{l}{4}\cos\theta = 0
+\]
+解得
+\[
+N_{2} = \frac{8mg}{11\mu\tan\theta + 12}
+\]
+于是
+\begin{equation}
+\begin{array}{l}
+N_{ox2} = \frac{4\mu m g}{11\mu\tan\theta + 12} \\
+N_{oy2} = \frac{4(11\mu\tan\theta + 10) m g}{11\mu\tan\theta + 12} \\
+a_{C2} = -\frac{\mu N_{2}}{8m} = -\frac{\mu g}{11\mu\tan\theta + 12}
+\end{array}
+\label{eq:23.s105}
+\end{equation}
+在整个纯滚动阶段，车轴移动的距离 $s_{2}$ 满足
+\[
+0 - v_{1}^{2} = 2 a_{C2} s_{2}
+\]
+于是
+\begin{equation}
+s_{2} = \frac{-v_{1}^{2}}{2 a_{C2}} = \frac{16 r}{9801 \mu l^{3}} (2r - \mu\sqrt{9l^{2} - 4r^{2}})^{2} \frac{11\mu r + 6\sqrt{9l^{2} - 4r^{2}}}{\sqrt{9l^{2} - 4r^{2}}}
+\label{eq:24.s105}
+\end{equation}
+在车轮从开始运动直至静止的整个过程中，车轴移动的距离为
+\begin{equation}
+s = s_{1} + s_{2} = \left[ \frac{57}{78408} + \frac{16(11\mu r + 6\sqrt{9l^{2} - 4r^{2}})}{9801\sqrt{9l^{2} - 4r^{2}}} \right] \frac{(2r - \mu\sqrt{9l^{2} - 4r^{2}})^{2} r}{\mu l^{2}}
+\label{eq:25.s105}
+\end{equation}
+\end{subsolution}
+\end{solution}

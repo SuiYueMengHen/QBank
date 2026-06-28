@@ -1,0 +1,180 @@
+\begin{solution}{115}
+    \begin{subsolution}
+        He-Ne 激光器输出激光的波长 $\lambda = 632.8 \,\mathrm{nm}$；聚焦物镜焦距 $f = 4.00 \,\mathrm{mm}$。当输出激光束截面直径 $D_{1} = 1.50 \,\mathrm{mm}$ 时，聚焦光斑大小受到圆孔衍射限制，其光斑大小为
+        \begin{equation}
+            D_{\mathrm{ol}} = \frac{2 \times 1.22 \lambda}{R_{1}} f = \frac{2 \times 1.22 \times 0.6328 \,\mu\mathrm{m}}{1.50 \,\mathrm{mm}} \times 4.00 \,\mathrm{mm} = 4.12 \,\mu\mathrm{m}
+            \label{eq:1.s115}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        扩束镜由一个焦距 $f_{1} = -6.3 \,\mathrm{mm}$ 的凹透镜和焦距 $f_{2} = 25.2 \,\mathrm{mm}$ 的凸透镜组成，两个透镜距离为：
+        \begin{equation}
+            l = f_{1} + f_{2} = -6.3 \,\mathrm{mm} + 25.2 \,\mathrm{mm} = 18.9 \,\mathrm{mm}
+            \label{eq:2.s115}
+        \end{equation}
+        扩束后，激光束得直径为：
+        \begin{equation}
+            D_{2} = \frac{f_{2}}{-f_{1}} D_{1} = \frac{25.2}{6.3} \times 1.5 \,\mathrm{mm} = 6.0 \,\mathrm{mm}
+            \label{eq:3.s115}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        在傍轴近似下，样品池中聚焦点位置可以通过二次折射成像公式求得。利用折射成像公式，扩束后的激光束经聚焦物镜进入样品池底部玻璃表面时，首先在样品池底部外表面一次成像，其成像位置 $i_{1}$ 满足
+        \begin{equation}
+            \frac{n_{\mathrm{a}}}{o_{1}} + \frac{n_{\mathrm{g}}}{i_{1}} = \frac{n_{\mathrm{g}} - n_{\mathrm{a}}}{r_{1}}
+            \label{eq:4.s115}
+        \end{equation}
+        式中，$o_{1}$ 为物距，由于底部外表面距离聚焦物镜 $x=2 \,\mathrm{mm}$，聚焦物镜焦距 $f=4.0 \,\mathrm{mm}$，所以 $o_{1}=-2 \,\mathrm{mm}, r_{1}=\infty$，由此得
+        \begin{equation}
+            i_{1} = - \frac{n_{\mathrm{g}}}{n_{\mathrm{a}}} o_{1} = 1.46 \times 2 \,\mathrm{mm} = 2.92 \,\mathrm{mm}
+            \label{eq:5.s115}
+        \end{equation}
+        激光束在样品池底部内表面二次折射成像的位置 $i_{2}$ 满足
+        \begin{equation}
+            \frac{n_{\mathrm{g}}}{o_{2}} + \frac{n_{\mathrm{w}}}{i_{2}} = \frac{n_{\mathrm{w}} - n_{\mathrm{g}}}{r_{2}}
+            \label{eq:6.s115}
+        \end{equation}
+        式中，$o_{2}$ 为物距，在这里相对于底部内表面，$o_{2}=o_{1}-h=2.92-1=1.92 \,\mathrm{mm}$，由于此时物是虚的，所以 $o_{2}$ 取负值，也就是 $o_{2}=-1.92 \,\mathrm{mm}$，$r_{2}=\infty$，由此得
+        \begin{equation}
+            i_{2} = - \frac{n_{\mathrm{w}}}{n_{\mathrm{g}}} o_{2} = \frac{1.33}{1.46} \times 1.92 \,\mathrm{mm} = 1.75 \,\mathrm{mm}
+            \label{eq:7.s115}
+        \end{equation}
+        样品池中聚焦点位置到样品池底部内表面的距离为 $1.75 \,\mathrm{mm}$。
+
+        扩束后激光束直径 $D_{2}=6.0 \,\mathrm{mm}$，经聚焦透镜聚焦于样品池内蒸馏水中时，由几何关系可知，在样品池底部外表面光束直径等于 $D_{2}/2$，在样品内表面光束直径可以表示为
+        \begin{equation}
+            D_{\mathrm{w}} = \frac{D_{2}}{2} \frac{2 n_{\mathrm{g}} - 1}{2 n_{\mathrm{g}}} = 1.97 \,\mathrm{mm}
+            \label{eq:8.s115}
+        \end{equation}
+        液体中激光焦点处光斑的直径为
+        \begin{equation}
+            D_{\mathrm{o2}} = \frac{2 \times 1.22 \lambda}{n_{\mathrm{w}} D_{\mathrm{w}}} i_{2} = \frac{2 \times 1.22 \times 0.6328 \,\mu\mathrm{m}}{1.33 \times 1.97 \,\mathrm{mm}} \times 1.75 \,\mathrm{mm} = 1.03 \,\mu\mathrm{m}
+            \label{eq:9.s115}
+        \end{equation}
+        [或
+        $D_{\mathrm{o2}} = \frac{2 \times 1.22 \lambda}{n_{\mathrm{a}} D_{2}} f = \frac{2 \times 1.22 \times 0.6328 \,\mu\mathrm{m}}{1.0 \times 6.0 \,\mathrm{mm}} \times 4.0 \,\mathrm{mm} = 1.03 \,\mu\mathrm{m}$]
+
+        分别考虑光线在样品池底部内外表面折射对光斑大小影响，光在样品池内外表面的放大倍数分别为
+        \begin{align}
+            V_{1} &= - \frac{n_{a} i_{1}}{n_{g} o_{1}} = \frac{2.92}{1.46 \times 2} = 1 \label{eq:10.s115} \\
+            V_{2} &= - \frac{n_{g} i_{2}}{n_{w} o_{2}} = \frac{1.46 \times 1.75}{1.33 \times 1.92} = 1 \label{eq:11.s115}
+        \end{align}
+        所以样品池底部内外表面折射对聚焦光斑大小的影响实际上可忽略。
+    \end{subsolution}
+    \begin{subsolution}
+        在蒸馏水中，功率为 $P$ 的光束在 $\Delta t$ 时间内携带的动量可以表示为：
+        \begin{equation}
+            p = N \frac{h}{\lambda_{\mathrm{w}}} = \frac{P \Delta t}{h \nu} \frac{n_{\mathrm{w}} h}{\lambda} = \frac{P n_{\mathrm{w}} \Delta t}{c}
+            \label{eq:12.s115}
+        \end{equation}
+        式中 $N$ 是在 $\Delta t$ 时间内通过光束横截面的光子数。光束 $L_{1}$ 的初始动量为：
+        \begin{equation}
+            \boldsymbol{p}_{1i} = \frac{p_{1} n_{\mathrm{w}} \Delta t}{c} \boldsymbol{i}
+            \label{eq:13.s115}
+        \end{equation}
+        这里 $\boldsymbol{i}$ 是 $x$ 轴方向的单位矢量。光束 $L_{2}$ 的初始动量为：
+        \begin{equation}
+            \boldsymbol{p}_{2i} = \frac{p_{2} n_{\mathrm{w}} \Delta t}{c} \boldsymbol{i}
+            \label{eq:14.s115}
+        \end{equation}
+        经小球两次折射后，光束 $L_{1}$ 的动量为：
+        \begin{equation}
+            \boldsymbol{p}_{1f} = \frac{p_{1} n_{\mathrm{w}} \Delta t}{c} \cos 15^{\circ} \boldsymbol{i} + \frac{p_{1} n_{\mathrm{w}} \Delta t}{c} \sin 15^{\circ} \boldsymbol{j}
+            \label{eq:15.s115}
+        \end{equation}
+        经小球两次折射后，光束 $L_{2}$ 的动量为：
+        \begin{equation}
+            \boldsymbol{p}_{2f} = \frac{p_{2} n_{\mathrm{w}} \Delta t}{c} \cos 15^{\circ} \boldsymbol{i} - \frac{p_{2} n_{\mathrm{w}} \Delta t}{c} \sin 15^{\circ} \boldsymbol{j}
+            \label{eq:16.s115}
+        \end{equation}
+        经小球折射后，光束动量的改变为
+        \begin{equation}
+            \begin{aligned}
+                \Delta \boldsymbol{p}_{l} &= (\boldsymbol{p}_{1f} + \boldsymbol{p}_{2f}) - (\boldsymbol{p}_{1i} + \boldsymbol{p}_{2i}) \\
+                &= \frac{(p_{1} + p_{2}) (\cos 15^{\circ} - 1) n_{\mathrm{w}} \Delta t}{c} \boldsymbol{i} + \frac{(p_{1} - p_{2}) \sin 15^{\circ} n_{\mathrm{w}} \Delta t}{c} \boldsymbol{j}
+            \end{aligned}
+            \label{eq:17.s115}
+        \end{equation}
+        小球动量的改变为
+        \begin{equation}
+            \Delta \boldsymbol{p}_{\mathrm{b}} = - \Delta \boldsymbol{p}_{l} = \frac{(p_{1} + p_{2}) (1 - \cos 15^{\circ}) n_{\mathrm{w}} \Delta t}{c} \boldsymbol{i} + \frac{(p_{2} - p_{1}) \sin 15^{\circ} n_{\mathrm{w}} \Delta t}{c} \boldsymbol{j}
+            \label{eq:18.s115}
+        \end{equation}
+        小球受到的光力（光强梯度力）作用：
+        \begin{equation}
+            \begin{aligned}
+                \boldsymbol{F}_{\mathrm{b}} &= \frac{\Delta \boldsymbol{p}_{\mathrm{b}}}{\Delta t} = \frac{(p_{1} + p_{2}) (1 - \cos 15^{\circ}) n_{\mathrm{w}}}{c} \boldsymbol{i} + \frac{(p_{2} - p_{1}) \sin 15^{\circ} n_{\mathrm{w}}}{c} \boldsymbol{j} \\
+                \boldsymbol{F}_{\mathrm{b}} &= (0.45 \boldsymbol{i} + 1.15 \boldsymbol{j}) \times 10^{-12} \,\mathrm{N}
+            \end{aligned}
+            \label{eq:19.s115}
+        \end{equation}
+        在光强梯度力作用下，小球分别受到一个沿 $x$ 正方向和 $y$ 正方向的力。
+
+        小球重力大小为
+        \begin{equation}
+            mg = \frac{4}{3} \pi \left(\frac{D_{\mathrm{b}}}{2}\right)^{3} \rho_{\mathrm{b}} = \frac{4}{3} \times 3.14 \times 1.0 \times 10^{-18} \times 10^{3} \times 9.8 = 4.11 \times 10^{-14} \,\mathrm{N}
+            \label{eq:20.s115}
+        \end{equation}
+        小球在 $x$ 方向和 $y$ 方向所受到的光力与其重力之比分别为：
+        \begin{align}
+            \eta_{x} &= \frac{0.45 \times 10^{-12}}{4.11 \times 10^{-14}} = 10.9 \label{eq:21.s115} \\
+            \eta_{y} &= \frac{1.15 \times 10^{-12}}{4.11 \times 10^{-14}} = 28.0 \label{eq:22.s115}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        在水中，常温（$300 \,\mathrm{K}$）下，小球的平均动能为
+        \begin{equation}
+            E_{k} = \frac{3}{2} k T = 1.5 \times 1.38 \times 10^{-23} \times 300 = 6.21 \times 10^{-21} \,\mathrm{J}
+            \label{eq:23.s115}
+        \end{equation}
+        小球的方均根速率为
+        \begin{equation}
+            v_{p} = \sqrt{\frac{3 k T}{m}} = \sqrt{\frac{3 \times 1.38 \times 10^{-23} \times 300}{4.19 \times 10^{-15}}} = \sqrt{\frac{12.42 \times 10^{-6}}{4.19}} = 1.72 \times 10^{-3} \,\mathrm{m/s}
+            \label{eq:24.s115}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设速率不超过 $v_{m}$ 的小球才能被光势阱捕获，由能量守恒有
+        \begin{equation}
+            \frac{1}{2} m v_{m}^{2} + U_{\min} = 0
+            \label{eq:25.s115}
+        \end{equation}
+        式中
+        \begin{equation}
+            U_{\min} = - U_{0} \left(1 - \frac{y^{2}}{4}\right)_{y=0} = - U_{0}
+            \label{eq:26.s115}
+        \end{equation}
+        由\eqref{eq:25.s115}\eqref{eq:26.s115}式得，最大捕获速度为
+        \begin{equation}
+            v_{m} = \sqrt{\frac{2 U_{0}}{m}} = \sqrt{\frac{2 \times 78 \times 10^{-3} \times 1.6 \times 10^{-19}}{4.19 \times 10^{-15}}} = \sqrt{\frac{24.96 \times 10^{-6}}{4.19}} = 2.44 \times 10^{-3} \,\mathrm{m/s}
+            \label{eq:27.s115}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        聚苯乙烯小球能够被捕获的概率可表示为
+        \begin{equation}
+            P = \int_{0}^{v_{m}} f(v) \mathrm{d} v = \int_{0}^{v_{m}} 4\pi \left(\frac{m}{2\pi k_{\mathrm{B}} T}\right)^{3/2} v^{2} e^{- \frac{m v^{2}}{2 k_{\mathrm{B}} T}} \mathrm{d} v
+            \label{eq:28.s115}
+        \end{equation}
+        设
+        \begin{equation}
+            v_{\mathrm{p}} = \sqrt{\frac{2 k_{\mathrm{B}} T}{m}}
+            \label{eq:29.s115}
+        \end{equation}
+        有
+        \begin{equation}
+            P = \int_{0}^{v_{m}} \frac{4}{\sqrt{\pi}} \left(\frac{v}{v_{\mathrm{p}}}\right)^{2} e^{- \frac{v^{2}}{v_{\mathrm{p}}^{2}}} \mathrm{d} \left(\frac{v}{v_{\mathrm{p}}}\right)
+            \label{eq:30.s115}
+        \end{equation}
+        令 $x = \frac{v}{v_{\mathrm{p}}}$，聚苯乙烯小球被光势阱捕获的概率可表示为
+        \begin{equation}
+            P = \int_{0}^{\sqrt{U_{0} / k T}} \frac{4}{\sqrt{\pi}} x^{2} e^{- x^{2}} \mathrm{d} x
+            \label{eq:31.s115}
+        \end{equation}
+        由\eqref{eq:31.s115}式可知，概率 $P$ 与 $U_{0}$ 和温度 $T$ 有关，而与 $m$ 无关。因此，质量为 $m$ 的聚苯乙烯小球和质量为 $2m$ 的聚苯乙烯小球被光势阱捕获的概率 $P_{m}$ 和 $P_{2m}$ 相等，即
+        \begin{equation}
+            P_{m} = P_{2m}
+            \label{eq:32.s115}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

@@ -1,0 +1,138 @@
+\begin{solution}{113}
+    \begin{subsolution}
+        如解题图 a，地下湖在地面下深度 $d$ 处。设地球的平均密度为 $\rho_{0}$，水的密度为 $\rho_{w}$，地球质量 $M_{\mathrm{E}}$ 和地下湖中水的质量 $M_{\mathrm{w}}$ 分别为
+        \begin{equation}
+            M_{\mathrm{E}} = \frac{4}{3} \pi R_{\mathrm{E}}^{3} \rho_{0}, \quad M_{\mathrm{W}} = \frac{4}{3} \pi r_{\mathrm{W}}^{3} \rho_{\mathrm{W}}
+        \end{equation}
+        设地下湖中没有水时，地面重力加速度大小为 $g_{0}$，由引力定律有
+        \begin{equation}
+            m g_{0} = m G \frac{M_{\mathrm{E}}}{R_{\mathrm{E}}^{2}}
+            \label{eq:1.s113}
+        \end{equation}
+        由 $M_{\mathrm{E}} = \frac{4}{3}\pi R_{\mathrm{E}}^{3}\rho_{0}$ 和\eqref{eq:1.s113}式得
+        \begin{equation}
+            \rho_{0} = \frac{3 g_{0}}{4 \pi R_{\mathrm{E}} G} = 5.51 \times 10^{3} \,\mathrm{kg/m^{3}}
+            \label{eq:2.s113}
+        \end{equation}
+        设地下湖中充满水时，重力加速度大小的改变为 $\Delta g$，同样有
+        \begin{equation}
+            m (g_{0} - \Delta g) = m G \left(\frac{M_{\mathrm{E}}}{R_{\mathrm{E}}^{2}} - \frac{m_{\mathrm{E}}}{d^{2}} + \frac{M_{\mathrm{W}}}{d^{2}}\right)
+            \label{eq:3.s113}
+        \end{equation}
+        由 $M_{\mathrm{E}}$、$M_{\mathrm{W}}$ 和\eqref{eq:1.s113}\eqref{eq:2.s113}\eqref{eq:3.s113}式得
+        \begin{equation}
+            \Delta g = G \frac{\frac{4}{3} \pi r^{3} [\rho_{0} - \rho_{\mathrm{w}}]}{d^{2}} = 5.60 \times 10^{-3} \,\mathrm{m\cdot s^{-2}} = 5.71 \times 10^{-4} g_{0}
+            \label{eq:4.s113}
+        \end{equation}
+        由此可见地下湖水的存在对当地重力加速度的影响很小。
+    \end{subsolution}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            通有电流 $i$ 的单匝线圈（见解题图 b）在过线圈中心的轴上产生的磁场的磁感应强度大小为
+            \begin{equation}
+                B_{z} = \frac{\mu_{0} i R^{2}}{2 (R^{2} + z^{2})^{3/2}}
+            \end{equation}
+            方向沿 $z$ 轴正向（按电流 $i$ 的流向）。
+            在上线圈平面中心附近磁场的磁感应强度 $z$ 分量为上、下两线圈（见题图 a）产生磁场的叠加
+            \begin{equation}
+                \begin{aligned}
+                    B_{z} &= B_{1z} + B_{2z} \\
+                    &= \frac{\mu_{0} \alpha N i_{0} R^{2}}{2 [ R^{2} + (z - R)^{2} ]^{3/2}} + \frac{\mu_{0} N i_{0} R^{2}}{2 (R^{2} + z^{2})^{3/2}} \\
+                    &= \frac{\mu_{0} N i_{0} R^{2}}{2} \left\{f_{1}(z) + f_{2}(z)\right\}
+                \end{aligned}
+                \label{eq:5.s113}
+            \end{equation}
+            上式中 $z - R$ 是一个小量，仅保留在一阶项有
+            \begin{align}
+                f_{1}(z) &= \frac{\alpha}{[ R^{2} + (z - R)^{2} ]^{3/2}} \approx \frac{\alpha}{R^{3}} \label{eq:6.s113} \\
+                f_{2}(z) &= \frac{1}{[ R^{2} + z^{2} ]^{3/2}} \approx \frac{1}{[ 2 (z - R) R + 2 R^{2} ]^{3/2}} \approx \frac{1}{2 \sqrt{2} R^{3}} \left[ 1 - \frac{3}{2 R} (z - R) \right] \label{eq:7.s113}
+            \end{align}
+            于是
+            \begin{equation}
+                \begin{aligned}
+                    B_{z} &= \frac{\mu_{0} N i_{0} R^{2}}{2} \left\{\frac{\alpha}{R^{3}} + \frac{1}{2 \sqrt{2} R^{3}} \left[ 1 - \frac{3}{2 R} (z - R) \right] \right\} \\
+                    &= \frac{\mu_{0} N i_{0}}{2 R} \left[ \left(\alpha + \frac{1}{2 \sqrt{2}}\right) - \frac{3}{4 \sqrt{2} R} (z - R) \right] \\
+                    &= \frac{\mu_{0} N i_{0}}{2 R} \left(\alpha + \frac{1}{2 \sqrt{2}}\right) \left[ 1 - \frac{3}{4 \sqrt{2} R (\alpha + \frac{1}{2 \sqrt{2}})} (z - R) \right] \\
+                    &= B_{0} [ 1 - \beta (z - R) ]
+                \end{aligned}
+                \label{eq:8.s113}
+            \end{equation}
+            式中
+            \begin{align}
+                B_{0} &= \frac{\mu_{0} N i_{0}}{2 R} \left(\alpha + \frac{1}{2 \sqrt{2}}\right) = \frac{\sqrt{2} \mu_{0} N i_{0}}{8 R} (2 \sqrt{2} \alpha + 1) \label{eq:9.s113} \\
+                \beta &= \frac{3}{2 R (2 \sqrt{2} \alpha + 1)} \label{eq:10.s113}
+            \end{align}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            由于超导细环的电阻为零，超导细环向上悬浮过程中，直至平衡在上线圈平面内，其磁通量总是保持不变。设超导细环在平衡位置时的感应电流为 $I_{0}$，有
+            \begin{equation}
+                \varepsilon = - \frac{\Delta \Phi}{\Delta t} = 0
+                \label{eq:11.s113}
+            \end{equation}
+            因而
+            \begin{equation}
+                \Phi = (B_{z})_{z=R} \pi \left(\frac{D}{2}\right)^{2} + L I_{0} = \text{const.}
+                \label{eq:12.s113}
+            \end{equation}
+            由初始条件
+            \begin{equation}
+                t = 0, z = 0, I = 0, \Phi = 0
+            \end{equation}
+            和\eqref{eq:8.s113}式可知
+            \begin{equation}
+                L I_{0} = - B_{0} \pi \left(\frac{D}{2}\right)^{2}
+                \label{eq:13.s113}
+            \end{equation}
+            由\eqref{eq:13.s113}式得
+            \begin{equation}
+                I_{0} = - \frac{1}{4 L} \pi D^{2} B_{0} = - \frac{\mu_{0} N i_{0} \pi D^{2}}{8 R L} \left[ \alpha + \frac{1}{2 \sqrt{2}} \right]
+                \label{eq:14.s113}
+            \end{equation}
+            负号表示超导细环中电流与超导线圈电流方向相反。
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            当超导细环在上线圈平面（$z=R$）内静止时，径向磁场对其施加的向上的安培力正好与其重力平衡，即
+            \begin{equation}
+                m g = |I_{0}| B_{r} \pi D
+                \label{eq:15.s113}
+            \end{equation}
+            由题给条件和\eqref{eq:14.s113}\eqref{eq:9.s113}式得
+            \begin{equation}
+                \begin{aligned}
+                    g &= \frac{\frac{1}{4 L} \pi D^{2} B_{0} \cdot \frac{1}{2} B_{0} \cdot \beta \frac{D}{2} \cdot \pi D}{m} = \frac{\beta \pi^{2} D^{4} B_{0}^{2}}{16 L m} \\
+                    &= \frac{\frac{3}{2 R (2 \sqrt{2} \alpha + 1)} \pi^{2} D^{4} \frac{\mu_{0}^{2} N^{2} i_{0}^{2}}{4 R^{2}} (\alpha + \frac{1}{2 \sqrt{2}})^{2}}{16 L m} \\
+                    &= \frac{3 \pi^{2} D^{4} \mu_{0}^{2} N^{2} i_{0}^{2}}{256 \sqrt{2} L m R^{3}} \left(\alpha + \frac{1}{2 \sqrt{2}}\right)
+                \end{aligned}
+                \label{eq:16.s113}
+            \end{equation}
+            由此可见，只要已知准 Helmhotz 超导线圈和悬浮的超导环参数，通过测量 $i_{0}$ 就可测得该地的重力加速度 $g_{0}$。
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        当地面重力加速度大小为 $g$ 时，磁悬浮力与超导细环重力 $mg$ 平衡，超导细环处在上线圈平面内 $(z_{0}=R)$。上极板对超导“平板”、下极板对超导“平板”的吸引力相互抵消，此时加在两个电容上的电压均为 $V_{C}$。假设上极板与下极板之间的距离为 $d$，超导“平板”与下极板之间距离为 $x$，超导“平板”受到上下两极板的吸引力之差为
+        \begin{equation}
+            F = \frac{1}{2} \varepsilon_{0} A V_{C}^{2} \left[ \frac{1}{(d - x)^{2}} - \frac{1}{x^{2}} \right]
+        \end{equation}
+        当 $x = \frac{d}{2}$ 时，有
+        \begin{equation}
+            F_{x = d/2} = 0
+            \label{eq:17.s113}
+        \end{equation}
+        当重力加速度变化 $\Delta g$ 时，超导“平板”会受到一个多余的向下的重力 $m\Delta g$，为了使超导“平板”在交流电桥平衡位置 $\left(x=\frac{d}{2}\right)$ 重新达到力学平衡，在两个电容器 $C_{1}$ 和 $C_{2}$ 上反向施加电压 $\Delta V$，使超导“平板”受到上极板的吸引力大于下极板吸引力，其差值为
+        \begin{equation}
+            F = \frac{1}{2} \varepsilon_{0} A \left[ \frac{(V_{C} + \Delta V)^{2}}{(d - x)^{2}} - \frac{(V_{C} - \Delta V)^{2}}{x^{2}} \right]
+            \label{eq:18.s113}
+        \end{equation}
+        在 $x = \frac{d}{2}$，超导“平板”重新达到力学平衡时有
+        \begin{equation}
+            F = \frac{1}{2} \frac{\varepsilon_{0} A}{\left(\frac{d}{2}\right)^{2}} 4 V_{C} \Delta V = \frac{8 \varepsilon_{0} A}{d^{2}} V_{C} \Delta V = m \Delta g
+            \label{eq:19.s113}
+        \end{equation}
+        于是
+        \begin{equation}
+            \Delta g = \frac{8 \varepsilon_{0} A}{m d^{2}} V_{C} \Delta V
+            \label{eq:20.s113}
+        \end{equation}
+        通过测量 $V_{C}$ 和 $\Delta V$ 即可获得重力加速度的微小变化 $\Delta g$。
+    \end{subsolution}
+\end{solution}

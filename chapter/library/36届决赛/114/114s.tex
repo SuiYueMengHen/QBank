@@ -1,0 +1,143 @@
+\begin{solution}{114}
+    \begin{subsolution}
+        按题设，假设空气可视为理想气体，由理想气体状态方程有
+        \begin{equation}
+            PV = \nu RT
+            \label{eq:1.s114}
+        \end{equation}
+        其中，$(p, V, T)$ 为气体的一组状态参量，分别表示气体的压强、体积和温度；$m$ 和 $M$ 分别为气体的质量和摩尔质量，$\nu = \frac{m}{M}$ 是气体的摩尔数。此状态下气体的密度为
+        \begin{equation}
+            \rho = \frac{m}{V} = \frac{p M}{R T}
+            \label{eq:2.s114}
+        \end{equation}
+        由\eqref{eq:2.s114}式可算得空气处于初始状态 $(p_{0},V_{0}^{\prime},T_{0})$ 的密度
+        \begin{equation}
+            \rho_{0} = \frac{p_{0} M}{R T_{0}} = \frac{1.01 \times 10^{5} \times 29.0 \times 10^{-3}}{8.31 \times 288.15} = 1.22 \,\mathrm{kg/m^{3}}
+            \label{eq:3.s114}
+        \end{equation}
+        初始状态 $(p_{0},V_{0}^{\prime},T_{0})$ 的空气经过涡轮增压器后，状态变为 $(p_{1},V_{1},T_{1})$，密度变为 $\rho_{1}$；经中间冷却器等压降温后，状态变为 $(p_{2}=p_{1},V_{2}=V_{0},T_{2}=T_{0})$。气缸中空气的质量为
+        \begin{equation}
+            \begin{aligned}
+                m_{1} &= \rho_{1} V_{1} = \frac{p_{1} M}{R T_{1}} V_{1} = \frac{p_{1} M}{R T_{0}} V_{0} = \frac{p_{1}}{p_{0}} \rho_{0} V_{0} \\
+                &= \frac{1.45 \times 10^{5}}{1.01 \times 10^{5}} \times 1.22 \times 400 \times 10^{-6} \,\mathrm{kg} = 0.703 \times 10^{-3} \,\mathrm{kg}
+            \end{aligned}
+            \label{eq:4.s114}
+        \end{equation}
+        推导中应用了等压过程方程 $\frac{V_{1}}{T_{1}}=\frac{V_{0}}{T_{0}}$ 和\eqref{eq:3.s114}式。若不经过涡轮增压器和中间冷却器两个步骤，直接把外界空气压入气缸中，
+        \begin{equation}
+            m_{0} = \rho_{0} V_{0} = 1.22 \times 400 \times 10^{-6} \,\mathrm{kg} = 0.490 \times 10^{-3} \,\mathrm{kg}
+            \label{eq:5.s114}
+        \end{equation}
+        气缸的输出功率增加到的倍数为
+        \begin{equation}
+            R_{1} = \frac{\frac{m_{1}}{V_{0}}}{\frac{m_{0}}{V_{0}}} = \frac{m_{1}}{m_{0}} = \frac{0.703 \times 10^{-3}}{0.490 \times 10^{-3}} = 1.43
+            \label{eq:6.s114}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        不经过中间冷却器，直接使用经涡轮增压器压缩后的空气。此时，空气的温度已经升高至 $T_{1}$，相应的体积为变为 $V_{1}$，利用绝热过程方程，
+        \begin{equation}
+            PV^{\gamma} = \text{const.}
+            \label{eq:7.s114}
+        \end{equation}
+        和\eqref{eq:1.s114}式，可求出气体在此状态 $(p_{1}, V_{1}, T_{1})$ 下的温度和体积
+        \begin{equation}
+            T_{1} = T_{0} \left(\frac{p_{1}}{p_{0}}\right)^{(\gamma - 1)/\gamma}
+            \label{eq:8.s114}
+        \end{equation}
+        \begin{equation}
+            V_{1} = \frac{n R T_{1}}{p_{1}} = \frac{n R}{p_{1}} T_{0} \left(\frac{p_{1}}{p_{0}}\right)^{(\gamma - 1)/\gamma}
+            \label{eq:9.s114}
+        \end{equation}
+        再利用\eqref{eq:2.s114}式，该状态下的空气密度 $\rho_{1}$ 为
+        \begin{equation}
+            \rho_{1} = \rho_{0} \left(\frac{T_{0}}{T_{1}}\right) \left(\frac{p_{1}}{p_{0}}\right) = \rho_{0} \left(\frac{p_{1}}{p_{0}}\right)^{(1 - \gamma)/\gamma} \left(\frac{p_{1}}{p_{0}}\right) = \rho_{0} \left(\frac{p_{1}}{p_{0}}\right)^{1/\gamma}
+            \label{eq:10.s114}
+        \end{equation}
+        相应地，输入到气缸中的空气质量为
+        \begin{equation}
+            m_{1}^{\prime} = \rho_{1} V_{0} = 1.22 \times \left(\frac{1.45 \times 10^{5}}{1.01 \times 10^{5}}\right)^{5/7} \times 400 \times 10^{-6} \,\mathrm{kg} = 0.632 \times 10^{-3} \,\mathrm{kg}
+            \label{eq:11.s114}
+        \end{equation}
+        气缸的输出功率增加到的倍数为
+        \begin{equation}
+            R_{2} = \frac{\rho_{1}}{\rho_{0}} = \frac{m_{1}^{\prime}}{m_{0}} = \left(\frac{1.45 \times 10^{5}}{1.01 \times 10^{5}}\right)^{5/7} = 1.295 = 1.30
+            \label{eq:12.s114}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        分别考虑气体经过涡轮增压器和中间冷却器两个过程中外界对气体所做的功。涡轮增压为绝热压缩过程，从\eqref{eq:4.s114}式得，进入涡轮增压器的空气摩尔数为，
+        \begin{equation}
+            \nu = \frac{m_{1}}{M} = \frac{0.703}{29.0} = 0.02424 \,\mathrm{mol}
+            \label{eq:13.s114}
+        \end{equation}
+        据题设，$\gamma=\frac{7}{5}$，故
+        \begin{equation}
+            \gamma = \frac{C_{p}}{C_{V}} = \frac{C_{V} + R}{C_{V}} = \frac{7}{5}, \quad C_{V} = \frac{5}{2} R
+            \label{eq:14.s114}
+        \end{equation}
+        式中 $C_{V}$ 和 $C_{p}$ 分别表示气体的定容摩尔热容量和定压摩尔热容量。由\eqref{eq:14.s114}式可知，空气为双原子分子混合物。对于绝热过程，由热力学第一定律有
+        \begin{equation}
+            \Delta Q = \Delta U + A = 0,
+            \label{eq:15.s114}
+        \end{equation}
+        此绝热压缩过程中外界做功 $W_{1}$ 为
+        \begin{equation}
+            W_{1} = - A = \Delta U = \nu C_{\mathrm{v}} (T_{1} - T_{0})
+            \label{eq:16.s114}
+        \end{equation}
+        由\eqref{eq:8.s114}\eqref{eq:16.s114}式和相关数据得
+        \begin{equation}
+            W_{1} = 0.02424 \times \frac{5}{2} \times 8.31 \times 288.00 \times \left(\left(\frac{1.45 \times 10^{5}}{1.01 \times 10^{5}}\right)^{0.40/1.40} - 1\right) \,\mathrm{J} = 15.78 \,\mathrm{J}
+            \label{eq:17.s114}
+        \end{equation}
+        [另一种解法：
+        直接由功的定义式 $\int P\mathrm{d}V$ 和绝热过程方程 $pV^{\gamma} = \text{const.}$，得
+        \begin{equation}
+            \begin{aligned}
+                W_{1} &= - \int_{p_{0}}^{p_{1}} p \mathrm{d} V = \frac{1}{\gamma} \int_{p_{0}}^{p_{1}} V \mathrm{d} p = \frac{p_{1}^{\frac{1}{\gamma}} V_{1}}{\gamma} \int_{p_{0}}^{p_{1}} p^{- \frac{1}{\gamma}} \mathrm{d} p \\
+                &= \frac{p_{1}^{\frac{1}{\gamma}} V_{1}}{\gamma} \left(\frac{\gamma}{\gamma - 1}\right) \left(p_{1}^{\frac{\gamma - 1}{\gamma}} - p_{0}^{\frac{\gamma - 1}{\gamma}}\right) = \frac{p_{1}^{\frac{1 - \gamma}{\gamma}} n R T_{1}}{\gamma} \left(\frac{\gamma}{\gamma - 1}\right) \left(p_{1}^{\frac{\gamma - 1}{\gamma}} - p_{0}^{\frac{\gamma - 1}{\gamma}}\right)
+            \end{aligned}
+        \end{equation}
+        将\eqref{eq:8.s114}式的 $T_{1}$ 代入上式得
+        \begin{equation}
+            W_{1} = \left(\frac{\nu R T_{0}}{\gamma - 1}\right) \left(\frac{1}{p_{0}}\right)^{\frac{\gamma - 1}{\gamma}} \left(p_{1}^{\frac{\gamma - 1}{\gamma}} - p_{0}^{\frac{\gamma - 1}{\gamma}}\right) = \left(\frac{\nu R T_{0}}{\gamma - 1}\right) \left[ \left(\frac{p_{1}}{p_{0}}\right)^{\frac{\gamma - 1}{\gamma}} - 1 \right]
+            \label{eq:18.s114}
+        \end{equation}
+        代入相关数据得 $W_{1} = 15.78 \,\mathrm{J}$。]
+
+        气体经过中间冷却器的过程是等压降温过程，外界对气体的做功为
+        \begin{equation}
+            W_{2} = - p_{1} (V_{0} - V_{1})
+            \label{eq:19.s114}
+        \end{equation}
+        其中，$V_{1}$ 由\eqref{eq:9.s114}式确定
+        \begin{equation}
+            V_{1} = \frac{\nu R}{p_{1}} T_{0} \left(\frac{p_{1}}{p_{0}}\right)^{\frac{\gamma - 1}{\gamma}} = \frac{0.02424 \times 8.31 \times 288.0}{1.45 \times 10^{5}} \times 1.1088 \,\mathrm{m^{3}} = 4.436 \times 10^{-4} \,\mathrm{m^{3}}
+            \label{eq:20.s114}
+        \end{equation}
+        将\eqref{eq:20.s114}式代入\eqref{eq:19.s114}式，并利用相关数据得
+        \begin{equation}
+            W_{2} = - 1.45 \times 10^{5} \times (4.000 \times 10^{-4} - 4.436 \times 10^{-4}) \,\mathrm{J} = 6.32 \,\mathrm{J}
+            \label{eq:21.s114}
+        \end{equation}
+        从而，经过涡轮增压器（绝热压缩过程）和中间冷却器（等压降温过程）两个过程，外界对气体做的总功为，
+        \begin{equation}
+            W = W_{1} + W_{2} = 15.78 \,\mathrm{J} + 6.32 \,\mathrm{J} = 22.1 \,\mathrm{J}
+            \label{eq:22.s114}
+        \end{equation}
+        气体经过涡轮增压器（绝热压缩过程）的熵变为
+        \begin{equation}
+            \Delta S_{1} = \int_{\text{绝热}} \frac{\mathrm{d} Q}{T} = 0
+            \label{eq:23.s114}
+        \end{equation}
+        气体经过中间冷却器（等压降温过程）的熵变为
+        \begin{equation}
+            \Delta S_{2} = \int_{\text{冷却}} \frac{\mathrm{d} Q}{T} = \int_{T_{1}}^{T_{0}} \frac{\nu C_{\mathrm{p}} \mathrm{d} T}{T} = \nu C_{\mathrm{p}} \ln \frac{T_{0}}{T_{1}} = - \frac{7 \nu R}{2} \frac{\gamma - 1}{\gamma} \ln \frac{p_{1}}{p_{0}} = - \nu R \ln \frac{p_{1}}{p_{0}} = - 0.07284 \,\mathrm{J/K}
+            \label{eq:24.s114}
+        \end{equation}
+        [另一种算法：
+        $\Delta S_{2} = \int_{\text{绝热} + \text{冷却}} \frac{\mathrm{d} Q}{T} = \int_{\text{等温}} \frac{p \mathrm{d} V}{T} = \int_{V_{0}^{\prime}}^{V_{0}} \frac{\nu R \mathrm{d} V}{V} = - \nu R \ln \frac{V_{0}^{\prime}}{V_{0}} = - \nu R \ln \frac{p_{1}}{p_{0}} = - 0.07284 \,\mathrm{J/K}$
+        推导中应用了等温过程方程 $p_{0}V_{0}^{\prime} = p_{2}V_{2} = p_{1}V_{0}$。]
+    \end{subsolution}
+\end{solution}

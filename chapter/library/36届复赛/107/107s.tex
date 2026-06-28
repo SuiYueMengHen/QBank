@@ -1,0 +1,108 @@
+\begin{solution}{107}
+\begin{subsolution}
+由理想气体状态方程有
+\begin{equation}
+p V = \frac{M}{M_{\mathrm{mol}}} R T
+\label{eq:1.s107}
+\end{equation}
+式中，$p$、$V$ 和 $T$ 分别为空气的压强、体积和（绝对）温度，$M$ 和 $M_{\mathrm{mol}}$ 分别为空气总质量和摩尔质量。由\eqref{eq:1.s107}式得空气密度为
+\[
+\rho = \frac{M}{V} = \frac{M_{\mathrm{mol}} p}{R T}
+\]
+在标准状态下（以下标“标”表示）有
+\begin{equation}
+\rho_{\text{标}} = \frac{M_{\mathrm{mol}} p_{\text{标}}}{R T_{\text{标}}} = 1.29\,\mathrm{kg/m^{3}}
+\label{eq:2.s107}
+\end{equation}
+理想气体的绝热过程满足
+\[
+p V^{\gamma} = \text{常量}
+\]
+式中 $\gamma$ 是热容比。对上式两边微分得
+\begin{equation}
+\Delta p V^{\gamma} + \gamma p V^{\gamma-1} \Delta V = 0
+\label{eq:3.s107}
+\end{equation}
+由\eqref{eq:3.s107}式可得，空气的体积弹性模量为
+\begin{equation}
+\kappa = - V \frac{\Delta p}{\Delta V} = \gamma p
+\label{eq:4.s107}
+\end{equation}
+声波在空气中的传播速度为
+\[
+v_{\mathrm{s}} = \sqrt{\frac{\kappa}{\rho}} = \sqrt{\frac{\gamma p}{\rho}}
+\]
+在标准状态下有
+\begin{equation}
+v_{\mathrm{s标}} = \sqrt{\frac{\gamma p_{\text{标}}}{\rho_{\text{标}}}} = 331\,\mathrm{m/s}
+\label{eq:5.s107}
+\end{equation}
+\end{subsolution}
+
+\begin{subsolution}
+细管内的空气柱的质量为
+\begin{equation}
+m = \rho S l
+\label{eq:6.s107}
+\end{equation}
+细管中的空气柱的运动是由外界压力与容器内的压力之差所引起的。设这部分空气柱运动的位移为 $x$（向外为正），容器内的空气体积的改变为
+\begin{equation}
+\Delta V = S x
+\label{eq:7.s107}
+\end{equation}
+容器内气体压力的变化满足绝热过程，由\eqref{eq:3.s107}式有
+\begin{equation}
+\Delta p = - \frac{\gamma p \Delta V}{V}
+\label{eq:8.s107}
+\end{equation}
+相应地，对于细管内运动着的空气柱的作用力为
+\begin{equation}
+F = S \Delta p = - \frac{\gamma p S^{2} x}{V}
+\label{eq:9.s107}
+\end{equation}
+从而，细管内空气柱的运动方程可写为
+\begin{equation}
+- \frac{\gamma p S^{2}}{V} x = m \ddot{x} = \rho S l \ddot{x}
+\label{eq:10.s107}
+\end{equation}
+\eqref{eq:10.s107}式可写成
+\begin{equation}
+\ddot{x} = - \omega^{2} x
+\label{eq:11.s107}
+\end{equation}
+这是简谐振动的方程，$\omega$ 是简谐振动的圆频率
+\begin{equation}
+\omega = \sqrt{\frac{\gamma p S}{\rho l V}}
+\label{eq:12.s107}
+\end{equation}
+将 $v_{\mathrm{s}} = \sqrt{\frac{\gamma p}{\rho}}$ 代入\eqref{eq:10.s107}式得，所述亥姆霍兹共振器吸收声波的频率为
+\begin{equation}
+f_{0} = \frac{\omega}{2\pi} = \frac{v_{\mathrm{s}}}{2\pi} \sqrt{\frac{S}{l V}} = \frac{v_{\mathrm{s}}}{2\pi} \sqrt{\frac{S}{l V_{0}}}
+\label{eq:13.s107}
+\end{equation}
+上式最后一步利用了单个微孔后的空气腔体体积为 $V = V_{0}$.
+\end{subsolution}
+
+\begin{subsolution}
+按题设，两种需要通过所述亥姆霍兹共振器吸收声波的频率 $f_{01}$ 和 $f_{02}$ 之比为
+\begin{equation}
+\frac{f_{01}}{f_{02}} = \frac{120\,\mathrm{Hz}}{200\,\mathrm{Hz}} = 0.60
+\label{eq:14.s107}
+\end{equation}
+由\eqref{eq:13.s107}式可得
+\begin{equation}
+f_{01} = \frac{v_{\mathrm{s}}}{2\pi} \sqrt{\frac{S_{1}}{l V_{0}}},\quad f_{02} = \frac{v_{\mathrm{s}}}{2\pi} \sqrt{\frac{S_{2}}{l V_{0}}}
+\label{eq:15.s107}
+\end{equation}
+式中，$S_{1}$ 和 $S_{2}$ 是相应的上述亥姆霍兹共振器的微孔的横截面积。由\eqref{eq:15.s107}式有
+\begin{equation}
+\frac{\sqrt{S_{1}}}{\sqrt{S_{2}}} = \frac{f_{01}}{f_{02}}
+\label{eq:16.s107}
+\end{equation}
+即
+\begin{equation}
+\frac{S_{1}}{S_{2}} = \left(\frac{f_{01}}{f_{02}}\right)^{2} = 0.36
+\label{eq:17.s107}
+\end{equation}
+\end{subsolution}
+\end{solution}

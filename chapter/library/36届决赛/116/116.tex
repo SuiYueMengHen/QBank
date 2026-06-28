@@ -1,0 +1,91 @@
+\begin{problem}[第36届全国中学生物理竞赛决赛][构建太阳模型]{116}
+    仰望星空可以激发人们无限的想象。随着科学与技术的进步，人们对宇宙的认识不断加深，随着中微子丢失之谜的破解，引力波的直接探测，以及近期黑洞照片的拍摄，引起了大众对探索宇宙的广泛兴趣。人类是如何利用有限设备观察研究浩瀚的宇宙以及宇宙重要组成部分——恒星的呢？具有高中物理基础的公众是否有可能定量理解恒星的内外性质，如大小、质量、年龄、寿命、组成部分、产能机制等等？本题以我们赖以生存的恒星——太阳为例，按照历史脉络，试从简单到复杂构建起太阳模型。由于不能直接观察太阳内部，所建的模型需要多角度的检验，如年龄、半径、表面温度、能量输出、中微子通量等等，都需要在同一个模型下相互自洽。
+
+    已知地球半径为 $6370 \,\mathrm{km}$，万有引力常量 $G=6.67\times10^{-11} \,\mathrm{N\cdot m^{2}\cdot kg^{-2}}$，斯忒藩-玻尔兹曼常量 $\sigma=5.67\times10^{-8} \,\mathrm{W\cdot m^{-2}\cdot K^{-4}}$，玻尔兹曼常量 $k_{B}=1.38\times10^{-23} \,\mathrm{J\cdot K^{-1}}$，电子电量 $e=1.602\times10^{-19} \,\mathrm{C}$，电子质量 $m_{e}=0.51 \,\mathrm{MeV}/c^{2}$，质子质量 $m_{p}=938.3 \,\mathrm{MeV}/c^{2}$，氘核质量 $m_{D}=1875.6 \,\mathrm{MeV}/c^{2}$，$^{3}\mathrm{He}$核质量 $m_{3He}=2808.4 \,\mathrm{MeV}/c^{2}$，$^{4}\mathrm{He}$核质量 $m_{4He}=3727.5 \,\mathrm{MeV}/c^{2}$，光在真空中的速度 $c=3.00\times10^{8} \,\mathrm{m\cdot s^{-1}}$。
+    \begin{subproblem}
+        成书于两千多年前的《周髀算经》（原名《周髀》）介绍了测量太阳直径 $D$ 与日地距离 $S_{\text{日地}}$（也称 1 个天文单位）比值的方法：取一根长竹竿，凿去竹节使其内部贯通，竹竿的内直径为 $d$。用这根竹竿对准太阳，改变竹竿长度 $L$，使太阳盘面刚好充满竹竿内管。
+        \begin{subsubproblem}
+            给出太阳视角（$\Phi=D/S_{\text{日地}}$）与 $d$ 和 $L$ 的关系；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            为了减少误差需要 $L$ 足够长，此外还有哪些方法可以减少误差？
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            测得 $d=1$ 寸，$L=8$ 尺 ($10$ 寸为一尺)，试估算 $\Phi$ 的值。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        在某些特殊时间（如 2012 年 6 月 6 日），地球、金星和太阳几乎在一条直线上，这时从地球上观测，金星就像一个小黑点镶嵌在太阳盘面上，并缓慢移动，这称为金星凌日，如图 a 所示。英国天文学家哈雷曾在 1716 年建议在世界各地联合观察金星凌日以测量太阳视角和日地距离。已知地球和金星同向绕日公转周期分别为 $365.256$ 天和 $224.701$ 天，各自的轨道平面之间的倾角很小。不考虑地球自转。
+        \begin{subsubproblem}
+            地球和金星的公转轨道均可视为圆，求日金距离 $S_{\text{日金}}$ 与日地距离 $S_{\text{日地}}$ 之比 $r_{\mathrm{VE}}$；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            2012年6月6日，某地观察到金星凌日现象如图a，试计算金星凌日扫过太阳盘面弦长 $D_{p}$ 与日地距离 $S_{\text{日地}}$ 的比值；若此弦与盘面圆心之间的距离是 $h_{p}=5D/16$，则太阳视角 $\Phi$ 为多少？
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            为了测量日地距离需要在地球表面不同地点分别观察金星凌日现象，如图b所示。假设在地面同一经度上直线距离（在垂直于观测方向上的投影）为 $H$ 的两位观察者 $P$ 和 $P'$ 同时观察金星凌日现象，对于 $P$ 而言，金星在太阳盘面上的运动轨迹为 $AB$，观察到的金星凌日时间（金星中心扫过太阳盘面的时间间隔）为 $t_{p}$；而对于 $P'$ 而言，金星在太阳盘面上的运动轨迹为 $A'B'$，观察到的金星凌日时间为 $t_{p'}$。试求日地距离 $S_{\text{日地}}$ 的表达式（用 $\Phi$、$r_{\mathrm{VE}}$、$T_{\text{地}}$、$T_{\text{金}}$、$t_{p}$、$t_{p'}$ 和 $H$ 等表示）。
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            已知北京和香港的纬度分别为 $39.5^{\circ}$ 和 $22.5^{\circ}$，2012年6月6日北京和香港的金星凌日时间分别为 $t_{\mathrm{P}} = 6:21:57$ 和 $t_{\mathrm{P}'} = 6:19:31$，试以此数据，利用上一小题的结论，计算日地距离 $S_{\text{日地}}$。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        1882 年的金星凌日观测结果得出平均日地距离 $S_{\text{日地}} = 1.5 \times 10^{8} \,\mathrm{km}$，太阳直径 $D = 1.4 \times 10^{6} \,\mathrm{km}$。地球在垂直于太阳辐射方向上接收到的太阳辐射照度 $I = 1.37 \,\mathrm{kW} \cdot \mathrm{m}^{-2}$。求
+        \begin{subsubproblem}
+            单位时间内，地球从太阳接收到的总能量；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            全球 70 亿人口消耗掉的能源与地球接收到的太阳能量之比（按人均年消耗能源 3 吨标准煤，1kg 标准煤可以发电 4 度电计算）；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            太阳单位时间辐射的总能量；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            估算太阳表面温度。
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        \begin{subsubproblem}
+            计算太阳的总质量与平均密度；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            若太阳能源来自化学反应，设单位质量放出的能量与煤相当，则以太阳现在单位时间辐射的能量计算，可以持续多久？太阳作为恒星存在约50亿年以上，那么其产能效率应该是化学反应效率的多少倍？
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        通过光谱分析可知太阳的主要成分是氢，涉及氢的基本核聚变反应式如下
+        \begin{align}
+            P + P &\rightarrow D + e^{+} + \nu_{e} \tag{a}\\
+            D + P &\rightarrow {}^{3}\mathrm{He} + \gamma \tag{b}\\
+            {}^{3}\mathrm{He} + {}^{3}\mathrm{He} &\rightarrow {}^{4}\mathrm{He} + P + P \tag{c}
+        \end{align}
+        上述核聚变反应过程中产生的正电子将会湮灭，中微子将逃逸；原子核均带正电，相互排斥，只有温度很高时，其动能有可能克服库仑排斥力，从而实现聚变反应。当温度足够高时，所有原子均电离成了原子核和电子，处于等离子体状态。（在此不考虑中微子带走的能量，也不考虑由于太阳风带走的未聚变的氢。）
+        \begin{subsubproblem}
+            要维持太阳的辐射，单位时间需要消耗多少个质子（氢核）？
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            现在太阳质量的 71% 是氢，按照此消耗速率，最多还可以维持多少年？并计算单位时间质子-质子的反应概率（单位时间反应的粒子数与总粒子数之比）$P_{pp}$；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            逃逸出的中微子的数目在传播过程中不会减少，单位时间在垂直于太阳辐射方向上单位面积内有多少中微子到达地球？（实际到达地球的电子中微子数量只有理论值的35%，但加上另外二类中微子的数量，则与理论值相符，表明有部分电子中微子在传播过程中转换成为其他类中微子，这与中微子振荡有关，相关成果获2002年和2015年诺贝尔物理学奖。）
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            单位时间太阳由于辐射减少多少质量？
+        \end{subsubproblem}
+    \end{subproblem}
+    \begin{subproblem}
+        聚变反应的概率 $P$ 与等离子体的温度 $T$ 有关，且粒子数密度（单位体积中的粒子数）$n$ 越高反应概率越高，有关系式 $P = nR(T)$，其中 $R(T)$ 称为反应率。图c给出了三种聚变的反应率与温度的关系，试估算能够产生核聚变反应的太阳核心区域（其半径约为太阳半径的四分之一）温度下限。
+    \end{subproblem}
+    \begin{subproblem}
+        估算单个中微子带走的最大能量，并估计第 5）小题由于忽略中微子带走的能量所造成的辐射能量计算的最大相对误差？
+    \end{subproblem}
+    \begin{subproblem}
+        从前面的计算可知，太阳的质量逐渐减少，那么地球绕太阳公转的周期和平均轨道半径也将变化，试计算
+        \begin{subsubproblem}
+            一亿年内由于辐射引起的质量减少量 $\Delta M$；
+        \end{subsubproblem}
+        \begin{subsubproblem}
+            由此引起的地球公转周期的变化量。
+        \end{subsubproblem}
+    \end{subproblem}
+\end{problem}
