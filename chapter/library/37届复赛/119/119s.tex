@@ -1,0 +1,125 @@
+\begin{solution}{119}
+    \begin{subsolution}
+        左侧回路电势之和为零，有
+        \begin{equation}
+            R i(t) + L \dot{i}(t) + \frac{1}{C} \int_{0}^{t} i(t') dt' + (-R_{0}) i(t) = 0
+            \label{eq:1.s119}
+        \end{equation}
+        题给的 $i(t)$ 的一般形式是
+        \begin{equation}
+            i(t) = \alpha_{1} e^{\beta_{1} t} + \alpha_{2} e^{\beta_{2} t}
+            \label{eq:2.s119}
+        \end{equation}
+        由初始条件有
+        \begin{equation}
+            \left\{ \begin{array}{l} i(0) = \alpha_{1} + \alpha_{2} = 0 \\ i'(0) = \alpha_{1} \beta_{1} + \alpha_{2} \beta_{2} = \beta \end{array} \right.
+            \label{eq:3.s119}
+        \end{equation}
+        由 \eqref{eq:3.s119} 式知
+        \begin{equation}
+            \alpha_{1} \neq 0, \alpha_{2} \neq 0.
+            \label{eq:4.s119}
+        \end{equation}
+        将 \eqref{eq:2.s119} 式代入 \eqref{eq:1.s119} 式得
+        \begin{align}
+            & (R - R_{0}) (\alpha_{1} e^{\beta_{1} t} + \alpha_{2} e^{\beta_{2} t}) + L \frac{\mathrm{d}}{\mathrm{d} t} (\alpha_{1} e^{\beta_{1} t} + \alpha_{2} e^{\beta_{2} t}) \nonumber \\
+            & + \frac{1}{C} \int_{0}^{t} (\alpha_{1} e^{\beta_{1} t'} + \alpha_{2} e^{\beta_{2} t'}) dt' = 0
+        \end{align}
+        得
+        \begin{align}
+            \alpha_{1} \left[ (R - R_{0}) + L \beta_{1} + \frac{1}{C \beta_{1}} \right] e^{\beta_{1} t} & + \alpha_{2} \left[ (R - R_{0}) + L \beta_{2} + \frac{1}{C \beta_{2}} \right] e^{\beta_{2} t} \nonumber \\
+            & = \frac{1}{C} \left(\frac{\alpha_{1}}{\beta_{1}} + \frac{\alpha_{2}}{\beta_{2}}\right)
+        \end{align}
+        两边对 $t$ 微商得
+        \begin{align}
+            \alpha_{1} \left[ L \beta_{1}^{2} + (R - R_{0}) \beta_{1} + \frac{1}{C} \right] e^{\beta_{1} t} + \alpha_{2} \left[ L \beta_{2}^{2} + (R - R_{0}) \beta_{2} + \frac{1}{C} \right] e^{\beta_{2} t} = 0
+        \end{align}
+        不失普遍性，可设 $\beta_{1} \neq \beta_{2}$（因为 $\beta_{1} = \beta_{2}$ 可视为 $\beta_{1} \neq \beta_{2}$ 但 $\beta_{1} \rightarrow \beta_{2}$ 的极限情形）。上式对任意的时刻 $t$ 都等于零；因而，各指数项的系数均应为零，即
+        \begin{equation}
+            \left\{ \begin{array}{l} L \beta_{1}^{2} + (R - R_{0}) \beta_{1} + \frac{1}{C} = 0, \\ L \beta_{2}^{2} + (R - R_{0}) \beta_{2} + \frac{1}{C} = 0. \end{array} \right.
+            \label{eq:5.s119}
+        \end{equation}
+        解得
+        \begin{equation}
+            \left\{ \begin{array}{l} \beta_{1} = \beta_{+} = -\frac{R - R_{0}}{2L} + \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}} \\ \beta_{2} = \beta_{-} = -\frac{R - R_{0}}{2L} - \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}} \end{array} \right.
+            \label{eq:6.s119}
+        \end{equation}
+        另一种选择 $\beta_{1} = \beta_{-}$、$\beta_{2} = \beta_{+}$ 导致同样的结果。由 \eqref{eq:3.s119} \eqref{eq:6.s119} 式得
+        \begin{equation}
+            \alpha_{1} = \frac{\beta}{2 \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}}}, \quad \alpha_{2} = \frac{-\beta}{2 \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}}}
+            \label{eq:7.s119}
+        \end{equation}
+        由 \eqref{eq:2.s119} \eqref{eq:6.s119} \eqref{eq:7.s119} 式得
+        \begin{align}
+            i(t) = \frac{\beta}{2 \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}}} & \left[ e^{\left(-\frac{R - R_{0}}{2L} + \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}}\right) t} \right. \nonumber \\
+            & \left. - e^{\left(-\frac{R - R_{0}}{2L} - \sqrt{\left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC}}\right) t} \right]
+            \label{eq:8.s119}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        要在左侧回路中产生谐振（即电流 $i(t)$ 持续等幅振荡），须使电路的能量不随时间耗损，同时电流随时间周期性变化。因而有
+        \begin{equation}
+            \left\{ \begin{array}{l} R - R_{0} = 0, \\ \left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC} < 0. \end{array} \right.
+            \label{eq:9.s119}
+        \end{equation}
+        注意，\eqref{eq:9.s119} 式第一式直接导致 \eqref{eq:9.s119} 式第二式。所以，\eqref{eq:9.s119} 式第一式是此电路发生谐振的条件。由 \eqref{eq:8.s119} 式和 \eqref{eq:9.s119} 式第一式得
+        \begin{equation}
+            i_{\mathrm{H}}(t) = \beta \sqrt{LC} \frac{e^{j \frac{t}{\sqrt{LC}}} - e^{-j \frac{t}{\sqrt{LC}}}}{2j} = \beta \sqrt{LC} \sin \left(\frac{t}{\sqrt{LC}}\right)
+            \label{eq:10.s119}
+        \end{equation}
+        谐振频率为
+        \begin{equation}
+            f_{\mathrm{H}} = \frac{1}{2 \pi \sqrt{LC}}
+            \label{eq:11.s119}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        要在左侧回路中产生 RLC 阻尼振荡（即电流 $i(t)$ 振幅随时间 $t$ 衰减），须使电路的能量不断随时间耗损，同时电流随时间周期性变化。因而有
+        \begin{equation}
+            R - R_{0} > 0
+            \label{eq:12.s119}
+        \end{equation}
+        \begin{equation}
+            \left(\frac{R - R_{0}}{2L}\right)^{2} - \frac{1}{LC} < 0
+            \label{eq:13.s119}
+        \end{equation}
+        由 \eqref{eq:12.s119} \eqref{eq:13.s119} 式得
+        \begin{equation}
+            R_{0} < R < R_{0} + 2 \sqrt{\frac{L}{C}}
+            \label{eq:14.s119}
+        \end{equation}
+        这是电路发生阻尼振荡的条件。由 \eqref{eq:8.s119} \eqref{eq:14.s119} 式得
+        \begin{align}
+            i(t) &= \frac{\beta}{\sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}}} \frac{e^{\left(-\frac{R - R_{0}}{2L} + j \sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}}\right) t} - e^{\left(-\frac{R - R_{0}}{2L} - j \sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}}\right) t}}{2j} \nonumber \\
+            & = \frac{\beta}{\sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}}} e^{-\frac{R - R_{0}}{2L} t} \sin \left[ \sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}} t \right]
+            \label{eq:15.s119}
+        \end{align}
+        振荡频率为
+        \begin{equation}
+            f_{\mathrm{D}} = \frac{1}{2\pi} \sqrt{\frac{1}{LC} - \left(\frac{R - R_{0}}{2L}\right)^{2}}
+            \label{eq:16.s119}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        若要使得隧道二极管上交流部分的平均功率最大，同时又要确保隧道二极管始终工作在负电阻区域，则须使隧道二极管上的直流偏置电压处在工作电压范围的中间位置
+        \begin{equation}
+            \bar{V} = \frac{V_{\max} + V_{\min}}{2}
+            \label{eq:17.s119}
+        \end{equation}
+        此时的交流部分电压可达到最大振幅
+        \begin{equation}
+            V_{\mathrm{Dmax}} = \frac{V_{\mathrm{max}} - V_{\mathrm{min}}}{2}
+            \label{eq:18.s119}
+        \end{equation}
+        考虑到右侧回路中电压源为理想恒压电源，且理想的高频扼流圈 RFC 的直流电阻为零，由回路电势之和为零可知
+        \begin{equation}
+            V_{0} = \bar{V} = \frac{V_{\max} + V_{\min}}{2}
+            \label{eq:19.s119}
+        \end{equation}
+        此时，隧道二极管交流部分的最大平均功率为
+        \begin{equation}
+            \overline{P}_{\max} = \frac{1}{2} \frac{V_{\mathrm{D}\max}^{2}}{R_{0}} = \frac{(V_{\max} - V_{\min})^{2}}{8 R_{0}}
+            \label{eq:20.s119}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

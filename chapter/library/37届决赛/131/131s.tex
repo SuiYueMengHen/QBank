@@ -1,0 +1,218 @@
+\begin{solution}{131}
+    \begin{subsolution}
+        假设整个欹器是实心时，它分为长圆柱部分（I）和半球部分（II）。在坐标系$XOZ$中，圆柱部分（I）质心的位置为
+        \begin{equation}
+            x _ {\mathrm{CI}} = 0, \quad z _ {\mathrm{CI}} = \frac {l}{2} = R
+            \label{eq:1.s131}
+        \end{equation}
+        半球部分（II）质心的位置为
+        \begin{equation}
+            x _ {\mathrm{CII}} = 0, \quad z _ {\mathrm{CII}} = \frac {\int_ {- R _ {2}} ^ {0} \rho_ {1} \pi \left(R _ {2} ^ {2} - z ^ {2}\right) z \, \mathrm{d} z}{\int_ {- R _ {2}} ^ {0} \rho_ {1} \pi \left(R _ {2} ^ {2} - z ^ {2}\right) \mathrm{d} z} = - \frac {3}{8} R _ {2} = - \frac {3 \sqrt {3}}{8} R = - 0.6495 R
+            \label{eq:2.s131}
+        \end{equation}
+        设整个实心体的质心坐标为$( x _ { \mathrm { C } \text {实} } = 0 , z _ { \mathrm { C } \text {实} } )$，则
+        \begin{equation}
+            \left(\rho \pi R _ {2} ^ {2} l + \rho \frac {2}{3} \pi R _ {2} ^ {3}\right) z _ {\mathrm{C} \text {实}} = \rho \pi R _ {2} ^ {2} l z _ {\mathrm{CI}} + \rho \frac {2}{3} \pi R _ {2} ^ {3} z _ {\mathrm{CII}} = \rho \pi R _ {2} ^ {2} l \frac {l}{2} - \rho \frac {2}{3} \pi R _ {2} ^ {3} \frac {3 R _ {2}}{8}
+            \label{eq:3.s131}
+        \end{equation}
+        于是
+        \begin{equation}
+            x _ {\mathrm{C} \text {实}} = 0, \quad z _ {\mathrm{C} \text {实}} = \frac {3 (2 l ^ {2} - R _ {2} ^ {2})}{4 (3 l + 2 R _ {2})} = \frac {5 (3 - \sqrt {3})}{16} R = 0.3962 R
+            \label{eq:4.s131}
+        \end{equation}
+        相应地，整个欹器空心部分的质心坐标为
+        \begin{equation}
+            x _ {\mathrm{C空}} = t = 0.3 R, \quad z _ {\mathrm{C空}} = \frac {3 \left(2 l ^ {2} - R _ {1} ^ {2}\right)}{4 \left(3 l + 2 R _ {1}\right)} = \frac {21}{32} R = 0.6563 R
+            \label{eq:5.s131}
+        \end{equation}
+        设$m _ { \text {实} }$和$m _ { \text {空} }$分别是整个欹器是实心时欹器的质量和整个欹器空心部分用欹器材质刚好填实时的质量，有
+        \begin{equation}
+            m _ {\text {实}} = \rho_ {1} \pi R _ {2} ^ {2} \left(\frac {2 R _ {2}}{3} + l\right), \quad m _ {\text {空}} = \rho_ {1} \pi R _ {1} ^ {2} \left(\frac {2 R _ {1}}{3} + l\right)
+            \label{eq:6.s131}
+        \end{equation}
+        整个瓶子的质心坐标为
+        \begin{align}
+            x _ {\mathrm{C}} &= \frac {m _ {\text {实}} x _ {\mathrm{C实}} + (- m _ {\text {空}}) x _ {\mathrm{C空}}}{m _ {\text {实}} + (- m _ {\text {空}})} = - \frac {R _ {1} ^ {2} t (3 l + 2 R _ {1})}{3 l \left(R _ {2} ^ {2} - R _ {1} ^ {2}\right) + 2 \left(R _ {2} ^ {3} - R _ {1} ^ {3}\right)} \notag \\
+            &= \frac {3 (5 - 3 \sqrt {3})}{5} R = - 0.1177 R \label{eq:7.s131} \\
+            z _ {\mathrm{C}} &= \frac {m _ {\text {实}} z _ {\mathrm{C实}} + (- m _ {\text {空}}) z _ {\mathrm{C空}}}{m _ {\text {实}} + (- m _ {\text {空}})} = \frac {3 \left(R _ {2} + R _ {1}\right) \left(2 l ^ {2} - R _ {2} ^ {2} - R _ {1} ^ {2}\right)}{4 \left[ 3 l \left(R _ {2} + R _ {1}\right) + 2 \left(R _ {2} ^ {2} + R _ {2} R _ {1} + R _ {1} ^ {2}\right) \right]} \notag \\
+            &= \frac {3}{2} (3 \sqrt {3} - 5) R = 0.2942 R \label{eq:8.s131}
+        \end{align}
+        悬挂点$Q$的位置为$( - \frac { 1 } { 1 0 } R , \frac { 2 \sqrt { 3 } } { 1 1 } R )$，欹器内没装水悬挂时欹器倾斜的角度为
+        \begin{equation}
+            \theta_ {0} = \operatorname{arccot} \frac {z _ {\mathrm{C}} - z _ {Q}}{x _ {\mathrm{C}} - x _ {Q}} = \operatorname{arccot} \frac {25 (5 \sqrt {3} - 3)}{121} = 0.707439 \times \frac {180 ^ {\circ}}{\pi} = 40.5333 ^ {\circ}
+            \label{eq:9.s131}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由球绕直径的转动惯量知，半球绕其底面圆直径的转动惯量为
+        \begin{equation}
+            I _ {11} = \frac {1}{2} I _ {1} = \frac {4}{15} \pi \rho R ^ {5}
+            \label{eq:10.s131}
+        \end{equation}
+        由平行轴定理知，半球绕穿过其质心且平行其底面的转轴的转动惯量为
+        \begin{equation}
+            I _ {1 c} = I _ {11} - \frac {2}{3} \pi \rho R ^ {3} \left(\frac {3}{8} R\right) ^ {2} = \frac {83}{480} \pi \rho R ^ {5} = 0.1729 \pi \rho R ^ {5}
+            \label{eq:11.s131}
+        \end{equation}
+        实心欹器绕过悬挂点的水平轴的转动惯量
+        \begin{align}
+            I _ {\text {实}} &= I _ {1 c} (R = R _ {2}) + \frac {2}{3} \rho_ {1} \pi R _ {2} ^ {3} \left[ x _ {Q} ^ {2} + \left(- \frac {3}{8} R _ {2} - z _ {Q}\right) ^ {2} \right] \notag \\
+            &\quad + I _ {2} (R = R _ {2}, L = l) + \rho_ {1} \pi R _ {2} ^ {2} l \left[ x _ {Q} ^ {2} + \left(\frac {l}{2} - z _ {Q}\right) ^ {2} \right] \notag \\
+            &= \frac {79588 + 7591 \sqrt {3}}{6050} \rho_ {1} \pi R ^ {5} = 15.3283 \rho_ {1} \pi R ^ {5}
+            \label{eq:12.s131}
+        \end{align}
+        （填实后的）空心部分绕过悬挂点的水平轴的转动惯量
+        \begin{align}
+            I _ {\text {空}} &= I _ {1 c} (R = R _ {1}) + \frac {2}{3} \rho_ {1} \pi R _ {1} ^ {3} \left[ (x _ {Q} + t) ^ {2} + \left(- \frac {3}{8} R _ {1} - z _ {Q}\right) ^ {2} \right] \notag \\
+            &\quad + I _ {2} (R = R _ {1}, L = l) + \rho_ {1} \pi R _ {1} ^ {2} l \left[ (x _ {Q} + t) ^ {2} + \left(\frac {l}{2} - z _ {Q}\right) ^ {2} \right] \notag \\
+            &= \frac {24953 - 3850 \sqrt {3}}{6050} \rho_ {1} \pi R ^ {5} = 3.0223 \rho_ {1} \pi R ^ {5}
+            \label{eq:13.s131}
+        \end{align}
+        欹器绕过悬挂点的水平轴的转动惯量
+        \begin{equation}
+            I = I _ {\text {实}} - I _ {\text {空}} = \frac {54635 + 11441 \sqrt {3}}{6050} \rho_ {1} \pi R ^ {5} = 12.306 \rho_ {1} \pi R ^ {5}
+            \label{eq:14.s131}
+        \end{equation}
+        质心$C$到过悬挂点$Q$的水平轴的距离为
+        \begin{align}
+            d &= \sqrt {\left(x _ {C} - x _ {Q}\right) ^ {2} + \left(z _ {C} - z _ {Q}\right) ^ {2}} \notag \\
+            &= \sqrt {\left(- \frac {R _ {1} ^ {2} t (3 l + 2 R _ {1})}{3 l (R _ {2} ^ {2} - R _ {1} ^ {2}) + 2 (R _ {2} ^ {3} - R _ {1} ^ {3})} - x _ {Q}\right) ^ {2} + \left(\frac {3 (R _ {2} + R _ {1}) (2 l ^ {2} - R _ {2} ^ {2} - R _ {1} ^ {2})}{4 [ 3 l (R _ {2} + R _ {1}) + 2 (R _ {2} ^ {2} + R _ {2} R _ {1} + R _ {1} ^ {2}) ]} - z _ {Q}\right) ^ {2}} \notag \\
+            &= \frac {(3 \sqrt {3} - 5) \sqrt {2}}{220} \sqrt {30848 - 17541 \sqrt {3}} R = 0.02722 R
+            \label{eq:15.s131}
+        \end{align}
+        欹器的质量为
+        \begin{equation}
+            m _ {\text {欹}} = m _ {\text {实}} - m _ {\text {空}} = \rho_ {1} \pi \left[ R _ {2} ^ {2} \left(\frac {2 R _ {2}}{3} + l\right) - R _ {1} ^ {2} \left(\frac {2 R _ {1}}{3} + l\right) \right] = \frac {2}{3} (5 + 3 \sqrt {3}) \rho_ {1} \pi R ^ {3}
+            \label{eq:16.s131}
+        \end{equation}
+        欹器绕悬挂点连线摆动的角频率
+        \begin{equation}
+            \omega = \sqrt {\frac {m _ {\text {欹}} g d}{I}} = \sqrt {\frac {110 \sqrt {2 (30848 - 17541 \sqrt {3})}}{163905 + 34323 \sqrt {3}}} \sqrt {\frac {g}{R}} = 0.122624 \sqrt {\frac {g}{R}}
+            \label{eq:17.s131}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        设欹器正立时里面装的水的质量为$m _ { \mathrm { S } }$。此时水、欹器以及整个体系质心的横坐标$x _ { C S }$、$x _ { C }$和$x _ { C t }$分别为
+        \begin{align}
+            x _ {C S} &= t \label{eq:18.s131} \\
+            x _ {C} &= \frac {3 (5 - 3 \sqrt {3})}{5} R = - 0.1177 R \label{eq:19.s131} \\
+            x _ {C t} &= x _ {Q} \label{eq:20.s131}
+        \end{align}
+        故
+        \begin{equation}
+            x _ {C t} (m _ {\mathrm{S}} + m _ {\text {欹}}) = m _ {\mathrm{S}} x _ {C \mathrm{S}} + m _ {\text {欹}} x _ {C}
+            \label{eq:21.s131}
+        \end{equation}
+        解得
+        \begin{equation}
+            m _ {\mathrm{S}} = \frac {m _ {\text {欹}} (x _ {C} - x _ {C t})}{x _ {C t} - x _ {C S}} = \frac {m _ {\text {欹}} (x _ {C} - x _ {Q})}{x _ {Q} - t} = 0.3006 \rho_ {1} \pi R ^ {3} = 0.9018 \rho_ {2} \pi R ^ {3}
+            \label{eq:22.s131}
+        \end{equation}
+        由于
+        \begin{equation}
+            m _ {\mathrm{S}} = 0.9018 \rho_ {2} \pi R ^ {3} > \frac {2}{3} \rho_ {2} \pi R ^ {3}
+            \label{eq:23.s131}
+        \end{equation}
+        故水的体积大于底部半球的容器，即$h > R$。因而有
+        \begin{equation}
+            m _ {\mathrm{S}} = \frac {2}{3} \rho_ {2} \pi R ^ {3} + \rho_ {2} \pi R ^ {2} (h - R) = 0.9018 \rho_ {2} \pi R ^ {3}
+            \label{eq:24.s131}
+        \end{equation}
+        解得
+        \begin{equation}
+            h = \frac {(23 - 9 \sqrt {3})}{6} R = 1.23526 R
+            \label{eq:25.s131}
+        \end{equation}
+        此时整个体系质心的$z$坐标为
+        \begin{align}
+            z _ {C t} &= \frac {m _ {\text {欹}} z _ {C} + m _ {\mathrm{S}} z _ {C s}}{m _ {\text {欹}} + m _ {\mathrm{S}}} \notag \\
+            &= \frac {3 \left\{\left[ \rho_ {1} (R _ {2} ^ {2} - R _ {1} ^ {2}) (2 l ^ {2} - R _ {1} ^ {2} - R _ {2} ^ {2}) + \rho_ {2} R _ {1} ^ {2} (2 h ^ {2} - 4 h R _ {1} + R _ {1} ^ {2}) \right] \right\}}{4 \left\{\rho_ {1} [ 3 l (R _ {2} ^ {2} - R _ {1} ^ {2}) + 2 (R _ {1} ^ {3} - R _ {2} ^ {3}) ] + \rho_ {2} R _ {1} ^ {2} (3 h - R _ {1}) \right\}} \notag \\
+            &= \frac {3 (2 h ^ {2} - 4 h R + 25 R ^ {2})}{4 [ 3 h + (29 + 18 \sqrt {3}) R ]} = 0.271326 R < z _ {Q}
+            \label{eq:26.s131}
+        \end{align}
+        故$h = 1.23526 R$时欹器正立。
+
+        [解法（二）
+
+        若$h \leq R _ { 1 }$时欹器正立，$h \leq R _ { 1 }$时，水的质心位置为
+        \begin{equation}
+            \left\{ \begin{array}{l} x _ {\mathrm{CS} _ {1}} = t = 0.3 R, \\ z _ {\mathrm{CS} _ {1}} = \frac {\int_ {- R} ^ {- (R - h)} \rho_ {2} \pi \left(R ^ {2} - z ^ {2}\right) z \, \mathrm{d} z}{\int_ {- R} ^ {- (R - h)} \rho_ {2} \pi \left(R ^ {2} - z ^ {2}\right) \mathrm{d} z} = - \frac {3 (2 R - h) ^ {2}}{4 (3 R - h)} \end{array} \right.
+            \label{eq:27.s131}
+        \end{equation}
+        欹器的质量$m$和此时欹器中水的质量$m _ { \mathrm { S } _ { 1 } }$分别为
+        \begin{align}
+            m &= \rho_ {1} \left[ \left(\frac {2}{3} \pi R _ {2} ^ {3} + \pi R _ {2} ^ {2} l\right) - \left(\frac {2}{3} \pi R _ {1} ^ {3} + \pi R _ {1} ^ {2} l\right) \right] \notag \\
+            &= \frac {1}{3} \rho_ {1} \pi \left[ 3 l (R _ {2} ^ {2} - R _ {1} ^ {2}) + 2 (R _ {2} ^ {3} - R _ {1} ^ {3}) \right] \notag \\
+            &= \frac {1}{3} \rho_ {1} \pi (R _ {2} - R _ {1}) \left[ 3 l (R _ {2} + R _ {1}) + 2 (R _ {2} ^ {2} + R _ {1} R _ {2} + R _ {1} ^ {2}) \right] \label{eq:28.s131} \\
+            m _ {\mathrm{S} _ {1}} &= \int_ {- R} ^ {- (R - h)} \rho_ {2} \pi (R ^ {2} - z ^ {2}) \, \mathrm{d} z = \frac {\rho_ {2} \pi h ^ {2} (3 R - h)}{3} \label{eq:29.s131}
+        \end{align}
+        整个装置的质心$C _ { \mathrm { t } }$的位置坐标为
+        \begin{align}
+            x _ {\mathrm{Ct1}} &= \frac {m x _ {\mathrm{C}} + m _ {\mathrm{S} _ {1}} x _ {\mathrm{CS} _ {1}}}{m + m _ {\mathrm{S} _ {1}}} \notag \\
+            &= \frac {[ \rho_ {1} R _ {1} ^ {2} (3 l + 2 R _ {1}) + \rho_ {2} h ^ {2} (h - 3 R _ {1}) ] t}{\rho_ {1} [ 3 l (R _ {1} ^ {2} - R _ {2} ^ {2}) + 2 (R _ {1} ^ {3} - R _ {2} ^ {3}) ] + \rho_ {2} h ^ {2} (h - 3 R _ {1})} \notag \\
+            &= \frac {3 R (24 R ^ {3} - 3 h ^ {2} R + h ^ {3})}{10 [ (h - 3 R) h ^ {2} - 6 (5 + 3 \sqrt {3}) R ^ {3} ]}
+            \label{eq:30.s131}
+        \end{align}
+        欹器身正立时，悬挂点与系统质心的连线为竖直线必有
+        \begin{equation}
+            x _ {\mathrm{Ct}} = x _ {Q} = - 0.1 R,
+            \label{eq:31.s131}
+        \end{equation}
+        解得
+        \begin{equation}
+            h = - 0.8394 R, \quad h = 1.2389 R, \quad h = 2.5996 R
+            \label{eq:32.s131}
+        \end{equation}
+        均不满足$0 < h < R$。故此时无解。因此欹器竖直时，必有$h > R _ { 1 }$。
+
+        当$h > R _ { 1 }$时，与\eqref{eq:5.s131}、\eqref{eq:6.s131}式对比（\eqref{eq:5.s131}、\eqref{eq:6.s131}式中可视为$l = h - R _ { 1 }$），得水的质心位置为
+        \begin{align}
+            x _ {\mathrm{CS}} &= t = 0.3 R, \label{eq:33.s131} \\
+            z _ {\mathrm{CS}} &= \frac {\int_ {- R _ {1}} ^ {0} \rho_ {2} \pi (R _ {1} ^ {2} - z ^ {2}) z \, \mathrm{d} z + \int_ {0} ^ {h - R _ {1}} \rho_ {2} \pi R _ {1} ^ {2} z \, \mathrm{d} z}{\int_ {- R _ {1}} ^ {0} \rho_ {2} \pi (R _ {1} ^ {2} - z ^ {2}) \mathrm{d} z + \int_ {0} ^ {h - R _ {1}} \rho_ {2} \pi R _ {1} ^ {2} \mathrm{d} z} \notag \\
+            &= \frac {3 (2 h ^ {2} - 4 h R + R ^ {2})}{4 (3 h - R)} \label{eq:34.s131}
+        \end{align}
+        此时欹器中水的质量$m _ { \mathrm { S } _ { 2 } }$为
+        \begin{equation}
+            m _ {\mathrm{S} _ {2}} = \rho_ {2} \pi R _ {1} ^ {2} \left(h - \frac {R _ {1}}{3}\right)
+            \label{eq:35.s131}
+        \end{equation}
+        整个装置的质心位置为
+        \begin{align}
+            x _ {\mathrm{Ct2}} &= \frac {m x _ {\mathrm{C}} + m _ {\mathrm{S} _ {2}} x _ {\mathrm{CS} _ {2}}}{m + m _ {\mathrm{S} _ {2}}} \notag \\
+            &= \frac {R _ {1} ^ {2} [ \rho_ {1} (3 l + 2 R _ {1}) + \rho_ {2} (R _ {1} - 3 h) ] t}{\rho_ {1} [ 3 l (R _ {1} ^ {2} - R _ {2} ^ {2}) + 2 (R _ {1} ^ {3} - R _ {2} ^ {3}) ] + \rho_ {2} R _ {1} ^ {2} (R _ {1} - 3 h)} \notag \\
+            &= \frac {3 (3 h - 25 R) R}{10 [ 3 h + (29 + 18 \sqrt {3}) R ]} \label{eq:36.s131} \\
+            z _ {\mathrm{Ct2}} &= \frac {m z _ {\mathrm{C}} + m _ {\mathrm{S} _ {2}} z _ {\mathrm{Cs}}}{m + m _ {\mathrm{S} _ {2}}} \notag \\
+            &= \frac {3 \left\{\left[ \rho_ {1} (R _ {2} ^ {2} - R _ {1} ^ {2}) (2 l ^ {2} - R _ {1} ^ {2} - R _ {2} ^ {2}) + \rho_ {2} R _ {1} ^ {2} (2 h ^ {2} - 4 h R _ {1} + R _ {1} ^ {2}) \right] \right\}}{4 \left\{\rho_ {1} [ 3 l (R _ {2} ^ {2} - R _ {1} ^ {2}) + 2 (R _ {1} ^ {3} - R _ {2} ^ {3}) ] + \rho_ {2} R _ {1} ^ {2} (3 h - R _ {1}) \right\}} \notag \\
+            &= \frac {3 (2 h ^ {2} - 4 h R + 25 R ^ {2})}{4 [ 3 h + (29 + 18 \sqrt {3}) R ]} \label{eq:37.s131}
+        \end{align}
+        欹器身正立，悬挂点与系统质心的连线为竖直线必有
+        \begin{equation}
+            x _ {\mathrm{Ct2}} = x _ {Q} = - 0.1 R
+            \label{eq:38.s131}
+        \end{equation}
+        且
+        \begin{equation}
+            z _ {\mathrm{Ct2}} < z _ {\mathrm{Q}} = \frac {2 \sqrt {3}}{11} R
+            \label{eq:39.s131}
+        \end{equation}
+        当$h > R _ { 1 }$时，由\eqref{eq:38.s131}式有
+        \begin{equation}
+            h = \frac {1}{3} \left[ R _ {1} + \frac {\rho_ {1}}{\rho_ {2}} \left(3 l + 2 R _ {1} - \frac {x _ {Q} R _ {2} ^ {2} (3 l + 2 R _ {2})}{R _ {1} ^ {2} (t - x _ {Q})}\right) \right] = \frac {(23 - 9 \sqrt {3})}{6} R = 1.23526 R
+            \label{eq:40.s131}
+        \end{equation}
+        而由$z _ { \mathrm { C t 2 } } < z _ { \mathrm { Q } } = \frac { 2 \sqrt { 3 } } { 1 1 } R$得
+        \begin{equation}
+            0 < h < 2.67979 R \qquad \text {或} \qquad h < - 20.059 R
+            \label{eq:41.s131}
+        \end{equation}
+        故$h = 1.23526 R$时欹器正立。
+        ]
+    \end{subsolution}
+    \begin{subsolution}
+        欹器“满则覆”的临界条件是：系统质心刚好高于悬挂点；或
+        \begin{equation}
+            x _ {\mathrm{CH}} = - x _ {Q}, \quad z _ {\mathrm{CH}} = z _ {Q}
+            \label{eq:42.s131}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

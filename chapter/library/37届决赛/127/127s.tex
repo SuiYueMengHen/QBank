@@ -1,0 +1,194 @@
+\begin{solution}{127}
+    \begin{subsolution}
+        二能级系统处于能量为$E _ { 1 }$的概率满足玻尔兹曼分布$p \propto e ^ { - E / k _ { \mathrm { B } } T }$，有
+        \begin{equation}
+            p _ {1} = p _ {0} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T}}
+            \label{eq:1.s127}
+        \end{equation}
+        原子处于不同能级的总概率为1，即
+        \begin{equation}
+            p _ {1} + p _ {0} = 1
+            \label{eq:2.s127}
+        \end{equation}
+        由\eqref{eq:1.s127}和\eqref{eq:2.s127}式得
+        \begin{align}
+            p _ {0} &= \frac {1}{1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T}}} \label{eq:3.s127} \\
+            p _ {1} &= \frac {e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T}}}{1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T}}} \label{eq:4.s127}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        量子奥托循环示意图如解题图3a所示。下面计算量子奥托热机循环过程中的各个物理量的增量。
+
+        $A \to B$（量子等容）过程：
+        不做功，即$E _ { \mathrm { A } } = E _ { \mathrm { B } }$，吸热全部用来增加内能，因此吸收热量为
+        \begin{equation}
+            \Delta_ {1} \langle E \rangle = Q _ {1} = E _ {\mathrm{B}} \left(p _ {\mathrm{B}} - p _ {\mathrm{A}}\right)
+            \label{eq:5.s127}
+        \end{equation}
+
+        $B \to C$（量子绝热）过程：
+        不吸收或者放出热，故$p _ { \mathrm { B } } = p _ { \mathrm { C } }$，内能增量为
+        \begin{equation}
+            \Delta_ {2} \langle E \rangle = \left(E _ {\mathrm{C}} - E _ {\mathrm{B}}\right) p _ {\mathrm{B}}
+            \label{eq:6.s127}
+        \end{equation}
+        对外做功为
+        \begin{equation}
+            W _ {2} = - \Delta_ {2} \langle E \rangle = - \left(E _ {\mathrm{C}} - E _ {\mathrm{B}}\right) p _ {\mathrm{B}} = \left(E _ {\mathrm{B}} - E _ {\mathrm{C}}\right) p _ {\mathrm{B}}
+            \label{eq:7.s127}
+        \end{equation}
+
+        $C \to D$（量子等容）过程：
+        不做功，即$E _ { \mathrm { C } } = E _ { \mathrm { D } }$，放出的热来自内能减少，内能的增量为
+        \begin{equation}
+            \Delta_ {3} \langle E \rangle = E _ {\mathrm{D}} \left(p _ {\mathrm{A}} - p _ {\mathrm{B}}\right)
+            \label{eq:8.s127}
+        \end{equation}
+        放出热量为
+        \begin{equation}
+            Q _ {2} = - \Delta_ {3} \langle E \rangle = E _ {\mathrm{C}} \left(p _ {\mathrm{B}} - p _ {\mathrm{A}}\right)
+            \label{eq:9.s127}
+        \end{equation}
+
+        $D \to A$（量子绝热）过程：
+        不吸收或者放出热，内能增量为
+        \begin{equation}
+            \Delta_ {4} \langle E \rangle = \left(E _ {\mathrm{A}} - E _ {\mathrm{D}}\right) p _ {\mathrm{A}}
+            \label{eq:10.s127}
+        \end{equation}
+        对外做功为
+        \begin{equation}
+            W _ {4} = - \Delta_ {4} \langle E \rangle = - \left(E _ {\mathrm{A}} - E _ {\mathrm{D}}\right) p _ {\mathrm{A}} = \left(E _ {\mathrm{D}} - E _ {\mathrm{A}}\right) p _ {\mathrm{A}}
+            \label{eq:11.s127}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        对量子奥托热机，设循环过程中吸热为$Q _ { 1 }$和放热为$Q _ { 2 }$，效率为
+        \begin{equation}
+            \eta_ {\text {奥}} = \frac {Q _ {1} - Q _ {2}}{Q _ {1}} = 1 - \frac {Q _ {2}}{Q _ {1}}
+            \label{eq:12.s127}
+        \end{equation}
+        将\eqref{eq:5.s127}和\eqref{eq:9.s127}式代入\eqref{eq:12.s127}式得
+        \begin{equation}
+            \eta_ {\text {奥}} = 1 - \frac {Q _ {2}}{Q _ {1}} = 1 - \frac {E _ {\mathrm{C}}}{E _ {\mathrm{B}}}
+            \label{eq:13.s127}
+        \end{equation}
+        由于$B \to C$过程中，$p _ { \mathrm { B } } = p _ { \mathrm { C } }$，有
+        \begin{equation}
+            \frac {e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {\mathrm{B}}}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {\mathrm{B}}}}} = \frac {e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {\mathrm{C}}}}}{1 + e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {\mathrm{C}}}}}
+            \label{eq:14.s127}
+        \end{equation}
+        化简后，再根据$T _ { \mathrm { B } } = T _ { h }$有
+        \begin{equation}
+            \frac {E _ {\mathrm{B}}}{T _ {h}} = \frac {E _ {\mathrm{C}}}{T _ {\mathrm{C}}}
+            \label{eq:15.s127}
+        \end{equation}
+        由\eqref{eq:13.s127}和\eqref{eq:15.s127}式得
+        \begin{equation}
+            \eta_ {\text {奥}} = 1 - \frac {E _ {l}}{E _ {h}} = 1 - \frac {T _ {\mathrm{C}}}{T _ {h}}
+            \label{eq:16.s127}
+        \end{equation}
+
+        量子卡诺循环示意图如解题图3b所示。下面计算量子卡诺热机循环过程中的各个物理量的增量。
+
+        $A \to B$过程：
+        \begin{align}
+            \mathrm{d} Q _ {1} &= E _ {1} \mathrm{d} p _ {1} = E _ {1} \mathrm{d} \left(\frac {e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}\right) \notag \\
+            &= E _ {1} \frac {- \frac {1}{k _ {\mathrm{B}} T _ {h}} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}} \left(1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right) - e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}} \left(- \frac {1}{k _ {\mathrm{B}} T _ {h}} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right)}{\left(1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right) ^ {2}} \mathrm{d} E _ {1} \notag \\
+            &= \frac {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}{\left(1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right) ^ {2}} \mathrm{d} E _ {1} \label{eq:17.s127}
+        \end{align}
+        此过程中吸热为
+        \begin{align}
+            Q _ {1} &= \int_ {E _ {\mathrm{A}}} ^ {E _ {\mathrm{B}}} \frac {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}{\left(1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right) ^ {2}} \mathrm{d} E _ {1} = \int_ {E _ {\mathrm{A}}} ^ {E _ {\mathrm{B}}} \frac {E _ {1}}{\left(1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}\right) ^ {2}} \mathrm{d} e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}} \notag \\
+            &= \int_ {E _ {\mathrm{A}}} ^ {E _ {\mathrm{B}}} E _ {1} \mathrm{d} \left(- \frac {1}{1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}\right) \notag \\
+            &= \frac {E _ {\mathrm{A}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} - \frac {E _ {\mathrm{B}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} + \int_ {E _ {\mathrm{A}}} ^ {E _ {\mathrm{B}}} \frac {1}{1 + e ^ {- \frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}} \mathrm{d} E _ {1} \notag \\
+            &= \frac {E _ {\mathrm{A}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} - \frac {E _ {\mathrm{B}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} + \int_ {E _ {\mathrm{A}}} ^ {E _ {\mathrm{B}}} \frac {k _ {\mathrm{B}} T _ {h} \mathrm{d} e ^ {\frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {\frac {E _ {1}}{k _ {\mathrm{B}} T _ {h}}}} \notag \\
+            &= \frac {E _ {\mathrm{A}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} - \frac {E _ {\mathrm{B}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} + k _ {\mathrm{B}} T _ {h} \ln \frac {1 + e ^ {\frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {\frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}
+            \label{eq:18.s127}
+        \end{align}
+        内能增量为
+        \begin{equation}
+            \Delta E _ {1} = \frac {e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} E _ {\mathrm{B}} - \frac {e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} E _ {\mathrm{A}}
+            \label{eq:19.s127}
+        \end{equation}
+        对外做功为
+        \begin{equation}
+            W _ {1} = Q _ {1} - \Delta E _ {1} = E _ {\mathrm{A}} - E _ {\mathrm{B}} + k _ {\mathrm{B}} T _ {h} \ln \frac {1 + e ^ {\frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {\frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}
+            \label{eq:20.s127}
+        \end{equation}
+
+        $B \to C$过程：
+        在这个过程中，概率分布始终不变，$p _ { \mathrm { B } } = p _ { \mathrm { C } }$，过程中无传热，有
+        \begin{equation}
+            \frac {e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} = \frac {e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}}
+            \label{eq:21.s127}
+        \end{equation}
+        化简后得
+        \begin{equation}
+            E _ {\mathrm{C}} = \frac {T _ {l}}{T _ {h}} E _ {\mathrm{B}}
+            \label{eq:22.s127}
+        \end{equation}
+        同理，$p _ { \mathrm { D } } = p _ { \mathrm { A } }$，故$D \to A$过程中无吸热或放热发生，有
+        \begin{equation}
+            \frac {e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} = \frac {e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}}
+            \label{eq:23.s127}
+        \end{equation}
+        化简后得
+        \begin{equation}
+            E _ {\mathrm{D}} = \frac {T _ {l}}{T _ {h}} E _ {\mathrm{A}}
+            \label{eq:24.s127}
+        \end{equation}
+        吸热为
+        \begin{equation}
+            Q _ {2} = 0
+            \label{eq:25.s127}
+        \end{equation}
+        对外做功等于内能减少
+        \begin{equation}
+            W _ {2} = - \Delta E _ {2} = \frac {e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} E _ {\mathrm{B}} - \frac {e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {h}}}} E _ {\mathrm{C}}
+            \label{eq:26.s127}
+        \end{equation}
+
+        $C \to D$过程：
+        过程$C \to D$与$A \to B$类似，均为等温过程，放热的计算可以类比\eqref{eq:18.s127}式，并代入\eqref{eq:22.s127}和\eqref{eq:24.s127}式后得，放热为
+        \begin{align}
+            Q _ {3} &= \frac {E _ {\mathrm{D}}}{1 + e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}} - \frac {E _ {\mathrm{C}}}{1 + e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}} + k _ {\mathrm{B}} T _ {l} \ln \frac {1 + e ^ {\frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {\frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}} \notag \\
+            &= \frac {\frac {T _ {l}}{T _ {h}} E _ {\mathrm{A}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} - \frac {\frac {T _ {l}}{T _ {h}} E _ {\mathrm{B}}}{1 + e ^ {- \frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}} + k _ {\mathrm{B}} T _ {l} \ln \frac {1 + e ^ {\frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {\frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}
+            \label{eq:27.s127}
+        \end{align}
+        内能增量为
+        \begin{equation}
+            \Delta E _ {3} = \frac {e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}} E _ {\mathrm{D}} - \frac {e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {- \frac {E _ {\mathrm{C}}}{k _ {\mathrm{B}} T _ {l}}}} E _ {\mathrm{C}}
+            \label{eq:28.s127}
+        \end{equation}
+        对外做功为
+        \begin{equation}
+            W _ {3} = Q _ {3} - \Delta E _ {3} = E _ {\mathrm{C}} - E _ {\mathrm{D}} + k _ {\mathrm{B}} T _ {l} \ln \frac {1 + e ^ {\frac {E _ {\mathrm{B}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {\frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}
+            \label{eq:29.s127}
+        \end{equation}
+
+        $D \to A$过程：
+        吸热为
+        \begin{equation}
+            Q _ {4} = 0
+            \label{eq:30.s127}
+        \end{equation}
+        对外做功等于内能减少
+        \begin{equation}
+            W _ {4} = - \Delta E _ {4} = \frac {e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}}{1 + e ^ {- \frac {E _ {\mathrm{D}}}{k _ {\mathrm{B}} T _ {l}}}} E _ {\mathrm{D}} - \frac {e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}}{1 + e ^ {- \frac {E _ {\mathrm{A}}}{k _ {\mathrm{B}} T _ {h}}}} E _ {\mathrm{A}}
+            \label{eq:31.s127}
+        \end{equation}
+
+        对量子卡诺热机，循环过程中吸热$Q _ { 1 }$，放热$Q _ { 3 }$，将\eqref{eq:18.s127}和\eqref{eq:27.s127}式代入效率计算公式得
+        \begin{equation}
+            \eta_ {\text {卡}} \equiv \frac {Q _ {1} - Q _ {3}}{Q _ {1}} = 1 - \frac {Q _ {3}}{Q _ {1}} = 1 - \frac {T _ {l}}{T _ {h}}
+            \label{eq:32.s127}
+        \end{equation}
+        这与经典卡诺热机的效率一致。然而$T _ { l } < T _ { \mathrm { C } } < T _ { h }$，故由\eqref{eq:16.s127}和\eqref{eq:32.s127}式知
+        \begin{equation}
+            \eta_ {\text {奥}} < \eta_ {\text {卡}}
+            \label{eq:33.s127}
+        \end{equation}
+        因此，量子奥托热机的效率低于量子卡诺热机的效率。
+    \end{subsolution}
+\end{solution}

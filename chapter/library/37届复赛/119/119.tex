@@ -1,0 +1,23 @@
+\begin{problem}[2020第37届全国中学生物理竞赛复赛][隧道二极管负阻振荡电路分析]{119}
+    负微分电阻效应是指某些电路或电子元件（如隧道二极管）在特定的电压范围内其电流随端电压增加而减少的特性，该效应可在电路中维持高频振荡并输出放大的交流信号。在简化电路中，$D$ 为一隧道二极管，其左侧由一定值电阻 $R$、一电感 $L$ 和一电容 $C$ 串联组成，回路交流电流记为 $i(t)$；其右侧由一理想的高频扼流圈 RFC（直流电阻为零，完全阻断交流信号）和一理想恒压直流电源 $V_{0}$ 组成，回路直流电流记为 $I (I >> |i(t)|)$，已标示电流正方向。$D$ 始终处在特定电压范围内，这时其电阻值为 $-R_{0}$ ($R_{0} > 0$，且为一定值)。
+    \begin{subproblem}
+        已知 $t = 0$ 时，$i(0) = 0$，$\dot{i}(0) = \beta \neq 0$（$\dot{a}$ 表示 $a$ 对 $t$ 微商）；交流电流随时间的变化满足
+        \begin{equation}
+            i(t) = \alpha_{1} e^{\beta_{1} t} + \alpha_{2} e^{\beta_{2} t}, (\alpha_{1} 、 \beta_{1} 、 \alpha_{2} 、 \beta_{2} \text{为待定常量})
+        \end{equation}
+        试确定常量 $\alpha_{1}, \beta_{1}, \alpha_{2}, \beta_{2}$，以确定任意时刻 $t$ 的交流电流 $i(t)$；
+    \end{subproblem}
+    \begin{subproblem}
+        试说明在什么条件下左侧回路中会发生谐振？并求在发生谐振的情形下左侧回路中电流 $i_{\mathrm{H}}(t)$ 和谐振频率 $f_{\mathrm{H}}$；
+    \end{subproblem}
+    \begin{subproblem}
+        试说明在什么条件下左侧回路中会发生 RLC 阻尼振荡？并求此时左侧回路中电流 $i_{\mathrm{D}}(t)$ 和振荡频率 $f_{\mathrm{D}}$；
+    \end{subproblem}
+    \begin{subproblem}
+        已知该隧道二极管 $D$ 正常工作（即能保持其具有负微分电阻效应）的范围为
+        \begin{equation}
+            V_{\min} \leq V_{\mathrm{D}} \leq V_{\max}, \quad (V_{\min} 、 V_{\max} \text{为已知常量})
+        \end{equation}
+        试求该隧道二极管上交流部分可能达到的最大平均功率 $\overline{P}_{\mathrm{max}}$、以及此时理想恒压直流电源的输出电压 $V_{0}$。
+    \end{subproblem}
+\end{problem}

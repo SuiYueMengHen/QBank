@@ -1,0 +1,87 @@
+\begin{solution}{121}
+    \begin{subsolution}
+        光信号从飞行器甲发出到返回甲，从惯性系 $\Sigma$ 中的观测者来看，所需时间为
+        \begin{equation}
+            (\Delta t_{\text{光信号}})_{\Sigma} = \frac{(\Delta t_{\text{光信号}})_{\mathrm{甲}}}{\sqrt{1 - \frac{v_{\mathrm{甲}\Sigma}^{2}}{c^{2}}}} = \frac{3 \sqrt{5}}{5} (\Delta t_{\text{光信号}})_{\mathrm{甲}} = \frac{3 \sqrt{5}}{5} T
+            \label{eq:1.s121}
+        \end{equation}
+        根据狭义相对论速度合成法则，飞行器甲相对于飞行器乙的速度为
+        \begin{align}
+            v_{\text{甲乙}} & = \frac{v_{\text{甲}\Sigma} + v_{\Sigma \text{乙}}}{1 + \frac{v_{\text{甲}\Sigma} v_{\Sigma \text{乙}}}{c^{2}}} = \frac{v_{\text{甲}\Sigma} + (-v_{\text{乙}\Sigma})}{1 + \frac{v_{\text{甲}\Sigma} (-v_{\text{乙}\Sigma})}{c^{2}}} \nonumber \\
+            & = \frac{-\frac{2c}{3} + \frac{c}{3}}{1 + (-\frac{2}{3}) \frac{1}{3}} = \frac{-\frac{c}{3}}{1 - \frac{2}{9}} = -\frac{3}{7} c
+            \label{eq:2.s121}
+        \end{align}
+        式中，最后的等号右边的负号表示飞行器甲相对于乙的速度沿 $y$ 轴负方向，余类推。从飞行器乙上的观测者来看，光信号从飞行器甲发出到返回甲所需时间为
+        \begin{equation}
+            (\Delta t_{\text{光信号}})_{\text{乙}} = \frac{(\Delta t_{\text{光信号}})_{\text{甲}}}{\sqrt{1 - \frac{v_{\text{甲乙}}^{2}}{c^{2}}}} = \frac{7 \sqrt{10}}{20} (\Delta t_{\text{光信号}})_{\text{甲}} = \frac{7 \sqrt{10}}{20} T
+            \label{eq:3.s121}
+        \end{equation}
+        从飞行器甲上的观测者来看，飞行器甲收到返回的光信号时，飞行器甲和乙间的距离为
+        \begin{align}
+            l & = \frac{1}{2} \left(c (\Delta t_{\text{光信号}})_{\text{甲}} - |v_{\text{乙甲}}| (\Delta t_{\text{光信号}})_{\text{甲}}\right) \nonumber \\
+            & = \frac{2}{7} c (\Delta t_{\text{光信号}})_{\text{甲}} = \frac{2}{7} c T
+            \label{eq:4.s121}
+        \end{align}
+        从甲收到返回的光信号到甲追上乙所需的时间为
+        \begin{equation}
+            (\Delta t_{\text{追及}}) = \frac{l}{|v_{\text{乙甲}}|} = \frac{2}{3} (\Delta t_{\text{光信号}})_{\text{甲}} = \frac{2}{3} T
+            \label{eq:5.s121}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        考虑小货物在惯性系 $\Sigma$ 中的速度。为了让小货物能被飞行器丙收到，小货物速度的 $y$ 分量应该与飞行器丙相同，即
+        \begin{equation}
+            (v_{\text{货}\Sigma})_{y} = v_{\text{丙}\Sigma} = \frac{2}{3} c
+            \label{eq:6.s121}
+        \end{equation}
+        据题意，小货物在惯性系 $\Sigma$ 中的速度大小为 $v_{\text{货}\Sigma} = 3c/4$。小货物速度的 $x$ 分量为
+        \begin{equation}
+            (v_{\text{货}\Sigma})_{x} = \sqrt{v_{\text{货}\Sigma}^{2} - (v_{\text{货}\Sigma})_{y}^{2}} = \sqrt{\left(\frac{3}{4} c\right)^{2} - \left(\frac{2}{3} c\right)^{2}} = \frac{\sqrt{17}}{12} c
+            \label{eq:7.s121}
+        \end{equation}
+        由题意，这里取正号。
+
+        惯性系 $\Sigma$ 相对于飞行器甲的速度为
+        \begin{equation}
+            (v_{\Sigma \text{甲}})_{x} = 0, \quad (v_{\Sigma \text{甲}})_{y} = -(v_{\text{甲}\Sigma})_{y} = \frac{2}{3} c
+            \label{eq:8.s121}
+        \end{equation}
+        根据狭义相对论速度合成法则，从飞行器甲上的观察者来看，小货物速度的两个分量分别为
+        \begin{align}
+            (v_{\text{货甲}})_{x} & = \frac{(v_{\text{货}\Sigma})_{x} \sqrt{1 - \frac{v_{\Sigma \text{甲}}^{2}}{c^{2}}}}{1 + \frac{(v_{\text{货}\Sigma})_{y} v_{\Sigma \text{甲}}}{c^{2}}} \nonumber \\
+            & = \frac{\frac{\sqrt{17}}{12} c \sqrt{1 - (\frac{2}{3})^{2}}}{1 + (\frac{2}{3})^{2}} = \frac{\sqrt{85}}{52} c
+            \label{eq:9.s121}
+        \end{align}
+        \begin{align}
+            (v_{\text{货甲}})_{y} & = \frac{(v_{\text{货}\Sigma})_{y} + v_{\Sigma \text{甲}}}{1 + \frac{(v_{\text{货}\Sigma})_{y} v_{\Sigma \text{甲}}}{c^{2}}} \nonumber \\
+            & = \frac{\frac{2}{3} c + \frac{2}{3} c}{1 + (\frac{2}{3})^{2}} = \frac{12}{13} c
+            \label{eq:10.s121}
+        \end{align}
+        已利用了 \eqref{eq:6.s121} \eqref{eq:7.s121} \eqref{eq:8.s121} 式。从飞行器甲上的观测者来看，小货物发射速度的大小为
+        \begin{equation}
+            v_{\text{货甲}} = \sqrt{(v_{\text{货甲}})_{x}^{2} + (v_{\text{货甲}})_{y}^{2}} = \frac{\sqrt{2389}}{52} c
+            \label{eq:11.s121}
+        \end{equation}
+        发射方向与飞行器甲的运动方向之间的夹角 $\theta$ 为
+        \begin{equation}
+            \theta = \frac{\pi}{2} + \arctan \frac{(v_{\text{货甲}})_{y}}{(v_{\text{货甲}})_{x}} = \frac{\pi}{2} + \arctan \frac{48}{\sqrt{85}} = 2.95 \mathrm{rad} = 169^{\circ}
+            \label{eq:12.s121}
+        \end{equation}
+        回到参考系 $\Sigma$，货物从发送到接收所用的时间为
+        \begin{equation}
+            (\Delta t_{\text{货}})_{\Sigma} = \frac{d}{(u_{\text{货}\Sigma})_{x}} = \frac{12 d}{\sqrt{17} c}
+            \label{eq:13.s121}
+        \end{equation}
+        货物在 $y$ 方向上的位移为
+        \begin{equation}
+            (\Delta y_{\text{货}})_{\Sigma} = (v_{\text{货}\Sigma})_{y} (\Delta t_{\text{货}})_{\Sigma} = \frac{2}{3} c \times \frac{12 d}{\sqrt{17} c} = \frac{8}{\sqrt{17}} d
+            \label{eq:14.s121}
+        \end{equation}
+        从飞行器乙上的观测者来看，设货物从发送到接收的时间为 $(\Delta t_{\text{货}})_{\text{乙}}$，由洛伦兹变换公式得
+        \begin{align}
+            (\Delta t_{\text{货}})_{\text{乙}} & = \frac{(\Delta t_{\text{货}})_{\Sigma} - \frac{v_{\text{乙}\Sigma}}{c^{2}} (\Delta y_{\text{货}})_{\Sigma}}{\sqrt{1 - (\frac{v_{\text{乙}\Sigma}}{c})^{2}}} \nonumber \\
+            & = \frac{\frac{12 d}{\sqrt{17} c} - \frac{1}{c^{2}} (-\frac{c}{3}) (\frac{8 d}{\sqrt{17}})}{\sqrt{1 - (\frac{1}{3})^{2}}} = \frac{11 \sqrt{34}}{17} \frac{d}{c}
+            \label{eq:15.s121}
+        \end{align}
+    \end{subsolution}
+\end{solution}

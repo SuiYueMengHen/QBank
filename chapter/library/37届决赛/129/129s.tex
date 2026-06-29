@@ -1,0 +1,155 @@
+\begin{solution}{129}
+    \begin{subsolution}
+        星际介质处于等离子态，由于正离子质量远大于负离子（电子）的质量，因此在电场的作用下电子运动，而离子可视为不动。星际介质的离子数密度很小，离子间的碰撞可忽略。电子的运动是低速的，电磁波的磁场对电子的作用也可忽略。设电子的运动速度为$v$，则电子受到的洛伦兹力为
+        \begin{equation}
+            \boldsymbol {F} = - e (\boldsymbol {E} + \boldsymbol {v} \times \boldsymbol {B})
+            \label{eq:1.s129}
+        \end{equation}
+        由于$\boldsymbol {E}$与电磁波传播方向垂直，$\boldsymbol {B}$与传播方向平行，$\boldsymbol {v} \times \boldsymbol {B}$与传播方向垂直，故$\boldsymbol {F}$与传播方向垂直，从而使电子在垂直于信号传播方向的平面中作圆周运动。由牛顿第二定律有
+        \begin{equation}
+            e E _ {0} \pm e v B = \frac {m _ {\mathrm{e}} v ^ {2}}{R _ {\mathrm{e}}}
+            \label{eq:2.s129}
+        \end{equation}
+        式中，
+        \begin{equation}
+            v = 2 \pi f R _ {\mathrm{e}}
+            \label{eq:3.s129}
+        \end{equation}
+        $\pm$对应于电子两个不同的旋转方向。联立\eqref{eq:2.s129}和\eqref{eq:3.s129}式，解得
+        \begin{equation}
+            R _ {\mathrm{e} \mp} = \frac {e E _ {0}}{2 \pi m _ {\mathrm{e}} f (2 \pi f \mp \frac {e B}{m _ {\mathrm{e}}})}
+            \label{eq:4.s129}
+        \end{equation}
+
+        [解法（二）
+
+        电子在洛伦兹力作用下的运动方程为
+        \begin{equation}
+            m _ {\mathrm{e}} \ddot {\boldsymbol {x}} (t) = - e [ \boldsymbol {E} (t) + \dot {\boldsymbol {x}} (t) \times \boldsymbol {B} ]
+            \label{eq:5.s129}
+        \end{equation}
+        式中$\boldsymbol {E} (t)$为该点电磁波的电场
+        \begin{equation}
+            \boldsymbol {E} (t) \equiv E _ {x} \pm i E _ {y} = E _ {0} e ^ {\pm i (\omega t - k z)}
+            \label{eq:6.s129}
+        \end{equation}
+        这里$\omega = 2 \pi f$。在上述复平面上
+        \begin{equation}
+            \boldsymbol {x} (t) = R _ {\mathrm{e}} e ^ {\pm i \omega t}
+            \label{eq:7.s129}
+        \end{equation}
+        式中，$\omega$可理解为该电子回转的角速度。由\eqref{eq:7.s129}式和$\boldsymbol {x} (t)$与$\boldsymbol {B}$正交可知
+        \begin{equation}
+            \dot {\boldsymbol {x}} (t) \times \boldsymbol {B} = \pm i \omega B \boldsymbol {x} (t)
+            \label{eq:8.s129}
+        \end{equation}
+        由\eqref{eq:5.s129}、\eqref{eq:6.s129}、\eqref{eq:7.s129}、\eqref{eq:8.s129}式有
+        \begin{equation}
+            - m _ {\mathrm{e}} \omega^ {2} R _ {\mathrm{e}} = - e [ E _ {0} \pm \omega R _ {\mathrm{e}} B ]
+            \label{eq:9.s129}
+        \end{equation}
+        解得
+        \begin{equation}
+            R _ {\mathrm{e} \mp} = \frac {e E _ {0}}{2 \pi m _ {\mathrm{e}} f (2 \pi f \mp \frac {e B}{m _ {\mathrm{e}}})}
+            \label{eq:10.s129}
+        \end{equation}
+        ]
+    \end{subsolution}
+    \begin{subsolution}
+        星际介质中单位体积内的电子数为$n _ { \mathrm { e } }$，所以介质的极化强度为
+        \begin{equation}
+            P _ {\mp} = - n _ {\mathrm{e}} e R _ {\mathrm{e} \mp}
+            \label{eq:11.s129}
+        \end{equation}
+        电位移矢量为
+        \begin{equation}
+            D _ {\mp} = \varepsilon_ {0} E + P _ {\mp} = \left(\varepsilon_ {0} - \frac {n _ {\mathrm{e}} e ^ {2}}{4 \pi^ {2} m _ {\mathrm{e}} f ^ {2} \mp 2 \pi f e B}\right) E
+            \label{eq:12.s129}
+        \end{equation}
+        从而得到介质的介电常数
+        \begin{equation}
+            \varepsilon_ {\mp} = \varepsilon_ {0} - \frac {n _ {\mathrm{e}} e ^ {2}}{4 \pi^ {2} m _ {\mathrm{e}} f ^ {2} \mp 2 \pi f e B}
+            \label{eq:13.s129}
+        \end{equation}
+        折射率$n$为
+        \begin{equation}
+            n _ {\mp} ^ {2} = \frac {\varepsilon_ {\mp}}{\varepsilon_ {0}} = 1 - \frac {f _ {\mathrm{p}} ^ {2}}{f (f \mp f _ {B})}
+            \label{eq:14.s129}
+        \end{equation}
+        式中
+        \begin{equation}
+            f _ {\mathrm{p}} = \frac {e}{2 \pi} \sqrt {\frac {n _ {\mathrm{e}}}{\varepsilon_ {0} m _ {\mathrm{e}}}}, \quad f _ {B} = \frac {e B}{2 \pi m _ {\mathrm{e}}}
+            \label{eq:15.s129}
+        \end{equation}
+        分别是等离子体的特征频率、电子在磁场中的同步回旋频率。
+
+        由波数、频率和折射率的关系$k = \frac { \omega } { c } n \ ( \omega = 2 \pi f )$和\eqref{eq:14.s129}式得，群速度为
+        \begin{equation}
+            v _ {\mathrm{g} \mp} = \frac {\mathrm{d} \omega}{\mathrm{d} k _ {\mp}} = \frac {1}{\frac {\mathrm{d} k _ {\mp}}{\mathrm{d} \omega}} = \frac {c}{n _ {\mp} + \omega \frac {\mathrm{d} n _ {\mp}}{\mathrm{d} \omega}} = \frac {n _ {\mp} c}{1 \pm \frac {f _ {\mathrm{P}} ^ {2} f _ {B}}{2 f (f \mp f _ {B}) ^ {2}}}
+            \label{eq:16.s129}
+        \end{equation}
+        在介质中群速度为零的电磁波是不能在该介质中传播的，
+        \begin{equation}
+            v _ {\mathrm{g} \mp} = 0
+            \label{eq:17.s129}
+        \end{equation}
+        即
+        \begin{equation}
+            f ^ {2} \mp f _ {B} f - f _ {\mathrm{p}} ^ {2} = 0
+            \label{eq:18.s129}
+        \end{equation}
+        舍去方程的负根，得到能通过星际介质的最低电磁波频率为
+        \begin{equation}
+            f _ {\mathrm{c} \mp} = \frac {- (\mp f _ {B}) + \sqrt {f _ {B} ^ {2} + 4 f _ {\mathrm{p}} ^ {2}}}{2} = \frac {e}{4 \pi} \left(\sqrt {\frac {B ^ {2}}{m _ {\mathrm{e}} ^ {2}} + \frac {4 n _ {\mathrm{e}}}{\varepsilon_ {0} m _ {\mathrm{e}}}} \pm \frac {B}{m _ {\mathrm{e}}}\right)
+            \label{eq:19.s129}
+        \end{equation}
+        当$B = 0$时，$f _ { \mathrm { c \mp } } ( B = 0 ) = f _ { \mathrm { p } }$，这正是把$f _ { \mathrm { p } }$称为等离子体特征频率的原因。
+    \end{subsolution}
+    \begin{subsolution}
+        频率为$f$的电磁波信号通过该介质达到地球的时间比其在真空中传播的时间延迟量为
+        \begin{equation}
+            \Delta t _ {\mp} = \int_ {0} ^ {d} \frac {\mathrm{d} l}{v _ {g \mp}} - \frac {d}{c}
+            \label{eq:20.s129}
+        \end{equation}
+        将\eqref{eq:16.s129}式代入\eqref{eq:20.s129}式，注意到$f _ { \mathrm { p } } << f , f _ { B } << f$，有
+        \begin{align}
+            \Delta t _ {\mp} &= \int_ {0} ^ {d} \frac {\mathrm{d} l}{v _ {g \mp}} - \frac {d}{c} \approx \int_ {0} ^ {d} \frac {(1 \pm \frac {f _ {\mathrm{P}} ^ {2} f _ {B}}{2 f ^ {3}}) \mathrm{d} l}{c \sqrt {1 - \frac {f _ {\mathrm{P}} ^ {2}}{f ^ {2}} + \frac {f _ {\mathrm{P}} ^ {2} f _ {B}}{f ^ {3}}}} - \frac {d}{c} \notag \\
+            &\approx \frac {1}{c} \int_ {0} ^ {d} \left[ 1 + \frac {f _ {\mathrm{p}} ^ {2}}{2 f ^ {2}} \pm \frac {f _ {\mathrm{p}} ^ {2} f _ {B}}{f ^ {3}} \right] \mathrm{d} l - \frac {d}{c} \notag \\
+            &= \frac {d}{c} \frac {f _ {\mathrm{p}} ^ {2}}{2 f ^ {2}} \left(1 \pm \frac {2 f _ {B}}{f}\right) = \frac {1}{2 f ^ {2} c} \frac {e ^ {2} n _ {\mathrm{e}} d}{4 \pi^ {2} \varepsilon_ {0} m _ {\mathrm{e}}} \left(1 \pm \frac {e B}{\pi m _ {\mathrm{e}} f}\right)
+            \label{eq:21.s129}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        由波数与折射率关系$k = \frac { \omega } { c } n$和\eqref{eq:14.s129}式（在$f _ { \mathrm { p } } << f , f _ { B } << f$的近似下），
+        \begin{equation}
+            k _ {\mp} (f) = \frac {2 \pi f}{c} n _ {\mp} = \frac {2 \pi f}{c} \sqrt {1 - \frac {f _ {\mathrm{p}} ^ {2}}{f ^ {2}} \mp \frac {f _ {\mathrm{p}} ^ {2} f _ {\mathrm{B}}}{f ^ {3}}}
+            \label{eq:22.s129}
+        \end{equation}
+        从脉冲星发出的频率为$f$的电磁波在通过星际介质区间后形成的两种不同的电磁波信号的相位差为
+        \begin{align}
+            \Delta \phi &\equiv \phi_ {+} - \phi_ {-} = - \omega (t _ {+} - t _ {-}) + \int_ {0} ^ {d} (k _ {+} - k _ {-}) \mathrm{d} l \notag \\
+            &= - 2 \pi f \frac {d}{c} \frac {f _ {\mathrm{p}} ^ {2}}{2 f ^ {2}} \left[ \left(1 - \frac {2 f _ {B}}{f}\right) - \left(1 + \frac {2 f _ {B}}{f}\right) \right] \notag \\
+            &\quad + \frac {2 \pi f d}{c} \left(\sqrt {1 - \frac {f _ {\mathrm{p}} ^ {2}}{f ^ {2}} + \frac {f _ {\mathrm{p}} ^ {2} f _ {\mathrm{B}}}{f ^ {3}}} - \sqrt {1 - \frac {f _ {\mathrm{p}} ^ {2}}{f ^ {2}} - \frac {f _ {\mathrm{p}} ^ {2} f _ {\mathrm{B}}}{f ^ {3}}}\right) \notag \\
+            &= 2 \pi f \frac {d}{c} \frac {f _ {\mathrm{p}} ^ {2}}{2 f ^ {2}} \frac {4 f _ {B}}{f} + \frac {2 \pi f d}{c} \frac {f _ {\mathrm{p}} ^ {2} f _ {\mathrm{B}}}{f ^ {3}} = \frac {6 \pi d}{c} \frac {f _ {\mathrm{p}} ^ {2} f _ {\mathrm{B}}}{f ^ {2}} \notag \\
+            &= \frac {3 e ^ {3} n _ {\mathrm{e}} d B}{4 \pi^ {2} \varepsilon_ {0} m _ {\mathrm{e}} ^ {2} c f ^ {2}}
+            \label{eq:23.s129}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        由\eqref{eq:23.s129}式可知，电子密度出现涨落会引起折射率的变化。由\eqref{eq:14.s129}式得
+        \begin{equation}
+            \Delta n _ {\mp} = - \frac {f _ {\mathrm{p}} ^ {2}}{2 n f (f \mp f _ {B})} \frac {\Delta n _ {\mathrm{e}}}{n _ {\mathrm{e}}}
+            \label{eq:24.s129}
+        \end{equation}
+        由\eqref{eq:24.s129}式和$k = \frac { \omega } { c } n$得，波数因电子密度涨落引起的变化为
+        \begin{equation}
+            \Delta k _ {\mp} = \frac {2 \pi f}{c} \Delta n _ {\mp} = - \frac {\pi f _ {\mathrm{p}} ^ {2}}{n c (f \mp f _ {B})} \frac {\Delta n _ {\mathrm{e}}}{n _ {\mathrm{e}}}
+            \label{eq:25.s129}
+        \end{equation}
+        于是，频率为$f$的电磁波通过星际介质形成的两种不同的电磁波信号因电子密度涨落产生的相位移动为
+        \begin{equation}
+            \Delta \phi_ {\mp} = - a \Delta k _ {\mp} = \frac {\pi f _ {\mathrm{p}} ^ {2}}{n c (f \mp f _ {B})} \frac {\Delta n _ {\mathrm{e}}}{n _ {\mathrm{e}}} a
+            \label{eq:26.s129}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

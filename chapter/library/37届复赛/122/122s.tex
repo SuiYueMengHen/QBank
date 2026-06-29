@@ -1,0 +1,107 @@
+\begin{solution}{122}
+    \begin{subsolution}
+        设光在光纤端口以角度 $i$ 入射到内层介质，折射角为 $i'$，进而以入射角 $i''$ 入射到内外层分界面上。由折射定律得
+        \begin{equation}
+            n_{0} \sin i = n_{1} \sin i'
+            \label{eq:1.s122}
+        \end{equation}
+        为了使光能在光纤内传输（全反射），应有
+        \begin{equation}
+            i'' \geq i_{\mathrm{c}}
+            \label{eq:2.s122}
+        \end{equation}
+        式中，$i_{\mathrm{c}}$ 是内层介质（相对于外层介质）的全反射的临界角，它满足
+        \begin{equation}
+            \sin i_{\mathrm{c}} = \frac{n_{2}}{n_{1}}
+            \label{eq:3.s122}
+        \end{equation}
+        由几何关系有
+        \begin{equation}
+            i' + i'' = \frac{\pi}{2}
+            \label{eq:4.s122}
+        \end{equation}
+        由 \eqref{eq:1.s122} \eqref{eq:2.s122} \eqref{eq:3.s122} \eqref{eq:4.s122} 式得
+        \begin{equation}
+            n_{0} \sin i = n_{1} \cos i'' \leq n_{1} \cos i_{\mathrm{c}} = \sqrt{n_{1}^{2} - n_{2}^{2}}
+        \end{equation}
+        即
+        \begin{equation}
+            i \leq \arcsin \frac{\sqrt{n_{1}^{2} - n_{2}^{2}}}{n_{0}}
+            \label{eq:5.s122}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        当圆环形陀螺仪沿逆时针方向以角速度 $\Omega$ 转动时，其环路切向线速率为 $\Omega R$，由狭义相对论速度变换公式知，沿逆时针和顺时针方向传播的光相对实验室参照系的线速率分别为
+        \begin{equation}
+            v_{\mathrm{CCW}} = \frac{\frac{c}{n_{1}} + \Omega R}{1 + \frac{\frac{c}{n_{1}} \Omega R}{c^{2}}} = \frac{\frac{c}{n_{1}} + \Omega R}{1 + \frac{\Omega R}{n_{1} c}} = \frac{c^{2} + n_{1} \Omega R c}{n_{1} c + \Omega R}
+            \label{eq:6.s122}
+        \end{equation}
+        \begin{equation}
+            v_{\mathrm{CW}} = \frac{\frac{c}{n_{1}} - \Omega R}{1 - \frac{\frac{c}{n_{1}} \Omega R}{c^{2}}} = \frac{\frac{c}{n_{1}} - \Omega R}{1 - \frac{\Omega R}{n_{1} c}} = \frac{c^{2} - n_{1} \Omega R c}{n_{1} c - \Omega R}
+            \label{eq:7.s122}
+        \end{equation}
+        式中，$n_{1}$ 为光传播所通过的介质的折射率。设沿逆时针和顺时针方向传播的光绕行 $N$ 周回到出发点所需要的时间为 $t_{\mathrm{CCW}}$ 和 $t_{\mathrm{CW}}$，它们分别由以下方程决定
+        \begin{equation}
+            v_{\mathrm{CCW}} t_{\mathrm{CCW}} = N 2 \pi R + \Omega R t_{\mathrm{CCW}}
+            \label{eq:8.s122}
+        \end{equation}
+        \begin{equation}
+            v_{\mathrm{CW}} t_{\mathrm{CW}} = N 2 \pi R - \Omega R t_{\mathrm{CW}}
+            \label{eq:9.s122}
+        \end{equation}
+        由 \eqref{eq:8.s122} \eqref{eq:9.s122} 式得
+        \begin{equation}
+            t_{\mathrm{CCW}} = \frac{N 2 \pi R}{v_{\mathrm{CCW}} - \Omega R} = \frac{N 2 \pi R (n_{1} c + \Omega R)}{c^{2} - (\Omega R)^{2}}
+            \label{eq:10.s122}
+        \end{equation}
+        \begin{equation}
+            t_{\mathrm{CW}} = \frac{N 2 \pi R}{v_{\mathrm{CW}} + \Omega R} = \frac{N 2 \pi R (n_{1} c - \Omega R)}{c^{2} - (\Omega R)^{2}}
+            \label{eq:11.s122}
+        \end{equation}
+        沿逆时针和顺时针方向传播的这两束光的相差为
+        \begin{equation}
+            \Delta \phi = \frac{2 \pi c}{\lambda_{0}} (t_{\mathrm{CCW}} - t_{\mathrm{CW}}) = \frac{2 \pi c}{\lambda_{0}} \frac{N 4 \pi R^{2} \Omega}{c^{2} - (\Omega R)^{2}}
+            \label{eq:12.s122}
+        \end{equation}
+        从 \eqref{eq:12.s122} 式可看出，相差 $\Delta \phi$ 与介质的折射率 $n_{1}$ 无关。
+    \end{subsolution}
+    \begin{subsolution}
+        在旋转的环形腔中，存在沿逆时针方向和顺时针方向传播的共振模式。沿顺时针和逆时针方向传播的共振光波的波长满足以下条件（用 $m$ 表示谐振波的级次）
+        \begin{equation}
+            L_{\mathrm{CW}} = m \lambda_{\mathrm{CW}}
+            \label{eq:13.s122}
+        \end{equation}
+        \begin{equation}
+            L_{\mathrm{CCW}} = m \lambda_{\mathrm{CCW}}
+            \label{eq:14.s122}
+        \end{equation}
+        这里，$L_{\mathrm{CW}}$、$L_{\mathrm{CCW}}$ 分别表示在环形腔旋转的情况下沿顺时针和逆时针方向传播的两共振光波的波前从分束器 $A$ 发出又回到 $A$ 所经过的路程，即
+        \begin{equation}
+            L_{\mathrm{CW}} = v_{\mathrm{CW}} t_{\mathrm{CW}}
+            \label{eq:15.s122}
+        \end{equation}
+        \begin{equation}
+            L_{\mathrm{CCW}} = v_{\mathrm{CCW}} t_{\mathrm{CCW}}
+            \label{eq:16.s122}
+        \end{equation}
+        由 \eqref{eq:6.s122} \eqref{eq:7.s122} \eqref{eq:8.s122} \eqref{eq:9.s122} \eqref{eq:10.s122} \eqref{eq:11.s122} 式，并（由题意）取 $N=1$ 及 $n_{1}=n$，可得
+        \begin{equation}
+            v_{\mathrm{CW}} t_{\mathrm{CW}} = \frac{2 \pi R (c^{2} - n \Omega R c)}{c^{2} - (\Omega R)^{2}}
+            \label{eq:17.s122}
+        \end{equation}
+        \begin{equation}
+            v_{\mathrm{CCW}} t_{\mathrm{CCW}} = \frac{2 \pi R (c^{2} + n \Omega R c)}{c^{2} - (\Omega R)^{2}}
+            \label{eq:18.s122}
+        \end{equation}
+        由 \eqref{eq:13.s122} \eqref{eq:14.s122} \eqref{eq:15.s122} \eqref{eq:16.s122} \eqref{eq:17.s122} \eqref{eq:18.s122} 式得，沿顺时针和逆时针方向传播的同一级次（$m$ 相同）的两个共振模式之间的频率差为
+        \begin{align}
+            \Delta f & = f_{\mathrm{CW}} - f_{\mathrm{CCW}} = \frac{c}{n} \left(\frac{1}{\lambda_{\mathrm{CW}}} - \frac{1}{\lambda_{\mathrm{CCW}}}\right) = \frac{m c}{n} \left(\frac{1}{L_{\mathrm{CW}}} - \frac{1}{L_{\mathrm{CCW}}}\right) \nonumber \\
+            & = \frac{m \Omega}{\pi} \frac{c^{2} - (\Omega R)^{2}}{c^{2} - (n \Omega R)^{2}} \approx \frac{m \Omega}{\pi} (\text{或} \frac{2 R \Omega}{\lambda_{\mathrm{m0}}})
+        \end{align}
+        即
+        \begin{equation}
+            \Omega = \frac{\pi}{m} \Delta f (\text{或} = \frac{\lambda_{\mathrm{m0}}}{2 R} \Delta f)
+            \label{eq:19.s122}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

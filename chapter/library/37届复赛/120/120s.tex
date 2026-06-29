@@ -1,0 +1,86 @@
+\begin{solution}{120}
+    \begin{subsolution}
+        设带电粒子运动的速度为 $v$，均匀磁场的磁感应强度为 $\mathbf{B}$，由相对论粒子运动方程有
+        \begin{equation}
+            \frac{d \mathbf{p}_{\mathrm{p}}}{d t} = e \mathbf{v} \times \mathbf{B}
+            \label{eq:1.s120}
+        \end{equation}
+        式中 $\mathbf{p}_{\mathrm{p}}$ 是质子的动量，$e$ 为质子的电量。
+        \begin{equation}
+            \mathbf{p}_{\mathrm{p}} = \frac{m_{\mathrm{p}} \mathbf{v}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}}
+            \label{eq:2.s120}
+        \end{equation}
+        不计辐射能量损失，质子仅受到磁场作用，有
+        \begin{equation}
+            \left| \frac{d \mathbf{v}}{d t} \right| = \frac{v^{2}}{R}
+            \label{eq:3.s120}
+        \end{equation}
+        将 \eqref{eq:2.s120} 式代入 \eqref{eq:1.s120} 式，有
+        \begin{equation}
+            \frac{m_{\mathrm{p}}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}} \left| \frac{d \mathbf{v}}{d t} \right| = e v B
+            \label{eq:4.s120}
+        \end{equation}
+        将 \eqref{eq:3.s120} 式代入 \eqref{eq:4.s120} 式得
+        \begin{equation}
+            B = \frac{m_{\mathrm{p}}}{\sqrt{1 - \frac{v^{2}}{c^{2}}}} \frac{v}{e R} = \frac{p_{\mathrm{p}}}{e R}
+            \label{eq:5.s120}
+        \end{equation}
+        Tevatron 加速器中粒子运行轨道的半径 $R$ 满足
+        \begin{equation}
+            R \geq \frac{L_{\max}}{2 \pi}
+            \label{eq:6.s120}
+        \end{equation}
+        由 \eqref{eq:5.s120} \eqref{eq:6.s120} 式得
+        \begin{equation}
+            B = \frac{p_{\mathrm{p}}}{e R} \geq \frac{2 \pi p_{\mathrm{p}}}{e L_{\max}}
+            \label{eq:7.s120}
+        \end{equation}
+        由狭义相对论中粒子的能量-动量关系有
+        \begin{equation}
+            E_{\mathrm{p}}^{2} = p_{\mathrm{p}}^{2} c^{2} + m_{\mathrm{p}}^{2} c^{4}
+            \label{eq:8.s120}
+        \end{equation}
+        于是，将质子加速到 $E_{\mathrm{p,max}}^{(\mathrm{tevatron})} = 1.00 \times 10^{6} \mathrm{MeV}$ 所需要的最小磁感强度 $B_{\min}$ 为
+        \begin{align}
+            B_{\min} & = \frac{2 \pi}{e L_{\max} c} \sqrt{(E_{\mathrm{p,max}}^{(\text{tevatron})})^{2} - (m_{\mathrm{p}} c)^{2}} \nonumber \\
+            & = \frac{2 \pi}{3.00 \times 10^{8} \times 6436} \sqrt{(1.00 \times 10^{12})^{2} - (938.3 \times 10^{6})^{2}} \mathrm{T} \nonumber \\
+            & \approx 3.26 \mathrm{T}
+            \label{eq:9.s120}
+        \end{align}
+    \end{subsolution}
+    \begin{subsolution}
+        考虑多粒子系统洛伦兹不变质量 $M$ 的平方。对于反应前（相应的量不带撇）实验室参考系中的粒子体系
+        \begin{equation}
+            M^{2} \equiv \left(\frac{E_{1} + m_{\mathrm{p}} c^{2}}{c^{2}}\right)^{2} - \left(\frac{p_{1}}{c}\right)^{2} = 2 \frac{E_{1}}{c^{2}} m_{\mathrm{p}} + 2 m_{\mathrm{p}}^{2}
+            \label{eq:10.s120}
+        \end{equation}
+        式中，$E_{1}$ 和 $p_{1}$ 分别表示实验室参考系中反应前入射质子的能量和动量；对于反应后（相应的量带撇）质心参考系中的粒子体系
+        \begin{equation}
+            M^{2} \equiv E_{\mathrm{t}}^{\prime (\mathrm{cm})} - 0 \geq (4 m_{\mathrm{p}})^{2}
+            \label{eq:11.s120}
+        \end{equation}
+        式中 $E_{\mathrm{t}}^{\prime (\mathrm{cm})}$ 是反应后质心参考系中的粒子体系的总能量，已利用质心参考系中总动量等于零的事实。
+
+        由相对论能量-动量关系，有
+        \begin{equation}
+            E_{1}^{2} = p_{1}^{2} c^{2} + (m_{\mathrm{p}} c^{2})^{2}
+            \label{eq:12.s120}
+        \end{equation}
+        由 \eqref{eq:10.s120} \eqref{eq:11.s120} \eqref{eq:12.s120} 式得
+        \begin{equation}
+            E_{1} \geq \frac{(4 m_{\mathrm{p}})^{2} - 2 m_{\mathrm{p}}^{2}}{2 m_{\mathrm{p}}} c^{2} = 7 m_{\mathrm{p}} c^{2} \approx 6568.1 \mathrm{MeV}
+            \label{eq:13.s120}
+        \end{equation}
+        入射质子的动能为
+        \begin{equation}
+            E_{1 k} \geq 7 m_{\mathrm{p}} c^{2} - m_{\mathrm{p}} c^{2} = 6 m_{\mathrm{p}} c^{2} \approx 5629.8 \mathrm{MeV}
+            \label{eq:14.s120}
+        \end{equation}
+        能产生反质子时入射质子的最小动能 $E_{1k,\min} = 5629.8 \mathrm{MeV}$，相应于入射质子的最小能量 $E_{1,\min} = 6568.1 \mathrm{MeV}$。Tevatron 能加速质子的最大能量
+        \begin{equation}
+            E_{\mathrm{p,max}}^{(\text{tevatron})} = 1.00 \times 10^{6} \mathrm{MeV} > E_{1, \min} \approx 6568.1 \mathrm{MeV}
+            \label{eq:15.s120}
+        \end{equation}
+        即 Tevatron 可以通过加速质子轰击静止的靶质子而产生反质子。
+    \end{subsolution}
+\end{solution}

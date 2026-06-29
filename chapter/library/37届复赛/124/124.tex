@@ -1,0 +1,27 @@
+\begin{problem}[2020第37届全国中学生物理竞赛复赛][电光调制器原理与电路分析]{124}
+    将电传输信号调制到光信号的过程称为电光调制。电光调制器的主要工作原理是电光效应：以铌酸锂电光晶体为例，其折射率在电场作用下发生变化，从而改变输入光束的光程，使电信号信息转移到光信号上。电光调制器光路图中，$\mathrm{P}_{1}$、$\mathrm{P}_{2}$ 分别为起偏器和检偏器，两者结构相同但偏振方向相互垂直（图中 $\mathrm{P}_{1}(\| x_{1})$、$\mathrm{P}_{2}(\| x_{2})$ 表示 $\mathrm{P}_{1}$、$\mathrm{P}_{2}$ 的偏振方向分别与 $x_{1}$、$x_{2}$ 坐标轴平行），长度为 $l$、厚度为 $d$ 的电光晶体置于 $\mathrm{P}_{1}$、$\mathrm{P}_{2}$ 之间，晶体两端面之间加有电压 $V$（以产生沿 $x_{3}$ 方向的电场，强度大小为 $E$）；真空中波长为 $\lambda_{0}$ 的光波经过起偏器 $\mathrm{P}_{1} (\| x_{1})$ 后沿 $x_{3}$ 方向入射至电光晶体，折射后分为两束偏振方向（分别与快轴 $x_{1}'$ 和慢轴 $x_{2}'$ 平行）相互垂直的光波，$x_{1}'$ 轴与 $x_{1}$ 轴、$x_{2}'$ 轴与 $x_{2}$ 轴均成 $45^{\circ}$ 夹角；电光晶体内沿 $x_{1}'$、$x_{2}'$ 方向的折射率分别为
+    \begin{equation}
+        \left\{ \begin{array}{l} n_{x_{1}'} = n_{\mathrm{o}} - \frac{1}{2} n_{\mathrm{o}}^{3} \gamma E \\ n_{x_{2}'} = n_{\mathrm{o}} + \frac{1}{2} n_{\mathrm{o}}^{3} \gamma E \end{array} \right.
+    \end{equation}
+    其中 $n_{\mathrm{o}}$ 为 $o$ 光的折射率，$\gamma$ 为常量，由晶体本身性质决定；两束光从电光晶体出射后经 1/4 波片，最终由检偏器 $\mathrm{P}_{2} (\| x_{2})$ 获取。
+    \begin{subproblem}
+        一束圆频率为 $\omega$ 的光入射到电光晶体左端面，电场强度为
+        \begin{equation}
+            \left\{ \begin{array}{l} E_{x_{1}'} = E_{0} \cos \omega t \\ E_{x_{2}'} = E_{0} \cos \omega t \end{array} \right.
+        \end{equation}
+        求光通过电光晶体后的相位变化和光强变化；当出射光束之间的相位差为 $\pi$ 时，电光晶体起到一个“1/2 波片”的作用，此时所用的外加电压称为半波电压 $V_{\pi}$，求 $V_{\pi}$。
+    \end{subproblem}
+    \begin{subproblem}
+        设外加电信号电压为
+        \begin{equation}
+            V = V_{\mathrm{m}} \sin \omega_{\mathrm{m}} t \quad (V_{\mathrm{m}} << V_{\pi})
+        \end{equation}
+        $\omega_{\mathrm{m}}$ 是调制信号频率。若光波不经过 1/4 波片而直接进入检偏器 $\mathrm{P}_{2}$，求出射光束的光强透过率（出射光与入射光强度之比）与电信号电压的关系。只有在电光调制器的透过率与调制电压具有良好的线性关系时，电信号转移到光信号后信号才不失真。求光线经过 1/4 波片和检偏器 $\mathrm{P}_{2}$ 时，出射的光束光强透过率与电信号电压的关系，并指出 1/4 波片所起的作用。
+    \end{subproblem}
+    \begin{subproblem}
+        电光调制器的等效电路中：电光晶体置于两平行板电极间，两平行板间的电光晶体可等效为由电阻 $R$ 和电容 $C$ 的电阻-电容并联电路；$V$ 为外加信号电压，$R_{\mathrm{m}}$ 为调制电源和导线的电阻，通常满足 $R >> R_{\mathrm{m}}$。试证明：在图中开关断开的情形下，当 $\omega_{\mathrm{m}} >> (R_{\mathrm{m}} C)^{-1}$，实际加载至电光晶体上的电压 $V_{\mathrm{c}}$ 满足 $|V_{\mathrm{c}}| << |V|$，即调制效率极低。
+    \end{subproblem}
+    \begin{subproblem}
+        为了提高调制效率，添加（即将图中开关合上）如图右半部所示的并联谐振回路（图中，$R_{\mathrm{L}}$ 为负载电阻，$L$ 为线圈的电感），试证明 $|V_{\mathrm{c}}| \approx |V|$。
+    \end{subproblem}
+\end{problem}

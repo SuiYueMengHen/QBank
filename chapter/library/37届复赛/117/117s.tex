@@ -1,0 +1,77 @@
+\begin{solution}{117}
+    \begin{subsolution}
+        \begin{subsubsolution}
+            依题意，空气弹簧主气室对簧上负载竖直向上的作用力为
+            \begin{equation}
+                F = (p_{1} - p_{0}) A_{\mathrm{e}}
+                \label{eq:1.s117}
+            \end{equation}
+            式中，$p_{1}$ 是主气室内空气的压强。
+
+            当空气弹簧承受的负载发生变化时，主气室内气体的压强 $p_{1}$ 和体积 $V_{1}$ 均会发生变化。为了统一处理题给的两种情形，考虑气体压强和体积变化的过程方程为
+            \begin{equation}
+                p_{1} V_{1}^{n} = \mathrm{常量}
+                \label{eq:2.s117}
+            \end{equation}
+            式中，$n$ 是常数。\eqref{eq:1.s117} 式左右两边对空气弹簧承载面的竖直位移 $y$ 微商，可知空气弹簧的劲度系数 $K$ 满足
+            \begin{equation}
+                K \equiv \frac{dF}{dy} = (p_{1} - p_{0}) \frac{dA_{\mathrm{e}}}{dy} + \frac{dp_{1}}{dy} A_{\mathrm{e}}
+                \label{eq:3.s117}
+            \end{equation}
+            \eqref{eq:2.s117} 式左右两边对 $y$ 微商得
+            \begin{equation}
+                \frac{dp_{1}}{dy} V_{1}^{n} + n p_{1} V_{1}^{n-1} \frac{dV_{1}}{dy} = 0
+                \label{eq:4.s117}
+            \end{equation}
+            由题意知，空气弹簧主气室内体积 $V_{1}$ 和有效承载面积 $A_{e}$ 相对于平衡位置的竖直位移的变化率为
+            \begin{equation}
+                \frac{dV_{1}}{dy} = -\alpha, \quad \frac{dA_{\mathrm{e}}}{dy} = \beta
+                \label{eq:5.s117}
+            \end{equation}
+            联立 \eqref{eq:1.s117} \eqref{eq:3.s117} \eqref{eq:4.s117} \eqref{eq:5.s117} 式得，空气弹簧的劲度系数 $K$ 与其有效承载面积 $A_{e}$ 之间的关系为
+            \begin{equation}
+                K = \alpha \frac{n p_{10} V_{10}^{n}}{V_{1}^{n+1}} A_{e} + \beta \left[ p_{10} \left(\frac{V_{10}}{V_{1}}\right)^{n} - p_{0} \right]
+                \label{eq:6.s117}
+            \end{equation}
+            在高铁上下乘客的情形下，主气室内气体压强和体积变化满足等温过程
+            \begin{equation}
+                n = 1
+                \label{eq:7.s117}
+            \end{equation}
+            由 \eqref{eq:6.s117} \eqref{eq:7.s117} 式得
+            \begin{equation}
+                K = \alpha \frac{p_{10} V_{10}}{V_{1}^{2}} A_{e} + \beta \left[ p_{10} \frac{V_{10}}{V_{1}} - p_{0} \right]
+                \label{eq:8.s117}
+            \end{equation}
+        \end{subsubsolution}
+        \begin{subsubsolution}
+            在列车运行中遇到强烈颠簸的情形下，主气室内气体压强和体积变化满足绝热过程
+            \begin{equation}
+                n = \gamma
+                \label{eq:9.s117}
+            \end{equation}
+            式中，$\gamma$ 是空气的定压摩尔热容 $C_{p}$ 与定容摩尔热容 $C_{v}$ 之比
+            \begin{equation}
+                \gamma = \frac{C_{p}}{C_{V}} = \frac{C_{V} + R}{C_{V}} = \frac{\frac{7}{2} R}{\frac{5}{2} R} = \frac{7}{5}
+                \label{eq:10.s117}
+            \end{equation}
+            由 \eqref{eq:6.s117} \eqref{eq:9.s117} 式得
+            \begin{equation}
+                K = \alpha \frac{7 p_{10} V_{10}^{7/5}}{5 V_{1}^{12/5}} A_{e} + \beta \left[ p_{10} \left(\frac{V_{10}}{V_{1}}\right)^{7/5} - p_{0} \right]
+                \label{eq:11.s117}
+            \end{equation}
+        \end{subsubsolution}
+    \end{subsolution}
+    \begin{subsolution}
+        主气室连通附加气室后，如果车辆振动频率较低，例如情形 i)，空气弹簧变形较慢，可认为在任意瞬间，空气弹簧主气室的压强与附加气室的压强相同，两气室间的压强差可视为零。两气室的空气作为一个整体，经历等温过程。空气弹簧的劲度系数 $K$ 与其有效承载面积 $A_{e}$ 之间的关系
+        \begin{equation}
+            K = \alpha \frac{p_{10} (V_{10} + V_{2})}{(V_{1} + V_{2})^{2}} A_{\mathrm{e}} + \beta \left[ p_{10} \frac{V_{10} + V_{2}}{V_{1} + V_{2}} - p_{0} \right]
+            \label{eq:12.s117}
+        \end{equation}
+        对于情形 ii)，车辆系统的振动频率较高，空气弹簧主气室内部的压力和体积变化较快，主气室与附加气室之间来不及进行气体流动，此时空气弹簧的容积相当于主气室容积单独作用，经历绝热过程。空气弹簧的劲度系数 $K$ 与其有效承载面积 $A_{e}$ 之间的关系为
+        \begin{equation}
+            K = \alpha \frac{7 p_{10} V_{10}^{7/5}}{5 V_{1}^{12/5}} A_{e} + \beta \left[ p_{10} \left(\frac{V_{10}}{V_{1}}\right)^{7/5} - p_{0} \right]
+            \label{eq:13.s117}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

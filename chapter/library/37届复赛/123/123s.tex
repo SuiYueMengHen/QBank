@@ -1,0 +1,113 @@
+\begin{solution}{123}
+    \begin{subsolution}
+        描述转动体系辐射的三个物理量可选为系统的转动惯量 $I$、转动角速度 $\omega$ 和辐射引力波的传播速度 $c$。引力波辐射功率的表达式可表示为
+        \begin{equation}
+            P = \alpha G I^{\lambda} \omega^{\xi} c^{\sigma}
+            \label{eq:1.s123}
+        \end{equation}
+        式中 $\alpha$ 是无量纲的比例系数，$\lambda$、$\xi$、$\sigma$ 是待定幂次。比较 \eqref{eq:1.s123} 式两边物理量的量纲，有
+        \begin{equation}
+            [P] = M L^{2} T^{-3} = M^{\lambda - 1} L^{2\lambda + \sigma + 3} T^{-\xi - \sigma - 2}
+            \label{eq:2.s123}
+        \end{equation}
+        由 \eqref{eq:2.s123} 式得
+        \begin{equation}
+            \left\{ \begin{array}{l} \lambda - 1 = 1 \\ 2\lambda + \sigma + 3 = 2 \\ \xi + \sigma + 2 = 3 \end{array} \right.
+            \label{eq:3.s123}
+        \end{equation}
+        由方程组 \eqref{eq:3.s123} 解得
+        \begin{equation}
+            \lambda = 2, \quad \xi = 6, \quad \sigma = -5
+            \label{eq:4.s123}
+        \end{equation}
+        将 \eqref{eq:4.s123} 式代入 \eqref{eq:1.s123} 式得
+        \begin{equation}
+            P = \frac{\alpha G I^{2} \omega^{6}}{c^{5}}
+            \label{eq:5.s123}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        两黑洞绕系统质心做近似圆周运动，设质量为 $M$ 和 $m$ 的两黑洞相距 $L$，到系统质心的距离分别为 $R$ 和 $r$，由牛顿引力定律有
+        \begin{equation}
+            G \frac{M m}{L^{2}} = m \omega^{2} r
+            \label{eq:6.s123}
+        \end{equation}
+        \begin{equation}
+            G \frac{M m}{L^{2}} = M \omega^{2} R
+            \label{eq:7.s123}
+        \end{equation}
+        由 \eqref{eq:6.s123} \eqref{eq:7.s123} 式得
+        \begin{equation}
+            \omega^{2} = \frac{G (M + m)}{L^{3}}
+            \label{eq:8.s123}
+        \end{equation}
+        系统总能量为
+        \begin{equation}
+            E = -\frac{G M m}{2 L} = -\frac{G^{2/3} M m}{2 (M + m)^{1/3}} \omega^{2/3}
+            \label{eq:9.s123}
+        \end{equation}
+        由 \eqref{eq:9.s123} 式得，引力波辐射功率 $P$ 满足
+        \begin{equation}
+            P = -\frac{dE}{dt} = \frac{G^{2/3} M m}{3 (M + m)^{1/3}} \omega^{-1/3} \frac{d\omega}{dt}
+            \label{eq:10.s123}
+        \end{equation}
+        系统对其质心的转动惯量为
+        \begin{equation}
+            I = \frac{M m}{M + m} L^{2}
+            \label{eq:11.s123}
+        \end{equation}
+        由 \eqref{eq:5.s123} \eqref{eq:8.s123} \eqref{eq:11.s123} 式得
+        \begin{equation}
+            P = \frac{\alpha G^{7/3} \omega^{10/3}}{c^{5}} \frac{M^{2} m^{2}}{(M + m)^{2/3}}
+            \label{eq:12.s123}
+        \end{equation}
+        比较 \eqref{eq:10.s123} \eqref{eq:12.s123} 式得
+        \begin{equation}
+            \omega^{-11/3} \frac{d\omega}{dt} = \frac{3 \alpha G^{5/3}}{c^{5}} \frac{M m}{(M + m)^{1/3}}
+            \label{eq:14.s123}
+        \end{equation}
+        对上式两边积分
+        \begin{equation}
+            \int_{\omega_{0}}^{\omega} \omega'^{-11/3} d\omega' = \int_{0}^{t} \frac{3 \alpha G^{5/3}}{c^{5}} \frac{M m}{(M + m)^{1/3}} dt'
+            \label{eq:13.s123}
+        \end{equation}
+        可得
+        \begin{equation}
+            \omega = \left[ \omega_{0}^{-8/3} - \frac{8 \alpha G^{5/3}}{c^{5}} \frac{M m t}{(M + m)^{1/3}} \right]^{-3/8}
+            \label{eq:15.s123}
+        \end{equation}
+        对 $\omega = \frac{d\theta}{dt}$ 积分，并利用 \eqref{eq:15.s123} 式得
+        \begin{align}
+            \theta &= \theta_{0} + \int_{0}^{t} \omega' dt' \nonumber \\
+            &= \theta_{0} + \frac{c^{5} (M + m)^{1/3} \omega_{0}^{-5/3}}{5 \alpha G^{5/3} M m} - \frac{c^{5} (M + m)^{1/3}}{5 \alpha G^{5/3} M m} \left[ \omega_{0}^{-8/3} - \frac{8 \alpha G^{5/3}}{c^{5}} \frac{M m t}{(M + m)^{1/3}} \right]^{5/8}
+            \label{eq:16.s123}
+        \end{align}
+        式中 $\theta_{0} = \theta(t = 0)$。两黑洞从 $t = 0$ 时刻开始绕质心旋转一圈
+        \begin{equation}
+            \theta = \theta_{0} + 2 \pi
+            \label{eq:17.s123}
+        \end{equation}
+        \begin{equation}
+            t = \frac{c^{5} L_{0}^{4}}{8 \alpha G^{3} M m (M + m)} \left[ 1 - \left(1 - \frac{10 G^{5/2} M m \pi \alpha \sqrt{M + m}}{c^{5} L_{0}^{5/2}}\right)^{8/5} \right]
+            \label{eq:18.s123}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由 \eqref{eq:8.s123} \eqref{eq:15.s123} 式得
+        \begin{equation}
+            L = G^{1/3} (M + m)^{1/3} \left[ \omega_{0}^{-8/3} - \frac{8 \alpha G^{5/3}}{c^{5}} \frac{M m t}{(M + m)^{1/3}} \right]^{1/4}
+            \label{eq:19.s123}
+        \end{equation}
+        将上式代入 \eqref{eq:16.s123} 式，并利用 \eqref{eq:8.s123} 式消去 $\omega_{0}$，得
+        当 $L = \frac{1}{2} L_{0}$ 时，由 \eqref{eq:8.s123} \eqref{eq:19.s123} 式得
+        \begin{equation}
+            t = \frac{15 c^{5} L_{0}^{4}}{128 \alpha G^{3} M m (M + m)}
+            \label{eq:20.s123}
+        \end{equation}
+        由 \eqref{eq:16.s123} \eqref{eq:20.s123} 式得，相应的旋转度数为
+        \begin{equation}
+            \Delta \theta = \theta - \theta_{0} = \frac{(1 - \frac{\sqrt{2}}{8}) c^{5} L_{0}^{5/2}}{5 \alpha G^{5/2} M m \sqrt{M + m}} \frac{180^{\circ}}{\pi}
+            \label{eq:21.s123}
+        \end{equation}
+    \end{subsolution}
+\end{solution}

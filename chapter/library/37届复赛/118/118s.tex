@@ -1,0 +1,126 @@
+\begin{solution}{118}
+    \begin{subsolution}
+        对击球过程应用刚体质心运动的动量定理，有
+        \begin{equation}
+            P = m u_{0} - 0
+            \label{eq:1.s118}
+        \end{equation}
+        式中，$u_{0}$ 是击打结束后的瞬间母球质心的速度（与冲量 $P$ 同向）。母球受到的相对于其质心的冲量矩为
+        \begin{equation}
+            J = P \frac{R}{2}
+            \label{eq:2.s118}
+        \end{equation}
+        对击球过程应用刚体转动的角动量定理有
+        \begin{equation}
+            J = I \omega_{0} - 0
+            \label{eq:3.s118}
+        \end{equation}
+        式中，$\omega_{0}$ 是在击打结束后的瞬间母球的转动角速度。母球的转动惯量为
+        \begin{equation}
+            I = \frac{2}{5} m R^{2}
+            \label{eq:4.s118}
+        \end{equation}
+        在击球结束后的瞬间，母球上与桌面相接触的点 $A$ 的速度为
+        \begin{equation}
+            v_{\mathrm{A}} = u_{0} - R \omega_{0}
+            \label{eq:5.s118}
+        \end{equation}
+        由 \eqref{eq:1.s118} \eqref{eq:2.s118} \eqref{eq:3.s118} \eqref{eq:4.s118} \eqref{eq:5.s118} 式可知，在击球结束的瞬间，母球上 $A$ 点的速度为
+        \begin{equation}
+            v_{\mathrm{A}} = -\frac{P}{4m} < 0
+            \label{eq:6.s118}
+        \end{equation}
+        $A$ 点沿着 $x$ 轴（取 $x$ 轴正向与 $P$ 同向）负方向滑动。小球受到沿 $x$ 轴正方向的摩擦力 $F_{f}$ 为
+        \begin{equation}
+            F_{f} = \mu m g
+            \label{eq:7.s118}
+        \end{equation}
+        在击球结束后的时刻 $t$，应用刚体的质心运动定理和相对于质心的动量矩定理有
+        \begin{equation}
+            m \dot{u} = F_{f}
+            \label{eq:8.s118}
+        \end{equation}
+        \begin{equation}
+            I \dot{\omega} = -\mu m g R
+            \label{eq:9.s118}
+        \end{equation}
+        式中，取 $\omega$ 与 $\omega_{0}$ 同向为正。由 \eqref{eq:1.s118} \eqref{eq:2.s118} \eqref{eq:3.s118} \eqref{eq:4.s118} \eqref{eq:8.s118} \eqref{eq:9.s118} 式可知，$t$ 时刻母球质心的速度和绕质心转动的角速度分别为
+        \begin{equation}
+            u(t) = u_{0} + \dot{u} t = u_{0} + \mu g t
+            \label{eq:10.s118}
+        \end{equation}
+        \begin{equation}
+            \omega(t) = \omega_{0} + \dot{\omega} t = \frac{PR}{2I} - \frac{\mu m g R t}{I}
+            \label{eq:11.s118}
+        \end{equation}
+        在 $t$ 时刻，$A$ 点的速度为
+        \begin{equation}
+            v_{\mathrm{A}}(t) = u(t) - R \omega(t) = \frac{7}{2} \mu g t - \frac{P}{4m}
+            \label{eq:12.s118}
+        \end{equation}
+        由 \eqref{eq:12.s118} 式可知，接触点 $A$ 的速度随时间的增加逐渐由负值变为
+        \begin{equation}
+            v_{\mathrm{A}}(t_{0}) = 0
+        \end{equation}
+        时，母球开始做纯滚动。由上式和 \eqref{eq:12.s118} 式得，母球被击打后经过时间
+        \begin{equation}
+            t_{0} = \frac{P}{14 \mu m g}
+            \label{eq:13.s118}
+        \end{equation}
+        开始做纯滚动，此时母球球心 $C$ 的速度为
+        \begin{equation}
+            u_{\mathrm{c}} = \mu g t_{0} + u_{0} = \frac{15P}{14m}
+            \label{eq:14.s118}
+        \end{equation}
+    \end{subsolution}
+    \begin{subsolution}
+        由纯滚动条件知，在任意时刻 $t' > 0$，水平滚动距离等于 $B$ 点（此点就是在击球结束后的瞬间母球上与桌面相接触的点 $A$）从时刻 $t' = 0$ 到时刻 $t'$ 经过的弧长，该弧长对应的圆心角为
+        \begin{equation}
+            \theta = \frac{u_{\mathrm{c}}}{R} t'
+            \label{eq:15.s118}
+        \end{equation}
+        $B$ 点在时刻 $t'$ 的位置为
+        \begin{equation}
+            x_{\mathrm{B}} = u_{\mathrm{c}} t' - R \sin \theta = \frac{15P}{14m} t' - R \sin \frac{u_{\mathrm{c}} t'}{R} = \frac{15P t'}{14m} - R \sin \frac{15P t'}{14mR}
+            \label{eq:16.s118}
+        \end{equation}
+        \begin{equation}
+            y_{\mathrm{B}} = R (1 - \cos \theta) = R \left(1 - \cos \frac{u_{\mathrm{c}} t'}{R}\right) = R \left(1 - \cos \frac{15P t'}{14mR}\right)
+            \label{eq:17.s118}
+        \end{equation}
+        这里，以 $B$ 点在 $t' = 0$ 的位置为坐标原点，$x$ 轴与 $P$ 同向，$y$ 轴正向竖直向上。\eqref{eq:16.s118} 式两边对时间求导得，$B$ 点速度分量为
+        \begin{equation}
+            v_{\mathrm{B}x} = u_{\mathrm{c}} (1 - \cos \theta) = u_{\mathrm{c}} \left(1 - \cos \frac{u_{\mathrm{c}} t'}{R}\right)
+        \end{equation}
+        \begin{equation}
+            v_{\mathrm{B}y} = u_{\mathrm{c}} \sin \theta = u_{\mathrm{c}} \sin \frac{u_{\mathrm{c}} t'}{R}
+        \end{equation}
+        $B$ 点速度的大小为
+        \begin{equation}
+            v_{\mathrm{B}} = \sqrt{v_{x}^{2} + v_{y}^{2}} = 2 u_{\mathrm{c}} \sin \frac{u_{\mathrm{c}} t'}{2R} = \frac{15P}{7m} \sin \frac{15P t'}{28mR}
+            \label{eq:18.s118}
+        \end{equation}
+        设 $B$ 点速度的方向与水平方向的夹角为 $\alpha$，则
+        \begin{equation}
+            \tan \alpha = \frac{v_{\mathrm{B}y}}{v_{\mathrm{B}x}} = \frac{\sin \frac{u_{\mathrm{c}} t'}{R}}{1 - \cos \frac{u_{\mathrm{c}} t'}{R}} = \frac{2 \sin \frac{u_{\mathrm{c}} t'}{2R} \cos \frac{u_{\mathrm{c}} t'}{2R}}{2 \sin^{2} \frac{u_{\mathrm{c}} t'}{2R}} = \cot \frac{u_{\mathrm{c}} t'}{2R}
+        \end{equation}
+        故
+        \begin{equation}
+            \alpha = \frac{\pi}{2} - \frac{u_{\mathrm{c}} t'}{2R} = \frac{\pi}{2} - \frac{15P t'}{28mR}
+            \label{eq:19.s118}
+        \end{equation}
+        将 $B$ 点速度分量对时间求导得，$B$ 点的加速度分量为
+        \begin{equation}
+            a_{\mathrm{B}x} = \frac{u_{\mathrm{c}}^{2}}{R} \sin \frac{u_{\mathrm{c}} t'}{R},
+        \end{equation}
+        \begin{equation}
+            a_{\mathrm{B}y} = \frac{u_{\mathrm{c}}^{2}}{R} \cos \frac{u_{\mathrm{c}} t'}{R}
+        \end{equation}
+        加速度大小为
+        \begin{equation}
+            a_{\mathrm{B}} = \frac{u_{\mathrm{C}}^{2}}{R} = \left(\frac{15}{14}\right)^{2} \frac{P^{2}}{m^{2} R}
+            \label{eq:20.s118}
+        \end{equation}
+        方向指向母球球心 $C$。
+    \end{subsolution}
+\end{solution}

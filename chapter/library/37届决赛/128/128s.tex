@@ -1,0 +1,135 @@
+\begin{solution}{128}
+    \begin{subsolution}
+        一束频率为$f$的光波被流体中运动粒子所散射。光波在流体中的传播速度大小为$c/n$，粒子运动速度大小为$v$。由于多普勒效应，粒子接收到的光的频率为
+        \begin{equation}
+            f ^ {\prime} = f \left(1 + \frac {v n}{c} \cos \theta_ {1}\right)
+            \label{eq:1.s128}
+        \end{equation}
+        式中$\theta _ { 1 }$为光波入射方向与散射粒子运动速度之间的夹角。同样由于多普勒效应，在散射方向上探测到来自粒子的散射光的频率为
+        \begin{equation}
+            f ^ {\prime \prime} = \frac {f ^ {\prime}}{1 - \frac {v n}{c} \cos \theta_ {2}}
+            \label{eq:2.s128}
+        \end{equation}
+        其中$\theta _ { 2 }$为散射光波传播方向与散射粒子速度之间的夹角。
+
+        散射光与入射光的频率之差为
+        \begin{equation}
+            \Delta f = f ^ {\prime \prime} - f = \frac {f v n}{c} (\cos \theta_ {1} + \cos \theta_ {2})
+            \label{eq:3.s128}
+        \end{equation}
+        已知粒子的速度为$v=1\mathrm{m/s}$，光的频率量级为$10^{14}\mathrm{Hz}$，
+        \begin{equation}
+            \Delta f = \frac {f v n}{c} (\cos \theta_ {1} + \cos \theta_ {2}) < \frac {2 f v n}{c} \approx 0.7 \mathrm{MHz} < 5 \mathrm{MHz}
+            \label{eq:4.s128}
+        \end{equation}
+        因此，分辨率为$5\mathrm{MHz}$的光谱仪不能对以此速度运行的粒子进行探测。
+    \end{subsolution}
+    \begin{subsolution}
+        到达探测器的两散射光1和2的电场为
+        \begin{align}
+            E _ {1} &= E _ {0} \cos [ 2 \pi (f + \Delta f) t + \phi_ {1} ] \label{eq:5.s128} \\
+            E _ {2} &= E _ {0} \cos [ 2 \pi (f + \Delta f ^ {\prime}) t + \phi_ {2} ] \label{eq:6.s128}
+        \end{align}
+        其中$\Delta f$、$\Delta f ^ { \prime }$分别为散射光1和2与原光频率的频率之差。两散射光的合成光强为
+        \begin{align}
+            I (t) &\propto \left| E _ {1} + E _ {2} \right| ^ {2} \notag \\
+            &= E _ {0} ^ {2} + \frac {E _ {0} ^ {2}}{2} \cos [ 4 \pi (f + \Delta f) t + 2 \phi_ {1} ] + \frac {E _ {0} ^ {2}}{2} \cos [ 4 \pi (f + \Delta f ^ {\prime}) t + 2 \phi_ {2} ] \notag \\
+            &\quad + E _ {0} ^ {2} \cos [ 4 \pi (2 f + \Delta f ^ {\prime} + \Delta f) t + (\phi_ {1} + \phi_ {2}) ] + E _ {0} ^ {2} \cos [ 2 \pi (\Delta f - \Delta f ^ {\prime}) t + \phi_ {1} - \phi_ {2} ]
+            \label{eq:7.s128}
+        \end{align}
+        式中，第一项是常量；中间三项的变化频率为光频及其和频，探测器的频率响应跟不上其时间变化，它们实际上表现为其时间平均值，也是常量；第五项的变化频率是光频的差频。因此，探测器输出的光电流为
+        \begin{equation}
+            i (t) = k E _ {0} ^ {2} \cos (2 \pi \Delta f _ {\mathrm{D}} t + \phi_ {1} - \phi_ {2})
+            \label{eq:8.s128}
+        \end{equation}
+        这里$\Delta f _ {\mathrm{D}} = \Delta f - \Delta f ^ {\prime}$是光束1和光束2的散射光频率差之差。由题意知，\eqref{eq:3.s128}式即为光束1的散射光频率差，类似的，对于光束2获得的频率差为
+        \begin{equation}
+            \Delta f ^ {\prime} = \frac {f v n}{c} \left(\cos \theta_ {1} ^ {\prime} + \cos \theta_ {2}\right)
+            \label{eq:9.s128}
+        \end{equation}
+        因此光束1和光束2的散射光频率差之差
+        \begin{align}
+            \Delta f _ {\mathrm{D}} &= \Delta f ^ {\prime} - \Delta f \notag \\
+            &= \frac {f v n}{c} (\cos \theta_ {1} ^ {\prime} - \cos \theta_ {1}) \notag \\
+            &= \frac {2 f v n}{c} \sin \frac {\alpha}{2} \cos \beta
+            \label{eq:10.s128}
+        \end{align}
+        式中$\alpha = \theta_ {1} ^ {\prime} - \theta_ {1}$，$\beta = \frac {1}{2} (\theta_ {1} ^ {\prime} + \theta_ {1} - \pi)$。因为光电流信号仅仅与散射光频率差之差相关，与$\theta _ { 2 }$没有关系，所以此方法对速度的测量与散射光的方向无关。
+    \end{subsolution}
+    \begin{subsolution}
+        如解题图4b所示，两对称射入相干平行光束相交区域。对于位于$z$轴上的各点来说$\Delta \phi = 0$，因此在相交区域$z$轴上的各点干涉相长，将呈现干涉相长明条纹。过$O$点做垂线$OA$垂直于$AP$，$OB$垂直于$BP$，因此两相干光到$P$点相对$O$点的相位差为
+        \begin{equation}
+            \Delta \phi = \frac {2 \pi}{\lambda} (\mathrm{AP} + \mathrm{BP}) = \frac {4 \pi}{\lambda} d \sin \frac {\alpha}{2}
+            \label{eq:11.s128}
+        \end{equation}
+        其中$d$为$P$点到$X$轴的距离。类似的，对$O'$点做垂线$O'A'$垂直于$A'P'$，$O'B'$垂直于$B'P'$，因此两相干光到$P'$点的相位差为
+        \begin{equation}
+            \Delta \phi^ {\prime} = \frac {2 \pi}{\lambda} \left(\mathrm{A} ^ {\prime} \mathrm{P} ^ {\prime} + \mathrm{B} ^ {\prime} \mathrm{P} ^ {\prime}\right) = \frac {4 \pi}{\lambda} d \sin \frac {\alpha}{2}
+            \label{eq:12.s128}
+        \end{equation}
+        因此，对于相交区域内$P'P$上的各点干涉情况一致。如果各点满足$\pi$的偶数倍，则干涉相长，
+        \begin{equation}
+            \frac {4 \pi}{\lambda} d \sin \frac {\alpha}{2} = 2 j \pi , \quad (j = 0, 1, 2, \dots)
+            \label{eq:13.s128}
+        \end{equation}
+        所以，第零级明条纹在相交区域内$X$轴上，其余明条纹将平行于$X$轴，呈等间距分布。形成亮条纹两个相邻明条纹之间相位差$2\pi$，有
+        \begin{equation}
+            2 d \sin (\alpha / 2) = \lambda
+            \label{eq:14.s128}
+        \end{equation}
+        因此，干涉条纹间距为
+        \begin{equation}
+            d = \frac {\lambda}{2 \sin (\alpha / 2)}
+            \label{eq:15.s128}
+        \end{equation}
+        由于光强明暗相间的结果，每当粒子运动到明场时将散射出一个光脉冲，所以光脉冲的频率与粒子速度的竖直方向分量有关。粒子穿越相邻两条亮纹的时间为
+        \begin{equation}
+            \tau = \frac {d}{v \cos \beta}
+            \label{eq:16.s128}
+        \end{equation}
+        于是光脉冲频率为
+        \begin{equation}
+            f _ {\mathrm{D}} = \frac {2 f v n}{c} \sin \frac {\alpha}{2} \cos \beta
+            \label{eq:17.s128}
+        \end{equation}
+
+        [解法（二）
+
+        两束入射光的方向分别为
+        \begin{align}
+            \boldsymbol {e} _ {1} &= \cos \frac {\alpha}{2} \boldsymbol {i} + \sin \frac {\alpha}{2} \boldsymbol {j} \label{eq:18.s128} \\
+            \boldsymbol {e} _ {2} &= \cos \frac {\alpha}{2} \boldsymbol {i} - \sin \frac {\alpha}{2} \boldsymbol {j} \label{eq:19.s128}
+        \end{align}
+        在位矢$\vec { r }$处，两束光的相位差为
+        \begin{equation}
+            \Delta \phi = \frac {2 \pi}{\lambda} (\boldsymbol {r} \cdot \boldsymbol {e} _ {1} - \boldsymbol {r} \cdot \boldsymbol {e} _ {2})
+            \label{eq:20.s128}
+        \end{equation}
+        所有相位差都为$\Delta \phi$的场点满足的方程为
+        \begin{equation}
+            \Delta \phi = 2 y \sin {\frac {\alpha}{2}} \cdot \frac {2 \pi}{\lambda}
+            \label{eq:21.s128}
+        \end{equation}
+        可见干涉条纹为一系列与$X$轴平行的直线。条纹间距$d$满足
+        \begin{equation}
+            2 d \sin {\frac {\alpha}{2}} \cdot \frac {2 \pi}{\lambda} = 2 \pi
+            \label{eq:22.s128}
+        \end{equation}
+        于是
+        \begin{equation}
+            d = \frac {\lambda}{2 \sin (\alpha / 2)}
+            \label{eq:23.s128}
+        \end{equation}
+        粒子穿越相邻两条亮纹的时间为
+        \begin{equation}
+            \tau = \frac {d}{v \cos \beta}
+            \label{eq:24.s128}
+        \end{equation}
+        于是光脉冲频率为
+        \begin{equation}
+            f _ {\mathrm{D}} = \frac {2 f v n}{c} \sin \frac {\alpha}{2} \cos \beta
+            \label{eq:25.s128}
+        \end{equation}
+        ]
+    \end{subsolution}
+\end{solution}
